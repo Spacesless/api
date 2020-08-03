@@ -1,0 +1,375 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "1.0.0",
+    "title": "Timeless Api",
+    "contact": {
+      "email": "804093032@qq.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "api.timelessq.com",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "cascade",
+      "description": "中国五级行政区域"
+    },
+    {
+      "name": "garbage",
+      "description": "垃圾分类"
+    },
+    {
+      "name": "license",
+      "description": "车牌号查询"
+    },
+    {
+      "name": "music",
+      "description": "QQ音乐"
+    },
+    {
+      "name": "postalcode",
+      "description": "邮编查询"
+    },
+    {
+      "name": "time",
+      "description": "时间"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/cascade": {
+      "get": {
+        "tags": [
+          "cascade"
+        ],
+        "summary": "根据联动等级查找",
+        "description": "获取二、三、四级联动数据",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "level",
+            "in": "query",
+            "description": "联动等级",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/cascade/citys": {
+      "get": {
+        "tags": [
+          "cascade"
+        ],
+        "summary": "根据地区编号查找",
+        "description": "地区编号",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "description": "地区编号",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/cascade/search": {
+      "get": {
+        "tags": [
+          "cascade"
+        ],
+        "summary": "搜索",
+        "description": "根据地区名称、地区编号查找",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "地区名称、地区编号",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/garbage": {
+      "get": {
+        "tags": [
+          "garbage"
+        ],
+        "summary": "根据垃圾名称关键字查找",
+        "description": "查询垃圾分类信息",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "垃圾名称关键字",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/license": {
+      "get": {
+        "tags": [
+          "license"
+        ],
+        "summary": "",
+        "description": "根据省份名称、简称，城市名查车牌号，根据车牌号查找城市信息",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "关键词",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/postalcode": {
+      "get": {
+        "tags": [
+          "postalcode"
+        ],
+        "summary": "",
+        "description": "根据地区、省份、城市查找邮政编码",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "省份、城市",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/dissts": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据QQ号获取歌单",
+        "description": "只支持QQ音乐的查询",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "qquin",
+            "in": "query",
+            "description": "QQ号码",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Dissts"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/lists": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌单id查找歌单列表",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "disstid",
+            "in": "query",
+            "description": "歌单id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/songs": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌曲id获取音乐文件地址以及key",
+        "description": "部分要版权的歌曲可能获取不到",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "songmid",
+            "in": "query",
+            "description": "歌曲id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/lyric": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌曲id获取歌词",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "songmid",
+            "in": "query",
+            "description": "歌曲id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/time": {
+      "get": {
+        "tags": [
+          "time"
+        ],
+        "summary": "获取当前时间的信息",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Dissts": {
+      "type": "object",
+      "required": [
+        "name",
+        "photoUrls"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    }
+  }
+}

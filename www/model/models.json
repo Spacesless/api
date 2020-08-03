@@ -1,0 +1,112 @@
+[
+	{
+		"id": 1,
+		"name": "bilibili",
+		"children": [
+			{
+				"id": 10,
+				"name": "22娘",
+				"models": "bilibili/22",
+				"message": "来自 Bilibili Live 的 22 哦 ~"
+			},
+			{
+				"id": 11,
+				"name": "33娘",
+				"models": "bilibili/33",
+				"message": "来自 Bilibili Live 的 33 的说"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "药水制作师",
+		"children": [
+			{
+				"id": 20,
+				"name": "Pio酱",
+				"models": "potion-maker/Pio",
+				"message": "来自 Potion Maker 的 Pio 酱 ~"
+			},
+			{
+				"id": 21,
+				"name": "Tia酱",
+				"models": "potion-maker/Tia",
+				"message": "来自 Potion Maker 的 Tia 酱 ~"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "超次元游戏：海王星",
+		"children": [
+			{
+				"id": 30,
+				"name": "Blanc",
+				"models": [
+          "neptune/blanc",
+          "neptune/blanc-classic",
+          "neptune/blanc-swimwear"
+				],
+				"message": "普兰"
+			},
+			{
+				"id": 31,
+				"name": "Histoire",
+				"models": [
+          "neptune/histoire"
+        ],
+				"message": "伊斯特瓦尔"
+      },
+      {
+				"id": 32,
+				"name": "Nepgear",
+				"models": [
+          "neptune/nepgear",
+          "neptune/nepgear-extra",
+          "neptune/nepgear-swimwear"
+        ],
+				"message": "涅普姬雅"
+      },
+      {
+				"id": 33,
+				"name": "NepNep",
+				"models": [
+          "neptune/nepnep",
+          "neptune/nepnep-maid",
+          "neptune/nepnep-swimwear"
+        ],
+				"message": ""
+      },
+      {
+				"id": 34,
+				"name": "Neptune",
+				"models": [
+          "neptune/neptune-classic",
+          "neptune/neptune-santa"
+        ],
+				"message": "涅普提努"
+      },
+      {
+				"id": 35,
+				"name": "Noire",
+				"models": [
+          "neptune/noire",
+          "neptune/noire-classic",
+          "neptune/noire-santa",
+          "neptune/noire-swimwear"
+        ],
+				"message": "诺瓦露"
+      },
+      {
+				"id": 36,
+				"name": "Vert",
+				"models": [
+          "neptune/vert",
+          "neptune/vert-classic",
+          "neptune/vert-swimwear"
+        ],
+				"message": "贝露"
+      }
+		]
+	}
+]

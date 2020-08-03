@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules/
+
+# IDE config
+.idea
+
+# output
+output/
+output.tar.gz
+
+runtime/
+app/
+
+config.development.js
+adapter.development.js
