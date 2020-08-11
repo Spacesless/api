@@ -6,75 +6,109 @@ module.exports = class extends Base {
   async disstsAction() {
     const qquin = this.get('qquin');
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';
-    await axios.get(
-      APIURL,
-      {
-        headers: {
-          host: 'c.y.qq.com',
-          referer: 'https://y.qq.com/'
-        },
-        params: {
-          hostuin: qquin,
-          sin: 0,
-          size: 40,
-          r: 1571120577356,
-          g_tk: 5381,
-          loginUin: 804093032,
-          hostUin: 0,
-          format: 'json',
-          inCharset: 'utf8',
-          outCharset: 'utf-8',
-          notice: 0,
-          platform: 'yqq.json',
-          needNewCode: 0
-        }
+    await axios.get(APIURL, {
+      headers: {
+        host: 'c.y.qq.com',
+        referer: 'https://y.qq.com/'
+      },
+      params: {
+        hostuin: qquin,
+        sin: 0,
+        size: 40,
+        r: 1571120577356,
+        g_tk: 5381,
+        loginUin: 804093032,
+        hostUin: 0,
+        format: 'json',
+        inCharset: 'utf8',
+        outCharset: 'utf-8',
+        notice: 0,
+        platform: 'yqq.json',
+        needNewCode: 0
       }
-    ).then(response => {
-      return this.success(response.data);
+    }).then(response => {
+      return this.success(response.data.data);
+    }).catch(error => {
+      return this.fail(error);
     });
   }
 
   async listsAction() {
     const { disstid } = this.get();
     const APIURL = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg';
-    await axios.get(
-      APIURL,
-      {
-        headers: {
-          host: 'c.y.qq.com',
-          referer: 'https://y.qq.com/'
-        },
-        params: {
-          type: 1,
-          json: 1,
-          utf8: 1,
-          onlysong: 0,
-          disstid,
-          g_tk: 1745555300,
-          loginUin: 804093032,
-          hostUin: 0,
-          format: 'json',
-          inCharset: 'urf8',
-          outCharset: 'utf-8',
-          notice: 0,
-          platform: 'yqq.json',
-          needNewCode: 0
-        }
+    await axios.get(APIURL, {
+      headers: {
+        host: 'c.y.qq.com',
+        referer: 'https://y.qq.com/'
+      },
+      params: {
+        type: 1,
+        json: 1,
+        utf8: 1,
+        onlysong: 0,
+        disstid,
+        g_tk: 1745555300,
+        loginUin: 804093032,
+        hostUin: 0,
+        format: 'json',
+        inCharset: 'urf8',
+        outCharset: 'utf-8',
+        notice: 0,
+        platform: 'yqq.json',
+        needNewCode: 0
       }
-    ).then(response => {
+    }).then(response => {
       const fetch = response.data;
       if (fetch.code !== 0) return this.fail();
       const cdlist = fetch.cdlist ? fetch.cdlist[0] : [];
-      const { disstid, dissname, logo, desc, tags, songnum, songlist } = cdlist;
+      const { nickname, disstid, dissname, logo, desc, tags, songnum, songlist, visitnum } = cdlist;
       const lists = [];
       for (const item of songlist) {
-        const { albumdesc, albummid, albumname, interval, pay, singer, songmid, songname, songorig } = item;
-        lists.push({ albumdesc, albummid, albumname, interval, pay, singer, songmid, songname, songorig });
+        const { albumdesc, albumid, albummid, albumname, interval, pay, singer, songmid, songname, songorig } = item;
+        lists.push({ albumdesc, albumid, albummid, albumname, interval, pay, singer, songmid, songname, songorig });
       }
       const result = {
-        disstid, dissname, logo, desc, tags, songnum, songlist: lists
+        nickname, disstid, dissname, logo, desc, tags, songnum, songlist: lists, visitnum
       };
       return this.success(result);
+    }).catch(error => {
+      return this.fail(error);
+    });
+  }
+
+  async searchAction() {
+    const { keyword, page, limit } = this.get();
+    const APIURL = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp';
+    await axios.get(APIURL, {
+      params: {
+        ct: 24,
+        qqmusic_ver: 1298,
+        new_json: 1,
+        remoteplace: 'txt.yqq.song',
+        searchid: 54551315998285841,
+        t: 0,
+        aggr: 1,
+        cr: 1,
+        catZhida: 1,
+        lossless: 0,
+        flag_qc: 0,
+        p: page,
+        n: limit,
+        w: keyword,
+        g_tk: 5381,
+        loginUin: 804093032,
+        hostUin: 0,
+        format: 'json',
+        inCharset: 'utf8',
+        outCharset: 'utf-8',
+        notice: 0,
+        platform: 'yqq.json',
+        needNewCode: 0
+      }
+    }).then(response => {
+      return this.success(response.data.data);
+    }).catch(error => {
+      return this.fail(error);
     });
   }
 
@@ -86,7 +120,7 @@ module.exports = class extends Base {
         module: 'CDN.SrfCdnDispatchServer',
         method: 'GetCdnDispatch',
         param: {
-          guid: '95350356',
+          guid: '5768351945',
           calltype: 0,
           userip: ''
         }
@@ -95,7 +129,7 @@ module.exports = class extends Base {
         module: 'vkey.GetVkeyServer',
         method: 'CgiGetVkey',
         param: {
-          guid: '95350356',
+          guid: '5768351945',
           songmid: songmid.split(','),
           songtype: [0],
           uin: '804093032',
@@ -110,29 +144,21 @@ module.exports = class extends Base {
         cv: 0
       }
     };
-    await axios.get(
-      APIURL,
-      {
-        headers: {
-          'origin': 'https://y.qq.com',
-          'referer': 'https://y.qq.com/portal/player.html',
-          'Sec-Fetch-Mode': 'cors'
-        },
-        params: {
-          '-': 'getplaysongvkey0024833456325026315',
-          g_tk: 5381,
-          loginUin: 804093032,
-          hostUin: 0,
-          format: 'json',
-          inCharset: 'utf8',
-          outCharset: 'utf-8',
-          notice: 0,
-          platform: 'yqq.json',
-          needNewCode: 0,
-          data: JSON.stringify(postData)
-        }
+    await axios.get(APIURL, {
+      params: {
+        '-': 'getplaysongvkey36597529893735015',
+        g_tk: 5381,
+        loginUin: 804093032,
+        hostUin: 0,
+        format: 'json',
+        inCharset: 'utf8',
+        outCharset: 'utf-8',
+        notice: 0,
+        platform: 'yqq.json',
+        needNewCode: 0,
+        data: JSON.stringify(postData)
       }
-    ).then(response => {
+    }).then(response => {
       const fetch = response.data;
       if (fetch.code !== 0) return this.fail();
       const req = fetch.req_0.data;
@@ -147,43 +173,44 @@ module.exports = class extends Base {
         lists
       };
       return this.success(result);
+    }).catch(error => {
+      return this.fail(error);
     });
   }
 
   async lyricAction() {
     const { songmid } = this.get();
     const APIURL = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg';
-    await axios.get(
-      APIURL,
-      {
-        headers: {
-          host: 'c.y.qq.com',
-          referer: 'https://y.qq.com/'
-        },
-        params: {
-          callback: 'MusicJsonCallback_lrc',
-          pcachetime: 1541571462413,
-          songmid,
-          g_tk: 5381,
-          jsonpCallback: 'MusicJsonCallback_lrc',
-          loginUin: 0,
-          hostUin: 0,
-          format: 'jsonp',
-          inCharset: 'utf8',
-          outCharset: 'utf-8',
-          notice: 0,
-          platform: 'yqq',
-          needNewCode: 0
-        }
+    await axios.get(APIURL, {
+      headers: {
+        host: 'c.y.qq.com',
+        referer: 'https://y.qq.com/'
+      },
+      params: {
+        callback: 'MusicJsonCallback_lrc',
+        pcachetime: 1541571462413,
+        songmid,
+        g_tk: 5381,
+        jsonpCallback: 'MusicJsonCallback_lrc',
+        loginUin: 0,
+        hostUin: 0,
+        format: 'jsonp',
+        inCharset: 'utf8',
+        outCharset: 'utf-8',
+        notice: 0,
+        platform: 'yqq',
+        needNewCode: 0
       }
-    ).then(response => {
+    }).then(response => {
       let res = response.data;
       const start = res.indexOf('{');
       const end = res.lastIndexOf(')');
       res = JSON.parse(res.substring(start, end));
       res.lyric = Base64.decode(res.lyric);
-      res.translate = Base64.decode(res.trans);
+      res.trans = Base64.decode(res.trans);
       return this.success(res);
+    }).catch(error => {
+      return this.fail(error);
     });
   }
 };

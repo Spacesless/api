@@ -4,10 +4,10 @@ const url = require('url');
 const fs = require('fs-extra');
 
 module.exports = class extends Base {
-  __before() {
+  async __before() {
     super.__before();
-    this.basePath = path.join(think.ROOT_PATH, '/www/model');
-    this.modelLists = this.getList();
+    this.basePath = path.join(think.ASSETS_PATH, '/model');
+    this.modelLists = await this.getList();
   }
 
   async getList() {
@@ -16,13 +16,9 @@ module.exports = class extends Base {
     let modelLists = [];
     modelJson.forEach(item => {
       if (think.isEmpty(item.children) && item.path) {
-        const { id, name, models } = item;
-        modelLists.push({ id, name, models });
+        modelLists.push(item);
       } else {
-        const childs = item.children.map(child => {
-          const { id, name, models } = child;
-          return { id, name, models };
-        });
+        const childs = item.children.map(child => child);
         modelLists = modelLists.concat(childs);
       }
     });
@@ -32,20 +28,28 @@ module.exports = class extends Base {
   replaceUrl(source, target) {
     const relative = url.resolve(source.replace(this.basePath, '../model') + '/', target);
     return relative;
-    // return `http://cos.timelessq.com${relative}`;
   }
 
-  async getTextures(modelDir, texture) {
-    const texturesJson = await fs.readJson(path.join(modelDir, 'textures_list.json'));
-    let _textures = texturesJson[texture - 1] || [];
+  async getTextures(modelDir, texture, isMixins) {
+    const randomPath = path.join(modelDir, 'random_list.json');
+    const switchPath = path.join(modelDir, 'switch_list.json');
+    let texturesJson;
+    if (+isMixins) {
+      if (think.isExist(randomPath)) {
+        texturesJson = await fs.readJson(randomPath);
+      }
+    } else {
+      if (think.isExist(switchPath)) {
+        texturesJson = await fs.readJson(switchPath);
+      }
+    }
+    const _textures = texturesJson ? texturesJson[texture - 1] : [];
     if (think.isArray(_textures)) {
       return _textures.map(item => {
-        item = this.ctx.isSuportWebp ? item.replace('.png', '.webp') : item;
         return this.replaceUrl(modelDir, `assets/${item}`);
       });
     } else {
-      _textures = this.ctx.isSuportWebp ? _textures.replace('.png', '.webp') : _textures;
-      return this.replaceUrl(modelDir, `assets/${_textures}`);
+      return [this.replaceUrl(modelDir, `assets/${_textures}`)];
     }
   }
 };

@@ -3,15 +3,9 @@ const path = require('path');
 const fs = require('fs-extra');
 
 module.exports = class extends Base {
-  constructor(...arg) {
-    super(...arg);
-    this.baseurl = path.join(think.ROOT_PATH, 'www');
-  }
-
   async indexAction() {
-    console.log(this.ctx.header);
     const { keyword } = this.get();
-    const garbages = await fs.readJson(path.join(this.baseurl, 'garbage.json'));
+    const garbages = await fs.readJson(path.join(think.ASSETS_PATH, 'garbage.json'));
     const finds = garbages.filter(item => item.name.includes(keyword));
     const categroysMap = {
       1: '可回收物',

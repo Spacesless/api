@@ -6,12 +6,11 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ROOT_PATH, 'www');
     this.licenses = [];
   }
 
   async __before() {
-    const jsonPath = path.join(this.baseurl, 'license.json');
+    const jsonPath = path.join(think.ASSETS_PATH, 'license.json');
     const isExist = think.isExist(jsonPath);
     this.licenses = isExist ? await fs.readJson(jsonPath) : this.formatToJson();
   }
@@ -24,7 +23,7 @@ module.exports = class extends Base {
 
   formatToJson() {
     // 解析得到文档中的所有 sheet
-    const sheets = xlsx.parse(path.join(this.baseurl, 'xlsx', 'chepaihao.xlsx'));
+    const sheets = xlsx.parse(path.join(think.ASSETS_PATH, '/xlsx', 'chepaihao.xlsx'));
     const temp = [];
     // 遍历 sheet
     sheets.forEach(sheet => {
@@ -40,7 +39,7 @@ module.exports = class extends Base {
         temp.push(format);
       }
     });
-    fs.writeJsonSync(path.join(this.baseurl, 'license.json'), temp);
+    fs.writeJsonSync(path.join(think.ASSETS_PATH, 'license.json'), temp);
     return temp;
   }
 };

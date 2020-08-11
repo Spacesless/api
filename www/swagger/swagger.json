@@ -3,9 +3,9 @@
   "info": {
     "description": "",
     "version": "1.0.0",
-    "title": "Timeless Api",
+    "title": "Swagger Petstore",
     "contact": {
-      "email": "804093032@qq.com"
+      "email": "apiteam@swagger.io"
     },
     "license": {
       "name": "Apache 2.0",
@@ -17,27 +17,27 @@
   "tags": [
     {
       "name": "cascade",
-      "description": "中国五级行政区域"
+      "description": "Access to Petstore orders"
     },
     {
       "name": "garbage",
-      "description": "垃圾分类"
+      "description": "Operations about user"
     },
     {
       "name": "license",
-      "description": "车牌号查询"
+      "description": "Operations about user"
     },
     {
       "name": "music",
-      "description": "QQ音乐"
+      "description": "Everything about your Pets"
     },
     {
       "name": "postalcode",
-      "description": "邮编查询"
+      "description": "Everything about your Pets"
     },
     {
       "name": "time",
-      "description": "时间"
+      "description": "Everything about your Pets"
     }
   ],
   "schemes": [
@@ -50,8 +50,8 @@
         "tags": [
           "cascade"
         ],
-        "summary": "根据联动等级查找",
-        "description": "获取二、三、四级联动数据",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -59,7 +59,7 @@
           {
             "name": "level",
             "in": "query",
-            "description": "联动等级",
+            "description": "Status values that need to be considered for filter",
             "required": true,
             "type": "string"
           }
@@ -79,8 +79,8 @@
         "tags": [
           "cascade"
         ],
-        "summary": "根据地区编号查找",
-        "description": "地区编号",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -88,7 +88,7 @@
           {
             "name": "code",
             "in": "query",
-            "description": "地区编号",
+            "description": "Status values that need to be considered for filter",
             "type": "string"
           }
         ],
@@ -107,8 +107,8 @@
         "tags": [
           "cascade"
         ],
-        "summary": "搜索",
-        "description": "根据地区名称、地区编号查找",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -116,7 +116,7 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "地区名称、地区编号",
+            "description": "Status values that need to be considered for filter",
             "type": "string"
           }
         ],
@@ -135,8 +135,8 @@
         "tags": [
           "garbage"
         ],
-        "summary": "根据垃圾名称关键字查找",
-        "description": "查询垃圾分类信息",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -144,7 +144,7 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "垃圾名称关键字",
+            "description": "Status values that need to be considered for filter",
             "type": "string"
           }
         ],
@@ -163,8 +163,8 @@
         "tags": [
           "license"
         ],
-        "summary": "",
-        "description": "根据省份名称、简称，城市名查车牌号，根据车牌号查找城市信息",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -172,7 +172,7 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "关键词",
+            "description": "Status values that need to be considered for filter",
             "type": "string"
           }
         ],
@@ -191,8 +191,8 @@
         "tags": [
           "postalcode"
         ],
-        "summary": "",
-        "description": "根据地区、省份、城市查找邮政编码",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -200,7 +200,7 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "省份、城市",
+            "description": "Status values that need to be considered for filter",
             "type": "string"
           }
         ],
@@ -219,8 +219,8 @@
         "tags": [
           "music"
         ],
-        "summary": "根据QQ号获取歌单",
-        "description": "只支持QQ音乐的查询",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -228,7 +228,7 @@
           {
             "name": "qquin",
             "in": "query",
-            "description": "QQ号码",
+            "description": "Status values that need to be considered for filter",
             "required": true,
             "type": "string"
           }
@@ -254,8 +254,8 @@
         "tags": [
           "music"
         ],
-        "summary": "根据歌单id查找歌单列表",
-        "description": "",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -263,7 +263,7 @@
           {
             "name": "disstid",
             "in": "query",
-            "description": "歌单id",
+            "description": "Status values that need to be considered for filter",
             "required": true,
             "type": "string"
           }
@@ -283,8 +283,8 @@
         "tags": [
           "music"
         ],
-        "summary": "根据歌曲id获取音乐文件地址以及key",
-        "description": "部分要版权的歌曲可能获取不到",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -292,7 +292,7 @@
           {
             "name": "songmid",
             "in": "query",
-            "description": "歌曲id",
+            "description": "Status values that need to be considered for filter",
             "required": true,
             "type": "string"
           }
@@ -312,8 +312,8 @@
         "tags": [
           "music"
         ],
-        "summary": "根据歌曲id获取歌词",
-        "description": "",
+        "summary": "Finds Pets by status",
+        "description": "Multiple status values can be provided with comma separated strings",
         "produces": [
           "application/json"
         ],
@@ -321,30 +321,10 @@
           {
             "name": "songmid",
             "in": "query",
-            "description": "歌曲id",
+            "description": "Status values that need to be considered for filter",
             "required": true,
             "type": "string"
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/time": {
-      "get": {
-        "tags": [
-          "time"
-        ],
-        "summary": "获取当前时间的信息",
-        "description": "",
-        "produces": [
-          "application/json"
         ],
         "responses": {
           "200": {

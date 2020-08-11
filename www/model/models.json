@@ -7,13 +7,15 @@
 				"id": 10,
 				"name": "22娘",
 				"models": "bilibili/22",
-				"message": "来自 Bilibili Live 的 22 哦 ~"
+				"message": "来自 Bilibili Live 的 22 哦 ~",
+				"from": "https://github.com/xb2016/poster-girl-l2d-2233"
 			},
 			{
 				"id": 11,
 				"name": "33娘",
 				"models": "bilibili/33",
-				"message": "来自 Bilibili Live 的 33 的说"
+				"message": "来自 Bilibili Live 的 33 的说",
+				"from": "https://github.com/xb2016/poster-girl-l2d-2233"
 			}
 		]
 	},
@@ -25,13 +27,15 @@
 				"id": 20,
 				"name": "Pio酱",
 				"models": "potion-maker/Pio",
-				"message": "来自 Potion Maker 的 Pio 酱 ~"
+				"message": "来自 Potion Maker 的 Pio 酱 ~",
+				"from": "https://www.fghrsh.net/post/123.html"
 			},
 			{
 				"id": 21,
 				"name": "Tia酱",
 				"models": "potion-maker/Tia",
-				"message": "来自 Potion Maker 的 Tia 酱 ~"
+				"message": "来自 Potion Maker 的 Tia 酱 ~",
+				"from": "https://www.fghrsh.net/post/123.html"
 			}
 		]
 	},
@@ -47,7 +51,8 @@
           "neptune/blanc-classic",
           "neptune/blanc-swimwear"
 				],
-				"message": "普兰"
+				"message": "普兰",
+				"from": "https://www.fghrsh.net/post/123.html"
 			},
 			{
 				"id": 31,
@@ -55,7 +60,8 @@
 				"models": [
           "neptune/histoire"
         ],
-				"message": "伊斯特瓦尔"
+				"message": "伊斯特瓦尔",
+				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
 				"id": 32,
@@ -65,7 +71,8 @@
           "neptune/nepgear-extra",
           "neptune/nepgear-swimwear"
         ],
-				"message": "涅普姬雅"
+				"message": "涅普姬雅",
+				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
 				"id": 33,
@@ -75,7 +82,8 @@
           "neptune/nepnep-maid",
           "neptune/nepnep-swimwear"
         ],
-				"message": ""
+				"message": "",
+				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
 				"id": 34,
@@ -84,7 +92,8 @@
           "neptune/neptune-classic",
           "neptune/neptune-santa"
         ],
-				"message": "涅普提努"
+				"message": "涅普提努",
+				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
 				"id": 35,
@@ -95,7 +104,8 @@
           "neptune/noire-santa",
           "neptune/noire-swimwear"
         ],
-				"message": "诺瓦露"
+				"message": "诺瓦露",
+				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
 				"id": 36,
@@ -105,7 +115,8 @@
           "neptune/vert-classic",
           "neptune/vert-swimwear"
         ],
-				"message": "贝露"
+				"message": "贝露",
+				"from": "https://www.fghrsh.net/post/123.html"
       }
 		]
 	}
