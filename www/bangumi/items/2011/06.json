@@ -1,0 +1,191 @@
+[
+  {
+    "title": "アップルシード XIII",
+    "titleTranslate": {
+      "en": [
+        "APPLESEED XIII"
+      ],
+      "zh-Hans": [
+        "苹果核战记XIII"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://appleseed13.jp/",
+    "begin": "2011-06-03T14:00:00.000Z",
+    "end": "2012-02-03T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "JXVPzTWbC0msKpI",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "44683",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10383"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch60024",
+        "begin": "2011-06-23T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "戦場のヴァルキュリア3 誰がための銃瘡",
+    "titleTranslate": {
+      "zh-Hans": [
+        "战场的女武神3 为了谁所受的枪伤"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://valkyria3-anime.sega.jp/",
+    "begin": "2011-06-29T16:00:00.000Z",
+    "end": "2011-06-29T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sic3HRa0Tg8Ekogo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10650"
+      }
+    ]
+  },
+  {
+    "title": "かよえ！チュー学",
+    "titleTranslate": {
+      "zh-Hans": [
+        "通通中学！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://tokai-tv.com/anime/19981231_anime_8352.php",
+    "begin": "2011-06-06T16:00:00.000Z",
+    "end": "2014-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "18293"
+      },
+      {
+        "site": "nicovideo",
+        "id": "kayochu",
+        "begin": "2011-10-07T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "トワノクオン 第一章 泡沫の花弁",
+    "titleTranslate": {
+      "zh-Hans": [
+        "永远之久远 第一章 泡沫的花瓣"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.towanoquon.com/",
+    "begin": "2011-06-18T16:00:00.000Z",
+    "end": "2011-06-18T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "13343"
+      },
+      {
+        "site": "letv",
+        "id": "46312",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "4472",
+        "begin": "2011-07-15T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "だぶるじぇい",
+    "titleTranslate": {
+      "zh-Hans": [
+        "JJ萌艺社"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2011-06-28T16:00:00.000Z",
+    "end": "2011-09-13T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "19134"
+      },
+      {
+        "site": "bilibili",
+        "id": "908",
+        "begin": "2011-06-27T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アマガミSS OVA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣诞之吻SS OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2011-06-11T16:00:00.000Z",
+    "end": "2011-08-05T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "18864"
+      },
+      {
+        "site": "bilibili",
+        "id": "3567",
+        "begin": "2011-06-10T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "戦国BASARA 劇場版 -The Last Party-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "战国BASARA 剧场版 -The Last Party-"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.basara-movie2011.com/main.html",
+    "begin": "2011-06-04T16:00:00.000Z",
+    "end": "2011-06-04T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "15395"
+      },
+      {
+        "site": "bilibili",
+        "id": "3573",
+        "begin": "2011-06-03T16:00:00.000Z"
+      }
+    ]
+  }
+]

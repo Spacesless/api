@@ -1,0 +1,85 @@
+[
+  {
+    "title": "宇宙の騎士テッカマンブレード",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙骑士BLADE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://king-cr.jp/special/tekkaman/",
+    "begin": "1992-02-18T16:00:00.000Z",
+    "end": "1993-01-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "MRvmZMwyouBDwSk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2481"
+      },
+      {
+        "site": "letv",
+        "id": "29255",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "伝説の勇者ダ・ガーン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "勇者传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1992-02-08T16:00:00.000Z",
+    "end": "1993-01-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "svfRT7cdjcsurBQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "x/xfbopppqn90fq4l",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37247"
+      },
+      {
+        "site": "bilibili",
+        "id": "2340",
+        "begin": "1992-02-08T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "銀河英雄伝説 黄金の翼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河英雄传说 黄金之翼"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1992-02-12T16:00:00.000Z",
+    "end": "1992-02-12T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "39532"
+      }
+    ]
+  }
+]

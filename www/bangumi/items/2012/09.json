@@ -1,0 +1,347 @@
+[
+  {
+    "title": "バトルスピリッツ ソードアイズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "战斗之魂 Sword Eyes"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nagoyatv.com/battlespirits_sword/",
+    "begin": "2012-09-08T22:00:00.000Z",
+    "end": "2013-09-07T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icnVf3UWrG1m8OqI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "45337"
+      }
+    ]
+  },
+  {
+    "title": "新世界より",
+    "titleTranslate": {
+      "en": [
+        "From The New World"
+      ],
+      "zh-Hans": [
+        "来自新世界"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-asahi.co.jp/shinsekaiyori/",
+    "begin": "2012-09-28T15:30:00.000Z",
+    "end": "2013-03-22T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "yzAMiavJYyAZp508",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjqp109",
+        "begin": "2014-09-12T06:41:31.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "81938",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37785"
+      },
+      {
+        "site": "nicovideo",
+        "id": "shinsekaiyori",
+        "begin": "2012-10-04T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1598",
+        "begin": "2012-09-27T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "r/r9r36ir1vwxdvpo",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "たまごっち！ゆめキラドリーム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "拓麻歌子！ Yume Kira Dream"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/tamagotchi/",
+    "begin": "2012-09-10T10:00:00.000Z",
+    "end": "2013-08-29T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84055"
+      }
+    ]
+  },
+  {
+    "title": "緋色の欠片 第二章",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绯色的欠片 第二章"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hiironokakera.tv/",
+    "begin": "2012-09-30T13:00:00.000Z",
+    "end": "2012-12-23T13:27:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "4RbycNgibruxPzTU",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "81939",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "43118"
+      },
+      {
+        "site": "bilibili",
+        "id": "743",
+        "begin": "2012-09-29T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アクセル・ワールド -銀翼の覚醒-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "加速世界 -银翼的觉醒-"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://accel-world-game.channel.or.jp/",
+    "begin": "2012-09-13T16:00:00.000Z",
+    "end": "2012-09-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Klslowtx4RibCAGg",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "81965",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "48997"
+      },
+      {
+        "site": "bilibili",
+        "id": "3487",
+        "begin": "2012-09-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アシュラ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿修罗"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://asura-movie.com/",
+    "begin": "2012-09-29T16:00:00.000Z",
+    "end": "2012-09-29T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "87629",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "32817"
+      },
+      {
+        "site": "nicovideo",
+        "id": "asura-movie",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ごきチャ!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蟑螂娘"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2012-09-14T16:00:00.000Z",
+    "end": "2012-09-14T16:20:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TbiaEAmrQQH7hX8c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "49057"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch60379",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "4473",
+        "begin": "2012-09-13T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "僕は友達が少ない あどおんでぃすく",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的朋友很少 Add-on disk"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2012-09-26T16:00:00.000Z",
+    "end": "2012-09-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "39699"
+      }
+    ]
+  },
+  {
+    "title": "中二病でも恋がしたい！Lite",
+    "titleTranslate": {
+      "zh-Hans": [
+        "中二病也要谈恋爱！Lite"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.anime-chu-2.com/tv/",
+    "begin": "2012-09-27T16:00:00.000Z",
+    "end": "2012-11-01T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "50331"
+      },
+      {
+        "site": "bilibili",
+        "id": "10192",
+        "begin": "2012-09-26T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "TIGER &amp; BUNNY -The Beginning-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "老虎和兔子：诞生"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.tigerandbunny.net/",
+    "begin": "2012-09-22T16:00:00.000Z",
+    "end": "2012-09-22T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "26013"
+      },
+      {
+        "site": "bilibili",
+        "id": "4464",
+        "begin": "2012-09-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "端ノ向フ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "桥的那一边"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://iyasakado.com/works",
+    "begin": "2012-09-21T16:00:00.000Z",
+    "end": "2012-09-21T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "109606"
+      },
+      {
+        "site": "bilibili",
+        "id": "4467",
+        "begin": "2012-09-20T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "お願い!アインツベルン相談室",
+    "titleTranslate": {
+      "zh-Hans": [
+        "拜托了 爱因兹贝伦咨询室"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2012-09-19T16:00:00.000Z",
+    "end": "2012-09-19T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "49619"
+      },
+      {
+        "site": "bilibili",
+        "id": "4471",
+        "begin": "2012-09-18T16:00:00.000Z"
+      }
+    ]
+  }
+]

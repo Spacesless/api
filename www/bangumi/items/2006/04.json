@@ -1,0 +1,1763 @@
+[
+  {
+    "title": "うたわれるもの",
+    "titleTranslate": {
+      "zh-Hans": [
+        "传颂之物"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.imagicatv.jp/content/utaware/index.html",
+    "begin": "2006-04-03T17:40:00.000Z",
+    "end": "2006-09-25T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "h59q6FC2JmTHRa0",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "l/lg7cgeun8f09agt",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1044"
+      },
+      {
+        "site": "nicovideo",
+        "id": "utawarerumono",
+        "begin": "2015-10-15T06:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7srvp",
+        "begin": "2017-06-14T16:17:40.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1388",
+        "begin": "2006-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ひぐらしのなく頃に",
+    "titleTranslate": {
+      "zh-Hans": [
+        "寒蝉鸣泣之时"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.oyashirosama.com/web/top/index.htm",
+    "begin": "2006-04-04T17:35:00.000Z",
+    "end": "2006-09-26T18:15:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "7/70bhsvctwwo7jta",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "289"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oyashirosama",
+        "begin": "2016-08-23T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "魔界戦記ディスガイア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔界战记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://disgaea.jp/akaitsuki/index.html",
+    "begin": "2006-04-04T15:15:00.000Z",
+    "end": "2006-06-20T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "5iagUkvpg0A5x71c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2158"
+      },
+      {
+        "site": "letv",
+        "id": "18491",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1390",
+        "begin": "2006-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "いぬかみっ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "犬神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/inukami/",
+    "begin": "2006-04-05T16:00:00.000Z",
+    "end": "2006-09-27T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qOLeXMQqmtg7uSE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "1/1z6104o1qv6nhbl",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3422"
+      }
+    ]
+  },
+  {
+    "title": "xxxHOLiC",
+    "titleTranslate": {
+      "zh-Hans": [
+        "xxxHOLiC",
+        "四月一日灵异事件簿"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/holic/",
+    "begin": "2006-04-06T16:25:00.000Z",
+    "end": "2013-01-20T19:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sppl40uxIVicCQKg",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "c/cwqxu4w648cpkbu",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1239",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2439"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7ks0d",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "女子高生 GIRL'S-HIGH",
+    "titleTranslate": {
+      "zh-Hans": [
+        "女子高中生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.girls-high.net/",
+    "begin": "2006-04-03T16:30:00.000Z",
+    "end": "2006-06-19T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "5881"
+      }
+    ]
+  },
+  {
+    "title": "砂沙美☆魔法少女クラブ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "砂沙美魔法少女俱乐部"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/sasami-club/",
+    "begin": "2006-04-13T09:00:00.000Z",
+    "end": "2006-07-13T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ibEdCwCiaOicjyfHYU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "106297"
+      }
+    ]
+  },
+  {
+    "title": "吉永さん家のガーゴイル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "吉永家的石像怪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://trinet.cata.jp/garkun/",
+    "begin": "2006-04-01T17:05:00.000Z",
+    "end": "2006-06-24T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Y6yYFn7kVJL1c9s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "25369"
+      }
+    ]
+  },
+  {
+    "title": "RAY THE ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "怪医美女RAY"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hicbc.com/tv/ray/index.htm",
+    "begin": "2006-04-05T17:15:00.000Z",
+    "end": "2006-06-28T17:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "O3RQzjacDEqtK5M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "20529"
+      },
+      {
+        "site": "letv",
+        "id": "42483",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1482",
+        "begin": "2006-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ああっ女神さまっ それぞれの翼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的女神 缤纷之翼"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/megamisama/megami2/index-j.html",
+    "begin": "2006-04-06T16:55:00.000Z",
+    "end": "2014-08-11T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Rt6pJ4ic1ZaMGhOw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "d/dshcqhalk3nfoin",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9605"
+      },
+      {
+        "site": "bilibili",
+        "id": "1449",
+        "begin": "2006-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "桜蘭高校ホスト部",
+    "titleTranslate": {
+      "zh-Hans": [
+        "樱兰高校男公关部"
+      ],
+      "en": [
+        "Ouran High School Host Club"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/host/",
+    "begin": "2006-04-04T16:10:00.000Z",
+    "end": "2006-09-26T16:50:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KQ34dt5EtPJV0zs",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "49316",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1487"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hostbu",
+        "begin": "2014-04-15T06:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70205014",
+        "begin": "2017-04-01T07:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "t/tk0zxq4ahcvhzlx",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh6jf75",
+        "begin": "2018-05-31T16:00:13.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1407",
+        "begin": "2006-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ひまわりっ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "向日葵！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/himawari/",
+    "begin": "2006-04-08T15:30:00.000Z",
+    "end": "2006-07-01T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KBnkYsowoN5Bvyc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "21099"
+      }
+    ]
+  },
+  {
+    "title": "ZEGAPAIN -ゼーガペイン-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "ZEGAPAIN"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.zegapain.net/tv/",
+    "begin": "2006-04-06T09:00:00.000Z",
+    "end": "2006-09-28T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "f7GLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1147"
+      },
+      {
+        "site": "bilibili",
+        "id": "1445",
+        "begin": "2006-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "彩雲国物語",
+    "titleTranslate": {
+      "zh-Hans": [
+        "彩云国物语",
+        "彩云国物语 第1季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/saiunkoku/",
+    "begin": "2006-04-08T00:00:00.000Z",
+    "end": "2007-02-24T00:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "zmhT0TmfD02wLpY",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhc0095",
+        "begin": "2014-11-06T09:32:13.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "14691",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "109715",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2010"
+      },
+      {
+        "site": "qq",
+        "id": "7/7s5vctchzm87gd3",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1299",
+        "begin": "2006-04-07T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc003428962411de83b1",
+        "begin": "2011-09-02T11:43:04.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ウィッチブレイド",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔女之刃"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gonzo.co.jp/archives/witchblade/",
+    "begin": "2006-04-05T16:45:00.000Z",
+    "end": "2006-09-20T17:15:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2939"
+      }
+    ]
+  },
+  {
+    "title": "BLACK LAGOON",
+    "titleTranslate": {
+      "zh-Hans": [
+        "黑礁"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.blacklagoon.jp/",
+    "begin": "2006-04-08T17:35:00.000Z",
+    "end": "2006-06-24T18:05:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "979"
+      },
+      {
+        "site": "nicovideo",
+        "id": "blacklagoon",
+        "begin": "2011-10-13T15:30:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1379",
+        "begin": "2006-04-07T16:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70308852",
+        "begin": "2017-11-29T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ラブゲッCHU ～ミラクル声優白書～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "声优白皮书"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/get-chu/",
+    "begin": "2006-04-04T16:30:00.000Z",
+    "end": "2006-09-26T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "wm9a2ECmFlS3NZ0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "11728"
+      }
+    ]
+  },
+  {
+    "title": "錬金３級 まじかる？ぽか～ん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "炼金三级魔法少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://character.biglobe.ne.jp/special/magipoka/",
+    "begin": "2006-04-04T16:30:00.000Z",
+    "end": "2006-06-20T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3RTwbtY8rOpNyzM",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7993"
+      }
+    ]
+  },
+  {
+    "title": "Soul Link",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魂链"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.gunghoworks.jp/visual/soullink/",
+    "begin": "2006-04-01T16:35:00.000Z",
+    "end": "2006-06-24T17:05:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KmVf3UWrG1m8OqI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2408"
+      },
+      {
+        "site": "bilibili",
+        "id": "1474",
+        "begin": "2006-04-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ストロベリー・パニック",
+    "titleTranslate": {
+      "en": [
+        "Strawberry Panic"
+      ],
+      "zh-Hans": [
+        "惊爆草莓"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/strawberrypanic/",
+    "begin": "2006-04-03T17:45:00.000Z",
+    "end": "2006-09-25T18:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "pObiaYMguntwicvSU",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "v/vdno40uxgrecfdh",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "23612",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2813"
+      },
+      {
+        "site": "bilibili",
+        "id": "1389",
+        "begin": "2006-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "西の善き魔女 Astraea Testament",
+    "titleTranslate": {
+      "zh-Hans": [
+        "西方善魔女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.imagicatv.jp/content/project-westwitch/index.html",
+    "begin": "2006-04-07T16:45:00.000Z",
+    "end": "2006-06-30T17:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "4k45txibF9TOWFHw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3652"
+      }
+    ]
+  },
+  {
+    "title": "きらりん☆レボリューション",
+    "titleTranslate": {
+      "zh-Hans": [
+        "偶像宣言"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/kirarevo/",
+    "begin": "2006-04-07T09:00:00.000Z",
+    "end": "2008-03-28T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Ya2XFX3jU5H0cto",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "49559"
+      }
+    ]
+  },
+  {
+    "title": "スクールランブル二学期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "校园迷糊大王 二学期",
+        "喧嚣学院 二学期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/school-rumble/index02.html",
+    "begin": "2006-04-02T16:36:00.000Z",
+    "end": "2006-09-24T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1HZRzzedDUuuLJQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "l/l6sbyahngnqf03u",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1878"
+      },
+      {
+        "site": "letv",
+        "id": "80318",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3750",
+        "begin": "2006-04-01T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "夢使い",
+    "titleTranslate": {
+      "zh-Hans": [
+        "梦使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.yumetsukai.com/",
+    "begin": "2006-04-08T17:30:00.000Z",
+    "end": "2006-06-24T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "7621"
+      }
+    ]
+  },
+  {
+    "title": "姫様ご用心",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小心啊公主",
+        "公主请小心"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.himehime.jp/",
+    "begin": "2006-04-12T15:00:00.000Z",
+    "end": "2006-07-19T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "uoF8ibmLIOHbZV78",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3496"
+      },
+      {
+        "site": "letv",
+        "id": "13095",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "牙-KIBA-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "牙 -KIBA-"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ki-ba.com/",
+    "begin": "2006-04-01T23:30:00.000Z",
+    "end": "2007-03-25T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "dMSicPaULe7kcmgI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9426"
+      },
+      {
+        "site": "bilibili",
+        "id": "1813",
+        "begin": "2006-04-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ガラスの艦隊",
+    "titleTranslate": {
+      "zh-Hans": [
+        "玻璃舰队"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gonzo.co.jp/archives/garakan/",
+    "begin": "2006-04-04T17:40:00.000Z",
+    "end": "2006-09-21T18:16:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Y8q1M5sBca8SkPg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1920"
+      },
+      {
+        "site": "bilibili",
+        "id": "1469",
+        "begin": "2006-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "妖逆門",
+    "titleTranslate": {
+      "zh-Hans": [
+        "妖逆门"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/bakegyamon/",
+    "begin": "2006-04-03T09:00:00.000Z",
+    "end": "2007-03-26T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "iczIOjPRayghr6VE",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk4e56l",
+        "begin": "2012-11-30T16:00:37.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "58916"
+      }
+    ]
+  },
+  {
+    "title": "シムーン",
+    "titleTranslate": {
+      "en": [
+        "SIMOUN"
+      ],
+      "zh-Hans": [
+        "西蒙"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.simoun.tv/",
+    "begin": "2006-04-03T17:00:00.000Z",
+    "end": "2006-09-25T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7SQgngZs3Bp9ib2M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3755"
+      },
+      {
+        "site": "bilibili",
+        "id": "1461",
+        "begin": "2006-04-03T17:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "k/kktrc37hj7bxfqb",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "獣王星",
+    "titleTranslate": {
+      "zh-Hans": [
+        "兽王星"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://jyu-oh-sei.com/",
+    "begin": "2006-04-13T16:00:00.000Z",
+    "end": "2006-06-22T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sJxn5U2zI2HEQqo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1986"
+      },
+      {
+        "site": "bilibili",
+        "id": "1460",
+        "begin": "2006-04-12T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "14781",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "涼宮ハルヒの憂鬱",
+    "titleTranslate": {
+      "zh-Hans": [
+        "凉宫春日的忧郁"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.haruhi.tv/",
+    "begin": "2006-04-02T15:00:00.000Z",
+    "end": "2006-07-02T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "c/c5o6rkf5q2pc2f6",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "9986",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "485"
+      }
+    ]
+  },
+  {
+    "title": "デジモンセイバーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码兽拯救者",
+        "数码宝贝05 拯救者"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/digimon_s/",
+    "begin": "2006-04-02T00:00:00.000Z",
+    "end": "2007-03-25T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1dad",
+        "begin": "2015-08-17T03:19:59.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3132"
+      }
+    ]
+  },
+  {
+    "title": "TOKKO 特公",
+    "titleTranslate": {
+      "zh-Hans": [
+        "TOKKO 特公"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/tokko/",
+    "begin": "2006-04-15T15:30:00.000Z",
+    "end": "2006-07-29T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23160"
+      }
+    ]
+  },
+  {
+    "title": "NANA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "娜娜"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.s-nana.com/",
+    "begin": "2006-04-05T14:55:00.000Z",
+    "end": "2007-03-28T15:47:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "1382",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "486"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nana01",
+        "begin": "2015-03-13T06:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "1/1w5ifpxzdhkmn1j",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "銀魂",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银魂"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.j-gintama.com/",
+    "begin": "2006-04-10T08:30:00.000Z",
+    "end": "2010-03-25T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "247"
+      },
+      {
+        "site": "nicovideo",
+        "id": "gintama01",
+        "begin": "2015-04-17T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "しばわんこの和のこころ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "柴犬阿旺的和式生活"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hakusensha.co.jp/moe/book/com/shibawanko/index.html",
+    "begin": "2006-04-05T14:00:00.000Z",
+    "end": "2007-03-14T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "75943"
+      },
+      {
+        "site": "bilibili",
+        "id": "3255",
+        "begin": "2006-04-04T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ふしぎ星の☆ふたご姫 Gyu!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "双子星公主 Gyu"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://futagohime.jp/",
+    "begin": "2006-04-01T01:00:00.000Z",
+    "end": "2007-03-31T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "24356"
+      }
+    ]
+  },
+  {
+    "title": "ザ・サード ～蒼い瞳の少女～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "苍之瞳的少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kadokawa.co.jp/thethird/",
+    "begin": "2006-04-13T15:30:00.000Z",
+    "end": "2006-10-26T16:05:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0XNOzDSaCkiarKZE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3603"
+      },
+      {
+        "site": "bilibili",
+        "id": "1472",
+        "begin": "2006-04-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": ".hack//Roots",
+    "titleTranslate": {
+      "zh-Hans": [
+        ".hack//根源"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hack.channel.or.jp/roots/",
+    "begin": "2006-04-05T16:30:00.000Z",
+    "end": "2006-10-04T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1996"
+      },
+      {
+        "site": "qq",
+        "id": "j/juxi6n0bdysq74i",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "エア・ギア",
+    "titleTranslate": {
+      "en": [
+        "AIR GEAR"
+      ],
+      "zh-Hans": [
+        "飞轮少年"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/airgear/",
+    "begin": "2006-04-04T16:00:00.000Z",
+    "end": "2006-09-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CDALiafFXxwVo5k4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2469"
+      },
+      {
+        "site": "letv",
+        "id": "29089",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "妖怪人間ベム(2006)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "妖怪人间贝姆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.bem-tv.com/",
+    "begin": "2006-04-01T10:00:00.000Z",
+    "end": "2006-10-07T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "yQP9eibNJufda2EA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "35986"
+      }
+    ]
+  },
+  {
+    "title": "おねがい マイメロディ ～くるくるシャッフル！～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "奇幻魔法Melody 转转旋律魔法牌"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-osaka.co.jp/mymelo_kurukuru/",
+    "begin": "2006-04-02T00:30:00.000Z",
+    "end": "2007-03-25T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "192006"
+      }
+    ]
+  },
+  {
+    "title": "吉宗",
+    "titleTranslate": {
+      "zh-Hans": [
+        "吉宗"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.yoshimune-anime.com/index_content.html",
+    "begin": "2006-04-05T16:30:00.000Z",
+    "end": "2006-09-13T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "8jcRjicddzQtu7FQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "152654"
+      }
+    ]
+  },
+  {
+    "title": "格闘美神 武龍 REBIRTH",
+    "titleTranslate": {
+      "zh-Hans": [
+        "格斗美神 武龙 REBIRTH"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/wulong/",
+    "begin": "2006-04-01T15:55:00.000Z",
+    "end": "2006-09-30T16:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "106322"
+      }
+    ]
+  },
+  {
+    "title": "スパイダーライダーズ ～オラクルの勇者たち～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜘蛛骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/spiderriders/",
+    "begin": "2006-04-05T08:30:00.000Z",
+    "end": "2006-09-27T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "2RPta9M5qedKyDA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "100654"
+      }
+    ]
+  },
+  {
+    "title": "学園ヘヴン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "学园天堂"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gungho.jp/cgame/visual/heaven/",
+    "begin": "2006-04-01T00:00:00.000Z",
+    "end": "2006-06-24T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "VuLdW8Mpmdc6uCA",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "g/gam3y5luf0yp8be",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7370"
+      },
+      {
+        "site": "bilibili",
+        "id": "1466",
+        "begin": "2006-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ツバサ・クロニクル 第2シリーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "翼·年代记 第二部"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/tsubasa/",
+    "begin": "2006-04-29T09:25:00.000Z",
+    "end": "2006-11-04T09:50:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "JQH8euJIuPZZ1z8",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "k/k19h3z1ofm7wijx",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2892"
+      },
+      {
+        "site": "bilibili",
+        "id": "1464",
+        "begin": "2006-04-28T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10386",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgik7g1",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "リングにかけろ1 日米決戦編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "拳王创世纪1 日美决战篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/rin-kake1_vsUSA/",
+    "begin": "2006-04-06T17:40:00.000Z",
+    "end": "2006-06-22T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IGpW1DyiaElCzMZk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "75520"
+      },
+      {
+        "site": "bilibili",
+        "id": "1881",
+        "begin": "2006-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "THE FROGMAN SHOW",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秘密结社鹰之爪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kaeruotoko.com/",
+    "begin": "2006-04-05T17:40:00.000Z",
+    "end": "2006-06-14T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "35962"
+      }
+    ]
+  },
+  {
+    "title": "ブラック・ジャック21",
+    "titleTranslate": {
+      "zh-Hans": [
+        "怪医黑杰克21"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ytv.co.jp/bj/index.html",
+    "begin": "2006-04-10T10:00:00.000Z",
+    "end": "2006-09-04T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjtgg1x",
+        "begin": "2017-10-10T09:17:09.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "80918"
+      },
+      {
+        "site": "letv",
+        "id": "22703",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "アクビガール",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.akubigirl.com/",
+    "begin": "2006-04-02T09:10:00.000Z",
+    "end": "2006-09-10T22:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "106293"
+      }
+    ]
+  },
+  {
+    "title": "GUN道 MUSASHI",
+    "titleTranslate": {
+      "zh-Hans": [
+        "枪道MUSASHI"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.bs-i.co.jp/main/entertainment/show.php?0050",
+    "begin": "2006-04-09T00:30:00.000Z",
+    "end": "2006-10-08T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "35848"
+      }
+    ]
+  },
+  {
+    "title": "味楽る！ミミカ",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/mimika/index.html",
+    "begin": "2006-04-03T09:00:00.000Z",
+    "end": "2009-03-13T08:50:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "106295"
+      }
+    ]
+  },
+  {
+    "title": "戦慄のミラージュポケモン",
+    "titleTranslate": {
+      "en": [
+        "The Mastermind of Mirage Pokémon"
+      ],
+      "zh-Hans": [
+        "精灵宝可梦：幻影精灵宝可梦的主谋者"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2006-04-29T16:00:00.000Z",
+    "end": "2006-04-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "92432"
+      },
+      {
+        "site": "bilibili",
+        "id": "4917",
+        "begin": "2006-04-28T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ARIA The NATURAL",
+    "titleTranslate": {
+      "zh-Hans": [
+        "水星领航员 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ariacompany.net/2nd/",
+    "begin": "2006-04-02T16:00:00.000Z",
+    "end": "2006-09-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1269"
+      },
+      {
+        "site": "nicovideo",
+        "id": "arianatu01",
+        "begin": "2015-04-02T10:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc00787a962411de83b1",
+        "begin": "2012-11-16T03:11:59.000Z"
+      }
+    ]
+  },
+  {
+    "title": "プリンセス・プリンセス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "公主公主"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2006-04-05T16:00:00.000Z",
+    "end": "2006-06-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "FDcSkPhezgxv7VU",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "14275",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9425"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 伝説を呼ぶ 踊れ!アミーゴ!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 呼唤传说！跳吧！朋友！"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2006-04-15T16:00:00.000Z",
+    "end": "2006-04-15T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/v_19rrifwgai.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8995"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "f10d4a0261ad11e0bea1",
+        "begin": "2012-11-26T18:00:26.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 探偵たちの鎮魂歌",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 侦探们的镇魂歌"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2006-04-15T16:00:00.000Z",
+    "end": "2006-04-15T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2976"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa2347e061ad11e0bea1",
+        "begin": "2011-02-15T20:16:04.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228951",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 14期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 14期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2006-04-03T08:35:00.000Z",
+    "end": "2006-06-09T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161692"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士ガンダム MS IGLOO 黙示録0079",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达 MS IGLOO 默示录0079"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2006-04-26T16:00:00.000Z",
+    "end": "2006-08-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "iasWicPaULe7kcmgI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2691"
+      }
+    ]
+  },
+  {
+    "title": "大魔法峠",
+    "titleTranslate": {
+      "zh-Hans": [
+        "大魔法峠"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.punie.jp/",
+    "begin": "2006-04-05T16:00:00.000Z",
+    "end": "2007-03-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3054"
+      },
+      {
+        "site": "pptv",
+        "id": "ASwXlf1j0xF08lo",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "95348",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "4926",
+        "begin": "2006-04-04T16:00:01.000Z"
+      }
+    ]
+  }
+]

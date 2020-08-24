@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Dr.スランプ アラレちゃん ほよよ!夢の都メカポリス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 哦呦呦！梦之机械警察"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1985-07-13T16:00:00.000Z",
+    "end": "1985-07-13T16:40:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "82721"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ダーティペア",
+    "titleTranslate": {
+      "en": [
+        "Dirty Pair"
+      ],
+      "zh-Hans": [
+        "银河女警花",
+        "银河警花",
+        "棘手拍档",
+        "搞怪拍档",
+        "不良拍档"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/dirtypair/",
+    "begin": "1985-07-15T13:30:00.000Z",
+    "end": "1985-12-26T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "66390"
+      },
+      {
+        "site": "bilibili",
+        "id": "2423",
+        "begin": "1985-07-15T16:00:00.000Z"
+      }
+    ]
+  }
+]

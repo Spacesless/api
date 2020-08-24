@@ -1,0 +1,118 @@
+[
+  {
+    "title": "機動戦士ガンダムZZ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达ZZ"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gundam-zz.net/",
+    "begin": "1986-03-01T15:30:00.000Z",
+    "end": "1987-01-31T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sX9KyDCWBkSnJY0",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "3/345d7yjkinr4vl8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4213"
+      }
+    ]
+  },
+  {
+    "title": "ゲゲゲの鬼太郎 妖怪大戦争",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼太郎 妖怪大战争"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1986-03-15T16:00:00.000Z",
+    "end": "1986-03-15T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211094"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4kld",
+        "begin": "2015-08-11T08:03:32.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太と鉄人兵団",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄与铁人兵团"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1986-03-15T16:00:00.000Z",
+    "end": "1986-03-15T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80863",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "442"
+      },
+      {
+        "site": "pptv",
+        "id": "7qoHhe1TwwFk4ko",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2554",
+        "begin": "1986-03-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "めぞん一刻",
+    "titleTranslate": {
+      "zh-Hans": [
+        "相聚一刻"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mxtv.co.jp/maison/",
+    "begin": "1986-03-26T12:00:00.000Z",
+    "end": "1988-03-02T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "n9CsKpL4aKYJhib8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2921"
+      }
+    ]
+  }
+]

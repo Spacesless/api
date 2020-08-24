@@ -1,0 +1,162 @@
+[
+  {
+    "title": "燃える! お兄さん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "森林好小子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/title/onisan/",
+    "begin": "1988-03-14T16:00:00.000Z",
+    "end": "1988-09-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "9GpGxCySAkCjIYk",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "m/m1w0lxz5okp36s4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5927"
+      },
+      {
+        "site": "bilibili",
+        "id": "2401",
+        "begin": "1988-03-13T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士ガンダム 逆襲のシャア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达 逆袭的夏亚"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.gundam-cca.net/index.html",
+    "begin": "1988-03-12T16:00:00.000Z",
+    "end": "1988-03-12T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Im1X1T2jE1G0Mpo",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "8/80yxlsuq5pxurlq",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4583"
+      }
+    ]
+  },
+  {
+    "title": "聖闘士星矢 神々の熱き戦い",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣斗士星矢 神与神的激战"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-03-12T16:00:00.000Z",
+    "end": "1988-03-12T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27362"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saint_seiya",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4um9",
+        "begin": "2016-02-16T07:22:34.000Z"
+      }
+    ]
+  },
+  {
+    "title": "キテレツ大百科",
+    "titleTranslate": {
+      "zh-Hans": [
+        "奇天烈大百科"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mxtv.co.jp/kiteretsu/",
+    "begin": "1988-03-27T08:15:00.000Z",
+    "end": "1996-06-09T08:35:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk38wb1",
+        "begin": "2014-09-16T01:37:28.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "27577"
+      },
+      {
+        "site": "mgtv",
+        "id": "56434",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太のパラレル西遊記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄的平行西游记"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-03-12T16:00:00.000Z",
+    "end": "1988-03-12T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80865",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "446"
+      },
+      {
+        "site": "pptv",
+        "id": "7qoHhe1TwwFk4ko",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2556",
+        "begin": "1988-03-11T16:00:00.000Z"
+      }
+    ]
+  }
+]

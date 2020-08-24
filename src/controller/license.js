@@ -11,6 +11,7 @@ module.exports = class extends Base {
   }
 
   async __before() {
+    super.__before();
     const jsonPath = path.join(this.baseurl, 'license.json');
     const isExist = think.isExist(jsonPath);
     this.licenses = isExist ? await fs.readJson(jsonPath) : this.formatToJson();

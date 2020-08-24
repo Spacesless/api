@@ -1,0 +1,53 @@
+[
+  {
+    "title": "太陽の勇者ファイバード",
+    "titleTranslate": {
+      "en": [
+        "The Brave Fighter of Sun Fighbird"
+      ],
+      "zh-Hans": [
+        "太阳勇者"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.yusha.net/fighbird/",
+    "begin": "1991-02-02T16:00:00.000Z",
+    "end": "1992-02-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Y62XFX3jU5H0cto",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37246"
+      }
+    ]
+  },
+  {
+    "title": "緊急発進セイバーキッズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "装甲拯救队"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-02-19T16:00:00.000Z",
+    "end": "1992-02-11T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "81581"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saverkids",
+        "begin": "2011-11-09T06:00:00.000Z"
+      }
+    ]
+  }
+]

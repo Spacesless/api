@@ -1,0 +1,79 @@
+[
+  {
+    "title": "MEGAZONE23 III",
+    "titleTranslate": {
+      "zh-Hans": [
+        "无限地带23 PART III"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-09-28T16:00:00.000Z",
+    "end": "1989-12-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "JBznZc0zoibFEwiao",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37033"
+      }
+    ]
+  },
+  {
+    "title": "緑山高校 甲子園編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绿山高校甲子园編"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-09-25T16:00:00.000Z",
+    "end": "1990-12-16T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "238305"
+      },
+      {
+        "site": "nicovideo",
+        "id": "midoriyama",
+        "begin": "2016-08-01T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "エンゼルコップ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天使特警"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-09-01T16:00:00.000Z",
+    "end": "1994-05-20T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23618"
+      },
+      {
+        "site": "nicovideo",
+        "id": "angel-cop",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2059",
+        "begin": "2002-10-07T16:00:00.000Z"
+      }
+    ]
+  }
+]

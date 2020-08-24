@@ -1,0 +1,106 @@
+[
+  {
+    "title": "万能文化猫娘",
+    "titleTranslate": {
+      "en": [
+        "All Purpose Cultural Cat Girl Nuku Nuku"
+      ],
+      "zh-Hans": [
+        "万能文化猫娘 TV"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.pro-reed.com/works/tv_series/w032.html",
+    "begin": "1998-01-07T09:00:00.000Z",
+    "end": "1998-03-25T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "H1AsqhJ46CaJB28",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "u/udqfni7dwdkdt70",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "49886"
+      }
+    ]
+  },
+  {
+    "title": "爆走兄弟レッツ&ゴー!!MAX",
+    "titleTranslate": {
+      "zh-Hans": [
+        "四驱兄弟MAX"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://cgi.shopro.co.jp/tv/let_go/",
+    "begin": "1998-01-05T09:00:00.000Z",
+    "end": "1998-12-21T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47760"
+      },
+      {
+        "site": "qq",
+        "id": "f/fcirunt4i2j1kuz",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "星方武侠アウトロースター",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星方武侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/seihou/",
+    "begin": "1998-01-08T16:00:00.000Z",
+    "end": "1998-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8292"
+      },
+      {
+        "site": "bilibili",
+        "id": "2267",
+        "begin": "1998-01-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "異次元の世界エルハザード",
+    "titleTranslate": {
+      "zh-Hans": [
+        "异次元的世界"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-01-07T16:00:00.000Z",
+    "end": "1998-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KhvmZMwyouBDwSk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "81173"
+      }
+    ]
+  }
+]

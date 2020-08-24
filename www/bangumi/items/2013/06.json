@@ -1,0 +1,203 @@
+[
+  {
+    "title": "キングダム(第2シリーズ)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "王者天下 第二季",
+        "王者天下 第2季"
+      ],
+      "en": [
+        "KINGDOM2"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/kingdom2/",
+    "begin": "2013-06-08T14:45:00.000Z",
+    "end": "2014-03-01T15:25:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrifq03u",
+        "begin": "2013-08-22T08:07:35.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "583",
+        "begin": "2013-06-07T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "62281"
+      },
+      {
+        "site": "nicovideo",
+        "id": "kingdom2",
+        "begin": "2016-01-24T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ガラスの仮面ですが THE MOVIE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 虽然是玻璃假面"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://garasunokamendesuga.ponycanyon.co.jp/movie/",
+    "begin": "2013-06-22T16:00:00.000Z",
+    "end": "2013-06-22T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "YfLeXMQqmtg7uSE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "81145"
+      },
+      {
+        "site": "bilibili",
+        "id": "4046",
+        "begin": "2013-06-21T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "10b859d07c0111e38b3f",
+        "begin": "2014-01-13T08:46:34.000Z"
+      }
+    ]
+  },
+  {
+    "title": "宇宙戦艦ヤマト2199 第六章「到達!大マゼラン」",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰大和号2199 第六章「到达！大麦哲伦」"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2013-06-15T16:00:00.000Z",
+    "end": "2013-06-15T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "70322"
+      }
+    ]
+  },
+  {
+    "title": "ロウきゅーぶ! OAD",
+    "titleTranslate": {
+      "zh-Hans": [
+        "萝球社 OAD"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://d-game.dengeki.com/RO-KYU-BU/index.html",
+    "begin": "2013-06-22T16:00:00.000Z",
+    "end": "2013-06-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "SzIenARq2hh7ibWE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66523"
+      },
+      {
+        "site": "youku",
+        "id": "c5cd49b6da6711e296ac",
+        "begin": "2013-06-21T13:19:25.000Z"
+      }
+    ]
+  },
+  {
+    "title": "どーにゃつ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "甜甜圈猫"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://donyatsu.jp",
+    "begin": "2013-06-01T16:00:00.000Z",
+    "end": "2013-06-01T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "94548"
+      },
+      {
+        "site": "nicovideo",
+        "id": "donyatsu",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "攻殻機動隊ARISE border:1 Ghost Pain",
+    "titleTranslate": {
+      "zh-Hans": [
+        "攻壳机动队ARISE border:1 Ghost Pain"
+      ],
+      "en": [
+        "Ghost in the Shell: Arise – Border 1: Ghost Pain"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://kokaku-a.jp/arise/",
+    "begin": "2013-06-21T16:00:00.000Z",
+    "end": "2013-06-21T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "61498"
+      },
+      {
+        "site": "netflix",
+        "id": "80002073",
+        "begin": "2017-01-31T08:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5180",
+        "begin": "2013-06-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "マジカル☆スター かのん100%",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法少女STAR花音100%"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://kaminomi.jp/kanon/index.html",
+    "begin": "2013-06-18T16:00:00.000Z",
+    "end": "2013-06-18T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67407"
+      },
+      {
+        "site": "youku",
+        "id": "c307a7b8dc4111e296ac",
+        "begin": "2013-06-23T21:18:13.000Z"
+      }
+    ]
+  }
+]

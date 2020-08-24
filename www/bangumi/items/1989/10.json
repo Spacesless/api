@@ -1,0 +1,232 @@
+[
+  {
+    "title": "ジャングル大帝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "森林大帝"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-12T16:00:00.000Z",
+    "end": "1990-10-11T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "WeHcWsIomNY5tx8",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "u/uxqnq5iqr3do76d",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "78858",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "81573"
+      }
+    ]
+  },
+  {
+    "title": "らんま1/2 熱闘編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "乱马1/2 热斗篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-20T16:00:00.000Z",
+    "end": "1992-09-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "80I9uyOJibTeaGIA",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "d/d6nxz5npppuo1yt",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "65883"
+      }
+    ]
+  },
+  {
+    "title": "YAWARA!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "以柔克刚"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/yawara/",
+    "begin": "1989-10-15T22:30:00.000Z",
+    "end": "1992-09-20T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "62914"
+      }
+    ]
+  },
+  {
+    "title": "ダッシュ！四駆郎",
+    "titleTranslate": {
+      "zh-Hans": [
+        "四驱小子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-03T13:00:00.000Z",
+    "end": "1990-03-27T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "18850"
+      }
+    ]
+  },
+  {
+    "title": "機動警察パトレイバー",
+    "titleTranslate": {
+      "en": [
+        "MOBILE POLICE PATLABOR"
+      ],
+      "zh-Hans": [
+        "机动警察"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-11T23:30:00.000Z",
+    "end": "1990-09-26T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8484"
+      },
+      {
+        "site": "nicovideo",
+        "id": "PATLABOR_ON_TELEVISION",
+        "begin": "2016-10-14T03:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2327",
+        "begin": "1989-10-10T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "小松左京アニメ劇場",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小松左京动画剧场"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-18T16:00:00.000Z",
+    "end": "1990-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213109"
+      }
+    ]
+  },
+  {
+    "title": "笑ゥせぇるすまん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "黑色推销员"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-10T16:00:00.000Z",
+    "end": "1992-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "36224"
+      },
+      {
+        "site": "nicovideo",
+        "id": "warau",
+        "begin": "2017-03-15T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "プロジェクトA子 完結篇",
+    "titleTranslate": {
+      "zh-Hans": [
+        "A子计划4 完结篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-10-07T16:00:00.000Z",
+    "end": "1989-10-07T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "55060"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch61049",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "鎧伝サムライトルーパー 輝煌帝伝説",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔神坛斗士 辉煌帝传说"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-anime.jp/sunrise-inc/works/detail.php?cid=149",
+    "begin": "1989-10-08T16:00:00.000Z",
+    "end": "1990-01-11T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23178"
+      },
+      {
+        "site": "qq",
+        "id": "b/b1ay7tls3qg9sbx",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "f1bde6aa61ad11e0bea1",
+        "begin": "2019-08-08T02:51:49.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "title": "BLACK BLOOD BROTHERS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "黑血兄弟"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://character.biglobe.ne.jp/BBB/",
+    "begin": "2006-09-08T14:30:00.000Z",
+    "end": "2006-11-24T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "kryHBW3TQ4HkYso",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2090"
+      }
+    ]
+  },
+  {
+    "title": "オーバンSTAR-RACERS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "OBAN STAR-RACERS"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.obanstarracers.com/",
+    "begin": "2006-09-23T23:06:00.000Z",
+    "end": "2007-09-28T23:31:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "88907"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 セブンデイズラプソディ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 七日狂想曲"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "2006-09-08T16:00:00.000Z",
+    "end": "2006-09-08T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84996"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3942",
+        "begin": "2006-09-07T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あゆまゆ劇場",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲇真由剧场"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.ayumayu.net/",
+    "begin": "2006-09-29T16:00:00.000Z",
+    "end": "2007-01-12T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "72655"
+      }
+    ]
+  },
+  {
+    "title": "太陽の黙示録",
+    "titleTranslate": {
+      "zh-Hans": [
+        "太阳默示录"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/taiyo/",
+    "begin": "2006-09-17T16:00:00.000Z",
+    "end": "2006-09-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "182294"
+      }
+    ]
+  },
+  {
+    "title": "ポケットモンスター ダイヤモンド&パール",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦 钻石&珍珠",
+        "精灵宝可梦 第3季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pokemon_dp/",
+    "begin": "2006-09-28T16:00:00.000Z",
+    "end": "2010-09-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BSELiafFXxwVo5k4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb7brp",
+        "begin": "2015-09-15T09:37:01.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "u/ulvcbmiwibeg2un",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10006441",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2017/jlbkm3",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3021"
+      },
+      {
+        "site": "bilibili",
+        "id": "6162",
+        "begin": "2006-09-27T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc004882962411de83b1",
+        "begin": "2014-11-24T17:38:20.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ストラトス・フォー アドヴァンス 完結編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星空防卫队 Advance 完结篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2006-09-22T16:00:00.000Z",
+    "end": "2006-10-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "48994"
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "title": "トム・ソーヤーの冒険",
+    "titleTranslate": {
+      "zh-Hans": [
+        "汤姆历险记",
+        "汤姆索亚历险记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-01-06T16:00:00.000Z",
+    "end": "1980-12-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk0lwe9",
+        "begin": "2012-04-05T02:25:39.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "23611"
+      }
+    ]
+  },
+  {
+    "title": "森の陽気な小人たち ベルフィーとリルビット",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tatsunoko.co.jp/works/archive/littlebit.html",
+    "begin": "1980-01-07T23:00:00.000Z",
+    "end": "1980-06-30T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213645"
+      }
+    ]
+  },
+  {
+    "title": "ニルスのふしぎな旅",
+    "titleTranslate": {
+      "en": [
+        "The Wonderful Adventures of Nils"
+      ],
+      "zh-Hans": [
+        "骑鹅旅行记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/nils/",
+    "begin": "1980-01-08T12:00:00.000Z",
+    "end": "1981-03-17T13:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "205450"
+      },
+      {
+        "site": "bilibili",
+        "id": "2447",
+        "begin": "1980-01-07T16:00:00.000Z"
+      }
+    ]
+  }
+]

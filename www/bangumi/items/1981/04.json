@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Dr.スランプ アラレちゃん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾",
+        "IQ博士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/lineup/tv/arale/",
+    "begin": "1981-04-08T16:00:00.000Z",
+    "end": "1986-02-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1ced",
+        "begin": "2015-10-16T09:03:38.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "47243"
+      }
+    ]
+  },
+  {
+    "title": "名犬ジョリィ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "灵犬雪莉",
+        "灵犬雪丽"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/archives/joly_index.html",
+    "begin": "1981-04-07T22:30:00.000Z",
+    "end": "1982-06-26T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "24156"
+      },
+      {
+        "site": "bilibili",
+        "id": "3226",
+        "begin": "2009-12-31T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新竹取物語 1000年女王",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新竹取物语 1000年女王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-04-16T10:00:00.000Z",
+    "end": "1982-03-25T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "127355"
+      }
+    ]
+  }
+]

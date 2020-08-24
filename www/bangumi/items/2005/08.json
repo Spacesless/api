@@ -1,0 +1,202 @@
+[
+  {
+    "title": "強殖装甲ガイバー",
+    "titleTranslate": {
+      "en": [
+        "GUYVER THE BIOBOOSTED ARMOR"
+      ],
+      "zh-Hans": [
+        "强殖装甲凯普"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.guyver.jp/",
+    "begin": "2005-08-06T10:00:00.000Z",
+    "end": "2006-02-18T10:24:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6CIenARq2hh7ibWE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "2/2oxwe76p4ko9gm2",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "15353"
+      },
+      {
+        "site": "letv",
+        "id": "16262",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5007",
+        "begin": "2005-08-05T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぼくの防空壕",
+    "titleTranslate": {},
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.shin-ei-animation.jp/sensoudouwashu/modules/bokugo/",
+    "begin": "2005-08-13T16:00:00.000Z",
+    "end": "2005-08-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "209767"
+      }
+    ]
+  },
+  {
+    "title": "最終兵器彼女 Another love song",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最终兵器彼女 Another love song"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-08-05T16:00:00.000Z",
+    "end": "2005-09-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "0/0ci2guo4k6dj9ni",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5874"
+      }
+    ]
+  },
+  {
+    "title": "AIR IN SUMMER",
+    "titleTranslate": {
+      "zh-Hans": [
+        "AIR夏季篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-08-28T16:00:00.000Z",
+    "end": "2005-09-04T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "6/6pnj579h402jj1m",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2127"
+      }
+    ]
+  },
+  {
+    "title": "プレイヤーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "歌魂斗"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://anime.softgarage.com/prayers/index.html",
+    "begin": "2005-08-26T16:00:00.000Z",
+    "end": "2005-11-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "74561"
+      },
+      {
+        "site": "nicovideo",
+        "id": "amg-players",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "劇場版 NARUTO -ナルト- 大激突!幻の地底遺跡だってばよ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "火影忍者剧场版 大激突！幻之地底遗迹"
+      ],
+      "en": [
+        "Naruto the Movie 2: Legend of the Stone of Gelel"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "https://web.archive.org/web/20090220135714/http://pierrot.jp/title/naruto/movie2005/index.html",
+    "begin": "2005-08-05T16:00:00.000Z",
+    "end": "2005-08-05T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "22109"
+      },
+      {
+        "site": "netflix",
+        "id": "70101321",
+        "begin": "2017-09-01T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+    "titleTranslate": {
+      "zh-Hans": [
+        "翼·年代记 鸟笼国的公主"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.production-ig.co.jp/contents/works_sp/1300_/",
+    "begin": "2005-08-20T16:00:00.000Z",
+    "end": "2005-08-20T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2893"
+      },
+      {
+        "site": "letv",
+        "id": "10765",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "劇場版×××HOLiC 真夏ノ夜ノ夢",
+    "titleTranslate": {
+      "zh-Hans": [
+        "×××HOLiC 仲夏夜之梦"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.holic-tsubasa.com/",
+    "begin": "2005-08-20T16:00:00.000Z",
+    "end": "2005-08-20T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2897"
+      }
+    ]
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "title": "リーンの翼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣光之翼"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.rean-wings.net/",
+    "begin": "2005-12-15T21:00:00.000Z",
+    "end": "2006-09-07T21:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3417"
+      }
+    ]
+  },
+  {
+    "title": "MAJOR 2nd season",
+    "titleTranslate": {
+      "zh-Hans": [
+        "棒球大联盟 第二季",
+        "棒球大联盟 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/major/",
+    "begin": "2005-12-10T09:00:00.000Z",
+    "end": "2006-06-10T09:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Igr1c9tBse9S0Dg",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhc03et",
+        "begin": "2014-11-07T07:21:10.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2886"
+      }
+    ]
+  },
+  {
+    "title": "ディノブレイカー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机械恐龙DICE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.xebec-inc.co.jp/anime/dinobreaker/index.html",
+    "begin": "2005-12-06T09:30:00.000Z",
+    "end": "2006-09-19T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37503"
+      }
+    ]
+  },
+  {
+    "title": "スクールランブル 一学期補習",
+    "titleTranslate": {
+      "zh-Hans": [
+        "校园迷糊大王 一学期补习"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://mmv.co.jp/special/school-rumble/anime01/catalog/index.html",
+    "begin": "2005-12-22T16:00:00.000Z",
+    "end": "2005-12-22T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "t/tu9pg41hpdd7rq1",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1877"
+      },
+      {
+        "site": "bilibili",
+        "id": "3752",
+        "begin": "2005-12-21T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "蒼穹のファフナー RIGHT OF LEFT",
+    "titleTranslate": {
+      "zh-Hans": [
+        "苍穹之法芙娜 RIGHT OF LEFT",
+        "苍穹之法芙娜 特别篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/fafner/",
+    "begin": "2005-12-29T16:00:00.000Z",
+    "end": "2005-12-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "yHxY1j6kFFK1M5s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha3e7d",
+        "begin": "2016-12-08T03:04:59.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "14106"
+      },
+      {
+        "site": "qq",
+        "id": "x/xkiym8goczymn4c",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "聖闘士星矢 冥王ハーデス冥界編 前章",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣斗士星矢 冥界篇 前章",
+        "圣斗士星矢 冥王哈迪斯冥界篇前章"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/sp/seiya_zenshou/",
+    "begin": "2005-12-17T16:00:00.000Z",
+    "end": "2006-02-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb24b9",
+        "begin": "2015-08-14T17:04:40.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "20232"
+      }
+    ]
+  },
+  {
+    "title": "いつだってMyサンタ!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我永远的圣诞老人"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-12-07T16:00:00.000Z",
+    "end": "2005-12-07T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10277"
+      }
+    ]
+  },
+  {
+    "title": "セイント・ビースト ～幾千の昼と夜 編～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "四圣兽 ～几千个昼与夜篇～"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-12-17T16:00:00.000Z",
+    "end": "2006-03-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6Folowtx4RibCAGg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7365"
+      },
+      {
+        "site": "bilibili",
+        "id": "1976",
+        "begin": "2005-12-16T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 甲虫王者ムシキング グレイテストチャンピオンへの道",
+    "titleTranslate": {},
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-12-17T16:00:00.000Z",
+    "end": "2005-12-17T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "238453"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mushiking-movie01",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "映画 ふたりはプリキュア マックスハート2 雪空のともだち",
+    "titleTranslate": {
+      "zh-Hans": [
+        "光之美少女 Max Heart 雪空的朋友"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/movie/2005_precureMH2/",
+    "begin": "2005-12-10T16:00:00.000Z",
+    "end": "2005-12-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4397"
+      },
+      {
+        "site": "letv",
+        "id": "89803",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4tzt",
+        "begin": "2015-08-07T08:45:07.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "title": "きまぐれオレンジ☆ロード The O.V.A",
+    "titleTranslate": {
+      "zh-Hans": [
+        "橙路 OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-02-15T16:00:00.000Z",
+    "end": "1991-01-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "pujUUrogkM4xrxc",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "n/n0h73rggh1m2tsk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "13674"
+      },
+      {
+        "site": "bilibili",
+        "id": "2504",
+        "begin": "1989-02-14T16:00:00.000Z"
+      }
+    ]
+  }
+]

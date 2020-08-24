@@ -1,0 +1,60 @@
+[
+  {
+    "title": "シティーハンター 百万ドルの陰謀",
+    "titleTranslate": {
+      "zh-Hans": [
+        "城市猎人 百万美金的阴谋"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1990-08-25T16:00:00.000Z",
+    "end": "1990-08-25T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "7/7sn4yjfuz730dt6",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "53933"
+      },
+      {
+        "site": "letv",
+        "id": "10004313",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "シティーハンター ベイシティウォーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "城市猎人 海滩之战"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1990-08-25T16:00:00.000Z",
+    "end": "1990-08-25T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "s/s4zusns75ylge5a",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "53932"
+      },
+      {
+        "site": "letv",
+        "id": "10004313",
+        "begin": ""
+      }
+    ]
+  }
+]

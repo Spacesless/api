@@ -1,0 +1,31 @@
+[
+  {
+    "title": "アルプスの少女ハイジ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿尔卑斯山的少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.heidi.ne.jp/",
+    "begin": "1974-01-06T01:20:00.000Z",
+    "end": "1974-12-29T01:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IxjjYckvn91AviaY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5487"
+      },
+      {
+        "site": "bilibili",
+        "id": "2480",
+        "begin": "1974-01-05T16:00:00.000Z"
+      }
+    ]
+  }
+]

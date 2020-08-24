@@ -1,0 +1,108 @@
+[
+  {
+    "title": "ドラゴンボール 魔神城のねむり姫",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠 魔神城里的睡美人"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-07-18T16:00:00.000Z",
+    "end": "1987-07-18T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "44937"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DB_majinjyou",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "聖闘士星矢 邪神エリス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣斗士星矢 黄金的苹果"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-07-18T16:00:00.000Z",
+    "end": "1987-07-18T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27361"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saint_seiya",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4um9",
+        "begin": "2016-02-16T07:22:34.000Z"
+      }
+    ]
+  },
+  {
+    "title": "トランスフォーマー ザ☆ヘッドマスターズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "变形金刚：头领战士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-07-03T16:00:00.000Z",
+    "end": "1988-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "77218"
+      },
+      {
+        "site": "qq",
+        "id": "p/pre4y0gnrshqogq",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ロボット・カーニバル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机器人嘉年华"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://animejapan.cplaza.ne.jp/b-ch/otomo_sp/rb_carnival_ova/index.html",
+    "begin": "1987-07-21T16:00:00.000Z",
+    "end": "1987-07-21T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "11895"
+      },
+      {
+        "site": "letv",
+        "id": "10002045",
+        "begin": ""
+      }
+    ]
+  }
+]

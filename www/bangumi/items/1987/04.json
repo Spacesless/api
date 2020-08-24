@@ -1,0 +1,150 @@
+[
+  {
+    "title": "シティーハンター",
+    "titleTranslate": {
+      "zh-Hans": [
+        "城市猎人"
+      ],
+      "en": [
+        "CITY HUNTER"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.cityhunter-dvd.com/",
+    "begin": "1987-04-06T18:35:00.000Z",
+    "end": "1988-03-28T19:05:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "fauVE3vhUYicycNg",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk7f6i9",
+        "begin": "2012-08-24T05:26:39.000Z"
+      },
+      {
+        "site": "sohu",
+        "id": "s2012/cslr",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10391"
+      },
+      {
+        "site": "qq",
+        "id": "n/n9w4cfsgzfthuw3",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "きまぐれオレンジ☆ロード",
+    "titleTranslate": {
+      "zh-Hans": [
+        "橙路"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.dvd-orangeroad.com/",
+    "begin": "1987-04-06T12:00:00.000Z",
+    "end": "1988-03-07T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "jsC8OqIIeLYZlic8",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "r/rr57uvmizpiqd67",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2042"
+      },
+      {
+        "site": "bilibili",
+        "id": "2418",
+        "begin": "1987-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "赤い光弾ジリオン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "赤色光弹"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tatsunoko.co.jp/works/archive/zillion.html",
+    "begin": "1987-04-12T12:00:00.000Z",
+    "end": "1987-12-13T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "26798"
+      }
+    ]
+  },
+  {
+    "title": "エスパー魔美",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超能力魔美"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-04-07T16:00:00.000Z",
+    "end": "1989-10-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "kIdx71e9LWvOTLQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "75182"
+      },
+      {
+        "site": "bilibili",
+        "id": "2412",
+        "begin": "1987-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "超獣機神ダンクーガ GOD BLESS DANCOUGA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超兽机神断空我 GOD BLESS DANCOUGA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-04-15T16:00:00.000Z",
+    "end": "1987-04-15T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "cqaiaIIjuXpzicfeU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "57567"
+      }
+    ]
+  }
+]

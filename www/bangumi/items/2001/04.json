@@ -1,0 +1,698 @@
+[
+  {
+    "title": "Cosmic Baton Girl コメットさん☆",
+    "titleTranslate": {
+      "zh-Hans": [
+        "彗星公主",
+        "音乐小彗星"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toho-a-park.com/character/comet/index.html",
+    "begin": "2001-04-01T00:30:00.000Z",
+    "end": "2002-01-27T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "P18ppw915SOGBGw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14646"
+      },
+      {
+        "site": "bilibili",
+        "id": "2821",
+        "begin": "2001-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機動天使エンジェリックレイヤー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天使领域"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mv.avex.jp/angelic/",
+    "begin": "2001-04-01T08:20:00.000Z",
+    "end": "2001-09-30T08:50:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "23JNyzOZCUeqKJA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4011"
+      },
+      {
+        "site": "nicovideo",
+        "id": "angelic",
+        "begin": "2012-06-06T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2125",
+        "begin": "2001-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "電脳冒険記ウェブダイバー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "电脑冒险记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.tv-tokyo.co.jp/webdiver/",
+    "begin": "2001-04-06T09:00:00.000Z",
+    "end": "2002-03-29T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37495"
+      }
+    ]
+  },
+  {
+    "title": "仰天人間バトシーラー",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.g-tac.co.jp/batonext/batoindex.html",
+    "begin": "2001-04-06T23:00:00.000Z",
+    "end": "2002-03-29T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "177905"
+      }
+    ]
+  },
+  {
+    "title": "デジモンテイマーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码暴龙03驯兽师之王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/jp/b_hp/digimont/",
+    "begin": "2001-04-01T00:00:00.000Z",
+    "end": "2002-03-31T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1df9",
+        "begin": "2015-08-20T03:32:13.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3130"
+      },
+      {
+        "site": "nicovideo",
+        "id": "digimon_t",
+        "begin": "2016-12-01T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "シスター・プリンセス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "妹妹公主"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/sispri/index.html",
+    "begin": "2001-04-04T14:00:00.000Z",
+    "end": "2001-09-26T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3690"
+      }
+    ]
+  },
+  {
+    "title": "こみっくパーティー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "漫画同人会"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.aquaplus.co.jp/cp/",
+    "begin": "2001-04-02T15:00:00.000Z",
+    "end": "2001-06-25T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Zcm0MpoAcK4Rjicc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2077"
+      },
+      {
+        "site": "bilibili",
+        "id": "2132",
+        "begin": "2001-04-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "The SoulTaker ～魂狩～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魂狩"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kids-station.com/minisite/tokushu/soultaker/",
+    "begin": "2001-04-04T13:30:00.000Z",
+    "end": "2001-07-04T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7yEbmQFn1xV49l4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3758"
+      },
+      {
+        "site": "bilibili",
+        "id": "5213",
+        "begin": "2001-04-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ジャングルはいつもハレのちグゥ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "热带雨林的爆笑生活"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-04-03T06:00:00.000Z",
+    "end": "2001-09-05T06:57:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "81olowtx4RibCAGg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3291"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgj95ml",
+        "begin": "2013-11-13T07:24:05.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2091",
+        "begin": "2001-04-02T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "7/7tr0snbbxb7rmre",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "8506",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "cc001fce962411de83b1",
+        "begin": "2012-07-03T07:22:46.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Z.O.E Dolores,i",
+    "titleTranslate": {
+      "zh-Hans": [
+        "狂野禁区"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/zoe/tv/",
+    "begin": "2001-04-06T13:30:00.000Z",
+    "end": "2001-09-28T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CEIibvCSKibjiabGYE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "36882"
+      }
+    ]
+  },
+  {
+    "title": "PROJECT ARMS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "ARMS神臂"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tms-e.com/library/on_air_back/arms/index.html",
+    "begin": "2001-04-07T13:30:00.000Z",
+    "end": "2002-03-30T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "a8ib6OKAGdrQXlf0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14052"
+      }
+    ]
+  },
+  {
+    "title": "ノワール",
+    "titleTranslate": {
+      "en": [
+        "NOIR"
+      ],
+      "zh-Hans": [
+        "黑街二人组"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jvcmusic.co.jp/m-serve/tv/noir/",
+    "begin": "2001-04-05T07:00:00.000Z",
+    "end": "2001-09-27T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "k/kqigw4r6dshzz5n",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "788"
+      },
+      {
+        "site": "nicovideo",
+        "id": "noir-anime",
+        "begin": "2014-01-30T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ジーンシャフト",
+    "titleTranslate": {
+      "zh-Hans": [
+        "基因攻防战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneshaft.com/",
+    "begin": "2001-04-05T22:30:00.000Z",
+    "end": "2001-06-24T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8298"
+      },
+      {
+        "site": "bilibili",
+        "id": "5320",
+        "begin": "2001-04-04T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "花右京メイド隊",
+    "titleTranslate": {
+      "zh-Hans": [
+        "花右京女仆队"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program/detail/1911",
+    "begin": "2001-04-12T14:15:00.000Z",
+    "end": "2001-06-28T14:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "19538"
+      }
+    ]
+  },
+  {
+    "title": "新白雪姫伝説プリーティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新白雪姬传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/pretear/index_set.html",
+    "begin": "2001-04-04T16:00:00.000Z",
+    "end": "2001-06-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "16436"
+      },
+      {
+        "site": "bilibili",
+        "id": "2112",
+        "begin": "2001-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ギャラクシーエンジェル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.madhouse.co.jp/works/2001-2000/works_tv_galaxyange.html",
+    "begin": "2001-04-07T16:00:00.000Z",
+    "end": "2001-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "vvDMSrIYiaMYppw8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4634"
+      },
+      {
+        "site": "bilibili",
+        "id": "1942",
+        "begin": "2001-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "鋼鉄天使くるみ ２式",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钢铁天使核桃 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program/detail/1433",
+    "begin": "2001-04-12T16:00:00.000Z",
+    "end": "2001-06-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4007"
+      },
+      {
+        "site": "bilibili",
+        "id": "2136",
+        "begin": "2001-04-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "逮捕しちゃうぞ Second Season",
+    "titleTranslate": {
+      "zh-Hans": [
+        "逮捕令 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-04-07T16:00:00.000Z",
+    "end": "2001-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HiaIdmwNp2Rd6ibGA",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "7/727svzatiemfj2x",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2076"
+      },
+      {
+        "site": "bilibili",
+        "id": "1341",
+        "begin": "2001-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "世界名作劇場・完結版 愛少女ポリアンナ物語",
+    "titleTranslate": {
+      "zh-Hans": [
+        "世界名著剧场・完结版 爱少女波丽安娜物语",
+        "波利安娜"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/1486/",
+    "begin": "2001-04-01T16:00:00.000Z",
+    "end": "2001-04-01T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjz23id",
+        "begin": "2012-10-17T01:26:27.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "211290"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 嵐を呼ぶ モーレツ!オトナ帝国の逆襲",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 呼风唤雨！大人帝国的反击"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2001-04-21T16:00:00.000Z",
+    "end": "2001-04-21T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/v_19rrifx027.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8986"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "11152",
+        "begin": "2001-04-20T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f0726f4661ad11e0bea1",
+        "begin": "2012-11-27T14:57:35.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 天国へのカウントダウン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 通往天国的倒数计时"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2001-04-21T16:00:00.000Z",
+    "end": "2001-04-21T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2971"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa20f5bc61ad11e0bea1",
+        "begin": "2013-03-19T12:19:19.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228945",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 9期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 9期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2001-04-02T08:35:00.000Z",
+    "end": "2001-07-20T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161687"
+      }
+    ]
+  },
+  {
+    "title": "スターオーシャンEX",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星之海洋"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-04-03T16:00:00.000Z",
+    "end": "2001-09-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "oOvVU7shkc8ysBg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8378"
+      }
+    ]
+  },
+  {
+    "title": "破邪巨星Gダンガイオー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "破邪巨星G弹劾凰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-04-05T16:00:00.000Z",
+    "end": "2001-07-05T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "c7yIBm7URILlY8s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "33064"
+      }
+    ]
+  },
+  {
+    "title": "魔法戦士リウイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法战士李维"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jcstaff.co.jp/sho-sai/ri-shokai/riui-syokai.htm",
+    "begin": "2001-04-03T16:00:00.000Z",
+    "end": "2001-09-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ltmjIYnvX50AfuY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14041"
+      },
+      {
+        "site": "bilibili",
+        "id": "5323",
+        "begin": "2001-04-02T16:00:01.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "title": "グリム名作劇場",
+    "titleTranslate": {
+      "zh-Hans": [
+        "格林童话剧场",
+        "格林童话"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/1528/",
+    "begin": "1987-10-21T22:30:00.000Z",
+    "end": "1988-03-30T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "OywIhu5UxAJl40s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk35gjh",
+        "begin": "2015-01-09T07:11:23.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "78829",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "56113",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "68738"
+      },
+      {
+        "site": "bilibili",
+        "id": "2981",
+        "begin": "1987-10-20T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "レディレディ!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新小甜甜",
+        "新小甜甜H"
+      ],
+      "en": [
+        "Lady Lady!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/lineup/tv/ladylady/",
+    "begin": "1987-10-21T16:00:00.000Z",
+    "end": "1988-03-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb14dl",
+        "begin": "2015-11-05T09:28:20.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "77901"
+      }
+    ]
+  },
+  {
+    "title": "アニメ三銃士",
+    "titleTranslate": {
+      "zh-Hans": [
+        "三个火枪手"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-10-09T16:00:00.000Z",
+    "end": "1989-02-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk36i75",
+        "begin": "2015-09-29T05:45:01.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "9572"
+      },
+      {
+        "site": "qq",
+        "id": "g/g1l5q945mzbg5j7",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "仮面の忍者 赤影",
+    "titleTranslate": {
+      "zh-Hans": [
+        "假面忍者 赤影"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1987-10-13T10:00:00.000Z",
+    "end": "1988-03-22T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "202147"
+      }
+    ]
+  },
+  {
+    "title": "ミスター味っ子",
+    "titleTranslate": {
+      "zh-Hans": [
+        "妙手小厨师"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-anime.jp/sunrise-inc/works/detail.php?cid=141",
+    "begin": "1987-10-08T11:30:00.000Z",
+    "end": "1989-09-28T12:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10407"
+      },
+      {
+        "site": "bilibili",
+        "id": "2410",
+        "begin": "1987-10-08T16:00:00.000Z"
+      }
+    ]
+  }
+]

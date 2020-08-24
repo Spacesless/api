@@ -1,0 +1,136 @@
+[
+  {
+    "title": "うる星やつら 完結篇",
+    "titleTranslate": {
+      "zh-Hans": [
+        "福星小子 完结篇"
+      ],
+      "en": [
+        "Urusei Yatsura Movie 5: Final"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-02-06T16:00:00.000Z",
+    "end": "1988-02-06T17:25:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha1k6d",
+        "begin": "2016-11-28T09:39:42.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "47152"
+      }
+    ]
+  },
+  {
+    "title": "ゲゲゲの鬼太郎 地獄編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼太郎 地狱篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-02-08T16:00:00.000Z",
+    "end": "1988-03-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb12ht",
+        "begin": "2015-10-29T08:33:50.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "211097"
+      }
+    ]
+  },
+  {
+    "title": "魁!!男塾",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魁!!男塾"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-02-25T13:30:00.000Z",
+    "end": "1988-11-14T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "103157"
+      }
+    ]
+  },
+  {
+    "title": "めぞん一刻 完結篇",
+    "titleTranslate": {
+      "zh-Hans": [
+        "相聚一刻 完结篇"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.mxtv.co.jp/maison/",
+    "begin": "1988-02-06T16:00:00.000Z",
+    "end": "1988-02-06T17:05:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "530"
+      },
+      {
+        "site": "bilibili",
+        "id": "2506",
+        "begin": "1988-02-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "銀河英雄伝説 わが征くは星の大海",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河英雄传说 我的征途是星辰大海"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-02-06T16:00:00.000Z",
+    "end": "1988-02-06T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "39531"
+      }
+    ]
+  },
+  {
+    "title": "装甲騎兵ボトムズ レッドショルダードキュメント 野望のルーツ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "装甲骑兵 红肩队档案：野心的根源"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-02-20T16:00:00.000Z",
+    "end": "1988-02-20T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "16557"
+      }
+    ]
+  }
+]

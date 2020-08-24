@@ -1,0 +1,481 @@
+[
+  {
+    "title": "デート・ア・ライブ",
+    "titleTranslate": {
+      "en": [
+        "DATE A LIVE"
+      ],
+      "zh-Hans": [
+        "约会大作战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://date-a-live-anime.com/",
+    "begin": "2013-03-30T15:00:00.000Z",
+    "end": "2013-06-15T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjucztp",
+        "begin": "2015-04-10T08:30:11.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "49131"
+      },
+      {
+        "site": "nicovideo",
+        "id": "date-a-live",
+        "begin": "2014-01-19T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "4188",
+        "begin": "2013-04-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "RDG レッドデータガール",
+    "titleTranslate": {
+      "en": [
+        "RDG RED DATA GIRL"
+      ],
+      "zh-Hans": [
+        "RDG 濒危物种少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://rdg-anime.jp/",
+    "begin": "2013-03-16T14:30:00.000Z",
+    "end": "2013-06-01T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "46728"
+      },
+      {
+        "site": "nicovideo",
+        "id": "rdg",
+        "begin": "2014-01-05T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "龍 -RYO-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙 -RYO-"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.animemirai.jp/c1.php",
+    "begin": "2013-03-02T16:00:00.000Z",
+    "end": "2013-03-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6OFibicGTKOnjbWcE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54676"
+      }
+    ]
+  },
+  {
+    "title": "リトルウィッチアカデミア",
+    "titleTranslate": {
+      "en": [
+        "Little Witch Academia"
+      ],
+      "zh-Hans": [
+        "小魔女学园"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.animemirai.jp/c2.php",
+    "begin": "2013-03-02T16:00:00.000Z",
+    "end": "2013-03-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "87725",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54675"
+      },
+      {
+        "site": "netflix",
+        "id": "80079082",
+        "begin": "2015-10-09T07:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2547",
+        "begin": "2013-03-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アルヴ・レズル -機械仕掛けの妖精たち-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Arve Rezzle 机器化的妖精们"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://animemirai.jp/c3.php",
+    "begin": "2013-03-02T16:00:00.000Z",
+    "end": "2013-03-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Qy0Hhe1TwwFk4ko",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "29649"
+      }
+    ]
+  },
+  {
+    "title": "デス・ビリヤード",
+    "titleTranslate": {
+      "zh-Hans": [
+        "死亡台球"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.animemirai.jp/c4.php",
+    "begin": "2013-03-02T16:00:00.000Z",
+    "end": "2013-03-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "eKoIhu5UxAJl40s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "v_19rrnvepuo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54734"
+      }
+    ]
+  },
+  {
+    "title": "サイクロプス少女さいぷ〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "独眼巨人少女斎枫～"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://youngjump.jp/info/saipuu/",
+    "begin": "2013-03-12T16:00:00.000Z",
+    "end": "2013-05-30T16:02:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "LtG7OaEHd7UYlv4",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "87178",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66338"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saipuu",
+        "begin": "2013-04-18T04:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぐでたま",
+    "titleTranslate": {
+      "zh-Hans": [
+        "懒蛋蛋"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sanrio.co.jp/character/gudetama/",
+    "begin": "2013-03-31T16:00:00.000Z",
+    "end": "",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "tI9p50ib1JWPGRKw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "k/knvmsc7suct7q0l",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "107928"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太のひみつ道具博物館",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦 大雄的秘密道具博物館"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://doraeiga.com/2013/",
+    "begin": "2013-03-09T16:00:00.000Z",
+    "end": "2013-03-09T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "R9O9O6MJebcamAA",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "92438",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "55467"
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh6mmih",
+        "begin": "2018-05-31T16:11:29.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3898",
+        "begin": "2013-03-08T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "夕餉（ゆうげ）",
+    "titleTranslate": {
+      "zh-Hans": [
+        "晚餐"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/bs/joshianime/",
+    "begin": "2013-03-10T16:00:00.000Z",
+    "end": "2013-03-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CfXfXcUrm9k8uiaI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67227"
+      },
+      {
+        "site": "bilibili",
+        "id": "604",
+        "begin": "2011-01-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "人生ベストテン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人生Best Ten"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/bs/joshianime/",
+    "begin": "2013-03-17T16:00:00.000Z",
+    "end": "2013-03-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CfXfXcUrm9k8uiaI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67451"
+      },
+      {
+        "site": "bilibili",
+        "id": "604",
+        "begin": "2011-01-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "どこかではないここ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "不在他处 正是此地"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/bs/joshianime/",
+    "begin": "2013-03-24T16:00:00.000Z",
+    "end": "2013-03-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CfXfXcUrm9k8uiaI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67452"
+      },
+      {
+        "site": "bilibili",
+        "id": "604",
+        "begin": "2011-01-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぬらりひょんの孫 ー奴良組事始ー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "滑头鬼之孙 ～奴良组事始～"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.nuramago.jp/",
+    "begin": "2013-03-04T16:00:00.000Z",
+    "end": "2013-03-04T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "DOPNS7MZiaccqqBA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "68461"
+      },
+      {
+        "site": "bilibili",
+        "id": "3798",
+        "begin": "2013-03-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボールZ 神と神",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠Z 神与神"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.dragonball2013.com/",
+    "begin": "2013-03-30T16:00:00.000Z",
+    "end": "2013-03-30T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "44636"
+      },
+      {
+        "site": "nicovideo",
+        "id": "dragonball2013",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "花咲くいろは HOME SWEET HOME",
+    "titleTranslate": {
+      "zh-Hans": [
+        "花开伊吕波 HOME SWEET HOME"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.hanasakuiroha.jp/",
+    "begin": "2013-03-09T16:00:00.000Z",
+    "end": "2013-03-09T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "49892"
+      },
+      {
+        "site": "pptv",
+        "id": "jmBMyjKYCEapJ48",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "131532",
+        "begin": "2013-03-08T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アルカナ・ファミリア -La storia della Arcana Famiglia- La prima festa",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔力家族 La prima festa"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://arcanafamiglia.com",
+    "begin": "2013-03-27T16:00:00.000Z",
+    "end": "2013-03-27T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "121804"
+      },
+      {
+        "site": "bilibili",
+        "id": "3587",
+        "begin": "2013-03-26T16:00:00.000Z"
+      }
+    ]
+  }
+]

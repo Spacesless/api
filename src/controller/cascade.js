@@ -13,13 +13,13 @@ module.exports = class extends Base {
     let data = [];
     switch (level) {
       case '2':
-        data = await fs.readJson(path.join(this.baseurl, 'pc_code.json'));
+        data = await fs.readJson(path.join(this.baseurl, 'pc-code.json'));
         break;
       case '3':
-        data = await fs.readJson(path.join(this.baseurl, 'pca_code.json'));
+        data = await fs.readJson(path.join(this.baseurl, 'pca-code.json'));
         break;
       case '4':
-        data = await fs.readJson(path.join(this.baseurl, 'pcas_code.json'));
+        data = await fs.readJson(path.join(this.baseurl, 'pcas-code.json'));
         break;
     }
     return this.success(data);
@@ -28,7 +28,7 @@ module.exports = class extends Base {
   // level: {0: "省级（省份、直辖市、自治区）", 1: "地级（城市）", 2: "县级（区县）", 3: "乡级（乡镇、街道）", 4: "村级（村委会、居委会）"}
   // code: 父节点code
   async citysAction() {
-    const { code } = this.get();
+    const code = this.get('code') || '';
     let data = [];
     switch (code.length) {
       case 0:
@@ -57,7 +57,7 @@ module.exports = class extends Base {
   async searchAction() {
     const { keyword } = this.get();
     let data = [];
-    const relationship = await fs.readJson(path.join(this.baseurl, 'pcas_code.json'));
+    const relationship = await fs.readJson(path.join(this.baseurl, 'pcas-code.json'));
     data = this.dealDeep(relationship, node => node.name.includes(keyword));
     return this.success(data);
   }

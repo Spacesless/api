@@ -1,0 +1,161 @@
+[
+  {
+    "title": "ポケットモンスター　アドバンスジェネレーション",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦 超世代",
+        "精灵宝可梦 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pokemon_ag/",
+    "begin": "2002-11-21T10:00:00.000Z",
+    "end": "2006-09-14T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AyMNiaicNZyQdq6FA",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb7bx9",
+        "begin": "2015-09-17T05:39:26.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "9/9yfjl0rjm0l5tys",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10006375",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2017/dhpjlbkm2",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3020"
+      },
+      {
+        "site": "bilibili",
+        "id": "6161",
+        "begin": "2002-11-20T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc0040f8962411de83b1",
+        "begin": "2014-11-19T04:49:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "PIANO",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钢琴恋曲"
+      ],
+      "en": [
+        "PIANO"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.marine-e.co.jp/sakuhin/piano/p_index.htm",
+    "begin": "2002-11-11T07:00:00.000Z",
+    "end": "2003-01-13T08:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TPzHRa0Tg8Ekogo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1950"
+      },
+      {
+        "site": "bilibili",
+        "id": "2058",
+        "begin": "2002-11-10T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "19637",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "釣りバカ日誌",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钓鱼迷日记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/tsuribaka/",
+    "begin": "2002-11-02T16:00:00.000Z",
+    "end": "2003-09-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "102315"
+      }
+    ]
+  },
+  {
+    "title": "奇鋼仙女ロウラン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "奇钢仙女楼兰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/rouran/top.html",
+    "begin": "2002-11-15T16:00:00.000Z",
+    "end": "2003-05-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "joNt61O5KWfKSLA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19612"
+      }
+    ]
+  },
+  {
+    "title": "ヴァイスクロイツ グリーエン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "白色猎人 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-11-28T16:00:00.000Z",
+    "end": "2003-02-20T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "aaKeHITqWpj7eeE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "39001"
+      }
+    ]
+  }
+]

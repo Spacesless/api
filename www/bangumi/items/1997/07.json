@@ -1,0 +1,171 @@
+[
+  {
+    "title": "新世紀エヴァンゲリオン劇場版 Air/まごころを、君に",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新世纪福音战士剧场版 Air/真心为你"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-19T16:00:00.000Z",
+    "end": "1997-07-19T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zj65",
+        "begin": "2016-10-31T16:00:43.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "6049"
+      },
+      {
+        "site": "bilibili",
+        "id": "10272",
+        "begin": "1997-07-18T16:00:01.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "end_of_eva",
+        "begin": ""
+      },
+      {
+        "site": "acfun",
+        "id": "5023296",
+        "begin": "2019-01-07T11:23:58.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "68878414af5911e0a046",
+        "begin": "2020-05-07T13:40:10.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ゲゲゲの鬼太郎 妖怪特急! まぼろしの汽車",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼太郎 妖怪特快车! 魔幻火车"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-12T16:00:00.000Z",
+    "end": "1997-07-12T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211099"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4kld",
+        "begin": "2015-08-11T08:03:32.000Z"
+      }
+    ]
+  },
+  {
+    "title": "地獄先生ぬ〜べ〜 恐怖の夏休み!! 妖しの海の伝説!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "地狱老师 恐怖的暑假！妖海传说"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-12T16:00:00.000Z",
+    "end": "1997-07-12T16:40:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "158800"
+      }
+    ]
+  },
+  {
+    "title": "もののけ姫",
+    "titleTranslate": {
+      "zh-Hans": [
+        "幽灵公主"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-12T16:00:00.000Z",
+    "end": "1997-07-12T18:15:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9spg5",
+        "begin": "2017-01-24T08:06:01.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "310"
+      }
+    ]
+  },
+  {
+    "title": "烈火の炎",
+    "titleTranslate": {
+      "zh-Hans": [
+        "烈火之炎"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-19T16:00:00.000Z",
+    "end": "1998-07-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HE46uCCG9jSXFX0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6501"
+      },
+      {
+        "site": "bilibili",
+        "id": "2283",
+        "begin": "1997-07-18T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "レイアース",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法骑士雷阿斯OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-07-25T16:00:00.000Z",
+    "end": "1997-12-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "39543"
+      },
+      {
+        "site": "pptv",
+        "id": "2nVQzjacDEqtK5M",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3806",
+        "begin": "1997-07-24T16:00:01.000Z"
+      }
+    ]
+  }
+]

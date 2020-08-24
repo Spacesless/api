@@ -1,0 +1,108 @@
+[
+  {
+    "title": "銀河漂流バイファム13",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河漂流华尔分13"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vifam.net/",
+    "begin": "1998-03-21T16:00:00.000Z",
+    "end": "1998-10-03T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37471"
+      }
+    ]
+  },
+  {
+    "title": "REVIVAL OF EVANGELION 新世紀エヴァンゲリオン劇場版 DEATH (TRUE)² / Air / まごころを、君に",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新世纪福音战士剧场版 DEATH(TRUE)2/Air/真心为你"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-03-07T16:00:00.000Z",
+    "end": "1998-03-07T18:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zj65",
+        "begin": "2016-10-31T16:00:43.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "39923"
+      },
+      {
+        "site": "nicovideo",
+        "id": "eva_death_true2",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "銀河鉄道999 エターナル・ファンタジー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河铁道999 永恒幻想"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-03-07T16:00:00.000Z",
+    "end": "1998-03-07T16:55:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "33930"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太の南海大冒険",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄的南海大冒险"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-03-07T16:00:00.000Z",
+    "end": "1998-03-07T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80953",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "460"
+      },
+      {
+        "site": "pptv",
+        "id": "7qoHhe1TwwFk4ko",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2565",
+        "begin": "1998-03-06T16:00:00.000Z"
+      }
+    ]
+  }
+]

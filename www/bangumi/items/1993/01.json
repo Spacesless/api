@@ -1,0 +1,102 @@
+[
+  {
+    "title": "ミラクル☆ガールズ",
+    "titleTranslate": {
+      "en": [
+        "Miracle☆Girls"
+      ],
+      "zh-Hans": [
+        "奇迹女孩"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-01-08T16:00:00.000Z",
+    "end": "1993-12-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "80149"
+      }
+    ]
+  },
+  {
+    "title": "無責任艦長タイラー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "无责任舰长"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program/detail/4461",
+    "begin": "1993-01-25T16:00:00.000Z",
+    "end": "1993-07-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8249"
+      },
+      {
+        "site": "bilibili",
+        "id": "2332",
+        "begin": "1993-01-24T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "若草物語ナンとジョー先生",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小妇人物语 南与乔老师",
+        "小妇人 第2部"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-01-17T16:00:00.000Z",
+    "end": "1993-12-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjzg2cp",
+        "begin": "2012-10-16T10:34:58.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "53744"
+      }
+    ]
+  },
+  {
+    "title": "勇者特急マイトガイン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "勇者特急"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-01-30T16:00:00.000Z",
+    "end": "1994-01-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "lNayMJjibbqwPjfU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37248"
+      },
+      {
+        "site": "bilibili",
+        "id": "2331",
+        "begin": "1993-01-30T16:00:00.000Z"
+      }
+    ]
+  }
+]

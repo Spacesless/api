@@ -1,0 +1,76 @@
+[
+  {
+    "title": "七つの海のティコ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "七海的堤可",
+        "七海小英雄",
+        "深海中的朋友"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-01-16T16:00:00.000Z",
+    "end": "1994-12-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk0m4ad",
+        "begin": "2012-04-05T02:23:38.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "80237"
+      }
+    ]
+  },
+  {
+    "title": "赤ずきんチャチャ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小红帽恰恰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-01-07T16:00:00.000Z",
+    "end": "1995-06-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6yUfnQVr2xl8ibmI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10409"
+      }
+    ]
+  },
+  {
+    "title": "湘南純愛組!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "湘南纯爱组"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-01-21T16:00:00.000Z",
+    "end": "1997-01-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "26228"
+      },
+      {
+        "site": "pptv",
+        "id": "ZKaiaIIjuXpzicfeU",
+        "begin": ""
+      }
+    ]
+  }
+]

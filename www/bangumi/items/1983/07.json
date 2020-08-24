@@ -1,0 +1,95 @@
+[
+  {
+    "title": "魔法の天使クリィミーマミ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我是小甜甜",
+        "魔法小天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/title/magicgirl/",
+    "begin": "1983-07-01T09:00:00.000Z",
+    "end": "1984-06-29T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "h/h6r8lxcw2ho24z8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10560"
+      },
+      {
+        "site": "nicovideo",
+        "id": "creamy-mami",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2018/dhpmfxts",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgyoz11",
+        "begin": "2018-04-01T01:00:25.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5600",
+        "begin": "1983-06-30T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドキュメント 太陽の牙ダグラム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "太阳之牙达格拉姆文书"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1983-07-09T16:00:00.000Z",
+    "end": "1983-07-09T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47673"
+      }
+    ]
+  },
+  {
+    "title": "キャッツ・アイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猫眼三姐妹"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tms-e.com/bb_mobile/cats_eye/",
+    "begin": "1983-07-11T14:00:00.000Z",
+    "end": "1985-07-08T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "9304"
+      },
+      {
+        "site": "nicovideo",
+        "id": "catseye",
+        "begin": "2011-11-02T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2876",
+        "begin": "1983-07-10T16:00:00.000Z"
+      }
+    ]
+  }
+]

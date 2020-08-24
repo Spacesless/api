@@ -1,0 +1,75 @@
+[
+  {
+    "title": "うる星やつら2 ビューティフル・ドリーマー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "福星小子2 绮丽梦中人"
+      ],
+      "en": [
+        "Urusei Yatsura Movie 2: Beautiful Dreamer"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1984-02-11T16:00:00.000Z",
+    "end": "1984-02-11T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha1k6d",
+        "begin": "2016-11-28T09:39:42.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "40003"
+      }
+    ]
+  },
+  {
+    "title": "超攻速ガルビオン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超攻速加尔比安"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1984-02-03T09:30:00.000Z",
+    "end": "1984-06-29T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37294"
+      }
+    ]
+  },
+  {
+    "title": "重戦機エルガイム",
+    "titleTranslate": {
+      "en": [
+        "HEAVY METAL L-GAIM"
+      ],
+      "zh-Hans": [
+        "重战机艾尔盖姆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-anime.jp/sunrise-inc/works/detail.php?cid=83",
+    "begin": "1984-02-04T00:00:00.000Z",
+    "end": "1985-02-23T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37170"
+      },
+      {
+        "site": "bilibili",
+        "id": "2443",
+        "begin": "1984-02-03T16:00:00.000Z"
+      }
+    ]
+  }
+]

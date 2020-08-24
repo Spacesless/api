@@ -1,0 +1,113 @@
+[
+  {
+    "title": "OH!スーパーミルクチャン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哦! 超级小奶糖"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.supermilk-chan.com/",
+    "begin": "2000-01-27T16:00:00.000Z",
+    "end": "2000-04-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "85771"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oh-supermilk-chan",
+        "begin": "2011-06-17T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "風まかせ月影蘭",
+    "titleTranslate": {
+      "zh-Hans": [
+        "随风舞月影兰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.b-ch.com/cgi-bin/contents/ttl/det.cgi?ttl_c=416",
+    "begin": "2000-01-26T16:00:00.000Z",
+    "end": "2000-04-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4047"
+      },
+      {
+        "site": "bilibili",
+        "id": "2151",
+        "begin": "2000-01-25T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "女神候補生",
+    "titleTranslate": {
+      "zh-Hans": [
+        "女神候补生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-01-10T16:00:00.000Z",
+    "end": "2000-03-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "m/m0gjz15r0yh4530",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37487"
+      },
+      {
+        "site": "bilibili",
+        "id": "2167",
+        "begin": "2000-01-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ブギーポップは笑わない Boogiepop Phantom",
+    "titleTranslate": {
+      "zh-Hans": [
+        "幻影死神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-01-05T16:00:00.000Z",
+    "end": "2000-03-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BCkUkvpg0A5x71c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3769"
+      },
+      {
+        "site": "bilibili",
+        "id": "2150",
+        "begin": "2000-01-04T16:00:00.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "boogiepop-phantom",
+        "begin": "2018-09-21T09:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2339 @@
+[
+  {
+    "title": "ReLIFE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "ReLIFE"
+      ],
+      "en": [
+        "ReLIFE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://relife-anime.com/",
+    "begin": "2016-07-01T15:00:00.000Z",
+    "end": "2016-09-23T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "8ccb75fa3a7411e69e2a",
+        "begin": "2016-07-01T15:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "126173"
+      },
+      {
+        "site": "nicovideo",
+        "id": "relife",
+        "begin": "2016-09-23T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28229193",
+        "begin": "2016-06-30T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ベルセルク(2016)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剑风传奇"
+      ],
+      "en": [
+        "BERSERK"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://berserk-anime.com/",
+    "begin": "2016-07-01T13:30:00.000Z",
+    "end": "2016-09-16T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "rJx49l7ENHLVU7s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "162040"
+      }
+    ]
+  },
+  {
+    "title": "ぐらP&ろで夫(第2シーズン)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "GranP&Rodeo夫 2期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.grap-rodeo.net/",
+    "begin": "2016-07-01T12:55:00.000Z",
+    "end": "2016-12-30T13:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "182342"
+      }
+    ]
+  },
+  {
+    "title": "ももくり",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小桃小栗 Love Love物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.momokuri-anime.jp/",
+    "begin": "2016-07-01T13:30:00.000Z",
+    "end": "2016-09-23T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5016",
+        "begin": "2016-07-01T15:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "8f0b15313e8a11e69c81",
+        "begin": "2016-07-01T15:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "a9bCQKgOfrwfnQU",
+        "begin": "2016-07-01T15:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "185001"
+      },
+      {
+        "site": "qq",
+        "id": "i/imqk1qifdgm1dzl",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "初恋モンスター",
+    "titleTranslate": {
+      "zh-Hans": [
+        "初恋怪兽",
+        "初恋Monster"
+      ],
+      "en": [
+        "First Love Monster",
+        "HATSUKOI MONSTER"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hatsukoimonster.jp/",
+    "begin": "2016-07-02T14:00:00.000Z",
+    "end": "2016-09-17T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5018",
+        "begin": "2016-07-02T15:30:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "r5t181vBMWicSULg",
+        "begin": "2016-07-02T15:30:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanqsp",
+        "begin": "2016-07-02T15:30:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "294422",
+        "begin": "2016-07-02T15:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "87db18ba3a7a11e69e2a",
+        "begin": "2016-07-02T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "138440"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hatsukoimonster",
+        "begin": "2016-07-09T03:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "u/u3kwskxncklutmx",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "Rewrite",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Rewrite"
+      ],
+      "en": [
+        "Rewrite"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.rewrite-anime.tv/",
+    "begin": "2016-07-02T14:30:00.000Z",
+    "end": "2016-09-24T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5020",
+        "begin": "2016-07-07T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "147568"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch2623420",
+        "begin": "2016-07-03T14:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "食戟のソーマ 弐ノ皿",
+    "titleTranslate": {
+      "zh-Hans": [
+        "食戟之灵 贰之皿",
+        "食戟之灵 2期",
+        "食戟之灵 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://shokugekinosoma.com/",
+    "begin": "2016-07-02T13:00:00.000Z",
+    "end": "2016-09-24T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5017",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanqz5",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "oo5q6FC2JmTHRa0",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024389",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "160124"
+      },
+      {
+        "site": "mgtv",
+        "id": "294534",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "j/jnsdmju32u93uuk",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ラブライブ！サンシャイン!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Love Live! Sunshine!!"
+      ],
+      "en": [
+        "Love Live! Sunshine!!",
+        "Love Live ! Sunshine!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.lovelive-anime.jp/uranohoshi/",
+    "begin": "2016-07-02T13:30:00.000Z",
+    "end": "2016-09-24T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5062",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanr91",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "g/g6jw8dxf8zg5x88",
+        "begin": "2016-07-02T14:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "165553"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lovelive-anime-uranohoshi",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "B-PROJECT～鼓動＊アンビシャス～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "B-PROJECT～鼓动＊Ambitious～"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://bpro-anime.com/",
+    "begin": "2016-07-02T15:30:00.000Z",
+    "end": "2016-09-24T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "edb852fe3a7c11e6a080",
+        "begin": "2016-07-07T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "175568"
+      },
+      {
+        "site": "nicovideo",
+        "id": "bpro-anime",
+        "begin": "2016-06-25T12:30:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5019",
+        "begin": "2016-07-02T17:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おなら吾郎",
+    "titleTranslate": {
+      "zh-Hans": [
+        "屁屁吾郎"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.onaragoro.jp/",
+    "begin": "2016-07-01T16:57:00.000Z",
+    "end": "2016-09-24T16:57:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5066",
+        "begin": "2016-07-01T17:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "182341"
+      }
+    ]
+  },
+  {
+    "title": "テイルズ オブ ゼスティリア ザ クロス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "情热传说X",
+        "情热传说 the X",
+        "热诚传说X"
+      ],
+      "en": [
+        "Tales of Zestiria the X",
+        "Tales of Zestiria theX"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://toz-thex-anime.tales-ch.jp/",
+    "begin": "2016-07-03T14:00:00.000Z",
+    "end": "2016-09-25T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "sohu",
+        "id": "s2016/dhprccshx",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5022",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "n6uFA2vRQXiciaYMg",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanqu9",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "z/zb9kc4rtijwlcja",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024401",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "8d4e6f8a3e9f11e6b32f",
+        "begin": "2016-07-03T14:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "136371"
+      },
+      {
+        "site": "nicovideo",
+        "id": "toz-thex-anime",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "312831",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "アルスラーン戦記 風塵乱舞",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亚尔斯兰战记 风尘乱舞",
+        "亚尔斯兰战记 第2季"
+      ],
+      "en": [
+        "The Heroic Legend of Arslan: Dust Storm Dance",
+        "The Heroic Legend of Arslan Dust Storm Dance"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://arslan.jp/2/",
+    "begin": "2016-07-03T08:00:00.000Z",
+    "end": "2016-08-21T08:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5021",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "CDkTkflfzw1w7lY",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanqpx",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "9bc613a23a7f11e69e2a",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024398",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "294389",
+        "begin": "2016-07-03T14:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "148436"
+      },
+      {
+        "site": "nicovideo",
+        "id": "arslan02",
+        "begin": "2016-07-13T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "DAYS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "DAYS"
+      ],
+      "en": [
+        "Days",
+        "DAYS"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://days-project.jp/",
+    "begin": "2016-07-02T18:28:00.000Z",
+    "end": "2016-12-17T18:28:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5063",
+        "begin": "2016-07-02T18:58:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "Ys6qKJD2ZqQHhe0",
+        "begin": "2016-07-02T18:58:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024397",
+        "begin": "2016-07-02T18:58:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "806966103a7d11e6b32f",
+        "begin": "2016-07-02T18:58:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "165046"
+      },
+      {
+        "site": "nicovideo",
+        "id": "days-project",
+        "begin": "2016-07-06T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "orange",
+    "titleTranslate": {
+      "zh-Hans": [
+        "橘色奇迹",
+        "Orange橘色奇迹"
+      ],
+      "en": [
+        "orange"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://orange-anime.com/",
+    "begin": "2016-07-03T15:00:00.000Z",
+    "end": "2016-09-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanqmt",
+        "begin": "2016-07-03T16:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "169425"
+      },
+      {
+        "site": "mgtv",
+        "id": "294547",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "w/wx2pzkbehg5ur8t",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "28228559",
+        "begin": "2016-07-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "NEW GAME!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "NEW GAME!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://newgame-anime.com/",
+    "begin": "2016-07-04T13:30:00.000Z",
+    "end": "2016-09-19T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5027",
+        "begin": "2016-07-05T17:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanpqp",
+        "begin": "2016-07-05T17:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "Z9O9O6MJebcamAA",
+        "begin": "2016-07-05T17:00:00.000Z"
+      },
+      {
+        "site": "sohu",
+        "id": "s2018/dhpnewgame",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "c9b2f1283cd611e6abda",
+        "begin": "2016-07-05T17:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024415",
+        "begin": "2016-07-05T17:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "150775"
+      },
+      {
+        "site": "nicovideo",
+        "id": "newgame",
+        "begin": "2016-06-28T06:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "h/hdk2c5cvu5nlhaa",
+        "begin": ""
+      },
+      {
+        "site": "acfun",
+        "id": "5025182",
+        "begin": "2019-08-07T08:14:17.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ばなにゃ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "香蕉喵",
+        "香蕉猫咪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.bananya-anime.com/",
+    "begin": "2016-07-04T11:55:00.000Z",
+    "end": "2016-09-26T12:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanq3d",
+        "begin": "2016-07-04T13:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "gbGbGYHnV5X4dt4",
+        "begin": "2016-07-04T13:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "ea3b7d353cd511e6bdbb",
+        "begin": "2016-07-04T13:00:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "294436",
+        "begin": "2016-07-04T13:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "168123"
+      },
+      {
+        "site": "nicovideo",
+        "id": "bananya",
+        "begin": "2016-07-09T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5026",
+        "begin": "2016-07-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "パズドラクロス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "智龙迷城X"
+      ],
+      "en": [
+        "PUZZLE & DRAGONS X"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pad-x/",
+    "begin": "2016-07-04T09:25:00.000Z",
+    "end": "2018-03-26T09:55:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5025",
+        "begin": "2016-07-04T10:25:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanq81",
+        "begin": "2016-07-04T10:25:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "76105a7e3cd911e6bdbb",
+        "begin": "2016-07-04T10:25:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024413",
+        "begin": "2016-07-04T10:25:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "169076"
+      },
+      {
+        "site": "nicovideo",
+        "id": "pad-x",
+        "begin": "2016-07-07T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "斉木楠雄のΨ難",
+    "titleTranslate": {
+      "zh-Hans": [
+        "齐木楠雄的灾难"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.saikikusuo.com/",
+    "begin": "2016-07-10T17:05:00.000Z",
+    "end": "2016-12-25T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "10024422",
+        "begin": "2016-07-04T00:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5070",
+        "begin": "2016-07-04T00:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanq6h",
+        "begin": "2016-07-04T00:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "3d9b29023dc711e6b522",
+        "begin": "2016-07-10T18:03:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "181354"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saikikusuo",
+        "begin": "2016-08-25T15:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80117781",
+        "begin": "2018-04-01T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "タブー・タトゥー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "禁忌咒纹"
+      ],
+      "en": [
+        "Taboo Tattoo",
+        "TABOO TATTOO"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://tabootattoo-anime.com/",
+    "begin": "2016-07-04T17:05:00.000Z",
+    "end": "2016-09-19T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5031",
+        "begin": "2016-07-04T18:05:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhans3t",
+        "begin": "2016-07-04T18:05:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024417",
+        "begin": "2016-07-04T18:05:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "3b0e74e83cd011e69b6d",
+        "begin": "2016-07-04T18:05:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "123178"
+      },
+      {
+        "site": "nicovideo",
+        "id": "tabootattoo-anime",
+        "begin": "2016-07-08T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "SERVAMP -サーヴァンプ-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "吸血鬼仆人"
+      ],
+      "en": [
+        "SERVAMP"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.servamp.jp/",
+    "begin": "2016-07-05T14:00:00.000Z",
+    "end": "2016-09-20T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "caa6e1e63da011e69b6d",
+        "begin": "2016-07-05T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "139964"
+      },
+      {
+        "site": "nicovideo",
+        "id": "servamp",
+        "begin": "2016-07-08T15:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "5/5uv6z6wf9kf6ow5",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "28221167",
+        "begin": "2016-07-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "魔装学園H×H",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔装学园H×H"
+      ],
+      "en": [
+        "Hybrid x Heart Magias Academy Ataraxia"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.masou-hh.com/",
+    "begin": "2016-07-05T15:30:00.000Z",
+    "end": "2016-09-20T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "147438"
+      },
+      {
+        "site": "nicovideo",
+        "id": "masou-hh",
+        "begin": "2016-07-20T16:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "D.Gray-man HALLOW",
+    "titleTranslate": {
+      "zh-Hans": [
+        "驱魔少年 HALLOW"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://dgrayman-anime.com/",
+    "begin": "2016-07-04T16:35:00.000Z",
+    "end": "2016-09-26T17:05:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5030",
+        "begin": "2016-07-04T17:35:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhansmx",
+        "begin": "2016-07-04T17:35:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "0a27cd323cd211e6abda",
+        "begin": "2016-07-04T17:35:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024416",
+        "begin": "2016-07-04T17:35:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "161793"
+      }
+    ]
+  },
+  {
+    "title": "SHOW BY ROCK!! しょ～と!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "SHOW BY ROCK!! SHORT!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://showbyrock-anime.com/short/",
+    "begin": "2016-07-04T16:00:00.000Z",
+    "end": "2016-09-19T16:05:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5028",
+        "begin": "2016-07-04T16:15:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "167729"
+      },
+      {
+        "site": "nicovideo",
+        "id": "showbyrock-short",
+        "begin": "2016-07-05T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "甘々と稲妻",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天真与闪电"
+      ],
+      "en": [
+        "Sweetness and Lightning"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.amaama.jp/",
+    "begin": "2016-07-04T16:05:00.000Z",
+    "end": "2016-09-19T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5029",
+        "begin": "2016-07-04T17:05:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanpu5",
+        "begin": "2016-07-04T17:05:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "sYFr6VG3J2XIRq4",
+        "begin": "2016-07-04T17:05:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "293716",
+        "begin": "2016-07-04T17:05:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024414",
+        "begin": "2016-07-04T17:05:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "170261"
+      },
+      {
+        "site": "nicovideo",
+        "id": "amaama-anime",
+        "begin": "2016-07-06T03:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "41658a843cd311e69c81",
+        "begin": "2016-07-05T14:48:51.000Z"
+      }
+    ]
+  },
+  {
+    "title": "チア男子!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "男子啦啦队!!"
+      ],
+      "en": [
+        "Cheer Boys"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.cheer-boys.com/",
+    "begin": "2016-07-05T14:00:00.000Z",
+    "end": "2016-09-20T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "c87eb8763d9b11e69b6d",
+        "begin": "2016-07-05T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "175402"
+      },
+      {
+        "site": "nicovideo",
+        "id": "cheer-boys",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "18747402",
+        "begin": "2016-07-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "腐男子高校生活",
+    "titleTranslate": {
+      "zh-Hans": [
+        "腐男子高校生活",
+        "腐男子高中生活"
+      ],
+      "en": [
+        "FUDANSHI KOKO SEIKATSU"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.dreamcreation.co.jp/fudanshi/",
+    "begin": "2016-07-05T13:55:00.000Z",
+    "end": "2016-09-20T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5033",
+        "begin": "2016-07-05T13:55:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "180211"
+      },
+      {
+        "site": "nicovideo",
+        "id": "fudanshi",
+        "begin": "2016-07-05T12:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ツキウタ。 THE ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "月歌"
+      ],
+      "en": [
+        "TSUKIUTA THE ANIMATION"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tsukiani.com/",
+    "begin": "2016-07-06T14:00:00.000Z",
+    "end": "2016-09-28T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5038",
+        "begin": "2016-07-06T14:30:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "FSQQjvZczApt61M",
+        "begin": "2016-07-06T14:30:00.000Z"
+      },
+      {
+        "site": "sohu",
+        "id": "s2018/dhpyuege",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "f/fh9qxmu1x4631aj",
+        "begin": "2016-07-06T14:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "9c2736e63d9f11e69e2a",
+        "begin": "2016-07-06T14:30:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024418",
+        "begin": "2016-07-06T14:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "117282"
+      },
+      {
+        "site": "nicovideo",
+        "id": "tsukiani",
+        "begin": "2016-07-20T14:00:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "294605",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhf5m79",
+        "begin": "2018-04-30T16:00:43.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Fate/kaleid liner プリズマ☆イリヤ ドライ!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法少女☆伊莉雅 3rei!!",
+        "魔法少女伊莉雅 第4季"
+      ],
+      "en": [
+        "Fate/kaleid liner PRISMA ILLYA 3rei!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime.prisma-illya.jp/3rei/",
+    "begin": "2016-07-06T14:00:00.000Z",
+    "end": "2016-09-21T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanrv5",
+        "begin": "2016-07-06T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "147466"
+      },
+      {
+        "site": "nicovideo",
+        "id": "prisma-illya03",
+        "begin": "2016-07-16T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "3/3x1d5yb0d1jqy3i",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "10464925",
+        "begin": "2016-07-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "OZMAFIA!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "OZMAFIA!!"
+      ],
+      "en": [
+        "OZMAFIA"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime.ozmafia.com/",
+    "begin": "2016-07-06T15:00:00.000Z",
+    "end": "2016-09-21T15:05:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5039",
+        "begin": "2016-07-06T15:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "168902"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ozmafia",
+        "begin": "2016-07-12T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "planetarian ～ちいさなほしのゆめ～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星之梦"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://planetarian-project.com/",
+    "begin": "2016-07-06T15:00:00.000Z",
+    "end": "2016-08-03T15:26:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5045",
+        "begin": "2016-07-06T16:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "176518"
+      },
+      {
+        "site": "nicovideo",
+        "id": "planetarian",
+        "begin": "2016-07-06T15:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "9ec92ca43d9c11e6b522",
+        "begin": "2016-07-07T10:44:49.000Z"
+      }
+    ]
+  },
+  {
+    "title": "スカーレッドライダーゼクス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "红伤骑士X"
+      ],
+      "en": [
+        "Scared Rider Xechs"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime.scared-rider-xechs.jp/",
+    "begin": "2016-07-05T16:35:00.000Z",
+    "end": "2016-09-20T17:05:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "6a5bd68c3da211e6b432",
+        "begin": "2016-07-05T17:35:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhans3h",
+        "begin": "2016-07-05T17:35:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5037",
+        "begin": "2016-07-05T17:35:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024420",
+        "begin": "2016-07-05T17:35:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "176958"
+      },
+      {
+        "site": "nicovideo",
+        "id": "scared-rider-xechs",
+        "begin": "2016-07-15T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "魔法少女？なりあ☆がーるず",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法少女？Naria☆Girls"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nariagirls.com/",
+    "begin": "2016-07-06T15:05:00.000Z",
+    "end": "2016-09-21T15:15:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5040",
+        "begin": "2016-07-06T15:05:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "184299"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nariagirls",
+        "begin": "2016-07-06T15:14:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "レガリア The Three Sacred Stars",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Regalia 三圣星",
+        "雷加利亚三圣星"
+      ],
+      "en": [
+        "Regalia: The Three Sacred Stars"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://regalia-anime.com/",
+    "begin": "2016-07-07T13:00:00.000Z",
+    "end": "2016-11-24T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5041",
+        "begin": "2016-07-07T14:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "rpp29FzCMnDTUbk",
+        "begin": "2016-07-07T14:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024419",
+        "begin": "2016-07-07T14:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "174519"
+      },
+      {
+        "site": "nicovideo",
+        "id": "regalia",
+        "begin": "2016-09-05T03:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "400e629a3d9911e6a080",
+        "begin": "2016-07-08T04:19:57.000Z"
+      }
+    ]
+  },
+  {
+    "title": "美男高校地球防衛部LOVE! LOVE!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美男高校地球防卫部LOVE！LOVE！",
+        "美男高校地球防卫部LOVE!LOVE!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://boueibu.com/",
+    "begin": "2016-07-07T18:05:00.000Z",
+    "end": "2016-09-22T18:41:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5044",
+        "begin": "2016-07-07T18:35:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanrkd",
+        "begin": "2016-07-07T18:35:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "8fc3b3903dc011e69c81",
+        "begin": "2016-07-07T18:35:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10024421",
+        "begin": "2016-07-07T18:35:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "143099"
+      },
+      {
+        "site": "nicovideo",
+        "id": "boueibu02",
+        "begin": "2016-07-14T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あまんちゅ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蓝海少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://amanchu-anime.com/",
+    "begin": "2016-07-08T14:00:00.000Z",
+    "end": "2016-09-23T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "eb1d7b003e7311e6a080",
+        "begin": "2016-07-08T15:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "148142"
+      },
+      {
+        "site": "nicovideo",
+        "id": "amanchu-anime",
+        "begin": "2016-07-06T22:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "この美術部には問題がある！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "这个美术部有问题！",
+        "这个美术社大有问题！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/konobi/",
+    "begin": "2016-07-07T17:28:00.000Z",
+    "end": "2016-09-22T17:58:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5043",
+        "begin": "2016-07-07T19:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "3a67f7f63dbd11e6b522",
+        "begin": "2016-07-07T19:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanrop",
+        "begin": "2016-07-07T19:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "FCUPjfVbywls6lI",
+        "begin": "2016-07-07T19:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "150746"
+      },
+      {
+        "site": "nicovideo",
+        "id": "konobi",
+        "begin": "2016-06-24T03:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "9/9rr5ky6jcgdwjcf",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "はんだくん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "半田君"
+      ],
+      "en": [
+        "handa-kun"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/handaanime/",
+    "begin": "2016-07-07T16:58:00.000Z",
+    "end": "2016-09-22T17:28:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "7c5cb5243e7211e69b6d",
+        "begin": "2016-07-08T13:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "167980"
+      },
+      {
+        "site": "nicovideo",
+        "id": "handaanime",
+        "begin": "2016-07-17T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Thunderbolt Fantasy 東離劍遊紀",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Thunderbolt Fantasy 东离剑游纪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.thunderboltfantasy.com/",
+    "begin": "2016-07-08T14:00:00.000Z",
+    "end": "2016-09-30T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5064",
+        "begin": "2016-07-08T14:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "168395"
+      },
+      {
+        "site": "nicovideo",
+        "id": "thunderboltfantasy",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ねじ巻き精霊戦記 天鏡のアルデラミン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "发条精灵战记 天镜的极北之星"
+      ],
+      "en": [
+        "Alderamin on the Sky"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://alderamin.net/",
+    "begin": "2016-07-08T16:05:00.000Z",
+    "end": "2016-09-30T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5047",
+        "begin": "2016-07-08T17:35:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "8c2ed5803dbe11e69c81",
+        "begin": "2016-07-08T17:35:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhanrc1",
+        "begin": "2016-07-08T17:35:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "gLCcGoLoWJb5d98",
+        "begin": "2016-07-08T17:35:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "148097"
+      },
+      {
+        "site": "nicovideo",
+        "id": "alderamin",
+        "begin": "2016-07-18T15:30:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "q/qt5ycz4p8r1umug",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "クオリディア・コード",
+    "titleTranslate": {
+      "zh-Hans": [
+        "代号Qualidea"
+      ],
+      "en": [
+        "Qualidea Code",
+        "QUALIDEA CODE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://qualidea.jp/",
+    "begin": "2016-07-09T15:00:00.000Z",
+    "end": "2016-09-24T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "f387c01e3db711e6b32f",
+        "begin": "2016-07-14T16:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "161704"
+      },
+      {
+        "site": "nicovideo",
+        "id": "qualidea",
+        "begin": "2016-07-14T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "91Days",
+    "titleTranslate": {
+      "zh-Hans": [
+        "91天"
+      ],
+      "en": [
+        "91Days"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://91days.family/",
+    "begin": "2016-07-08T17:10:00.000Z",
+    "end": "2016-09-30T17:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Y8ibpJ4ic1ZaMGhOw",
+        "begin": "2016-07-08T17:55:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "175198"
+      },
+      {
+        "site": "nicovideo",
+        "id": "91days",
+        "begin": "2016-07-17T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "一人之下 the outcast",
+    "titleTranslate": {
+      "zh-Hans": [
+        "一人之下",
+        "一人之下 日配版"
+      ],
+      "en": [
+        "Hitori no Shita The Outcast"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hitorinoshita.com/",
+    "begin": "2016-07-02T12:00:00.000Z",
+    "end": "2016-09-24T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "wm9JxyibVBUOmJIw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "o/ozvao2u23k1nf9o",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10024378",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "295078",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5210",
+        "begin": "2016-07-07T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhaqfsd",
+        "begin": "2016-07-08T02:33:01.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "175457"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hitorinoshita",
+        "begin": "2016-09-14T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "一人之下",
+    "titleTranslate": {
+      "ja": [
+        "一人之下 the outcast"
+      ],
+      "en": [
+        "Hitori no Shita The Outcast"
+      ]
+    },
+    "type": "tv",
+    "lang": "zh-Hans",
+    "officialSite": "http://hitorinoshita.com/",
+    "begin": "2016-07-02T12:00:00.000Z",
+    "end": "2016-09-24T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "175457"
+      },
+      {
+        "site": "pptv",
+        "id": "9kIurBR66iaiaLCXE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "0/0vjw392pdevdan3",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10022999",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "294102",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5050",
+        "begin": "2016-07-07T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhal2yd",
+        "begin": "2016-07-08T02:33:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "タイムトラベル少女～マリ・ワカと8人の科学者たち～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "时间旅行少女～真理、和花与8名科学家～",
+        "时间旅行少女"
+      ],
+      "en": [
+        "Time Travel Girl"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mariwaka.com/",
+    "begin": "2016-07-08T22:00:00.000Z",
+    "end": "2016-09-23T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5049",
+        "begin": "2016-07-08T22:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "183554"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mariwaka",
+        "begin": "2016-07-11T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アンジュ・ヴィエルジュ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Ange Vierge",
+        "圣洁天使 Ange Vierge"
+      ],
+      "en": [
+        "Ange Vierge"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://ange-vierge-anime.com/",
+    "begin": "2016-07-09T16:30:00.000Z",
+    "end": "2016-09-24T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5053",
+        "begin": "2016-07-09T18:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "gq6KCHDWRoTnZc0",
+        "begin": "2016-07-09T18:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "119687"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ange-vierge-anime",
+        "begin": "2016-07-22T16:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f6652b7e3e8311e6b32f",
+        "begin": "2016-07-12T17:57:03.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アクティヴレイド -機動強襲室第八係- 2nd",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Active Raid -机动强袭室第八课- 2nd"
+      ],
+      "en": [
+        "ACTIVERAID Special Public Security Fifth Division Third Mobile Assault Eighth Unit Second"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://activeraid.net/",
+    "begin": "2016-07-10T15:30:00.000Z",
+    "end": "2016-09-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "503b58c0a88a11e5a080",
+        "begin": "2016-07-10T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "160220"
+      },
+      {
+        "site": "nicovideo",
+        "id": "activeraid",
+        "begin": "2016-01-18T14:30:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhf5ndp",
+        "begin": "2018-08-16T16:00:35.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "7491767",
+        "begin": "2016-07-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "モブサイコ100",
+    "titleTranslate": {
+      "zh-Hans": [
+        "灵能百分百"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mobpsycho100.com/",
+    "begin": "2016-07-11T15:00:00.000Z",
+    "end": "2016-09-26T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5058",
+        "begin": "2016-07-11T16:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "e4541dac3dbe11e6abda",
+        "begin": "2016-07-11T16:30:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhantvl",
+        "begin": "2016-07-11T16:30:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "qpaCAGjOPnzfXcU",
+        "begin": "2016-07-11T16:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "158316"
+      },
+      {
+        "site": "qq",
+        "id": "j/j74t36ys0phnqqp",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "294676",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ダンガンロンパ3-The End of 希望ヶ峰学園-未来編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "弹丸论破3 -The End of 希望之峰学园- 未来篇"
+      ],
+      "en": [
+        "Danganronpa 3 The End of Kibougamine Gakuen Side Future"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nbcuni.co.jp/anime/danganronpa3/",
+    "begin": "2016-07-11T14:00:00.000Z",
+    "end": "2016-09-26T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5056",
+        "begin": "2016-07-11T15:30:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "hbWfHYXrW5n8euI",
+        "begin": "2016-07-11T15:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "844de4983dba11e6bdbb",
+        "begin": "2016-07-11T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "158415"
+      },
+      {
+        "site": "nicovideo",
+        "id": "cdanganronpa3_miraihen",
+        "begin": "2016-08-09T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "バッテリー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "野球少年",
+        "棒球伙伴"
+      ],
+      "en": [
+        "BATTERY"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://battery-anime.com/",
+    "begin": "2016-07-14T16:05:00.000Z",
+    "end": "2016-09-22T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "o49p50ib1JWPGRKw",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10025131",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "174141"
+      },
+      {
+        "site": "youku",
+        "id": "eddbdfa03f2f11e6b522",
+        "begin": "2016-07-15T12:15:24.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5059",
+        "begin": "2016-07-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ダンガンロンパ3-The End of 希望ヶ峰学園-絶望編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "弹丸论破3 -The End of 希望之峰学园- 绝望篇"
+      ],
+      "en": [
+        "Danganronpa 3 The End of Kibougamine Gakuen Side Despair"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nbcuni.co.jp/anime/danganronpa3/",
+    "begin": "2016-07-14T14:30:00.000Z",
+    "end": "2016-09-22T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5057",
+        "begin": "2016-07-14T16:00:00.000Z"
+      },
+      {
+        "site": "pptv",
+        "id": "hrKeHITqWpj7eeE",
+        "begin": "2016-07-14T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f90460183db911e6b432",
+        "begin": "2016-07-14T16:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "177092"
+      },
+      {
+        "site": "nicovideo",
+        "id": "danganronpa3-zetubouhen",
+        "begin": "2016-08-12T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ワンピース ～ハートオブ ゴールド～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海贼王 特别篇 黄金之心",
+        "航海王 TV特别篇 黄金之心"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/onep/",
+    "begin": "2016-07-16T12:00:00.000Z",
+    "end": "2016-07-16T12:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhaqhpp",
+        "begin": "2016-07-17T11:15:57.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "183591"
+      }
+    ]
+  },
+  {
+    "title": "ONE PIECE FILM GOLD",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海贼王 黄金城"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.onepiece-film2016.com/",
+    "begin": "2016-07-23T16:00:00.000Z",
+    "end": "2016-07-23T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rr9tounc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "144846"
+      },
+      {
+        "site": "pptv",
+        "id": "uIhk4kqwIF7BP6c",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "スタミュ OVA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高校星歌剧 OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2016-07-27T16:00:00.000Z",
+    "end": "2016-09-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "dsCsKpL4aKYJhib8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "175547"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh836f9",
+        "begin": "2017-06-30T16:02:50.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5469",
+        "begin": "2016-07-26T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "15290907137511e7b08e",
+        "begin": "2017-04-03T15:58:05.000Z"
+      }
+    ]
+  },
+  {
+    "title": "デュラララ!!×2 結 デュフフフ!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "无头骑士异闻录×2 结 DuFuFuFu!!"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.durarara.com/ova/",
+    "begin": "2016-07-27T16:00:00.000Z",
+    "end": "2016-07-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "PwnjYckvn91AviaY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "172957"
+      },
+      {
+        "site": "bilibili",
+        "id": "5424",
+        "begin": "2016-05-20T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アクセル・ワールド INFINITE∞BURST",
+    "titleTranslate": {
+      "zh-Hans": [
+        "加速世界 Infinite Burst"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.accel-world.net/",
+    "begin": "2016-07-23T16:00:00.000Z",
+    "end": "2016-07-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "148095"
+      },
+      {
+        "site": "nicovideo",
+        "id": "accel-world_IB",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "uYlj4UmvH13APqY",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5076",
+        "begin": "2016-07-22T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "21900b684ee511e69b6d",
+        "begin": "2016-08-09T12:27:16.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "2/2ef73h1v3hbrdz9",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "KINGSGLAIVE FINAL FANTASY XV",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最终幻想15 王者之剑"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://kingsglaive-jp.com/",
+    "begin": "2016-07-09T16:00:00.000Z",
+    "end": "2016-07-09T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "176296"
+      },
+      {
+        "site": "nicovideo",
+        "id": "kingsglaive-jp",
+        "begin": "2016-08-29T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ポケモン・ザ・ムービーXY＆Z ボルケニオンと機巧のマギアナ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Pokémon the movie XY&Z 波尔凯尼恩与机巧的玛机雅娜"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-sun-moon.cn/movie/m19/",
+    "begin": "2016-07-16T16:00:00.000Z",
+    "end": "2016-07-16T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "140307"
+      },
+      {
+        "site": "pptv",
+        "id": "a9ia0MpoAcK4Rjicc",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "322203",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "6fefbfbd1cefbfbd4777",
+        "begin": "2018-02-10T01:29:12.000Z"
+      }
+    ]
+  }
+]

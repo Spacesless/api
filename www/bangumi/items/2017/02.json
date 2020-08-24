@@ -1,0 +1,376 @@
+[
+  {
+    "title": "キラキラ☆プリキュアアラモード",
+    "titleTranslate": {
+      "en": [
+        "KIRAKIRA☆PRECURE A LA MODE"
+      ],
+      "zh-Hans": [
+        "KiraKira☆光之美少女 A La Mode",
+        "光之美少女 食尚甜心"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.asahi.co.jp/precure/",
+    "begin": "2017-02-04T23:30:00.000Z",
+    "end": "2018-01-29T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh91xvd",
+        "begin": "2017-02-05T03:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "196053"
+      }
+    ]
+  },
+  {
+    "title": "龍の歯医者",
+    "titleTranslate": {
+      "en": [
+        "THE DRAGON DENTIST"
+      ],
+      "zh-Hans": [
+        "龙之牙医",
+        "龙的牙医"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/ryu/",
+    "begin": "2017-02-18T11:00:00.000Z",
+    "end": "2017-02-25T11:46:00.000Z",
+    "sites": [
+      {
+        "site": "bilibili",
+        "id": "5933",
+        "begin": "2017-02-18T15:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "191056"
+      },
+      {
+        "site": "nicovideo",
+        "id": "anime-ryu",
+        "begin": "2017-02-10T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "チェインクロニクル ～ヘクセイタスの閃～ 第3章",
+    "titleTranslate": {
+      "zh-Hans": [
+        "锁链战记～赫克瑟塔斯之光～ 第3章"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://chronicle-anime.com/",
+    "begin": "2017-02-11T16:00:00.000Z",
+    "end": "2017-02-11T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IhQAfuZMvPpd20M",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha8tqp",
+        "begin": "2016-12-16T08:55:22.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "188073"
+      },
+      {
+        "site": "youku",
+        "id": "47f4a9a898d411e69e06",
+        "begin": "2016-12-16T09:02:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "デジモンアドベンチャー tri. 第4章「喪失」",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码兽大冒险 tri. 第四章「丧失」"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://digimon-adventure.net/",
+    "begin": "2017-02-25T16:00:00.000Z",
+    "end": "2017-02-25T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhbcjih",
+        "begin": "2016-02-15T09:09:13.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "192202"
+      },
+      {
+        "site": "nicovideo",
+        "id": "digimon-adventure-tri04",
+        "begin": "2016-04-01T15:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "9b274b3ad30811e6b9bb",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "青鬼 THE ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "青鬼 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://aooni-anime.com/",
+    "begin": "2017-02-11T16:00:00.000Z",
+    "end": "2017-02-11T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rradj4sw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "189660"
+      },
+      {
+        "site": "nicovideo",
+        "id": "aooni-anime",
+        "begin": "2016-10-03T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5929",
+        "begin": "2017-02-10T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "8635adbbee8a11e68ce4",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "虐殺器官",
+    "titleTranslate": {
+      "zh-Hans": [
+        "虐杀器官"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://project-itoh.com/",
+    "begin": "2017-02-03T16:00:00.000Z",
+    "end": "2017-02-03T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "100447"
+      }
+    ]
+  },
+  {
+    "title": "ピカイア!!",
+    "titleTranslate": {
+      "en": [
+        "PIKAIA"
+      ],
+      "zh-Hans": [
+        "皮卡虫!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/seimei/pikaia2.html",
+    "begin": "2017-02-26T07:45:00.000Z",
+    "end": "2017-05-27T08:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "210806"
+      }
+    ]
+  },
+  {
+    "title": "鬼平～その男、長谷川平蔵～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼平～那个男人、长谷川平藏～"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2017-02-22T16:00:00.000Z",
+    "end": "2017-02-22T16:40:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "m6CMCnLYSIbpZ88",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "203325"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 ソードアート・オンライン -オーディナル・スケール-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "刀剑神域：序列之争"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://sao-movie.net/",
+    "begin": "2017-02-18T16:00:00.000Z",
+    "end": "2017-02-18T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "148099"
+      },
+      {
+        "site": "nicovideo",
+        "id": "sao-movie",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "劇場版 トリニティセブン -悠久図書館と錬金術少女-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 七人魔法使 -悠久图书馆与炼金术少女-"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://movie.trinity-7.com/",
+    "begin": "2017-02-25T16:00:00.000Z",
+    "end": "2017-02-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "186570"
+      },
+      {
+        "site": "nicovideo",
+        "id": "movie-trinity-7",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "naiaEAmrQQH7hX8c",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "d08b10cad89e11e6967c",
+        "begin": "2017-03-17T02:58:05.000Z"
+      }
+    ]
+  },
+  {
+    "title": "恋するシロクマ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恋爱的白熊"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://koisurushirokuma.jp/",
+    "begin": "2017-02-28T16:00:00.000Z",
+    "end": "2018-02-01T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "202156"
+      },
+      {
+        "site": "letv",
+        "id": "10037653",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "宇宙戦艦ヤマト2202 愛の戦士たち 第一章",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰大和号2202 爱的战士们 第一章"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://yamato2202.net/",
+    "begin": "2017-02-25T16:00:00.000Z",
+    "end": "2017-02-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "176025"
+      },
+      {
+        "site": "youku",
+        "id": "b6b6d5fcd30411e6b9bb",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "73092",
+        "begin": "2017-02-24T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版総集編 オーバーロード 不死者の王",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版总集篇 OVERLORD 不死者之王"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2017-02-25T16:00:00.000Z",
+    "end": "2017-02-25T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "194036"
+      },
+      {
+        "site": "nicovideo",
+        "id": "overlord-movie",
+        "begin": "2020-03-20T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "91972",
+        "begin": "2017-02-24T16:00:00.000Z"
+      }
+    ]
+  }
+]

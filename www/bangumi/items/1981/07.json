@@ -1,0 +1,88 @@
+[
+  {
+    "title": "機動戦士ガンダムII 哀・戦士編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达 剧场版II 哀・战士"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-07-11T16:00:00.000Z",
+    "end": "1981-07-11T18:15:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "l/lk34bbjniysk41a",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "38436"
+      }
+    ]
+  },
+  {
+    "title": "Dr.スランプ アラレちゃん ハロー!不思議島",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 hello!不可思议岛"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-07-18T16:00:00.000Z",
+    "end": "1981-07-18T16:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47011"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あしたのジョー2",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 明日之丈2"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-07-04T16:00:00.000Z",
+    "end": "1981-07-04T17:50:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67755"
+      }
+    ]
+  },
+  {
+    "title": "戦国魔神ゴーショーグン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "战国魔神豪将军"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-07-03T16:00:00.000Z",
+    "end": "1981-12-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37256"
+      }
+    ]
+  }
+]

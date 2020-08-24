@@ -1,0 +1,112 @@
+[
+  {
+    "title": "キューティーハニー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "甜心战士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1973-10-13T10:00:00.000Z",
+    "end": "1974-03-30T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1dwl",
+        "begin": "2015-11-04T03:13:43.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "9302"
+      }
+    ]
+  },
+  {
+    "title": "侍ジャイアンツ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔投手"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mxtv.co.jp/samurai_g/",
+    "begin": "1973-10-07T22:30:00.000Z",
+    "end": "1974-09-15T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "65284"
+      }
+    ]
+  },
+  {
+    "title": "ドロロンえん魔くん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "熊熊燃烧的炎魔君"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1973-10-04T10:00:00.000Z",
+    "end": "1974-03-28T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "13561"
+      }
+    ]
+  },
+  {
+    "title": "新造人間キャシャーン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "再造人卡辛"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tatsunoko.co.jp/works/archive/cassyan.html",
+    "begin": "1973-10-02T18:08:00.000Z",
+    "end": "1974-06-25T18:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10944"
+      },
+      {
+        "site": "bilibili",
+        "id": "10572",
+        "begin": "2008-10-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "空手バカ一代",
+    "titleTranslate": {
+      "zh-Hans": [
+        "空手傻瓜一代"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1973-10-03T16:00:00.000Z",
+    "end": "1974-09-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "89330"
+      },
+      {
+        "site": "nicovideo",
+        "id": "karate",
+        "begin": "2012-02-21T06:00:00.000Z"
+      }
+    ]
+  }
+]

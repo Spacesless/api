@@ -1,0 +1,26 @@
+[
+  {
+    "title": "真ゲッターロボ対ネオゲッターロボ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "真盖塔VS新盖塔"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-12-21T16:00:00.000Z",
+    "end": "2001-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AjgDgelPvic1g3kY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "25919"
+      }
+    ]
+  }
+]

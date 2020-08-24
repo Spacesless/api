@@ -1,0 +1,109 @@
+[
+  {
+    "title": "ルパン三世 ワルサーP38",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世：沃尔特P38"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1997-08-01T16:00:00.000Z",
+    "end": "1997-08-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "83548"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3943",
+        "begin": "1997-07-31T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 スレイヤーズぐれえと",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士GREAT"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-08-02T16:00:00.000Z",
+    "end": "1997-08-02T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "o/oduylf96schr6ce",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "42097"
+      },
+      {
+        "site": "pptv",
+        "id": "RfTgXsYsnNo9uyM",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3907",
+        "begin": "1997-08-01T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwb7ed",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "B'T-X NEO",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钢铁神兵B'T-X NEO"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-08-21T16:00:00.000Z",
+    "end": "1998-01-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "gsy4Np4EdLIVkics",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "35970"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh8fz5p",
+        "begin": "2017-06-14T16:00:12.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3861",
+        "begin": "1997-08-20T16:00:01.000Z"
+      }
+    ]
+  }
+]

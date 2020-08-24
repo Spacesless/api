@@ -9,10 +9,9 @@ module.exports = class extends Base {
   }
 
   async indexAction() {
-    console.log(this.ctx.header);
     const { keyword } = this.get();
     const garbages = await fs.readJson(path.join(this.baseurl, 'garbage.json'));
-    const finds = garbages.filter(item => item.name.includes(keyword));
+    const filterGarbages = garbages.filter(item => item.name.includes(keyword));
     const categroysMap = {
       1: '可回收物',
       2: '有害垃圾',
@@ -20,7 +19,7 @@ module.exports = class extends Base {
       8: '干垃圾',
       16: '大件垃圾'
     };
-    const data = finds.map(item => {
+    const data = filterGarbages.map(item => {
       const { name, categroy } = item;
       return {
         name,

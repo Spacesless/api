@@ -1,0 +1,403 @@
+[
+  {
+    "title": "GEAR戦士電童",
+    "titleTranslate": {
+      "zh-Hans": [
+        "GEAR战士电童"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.dendoh.net/index.html",
+    "begin": "2000-10-04T09:00:00.000Z",
+    "end": "2001-06-27T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "wKWPDXXbS4nsatI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10418"
+      },
+      {
+        "site": "bilibili",
+        "id": "2143",
+        "begin": "2000-10-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "真・女神転生デビチル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "真女神转生 恶魔之子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tms-e.com/library/on_air_back/devil/",
+    "begin": "2000-10-06T22:30:00.000Z",
+    "end": "2001-09-28T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "40380"
+      },
+      {
+        "site": "bilibili",
+        "id": "2081",
+        "begin": "2000-10-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "CYBERSIX",
+    "titleTranslate": {
+      "zh-Hans": [
+        "CYBERSIX"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.telecom-anime.com/cybersix/japanese/index.html",
+    "begin": "2000-10-16T16:00:00.000Z",
+    "end": "2001-01-08T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "88751"
+      }
+    ]
+  },
+  {
+    "title": "はじめの一歩",
+    "titleTranslate": {
+      "zh-Hans": [
+        "第一神拳"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/ippo/",
+    "begin": "2000-10-03T10:30:00.000Z",
+    "end": "2002-03-12T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10419"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ippo_anime",
+        "begin": "2014-04-22T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "500",
+        "begin": "2000-10-02T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "y/y7c7yetxv0zhpi3",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ヴァンドレッド",
+    "titleTranslate": {
+      "en": [
+        "VANDREAD"
+      ],
+      "zh-Hans": [
+        "银河冒险战记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gonzo.co.jp/works/0001.html",
+    "begin": "2000-10-03T00:30:00.000Z",
+    "end": "2000-12-26T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8700"
+      },
+      {
+        "site": "bilibili",
+        "id": "2161",
+        "begin": "2000-10-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "犬夜叉",
+    "titleTranslate": {
+      "zh-Hans": [
+        "犬夜叉"
+      ],
+      "en": [
+        "InuYasha"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ytv.co.jp/inuyasha/index_set.html",
+    "begin": "2000-10-16T10:30:00.000Z",
+    "end": "2004-09-13T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "4/4qw8q7lcsf7yh8z",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "46169",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2784"
+      },
+      {
+        "site": "netflix",
+        "id": "70204995",
+        "begin": "2016-12-15T08:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "グラビテーション",
+    "titleTranslate": {
+      "zh-Hans": [
+        "万有引力"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sonymusic.co.jp/Animation/gravi/",
+    "begin": "2000-10-04T08:00:00.000Z",
+    "end": "2001-01-10T08:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "v4p181vBMWicSULg",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "i/ipyt80um6hrpcpu",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2912"
+      }
+    ]
+  },
+  {
+    "title": "人造人間キカイダー THE ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人造人间Kikaider"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sonymusic.co.jp/Animation/Kikaider/",
+    "begin": "2000-10-16T13:30:00.000Z",
+    "end": "2001-01-08T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "18457"
+      }
+    ]
+  },
+  {
+    "title": "Sci-Fi HARRY",
+    "titleTranslate": {
+      "zh-Hans": [
+        "懦弱鬼哈利"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mediafactory.co.jp/c000051/archives/015/006/15615.html",
+    "begin": "2000-10-05T10:00:00.000Z",
+    "end": "2001-03-23T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1960"
+      }
+    ]
+  },
+  {
+    "title": "学校の怪談",
+    "titleTranslate": {
+      "zh-Hans": [
+        "学校怪谈"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/b_hp/kaidan/",
+    "begin": "2000-10-22T08:00:00.000Z",
+    "end": "2001-03-25T08:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "20431"
+      },
+      {
+        "site": "nicovideo",
+        "id": "gakkou-no-kaidan",
+        "begin": "2018-07-06T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2171",
+        "begin": "2000-10-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機巧奇傅ヒヲウ戦記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机巧奇传"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.bones.co.jp/works/tv01/index.html",
+    "begin": "2000-10-24T11:00:00.000Z",
+    "end": "2001-05-01T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "12783"
+      }
+    ]
+  },
+  {
+    "title": "アルジェントソーマ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "沉默的未知"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jvcmusic.co.jp/m-serve/tv/soma/index.html",
+    "begin": "2000-10-05T02:00:00.000Z",
+    "end": "2001-03-29T02:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ZdKtK5P5aacKiaPA",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/z7tsublda0lj93i",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2440"
+      },
+      {
+        "site": "bilibili",
+        "id": "2168",
+        "begin": "2000-10-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "勝負師伝説 哲也",
+    "titleTranslate": {
+      "zh-Hans": [
+        "胜负师传说 哲也"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/tetsuya/",
+    "begin": "2000-10-07T16:00:00.000Z",
+    "end": "2001-03-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1e5t",
+        "begin": "2015-11-04T03:09:34.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "47694"
+      }
+    ]
+  },
+  {
+    "title": "闇の末裔",
+    "titleTranslate": {
+      "zh-Hans": [
+        "暗之末裔"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jcstaff.co.jp/sho-sai/ya-shokai/yami-syokai.htm",
+    "begin": "2000-10-02T16:00:00.000Z",
+    "end": "2000-12-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icEI9uyOJibTeaGIA",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "21509",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2908"
+      }
+    ]
+  },
+  {
+    "title": "ああっ女神さまっ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的女神 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-10-21T16:00:00.000Z",
+    "end": "2000-10-21T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "o/oku52t51m1rgmh1",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2080"
+      },
+      {
+        "site": "bilibili",
+        "id": "3760",
+        "begin": "2000-10-20T16:00:01.000Z"
+      }
+    ]
+  }
+]

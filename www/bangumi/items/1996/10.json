@@ -1,0 +1,204 @@
+[
+  {
+    "title": "YAT安心！宇宙旅行",
+    "titleTranslate": {
+      "en": [
+        "YAT Anshin! Luxury Space Tours"
+      ],
+      "zh-Hans": [
+        "YAT安心！宇宙旅行"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mashroom.com/comic/yat/",
+    "begin": "1996-10-05T16:00:00.000Z",
+    "end": "1997-09-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "197883"
+      },
+      {
+        "site": "bilibili",
+        "id": "2304",
+        "begin": "1996-10-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "魔法少女プリティサミー(TVシリーズ)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法少女砂沙美"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-10-04T16:00:00.000Z",
+    "end": "1997-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1RzoZs40pOJFwys",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7107"
+      },
+      {
+        "site": "bilibili",
+        "id": "1615",
+        "begin": "1996-10-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ハーメルンのバイオリン弾き",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法提琴手"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-10-02T16:00:00.000Z",
+    "end": "1997-03-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "43492"
+      }
+    ]
+  },
+  {
+    "title": "機動戦艦ナデシコ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战舰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/nadeshiko/",
+    "begin": "1996-10-01T16:00:00.000Z",
+    "end": "1997-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "naibaGIDmVpT3dd0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "515"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nadeshiko",
+        "begin": "2013-12-27T03:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "x/xep51k7ywmcyom0",
+        "begin": ""
+      },
+      {
+        "site": "acfun",
+        "id": "6000807",
+        "begin": "2019-12-12T05:45:38.000Z"
+      }
+    ]
+  },
+  {
+    "title": "逮捕しちゃうぞ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "逮捕令"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-10-05T16:00:00.000Z",
+    "end": "1997-09-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HSUgngZs3Bp9ib2M",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "p/pamxefuoyoxrqus",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2074"
+      }
+    ]
+  },
+  {
+    "title": "オリジナルビデオシリーズ ふしぎ遊戯",
+    "titleTranslate": {
+      "zh-Hans": [
+        "不思议游戏 OVA1 后篇",
+        "不可思议的游戏 OVA后篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-10-25T16:00:00.000Z",
+    "end": "1997-02-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "nbCcGoLoWJb5d98",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjp9zvx",
+        "begin": "2013-04-18T02:18:20.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "39523"
+      }
+    ]
+  },
+  {
+    "title": "セイバーマリオネットJ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机械女神J"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-10-01T16:00:00.000Z",
+    "end": "1997-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KGNd20OpGVe6OKA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6254"
+      },
+      {
+        "site": "bilibili",
+        "id": "3263",
+        "begin": "1996-09-30T16:00:01.000Z"
+      }
+    ]
+  }
+]

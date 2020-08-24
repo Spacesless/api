@@ -1,0 +1,231 @@
+[
+  {
+    "title": "キングダム",
+    "titleTranslate": {
+      "en": [
+        "KINGDOM"
+      ],
+      "zh-Hans": [
+        "王者天下"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/kingdom/",
+    "begin": "2012-06-04T10:00:00.000Z",
+    "end": "2013-02-25T09:56:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgi9if1",
+        "begin": "2014-09-12T06:43:41.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "27568"
+      },
+      {
+        "site": "nicovideo",
+        "id": "kingdom1",
+        "begin": "2015-12-24T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "582",
+        "begin": "2012-06-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ポケットモンスター ベストウイッシュ シーズン2",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦 超级愿望 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pokemon_bw/",
+    "begin": "2012-06-21T10:00:00.000Z",
+    "end": "2013-09-26T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icFdBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "h/hibacbz0801byjb",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "40081"
+      }
+    ]
+  },
+  {
+    "title": "宇宙戦艦ヤマト2199 第二章「太陽圏の死闘」",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰大和号2199 第二章「死战太阳系」"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.yamato2199.net/",
+    "begin": "2012-06-30T16:00:00.000Z",
+    "end": "2012-06-30T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47730"
+      }
+    ]
+  },
+  {
+    "title": "魔法使いなら味噌を喰え！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "是魔法使的话就吃味噌！"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2012-06-15T16:00:00.000Z",
+    "end": "2012-06-15T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "F0dBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "42253"
+      },
+      {
+        "site": "bilibili",
+        "id": "4524",
+        "begin": "2012-06-15T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ベルセルク 黄金時代篇II ドルドレイ攻略",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剑风传奇 黄金时代篇II 多尔多雷攻略"
+      ],
+      "en": [
+        "Berserk: The Golden Age Arc II - The Battle for Doldrey"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.berserkfilm.com/",
+    "begin": "2012-06-23T16:00:00.000Z",
+    "end": "2012-06-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "45240"
+      },
+      {
+        "site": "nicovideo",
+        "id": "berserkfilm",
+        "begin": "2017-03-03T06:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70276596",
+        "begin": "2017-09-01T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "図書館戦争 革命のつばさ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "图书馆战争 革命之翼"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.kadokawa.co.jp/toshokan-sensou/",
+    "begin": "2012-06-16T16:00:00.000Z",
+    "end": "2012-06-16T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "34025"
+      },
+      {
+        "site": "nicovideo",
+        "id": "toshokan",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "85725",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3805",
+        "begin": "2012-06-15T16:00:01.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "m/mzc00200z3lzano",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "さんかれあ OAD",
+    "titleTranslate": {
+      "zh-Hans": [
+        "散华礼弥 OAD"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/sankarea/",
+    "begin": "2012-06-08T16:00:00.000Z",
+    "end": "2012-11-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "41612"
+      },
+      {
+        "site": "pptv",
+        "id": "pkAsqhJ46CaJB28",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": ".hack//Versus タナトスレポート",
+    "titleTranslate": {
+      "zh-Hans": [
+        ".hack//Versus 塔那托斯报告"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2012-06-28T16:00:00.000Z",
+    "end": "2012-06-28T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "45841"
+      }
+    ]
+  }
+]

@@ -1,0 +1,426 @@
+[
+  {
+    "title": "ニニンがシノブ伝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "酷伊忍者传"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/ufotable.com/2x2/",
+    "begin": "2004-07-09T15:30:00.000Z",
+    "end": "2004-09-24T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "7618"
+      }
+    ]
+  },
+  {
+    "title": "DearS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亲爱一族"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/http://www.team-dears.com/anime.html",
+    "begin": "2004-07-10T15:30:00.000Z",
+    "end": "2004-09-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AzcSkPhezgxv7VU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10509"
+      }
+    ]
+  },
+  {
+    "title": "エルフェンリート",
+    "titleTranslate": {
+      "en": [
+        "elfen lied"
+      ],
+      "zh-Hans": [
+        "妖精的旋律"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/elfenlied/",
+    "begin": "2004-07-25T13:30:00.000Z",
+    "end": "2004-10-17T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "536"
+      },
+      {
+        "site": "nicovideo",
+        "id": "elfenlied",
+        "begin": "2018-01-30T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "蒼穹のファフナー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "苍穹之法芙娜"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/fafner/main_index.html",
+    "begin": "2004-07-04T16:30:00.000Z",
+    "end": "2004-12-26T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BjINiaicNZyQdq6FA",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha0t8x",
+        "begin": "2016-11-30T16:02:02.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "7/7rhf8wuzybqu76o",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2936"
+      },
+      {
+        "site": "nicovideo",
+        "id": "fafner",
+        "begin": "2011-12-02T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アガサ・クリスティーの名探偵ポワロとマープル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探波洛和马普尔小姐"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/agatha/main.html",
+    "begin": "2004-07-04T10:30:00.000Z",
+    "end": "2005-05-15T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AEs1sxuB8SibSEHg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "31981"
+      },
+      {
+        "site": "bilibili",
+        "id": "5136",
+        "begin": "2004-07-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ギャラクシーエンジェル(4)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河天使X"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.tv-osaka.co.jp/galaxyangel_4th/main2.html",
+    "begin": "2004-07-07T16:00:00.000Z",
+    "end": "2004-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "EFslowtx4RibCAGg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "18083"
+      }
+    ]
+  },
+  {
+    "title": "お伽草子",
+    "titleTranslate": {
+      "zh-Hans": [
+        "御伽草子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.production-ig.co.jp/contents/works_sp/1170_/index.html",
+    "begin": "2004-07-06T16:40:00.000Z",
+    "end": "2005-03-29T17:24:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7VsmpAxy4iaCDAWk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3429"
+      },
+      {
+        "site": "bilibili",
+        "id": "1895",
+        "begin": "2004-07-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "モンキーターンV",
+    "titleTranslate": {
+      "zh-Hans": [
+        "驰风！赛艇王V"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/monkey/v/flash.html",
+    "begin": "2004-07-03T15:55:00.000Z",
+    "end": "2004-12-18T16:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "39300"
+      }
+    ]
+  },
+  {
+    "title": "マリア様がみてる～春～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣母在上 春"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/mariasama_haru/main.html",
+    "begin": "2004-07-03T22:30:00.000Z",
+    "end": "2004-09-25T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icC4amABm1hR39V0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4215"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mariasama2",
+        "begin": "2019-10-23T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "GIRLSブラボー first season",
+    "titleTranslate": {
+      "zh-Hans": [
+        "女生万岁 first season"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/http://www.girls-bravo.tv/",
+    "begin": "2004-07-05T17:53:00.000Z",
+    "end": "2004-09-27T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3619"
+      }
+    ]
+  },
+  {
+    "title": "モンキー・パンチ 漫画活動大写真",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/mankatsu/",
+    "begin": "2004-07-31T16:05:00.000Z",
+    "end": "2005-06-26T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "188888"
+      }
+    ]
+  },
+  {
+    "title": "スウィート・ヴァレリアン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Sweet Valerian"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mbs.jp/future-b/index2.html",
+    "begin": "2004-07-31T22:00:00.000Z",
+    "end": "2004-12-19T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "104195"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 盗まれたルパン～コピーキャットは真夏の蝶～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 被偷的鲁邦~模仿者是盛夏之蝶~"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "2004-07-30T16:00:00.000Z",
+    "end": "2004-07-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84994"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3954",
+        "begin": "2004-07-29T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ポケットモンスター アドバンスジェネレーション 裂空の訪問者 デオキシス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 精灵宝可梦超世代：裂空的访问者 代欧奇希斯"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2004-07-17T16:00:00.000Z",
+    "end": "2004-07-17T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "91w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3028"
+      },
+      {
+        "site": "qq",
+        "id": "e/ejr0xfirssdm33y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5753",
+        "begin": "2004-07-16T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ポケットモンスターアドバンスジェネレーション ピカチュウのなつまつり",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：皮卡丘的夏日祭典"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2004-07-17T17:10:00.000Z",
+    "end": "2004-07-17T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "90610"
+      }
+    ]
+  },
+  {
+    "title": "スチームボーイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蒸汽男孩",
+        "蒸汽少年"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.steamboy.net/top.shtml",
+    "begin": "2004-07-17T16:00:00.000Z",
+    "end": "2004-07-17T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1938"
+      },
+      {
+        "site": "letv",
+        "id": "10002013",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7trr9",
+        "begin": "2017-06-14T16:19:10.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5137",
+        "begin": "2004-07-16T16:00:01.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "h/hvdh0z53zlsqy9r",
+        "begin": ""
+      }
+    ]
+  }
+]

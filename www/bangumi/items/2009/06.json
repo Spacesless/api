@@ -1,0 +1,285 @@
+[
+  {
+    "title": "ファイト一発！充電ちゃん!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔力充电娘"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mv.avex.jp/juden-chan/",
+    "begin": "2009-06-24T23:00:00.000Z",
+    "end": "2009-09-09T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "c9SvLZX7a6kMiavI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1739"
+      }
+    ]
+  },
+  {
+    "title": "うみものがたり～あなたがいてくれたコト～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海物语～有你陪伴～"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sea-story.tv/",
+    "begin": "2009-06-24T16:29:00.000Z",
+    "end": "2010-06-13T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "9FYxrxd97SuODHQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "y/y8qu9f8n19viijw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1740"
+      },
+      {
+        "site": "bilibili",
+        "id": "1144",
+        "begin": "2009-06-23T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "川の光",
+    "titleTranslate": {
+      "zh-Hans": [
+        "川之光"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/kawanohikari/",
+    "begin": "2009-06-20T16:00:00.000Z",
+    "end": "2009-06-20T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "12436"
+      },
+      {
+        "site": "bilibili",
+        "id": "1143",
+        "begin": "2009-06-19T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "聖闘士星矢 THE LOST CANVAS 冥王神話",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣斗士星矢 THE LOST CANVAS 冥王神话",
+        "圣斗士星矢冥王神话"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2009-06-24T16:00:00.000Z",
+    "end": "2009-06-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "SOzXVb0jk9E0sho",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhaait5",
+        "begin": "2016-01-06T16:00:27.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "5/58x2m31mujwn2ds",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "37223",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1753"
+      },
+      {
+        "site": "bilibili",
+        "id": "800",
+        "begin": "2009-06-23T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "26cd9104de5d11de97c0",
+        "begin": "2019-08-08T02:55:21.000Z"
+      }
+    ]
+  },
+  {
+    "title": "星に願いを COLD BODY + WARM HEART",
+    "titleTranslate": {
+      "zh-Hans": [
+        "向星星许愿 COLD BODY + WARM HEART"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.barnumlaboratory.com/",
+    "begin": "2009-06-01T16:00:00.000Z",
+    "end": "2009-06-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CvLeXMQqmtg7uSE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67371"
+      }
+    ]
+  },
+  {
+    "title": "ななみちゃん 第6シリーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法娜娜咪 第六季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2009-06-14T16:00:00.000Z",
+    "end": "2009-09-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216385"
+      }
+    ]
+  },
+  {
+    "title": "Peeping Life -The Perfect Edition-",
+    "titleTranslate": {},
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2009-06-18T16:00:00.000Z",
+    "end": "2009-06-18T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "70886"
+      },
+      {
+        "site": "nicovideo",
+        "id": "peeping",
+        "begin": "2011-12-26T03:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "うたわれるもの OVA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "传颂之物 OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://aquaplus.jp/ova_uta/",
+    "begin": "2009-06-24T16:00:00.000Z",
+    "end": "2010-06-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1737"
+      },
+      {
+        "site": "pptv",
+        "id": "231Ixia6UBEKlI4s",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "みなみけ べつばら",
+    "titleTranslate": {
+      "zh-Hans": [
+        "南家三姐妹 饭后甜点"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2009-06-23T16:00:00.000Z",
+    "end": "2009-06-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3016"
+      },
+      {
+        "site": "pptv",
+        "id": "F2tV0zuhEUibyMJg",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ヱヴァンゲリヲン新劇場版:破",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新世纪福音战士剧场版：破",
+        "福音战士新剧场版：破"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.evangelion.co.jp/",
+    "begin": "2009-06-27T16:00:00.000Z",
+    "end": "2009-06-27T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3302"
+      },
+      {
+        "site": "qq",
+        "id": "t/tj88awp3feyr538",
+        "begin": ""
+      },
+      {
+        "site": "nicovideo",
+        "id": "evangelion_new_movie_ha",
+        "begin": ""
+      },
+      {
+        "site": "acfun",
+        "id": "5023299",
+        "begin": "2019-01-09T11:50:58.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "ef27db3061ad11e0bea1",
+        "begin": "2020-05-07T13:40:10.000Z"
+      }
+    ]
+  }
+]

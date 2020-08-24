@@ -1,0 +1,556 @@
+[
+  {
+    "title": "ガン×ソード",
+    "titleTranslate": {
+      "en": [
+        "GUN SWORD"
+      ],
+      "zh-Hans": [
+        "枪心剑刃"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/gunsword/",
+    "begin": "2005-07-04T16:30:00.000Z",
+    "end": "2005-12-26T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ibzQQjvZczApt61M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8539"
+      },
+      {
+        "site": "bilibili",
+        "id": "1862",
+        "begin": "2005-07-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "苺ましまろ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "草莓棉花糖"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/ichigomashimaro/",
+    "begin": "2005-07-14T17:05:00.000Z",
+    "end": "2005-10-13T17:31:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TPrFQ6sRgb8iaoAg",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "s/skgqxqsq2uiylee",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "284"
+      },
+      {
+        "site": "bilibili",
+        "id": "1856",
+        "begin": "2005-07-13T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc0030f4962411de83b1",
+        "begin": "2008-07-23T10:09:07.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あまえないでよっ!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "不要撒娇哦!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/amae/",
+    "begin": "2005-07-01T01:00:00.000Z",
+    "end": "2005-09-16T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "22049"
+      }
+    ]
+  },
+  {
+    "title": "SHUFFLE!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "SHUFFLE!"
+      ],
+      "en": [
+        "SHUFFLE!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shuffle-tv.com/",
+    "begin": "2005-07-07T15:30:00.000Z",
+    "end": "2006-01-05T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "rohz8VmicL23QTrY",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "s/sm1ig1vymgt2wsr",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2937"
+      },
+      {
+        "site": "nicovideo",
+        "id": "shuffle",
+        "begin": "2019-11-15T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "フルメタル・パニック! The Second Raid",
+    "titleTranslate": {
+      "zh-Hans": [
+        "全金属狂潮 The Second Raid"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tdd-1.com/",
+    "begin": "2005-07-13T15:00:00.000Z",
+    "end": "2005-10-19T15:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "337"
+      },
+      {
+        "site": "nicovideo",
+        "id": "fullmetal-panic-secondraid",
+        "begin": "2019-10-14T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぺとぺとさん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我是小粘粘"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.petopeto.com/",
+    "begin": "2005-07-08T17:00:00.000Z",
+    "end": "2005-09-30T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "UZtl40uxIVicCQKg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14086"
+      }
+    ]
+  },
+  {
+    "title": "あかほり外道アワーらぶげ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绝对正义vs外道少女队"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.gedou.net/",
+    "begin": "2005-07-04T17:15:00.000Z",
+    "end": "2005-09-26T17:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BEdBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "50681"
+      }
+    ]
+  },
+  {
+    "title": "涼風",
+    "titleTranslate": {
+      "zh-Hans": [
+        "凉风"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/suzuka-tv/",
+    "begin": "2005-07-06T16:00:00.000Z",
+    "end": "2005-12-28T16:37:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TePeXMQqmtg7uSE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10508"
+      },
+      {
+        "site": "bilibili",
+        "id": "1843",
+        "begin": "2005-07-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "D.C.S.S. ～ダ・カーポ セカンドシーズン～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "初音岛 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hatsunejima.com/dcss/",
+    "begin": "2005-07-02T15:30:00.000Z",
+    "end": "2005-12-24T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7l0opg505CKFA2s",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "o/oqhu3ia2kb0his5",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2680"
+      },
+      {
+        "site": "nicovideo",
+        "id": "dcss",
+        "begin": "2012-07-11T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "657",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "シュガシュガルーン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔界女王候补生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/sugarune/",
+    "begin": "2005-07-01T22:00:00.000Z",
+    "end": "2006-06-23T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10160"
+      }
+    ]
+  },
+  {
+    "title": "奥さまは魔法少女",
+    "titleTranslate": {
+      "zh-Hans": [
+        "太太是魔法少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mahousyoujo.com/",
+    "begin": "2005-07-03T15:00:00.000Z",
+    "end": "2005-09-25T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "8DkDgelPvic1g3kY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "23536"
+      }
+    ]
+  },
+  {
+    "title": "機動新撰組 萌えよ剣",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动新撰组 萌之剑"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://trinet.cata.jp/moeken/",
+    "begin": "2005-07-01T16:30:00.000Z",
+    "end": "2005-09-23T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Hia8amABm1hR39V0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4234"
+      },
+      {
+        "site": "bilibili",
+        "id": "1841",
+        "begin": "2005-06-30T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "プレイボール",
+    "titleTranslate": {
+      "zh-Hans": [
+        "棒球物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.imagicatv.jp/content/anime-playball/index1.html",
+    "begin": "2005-07-04T17:00:00.000Z",
+    "end": "2005-09-26T18:14:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "113899"
+      }
+    ]
+  },
+  {
+    "title": "ぱにぽにだっしゅ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "不可思议的教室"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.paniponi-dash.com/",
+    "begin": "2005-07-03T16:30:00.000Z",
+    "end": "2005-12-25T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IGtV0zuhEUibyMJg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1617"
+      },
+      {
+        "site": "bilibili",
+        "id": "1844",
+        "begin": "2005-07-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おくさまは女子高生",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我太太是高中生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mv.avex.jp/okusama/",
+    "begin": "2005-07-02T16:30:00.000Z",
+    "end": "2005-09-24T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8295"
+      }
+    ]
+  },
+  {
+    "title": "タイドライン・ブルー",
+    "titleTranslate": {
+      "en": [
+        "TIDE-LINE BLUE"
+      ],
+      "zh-Hans": [
+        "蓝色潮痕"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tlblue.com/",
+    "begin": "2005-07-06T17:40:00.000Z",
+    "end": "2006-09-18T12:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HysWlPxia0hBz8Vk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6804"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 天使の策略～夢のカケラは殺しの香り～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 天使的策略～梦的碎片是杀人的香味～"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "2005-07-22T16:00:00.000Z",
+    "end": "2005-07-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84995"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3940",
+        "begin": "2005-07-21T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ポケットモンスター アドバンスジェネレーション ミュウと波導の勇者 ルカリオ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 精灵宝可梦超世代：梦幻与波导的勇者 路卡利欧"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2005-07-16T16:00:00.000Z",
+    "end": "2005-07-16T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "91w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3029"
+      },
+      {
+        "site": "qq",
+        "id": "e/ejr0xfirssdm33y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5752",
+        "begin": "2005-07-15T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ポケットモンスターアドバンスジェネレーション ピカチュウのおばけカーニバル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：皮卡丘的鬼怪狂欢节"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2005-07-16T17:10:00.000Z",
+    "end": "2005-07-16T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27880"
+      }
+    ]
+  },
+  {
+    "title": "鋼の錬金術師 シャンバラを征く者",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钢之炼金术师 香巴拉的征服者"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2005-07-23T16:00:00.000Z",
+    "end": "2005-07-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1935"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hagaren-shamballa",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "6379",
+        "begin": "2005-07-22T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "c4849ef4ab9011e0a046",
+        "begin": "2012-12-27T12:17:56.000Z"
+      }
+    ]
+  }
+]

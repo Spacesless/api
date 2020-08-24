@@ -1,0 +1,271 @@
+[
+  {
+    "title": "メダロット",
+    "titleTranslate": {
+      "zh-Hans": [
+        "徽章战士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-07-02T09:00:00.000Z",
+    "end": "2000-06-30T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "44680"
+      },
+      {
+        "site": "nicovideo",
+        "id": "anime-medarot",
+        "begin": "2019-07-01T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "課長王子",
+    "titleTranslate": {
+      "zh-Hans": [
+        "课长王子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/kacho-ohji/home.html",
+    "begin": "1999-07-08T23:00:00.000Z",
+    "end": "2000-10-07T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7yIenARq2hh7ibWE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "12749"
+      }
+    ]
+  },
+  {
+    "title": "魔法使いTai!(TVシリーズ)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法使tai"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://animejapan.cplaza.ne.jp/b-ch/mahotai/index.html",
+    "begin": "1999-07-07T00:30:00.000Z",
+    "end": "1999-10-06T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10412"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 愛のダ・カーポ～FUJIKO's Unlucky Days～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 爱的记号~ 不二子不幸的一天"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1999-07-30T16:30:00.000Z",
+    "end": "1999-07-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84987"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3947",
+        "begin": "1999-07-29T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ポケットモンスター 幻のポケモン ルギア爆誕",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 精灵宝可梦：梦幻的精灵宝可梦 洛奇亚爆诞"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "1999-07-17T16:00:00.000Z",
+    "end": "1999-07-17T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "91w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "71806",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3023"
+      },
+      {
+        "site": "qq",
+        "id": "e/ejr0xfirssdm33y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5757",
+        "begin": "1999-07-16T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "仙界伝 封神演義",
+    "titleTranslate": {
+      "zh-Hans": [
+        "仙界传 封神演义"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-07-03T16:00:00.000Z",
+    "end": "1999-12-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "o/opv3q70xfz08gnd",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8719"
+      },
+      {
+        "site": "bilibili",
+        "id": "2210",
+        "begin": "1999-07-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ハッピーバースデー 命かがやく瞬間",
+    "titleTranslate": {
+      "zh-Hans": [
+        "生日快乐",
+        "再生之日",
+        "生之喜悦"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-07-27T16:00:00.000Z",
+    "end": "1999-07-27T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "49483"
+      }
+    ]
+  },
+  {
+    "title": "ピカチュウたんけんたい",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：皮卡丘探险队"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "1999-07-17T17:10:00.000Z",
+    "end": "1999-07-17T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "27773"
+      }
+    ]
+  },
+  {
+    "title": "菜々子解体診書",
+    "titleTranslate": {
+      "zh-Hans": [
+        "菜菜子解体诊书",
+        "解剖菜菜子"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.geneonuniversal.jp/rondorobe/anime/nanako/",
+    "begin": "1999-07-05T16:00:00.000Z",
+    "end": "2000-03-03T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "SvzHRa0Tg8Ekogo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54158"
+      }
+    ]
+  },
+  {
+    "title": "宇宙海賊ミトの大冒険 2人の女王様",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙海盗大冒险 两个女王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-07-12T16:00:00.000Z",
+    "end": "1999-10-04T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "87897"
+      },
+      {
+        "site": "youku",
+        "id": "d1a05b50951d11e2a19e",
+        "begin": "2013-03-26T06:06:29.000Z"
+      }
+    ]
+  }
+]

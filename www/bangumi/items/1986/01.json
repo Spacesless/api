@@ -1,0 +1,40 @@
+[
+  {
+    "title": "愛少女ポリアンナ物語",
+    "titleTranslate": {
+      "zh-Hans": [
+        "爱少女波丽安娜物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/1486/",
+    "begin": "1986-01-05T16:00:00.000Z",
+    "end": "1986-12-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211287"
+      }
+    ]
+  },
+  {
+    "title": "宇宙船サジタリウス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "太空三剑侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/1495/",
+    "begin": "1986-01-10T15:00:00.000Z",
+    "end": "1987-10-03T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "142507"
+      }
+    ]
+  }
+]

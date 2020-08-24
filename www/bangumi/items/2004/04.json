@@ -1,0 +1,1076 @@
+[
+  {
+    "title": "マシュマロ通信",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-osaka.co.jp/marshmallow/index.html",
+    "begin": "2004-04-04T00:30:00.000Z",
+    "end": "2005-03-27T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "102041"
+      }
+    ]
+  },
+  {
+    "title": "RAGNAROK THE ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "仙境传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ragnarokonline.jp/",
+    "begin": "2004-04-06T16:30:00.000Z",
+    "end": "2004-09-28T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BSEcmgJo2BZ5918",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "q/q2vw7kszrhwwask",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3407"
+      },
+      {
+        "site": "bilibili",
+        "id": "1896",
+        "begin": "2004-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忘却の旋律",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忘却的旋律"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/boukyaku/",
+    "begin": "2004-04-06T17:59:00.000Z",
+    "end": "2004-09-21T18:44:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "a8OibPKQKergbmQE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "329"
+      },
+      {
+        "site": "bilibili",
+        "id": "1900",
+        "begin": "2004-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "この醜くも美しい世界",
+    "titleTranslate": {
+      "zh-Hans": [
+        "这丑陋又美丽的世界",
+        "美与丑的世界"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/konomini/",
+    "begin": "2004-04-01T15:30:00.000Z",
+    "end": "2004-06-17T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "pOfhX8ctndsibvCQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "t/tk3anhnbwweipfm",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2167"
+      }
+    ]
+  },
+  {
+    "title": "ぷぎゅる",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Pugyuru"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.pugyuru.jp/",
+    "begin": "2004-04-12T16:00:00.000Z",
+    "end": "2004-07-05T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "zgD8euJIuPZZ1z8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "28169"
+      }
+    ]
+  },
+  {
+    "title": "愛してるぜベイベ★★",
+    "titleTranslate": {
+      "zh-Hans": [
+        "爱你宝贝"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tms-e.com/on_air/beibe/",
+    "begin": "2004-04-03T10:00:00.000Z",
+    "end": "2004-10-09T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "uJ9591icFNXPWVLw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "i/iz6m1djp4h2xrsa",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7354"
+      },
+      {
+        "site": "letv",
+        "id": "9279",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1905",
+        "begin": "2004-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "火の鳥",
+    "titleTranslate": {
+      "zh-Hans": [
+        "火鸟"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/hinotori/main.html",
+    "begin": "2004-04-04T10:30:00.000Z",
+    "end": "2004-06-27T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "4CkTkflfzw1w7lY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "16190"
+      },
+      {
+        "site": "bilibili",
+        "id": "1903",
+        "begin": "2004-04-03T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "7556",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "パンダーゼット THE ROBONIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "熊猫万能侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.panda-z.net/",
+    "begin": "2004-04-11T22:30:00.000Z",
+    "end": "2004-11-01T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2980"
+      }
+    ]
+  },
+  {
+    "title": "MONSTER",
+    "titleTranslate": {
+      "zh-Hans": [
+        "怪物"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/monster/",
+    "begin": "2004-04-06T15:40:00.000Z",
+    "end": "2005-09-27T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "pibnTUbkfj80wrhY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1959"
+      }
+    ]
+  },
+  {
+    "title": "美鳥の日々",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美鸟日记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_2000/tv_067.html",
+    "begin": "2004-04-03T15:30:00.000Z",
+    "end": "2004-06-26T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qoJ9ib2PJOXfaWMA",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "13932",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2126"
+      }
+    ]
+  },
+  {
+    "title": "ケロロ軍曹",
+    "titleTranslate": {
+      "en": [
+        "Sgt. Frog"
+      ],
+      "zh-Hans": [
+        "KERORO军曹"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/keroro/",
+    "begin": "2004-04-03T01:00:00.000Z",
+    "end": "2012-03-27T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1849"
+      },
+      {
+        "site": "bilibili",
+        "id": "103",
+        "begin": "2004-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "魔法少女隊アルス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法少女队"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tfc-anime.net/tweeny-witches/index.html",
+    "begin": "2004-04-09T09:20:00.000Z",
+    "end": "2005-03-25T09:20:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icjMNiaicNZyQdq6FA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7904"
+      }
+    ]
+  },
+  {
+    "title": "レジェンズ 甦る竜王伝説",
+    "titleTranslate": {
+      "zh-Hans": [
+        "苏生龙王传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/b_hp/legendz/index.html",
+    "begin": "2004-04-04T00:30:00.000Z",
+    "end": "2005-03-27T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10382"
+      },
+      {
+        "site": "bilibili",
+        "id": "1907",
+        "begin": "2004-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "花右京メイド隊 LaVerite",
+    "titleTranslate": {
+      "zh-Hans": [
+        "花右京女仆队 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/hanaukyo/",
+    "begin": "2004-04-04T15:00:00.000Z",
+    "end": "2004-06-20T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84547"
+      }
+    ]
+  },
+  {
+    "title": "せんせいのお時間",
+    "titleTranslate": {
+      "zh-Hans": [
+        "老师的时间"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/sensei/",
+    "begin": "2004-04-04T16:30:00.000Z",
+    "end": "2004-06-27T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "cb6JB2icVRYPmZMw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "22517"
+      }
+    ]
+  },
+  {
+    "title": "恋風",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恋风"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/koikaze/",
+    "begin": "2004-04-01T17:27:00.000Z",
+    "end": "2004-06-17T17:42:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "8/87h71uq2p55brm3",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9731"
+      },
+      {
+        "site": "bilibili",
+        "id": "1901",
+        "begin": "2004-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "天上天下",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天上天下"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.avexmovie.jp/lineup/tenten/",
+    "begin": "2004-04-01T17:57:00.000Z",
+    "end": "2004-09-16T18:12:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4371"
+      },
+      {
+        "site": "letv",
+        "id": "20755",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "Get Ride! アムドライバー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "滑板战士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/amdriver/main_index.html",
+    "begin": "2004-04-05T09:30:00.000Z",
+    "end": "2005-03-28T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "19703"
+      }
+    ]
+  },
+  {
+    "title": "今日からマ王！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "今天开始做魔王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maru-ma.com/",
+    "begin": "2004-04-03T00:00:00.000Z",
+    "end": "2005-02-12T00:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "XvHMSrIYiaMYppw8",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "2/2pqukl3ql245jfw",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "8356",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "895"
+      }
+    ]
+  },
+  {
+    "title": "神魂合体ゴーダンナー！！ SECOND SEASON",
+    "titleTranslate": {
+      "zh-Hans": [
+        "神魂合体豪旦那 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.imagicatv.jp/content/godannar/",
+    "begin": "2004-04-06T16:05:00.000Z",
+    "end": "2004-06-29T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1WVg3kasHFq9O6M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "31258"
+      },
+      {
+        "site": "bilibili",
+        "id": "3985",
+        "begin": "2004-04-04T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "陸奥圓明流外伝 修羅の刻",
+    "titleTranslate": {
+      "zh-Hans": [
+        "陆奥圆明流外传 修罗之刻"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/shura/",
+    "begin": "2004-04-06T09:00:00.000Z",
+    "end": "2004-09-28T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "9jsFgibtRwf9ia4Eg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "20996"
+      },
+      {
+        "site": "bilibili",
+        "id": "1904",
+        "begin": "2004-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "GANTZ ～the first stage～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "杀戮都市"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.gantz.net/",
+    "begin": "2004-04-12T17:43:00.000Z",
+    "end": "2004-06-22T17:43:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2750"
+      }
+    ]
+  },
+  {
+    "title": "爆裂天使",
+    "titleTranslate": {
+      "en": [
+        "Burst Angel"
+      ],
+      "zh-Hans": [
+        "爆裂天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.baku-ten.com/TV/top.html",
+    "begin": "2004-04-06T17:12:00.000Z",
+    "end": "2004-09-21T17:42:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4471"
+      }
+    ]
+  },
+  {
+    "title": "キン肉マンII世 ULTIMATE MUSCLE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "格斗金肉人II世 ULTIMATE MUSCLE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/niku/",
+    "begin": "2004-04-07T16:00:00.000Z",
+    "end": "2004-06-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "133219"
+      }
+    ]
+  },
+  {
+    "title": "絢爛舞踏祭ザ・マーズ・デイブレイク",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绚烂舞踏祭"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/kenran/main_index.html",
+    "begin": "2004-04-01T09:30:00.000Z",
+    "end": "2004-09-23T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2169"
+      }
+    ]
+  },
+  {
+    "title": "マーメイドメロディー ぴちぴちピッチ ピュア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人鱼的旋律 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.tv-aichi.co.jp/pichi/index.html",
+    "begin": "2004-04-02T23:00:00.000Z",
+    "end": "2004-12-24T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "8UZBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67990"
+      }
+    ]
+  },
+  {
+    "title": "DAN DOH!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "弹道"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/dandoh/main_index.html",
+    "begin": "2004-04-03T00:30:00.000Z",
+    "end": "2004-09-25T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "b9ynJY3zY6EEguo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "27711"
+      },
+      {
+        "site": "bilibili",
+        "id": "5414",
+        "begin": "2004-04-02T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "じゃがいぬくん",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jagainukun.net/",
+    "begin": "2004-04-03T22:00:00.000Z",
+    "end": "2004-07-18T22:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "127133"
+      }
+    ]
+  },
+  {
+    "title": "それいけ！ズッコケ三人組",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.zukkoke.net/",
+    "begin": "2004-04-04T00:00:00.000Z",
+    "end": "2004-10-03T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "188894"
+      }
+    ]
+  },
+  {
+    "title": "MADLAX",
+    "titleTranslate": {
+      "zh-Hans": [
+        "MADLAX",
+        "玛德拉克斯",
+        "异域天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jvcmusic.co.jp/m-serve/madlax/",
+    "begin": "2004-04-05T17:00:00.000Z",
+    "end": "2004-09-27T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KBfycNgibruxPzTU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1418"
+      },
+      {
+        "site": "bilibili",
+        "id": "1902",
+        "begin": "2004-04-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "鉄人28号",
+    "titleTranslate": {
+      "zh-Hans": [
+        "铁人28号"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tetsujin28.tv/",
+    "begin": "2004-04-07T16:30:00.000Z",
+    "end": "2004-09-29T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37262"
+      },
+      {
+        "site": "bilibili",
+        "id": "1953",
+        "begin": "2004-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "最遊記RELOAD GUNLOCK",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最游记RELOAD GUNLOCK"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/saiyuki_rg/",
+    "begin": "2004-04-01T16:30:00.000Z",
+    "end": "2004-09-23T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "mLWQDnbcTIrta9M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6997"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saiyuki_rg",
+        "begin": "2017-01-10T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2146",
+        "begin": "2004-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "わがまま☆フェアリーミルモでポン！ わんだほう",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法咪路咪路Wonderful"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/mirumo/main_index.htm",
+    "begin": "2004-04-06T10:30:00.000Z",
+    "end": "2005-04-05T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "139340"
+      }
+    ]
+  },
+  {
+    "title": "頭文字D Fourth Stage",
+    "titleTranslate": {
+      "en": [
+        "Initial D: Fourth Stage"
+      ],
+      "zh-Hans": [
+        "头文字D Fourth Stage"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mv.avex.jp/initial/initial.html",
+    "begin": "2004-04-17T16:00:00.000Z",
+    "end": "2006-02-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "QPTPTbUbia8ksqhI",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "m/mypnbgb1fsnnk0a",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "41918",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3816"
+      }
+    ]
+  },
+  {
+    "title": "APPLESEED",
+    "titleTranslate": {
+      "zh-Hans": [
+        "苹果核战记"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.appleseedthemovie.com/",
+    "begin": "2004-04-17T16:00:00.000Z",
+    "end": "2004-04-17T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "8/8ke57ytm8knfd6b",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "472"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 嵐を呼ぶ!夕陽のカスカベボーイズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 呼风唤雨！夕阳下的春日部男孩"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2004-04-17T16:00:00.000Z",
+    "end": "2004-04-17T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/v_19rrifx022.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8991"
+      },
+      {
+        "site": "mgtv",
+        "id": "49627",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "35572",
+        "begin": "2004-04-16T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f10c4a5861ad11e0bea1",
+        "begin": "2013-03-15T11:41:36.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 銀翼の奇術師",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 银翼的魔术师"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2004-04-17T16:00:00.000Z",
+    "end": "2004-04-17T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2974"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa225e8461ad11e0bea1",
+        "begin": "2013-03-19T14:47:30.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228949",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 12期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 12期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2004-04-05T08:35:00.000Z",
+    "end": "2004-07-23T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161690"
+      }
+    ]
+  },
+  {
+    "title": "新ゲッターロボ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新盖塔"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2004-04-09T16:00:00.000Z",
+    "end": "2004-09-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "YaqWFHziaUpDzcdk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "25920"
+      }
+    ]
+  },
+  {
+    "title": "夏色の砂時計",
+    "titleTranslate": {
+      "zh-Hans": [
+        "夏色的砂时计"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.oaks-soft.co.jp/princess-soft/natsuiro/",
+    "begin": "2004-04-23T16:00:00.000Z",
+    "end": "2004-07-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "lreSEHjeTozvbdU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14153"
+      }
+    ]
+  },
+  {
+    "title": "蒼い海のトリスティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "发明工坊"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2004-04-23T16:00:00.000Z",
+    "end": "2004-07-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "25414"
+      },
+      {
+        "site": "pptv",
+        "id": "ddiajIYnvX50AfuY",
+        "begin": ""
+      }
+    ]
+  }
+]

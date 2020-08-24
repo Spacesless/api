@@ -1,0 +1,523 @@
+[
+  {
+    "title": "激闘!クラッシュギアTURBO",
+    "titleTranslate": {
+      "zh-Hans": [
+        "激斗战车"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-anime.jp/sunrise-inc/works/detail.php?cid=71",
+    "begin": "2001-10-06T22:00:00.000Z",
+    "end": "2003-01-25T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "32247"
+      },
+      {
+        "site": "bilibili",
+        "id": "5380",
+        "begin": "2001-10-06T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "キャプテン翼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "足球小将GOAL!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/cap_tsuba/main_index.html",
+    "begin": "2001-10-07T08:20:00.000Z",
+    "end": "2002-10-06T08:50:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "RvHMSrIYiaMYppw8",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "22279",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "47764"
+      },
+      {
+        "site": "bilibili",
+        "id": "2137",
+        "begin": "1983-10-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ヒカルの碁",
+    "titleTranslate": {
+      "zh-Hans": [
+        "棋魂"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/hikaru/",
+    "begin": "2001-10-10T10:27:00.000Z",
+    "end": "2003-03-26T10:55:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "605"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hikaru",
+        "begin": "2012-12-14T06:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc006556962411de83b1",
+        "begin": "2011-09-05T11:58:20.000Z"
+      }
+    ]
+  },
+  {
+    "title": "テニスの王子様",
+    "titleTranslate": {
+      "zh-Hans": [
+        "网球王子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/tennipri/",
+    "begin": "2001-10-10T10:00:00.000Z",
+    "end": "2014-10-16T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "40QicvSWLibzmcGoI",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk4anph",
+        "begin": "2014-04-09T23:30:24.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "r/rvyijr1mt3r4q6a",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "11313",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2014/princeoftennis",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "103410",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1939"
+      },
+      {
+        "site": "nicovideo",
+        "id": "tennipri",
+        "begin": "2012-05-20T13:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5281",
+        "begin": "2001-10-09T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "d29b1a642f9611e2b2ac",
+        "begin": "2012-11-17T01:44:36.000Z"
+      }
+    ]
+  },
+  {
+    "title": "X -エックス-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "X战记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program_detail/index.html/2594/week",
+    "begin": "2001-10-03T00:30:00.000Z",
+    "end": "2002-03-25T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CyQfnQVr2xl8ibmI",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "c/cqyom1alkttm7bf",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "532"
+      },
+      {
+        "site": "bilibili",
+        "id": "2098",
+        "begin": "2001-10-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "サイボーグ009 THE CYBORG SOLDIER",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人造人009"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-10-14T11:00:00.000Z",
+    "end": "2002-10-13T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "burGRKwSgsAjoQk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "13607"
+      }
+    ]
+  },
+  {
+    "title": "ナジカ電撃作戦",
+    "titleTranslate": {
+      "zh-Hans": [
+        "七虹香电击大作战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mediafactory.co.jp/anime/najica/",
+    "begin": "2001-10-04T01:30:00.000Z",
+    "end": "2001-12-27T02:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2935"
+      }
+    ]
+  },
+  {
+    "title": "ヴァンドレッド the second stage",
+    "titleTranslate": {
+      "en": [
+        "VANDREAD the second stage"
+      ],
+      "zh-Hans": [
+        "银河冒险战记 the second stage"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gonzo.co.jp/works/0103.html",
+    "begin": "2001-10-05T00:30:00.000Z",
+    "end": "2002-01-18T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "42691"
+      },
+      {
+        "site": "bilibili",
+        "id": "2162",
+        "begin": "2001-10-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "星のカービィ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星之卡比"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hicbc.com/tv/kirby/",
+    "begin": "2001-10-05T22:30:00.000Z",
+    "end": "2003-09-26T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "30182"
+      },
+      {
+        "site": "bilibili",
+        "id": "2102",
+        "begin": "2001-10-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おとぎストーリー 天使のしっぽ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天使的尾巴"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wonderfarm.co.jp/shippo/",
+    "begin": "2001-10-04T12:30:00.000Z",
+    "end": "2001-12-20T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IQ75d99FtfNW1Dw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "f/fataqofbrg3l7y8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "73010"
+      },
+      {
+        "site": "bilibili",
+        "id": "2094",
+        "begin": "2001-10-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "カスミン",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/kasumin/",
+    "begin": "2001-10-13T22:40:00.000Z",
+    "end": "2003-10-01T23:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "89727"
+      }
+    ]
+  },
+  {
+    "title": "ちっちゃな雪使いシュガー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小小雪精灵"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/snow-sugar/",
+    "begin": "2001-10-03T18:00:00.000Z",
+    "end": "2002-03-26T18:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Ysu2NJwCcrATkfk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2414"
+      },
+      {
+        "site": "bilibili",
+        "id": "2119",
+        "begin": "2001-10-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "まほろまてぃっく",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔力女管家"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mahoro-matic.com/",
+    "begin": "2001-10-05T18:00:00.000Z",
+    "end": "2001-12-28T19:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "VZlj4UmvH13APqY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2141"
+      }
+    ]
+  },
+  {
+    "title": "ココロ図書館",
+    "titleTranslate": {
+      "zh-Hans": [
+        "可可露图书馆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.jvcmusic.co.jp/m-serve/tv/kokosho/",
+    "begin": "2001-10-11T16:00:00.000Z",
+    "end": "2002-02-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "11727"
+      },
+      {
+        "site": "youku",
+        "id": "9ad023c8fdbb11de97c0",
+        "begin": "2013-03-21T17:18:30.000Z"
+      }
+    ]
+  },
+  {
+    "title": "i-wish you were here-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "愿你在此"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-10-04T16:00:00.000Z",
+    "end": "2002-11-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "c/c9hi46vxnx77bkb",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2904"
+      },
+      {
+        "site": "bilibili",
+        "id": "5285",
+        "begin": "2001-10-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "HELLSING",
+    "titleTranslate": {
+      "zh-Hans": [
+        "皇家国教骑士团"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-10-18T16:00:00.000Z",
+    "end": "2002-01-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "l/la2nmgw6f8yy3lw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2216"
+      },
+      {
+        "site": "letv",
+        "id": "14590",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "GROOVE ADVENTURE RAVE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "圣石小子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-10-13T16:00:00.000Z",
+    "end": "2002-09-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "quTgXsYsnNo9uyM",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8544"
+      },
+      {
+        "site": "bilibili",
+        "id": "2100",
+        "begin": "2001-10-12T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "18872",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "FF:U 〜ファイナルファンタジー:アンリミテッド〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最终幻想：无限"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2001-10-02T16:00:00.000Z",
+    "end": "2002-03-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "b6GbGYHnV5X4dt4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "13555"
+      }
+    ]
+  }
+]

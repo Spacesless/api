@@ -1,0 +1,548 @@
+[
+  {
+    "title": "タイムボカン2000　怪盗きらめきマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "怪盗小双侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tatsunoko.co.jp/Works/03/3_3.html#4",
+    "begin": "2000-04-05T09:00:00.000Z",
+    "end": "2000-09-27T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "74933"
+      }
+    ]
+  },
+  {
+    "title": "遊戯王デュエルモンスターズ",
+    "titleTranslate": {
+      "en": [
+        "Yu-Gi-Oh! Duel Monsters"
+      ],
+      "zh-Hans": [
+        "游戏王－怪兽之决斗"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/yugioh2000/",
+    "begin": "2000-04-18T10:28:00.000Z",
+    "end": "2004-09-29T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3nBLyTGXB0WoJo4",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "46857",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6390"
+      },
+      {
+        "site": "nicovideo",
+        "id": "yugioh2000",
+        "begin": "2014-08-20T06:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70177034",
+        "begin": "2017-02-08T08:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7h4st",
+        "begin": "2018-08-09T16:00:14.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3054",
+        "begin": "2000-04-17T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc0083ba962411de83b1",
+        "begin": "2013-01-09T15:42:42.000Z"
+      }
+    ]
+  },
+  {
+    "title": "サクラ大戦",
+    "titleTranslate": {
+      "zh-Hans": [
+        "樱花大战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sakura-taisen.com/",
+    "begin": "2000-04-08T09:00:00.000Z",
+    "end": "2000-09-23T15:01:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icUMibvCSKibjiabGYE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2060"
+      }
+    ]
+  },
+  {
+    "title": "ゲートキーパーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "地球守护者",
+        "捍卫者"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-04-03T14:30:00.000Z",
+    "end": "2000-09-18T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "l9mjIYnvX50AfuY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19039"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhw7065",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "m/mzc002003uvcaar",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "BOYS BE…",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新恋爱白书"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/boys/noplugin.html",
+    "begin": "2000-04-11T15:30:00.000Z",
+    "end": "2000-07-04T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "6973"
+      }
+    ]
+  },
+  {
+    "title": "星界の戦旗",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星界的战旗"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/seikai/",
+    "begin": "2000-04-14T04:30:00.000Z",
+    "end": "2000-07-14T05:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6hicpZ881peNGxCw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9617"
+      }
+    ]
+  },
+  {
+    "title": "星界の断章 -誕生-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星界的断章 诞生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/seikai/",
+    "begin": "2000-04-07T04:30:00.000Z",
+    "end": "2000-04-07T05:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "34515"
+      }
+    ]
+  },
+  {
+    "title": "だぁ!だぁ!だぁ!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Da!Da!Da!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/daa/",
+    "begin": "2000-04-04T20:00:00.000Z",
+    "end": "2001-09-25T20:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3768"
+      },
+      {
+        "site": "bilibili",
+        "id": "5407",
+        "begin": "2000-04-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ラブひな",
+    "titleTranslate": {
+      "zh-Hans": [
+        "纯情房东俏房客"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/lovehina/",
+    "begin": "2000-04-19T00:00:00.000Z",
+    "end": "2001-04-02T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2121"
+      },
+      {
+        "site": "youku",
+        "id": "c86614a69b1511e1b16f",
+        "begin": "2013-01-27T08:10:38.000Z"
+      }
+    ]
+  },
+  {
+    "title": "NieA_7",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我家也有外星人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/niea/",
+    "begin": "2000-04-26T02:00:00.000Z",
+    "end": "2000-07-19T02:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IRnkYsowoN5Bvyc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3795"
+      },
+      {
+        "site": "bilibili",
+        "id": "2153",
+        "begin": "2000-04-25T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "トランスフォーマーカーロボット",
+    "titleTranslate": {
+      "zh-Hans": [
+        "变形金刚：Car Robot"
+      ],
+      "en": [
+        "Transformers: Car Robots"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/carobot/",
+    "begin": "2000-04-05T09:30:00.000Z",
+    "end": "2000-12-27T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "209625"
+      }
+    ]
+  },
+  {
+    "title": "妖しのセレス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "梦幻妖子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_2000/tv_051.html",
+    "begin": "2000-04-20T16:00:00.000Z",
+    "end": "2000-09-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qYJ9ib2PJOXfaWMA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6375"
+      },
+      {
+        "site": "bilibili",
+        "id": "2152",
+        "begin": "2000-04-19T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "13097",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "デジモンアドベンチャー02",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码兽大冒险02",
+        "数码宝贝02"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/digimon02/",
+    "begin": "2000-04-02T16:00:00.000Z",
+    "end": "2001-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1dp5",
+        "begin": "2015-08-14T17:06:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3129"
+      },
+      {
+        "site": "nicovideo",
+        "id": "digimon-adventure02",
+        "begin": "2015-09-16T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 嵐を呼ぶジャングル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 森林里的暴风雨"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2000-04-22T16:00:00.000Z",
+    "end": "2000-04-22T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/v_19rrifx03a.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8982"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "10492",
+        "begin": "2000-04-21T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f0721d0c61ad11e0bea1",
+        "begin": "2013-03-15T11:31:34.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 瞳の中の暗殺者",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 瞳孔中的暗杀者"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2000-04-22T16:00:00.000Z",
+    "end": "2000-04-22T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "823"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa1f99ec61ad11e0bea1",
+        "begin": "2013-03-19T11:49:49.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228944",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 8期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 8期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2000-04-03T08:35:00.000Z",
+    "end": "2000-07-24T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161686"
+      }
+    ]
+  },
+  {
+    "title": "フリクリ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "FLCL",
+        "特别的她"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.gainax.co.jp/anime/flcl",
+    "begin": "2000-04-26T16:00:00.000Z",
+    "end": "2001-03-16T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TicPOTLQaiasgrqRE",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2988",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "822"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7p811",
+        "begin": "2017-11-30T10:13:44.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "flcl-anime",
+        "begin": "2018-07-11T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "幻想魔伝 最遊記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最游记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2000-04-04T16:00:00.000Z",
+    "end": "2001-03-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "mbSPDXXbS4nsatI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5977"
+      },
+      {
+        "site": "nicovideo",
+        "id": "saiyuki",
+        "begin": "2017-01-10T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2144",
+        "begin": "2000-04-03T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "38600",
+        "begin": ""
+      }
+    ]
+  }
+]

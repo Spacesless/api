@@ -1,0 +1,113 @@
+[
+  {
+    "title": "涼宮ハルヒちゃんの憂鬱",
+    "titleTranslate": {
+      "zh-Hans": [
+        "凉宫春日酱的忧郁"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.haruhi.tv/haruchuru/",
+    "begin": "2009-02-14T07:00:00.000Z",
+    "end": "2009-05-08T13:04:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7CUfnQVr2xl8ibmI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1372"
+      },
+      {
+        "site": "letv",
+        "id": "6311",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "にょろーん☆ちゅるやさん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鹤屋和熏干酪"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.haruhi.tv/haruchuru/",
+    "begin": "2009-02-14T07:00:00.000Z",
+    "end": "2009-05-08T13:02:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "fdKtK5P5aacKiaPA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1545"
+      },
+      {
+        "site": "bilibili",
+        "id": "4734",
+        "begin": "2009-02-13T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "×××HOLiC 春夢記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "×××HOLiC 春梦记"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://kc.kodansha.co.jp/tsubaholi/",
+    "begin": "2009-02-17T16:00:00.000Z",
+    "end": "2009-06-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "tI5591icFNXPWVLw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2898"
+      },
+      {
+        "site": "bilibili",
+        "id": "3390",
+        "begin": "2009-02-16T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ひぐらしのなく頃に礼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "寒蝉鸣泣之时 礼"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://oyashirosama.com/web/rei/index.htm",
+    "begin": "2009-02-25T16:00:00.000Z",
+    "end": "2009-08-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1326"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oyashirosama03",
+        "begin": "2017-06-16T15:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "title": "ケモノヅメ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "兽爪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://kemonozume.net/",
+    "begin": "2006-08-05T15:30:00.000Z",
+    "end": "2006-11-04T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4237"
+      }
+    ]
+  },
+  {
+    "title": "増田こうすけ劇場 ギャグマンガ日和2",
+    "titleTranslate": {
+      "zh-Hans": [
+        "搞笑漫画日和2",
+        "搞笑漫画日和 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kids-station.com/minisite/gyagumanga2/",
+    "begin": "2006-08-05T13:30:00.000Z",
+    "end": "2006-10-21T13:37:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "OnRQzjacDEqtK5M",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgjb8bl",
+        "begin": "2014-09-12T06:42:56.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "2/2w0n7vwp4l18dj4",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "15960",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "42752",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2460"
+      },
+      {
+        "site": "bilibili",
+        "id": "1594",
+        "begin": "2006-08-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "HANOKA～葉ノ香～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最终兵器魔神少女 叶之香"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.rams.jp/hanoka/",
+    "begin": "2006-08-07T16:00:00.000Z",
+    "end": "2006-10-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "105078"
+      }
+    ]
+  },
+  {
+    "title": "ピカチュウのわんぱくアイランド",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：皮卡丘的顽皮岛"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2006-08-01T16:00:00.000Z",
+    "end": "2006-08-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "90612"
+      }
+    ]
+  },
+  {
+    "title": "ななみちゃん 第3シリーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法娜娜咪 第三季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2006-08-04T16:00:00.000Z",
+    "end": "2006-11-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216379"
+      }
+    ]
+  },
+  {
+    "title": "シュヴァリエ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "双面骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/chevalier/",
+    "begin": "2006-08-19T09:55:00.000Z",
+    "end": "2007-02-24T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2083"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhgeb59",
+        "begin": "2017-11-16T07:24:26.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2776",
+        "begin": "2006-08-18T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 NARUTO -ナルト- 大興奮!みかづき島のアニマル騒動だってばよ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "火影忍者剧场版 大兴奋！三日月岛上的动物骚乱"
+      ],
+      "en": [
+        "Naruto the Movie 3: Guardians of the Crescent Moon Kingdom"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "https://web.archive.org/web/20081216021804/http://pierrot.jp/title/naruto/movie2006/index.html",
+    "begin": "2006-08-04T16:00:00.000Z",
+    "end": "2006-08-04T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "22108"
+      },
+      {
+        "site": "netflix",
+        "id": "70108386",
+        "begin": "2017-09-01T07:00:00.000Z"
+      }
+    ]
+  }
+]

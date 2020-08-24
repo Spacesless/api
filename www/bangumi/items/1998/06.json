@@ -1,0 +1,41 @@
+[
+  {
+    "title": "ピカチュウのなつやすみ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：皮卡丘的暑假"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "1998-06-18T17:10:00.000Z",
+    "end": "1998-06-18T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27759"
+      }
+    ]
+  },
+  {
+    "title": "スーパーミルクちゃん",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-06-18T16:00:00.000Z",
+    "end": "1998-09-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "85772"
+      },
+      {
+        "site": "nicovideo",
+        "id": "supermilk-chan",
+        "begin": "2011-06-17T12:00:00.000Z"
+      }
+    ]
+  }
+]

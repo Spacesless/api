@@ -1,0 +1,104 @@
+[
+  {
+    "title": "ルパン三世 トワイライト☆ジェミニの秘密",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 暮色双子星座的秘密"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1996-08-02T16:00:00.000Z",
+    "end": "1996-08-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84986"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3941",
+        "begin": "1996-08-01T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 スレイヤーズRETURN",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士RETURN"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-08-03T16:00:00.000Z",
+    "end": "1996-08-03T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "v/vipzjddgmxp2e25",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "42095"
+      },
+      {
+        "site": "pptv",
+        "id": "RfTgXsYsnNo9uyM",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3906",
+        "begin": "1996-08-02T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwb7ed",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "新世紀GPXサイバーフォーミュラSAGA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高智能方程式：SAGA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-08-01T16:00:00.000Z",
+    "end": "1997-07-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NnlDwSmPicz2gHoY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1957"
+      },
+      {
+        "site": "bilibili",
+        "id": "3810",
+        "begin": "1996-07-31T16:00:01.000Z"
+      }
+    ]
+  }
+]

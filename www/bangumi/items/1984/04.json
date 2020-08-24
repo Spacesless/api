@@ -1,0 +1,74 @@
+[
+  {
+    "title": "巨神ゴーグ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "巨神高克"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.giant-gorg.net/",
+    "begin": "1984-04-05T00:30:00.000Z",
+    "end": "1984-09-27T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37280"
+      }
+    ]
+  },
+  {
+    "title": "超時空騎団サザンクロス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超时空骑团"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1984-04-15T16:00:00.000Z",
+    "end": "1984-09-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AC0Ylv5k1BJ181s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37168"
+      },
+      {
+        "site": "bilibili",
+        "id": "2429",
+        "begin": "1984-04-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ゴッドマジンガー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "远古魔神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1984-04-15T16:00:00.000Z",
+    "end": "1984-09-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37265"
+      },
+      {
+        "site": "nicovideo",
+        "id": "God-Mazinger",
+        "begin": "2011-11-09T06:00:00.000Z"
+      }
+    ]
+  }
+]

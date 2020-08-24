@@ -1,0 +1,50 @@
+[
+  {
+    "title": "スラムダンク 全国制覇だ！桜木花道",
+    "titleTranslate": {
+      "zh-Hans": [
+        "灌篮高手 全国制霸吧！樱木花道"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-08-20T16:00:00.000Z",
+    "end": "1994-08-20T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3732"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb405h",
+        "begin": "2016-02-04T10:33:39.000Z"
+      }
+    ]
+  },
+  {
+    "title": "マクロスプラス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超时空要塞Plus"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-08-25T16:00:00.000Z",
+    "end": "1995-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "gsq2NJwCcrATkfk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3168"
+      }
+    ]
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "title": "ポケットモンスター",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦",
+        "神奇宝贝",
+        "宠物小精灵",
+        "口袋妖怪",
+        "精灵宝可梦 第1季"
+      ],
+      "zh-Hant": [
+        "寵物小精靈",
+        "神奇寶貝"
+      ],
+      "en": [
+        "Pokemon",
+        "Pocket Monsters"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/archive/pokemon/",
+    "begin": "1997-04-01T09:30:00.000Z",
+    "end": "2002-11-14T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ASUPjfVbywls6lI",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrifpgxp",
+        "begin": "2014-04-09T23:55:28.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "t/tyeqdw6rof7t5ow",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2017/jlbkm1",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3019"
+      },
+      {
+        "site": "youku",
+        "id": "cc004076962411de83b1",
+        "begin": "2014-11-15T05:38:59.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新・天地無用！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新・天地无用!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tenchi-web.com/",
+    "begin": "1997-04-01T09:00:00.000Z",
+    "end": "1997-09-23T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TibDbWcEnl9U4th4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19542"
+      }
+    ]
+  },
+  {
+    "title": "少女革命ウテナ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "少女革命"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/utena/",
+    "begin": "1997-04-02T09:00:00.000Z",
+    "end": "1997-12-24T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ToB8ibmLIOHbZV78",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1453"
+      },
+      {
+        "site": "nicovideo",
+        "id": "utena-anime",
+        "begin": "2018-03-07T21:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2277",
+        "begin": "1997-04-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "白鯨伝説",
+    "titleTranslate": {
+      "en": [
+        "Hakugei: Legend of Moby Dick"
+      ],
+      "zh-Hans": [
+        "白鲸传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program/detail/3549",
+    "begin": "1997-04-09T16:00:00.000Z",
+    "end": "1999-05-12T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "105129"
+      }
+    ]
+  },
+  {
+    "title": "スレイヤーズTRY",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士TRY"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/slayers-tv.net/",
+    "begin": "1997-04-04T16:00:00.000Z",
+    "end": "1997-09-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "QicTPTbUbia8ksqhI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2097"
+      }
+    ]
+  },
+  {
+    "title": "はいぱーぽりす",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猫狐警探"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_034.html",
+    "begin": "1997-04-03T16:00:00.000Z",
+    "end": "1997-09-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "85436"
+      }
+    ]
+  },
+  {
+    "title": "中華一番！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "中华一番！",
+        "中华小当家"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-04-27T16:00:00.000Z",
+    "end": "1998-09-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk0tzb1",
+        "begin": "2014-04-09T23:58:56.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "46119",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1934"
+      },
+      {
+        "site": "qq",
+        "id": "7/7jzjwwtpqo2hilu",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "cc000b60962411de83b1",
+        "begin": "2012-06-26T09:23:04.000Z"
+      }
+    ]
+  },
+  {
+    "title": "シティーハンタースペシャル グッド・バイ・マイ・スイート・ハート",
+    "titleTranslate": {
+      "zh-Hans": [
+        "城市猎人 再见 我的爱人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-04-25T16:00:00.000Z",
+    "end": "1997-04-25T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "m/mvc7etmp0qsi89x",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "53939"
+      },
+      {
+        "site": "letv",
+        "id": "10004313",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "金田一少年の事件簿",
+    "titleTranslate": {
+      "zh-Hans": [
+        "金田一少年事件簿"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/kindaichi/",
+    "begin": "1997-04-07T16:00:00.000Z",
+    "end": "2000-09-11T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1avt",
+        "begin": "2015-08-14T16:12:33.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "9588"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 暗黒タマタマ大追跡",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新之黑暗珠珠大追击"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "1997-04-19T16:00:00.000Z",
+    "end": "1997-04-19T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/75c20dc1fe211093.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8971"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "11652",
+        "begin": "1997-04-18T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f071c50061ad11e0bea1",
+        "begin": "2013-03-15T12:02:56.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 時計じかけの摩天楼",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 引爆摩天楼"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "1997-04-19T16:00:00.000Z",
+    "end": "1997-04-19T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2968"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa1f2fac61ad11e0bea1",
+        "begin": "2013-03-10T17:17:36.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228964",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "HAUNTEDじゃんくしょん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猛鬼校园"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-04-02T16:00:00.000Z",
+    "end": "1997-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "JmlT0TmfD02wLpY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19454"
+      }
+    ]
+  },
+  {
+    "title": "超特急ヒカリアン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "铁胆火车侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-04-02T16:00:00.000Z",
+    "end": "2000-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3WpV0zuhEUibyMJg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8412"
+      },
+      {
+        "site": "bilibili",
+        "id": "2031",
+        "begin": "1997-04-01T16:00:00.000Z"
+      }
+    ]
+  }
+]

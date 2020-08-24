@@ -1,0 +1,1802 @@
+[
+  {
+    "title": "プリティーリズム・レインボーライブ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美妙旋律 Rainbow Live"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/prettyrhythm/",
+    "begin": "2013-04-06T01:00:00.000Z",
+    "end": "2014-03-29T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "033b8b22863111e2b16f",
+        "begin": "2013-04-09T00:15:26.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "62285"
+      },
+      {
+        "site": "nicovideo",
+        "id": "prettyrhythm_rl",
+        "begin": "2013-04-19T10:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "探検ドリランド-1000年の真宝-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "探险DRILAND 1000年的真宝",
+        "探险托里兰托 1000年的真宝"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/driland2/",
+    "begin": "2013-04-06T01:30:00.000Z",
+    "end": "2014-03-29T02:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Dib7KSLAWhsQnpQ0",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fe815c40309111e3b8b7",
+        "begin": "2013-10-09T04:04:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "66409"
+      }
+    ]
+  },
+  {
+    "title": "やはり俺の青春ラブコメはまちがっている。",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的青春恋爱物语果然有问题"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/oregairu/1st/",
+    "begin": "2013-04-04T16:33:00.000Z",
+    "end": "2013-06-27T16:59:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "06uFA2vRQXiciaYMg",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb343l",
+        "begin": "2015-04-23T08:07:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "54433"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oregairu",
+        "begin": "2013-04-14T15:30:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1539",
+        "begin": "2013-04-04T16:33:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "5/5wiuorx70i3vdqb",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "カーニヴァル",
+    "titleTranslate": {
+      "en": [
+        "Karneval"
+      ],
+      "zh-Hans": [
+        "狂欢节"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://karneval-anime.com/",
+    "begin": "2013-04-03T17:43:00.000Z",
+    "end": "2013-06-26T18:14:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "m2NNyzOZCUeqKJA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "52485"
+      },
+      {
+        "site": "bilibili",
+        "id": "572",
+        "begin": "2013-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "俺の妹がこんなに可愛いわけがない。(2期)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的妹妹哪有这么可爱。"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.oreimo-anime.com/",
+    "begin": "2013-04-06T15:00:00.000Z",
+    "end": "2013-08-18T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "87894",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37898"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oreimo2",
+        "begin": "2013-04-11T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2661",
+        "begin": "2013-04-06T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "銀河機攻隊 マジェスティックプリンス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河机攻队 Majestic Prince"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mjp-anime.jp/",
+    "begin": "2013-04-04T13:30:00.000Z",
+    "end": "2013-09-19T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "50535"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mjp",
+        "begin": "2013-04-08T14:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "這いよれ！ニャル子さんW",
+    "titleTranslate": {
+      "zh-Hans": [
+        "潜行吧！奈亚子W"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://nyaruko.com/",
+    "begin": "2013-04-07T16:05:00.000Z",
+    "end": "2013-06-30T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "58015"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nyaruko-w",
+        "begin": "2013-04-09T15:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "はたらく魔王さま！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "打工吧！魔王大人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://maousama.jp/",
+    "begin": "2013-04-04T13:00:00.000Z",
+    "end": "2013-06-27T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjx97w1",
+        "begin": "2013-04-04T22:58:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "50814"
+      },
+      {
+        "site": "nicovideo",
+        "id": "maousama",
+        "begin": "2013-04-12T14:30:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80006149",
+        "begin": "2017-01-31T08:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2932",
+        "begin": "2013-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "変態王子と笑わない猫。",
+    "titleTranslate": {
+      "en": [
+        "The \"HENTAI\" prince and the stony cat."
+      ],
+      "zh-Hans": [
+        "变态王子与不笑猫"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.henneko.jp",
+    "begin": "2013-04-13T13:30:00.000Z",
+    "end": "2013-06-29T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NsexL5f9basOjPQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "45842"
+      },
+      {
+        "site": "bilibili",
+        "id": "413",
+        "begin": "2013-04-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ハヤテのごとく！ Cuties",
+    "titleTranslate": {
+      "zh-Hans": [
+        "旋风管家 Cuties"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hayate-project.com/",
+    "begin": "2013-04-08T16:35:00.000Z",
+    "end": "2013-06-26T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "58709"
+      },
+      {
+        "site": "bilibili",
+        "id": "4435",
+        "begin": "2013-04-07T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "惡の華",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恶之华"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://akunohana-anime.jp/",
+    "begin": "2013-04-05T13:00:00.000Z",
+    "end": "2013-06-29T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjwznfd",
+        "begin": "2013-04-19T05:35:51.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "46307"
+      },
+      {
+        "site": "nicovideo",
+        "id": "akunohana",
+        "begin": "2013-04-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "百花繚乱 サムライブライド",
+    "titleTranslate": {
+      "zh-Hans": [
+        "百花缭乱 SAMURAI BRIDE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hyakka-ryoran.tv/",
+    "begin": "2013-04-05T13:30:00.000Z",
+    "end": "2013-06-21T14:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "48055"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hyakka-ryoran2",
+        "begin": "2013-04-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "よんでますよ、アザゼルさん。Z",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恶魔阿萨谢尔在召唤你Z"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://kc.kodansha.co.jp/azazel/",
+    "begin": "2013-04-06T16:00:00.000Z",
+    "end": "2013-06-29T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "53984"
+      },
+      {
+        "site": "nicovideo",
+        "id": "azazel_z",
+        "begin": "2013-04-12T15:45:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "87895",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "アラタカンガタリ～革神語～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "革神语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://arata-anime.com/",
+    "begin": "2013-04-08T17:05:00.000Z",
+    "end": "2013-07-01T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ic5SAicmbMPHrdW8M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "56108"
+      }
+    ]
+  },
+  {
+    "title": "フォトカノ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "写真女友"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/photokano/",
+    "begin": "2013-04-04T17:03:00.000Z",
+    "end": "2013-06-27T17:29:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0a2HBW3TQ4HkYso",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "55032"
+      },
+      {
+        "site": "nicovideo",
+        "id": "photokano",
+        "begin": "2013-04-22T15:30:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "580",
+        "begin": "2013-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "進撃の巨人",
+    "titleTranslate": {
+      "en": [
+        "attack on titan"
+      ],
+      "zh-Hans": [
+        "进击的巨人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://shingeki.tv/",
+    "begin": "2013-04-06T16:58:00.000Z",
+    "end": "2013-09-28T17:28:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "55770"
+      },
+      {
+        "site": "nicovideo",
+        "id": "shingeki",
+        "begin": "2013-04-10T13:30:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70299043",
+        "begin": "2017-01-10T08:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "革命機ヴァルヴレイヴ",
+    "titleTranslate": {
+      "en": [
+        "Valvrave the Liberator"
+      ],
+      "zh-Hans": [
+        "革命机Valvrave"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.valvrave.com/",
+    "begin": "2013-04-11T16:35:00.000Z",
+    "end": "2013-12-26T16:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjxrb1d",
+        "begin": "2013-04-11T20:36:59.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3307",
+        "begin": "2013-04-11T20:36:59.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "56951"
+      },
+      {
+        "site": "nicovideo",
+        "id": "valvrave",
+        "begin": "2013-04-13T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "とある科学の超電磁砲S",
+    "titleTranslate": {
+      "zh-Hans": [
+        "科学超电磁炮S",
+        "某科学的超电磁炮S"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.project-railgun.net/index.html",
+    "begin": "2013-04-12T14:30:00.000Z",
+    "end": "2013-09-27T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjwiwi1",
+        "begin": "2013-04-13T02:08:44.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "87896",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "51928"
+      },
+      {
+        "site": "nicovideo",
+        "id": "railgun-s",
+        "begin": "2013-04-19T14:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "427",
+        "begin": "2013-04-11T16:00:00.000Z"
+      },
+      {
+        "site": "acfun",
+        "id": "6000233",
+        "begin": "2019-09-27T07:02:34.000Z"
+      }
+    ]
+  },
+  {
+    "title": "断裁分離のクライムエッジ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "断裁分离的罪恶之剪",
+        "裁断分离之罪恶剪刀"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://crimeedge.com/",
+    "begin": "2013-04-03T15:30:00.000Z",
+    "end": "2013-06-26T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BibvFQ6sRgb8iaoAg",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "87839",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54705"
+      },
+      {
+        "site": "nicovideo",
+        "id": "crimeedge",
+        "begin": "2013-04-10T14:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ムシブギョー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "虫奉行"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mushibugyo.jp/",
+    "begin": "2013-04-08T09:00:00.000Z",
+    "end": "2013-09-30T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "62940"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mushibugyo",
+        "begin": "2013-04-14T16:30:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "4e8d0932857a11e29498",
+        "begin": "2013-04-07T11:17:41.000Z"
+      }
+    ]
+  },
+  {
+    "title": "スパロウズホテル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "麻雀酒店"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.takeshobo.co.jp/sp/tv_sparrows/",
+    "begin": "2013-04-09T11:25:00.000Z",
+    "end": "2013-06-25T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "zbGbGYHnV5X4dt4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66414"
+      },
+      {
+        "site": "nicovideo",
+        "id": "sparrows",
+        "begin": "2013-04-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あいうら",
+    "titleTranslate": {
+      "zh-Hans": [
+        "AIURA"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/aiura/",
+    "begin": "2013-04-09T16:35:00.000Z",
+    "end": "2013-06-25T16:50:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "EuvFQ6sRgb8iaoAg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "56159"
+      },
+      {
+        "site": "nicovideo",
+        "id": "aiura",
+        "begin": "2013-04-09T16:40:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "87897",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ゆゆ式",
+    "titleTranslate": {
+      "zh-Hans": [
+        "悠悠式",
+        "YUYU式"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.yuyushiki.net/",
+    "begin": "2013-04-09T15:30:00.000Z",
+    "end": "2013-06-25T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjxlrwx",
+        "begin": "2013-04-09T19:30:48.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "46828"
+      },
+      {
+        "site": "nicovideo",
+        "id": "yuyushiki",
+        "begin": "2013-04-11T15:30:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "波打際のむろみさん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人鱼又上钩"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/muromisan/",
+    "begin": "2013-04-06T16:15:00.000Z",
+    "end": "2013-06-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1KiaEAmrQQH7hX8c",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "87898",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "59632"
+      },
+      {
+        "site": "nicovideo",
+        "id": "muromisan",
+        "begin": "2013-04-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "DEVIL SURVIVOR 2 the ANIMATION",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恶魔幸存者2",
+        "恶魔幸存者 第2部"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://ds2a.jp/",
+    "begin": "2013-04-04T17:05:00.000Z",
+    "end": "2013-06-27T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjx99mx",
+        "begin": "2014-04-09T23:07:47.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "56094"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ds2",
+        "begin": "2013-04-14T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "翠星のガルガンティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "翠星之加尔刚蒂亚"
+      ],
+      "en": [
+        "Gargantia on the Verdurous Planet"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://gargantia.jp/",
+    "begin": "2013-04-07T13:00:00.000Z",
+    "end": "2013-10-25T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "PzMdmwNp2Rd6ibGA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "56091"
+      },
+      {
+        "site": "nicovideo",
+        "id": "gargantia",
+        "begin": ""
+      },
+      {
+        "site": "netflix",
+        "id": "80039789",
+        "begin": "2016-12-01T08:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "445",
+        "begin": "2013-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "うたの☆プリンスさまっ♪ マジLOVE2000%",
+    "titleTranslate": {
+      "zh-Hans": [
+        "歌之王子殿下 真爱2000%"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://archive2000.utapri.tv/",
+    "begin": "2013-04-03T17:05:00.000Z",
+    "end": "2013-06-26T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "31416"
+      },
+      {
+        "site": "nicovideo",
+        "id": "utapri2",
+        "begin": "2013-04-06T16:30:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh1msxx",
+        "begin": "2017-11-01T11:12:08.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1562",
+        "begin": "2013-04-02T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "a/add16u479bl38qb",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "7042f73e7bd511e296ac",
+        "begin": "2019-08-08T02:02:12.000Z"
+      }
+    ]
+  },
+  {
+    "title": "団地ともお",
+    "titleTranslate": {
+      "zh-Hans": [
+        "住宅区友夫",
+        "团地友夫"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/tomoo/",
+    "begin": "2013-04-06T00:30:00.000Z",
+    "end": "2015-02-07T00:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ISELiafFXxwVo5k4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "61118"
+      },
+      {
+        "site": "bilibili",
+        "id": "1730",
+        "begin": "2013-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "マイリトルポニー ～トモダチは魔法～",
+    "titleTranslate": {
+      "en": [
+        "my little pony"
+      ],
+      "zh-Hans": [
+        "彩虹小马：友情就是魔法"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/mylittle-pony/",
+    "begin": "2013-04-01T22:30:00.000Z",
+    "end": "2014-03-24T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "87914",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "68551"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mylittle-pony_n",
+        "begin": "2013-04-19T11:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "トレインヒーロー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高铁英雄"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/trainheroes/",
+    "begin": "2013-04-02T08:30:00.000Z",
+    "end": "2013-09-24T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "22100"
+      },
+      {
+        "site": "youku",
+        "id": "1fbfddda80bd11e296ac",
+        "begin": "2015-05-19T07:34:04.000Z"
+      }
+    ]
+  },
+  {
+    "title": "DD北斗の拳",
+    "titleTranslate": {
+      "zh-Hans": [
+        "DD北斗神拳"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ddhokuto.com/",
+    "begin": "2013-04-02T16:40:00.000Z",
+    "end": "2013-06-25T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "62946"
+      },
+      {
+        "site": "youku",
+        "id": "511e6db8857911e2a19e",
+        "begin": "2013-04-04T15:12:15.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ジュエルペット ハッピネス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宝石宠物 Happiness"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/jp-happiness/",
+    "begin": "2013-04-05T22:00:00.000Z",
+    "end": "2014-03-29T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "EezIRq4UhMIlows",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "67224"
+      }
+    ]
+  },
+  {
+    "title": "絶対防衛レヴィアタン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绝对防卫利维坦",
+        "绝对防卫 利维坦"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://leviathan-anime.net/",
+    "begin": "2013-04-06T14:30:00.000Z",
+    "end": "2013-06-29T14:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "s103tR2D8zGUEno",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhc0ovh",
+        "begin": "2014-09-04T05:33:03.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "66410"
+      },
+      {
+        "site": "nicovideo",
+        "id": "leviathan",
+        "begin": "2013-04-08T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2656",
+        "begin": "2013-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぼくは王さま",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我是国王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.rironsha.co.jp/ousama_anime/",
+    "begin": "2013-04-06T00:30:00.000Z",
+    "end": "2013-06-22T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "mph08lrAMG7RT7c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66408"
+      },
+      {
+        "site": "bilibili",
+        "id": "599",
+        "begin": "2013-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぢべたぐらし あひるの生活",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鸭子生活"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ahiru-anime.com/",
+    "begin": "2013-04-06T23:00:00.000Z",
+    "end": "2013-04-06T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "EO3HRa0Tg8Ekogo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "68591"
+      },
+      {
+        "site": "bilibili",
+        "id": "676",
+        "begin": "2013-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ガラスの仮面ですが",
+    "titleTranslate": {
+      "zh-Hans": [
+        "虽然是玻璃假面"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://garasunokamendesuga.ponycanyon.co.jp/",
+    "begin": "2013-04-07T12:54:00.000Z",
+    "end": "2013-04-21T13:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "GeTQTrYcjMotqxM",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66411"
+      },
+      {
+        "site": "nicovideo",
+        "id": "garasunokamendesuga",
+        "begin": "2013-06-14T09:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1764",
+        "begin": "2013-04-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "血液型くん！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "血型君"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://ketsuekigatakun.com/",
+    "begin": "2013-04-07T13:27:00.000Z",
+    "end": "2013-06-23T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "y/yjbdd0x0yl48w89",
+        "begin": "2013-04-10T03:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "66491"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ketsuekigata-kun",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "LINE TOWN",
+    "titleTranslate": {
+      "zh-Hans": [
+        "连我小镇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://line-anime.net/",
+    "begin": "2013-04-03T09:30:00.000Z",
+    "end": "2014-03-26T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "mJaCAGjOPnzfXcU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "69253"
+      }
+    ]
+  },
+  {
+    "title": "ダンボール戦機WARS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "纸箱战机Wars"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/lbxwars/",
+    "begin": "2013-04-03T10:27:00.000Z",
+    "end": "2013-12-25T10:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "VyYSkPhezgxv7VU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66405"
+      }
+    ]
+  },
+  {
+    "title": "ガッ活！第2シリーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "学活！ 第二季"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/gakkatsu/",
+    "begin": "2013-04-03T14:25:00.000Z",
+    "end": "2013-09-25T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "AP3XVb0jk9E0sho",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "61222"
+      },
+      {
+        "site": "bilibili",
+        "id": "586",
+        "begin": "2013-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "秘密結社 鷹の爪 MAX",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://xn--u9j429qiq1a.jp/",
+    "begin": "2013-04-05T09:20:00.000Z",
+    "end": "2014-02-21T09:55:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "232975"
+      },
+      {
+        "site": "nicovideo",
+        "id": "takanotsume_max",
+        "begin": "2013-04-07T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "デュエル・マスターズ ビクトリーＶ3",
+    "titleTranslate": {
+      "zh-Hans": [
+        "决斗大师 Victory V3"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/duelmastersv/",
+    "begin": "2013-04-05T23:30:00.000Z",
+    "end": "2014-03-29T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "69596"
+      },
+      {
+        "site": "bilibili",
+        "id": "132192",
+        "begin": "2013-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "鉄人28号ガオ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "铁人28号GAO！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/b_hp/gao/",
+    "begin": "2013-04-05T19:52:00.000Z",
+    "end": "2016-03-25T20:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "62282"
+      }
+    ]
+  },
+  {
+    "title": "宮河家の空腹",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宫河家的空腹"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://miyakawahungry.com/",
+    "begin": "2013-04-29T12:00:00.000Z",
+    "end": "2013-07-01T12:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "hYhk4kqwIF7BP6c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "60491"
+      },
+      {
+        "site": "bilibili",
+        "id": "678",
+        "begin": "2013-04-28T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "41ae34cc057f11e38b3f",
+        "begin": "2013-09-30T08:57:11.000Z"
+      }
+    ]
+  },
+  {
+    "title": "はいたい七葉(第2期)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "你好七叶 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hai-tai.jp/",
+    "begin": "2013-04-06T09:25:00.000Z",
+    "end": "2013-06-29T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "66693"
+      },
+      {
+        "site": "bilibili",
+        "id": "1680",
+        "begin": "2013-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Steins;Gate 負荷領域のデジャヴ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "命运石之门 负荷领域的既视感"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://steinsgate-movie.jp/",
+    "begin": "2013-04-20T16:00:00.000Z",
+    "end": "2013-04-20T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BwbycNgibruxPzTU",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "y/yvhxapls0zblr3s",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10009242",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "291731",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "23119"
+      },
+      {
+        "site": "bilibili",
+        "id": "3467",
+        "begin": "2013-04-19T16:00:01.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "steinsgate-movie",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "56f7d8b4b60311e1b356",
+        "begin": "2016-03-03T08:41:09.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ポケットモンスター ベストウイッシュ シーズン2 デコロラアドベンチャー!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦 超级愿望 第2季 德科罗拉大冒险"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pokemon_bw/index2.html",
+    "begin": "2013-04-25T16:00:00.000Z",
+    "end": "2013-09-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icFdBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "h/hibacbz0801byjb",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "68269"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士ガンダムSEED DESTINY HDリマスター",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达SEED DESTINY HD重制版",
+        "机动战士敢达SEED DESTINY 重制版"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://hai-tai.jp/",
+    "begin": "2013-04-07T16:00:00.000Z",
+    "end": "2014-03-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjyur41",
+        "begin": "2017-03-02T09:22:01.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "54277"
+      },
+      {
+        "site": "bilibili",
+        "id": "499",
+        "begin": "2013-04-06T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん バカうまっ！B級グルメサバイバル!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 超级美味B级美食大逃亡"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://shinchan-movie.com/",
+    "begin": "2013-04-20T16:00:00.000Z",
+    "end": "2013-04-20T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwlloo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "81034"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "15072",
+        "begin": "2013-04-19T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "609de52cf3fe11e2b8b7",
+        "begin": "2013-11-10T01:30:37.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 絶海の探偵",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 绝海的侦探"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2013-04-20T16:00:00.000Z",
+    "end": "2013-04-20T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "54614"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "c69f7426427911e29013",
+        "begin": "2013-10-12T04:57:31.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228959",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 21期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 21期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2013-04-01T08:35:00.000Z",
+    "end": "2013-07-12T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161699"
+      }
+    ]
+  },
+  {
+    "title": "宇宙戦艦ヤマト2199",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰大和号2199"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.yamato2199.net/",
+    "begin": "2013-04-07T16:00:00.000Z",
+    "end": "2013-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Rjchnwdt3RtibicGQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "54552"
+      }
+    ]
+  },
+  {
+    "title": "へ〜せいポリスメン!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "平成警察"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://youngjump.jp/info/policemen/",
+    "begin": "2013-04-11T16:00:00.000Z",
+    "end": "2013-05-15T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "UNC8OqIIeLYZlic8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "70167"
+      },
+      {
+        "site": "nicovideo",
+        "id": "policemen",
+        "begin": "2013-04-18T04:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "チョコタン!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "巧克力小狗"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://ribon.shueisha.co.jp/ohasta/index.html",
+    "begin": "2013-04-30T16:00:00.000Z",
+    "end": "2013-04-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CgnjYckvn91AviaY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "60010"
+      },
+      {
+        "site": "bilibili",
+        "id": "4432",
+        "begin": "2013-04-29T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "恋旅～True Tours Nanto～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恋旅～True Tours Nanto～"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.koitabi-nanto.jp/",
+    "begin": "2013-04-28T16:00:00.000Z",
+    "end": "2013-04-28T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "FOnDQakPf70gngY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66186"
+      },
+      {
+        "site": "bilibili",
+        "id": "4440",
+        "begin": "2013-04-27T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "宇宙戦艦ヤマト2199 第五章「望郷の銀河間空間」",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰大和号2199 第五章「望乡的银河间空间」"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.yamato2199.net/",
+    "begin": "2013-04-13T16:00:00.000Z",
+    "end": "2013-04-13T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "DPHbWcEnl9U4th4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "66941"
+      }
+    ]
+  },
+  {
+    "title": "AURA 〜魔竜院光牙最後の闘い〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "AURA ～魔龙院光牙最后的战斗～"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2013-04-13T16:00:00.000Z",
+    "end": "2013-04-13T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "43310"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch2583350",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "28224170",
+        "begin": "2013-04-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぷちっとがるがんてぃあ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "迷你加尔刚蒂亚"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://gargantia.jp/#petit",
+    "begin": "2013-04-10T16:00:00.000Z",
+    "end": "2013-07-03T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "73920"
+      },
+      {
+        "site": "bilibili",
+        "id": "4427",
+        "begin": "2013-04-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "爆TECH!爆丸 ガチ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "爆TECH!爆丸 激撞"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "https://www.tv-tokyo.co.jp/anime/bakugan-bp/",
+    "begin": "2013-04-06T16:00:00.000Z",
+    "end": "2013-12-28T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "309868"
+      },
+      {
+        "site": "bilibili",
+        "id": "132172",
+        "begin": "2013-04-05T16:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,732 @@
+[
+  {
+    "title": "BACCANO!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "永生之酒"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.baccano.jp/",
+    "begin": "2007-07-26T15:30:00.000Z",
+    "end": "2007-11-01T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "tuLeXMQqmtg7uSE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "965"
+      },
+      {
+        "site": "nicovideo",
+        "id": "baccano-anime",
+        "begin": "2017-07-29T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1359",
+        "begin": "2007-07-25T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc00729e962411de83b1",
+        "begin": "2011-11-03T15:47:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ななついろ★ドロップス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "七色星露"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneonuniversal.jp/rondorobe/anime/nanatsuiro/",
+    "begin": "2007-07-02T16:40:00.000Z",
+    "end": "2007-09-17T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2329"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nanatsuiro-drops",
+        "begin": "2018-08-10T03:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "4763",
+        "begin": "2007-07-01T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぽてまよ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蛋黄酱萝莉"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.potemayo.com/",
+    "begin": "2007-07-06T16:30:00.000Z",
+    "end": "2007-09-21T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1GNe3ESqGlia7OaE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/zcvyxzaq7fksa3y",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6849"
+      },
+      {
+        "site": "bilibili",
+        "id": "3233",
+        "begin": "2007-07-05T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ゼロの使い魔 ～双月の騎士～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "零之使魔 双月骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.zero-tsukaima.com/zero2/",
+    "begin": "2007-07-08T15:30:00.000Z",
+    "end": "2007-09-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1103"
+      },
+      {
+        "site": "nicovideo",
+        "id": "zero-tsukaima2",
+        "begin": "2011-12-14T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "819",
+        "begin": "2007-07-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ZOMBIE-LOAN",
+    "titleTranslate": {
+      "zh-Hans": [
+        "僵尸借贷"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nasinc.co.jp/jp/zombieloan/index.html",
+    "begin": "2007-07-03T17:40:00.000Z",
+    "end": "2009-03-26T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1hvlY8sxod9CwCg",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "9/90p2tgfoljepnsy",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7218"
+      },
+      {
+        "site": "bilibili",
+        "id": "1371",
+        "begin": "2007-07-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ケンコー全裸系水泳部ウミショー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "健康全裸游泳社 海商"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/umisho/index2.htm",
+    "begin": "2007-07-03T17:00:00.000Z",
+    "end": "2007-09-25T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0h3nZc0zoibFEwiao",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "594"
+      }
+    ]
+  },
+  {
+    "title": "ひぐらしのなく頃に解",
+    "titleTranslate": {
+      "zh-Hans": [
+        "寒蝉鸣泣之时 解"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.oyashirosama.com/web/kai/index.htm",
+    "begin": "2007-07-05T18:50:00.000Z",
+    "end": "2007-12-17T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "o/oc9be21zz9l9zun",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "288"
+      },
+      {
+        "site": "nicovideo",
+        "id": "oyashirosama02",
+        "begin": "2017-06-14T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "もえたん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "萌单"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ink-chan.com/",
+    "begin": "2007-07-08T16:30:00.000Z",
+    "end": "2007-09-23T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "naeiaIIjuXpzicfeU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3091"
+      },
+      {
+        "site": "bilibili",
+        "id": "1356",
+        "begin": "2007-07-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "モノノ怪",
+    "titleTranslate": {
+      "zh-Hans": [
+        "物怪",
+        "怪化猫"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mononoke-anime.com/",
+    "begin": "2007-07-12T18:25:00.000Z",
+    "end": "2007-09-27T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sIRicicWXLO3ncWsI",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "r/rdszf4nxhhkdfyp",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "38538",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2496"
+      },
+      {
+        "site": "bilibili",
+        "id": "2654",
+        "begin": "2007-07-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "CODE-E",
+    "titleTranslate": {
+      "zh-Hans": [
+        "电波少女",
+        "代号E"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mv.avex.jp/code-e/",
+    "begin": "2007-07-03T17:43:00.000Z",
+    "end": "2007-09-18T18:13:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "b8K9O6MJebcamAA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "41705"
+      },
+      {
+        "site": "bilibili",
+        "id": "1236",
+        "begin": "2007-07-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ムシウタ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "虫之歌"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/mushi-uta/",
+    "begin": "2007-07-05T15:00:00.000Z",
+    "end": "2007-10-04T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "13FMyjKYCEapJ48",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1461"
+      },
+      {
+        "site": "bilibili",
+        "id": "3346",
+        "begin": "2007-07-04T16:00:01.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "11016",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ドージンワーク",
+    "titleTranslate": {
+      "zh-Hans": [
+        "同人WORK"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.doujin.tv/",
+    "begin": "2007-07-03T16:30:00.000Z",
+    "end": "2007-09-18T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ERicqaNA2puRHxS0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3090"
+      },
+      {
+        "site": "bilibili",
+        "id": "3353",
+        "begin": "2007-07-02T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "BUZZER BEATER(2)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "零秒出手 第二季",
+        "零秒出手 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/buzzer/",
+    "begin": "2007-07-03T16:16:00.000Z",
+    "end": "2007-09-25T18:26:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0Qnzcdkicrib1QzjY",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgi9s5d",
+        "begin": "2014-09-12T06:34:38.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "35991"
+      },
+      {
+        "site": "bilibili",
+        "id": "3966",
+        "begin": "2007-07-02T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "School Days",
+    "titleTranslate": {
+      "zh-Hans": [
+        "日在校园"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.maql.co.jp/special/schooldays-anime/index.html",
+    "begin": "2007-07-03T17:15:00.000Z",
+    "end": "2007-09-18T17:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "827"
+      },
+      {
+        "site": "nicovideo",
+        "id": "schooldays",
+        "begin": "2009-09-21T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "東京魔人學園剣風帖 龖 第弐幕",
+    "titleTranslate": {
+      "zh-Hans": [
+        "东京魔人学园剑风帖 龙龙 第二幕"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.majin2.com/",
+    "begin": "2007-07-27T14:00:00.000Z",
+    "end": "2007-10-12T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ZaaiaIIjuXpzicfeU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4101"
+      },
+      {
+        "site": "letv",
+        "id": "46654",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "はぴはぴクローバー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "快乐小兔幸运草"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.hapiclo.tv/",
+    "begin": "2007-07-06T02:30:00.000Z",
+    "end": "2007-09-28T03:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "104803"
+      }
+    ]
+  },
+  {
+    "title": "スカイガールズ(TVシリーズ)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天翔少女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.konami.jp/visual/skygirls/",
+    "begin": "2007-07-05T16:28:00.000Z",
+    "end": "2007-12-27T17:28:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2170"
+      },
+      {
+        "site": "bilibili",
+        "id": "1366",
+        "begin": "2007-07-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "さよなら絶望先生",
+    "titleTranslate": {
+      "zh-Hans": [
+        "再见绝望先生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/zetsubou/",
+    "begin": "2007-07-07T15:30:00.000Z",
+    "end": "2007-09-22T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "yALibfORKuvhb2UE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "8/89xh503efusv1xq",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "299"
+      },
+      {
+        "site": "nicovideo",
+        "id": "zetsubou1",
+        "begin": "2016-10-31T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1792",
+        "begin": "2007-07-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "シグルイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剑豪生死斗"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/shigurui/",
+    "begin": "2007-07-19T14:30:00.000Z",
+    "end": "2007-10-11T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4010"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 霧のエリューシヴ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 雾之谜"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "2007-07-27T16:00:00.000Z",
+    "end": "2007-07-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84997"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3944",
+        "begin": "2007-07-26T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ピアノの森",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钢琴之森",
+        "琴之森"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.piano-movie.jp/",
+    "begin": "2007-07-21T16:00:00.000Z",
+    "end": "2007-07-21T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "10005124",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3846"
+      },
+      {
+        "site": "bilibili",
+        "id": "4769",
+        "begin": "2007-07-20T16:00:01.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80986797",
+        "begin": "2018-09-28T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ポケットモンスター ダイヤモンド&パール ディアルガVSパルキアVSダークライ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 精灵宝可梦DP：帝牙卢卡VS帕路奇犽VS达克莱伊"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2007-07-14T16:00:00.000Z",
+    "end": "2007-07-14T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "91w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "71821",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3031"
+      },
+      {
+        "site": "qq",
+        "id": "e/ejr0xfirssdm33y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5750",
+        "begin": "2007-07-13T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "河童のクゥと夏休み",
+    "titleTranslate": {
+      "zh-Hans": [
+        "河童之夏"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.kappa-coo.com/",
+    "begin": "2007-07-28T16:00:00.000Z",
+    "end": "2007-07-28T18:20:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20110816/0c6a020636e4d3dd.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "755"
+      },
+      {
+        "site": "bilibili",
+        "id": "4760",
+        "begin": "2007-07-27T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Genius Party",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天才嘉年华"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.genius-party.jp/",
+    "begin": "2007-07-07T16:00:00.000Z",
+    "end": "2007-07-07T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TPTPTbUbia8ksqhI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8181"
+      }
+    ]
+  }
+]

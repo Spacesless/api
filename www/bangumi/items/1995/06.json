@@ -1,0 +1,36 @@
+[
+  {
+    "title": "H2",
+    "titleTranslate": {
+      "zh-Hans": [
+        "H2 好逑双物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.pro-reed.com/works/tv_series/w029.html",
+    "begin": "1995-06-01T16:00:00.000Z",
+    "end": "1996-03-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IAcCgOhOvvxf3UU",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "j/jpsxhvkup9ves18",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7108"
+      },
+      {
+        "site": "bilibili",
+        "id": "2316",
+        "begin": "1995-05-31T16:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,153 @@
+[
+  {
+    "title": "ルパン三世 ルパン暗殺指令",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 鲁邦暗杀指令"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1993-07-23T16:00:00.000Z",
+    "end": "1993-07-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84984"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3935",
+        "begin": "1993-07-22T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Dr.スランプ アラレちゃん んちゃ!ペンギン村より愛をこめて",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 来自企鹅村的爱"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-07-10T16:00:00.000Z",
+    "end": "1993-07-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "82725"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボールZ 銀河ギリギリ!!ぶっちぎりの凄い奴",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠Z 银河最强战士"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-07-10T16:00:00.000Z",
+    "end": "1993-07-10T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "45394"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DBZ_gingagirigiri",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん アクション仮面VSハイグレ魔王",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新之动感超人大战泳装魔王"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "1993-07-24T16:00:00.000Z",
+    "end": "1993-07-24T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/839f4bf2c2cbe419.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8966"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "18452",
+        "begin": "1993-07-23T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f070c1fa61ad11e0bea1",
+        "begin": "2012-11-27T02:56:39.000Z"
+      }
+    ]
+  },
+  {
+    "title": "3丁目のタマ うちのタマ知りませんか?",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猫狗宠物街"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sonymusic.co.jp/MoreInfo/Chekila/Tama/index.html",
+    "begin": "1993-07-03T16:00:00.000Z",
+    "end": "1993-08-28T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8247"
+      }
+    ]
+  }
+]

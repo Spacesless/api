@@ -1,0 +1,301 @@
+[
+  {
+    "title": "RS計画 -Rebirth Storage-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "RS计划 -Rebirth Storage-"
+      ],
+      "en": [
+        "RS Project -Rebirth Storage-"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://rsproject.jp/",
+    "begin": "2016-06-25T17:20:00.000Z",
+    "end": "2016-06-25T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "iarehH4ftXZvibfOQ",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "10024292",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "174147"
+      },
+      {
+        "site": "youku",
+        "id": "e2b1ccd83f3511e69b6d",
+        "begin": "2016-07-01T09:52:10.000Z"
+      }
+    ]
+  },
+  {
+    "title": "不機嫌なモノノケ庵",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忧郁的物怪庵"
+      ],
+      "en": [
+        "The Morose Mononokean",
+        "Fukigen na Mononokean"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://mononokean.tv/",
+    "begin": "2016-06-28T14:30:00.000Z",
+    "end": "2016-09-20T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "oZF7ibWHHN3XYVr4",
+        "begin": "2016-06-30T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "168905"
+      },
+      {
+        "site": "nicovideo",
+        "id": "mononokean",
+        "begin": "2016-07-09T15:30:00.000Z"
+      },
+      {
+        "site": "mgtv",
+        "id": "303751",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "8061448",
+        "begin": "2019-01-04T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ほのぼのログ",
+    "titleTranslate": {
+      "en": [
+        "honobono log"
+      ],
+      "zh-Hans": [
+        "暖心日记",
+        "温暖的印记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www6.nhk.or.jp/anime/program/detail.html?i=honobono",
+    "begin": "2016-06-06T15:08:00.000Z",
+    "end": "2016-06-17T15:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "h7KeHITqWpj7eeE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "180670"
+      },
+      {
+        "site": "bilibili",
+        "id": "5125",
+        "begin": "2016-06-05T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "灵契",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "zh-Hans",
+    "officialSite": "http://ac.qq.com/event/95e64748a08b6c2c0c56f15fbbb4f91b.html",
+    "begin": "2016-06-21T04:00:00.000Z",
+    "end": "2016-11-08T04:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "v/v18x0bara3c1msb",
+        "begin": "2016-06-21T04:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "175460"
+      }
+    ]
+  },
+  {
+    "title": "麻神",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "zh-Hans",
+    "officialSite": "http://ac.qq.com/event/mashen/",
+    "begin": "2016-06-29T02:00:00.000Z",
+    "end": "2016-10-19T02:15:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "g/g1l5z0cndggpfja",
+        "begin": "2016-06-29T02:00:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "185176"
+      }
+    ]
+  },
+  {
+    "title": "田中くんはいつもけだるげ 特典アニメ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "田中君总是如此慵懒 特典"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2016-06-24T16:00:00.000Z",
+    "end": "2016-12-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "xm5KyDCWBkSnJY0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "199270"
+      },
+      {
+        "site": "bilibili",
+        "id": "6036",
+        "begin": "2016-06-23T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Re:プチから始める異世界生活",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Re：从迷你开始的异世界生活"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://re-zero-anime.jp/",
+    "begin": "2016-06-24T16:00:00.000Z",
+    "end": "2016-09-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "IBLibfORKuvhb2UE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "185837"
+      }
+    ]
+  },
+  {
+    "title": "この素晴らしい世界に祝福を！ OAD",
+    "titleTranslate": {
+      "zh-Hans": [
+        "为美好的世界献上祝福！ OAD"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2016-06-24T16:00:00.000Z",
+    "end": "2017-07-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "eciakIorwYJ4Bfibc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "162771"
+      }
+    ]
+  },
+  {
+    "title": "いっぽう日本昔ばなし",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2016-06-01T16:00:00.000Z",
+    "end": "2016-06-01T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211023"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ippou-mukashibanashi",
+        "begin": "2017-07-16T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "血界戦線 王様のレストランの王様",
+    "titleTranslate": {
+      "zh-Hans": [
+        "血界战线 王者餐厅的王者"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2016-06-03T16:00:00.000Z",
+    "end": "2016-06-03T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "166348"
+      },
+      {
+        "site": "pptv",
+        "id": "HC0Hhe1TwwFk4ko",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ちばペダル",
+    "titleTranslate": {
+      "zh-Hans": [
+        "千叶脚踏板"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://chibapedal.jp/",
+    "begin": "2016-06-30T16:00:00.000Z",
+    "end": "2016-09-09T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "189638"
+      },
+      {
+        "site": "bilibili",
+        "id": "5405",
+        "begin": "2016-06-30T16:00:00.000Z"
+      }
+    ]
+  }
+]

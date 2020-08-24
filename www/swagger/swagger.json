@@ -144,7 +144,7 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "垃圾名称关键字",
+            "description": "垃圾名称",
             "type": "string"
           }
         ],
@@ -172,7 +172,8 @@
           {
             "name": "keyword",
             "in": "query",
-            "description": "关键词",
+            "description": "省份名称、简称、城市名",
+            "required": true,
             "type": "string"
           }
         ],
@@ -201,6 +202,7 @@
             "name": "keyword",
             "in": "query",
             "description": "省份、城市",
+            "required": true,
             "type": "string"
           }
         ],
@@ -345,6 +347,46 @@
         "description": "",
         "produces": [
           "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/bangumi": {
+      "get": {
+        "tags": [
+          "bangumi"
+        ],
+        "summary": "动画番组信息查询",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "description": "年份",
+            "type": "number"
+          },
+          {
+            "name": "month",
+            "in": "query",
+            "description": "月份",
+            "type": "number"
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "description": "标题",
+            "type": "string"
+          }
         ],
         "responses": {
           "200": {

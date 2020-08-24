@@ -1,0 +1,72 @@
+[
+  {
+    "title": "最終兵器彼女",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最终兵器彼女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.saikano.net/",
+    "begin": "2002-06-02T15:30:00.000Z",
+    "end": "2002-09-24T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3Qic5d99FtfNW1Dw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "5/5xpkhs99erx3y89",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1931"
+      },
+      {
+        "site": "bilibili",
+        "id": "2029",
+        "begin": "2002-06-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": ".hack//Liminality",
+    "titleTranslate": {
+      "zh-Hans": [
+        ".hack//境界线"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.hack.channel.or.jp/",
+    "begin": "2002-06-20T16:00:00.000Z",
+    "end": "2003-04-12T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "11875"
+      }
+    ]
+  },
+  {
+    "title": ".hack//Integration",
+    "titleTranslate": {},
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-06-20T16:00:00.000Z",
+    "end": "2002-06-20T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "68972"
+      }
+    ]
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "title": "銀河鉄道999 ガラスのクレア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河铁道999：玻璃克莱尔"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-03-15T16:00:00.000Z",
+    "end": "1980-03-15T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "127777"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太の恐竜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄的恐龙",
+        "哆啦A梦 剧场版 大雄的恐龙"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-03-15T16:00:00.000Z",
+    "end": "1980-03-15T17:35:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgi66al",
+        "begin": "2014-03-03T02:28:35.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "80772",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "425"
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2549",
+        "begin": "1980-03-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "宇宙大帝ゴッドシグマ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙大帝西格玛神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-03-19T10:00:00.000Z",
+    "end": "1981-02-25T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37285"
+      }
+    ]
+  },
+  {
+    "title": "あしたのジョー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "明日之丈 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-03-08T16:00:00.000Z",
+    "end": "1980-03-08T18:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67754"
+      }
+    ]
+  }
+]

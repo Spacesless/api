@@ -1,0 +1,327 @@
+[
+  {
+    "title": "超神游戏",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "zh-Hans",
+    "officialSite": "",
+    "begin": "2013-11-15T02:30:00.000Z",
+    "end": "2015-02-27T04:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Wb6aGIDmVpT3dd0",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "h/hpxk7hpq715lw3o",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgj8yuh",
+        "begin": "2014-04-09T22:50:16.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "94506",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2013/csyx",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "100159",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "88052"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 princess of the breeze～隠された空中都市～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 微风公主 ~ 被隐藏的空中都市"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/kinro/lineup/20131129/",
+    "begin": "2013-11-15T16:00:00.000Z",
+    "end": "2013-11-15T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "n4tl40uxIVicCQKg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "85005"
+      },
+      {
+        "site": "youku",
+        "id": "8b569fec527d11e3b8b7",
+        "begin": "2013-11-22T03:30:17.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3956",
+        "begin": "2013-11-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "陽なたのアオシグレ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阳光中的青时雨"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shashinkan-aoshigure.com/aoshigure/",
+    "begin": "2013-11-09T16:00:00.000Z",
+    "end": "2013-11-09T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "10008182",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "84521"
+      },
+      {
+        "site": "bilibili",
+        "id": "2820",
+        "begin": "2013-11-08T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ひだまりスケッチ 沙英・ヒロ 卒業編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "向阳素描 沙英・寻 毕业篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/hidamari/",
+    "begin": "2013-11-27T16:00:00.000Z",
+    "end": "2013-11-27T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "jIBs6lK4KGbJR68",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "82233"
+      },
+      {
+        "site": "bilibili",
+        "id": "3823",
+        "begin": "2013-11-26T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7jfkl",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "0f09c074580711e3a705",
+        "begin": "2013-11-29T02:03:17.000Z"
+      }
+    ]
+  },
+  {
+    "title": "にゃんころり ～けんぷろ学園～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "喵翻滚 ~贤Pro学园~"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://ch.nicovideo.jp/nya/",
+    "begin": "2013-11-05T16:00:00.000Z",
+    "end": "2018-05-26T13:24:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "184662"
+      },
+      {
+        "site": "nicovideo",
+        "id": "nya",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5442",
+        "begin": "2013-11-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "PERSONA3 THE MOVIE #1 Spring of Birth",
+    "titleTranslate": {
+      "zh-Hans": [
+        "女神异闻录3 剧场版 第一章 春生"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.p3m.jp/",
+    "begin": "2013-11-23T16:00:00.000Z",
+    "end": "2013-11-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "43404"
+      },
+      {
+        "site": "nicovideo",
+        "id": "p3m",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2845",
+        "begin": "2013-11-22T16:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f2c9248af33511e2a705",
+        "begin": "2014-05-06T05:51:06.000Z"
+      }
+    ]
+  },
+  {
+    "title": "サカサマのパテマ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "颠倒的帕特玛"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://patema.jp/",
+    "begin": "2013-11-09T16:00:00.000Z",
+    "end": "2013-11-09T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "29414"
+      },
+      {
+        "site": "nicovideo",
+        "id": "patema",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3668",
+        "begin": "2013-11-08T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "ae6dd6cc030311e3b8b7",
+        "begin": "2018-12-28T01:53:32.000Z"
+      }
+    ]
+  },
+  {
+    "title": "BAYONETTA BLOODYFATE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猎天使魔女 血色命运"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.bayonetta-movie.com/",
+    "begin": "2013-11-23T16:00:00.000Z",
+    "end": "2013-11-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "83929"
+      },
+      {
+        "site": "pptv",
+        "id": "ZfXfXcUrm9k8uiaI",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "efe0f504235a11e38b3f",
+        "begin": "2014-02-17T03:37:15.000Z"
+      }
+    ]
+  },
+  {
+    "title": "攻殻機動隊ARISE border:2 Ghost Whispers",
+    "titleTranslate": {
+      "zh-Hans": [
+        "攻壳机动队ARISE border:2 Ghost Whispers"
+      ],
+      "en": [
+        "Ghost in the Shell: Arise – Border 2: Ghost Whispers"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://kokaku-a.jp/arise/",
+    "begin": "2013-11-29T16:00:00.000Z",
+    "end": "2013-11-29T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "77014"
+      },
+      {
+        "site": "netflix",
+        "id": "80002074",
+        "begin": "2017-01-31T08:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "5180",
+        "begin": "2013-06-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "きょうかいのかなた アイドル裁判! ～迷いながらも君を裁く民～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "境界的彼方 偶像裁判 ～即使迷茫也要制裁之民～"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://anime-kyokai.com/idoltrial/",
+    "begin": "2013-11-18T16:00:00.000Z",
+    "end": "2014-07-02T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "88354"
+      }
+    ]
+  }
+]

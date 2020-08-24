@@ -1,0 +1,429 @@
+[
+  {
+    "title": "なるたる",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星星公主",
+        "梦想成真"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kids-station.com/minisite/narutaru/",
+    "begin": "2003-07-07T15:00:00.000Z",
+    "end": "2003-09-29T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1xrmZMwyouBDwSk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "15177"
+      },
+      {
+        "site": "bilibili",
+        "id": "3050",
+        "begin": "2003-07-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "一騎当千",
+    "titleTranslate": {
+      "zh-Hans": [
+        "一骑当千"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mediafactory.co.jp/anime/ikki/",
+    "begin": "2003-07-30T02:30:00.000Z",
+    "end": "2003-10-22T03:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3909"
+      }
+    ]
+  },
+  {
+    "title": "グリーングリーン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "钟之音学园"
+      ],
+      "en": [
+        "Green Green"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ponycanyon.co.jp/greengreen/",
+    "begin": "2003-07-14T15:05:00.000Z",
+    "end": "2003-09-29T15:35:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "38071"
+      },
+      {
+        "site": "bilibili",
+        "id": "2006",
+        "begin": "2003-07-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "D.C.～ダ・カーポ～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "初音岛"
+      ],
+      "en": [
+        "D.C. ~Da Capo~"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hatsunejima.com/dc/",
+    "begin": "2003-07-05T15:45:00.000Z",
+    "end": "2003-12-27T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "hLOODHTaSojradE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "0/0e5vbeoe011lsdk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2063"
+      },
+      {
+        "site": "nicovideo",
+        "id": "dc",
+        "begin": "2012-07-11T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "656",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ダイバージェンス・イヴ",
+    "titleTranslate": {
+      "en": [
+        "Divergence EVE"
+      ],
+      "zh-Hans": [
+        "死体兵"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.d-eve.net/story/1st_story/",
+    "begin": "2003-07-02T01:00:00.000Z",
+    "end": "2003-09-24T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "fMfCQKgOfrwfnQU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4015"
+      },
+      {
+        "site": "bilibili",
+        "id": "5146",
+        "begin": "2004-01-06T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "高橋留美子劇場",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高桥留美子剧场"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tms-e.com/library/on_air_back/rumiko/",
+    "begin": "2003-07-05T15:55:00.000Z",
+    "end": "2003-09-27T16:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "38216"
+      },
+      {
+        "site": "bilibili",
+        "id": "1970",
+        "begin": "2003-07-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "HAPPY☆LESSON ADVANCE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "欢乐课程 ADVANCE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2003-07-06T16:00:00.000Z",
+    "end": "2003-09-06T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "jsG7OaEHd7UYlv4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "53951"
+      }
+    ]
+  },
+  {
+    "title": "住めば都のコスモス荘 すっとこ大戦ドッコイダー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "急救超人兵团"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mediaworks.co.jp/d_original/cosmos/",
+    "begin": "2003-07-12T16:15:00.000Z",
+    "end": "2003-09-27T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10415"
+      },
+      {
+        "site": "bilibili",
+        "id": "3342",
+        "begin": "2003-07-05T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おねがい☆ツインズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "拜托了双子星"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.please-please.jp/one2/",
+    "begin": "2003-07-15T09:30:00.000Z",
+    "end": "2008-08-23T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "yW5Z1ziblFVO2NJw",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9aqgd",
+        "begin": "2017-02-28T16:01:05.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "1852"
+      },
+      {
+        "site": "bilibili",
+        "id": "1971",
+        "begin": "2003-07-14T16:00:00.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "v/vu7cmzuk81170ax",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ぽぽたん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蒲公英"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.bandaivisual.co.jp/popotan/",
+    "begin": "2003-07-17T15:30:00.000Z",
+    "end": "2003-10-02T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10854"
+      }
+    ]
+  },
+  {
+    "title": "茄子 アンダルシアの夏",
+    "titleTranslate": {
+      "zh-Hans": [
+        "茄子 安达鲁西亚之夏",
+        "茄子 安达卢西亚之夏"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/nasu/main.html",
+    "begin": "2003-07-26T16:00:00.000Z",
+    "end": "2003-07-26T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "4kompAxy4iaCDAWk",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "p/phdveh4l16eaonj",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "508"
+      },
+      {
+        "site": "bilibili",
+        "id": "2622",
+        "begin": "2003-07-25T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "もも子、かえるの歌がきこえるよ。",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的妹妹小桃子"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://c-you.jp/momoko/",
+    "begin": "2003-07-23T16:00:00.000Z",
+    "end": "2003-07-23T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37531"
+      },
+      {
+        "site": "bilibili",
+        "id": "5127",
+        "begin": "2003-07-22T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新・北斗の拳",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新北斗神拳",
+        "新北斗神拳OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://c-you.jp/momoko/",
+    "begin": "2003-07-24T16:00:00.000Z",
+    "end": "2004-05-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgincbp",
+        "begin": "2014-09-12T06:27:35.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "67437"
+      }
+    ]
+  },
+  {
+    "title": "劇場版ポケットモンスター アドバンスジェネレーション 七夜の願い星 ジラーチ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 精灵宝可梦超世代：七夜的许愿星 基拉祈"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2003-07-19T16:00:00.000Z",
+    "end": "2003-07-19T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "91w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3027"
+      },
+      {
+        "site": "qq",
+        "id": "e/ejr0xfirssdm33y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5754",
+        "begin": "2003-07-18T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おどるポケモンひみつ基地",
+    "titleTranslate": {
+      "zh-Hans": [
+        "精灵宝可梦：热舞小精灵秘密基地"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.pokemon-movie.jp/",
+    "begin": "2003-07-19T17:10:00.000Z",
+    "end": "2003-07-19T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb8sh9",
+        "begin": "2015-09-17T05:39:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "27781"
+      }
+    ]
+  }
+]

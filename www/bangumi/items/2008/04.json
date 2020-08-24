@@ -1,0 +1,1361 @@
+[
+  {
+    "title": "ドルアーガの塔 ～the Aegis of URUK～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "迷宫塔 ～乌鲁克之盾～"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://druaga-anime.com/",
+    "begin": "2008-04-04T16:15:00.000Z",
+    "end": "2008-06-20T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "YMOibPKQKergbmQE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "303"
+      },
+      {
+        "site": "bilibili",
+        "id": "1100",
+        "begin": "2008-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "アリソンとリリア",
+    "titleTranslate": {
+      "en": [
+        "Allison & Lillia"
+      ],
+      "zh-Hans": [
+        "艾莉森与莉莉娅"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://allison-web.net/",
+    "begin": "2008-04-03T14:32:00.000Z",
+    "end": "2008-10-02T15:12:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ia8WicPaULe7kcmgI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4252"
+      },
+      {
+        "site": "nicovideo",
+        "id": "allison",
+        "begin": "2020-06-24T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "隠の王－NABARI－",
+    "titleTranslate": {
+      "zh-Hans": [
+        "隐之王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nabari.tv/",
+    "begin": "2008-04-06T16:30:00.000Z",
+    "end": "2008-09-28T17:12:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "z2Fc2kKoGFa5N58",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "15660",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2286"
+      },
+      {
+        "site": "bilibili",
+        "id": "3220",
+        "begin": "2008-04-05T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "仮面のメイドガイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "假面女仆卫士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.maidguy.com/",
+    "begin": "2008-04-05T16:35:00.000Z",
+    "end": "2008-06-21T17:05:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "jr6KCHDWRoTnZc0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2471"
+      }
+    ]
+  },
+  {
+    "title": "SOUL EATER - ソウルイーター -",
+    "titleTranslate": {
+      "zh-Hans": [
+        "噬魂师"
+      ],
+      "en": [
+        "Soul Eater"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.souleater.tv/",
+    "begin": "2008-04-07T09:00:00.000Z",
+    "end": "2009-03-30T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "866"
+      },
+      {
+        "site": "nicovideo",
+        "id": "souleater",
+        "begin": "2012-04-18T06:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70205024",
+        "begin": "2017-12-01T08:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "cc006cae962411de83b1",
+        "begin": "2012-07-26T07:59:04.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ゴルゴ13",
+    "titleTranslate": {
+      "en": [
+        "Golgo 13"
+      ],
+      "zh-Hans": [
+        "骷髅13"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/golgo/",
+    "begin": "2008-04-11T16:23:00.000Z",
+    "end": "2009-03-27T16:53:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "610opg505CKFA2s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1780"
+      },
+      {
+        "site": "bilibili",
+        "id": "1251",
+        "begin": "2008-04-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "遊戯王5D's",
+    "titleTranslate": {
+      "zh-Hans": [
+        "游戏王5D's"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/yugioh/",
+    "begin": "2008-04-02T09:00:00.000Z",
+    "end": "2015-01-30T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ltexL5f9basOjPQ",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "5895",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1609"
+      },
+      {
+        "site": "nicovideo",
+        "id": "yugioh-5ds",
+        "begin": "2018-09-30T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "コードギアス 反逆のルルーシュR2",
+    "titleTranslate": {
+      "en": [
+        "Code Geass: Lelouch of the Rebellion R2"
+      ],
+      "zh-Hans": [
+        "Code Geass 反叛的鲁路修R2",
+        "CODE GEASS 反叛的鲁路修 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geass.jp/",
+    "begin": "2008-04-06T08:00:00.000Z",
+    "end": "2008-09-28T08:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9mhxp",
+        "begin": "2016-08-31T16:03:06.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "36712",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8"
+      },
+      {
+        "site": "netflix",
+        "id": "80065146",
+        "begin": "2017-12-13T15:00:00.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "geass-r2-anime",
+        "begin": "2020-03-06T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "図書館戦争",
+    "titleTranslate": {
+      "en": [
+        "LIBRARY WAR"
+      ],
+      "zh-Hans": [
+        "图书馆战争"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toshokan-sensou.com/",
+    "begin": "2008-04-10T16:00:00.000Z",
+    "end": "2008-06-26T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "mrSPDXXbS4nsatI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "294"
+      },
+      {
+        "site": "bilibili",
+        "id": "1196",
+        "begin": "2008-04-10T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "狂乱家族日記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "狂乱家族日记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kyouran.jp/",
+    "begin": "2008-04-12T16:00:00.000Z",
+    "end": "2008-10-04T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1772"
+      }
+    ]
+  },
+  {
+    "title": "紅",
+    "titleTranslate": {
+      "zh-Hans": [
+        "红 Kurenai"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.samidareso.com/",
+    "begin": "2008-04-03T17:00:00.000Z",
+    "end": "2008-06-19T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "gMu1M5sBca8SkPg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "494"
+      }
+    ]
+  },
+  {
+    "title": "xxxHOLiC◆継",
+    "titleTranslate": {
+      "zh-Hans": [
+        "×××HOLiC◆继"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/holic/",
+    "begin": "2008-04-03T16:59:00.000Z",
+    "end": "2008-06-26T16:59:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "s5Vw7la8LGrNS7M",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "l/lklcpcs8gbahixc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2896"
+      },
+      {
+        "site": "bilibili",
+        "id": "3389",
+        "begin": "2008-04-02T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh7ljmt",
+        "begin": "2019-01-25T01:54:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "二十面相の娘",
+    "titleTranslate": {
+      "zh-Hans": [
+        "二十面相少女",
+        "二十面相之娘"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.chico-tv.com/",
+    "begin": "2008-04-12T18:05:00.000Z",
+    "end": "2008-09-27T17:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qYWAicmbMPHrdW8M",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrifuaps",
+        "begin": "2013-08-01T06:09:47.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2168"
+      },
+      {
+        "site": "bilibili",
+        "id": "1246",
+        "begin": "2008-04-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "かのこん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的狐仙女友"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kanokon.com/",
+    "begin": "2008-04-05T01:30:00.000Z",
+    "end": "2008-06-21T02:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2810"
+      }
+    ]
+  },
+  {
+    "title": "我が家のお稲荷さま。",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我家有个狐仙大人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime.webnt.jp/oinarisama/",
+    "begin": "2008-04-06T15:00:00.000Z",
+    "end": "2008-09-14T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "8FMurBR66iaiaLCXE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "d/d4v2t8ykhk43k82",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "317"
+      },
+      {
+        "site": "bilibili",
+        "id": "1247",
+        "begin": "2008-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "To LOVEる -とらぶる-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "出包王女"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/to-love-ru/",
+    "begin": "2008-04-03T17:29:00.000Z",
+    "end": "2008-09-25T17:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "849"
+      },
+      {
+        "site": "nicovideo",
+        "id": "to-love-ru",
+        "begin": "2012-10-17T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あまつき",
+    "titleTranslate": {
+      "zh-Hans": [
+        "雨月"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://amatsuki.com/",
+    "begin": "2008-04-04T17:30:00.000Z",
+    "end": "2008-06-27T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "edWwLpb8bKoNiaicM",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "5/5u8wk4o4dfeja4z",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1638"
+      },
+      {
+        "site": "bilibili",
+        "id": "1249",
+        "begin": "2008-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "モノクローム・ファクター",
+    "titleTranslate": {
+      "en": [
+        "Monochrome Factor"
+      ],
+      "zh-Hans": [
+        "幻影少年"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.monochro.tv/",
+    "begin": "2008-04-07T17:00:00.000Z",
+    "end": "2008-09-29T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "FS4Zlic9l1RN29Fw",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "j/j034ol3oyjdwt80",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "15437",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7244"
+      },
+      {
+        "site": "bilibili",
+        "id": "1255",
+        "begin": "2008-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クリスタル ブレイズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "水晶之焰"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime.biglobe.ne.jp/crystal-blaze/",
+    "begin": "2008-04-08T16:15:00.000Z",
+    "end": "2008-06-24T16:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1WJd20OpGVe6OKA",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrifuar2",
+        "begin": "2013-08-01T06:06:53.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "1306"
+      }
+    ]
+  },
+  {
+    "title": "D.C.II S.S. ～ダ・カーポII セカンドシーズン～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "初音岛II 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hatsunejima.com/dc2ss/",
+    "begin": "2008-04-05T15:30:00.000Z",
+    "end": "2008-06-28T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2688"
+      },
+      {
+        "site": "nicovideo",
+        "id": "dc2ss",
+        "begin": "2012-08-01T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3745",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "d/dzjviuyd6fqvblm",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "マクロスFRONTIER",
+    "titleTranslate": {
+      "en": [
+        "Macross Frontier"
+      ],
+      "zh-Hans": [
+        "超时空要塞Frontier",
+        "超时空要塞F"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.macrossf.com/",
+    "begin": "2008-04-03T15:55:00.000Z",
+    "end": "2008-09-25T16:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "03VQzjacDEqtK5M",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "5/5ao8fwnu2qpl5xf",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "236"
+      },
+      {
+        "site": "bilibili",
+        "id": "1189",
+        "begin": "2008-04-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ヴァンパイア騎士",
+    "titleTranslate": {
+      "en": [
+        "Vampire Knight"
+      ],
+      "zh-Hans": [
+        "吸血鬼骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.vampire-knight.jp/",
+    "begin": "2008-04-07T16:00:00.000Z",
+    "end": "2008-06-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ic1gjoQlv3x2AicmY",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "2/2ffojof65qn9grr",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "15272",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1970"
+      },
+      {
+        "site": "nicovideo",
+        "id": "vampire-knight",
+        "begin": "2014-10-08T06:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "70309457",
+        "begin": "2016-10-15T07:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1211",
+        "begin": "2008-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "絶対可憐チルドレン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "楚楚可怜超能少女组"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.z-child.com/",
+    "begin": "2008-04-06T01:00:00.000Z",
+    "end": "2009-03-29T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "5475"
+      }
+    ]
+  },
+  {
+    "title": "ネオ アンジェリーク Abyss",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新安琪莉可 abyss"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gamecity.ne.jp/neoromance/tv/neo/index.htm",
+    "begin": "2008-04-06T17:00:00.000Z",
+    "end": "2008-06-29T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1009"
+      },
+      {
+        "site": "youku",
+        "id": "cc007712962411de83b1",
+        "begin": "2013-01-30T07:34:21.000Z"
+      }
+    ]
+  },
+  {
+    "title": "S・A ～スペシャル・エー～",
+    "titleTranslate": {
+      "en": [
+        "SPECIAL A-CLASS"
+      ],
+      "zh-Hans": [
+        "SA特优生"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://special-a.jp/",
+    "begin": "2008-04-06T16:30:00.000Z",
+    "end": "2008-09-14T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "rYeCAGjOPnzfXcU",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjzly39",
+        "begin": "2014-09-12T06:22:33.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "s/shaqr883fvr6qqw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1963"
+      },
+      {
+        "site": "bilibili",
+        "id": "1245",
+        "begin": "2008-04-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ブラスレイター",
+    "titleTranslate": {
+      "en": [
+        "Blassreiter"
+      ],
+      "zh-Hans": [
+        "苍色骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.blassreiter.jp/",
+    "begin": "2008-04-05T17:00:00.000Z",
+    "end": "2008-09-27T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ZKehH4ftXZvibfOQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "699"
+      },
+      {
+        "site": "bilibili",
+        "id": "1250",
+        "begin": "2008-04-04T16:00:00.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "blassreiter",
+        "begin": "2019-08-04T15:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "29148",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "イタズラなKiss",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恶作剧之吻"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://itakiss-anime.jp/index.htm",
+    "begin": "2008-04-04T17:29:00.000Z",
+    "end": "2008-09-26T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7lkkogpw4B6Bic2c",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrg3nb7h",
+        "begin": "2013-07-10T07:50:02.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "e/ebl0msiamhqaiso",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "40240",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2013/kiss",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "291270",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2089"
+      },
+      {
+        "site": "youku",
+        "id": "cc000642962411de83b1",
+        "begin": "2012-06-26T09:44:18.000Z"
+      }
+    ]
+  },
+  {
+    "title": "BLUE DRAGON 天界の七竜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蓝龙 天界的七龙",
+        "蓝龙 第2季 天界的七龙"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/bluedragon/",
+    "begin": "2008-04-05T00:00:00.000Z",
+    "end": "2009-03-28T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NnhEwiaqQAD6hH4c",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgiigu1",
+        "begin": "2014-07-17T05:56:28.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "8/83su0xjk0pr5h14",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "50665"
+      }
+    ]
+  },
+  {
+    "title": "ネットゴーストPIPOPA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "光速大冒险PIPOPA"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/pipopa/",
+    "begin": "2008-04-05T23:30:00.000Z",
+    "end": "2009-03-29T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "147200"
+      },
+      {
+        "site": "youku",
+        "id": "7a652cf6adef11e0a046",
+        "begin": "2013-03-22T01:51:50.000Z"
+      }
+    ]
+  },
+  {
+    "title": "純情ロマンチカ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "纯情罗曼史"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://suzukisan.info/romantica/",
+    "begin": "2008-04-10T16:30:00.000Z",
+    "end": "2008-06-26T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "l/lxlxuxe65uevo4h",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1703"
+      }
+    ]
+  },
+  {
+    "title": "うちの3姉妹",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我家三姐妹"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/3shimai/",
+    "begin": "2008-04-08T08:30:00.000Z",
+    "end": "2010-12-28T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "FysWlPxia0hBz8Vk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "20040"
+      },
+      {
+        "site": "bilibili",
+        "id": "4778",
+        "begin": "2008-04-07T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "RD 潜脳調査室",
+    "titleTranslate": {
+      "zh-Hans": [
+        "RD 潜脑调查室"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/RD/",
+    "begin": "2008-04-08T16:29:00.000Z",
+    "end": "2008-09-30T16:59:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "adGsKpL4aKYJhib8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "304"
+      },
+      {
+        "site": "bilibili",
+        "id": "1248",
+        "begin": "2008-04-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "秘密 The Revelation",
+    "titleTranslate": {
+      "en": [
+        "Top Secret The Revelation"
+      ],
+      "zh-Hans": [
+        "秘密 ～The Revelation～"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/secret/",
+    "begin": "2008-04-08T16:59:00.000Z",
+    "end": "2008-09-30T17:29:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1841"
+      },
+      {
+        "site": "bilibili",
+        "id": "3158",
+        "begin": "2008-04-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ペンギン娘はぁと",
+    "titleTranslate": {
+      "zh-Hans": [
+        "企鹅娘"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://pen-musu.jp/",
+    "begin": "2008-04-19T03:00:00.000Z",
+    "end": "2008-11-15T03:12:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "fcbBP6cNfbsenAQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2487"
+      }
+    ]
+  },
+  {
+    "title": "おねがい マイメロディ きららっ☆",
+    "titleTranslate": {
+      "zh-Hans": [
+        "奇幻魔法Melody Kirara★"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-osaka.co.jp/mymelo_kirara/",
+    "begin": "2008-04-06T00:30:00.000Z",
+    "end": "2009-03-29T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HyMenARq2hh7ibWE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "192008"
+      }
+    ]
+  },
+  {
+    "title": "今日からマ王！第3シリーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "今天开始做魔王 第三季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/mao/main.html",
+    "begin": "2008-04-03T14:02:00.000Z",
+    "end": "2009-02-19T14:27:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Sphk4kqwIF7BP6c",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "7/77supmdwa2u31t3",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14731"
+      },
+      {
+        "site": "bilibili",
+        "id": "3766",
+        "begin": "2008-04-02T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "カイバ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海马"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.wowow.co.jp/anime/kaiba/",
+    "begin": "2008-04-10T15:00:00.000Z",
+    "end": "2008-07-24T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "BEZCwCiaOicjyfHYU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1625"
+      },
+      {
+        "site": "bilibili",
+        "id": "1238",
+        "begin": "2008-04-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "きらりん☆レボリューション STAGE3",
+    "titleTranslate": {
+      "zh-Hans": [
+        "偶像宣言STAGE3"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kirarevo.com/",
+    "begin": "2008-04-04T09:00:00.000Z",
+    "end": "2009-03-27T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "49560"
+      }
+    ]
+  },
+  {
+    "title": "ファイアボール",
+    "titleTranslate": {
+      "zh-Hans": [
+        "火球"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.disneychannel.jp/dc/program/anime/fireball/",
+    "begin": "2008-04-07T16:00:00.000Z",
+    "end": "2008-06-30T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0hzoZs40pOJFwys",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3515"
+      },
+      {
+        "site": "bilibili",
+        "id": "3232",
+        "begin": "2008-04-06T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん ちょー嵐を呼ぶ 金矛の勇者",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 呼风唤雨！金矛之勇者"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2008-04-19T16:00:00.000Z",
+    "end": "2008-04-19T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/afc810555211733d.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8997"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "f10e3d7261ad11e0bea1",
+        "begin": "2012-11-27T18:11:49.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 戦慄の楽譜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 战栗的乐谱"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2008-04-19T16:00:00.000Z",
+    "end": "2008-04-19T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2978"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa24352461ad11e0bea1",
+        "begin": "2011-02-15T20:16:14.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228954",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "はっけん たいけん だいすき! しまじろう",
+    "titleTranslate": {
+      "zh-Hans": [
+        "可爱巧虎岛"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2008-04-07T16:00:00.000Z",
+    "end": "2010-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "lrqWFHziaUpDzcdk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "212150"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 GREEN vs RED",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 绿VS红"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2008-04-02T16:00:00.000Z",
+    "end": "2008-04-02T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "80196"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      }
+    ]
+  }
+]

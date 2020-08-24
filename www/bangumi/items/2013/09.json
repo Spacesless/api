@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Super Seisyun Brothers -超青春姉弟s-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超青春姐弟s"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://ssb-love.tv/",
+    "begin": "2013-09-13T16:53:00.000Z",
+    "end": "2013-12-13T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "youku",
+        "id": "50a2ad0a08b311e3b8b7",
+        "begin": "2013-09-13T22:30:05.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "v/v3qmzely1mvcn9i",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "93252",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "V9fBP6cNfbsenAQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "79701"
+      }
+    ]
+  },
+  {
+    "title": "DIABOLIK LOVERS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔鬼恋人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://anime-dialover.com/",
+    "begin": "2013-09-16T14:30:00.000Z",
+    "end": "2013-12-09T14:45:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "p/p5yfnziow4uwunf",
+        "begin": "2013-09-23T15:30:00.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "64993"
+      },
+      {
+        "site": "nicovideo",
+        "id": "anime-dialover",
+        "begin": "2013-09-21T16:45:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "たまごっち！～みらくるフレンズ～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "拓麻歌子！ Miracle Friends"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/tamagotchi2013/index2.html",
+    "begin": "2013-09-05T09:30:00.000Z",
+    "end": "2014-03-27T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84056"
+      }
+    ]
+  },
+  {
+    "title": "最強銀河 究極ゼロ ～バトルスピリッツ～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最强银河究极ZERO 战斗之魂"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/battlespirits6/",
+    "begin": "2013-09-21T22:00:00.000Z",
+    "end": "2014-09-20T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "5GhEwiaqQAD6hH4c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "79659"
+      }
+    ]
+  },
+  {
+    "title": "おしりかじり虫(第2シリーズ)",
+    "titleTranslate": {
+      "en": [
+        "bottom biting bug"
+      ],
+      "zh-Hans": [
+        "咬屁屁虫 第二季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/oshiri/",
+    "begin": "2013-09-30T09:25:00.000Z",
+    "end": "2014-03-27T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "oayIBm7URILlY8s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "84627"
+      },
+      {
+        "site": "bilibili",
+        "id": "5900",
+        "begin": "2013-09-29T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "コードギアス 亡国のアキト 第2章「引き裂かれし翼竜」",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Code Geass 亡国的阿基德 第二章「翼龙折翅」"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.geass.jp/akito/",
+    "begin": "2013-09-14T16:00:00.000Z",
+    "end": "2013-09-14T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "otmjIYnvX50AfuY",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9mhz9",
+        "begin": "2016-08-31T16:02:16.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "82177",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "63130"
+      },
+      {
+        "site": "bilibili",
+        "id": "1659",
+        "begin": "2012-08-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "キャプテンハーロック -SPACE PIRATE CAPTAIN HARLOCK-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙海盗船长哈洛克"
+      ],
+      "en": [
+        "Harlock: Space Pirate"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://harlock-movie.com/",
+    "begin": "2013-09-07T16:00:00.000Z",
+    "end": "2013-09-07T17:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "zVIibvCSKibjiabGYE",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rro3wd2c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "89594"
+      },
+      {
+        "site": "netflix",
+        "id": "80000768",
+        "begin": "2014-08-01T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "大怪獣ラッシュ ウルトラフロンティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "大怪兽RUSH"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.daikaijyu.com/rush/",
+    "begin": "2013-09-18T16:00:00.000Z",
+    "end": "2014-02-05T16:05:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ITUfnQVr2xl8ibmI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "83920"
+      },
+      {
+        "site": "bilibili",
+        "id": "4384",
+        "begin": "2013-09-17T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "d7a921a224c011e3a705",
+        "begin": "2013-09-24T05:27:53.000Z"
+      }
+    ]
+  },
+  {
+    "title": "やはり俺の青春ラブコメはまちがっている。 OVA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的青春恋爱物语果然有问题 OVA"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/oregairu/",
+    "begin": "2013-09-19T16:00:00.000Z",
+    "end": "2013-09-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "W86qKJD2ZqQHhe0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "82777"
+      },
+      {
+        "site": "bilibili",
+        "id": "3437",
+        "begin": "2013-09-18T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "75fd2e0024c811e3a705",
+        "begin": "2013-09-24T03:08:33.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ちはやふる OAD",
+    "titleTranslate": {
+      "zh-Hans": [
+        "歌牌情缘 OAD"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2013-09-13T16:00:00.000Z",
+    "end": "2013-09-13T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "74659"
+      },
+      {
+        "site": "pptv",
+        "id": "OjMdmwNp2Rd6ibGA",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3514",
+        "begin": "2013-09-12T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "小鳥遊六花・改 ～劇場版 中二病でも恋がしたい！～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "中二病也要谈恋爱！剧场版 小鸟游六花・改"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.anime-chu-2.com/movie/",
+    "begin": "2013-09-14T16:00:00.000Z",
+    "end": "2013-09-14T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "75521"
+      }
+    ]
+  }
+]

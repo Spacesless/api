@@ -1,0 +1,50 @@
+[
+  {
+    "title": "ハックルベリィの冒険",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哈克历险记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1976-01-02T16:00:00.000Z",
+    "end": "1976-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "8/8szu83s4qj0z4o0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "148631"
+      }
+    ]
+  },
+  {
+    "title": "母をたずねて三千里",
+    "titleTranslate": {
+      "zh-Hans": [
+        "三千里寻母记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/hahawotazunete_sanzenri.html",
+    "begin": "1976-01-04T03:30:00.000Z",
+    "end": "1976-12-26T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "18254"
+      },
+      {
+        "site": "bilibili",
+        "id": "5948",
+        "begin": "1976-01-03T16:00:01.000Z"
+      }
+    ]
+  }
+]

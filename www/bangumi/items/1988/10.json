@@ -1,0 +1,128 @@
+[
+  {
+    "title": "新きまぐれオレンジ☆ロード ～ そして、あの夏のはじまり",
+    "titleTranslate": {
+      "zh-Hans": [
+        "橙路 再回到往日"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.dvd-orangeroad.com/",
+    "begin": "1988-10-08T16:00:00.000Z",
+    "end": "1988-10-08T17:10:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "y/yndxod8yrn2yp4m",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "13677"
+      },
+      {
+        "site": "bilibili",
+        "id": "2505",
+        "begin": "1988-10-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新グリム名作劇場",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新格林名作剧场"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/work/1550/",
+    "begin": "1988-10-02T22:30:00.000Z",
+    "end": "1989-03-26T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk35gjh",
+        "begin": "2015-01-09T07:11:23.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "78829",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "56113",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "81531"
+      }
+    ]
+  },
+  {
+    "title": "美味しんぼ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美味大挑战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-10-17T16:00:00.000Z",
+    "end": "1992-03-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "198025"
+      }
+    ]
+  },
+  {
+    "title": "トップをねらえ!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "飞跃巅峰！"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.gainax.co.jp/anime/top/index.html",
+    "begin": "1988-10-07T16:00:00.000Z",
+    "end": "1989-07-07T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "RYeBic2fNPXveXMQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "769"
+      }
+    ]
+  },
+  {
+    "title": "それいけ!アンパンマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "面包超人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1988-10-03T16:00:00.000Z",
+    "end": "",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "81562"
+      }
+    ]
+  }
+]

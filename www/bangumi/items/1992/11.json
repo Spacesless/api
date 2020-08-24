@@ -1,0 +1,31 @@
+[
+  {
+    "title": "新世紀GPXサイバーフォーミュラ11",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高智能方程式：Cyber Formula 11"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1992-11-01T16:00:00.000Z",
+    "end": "1993-06-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HU46uCCG9jSXFX0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1955"
+      },
+      {
+        "site": "bilibili",
+        "id": "3808",
+        "begin": "1992-10-31T16:00:00.000Z"
+      }
+    ]
+  }
+]

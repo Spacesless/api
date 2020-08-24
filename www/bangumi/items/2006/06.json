@@ -1,0 +1,127 @@
+[
+  {
+    "title": "ハチミツとクローバーII",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜂蜜与四叶草II"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.hachikuro.net/",
+    "begin": "2006-06-29T16:00:00.000Z",
+    "end": "2006-09-14T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "zmNe3ESqGlia7OaE",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "x/xumudvzjaautu6q",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "848"
+      },
+      {
+        "site": "bilibili",
+        "id": "3318",
+        "begin": "2006-06-28T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "貧乏姉妹物語",
+    "titleTranslate": {
+      "zh-Hans": [
+        "贫穷姊妹物语",
+        "贫乏姐妹物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/binboushimai/",
+    "begin": "2006-06-29T17:40:00.000Z",
+    "end": "2006-09-14T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1XZRzzedDUuuLJQ",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "9/9y1p6nqbhm2fe7o",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7397"
+      },
+      {
+        "site": "bilibili",
+        "id": "1434",
+        "begin": "2006-06-28T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "出ましたっ！パワパフガールズＺ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "飞天小女警Z"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sonymusic.co.jp/Animation/ppgz/",
+    "begin": "2006-06-30T22:00:00.000Z",
+    "end": "2007-06-29T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "eicfhX8ctndsibvCQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "30503"
+      }
+    ]
+  },
+  {
+    "title": "FLAG",
+    "titleTranslate": {
+      "zh-Hans": [
+        "FLAG"
+      ],
+      "en": [
+        "FLAG"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.flag20xx.net/",
+    "begin": "2006-06-16T03:00:00.000Z",
+    "end": "2007-03-02T03:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "f8iazMZnicb60QjvY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1788"
+      },
+      {
+        "site": "nicovideo",
+        "id": "flag",
+        "begin": "2012-03-28T06:00:00.000Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,433 @@
+[
+  {
+    "title": "デュエル・マスターズ！",
+    "titleTranslate": {
+      "en": [
+        "DUEL MASTERS!"
+      ],
+      "zh-Hans": [
+        "决斗大师！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/duelmasters/",
+    "begin": "2018-03-31T23:30:00.000Z",
+    "end": "2019-03-30T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "240513"
+      },
+      {
+        "site": "nicovideo",
+        "id": "duelmasters_2018",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "キャラとおたまじゃくし島",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "https://www.nhk.or.jp/school/cara-tama/",
+    "begin": "2018-03-29T15:30:00.000Z",
+    "end": "2019-01-28T01:15:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "239747"
+      }
+    ]
+  },
+  {
+    "title": "ソードガイ The Animation",
+    "titleTranslate": {
+      "zh-Hans": [
+        "SWORD GAI 装刀凯",
+        "装刀凯"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://swordgai-anime.com/",
+    "begin": "2018-03-23T16:00:00.000Z",
+    "end": "2018-03-23T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "114706"
+      },
+      {
+        "site": "bilibili",
+        "id": "79492",
+        "begin": "2018-03-31T16:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgzccfp",
+        "begin": "2018-03-24T08:55:06.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "08b5b5f6e42e11e5a080",
+        "begin": "2018-03-24T08:58:06.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80175350",
+        "begin": "2018-03-23T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "B: The Beginning",
+    "titleTranslate": {
+      "zh-Hans": [
+        "B：彼之初",
+        "B：起点",
+        "B: The Beginning"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.b-animation.jp/",
+    "begin": "2018-03-02T08:00:00.000Z",
+    "end": "2018-03-02T08:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "170241"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh06dfh",
+        "begin": "2018-04-28T04:41:23.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80097594",
+        "begin": "2018-03-02T08:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "b91a23ef0f804a75acaf",
+        "begin": "2018-03-13T04:14:51.000Z"
+      }
+    ]
+  },
+  {
+    "title": "A.I.C.O. Incarnation",
+    "titleTranslate": {
+      "zh-Hans": [
+        "A.I.C.O.：化身"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.project-aico.com/",
+    "begin": "2018-03-09T08:00:00.000Z",
+    "end": "2018-03-09T08:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "221292"
+      },
+      {
+        "site": "netflix",
+        "id": "80161848",
+        "begin": "2018-03-09T08:00:00.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "2968800df8f34b9bb376",
+        "begin": "2018-03-10T05:12:59.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh1tbol",
+        "begin": "2018-05-02T01:28:55.000Z"
+      }
+    ]
+  },
+  {
+    "title": "映画 プリキュア スーパースターズ！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "光之美少女 Super Stars"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.precure-superstars.com/",
+    "begin": "2018-03-17T16:00:00.000Z",
+    "end": "2018-03-17T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "231716"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4tzt",
+        "begin": "2015-08-07T08:45:07.000Z"
+      }
+    ]
+  },
+  {
+    "title": "重神機パンドーラ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "重神机潘多拉"
+      ],
+      "en": [
+        "LAST HOPE"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.project-pandora.jp/",
+    "begin": "2018-03-28T14:30:00.000Z",
+    "end": "2018-09-19T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "186180"
+      },
+      {
+        "site": "bilibili",
+        "id": "77352",
+        "begin": "2018-03-28T15:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh1tbu5",
+        "begin": "2018-03-28T14:55:09.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "e/e3yh815x8vf82oi",
+        "begin": "2018-03-28T15:00:00.000Z"
+      },
+      {
+        "site": "netflix",
+        "id": "80221272",
+        "begin": "2018-03-29T07:00:00.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "project-pandora",
+        "begin": "2018-09-28T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "重神机潘多拉",
+    "titleTranslate": {
+      "ja": [
+        "重神機パンドーラ"
+      ]
+    },
+    "type": "tv",
+    "lang": "zh-Hans",
+    "officialSite": "http://www.project-pandora.jp/",
+    "begin": "2018-03-28T14:30:00.000Z",
+    "end": "2018-09-19T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "186180"
+      },
+      {
+        "site": "bilibili",
+        "id": "80472",
+        "begin": "2018-03-28T15:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgyp57x",
+        "begin": "2018-03-28T14:55:06.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "2/225pc9y4ogg0pqq",
+        "begin": "2018-03-28T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "えんぎもん",
+    "titleTranslate": {},
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2018-03-10T16:00:00.000Z",
+    "end": "2018-03-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216418"
+      },
+      {
+        "site": "nicovideo",
+        "id": "engimon",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "Midnight Crazy Trail",
+    "titleTranslate": {},
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2018-03-10T16:00:00.000Z",
+    "end": "2018-03-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216420"
+      },
+      {
+        "site": "nicovideo",
+        "id": "midnight-crazy-trail",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "TIME DRIVER 僕らが描いた未来",
+    "titleTranslate": {},
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2018-03-10T16:00:00.000Z",
+    "end": "2018-03-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216417"
+      }
+    ]
+  },
+  {
+    "title": "ミルキーパニック twelve",
+    "titleTranslate": {},
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2018-03-10T16:00:00.000Z",
+    "end": "2018-03-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "216419"
+      }
+    ]
+  },
+  {
+    "title": "文豪ストレイドッグス DEAD APPLE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "文豪野犬 DEAD APPLE"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://bungo-stray-dogs.jp/",
+    "begin": "2018-03-03T16:00:00.000Z",
+    "end": "2018-03-03T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "209596"
+      },
+      {
+        "site": "nicovideo",
+        "id": "bungo-stray-dogs-dead-apple",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "0459d58befbfbd2611e7",
+        "begin": "2018-11-26T03:29:24.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新妹魔王の契約者 DEPARTURES",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新妹魔王的契约者 DEPARTURES"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://anime-shinmaimaou.com/",
+    "begin": "2018-03-28T16:00:00.000Z",
+    "end": "2018-03-28T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "228625"
+      },
+      {
+        "site": "nicovideo",
+        "id": "shinmaimaou-departures",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "モブサイコ100 REIGEN ～知られざる奇跡の霊能力者～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "灵能百分百 REIGEN ～不为人知的奇迹的灵能力者～"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://mobpsycho100.com/special/event0318.html",
+    "begin": "2018-03-18T16:00:00.000Z",
+    "end": "2018-03-18T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "228109"
+      },
+      {
+        "site": "bilibili",
+        "id": "77952",
+        "begin": "2018-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ReLIFE 完結編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "ReLIFE 完结篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://relife-anime.com/",
+    "begin": "2018-03-21T16:00:00.000Z",
+    "end": "2018-03-21T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213816"
+      },
+      {
+        "site": "bilibili",
+        "id": "79372",
+        "begin": "2018-04-09T16:00:00.000Z"
+      }
+    ]
+  }
+]

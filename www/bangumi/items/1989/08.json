@@ -1,0 +1,36 @@
+[
+  {
+    "title": "真魔神英雄伝ワタル 魔神山編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "真魔神英雄传 魔神山篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1989-08-05T16:00:00.000Z",
+    "end": "1989-09-05T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "38722"
+      },
+      {
+        "site": "pptv",
+        "id": "XerVU7shkc8ysBg",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "4000",
+        "begin": "1989-08-04T16:00:01.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "d/d2w5ny7f4yxuch2",
+        "begin": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "title": "うる星やつら いつだってマイ・ダーリン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "福星小子6：我亲爱的 直到永远"
+      ],
+      "en": [
+        "Urusei Yatsura Movie 6: Itsudatte My Darling"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-11-02T16:00:00.000Z",
+    "end": "1991-11-02T17:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47153"
+      }
+    ]
+  },
+  {
+    "title": "ここはグリーン・ウッド",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绿林寮"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-11-22T16:00:00.000Z",
+    "end": "1993-03-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8365"
+      },
+      {
+        "site": "pptv",
+        "id": "Y9GsKpL4aKYJhib8",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3152",
+        "begin": "1993-04-10T16:00:00.000Z"
+      }
+    ]
+  }
+]

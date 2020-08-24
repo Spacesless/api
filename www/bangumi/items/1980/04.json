@@ -1,0 +1,26 @@
+[
+  {
+    "title": "釣りキチ三平",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天才小钓手"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1980-04-07T16:00:00.000Z",
+    "end": "1982-06-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "e7ibKCHDWRoTnZc0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "208612"
+      }
+    ]
+  }
+]

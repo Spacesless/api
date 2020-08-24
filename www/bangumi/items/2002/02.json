@@ -1,0 +1,80 @@
+[
+  {
+    "title": "おジャ魔女どれみドッカ～ン！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小魔女DoReMi 大合奏",
+        "小魔女DoReMi 4"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/doremi_D/",
+    "begin": "2002-02-02T23:30:00.000Z",
+    "end": "2003-01-26T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb13bp",
+        "begin": "2015-08-14T17:07:41.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "14878"
+      }
+    ]
+  },
+  {
+    "title": "ギャラクシーエンジェルZ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河天使Z"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.madhouse.co.jp/works/2003-2002/works_tv_galaxyange2.html",
+    "begin": "2002-02-03T10:00:00.000Z",
+    "end": "2002-03-31T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4635"
+      },
+      {
+        "site": "bilibili",
+        "id": "1943",
+        "begin": "2002-02-02T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ほしのこえ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星之声"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-02-02T16:00:00.000Z",
+    "end": "2002-02-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "17266",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1936"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hoshinokoe",
+        "begin": ""
+      }
+    ]
+  }
+]

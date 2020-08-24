@@ -1,0 +1,109 @@
+[
+  {
+    "title": "小さな巨人ミクロマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "微星小超人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_042.html",
+    "begin": "1999-01-04T09:00:00.000Z",
+    "end": "1999-12-27T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "121498"
+      },
+      {
+        "site": "bilibili",
+        "id": "2222",
+        "begin": "1999-01-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "星界の紋章",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星界的纹章"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/seikai/",
+    "begin": "1999-01-12T04:30:00.000Z",
+    "end": "1999-03-27T05:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "6x7qaNA2puRHxS0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4301"
+      }
+    ]
+  },
+  {
+    "title": "火魅子伝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "火魅子传"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-01-06T16:00:00.000Z",
+    "end": "1999-03-31T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "xQz4dt5EtPJV0zs",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "7/7e385twecsrp5d3",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "40934"
+      },
+      {
+        "site": "bilibili",
+        "id": "2223",
+        "begin": "1999-01-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "宇宙海賊ミトの大冒険",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙海盗大冒险"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-01-04T16:00:00.000Z",
+    "end": "1999-03-29T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "86977"
+      },
+      {
+        "site": "youku",
+        "id": "9a083bfc13ed11e1a046",
+        "begin": "2013-03-21T10:29:47.000Z"
+      }
+    ]
+  }
+]

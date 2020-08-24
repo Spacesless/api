@@ -1,0 +1,45 @@
+[
+  {
+    "title": "劇場版 美少女戦士セーラームーンS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美少女战士S 竹取公主的恋人"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-12-04T16:00:00.000Z",
+    "end": "1994-12-04T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "5437"
+      }
+    ]
+  },
+  {
+    "title": "KEY THE METAL IDOL",
+    "titleTranslate": {
+      "zh-Hans": [
+        "非常偶像Key"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-12-16T16:00:00.000Z",
+    "end": "1997-06-18T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7VItqxN56SeKCHA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1002"
+      }
+    ]
+  }
+]

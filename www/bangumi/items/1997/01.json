@@ -1,0 +1,134 @@
+[
+  {
+    "title": "マッハGoGoGo",
+    "titleTranslate": {
+      "zh-Hans": [
+        "马赫5号"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://ch.nicovideo.jp/gogogo02",
+    "begin": "1997-01-09T16:00:00.000Z",
+    "end": "1997-09-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "95949"
+      }
+    ]
+  },
+  {
+    "title": "新機動戦記ガンダムW Endless Waltz",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新机动战记高达W 无尽的华尔兹",
+        "新机动战记敢达W 无尽的华尔兹"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-01-25T16:00:00.000Z",
+    "end": "1997-01-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhbyxml",
+        "begin": "2014-10-31T04:50:21.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "i/izkiu4p8jljjjvk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "39530"
+      },
+      {
+        "site": "bilibili",
+        "id": "6058",
+        "begin": "1997-01-24T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "EAT-MAN",
+    "titleTranslate": {
+      "zh-Hans": [
+        "螺丝侠"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-01-09T16:00:00.000Z",
+    "end": "1997-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ibDIOjPRayghr6VE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "18035"
+      },
+      {
+        "site": "letv",
+        "id": "29220",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "爆走兄弟レッツ&amp;ゴー!!WGP",
+    "titleTranslate": {
+      "zh-Hans": [
+        "四驱兄弟WGP"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-01-06T16:00:00.000Z",
+    "end": "1997-12-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "47759"
+      },
+      {
+        "site": "qq",
+        "id": "w/w5vg5k5rwmlkab9",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "超獣伝説ゲシュタルト",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超兽传说GESTALT"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1997-01-22T16:00:00.000Z",
+    "end": "1997-02-21T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "50334"
+      },
+      {
+        "site": "youku",
+        "id": "cc003a9a962411de83b1",
+        "begin": "2013-03-21T10:32:31.000Z"
+      }
+    ]
+  }
+]

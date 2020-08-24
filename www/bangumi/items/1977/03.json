@@ -1,0 +1,50 @@
+[
+  {
+    "title": "惑星ロボ ダンガードA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "惑星机器人 丹加德A"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1977-03-06T09:00:00.000Z",
+    "end": "1978-03-26T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1enp",
+        "begin": "2015-11-09T09:22:58.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "37228"
+      }
+    ]
+  },
+  {
+    "title": "合身戦隊メカンダーロボ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "合身战队机器人Mechander"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1977-03-03T13:30:00.000Z",
+    "end": "1977-12-29T13:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37239"
+      },
+      {
+        "site": "bilibili",
+        "id": "2468",
+        "begin": "1977-03-02T16:00:00.000Z"
+      }
+    ]
+  }
+]

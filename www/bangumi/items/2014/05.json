@@ -1,0 +1,85 @@
+[
+  {
+    "title": "マギ シンドバッドの冒険",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天方魔谭MAGI 辛巴达的冒险",
+        "辛巴德的冒险"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.project-magi.com/sinbad/",
+    "begin": "2014-05-16T16:00:00.000Z",
+    "end": "2015-07-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb2zx5",
+        "begin": "2015-04-21T09:43:55.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "93356"
+      }
+    ]
+  },
+  {
+    "title": "頭文字D Final Stage",
+    "titleTranslate": {
+      "zh-Hans": [
+        "头文字D Final Stage"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2014-05-16T16:00:00.000Z",
+    "end": "2014-06-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "xFdBvyeNicTueHIQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "104569"
+      },
+      {
+        "site": "bilibili",
+        "id": "212",
+        "begin": "2014-05-15T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "GJ部@",
+    "titleTranslate": {
+      "zh-Hans": [
+        "GJ部@"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ntv.co.jp/gj/",
+    "begin": "2014-05-05T16:00:00.000Z",
+    "end": "2014-05-05T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ta2HBW3TQ4HkYso",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "90772"
+      },
+      {
+        "site": "bilibili",
+        "id": "3075",
+        "begin": "2014-05-04T16:00:00.000Z"
+      }
+    ]
+  }
+]

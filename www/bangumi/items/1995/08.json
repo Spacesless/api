@@ -1,0 +1,99 @@
+[
+  {
+    "title": "ルパン三世 ハリマオの財宝を追え!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世：追寻哈里毛的宝藏"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1995-08-04T16:00:00.000Z",
+    "end": "1995-08-04T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67768"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3939",
+        "begin": "1995-08-03T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 スレイヤーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-08-05T16:00:00.000Z",
+    "end": "1995-08-05T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "z/zjbhkhzmf5eqrie",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3781"
+      },
+      {
+        "site": "pptv",
+        "id": "RfTgXsYsnNo9uyM",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3905",
+        "begin": "1995-08-04T16:00:01.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwb7ed",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "アルスラーン戦記V 征馬孤影",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亚尔斯兰战记V 征马孤影"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-08-21T16:00:00.000Z",
+    "end": "1995-09-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7kUvrRV76ymMCnI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "41865"
+      }
+    ]
+  }
+]

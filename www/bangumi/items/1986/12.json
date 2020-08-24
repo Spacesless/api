@@ -1,0 +1,55 @@
+[
+  {
+    "title": "ゲゲゲの鬼太郎 激突!!異次元妖怪の大反乱",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼太郎 冲突!!异次元妖怪的大叛乱"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1986-12-20T16:00:00.000Z",
+    "end": "1986-12-20T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211096"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4kld",
+        "begin": "2015-08-11T08:03:32.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボール 神龍の伝説",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠 神龙传说"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1986-12-20T16:00:00.000Z",
+    "end": "1986-12-20T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "44936"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DB_shenron",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  }
+]

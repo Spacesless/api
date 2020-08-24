@@ -1,0 +1,195 @@
+[
+  {
+    "title": "雪の女王",
+    "titleTranslate": {
+      "zh-Hans": [
+        "雪之女王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/snowqueen/",
+    "begin": "2005-05-22T10:30:00.000Z",
+    "end": "2006-02-12T10:55:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "1mVg3kasHFq9O6M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19519"
+      },
+      {
+        "site": "bilibili",
+        "id": "5081",
+        "begin": "2005-05-21T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "絶対少年",
+    "titleTranslate": {
+      "zh-Hans": [
+        "绝对少年"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.zettai-shonen.com/",
+    "begin": "2005-05-20T23:06:00.000Z",
+    "end": "2005-11-18T23:32:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "12722"
+      },
+      {
+        "site": "bilibili",
+        "id": "3260",
+        "begin": "2005-05-20T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新釈 眞田十勇士 The Animation",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新释 真田十勇士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sanada10.com/",
+    "begin": "2005-05-07T10:00:00.000Z",
+    "end": "2005-07-23T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ESEcmgJo2BZ5918",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "102525"
+      }
+    ]
+  },
+  {
+    "title": "僕は妹に恋をする",
+    "titleTranslate": {
+      "zh-Hans": [
+        "妹妹恋人"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.ponycanyon.co.jp/tpic/boku_imoto/",
+    "begin": "2005-05-08T16:00:00.000Z",
+    "end": "2005-05-08T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "4/4lz3b5jl9iaf2hm",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "22161",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7258"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士Zガンダム -星を継ぐ者-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士Z高达 星之继承者"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.z-gundam.net/",
+    "begin": "2005-05-28T16:00:00.000Z",
+    "end": "2005-05-28T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "2/286vuymzp0bvolj",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5378"
+      }
+    ]
+  },
+  {
+    "title": "ガラスのうさぎ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "玻璃兔"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.ggvp.net/usagi/",
+    "begin": "2005-05-14T16:00:00.000Z",
+    "end": "2005-05-14T17:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "16357"
+      },
+      {
+        "site": "letv",
+        "id": "10008174",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "5116",
+        "begin": "2005-05-13T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "鴉 -KARAS-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鸦 -KARAS-"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.thekaras.net/",
+    "begin": "2005-05-28T16:00:00.000Z",
+    "end": "2007-10-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "VdibqKJD2ZqQHhe0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2135"
+      },
+      {
+        "site": "letv",
+        "id": "29095",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "1857",
+        "begin": "2005-05-27T16:00:00.000Z"
+      }
+    ]
+  }
+]

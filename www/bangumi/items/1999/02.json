@@ -1,0 +1,161 @@
+[
+  {
+    "title": "Bビーダマン爆外伝V",
+    "titleTranslate": {
+      "zh-Hans": [
+        "弹珠警察"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nagoyatv.com/anime-history/data/data25/data25.html",
+    "begin": "1999-02-06T22:00:00.000Z",
+    "end": "2000-01-29T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37469"
+      },
+      {
+        "site": "bilibili",
+        "id": "2221",
+        "begin": "1999-02-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "おジャ魔女どれみ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小魔女DoReMi"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/tv/doremi/index.html",
+    "begin": "1999-02-06T23:30:00.000Z",
+    "end": "2000-01-30T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1djl",
+        "begin": "2015-08-14T17:06:04.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "14652"
+      },
+      {
+        "site": "nicovideo",
+        "id": "doremi",
+        "begin": "2016-06-15T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "超発明BOYカニパン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "超机甲发明小子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-02-05T12:00:00.000Z",
+    "end": "1999-06-25T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37474"
+      },
+      {
+        "site": "bilibili",
+        "id": "5478",
+        "begin": "1999-02-04T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ビーストウォーズ 超生命体トランスフォーマー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "变形金刚 野兽之战新传"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/beastwars/",
+    "begin": "1999-02-03T09:30:00.000Z",
+    "end": "1999-09-29T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "157214"
+      }
+    ]
+  },
+  {
+    "title": "るろうに剣心 -明治剣客浪漫譚- 追憶編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "浪客剑心 追忆篇"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.kenshin-tv.com/",
+    "begin": "1999-02-20T16:00:00.000Z",
+    "end": "1999-09-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "UvXQTrYcjMotqxM",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "c/cz3xrrh4apzn2o1",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1728"
+      },
+      {
+        "site": "nicovideo",
+        "id": "rurouni-kenshin-tuioku",
+        "begin": "2014-09-13T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "神風怪盗ジャンヌ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "神风怪盗贞德"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-02-13T16:00:00.000Z",
+    "end": "2000-01-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "TYB8ibmLIOHbZV78",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2788"
+      },
+      {
+        "site": "letv",
+        "id": "19710",
+        "begin": ""
+      }
+    ]
+  }
+]

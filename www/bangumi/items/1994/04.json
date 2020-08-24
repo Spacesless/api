@@ -1,0 +1,212 @@
+[
+  {
+    "title": "レッドバロン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "红色巴隆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-04-05T16:00:00.000Z",
+    "end": "1995-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37296"
+      },
+      {
+        "site": "nicovideo",
+        "id": "redbaron",
+        "begin": "2011-11-23T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機動武闘伝Gガンダム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动武斗传G高达"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.g-gundam.net/",
+    "begin": "1994-04-01T16:00:00.000Z",
+    "end": "1995-03-31T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CzgDgelPvic1g3kY",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "w/w0nbxlyqmc6clnc",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4212"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん ブリブリ王国の秘宝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新之布里布里王国的秘密宝藏"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "1994-04-23T16:00:00.000Z",
+    "end": "1994-04-23T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/d7a321d48f825733.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8968"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "10472",
+        "begin": "1994-04-22T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f071488261ad11e0bea1",
+        "begin": "2012-11-27T03:00:09.000Z"
+      }
+    ]
+  },
+  {
+    "title": "新世紀GPXサイバーフォーミュラZERO",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高智能方程式：ZERO"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-04-01T16:00:00.000Z",
+    "end": "1995-02-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NHdRzzedDUuuLJQ",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1956"
+      },
+      {
+        "site": "bilibili",
+        "id": "3809",
+        "begin": "1994-03-31T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "とっても!ラッキーマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "幸运超人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-04-06T16:00:00.000Z",
+    "end": "1995-03-23T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "LmBc2kKoGFa5N58",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "114807"
+      }
+    ]
+  },
+  {
+    "title": "覇王大系リューナイト",
+    "titleTranslate": {
+      "zh-Hans": [
+        "霸王大系龙骑士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-04-05T16:00:00.000Z",
+    "end": "1995-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "dLibKCHDWRoTnZc0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10410"
+      }
+    ]
+  },
+  {
+    "title": "3丁目のタマ うちのタマ知りませんか? 第2期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "猫狗宠物街 第2期",
+        "猫咪小镇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sonymusic.co.jp/MoreInfo/Chekila/Tama/index.html",
+    "begin": "1994-04-03T16:00:00.000Z",
+    "end": "1994-09-25T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8248"
+      },
+      {
+        "site": "youku",
+        "id": "efbfbd632c23260011ef",
+        "begin": "2020-02-12T03:34:28.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwvuex",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "m/mzc00200flv7mmy",
+        "begin": ""
+      }
+    ]
+  }
+]

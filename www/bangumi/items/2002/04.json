@@ -1,0 +1,689 @@
+[
+  {
+    "title": "天使な小生意気",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天使的小生意气"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.tv-tokyo.co.jp/anime/tenshi/main_index.html",
+    "begin": "2002-04-06T15:45:00.000Z",
+    "end": "2003-03-29T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Iwz3dd1DsicFU0jo",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bkwnwgi75yqk7zs",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2411"
+      },
+      {
+        "site": "bilibili",
+        "id": "2042",
+        "begin": "2002-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "わがまま☆フェアリー ミルモでポン！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法咪路咪路"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-tokyo.co.jp/anime/mirumo/story/story_mirumo.htm",
+    "begin": "2002-04-05T23:30:00.000Z",
+    "end": "2004-03-30T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23443"
+      }
+    ]
+  },
+  {
+    "title": "東京ミュウミュウ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "东京猫猫"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-aichi.co.jp/mewmew/",
+    "begin": "2002-04-05T23:00:00.000Z",
+    "end": "2003-03-28T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "v6SQDnbcTIrta9M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "19615"
+      },
+      {
+        "site": "bilibili",
+        "id": "2040",
+        "begin": "2002-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "電光超特急ヒカリアン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "铁胆火车侠2"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toho-a-park.com/character/hikari/index.html",
+    "begin": "2002-04-06T23:30:00.000Z",
+    "end": "2003-03-30T00:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "8413"
+      },
+      {
+        "site": "bilibili",
+        "id": "2032",
+        "begin": "2002-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あずまんが大王",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿滋漫画大王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/azuma/index.html",
+    "begin": "2002-04-08T16:25:00.000Z",
+    "end": "2002-09-30T16:55:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "977"
+      },
+      {
+        "site": "youku",
+        "id": "cc003cd4962411de83b1",
+        "begin": "2012-06-21T19:43:05.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あたしンち",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我们这一家"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.atashinchi.net/",
+    "begin": "2002-04-19T10:30:00.000Z",
+    "end": "2009-09-19T02:45:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "40388"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgcn2kp",
+        "begin": "2013-08-07T01:39:12.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "l/lp7n9hjirt1b2ig",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "6qESkPhezgxv7VU",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "デジモンフロンティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码暴龙04无限地带",
+        "数码宝贝04 无限地带"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/jp/b_hp/digimonf/",
+    "begin": "2002-04-07T00:00:00.000Z",
+    "end": "2003-03-30T00:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1d8t",
+        "begin": "2015-09-17T05:39:18.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "3131"
+      }
+    ]
+  },
+  {
+    "title": "満月をさがして",
+    "titleTranslate": {
+      "zh-Hans": [
+        "寻找满月"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.tv-tokyo.co.jp/anime/fullmoon/main_index.html",
+    "begin": "2002-04-05T22:30:00.000Z",
+    "end": "2003-03-28T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HTkEgupQwP5h30c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10406"
+      },
+      {
+        "site": "letv",
+        "id": "41889",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2021",
+        "begin": "2002-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "藍より青し",
+    "titleTranslate": {
+      "zh-Hans": [
+        "青出于蓝"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.aiyoriaoshi.com/aiao_index.html",
+    "begin": "2002-04-10T00:00:00.000Z",
+    "end": "2002-09-25T01:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "PW5a2ECmFlS3NZ0",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "u/us1x4gwz0ud1ih0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "836"
+      },
+      {
+        "site": "nicovideo",
+        "id": "aiyoriaoshi_",
+        "begin": "2012-08-29T15:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2018",
+        "begin": "2002-04-09T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": ".hack//SIGN",
+    "titleTranslate": {
+      "zh-Hans": [
+        ".hack//时空"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://dothack.com/",
+    "begin": "2002-04-03T13:00:00.000Z",
+    "end": "2002-09-25T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "hsmzMZnicb60QjvY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1997"
+      },
+      {
+        "site": "qq",
+        "id": "x/xf7fiqqipab0lt0",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "りぜるまいん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "爆弹小新娘"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ponycanyon.co.jp/pc-moe/rizeru/",
+    "begin": "2002-04-02T04:00:00.000Z",
+    "end": "2002-06-25T04:15:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "38951"
+      }
+    ]
+  },
+  {
+    "title": "ぴたテン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "迷糊天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.madhouse.co.jp/works/2002-2001/works_tv_pitaten.html",
+    "begin": "2002-04-07T02:00:00.000Z",
+    "end": "2002-09-29T05:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4542"
+      },
+      {
+        "site": "bilibili",
+        "id": "2075",
+        "begin": "2002-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ちょびっツ",
+    "titleTranslate": {
+      "en": [
+        "Chobits"
+      ],
+      "zh-Hans": [
+        "人形电脑天使心",
+        "人型电脑天使心"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/chobits/",
+    "begin": "2002-04-02T18:00:00.000Z",
+    "end": "2002-09-24T19:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qo149l7ENHLVU7s",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "q/q8djn5p1r06jvbn",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "38691",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "12"
+      },
+      {
+        "site": "bilibili",
+        "id": "2061",
+        "begin": "2002-04-01T16:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhuee75",
+        "begin": "2019-01-25T03:14:50.000Z"
+      }
+    ]
+  },
+  {
+    "title": "十二国記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "十二国记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www6.nhk.or.jp/anime/program/detail.html?i=12kokuki",
+    "begin": "2002-04-09T10:00:00.000Z",
+    "end": "2003-08-30T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ooRicicWXLO3ncWsI",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhc0299",
+        "begin": "2014-11-03T10:06:18.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "1856"
+      },
+      {
+        "site": "qq",
+        "id": "7/7phtjz7q03995kj",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2069",
+        "begin": "2002-04-08T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "44845",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "cc0016be962411de83b1",
+        "begin": "2020-02-11T06:38:57.000Z"
+      }
+    ]
+  },
+  {
+    "title": "東京アンダーグラウンド",
+    "titleTranslate": {
+      "zh-Hans": [
+        "东京地下城"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_2000/tv_057.html",
+    "begin": "2002-04-02T16:00:00.000Z",
+    "end": "2002-09-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37078"
+      },
+      {
+        "site": "bilibili",
+        "id": "2035",
+        "begin": "2002-04-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 嵐を呼ぶ アッパレ!戦国大合戦",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 呼风唤雨！战国大合战"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "2002-04-20T16:00:00.000Z",
+    "end": "2002-04-20T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/48ffcf0034a37957.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8987"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "39112",
+        "begin": "2002-04-19T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f072c2ac61ad11e0bea1",
+        "begin": "2012-11-27T09:56:17.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン ベイカー街の亡霊",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 贝克街的亡灵"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "2002-04-20T16:00:00.000Z",
+    "end": "2002-04-20T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2972"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa217afa61ad11e0bea1",
+        "begin": "2012-05-03T04:24:55.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228946",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 10期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 10期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "2002-04-01T08:35:00.000Z",
+    "end": "2002-07-19T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161688"
+      }
+    ]
+  },
+  {
+    "title": "HAPPY★LESSON THE TV",
+    "titleTranslate": {
+      "zh-Hans": [
+        "欢乐课程"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-04-01T16:00:00.000Z",
+    "end": "2002-05-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "jb6KCHDWRoTnZc0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "14653"
+      }
+    ]
+  },
+  {
+    "title": "天地無用! GXP",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天地无用! GXP"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-04-02T16:00:00.000Z",
+    "end": "2002-09-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qibXfXcUrm9k8uiaI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "56626"
+      }
+    ]
+  },
+  {
+    "title": "アベノ橋魔法☆商店街",
+    "titleTranslate": {
+      "zh-Hans": [
+        "安倍桥魔法☆商店街"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gainax.co.jp/anime/abesho/",
+    "begin": "2002-04-04T16:00:00.000Z",
+    "end": "2002-06-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "8VsmpAxy4iaCDAWk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "6937"
+      },
+      {
+        "site": "bilibili",
+        "id": "2043",
+        "begin": "2002-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ゲートキーパーズ21",
+    "titleTranslate": {
+      "zh-Hans": [
+        "地球守护者21"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.gonzo.co.jp/works/0002.html",
+    "begin": "2002-04-24T16:00:00.000Z",
+    "end": "2003-01-08T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "19040"
+      },
+      {
+        "site": "pptv",
+        "id": "mNKuLJT6aqgLiafE",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 生きていた魔術師",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 活下来的魔术师"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-04-03T16:00:00.000Z",
+    "end": "2002-04-03T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84990"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3933",
+        "begin": "2002-04-02T16:00:01.000Z"
+      }
+    ]
+  }
+]

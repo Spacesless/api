@@ -1,0 +1,497 @@
+[
+  {
+    "title": "∀ガンダム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "∀高达",
+        "倒A高达"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.turn-a-gundam.net/",
+    "begin": "1999-04-09T07:55:00.000Z",
+    "end": "2000-04-14T08:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "SvnEQqoQgL4hnwc",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "q/q22xttucp95iwpb",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3553"
+      }
+    ]
+  },
+  {
+    "title": "天使になるもんっ!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天使不设防!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_044.html",
+    "begin": "1999-04-07T09:00:00.000Z",
+    "end": "1999-09-29T09:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "77939"
+      }
+    ]
+  },
+  {
+    "title": "十兵衛ちゃん －ラブリー眼帯の秘密－",
+    "titleTranslate": {
+      "zh-Hans": [
+        "十兵卫 心形眼罩的秘密"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kids-station.com/program/detail/150542.html",
+    "begin": "1999-04-05T15:30:00.000Z",
+    "end": "1999-06-28T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "HiasWlPxia0hBz8Vk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1547"
+      },
+      {
+        "site": "bilibili",
+        "id": "1946",
+        "begin": "1999-04-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "星方天使エンジェルリンクス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星方天使"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/seihou/",
+    "begin": "1999-04-07T01:00:00.000Z",
+    "end": "1999-06-30T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icE86uCCG9jSXFX0",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "5/5mjbhi1kqh1ytk1",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "30520"
+      }
+    ]
+  },
+  {
+    "title": "それゆけ！宇宙戦艦ヤマモト・ヨーコ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙战舰山本洋子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-04-04T23:00:00.000Z",
+    "end": "1999-09-26T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27170"
+      },
+      {
+        "site": "bilibili",
+        "id": "2225",
+        "begin": "1999-04-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ToHeart",
+    "titleTranslate": {
+      "zh-Hans": [
+        "ToHeart"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://aquaplus.jp/th/th_anime.html",
+    "begin": "1999-04-01T23:00:00.000Z",
+    "end": "1999-06-24T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "VOzXVb0jk9E0sho",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "g/gjdk4z87xsfrkar",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "8296"
+      },
+      {
+        "site": "letv",
+        "id": "80638",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "デュアル！ぱられルンルン物語",
+    "titleTranslate": {
+      "zh-Hans": [
+        "平行世界物语"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/20071011202701/www.anime-int.com/works/dual/tv/",
+    "begin": "1999-04-08T15:00:00.000Z",
+    "end": "1999-07-01T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "U5xo5k60JGLFQ6s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "30525"
+      },
+      {
+        "site": "bilibili",
+        "id": "2217",
+        "begin": "1999-04-07T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "KAIKANフレーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "快感指令"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program_detail/index.html/2355/",
+    "begin": "1999-04-20T01:00:00.000Z",
+    "end": "2000-03-25T01:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "45329"
+      }
+    ]
+  },
+  {
+    "title": "コレクター・ユイ(第1期)",
+    "titleTranslate": {
+      "zh-Hans": [
+        "网络安琪儿 第一期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/yui/index.html",
+    "begin": "1999-04-09T22:40:00.000Z",
+    "end": "1999-10-01T23:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4023"
+      }
+    ]
+  },
+  {
+    "title": "ゴクドーくん 漫遊記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "极道君漫游记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geneon-ent.co.jp/rondorobe/anime/gokudo/index.html",
+    "begin": "1999-04-02T22:15:00.000Z",
+    "end": "1999-09-24T22:45:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "A0w4th6E9DKVE3s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "49701"
+      },
+      {
+        "site": "bilibili",
+        "id": "5502",
+        "begin": "1999-04-01T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "D4プリンセス",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ponycanyon.co.jp/pc-moe/d4princess/index.html",
+    "begin": "1999-04-06T16:00:00.000Z",
+    "end": "1999-09-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "86980"
+      }
+    ]
+  },
+  {
+    "title": "シティーハンタースペシャル 緊急生中継!?凶悪犯冴羽リョウの最期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "城市猎人 紧急插播!?凶恶罪犯獠的死期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-04-23T16:00:00.000Z",
+    "end": "1999-04-23T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "f/feuy7gwbvk0a5p1",
+        "begin": ""
+      },
+      {
+        "site": "mgtv",
+        "id": "49139",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "53938"
+      },
+      {
+        "site": "letv",
+        "id": "10004313",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "デジモンアドベンチャー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码暴龙大冒险 滚球兽的诞生"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-04-06T16:00:00.000Z",
+    "end": "1999-04-06T16:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3133"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4tgp",
+        "begin": "2015-08-06T12:03:19.000Z"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 爆発！温泉わくわく大决戦",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新 爆发！温泉火热大决战"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "1999-04-17T16:00:00.000Z",
+    "end": "1999-04-17T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/dongman/20130715/923b3cfbf8291077.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8973"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "b463bb2e927511e0a046",
+        "begin": "2013-03-11T12:07:51.000Z"
+      }
+    ]
+  },
+  {
+    "title": "名探偵コナン 世紀末の魔術師",
+    "titleTranslate": {
+      "zh-Hans": [
+        "名侦探柯南 世纪末的魔术师"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.conan-movie.jp/",
+    "begin": "1999-04-17T16:00:00.000Z",
+    "end": "1999-04-17T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh9zual",
+        "begin": "2016-11-11T08:33:52.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2970"
+      },
+      {
+        "site": "pptv",
+        "id": "NQHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "b/bu8qr3h1vbia2kd",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "fa2085aa61ad11e0bea1",
+        "begin": "2013-03-19T12:02:56.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "28228943",
+        "begin": "2020-05-21T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎 7期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎 7期"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "1999-04-05T08:35:00.000Z",
+    "end": "1999-07-30T09:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161685"
+      }
+    ]
+  },
+  {
+    "title": "ベターマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "进化战记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-04-01T16:00:00.000Z",
+    "end": "1999-10-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "wW1Y1j6kFFK1M5s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10417"
+      },
+      {
+        "site": "bilibili",
+        "id": "2216",
+        "begin": "1999-03-31T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "エデンズボゥイ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "伊甸少年"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1999-04-06T16:00:00.000Z",
+    "end": "1999-09-28T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "98874"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwb79h",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "m/mzc002001y148eb",
+        "begin": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "title": "ルパン三世 燃えよ斬鉄剣",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世：燃烧的斩铁剑"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1994-07-29T16:00:00.000Z",
+    "end": "1994-07-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "54372"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3937",
+        "begin": "1994-07-28T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Dr.スランプ アラレちゃん んちゃ!!わくわくハートの夏休み",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 心跳的暑假"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-07-09T16:00:00.000Z",
+    "end": "1994-07-09T16:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "82727"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボールZ 超戦士撃破!!勝つのはオレだ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠Z 击败超战士"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-07-09T16:00:00.000Z",
+    "end": "1994-07-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "48928"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DBZ_supersenshi",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "マップス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "星图传说"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-07-08T16:00:00.000Z",
+    "end": "1995-02-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "tINibicGTKOnjbWcE",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "80861"
+      }
+    ]
+  }
+]

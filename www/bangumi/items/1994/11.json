@@ -1,0 +1,50 @@
+[
+  {
+    "title": "疾風!アイアンリーガー 銀光の旗の下に",
+    "titleTranslate": {
+      "zh-Hans": [
+        "疾风无敌银堡垒 银光之旗下"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-11-21T16:00:00.000Z",
+    "end": "1994-11-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "bPrWVLwiaktAzsRk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37274"
+      }
+    ]
+  },
+  {
+    "title": "CLAMP IN WONDERLAND",
+    "titleTranslate": {
+      "zh-Hans": [
+        "CLAMP仙境"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-11-21T16:00:00.000Z",
+    "end": "2007-10-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "aMK9O6MJebcamAA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "38470"
+      }
+    ]
+  }
+]

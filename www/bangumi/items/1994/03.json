@@ -1,0 +1,198 @@
+[
+  {
+    "title": "美少女戦士セーラームーンS",
+    "titleTranslate": {
+      "en": [
+        "Sailor Moon S"
+      ],
+      "zh-Hans": [
+        "美少女战士S",
+        "美少女战士 S"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://sailormoon.channel.or.jp/",
+    "begin": "1994-03-19T16:00:00.000Z",
+    "end": "1995-02-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb12s9",
+        "begin": "2015-08-14T17:09:03.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "5432"
+      }
+    ]
+  },
+  {
+    "title": "ママレード・ボーイ",
+    "titleTranslate": {
+      "en": [
+        "Marmalade Boy"
+      ],
+      "zh-Hans": [
+        "橘子酱男孩",
+        "果酱男孩"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/lineup/tv/mamaboy/",
+    "begin": "1994-03-13T16:00:00.000Z",
+    "end": "1995-09-03T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "5lQvrRV76ymMCnI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "10467"
+      },
+      {
+        "site": "bilibili",
+        "id": "2324",
+        "begin": "1994-03-12T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "29242",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "Dr.スランプ アラレちゃん ほよよ!!助けたサメに連れられて…",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 哦呦呦！获救的鲨鱼带我们去……"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-03-12T16:00:00.000Z",
+    "end": "1994-03-12T16:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "82726"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボールZ 危険なふたり!超戦士はねむれない",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠Z 两人的危机"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-03-12T16:00:00.000Z",
+    "end": "1994-03-12T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "45395"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DBZ_kikennnafutari",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "スラムダンク",
+    "titleTranslate": {
+      "zh-Hans": [
+        "灌篮高手 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-03-12T16:00:00.000Z",
+    "end": "1994-03-12T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3731"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb405h",
+        "begin": "2016-02-04T10:33:39.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太と夢幻三剣士",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄与梦幻三剑士"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-03-12T16:00:00.000Z",
+    "end": "1994-03-12T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80948",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "453"
+      },
+      {
+        "site": "bilibili",
+        "id": "2562",
+        "begin": "1994-03-11T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "装甲騎兵ボトムズ 赫奕たる異端",
+    "titleTranslate": {
+      "zh-Hans": [
+        "装甲骑兵 荣耀的背后"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1994-03-21T16:00:00.000Z",
+    "end": "1994-12-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "41733"
+      },
+      {
+        "site": "pptv",
+        "id": "ToF7ibWHHN3XYVr4",
+        "begin": ""
+      }
+    ]
+  }
+]

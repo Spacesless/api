@@ -1,0 +1,116 @@
+[
+  {
+    "title": "ドラえもん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦",
+        "哆啦A梦 大山版",
+        "哆啦A梦 第2季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tv-asahi.co.jp/doraemon/",
+    "begin": "1979-04-02T10:00:00.000Z",
+    "end": "2005-03-25T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "qicXPTbUbia8ksqhI",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb2ai5",
+        "begin": "2015-06-30T07:36:59.000Z"
+      },
+      {
+        "site": "qq",
+        "id": "j/jxj5pth9h3a71sg",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "78930",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2011/dhpjqm",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37460"
+      },
+      {
+        "site": "bilibili",
+        "id": "6009",
+        "begin": "1979-04-01T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士ガンダム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达",
+        "机动战士高达0079"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gundam.jp/",
+    "begin": "1979-04-07T12:00:00.000Z",
+    "end": "1980-01-26T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "r/rxg1rnfy9m736q3",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "50"
+      }
+    ]
+  },
+  {
+    "title": "新巨人の星II",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新巨人之星II"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1979-04-14T22:30:00.000Z",
+    "end": "1979-09-29T23:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213787"
+      }
+    ]
+  },
+  {
+    "title": "ザ★ウルトラマン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "乔尼亚斯奥特曼"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1979-04-04T11:00:00.000Z",
+    "end": "1980-03-26T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "61260"
+      }
+    ]
+  }
+]

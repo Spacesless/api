@@ -1,0 +1,123 @@
+[
+  {
+    "title": "フルメタル・パニック？ふもっふ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "全金属狂潮 校园篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.fujitv.co.jp/b_hp/fullmeta/",
+    "begin": "2003-08-25T17:28:00.000Z",
+    "end": "2003-11-17T18:23:00.000Z",
+    "sites": [
+      {
+        "site": "mgtv",
+        "id": "291729",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "338"
+      },
+      {
+        "site": "qq",
+        "id": "f/ftkqogti5jszz3n",
+        "begin": ""
+      },
+      {
+        "site": "acfun",
+        "id": "5025004",
+        "begin": "2019-07-16T07:13:04.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "fullmetal-panic-fumoffu",
+        "begin": "2019-10-14T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "まっすぐにいこう。",
+    "titleTranslate": {
+      "zh-Hans": [
+        "狗狗向前冲"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.ytv.co.jp/massugu03/",
+    "begin": "2003-08-18T00:55:00.000Z",
+    "end": "2003-08-21T01:20:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "96047"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 お宝返却大作戦!!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世 夺宝大作战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "2003-08-01T16:00:00.000Z",
+    "end": "2003-08-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84993"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3952",
+        "begin": "2003-07-31T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ちっちゃな雪使いシュガー 特別編",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小小雪精灵 夏季特别篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2003-08-22T16:00:00.000Z",
+    "end": "2003-08-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2415"
+      },
+      {
+        "site": "pptv",
+        "id": "CjsGhOxSwgBj4Uk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3969",
+        "begin": "2003-08-21T16:00:01.000Z"
+      }
+    ]
+  }
+]

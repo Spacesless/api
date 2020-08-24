@@ -1,0 +1,45 @@
+[
+  {
+    "title": "マジンガーZ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔神Z"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1972-12-03T10:00:00.000Z",
+    "end": "1974-09-01T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "10390"
+      }
+    ]
+  },
+  {
+    "title": "パンダコパンダ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "熊猫家族"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1972-12-17T16:00:00.000Z",
+    "end": "1972-12-17T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "28103"
+      },
+      {
+        "site": "nicovideo",
+        "id": "pankopa",
+        "begin": ""
+      }
+    ]
+  }
+]

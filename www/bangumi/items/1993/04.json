@@ -1,0 +1,161 @@
+[
+  {
+    "title": "機動戦士Vガンダム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士V高达"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gundam.channel.or.jp/program/_vg_tv.shtml",
+    "begin": "1993-04-02T16:00:00.000Z",
+    "end": "1994-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "CDcSkPhezgxv7VU",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "j/jo3cpdky93amp9u",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "985"
+      }
+    ]
+  },
+  {
+    "title": "ゴーストスイーパー GS美神",
+    "titleTranslate": {
+      "zh-Hans": [
+        "GS美神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mxtv.co.jp/gs_mikami/",
+    "begin": "1993-04-11T16:00:00.000Z",
+    "end": "1994-03-06T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1b8t",
+        "begin": "2015-08-14T16:07:25.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "76800"
+      }
+    ]
+  },
+  {
+    "title": "忍たま乱太郎",
+    "titleTranslate": {
+      "zh-Hans": [
+        "忍者乱太郎"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nhk.or.jp/anime/nintama/",
+    "begin": "1993-04-10T16:00:00.000Z",
+    "end": "1994-03-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4264"
+      },
+      {
+        "site": "bilibili",
+        "id": "3620",
+        "begin": "2008-03-30T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "疾風!アイアンリーガー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "疾风无敌银堡垒"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-04-06T16:00:00.000Z",
+    "end": "1994-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "cibHLSbEXh8Uopg4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37273"
+      },
+      {
+        "site": "bilibili",
+        "id": "2329",
+        "begin": "1993-04-05T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "剣勇伝説YAIBA",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剑勇传说 铁刃"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-04-09T16:00:00.000Z",
+    "end": "1994-04-01T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "faibZF3iclVZP2dNw",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "5468"
+      }
+    ]
+  },
+  {
+    "title": "ポコニャン！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "叮当猫"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-04-05T16:00:00.000Z",
+    "end": "1996-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "9F0opg505CKFA2s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "28114"
+      },
+      {
+        "site": "bilibili",
+        "id": "2334",
+        "begin": "1993-04-05T16:00:00.000Z"
+      }
+    ]
+  }
+]

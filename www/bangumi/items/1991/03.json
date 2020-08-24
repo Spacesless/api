@@ -1,0 +1,180 @@
+[
+  {
+    "title": "新世紀GPXサイバーフォーミュラ",
+    "titleTranslate": {
+      "en": [
+        "Future GPX Cyber Formula"
+      ],
+      "zh-Hans": [
+        "高智能方程式"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.vap.co.jp/cyber/",
+    "begin": "1991-03-15T16:00:00.000Z",
+    "end": "1991-11-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NgD7eeFHticVY1j4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1954"
+      },
+      {
+        "site": "letv",
+        "id": "21118",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2350",
+        "begin": "1991-03-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "機動戦士ガンダムF91",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动战士高达F91"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-03-16T16:00:00.000Z",
+    "end": "1991-03-16T18:00:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "k/kd7sd8mpyq2j2nn",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4482"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボールZ 超サイヤ人だ孫悟空",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠Z 超级赛亚人孙悟空"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-03-09T16:00:00.000Z",
+    "end": "1991-03-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "44942"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DBZ_supersaiyajin",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太のドラビアンナイト",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄的天方夜譚"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-03-09T16:00:00.000Z",
+    "end": "1991-03-09T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80870",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "450"
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2559",
+        "begin": "1991-03-08T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラミちゃん アララ♥少年山賊団!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦美与阿拉拉·少年山贼团"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-03-09T16:00:00.000Z",
+    "end": "1991-03-09T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "121742"
+      },
+      {
+        "site": "pptv",
+        "id": "7qoHhe1TwwFk4ko",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "鎧伝サムライトルーパー MESSAGE",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔神坛斗士 MESSAGE"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-anime.jp/sunrise-inc/works/detail.php?cid=151",
+    "begin": "1991-03-21T16:00:00.000Z",
+    "end": "1991-08-23T15:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23180"
+      },
+      {
+        "site": "qq",
+        "id": "k/kj1z6gtns5kbmc7",
+        "begin": ""
+      },
+      {
+        "site": "youku",
+        "id": "f1be4bfe61ad11e0bea1",
+        "begin": "2019-08-08T02:53:24.000Z"
+      }
+    ]
+  }
+]

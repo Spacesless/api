@@ -1,0 +1,21 @@
+[
+  {
+    "title": "銀河鉄道999 映画版",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河铁道999 剧场版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1979-08-04T16:00:00.000Z",
+    "end": "1979-08-04T18:10:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23307"
+      }
+    ]
+  }
+]

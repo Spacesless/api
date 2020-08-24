@@ -1,0 +1,347 @@
+[
+  {
+    "title": "飛べ！イサミ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "飞吧！伊莎美"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-08T16:00:00.000Z",
+    "end": "1996-03-16T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "80970"
+      }
+    ]
+  },
+  {
+    "title": "愛天使伝説ウェディングピーチ",
+    "titleTranslate": {
+      "en": [
+        "Wedding Peach"
+      ],
+      "zh-Hans": [
+        "爱天使传说"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.geocities.jp/yazawanet/",
+    "begin": "1995-04-05T16:00:00.000Z",
+    "end": "1996-03-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "26266"
+      },
+      {
+        "site": "bilibili",
+        "id": "2323",
+        "begin": "1995-04-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "あずきちゃん",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小红豆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www9.nhk.or.jp/anime/azuki/",
+    "begin": "1995-04-04T16:00:00.000Z",
+    "end": "1998-03-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "81011"
+      }
+    ]
+  },
+  {
+    "title": "スレイヤーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/slayers-tv.net/",
+    "begin": "1995-04-07T16:00:00.000Z",
+    "end": "1995-09-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "KRrlY8sxod9CwCg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2094"
+      },
+      {
+        "site": "qq",
+        "id": "a/adddc4x1gd4g8yi",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "ふしぎ遊戯",
+    "titleTranslate": {
+      "zh-Hans": [
+        "不可思议的游戏"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_030.html",
+    "begin": "1995-04-06T16:00:00.000Z",
+    "end": "1996-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "QYt181vBMWicSULg",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrjpucit",
+        "begin": "2014-09-12T06:31:34.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "4507"
+      },
+      {
+        "site": "letv",
+        "id": "14042",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "新機動戦記ガンダムW",
+    "titleTranslate": {
+      "zh-Hans": [
+        "新机动战记高达W"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gundam-w.jp/index.html",
+    "begin": "1995-04-07T16:00:00.000Z",
+    "end": "1996-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "NwTicfeVLuiclc2kI",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "8/8w1oda40j0vkiwo",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2774"
+      }
+    ]
+  },
+  {
+    "title": "天地無用！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "天地无用!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-02T16:00:00.000Z",
+    "end": "1995-09-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "icTQQjvZczApt61M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "9756"
+      }
+    ]
+  },
+  {
+    "title": "美少女戦士セーラームーンSuperS~スペシャル!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美少女战士SS特别篇"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-08T16:00:00.000Z",
+    "end": "1995-04-08T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27356"
+      }
+    ]
+  },
+  {
+    "title": "クレヨンしんちゃん 雲黒斎の野望",
+    "titleTranslate": {
+      "zh-Hans": [
+        "蜡笔小新之云黑斋的野心"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shinchan-movie.com/",
+    "begin": "1995-04-15T16:00:00.000Z",
+    "end": "1995-04-15T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "3aGLCXHXR4XoZs4",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "begin": "",
+        "url": "http://www.iqiyi.com/v_19rrifx03h.html"
+      },
+      {
+        "site": "bangumi",
+        "id": "8969"
+      },
+      {
+        "site": "qq",
+        "id": "b/bymafsjpccgo4bw",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "51552",
+        "begin": "1995-04-14T16:00:01.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "f06dbe4261ad11e0bea1",
+        "begin": "2013-03-15T03:56:18.000Z"
+      }
+    ]
+  },
+  {
+    "title": "十二戦支 爆烈エトレンジャー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "十二生肖守护神"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-07T16:00:00.000Z",
+    "end": "1996-01-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Y6uVE3vhUYicycNg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "1979"
+      },
+      {
+        "site": "bilibili",
+        "id": "2311",
+        "begin": "1995-04-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぼのぼの",
+    "titleTranslate": {
+      "zh-Hans": [
+        "暖暖日记"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-20T16:00:00.000Z",
+    "end": "1996-03-28T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "161938"
+      },
+      {
+        "site": "nicovideo",
+        "id": "bonobono",
+        "begin": "2014-07-24T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ルパン三世 くたばれ!ノストラダムス",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世：见鬼去吧！诺查丹玛斯"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-22T16:00:00.000Z",
+    "end": "1995-04-22T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67762"
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "獣戦士ガルキーバ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "兽战士"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1995-04-04T16:00:00.000Z",
+    "end": "1995-09-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "196288"
+      },
+      {
+        "site": "letv",
+        "id": "29648",
+        "begin": ""
+      }
+    ]
+  }
+]

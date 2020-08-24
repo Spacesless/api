@@ -1,0 +1,133 @@
+[
+  {
+    "title": "うる星やつら",
+    "titleTranslate": {
+      "zh-Hans": [
+        "福星小子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.kids-station.com/campaign/urusei/",
+    "begin": "1981-10-14T14:30:00.000Z",
+    "end": "1986-03-19T15:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "m7SPDXXbS4nsatI",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrha1of1",
+        "begin": "2016-12-02T08:24:10.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "10388"
+      }
+    ]
+  },
+  {
+    "title": "六神合体ゴッドマーズ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "六神合体雷霆王"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://cnt.kingrecords.co.jp/godmars/",
+    "begin": "1981-10-02T10:00:00.000Z",
+    "end": "1982-12-24T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Yq2XFX3jU5H0cto",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "32213"
+      },
+      {
+        "site": "bilibili",
+        "id": "2444",
+        "begin": "1981-10-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "まいっちんぐマチコ先生",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.at-x.com/program/detail/1475",
+    "begin": "1981-10-08T13:00:00.000Z",
+    "end": "1983-10-06T13:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213652"
+      }
+    ]
+  },
+  {
+    "title": "銀河旋風ブライガー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河旋风无赖我"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://s.mxtv.jp/anime/braiger/",
+    "begin": "1981-10-06T11:00:00.000Z",
+    "end": "1982-06-25T11:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37196"
+      }
+    ]
+  },
+  {
+    "title": "じゃりン子チエ",
+    "titleTranslate": {},
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-10-03T06:30:00.000Z",
+    "end": "1983-03-25T07:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213654"
+      }
+    ]
+  },
+  {
+    "title": "太陽の牙ダグラム",
+    "titleTranslate": {
+      "zh-Hans": [
+        "太阳之牙达格拉姆"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1981-10-23T16:00:00.000Z",
+    "end": "1983-03-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "37183"
+      },
+      {
+        "site": "bilibili",
+        "id": "2439",
+        "begin": "1981-10-22T16:00:00.000Z"
+      }
+    ]
+  }
+]

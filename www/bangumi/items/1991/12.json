@@ -1,0 +1,31 @@
+[
+  {
+    "title": "創竜伝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "创龙传"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-12-21T16:00:00.000Z",
+    "end": "1993-04-07T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "UJtl40uxIVicCQKg",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "28632"
+      },
+      {
+        "site": "bilibili",
+        "id": "3328",
+        "begin": "1991-12-20T16:00:01.000Z"
+      }
+    ]
+  }
+]

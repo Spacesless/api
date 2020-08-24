@@ -1,0 +1,26 @@
+[
+  {
+    "title": "宇宙海賊キャプテンハーロック",
+    "titleTranslate": {
+      "zh-Hans": [
+        "宇宙海盗哈洛克"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/herlock/outline.html",
+    "begin": "1978-03-14T10:00:00.000Z",
+    "end": "1979-02-13T10:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb1bz9",
+        "begin": "2015-11-04T03:33:45.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "38639"
+      }
+    ]
+  }
+]

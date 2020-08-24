@@ -1,0 +1,88 @@
+[
+  {
+    "title": "犬夜叉 天下覇道の剣",
+    "titleTranslate": {
+      "zh-Hans": [
+        "犬夜叉 天下霸道之剑"
+      ],
+      "en": [
+        "InuYasha: The Movie 3: Swords of an Honorable Ruler"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.inuyasha-movie.com/",
+    "begin": "2003-12-20T16:00:00.000Z",
+    "end": "2003-12-20T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "j/jouk3zs06zpvsx1",
+        "begin": ""
+      },
+      {
+        "site": "letv",
+        "id": "46371",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "56MQjvZczApt61M",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "18616"
+      },
+      {
+        "site": "netflix",
+        "id": "70036200",
+        "begin": "2017-09-01T07:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ジャングルはいつもハレのちグゥ FINAL",
+    "titleTranslate": {
+      "zh-Hans": [
+        "热带雨林的爆笑生活FINAL"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://hareguu.bandaivisual.co.jp/",
+    "begin": "2003-12-21T16:00:00.000Z",
+    "end": "2004-06-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "9VgjoQlv3x2AicmY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3293"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrgj957t",
+        "begin": "2014-04-09T23:31:05.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "2093",
+        "begin": "2003-12-20T16:00:00.000Z"
+      },
+      {
+        "site": "acfun",
+        "id": "5025010",
+        "begin": "2019-07-16T06:56:38.000Z"
+      },
+      {
+        "site": "youku",
+        "id": "83760ee026e011e6b32f",
+        "begin": "2020-06-02T05:05:43.000Z"
+      }
+    ]
+  }
+]

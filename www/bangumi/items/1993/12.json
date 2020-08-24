@@ -1,0 +1,84 @@
+[
+  {
+    "title": "劇場版 美少女戦士セーラームーンR",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美少女战士R 花朵的约定"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-12-05T16:00:00.000Z",
+    "end": "1993-12-05T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "5435"
+      }
+    ]
+  },
+  {
+    "title": "メイクアップ！ セーラー戦士",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美少女战士R剧场版 - 美少女战士变身"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-12-05T16:00:00.000Z",
+    "end": "1993-12-05T16:16:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "27358"
+      }
+    ]
+  },
+  {
+    "title": "アルスラーン戦記IV",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亚尔斯兰战记IV 汗血公路"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1993-12-22T16:00:00.000Z",
+    "end": "1993-12-22T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7kUvrRV76ymMCnI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "41863"
+      }
+    ]
+  },
+  {
+    "title": "銀河英雄伝説 新たなる戦いの序曲",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河英雄传说 新战争的序曲"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.ginei.jp/",
+    "begin": "1993-12-18T16:00:00.000Z",
+    "end": "1993-12-18T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "79656"
+      }
+    ]
+  }
+]

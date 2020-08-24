@@ -1,0 +1,238 @@
+[
+  {
+    "title": "終物語 第2期",
+    "titleTranslate": {
+      "zh-Hans": [
+        "终物语 下"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.monogatari-series.com/owarimonogatari/",
+    "begin": "2017-08-12T11:00:00.000Z",
+    "end": "2017-08-13T12:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "175596"
+      },
+      {
+        "site": "bilibili",
+        "id": "6345",
+        "begin": "2017-08-12T12:00:00.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "owarimonogatari2",
+        "begin": "2018-10-31T15:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "直感×アルゴリズム♪",
+    "titleTranslate": {
+      "zh-Hans": [
+        "麟&犀×AI韵律♪"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://project-algorhythm.com/",
+    "begin": "2017-08-17T16:00:00.000Z",
+    "end": "2017-10-13T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "212022"
+      },
+      {
+        "site": "nicovideo",
+        "id": "project-algorhythm",
+        "begin": "2017-08-24T03:00:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhd9rlx",
+        "begin": "2017-09-08T06:55:18.000Z"
+      }
+    ]
+  },
+  {
+    "title": "拳皇命运",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://kofd.snkchina.com.cn/",
+    "begin": "2017-08-03T16:00:00.000Z",
+    "end": "2018-01-11T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "165251"
+      },
+      {
+        "site": "mgtv",
+        "id": "317083",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "美男高校地球防衛部LOVE！LOVE！LOVE！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "美男高校地球防卫部LOVE！LOVE！LOVE！"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://boueibu.com/",
+    "begin": "2017-08-26T16:00:00.000Z",
+    "end": "2017-08-26T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "211562"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh1ugkd",
+        "begin": "2017-11-14T15:55:14.000Z"
+      },
+      {
+        "site": "nicovideo",
+        "id": "boueibu_LLL",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "8232",
+        "begin": "2017-11-14T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ONE PIECE エピソードオブ東の海～ルフィと4人の仲間の大冒険!!～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海贼王 东海特别篇 路飞与四位伙伴的大冒险！！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2017-08-26T16:00:00.000Z",
+    "end": "2017-08-26T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "217886"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhcx3xx",
+        "begin": "2017-08-27T08:38:21.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ハイキュー!! 特集！春高バレーに賭けた青春",
+    "titleTranslate": {
+      "zh-Hans": [
+        "排球少年 特集！赌在春高上的青春"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2017-08-04T16:00:00.000Z",
+    "end": "2017-08-04T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "212459"
+      },
+      {
+        "site": "youku",
+        "id": "acbb86e260a74492a770",
+        "begin": "2020-02-11T05:37:50.000Z"
+      }
+    ]
+  },
+  {
+    "title": "劇場版 Fate/kaleid liner プリズマ☆イリヤ 雪下の誓い",
+    "titleTranslate": {
+      "zh-Hans": [
+        "剧场版 Fate/kaleid liner 魔法少女☆伊莉雅 雪下的誓言"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://anime.prisma-illya.jp/",
+    "begin": "2017-08-26T16:00:00.000Z",
+    "end": "2017-08-26T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "193373"
+      },
+      {
+        "site": "bilibili",
+        "id": "141252",
+        "begin": "2018-01-30T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ガンダムビルドファイターズ GMの逆襲",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高达创战者 GM的逆袭"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://gundam-bf.net/gm/",
+    "begin": "2017-08-25T16:00:00.000Z",
+    "end": "2017-08-25T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "213532"
+      },
+      {
+        "site": "bilibili",
+        "id": "125312",
+        "begin": "2017-08-24T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ガンダムビルドファイターズ バトローグ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "高达创战者 Battlogue"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://gundam-bf.net/battlogue/",
+    "begin": "2017-08-04T16:00:00.000Z",
+    "end": "2017-12-08T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "214710"
+      },
+      {
+        "site": "bilibili",
+        "id": "127452",
+        "begin": "2017-08-03T16:00:00.000Z"
+      }
+    ]
+  }
+]

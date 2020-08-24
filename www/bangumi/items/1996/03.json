@@ -1,0 +1,141 @@
+[
+  {
+    "title": "美少女戦士セーラームーン セーラースターズ",
+    "titleTranslate": {
+      "en": [
+        "Sailor Moon Sailor Stars"
+      ],
+      "zh-Hans": [
+        "美少女战士Sailor Stars",
+        "美少女战士 最后的星光"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://sailormoon.channel.or.jp/",
+    "begin": "1996-03-09T16:00:00.000Z",
+    "end": "1997-02-08T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb12j1",
+        "begin": "2015-08-14T17:08:42.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "5434"
+      }
+    ]
+  },
+  {
+    "title": "みどりのマキバオー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "热斗小马"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_031.html",
+    "begin": "1996-03-02T16:00:00.000Z",
+    "end": "1997-07-12T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "23452"
+      },
+      {
+        "site": "nicovideo",
+        "id": "makibao-anime",
+        "begin": "2017-03-10T09:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラゴンボール 最強への道",
+    "titleTranslate": {
+      "zh-Hans": [
+        "龙珠 最强之道"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-03-02T16:00:00.000Z",
+    "end": "1996-03-02T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "48944"
+      },
+      {
+        "site": "nicovideo",
+        "id": "DBZ_saikyou",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4015",
+        "begin": "2016-02-04T10:34:13.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太と銀河超特急",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦：大雄与银河超特急"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-03-02T16:00:00.000Z",
+    "end": "1996-03-02T17:40:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80951",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "458"
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "2564",
+        "begin": "1996-03-01T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ぼくのマリー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "我的麻理"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-03-06T16:00:00.000Z",
+    "end": "1996-08-21T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "bdumJIzyYqADgek",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "80698"
+      }
+    ]
+  }
+]

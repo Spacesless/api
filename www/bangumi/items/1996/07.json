@@ -1,0 +1,109 @@
+[
+  {
+    "title": "赤ちゃんと僕",
+    "titleTranslate": {
+      "zh-Hans": [
+        "BB有心事"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://pierrot.jp/archives/tv_list_1995/tv_033.html",
+    "begin": "1996-07-11T16:00:00.000Z",
+    "end": "1997-03-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "61649"
+      }
+    ]
+  },
+  {
+    "title": "YAWARA! Special ずっと君のことが…。",
+    "titleTranslate": {
+      "zh-Hans": [
+        "以柔克刚！特别篇 一直对你……。"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-07-19T16:00:00.000Z",
+    "end": "1996-07-19T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "121819"
+      }
+    ]
+  },
+  {
+    "title": "ゲゲゲの鬼太郎 大海獣",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鬼太郎 大海兽"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-07-06T16:00:00.000Z",
+    "end": "1996-07-06T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "207961"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4kld",
+        "begin": "2015-08-11T08:03:32.000Z"
+      }
+    ]
+  },
+  {
+    "title": "（超）劇場版!地獄先生ぬ〜べ〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "地狱教师 剧场版",
+        "地狱教师 天狗传说"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-07-06T16:00:00.000Z",
+    "end": "1996-07-06T16:50:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "158799"
+      }
+    ]
+  },
+  {
+    "title": "スレイヤーズすぺしゃる",
+    "titleTranslate": {
+      "zh-Hans": [
+        "秀逗魔导士SPECIAL"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1996-07-25T16:00:00.000Z",
+    "end": "1997-05-25T16:30:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "11646"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhwb77x",
+        "begin": ""
+      }
+    ]
+  }
+]

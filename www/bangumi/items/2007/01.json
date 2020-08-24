@@ -1,0 +1,513 @@
+[
+  {
+    "title": "GR -GIANT ROBO-",
+    "titleTranslate": {
+      "zh-Hans": [
+        "GR铁甲人"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://gr-anime.com/",
+    "begin": "2007-01-19T14:00:00.000Z",
+    "end": "2007-07-06T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "0xbycNgibruxPzTU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "37203"
+      },
+      {
+        "site": "bilibili",
+        "id": "4815",
+        "begin": "2007-01-18T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "がくえんゆーとぴあ まなびストレート！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "校园乌托邦 学美向前冲！"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/manabi/",
+    "begin": "2007-01-07T16:30:00.000Z",
+    "end": "2007-03-25T17:06:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sicbSULgejswvrRU",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2470"
+      },
+      {
+        "site": "nicovideo",
+        "id": "manabi_straight",
+        "begin": "2017-10-01T03:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "1315",
+        "begin": "2007-01-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "Saint October",
+    "titleTranslate": {
+      "zh-Hans": [
+        "神圣十月"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.saintoctober.konami.jp/",
+    "begin": "2007-01-04T16:55:00.000Z",
+    "end": "2007-06-28T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3612"
+      },
+      {
+        "site": "bilibili",
+        "id": "1321",
+        "begin": "2007-01-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "デルトラクエスト",
+    "titleTranslate": {
+      "en": [
+        "Deltora Quest"
+      ],
+      "zh-Hans": [
+        "拯救德尔托拉"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.deltoraquest.jp/",
+    "begin": "2007-01-05T23:00:00.000Z",
+    "end": "2008-03-28T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sfrGRKwSgsAjoQk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "38536"
+      }
+    ]
+  },
+  {
+    "title": "MAJOR 3rd season",
+    "titleTranslate": {
+      "zh-Hans": [
+        "棒球大联盟 第三季",
+        "棒球大联盟 第3季"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www3.nhk.or.jp/anime/major/",
+    "begin": "2007-01-06T09:00:00.000Z",
+    "end": "2007-06-30T09:25:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "MhrlY8sxod9CwCg",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhbziyh",
+        "begin": "2014-12-24T06:17:42.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "2887"
+      }
+    ]
+  },
+  {
+    "title": "ひだまりスケッチ",
+    "titleTranslate": {
+      "en": [
+        "Hidamari Sketch"
+      ],
+      "zh-Hans": [
+        "向阳素描"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/hidamari/1st/",
+    "begin": "2007-01-11T16:35:00.000Z",
+    "end": "2008-07-11T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "N3lDwSmPicz2gHoY",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "896"
+      },
+      {
+        "site": "nicovideo",
+        "id": "hidamari_01",
+        "begin": "2014-11-14T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "731",
+        "begin": "2007-01-11T16:35:00.000Z"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh2hh1h",
+        "begin": "2018-11-30T16:05:22.000Z"
+      }
+    ]
+  },
+  {
+    "title": "京四郎と永遠の空",
+    "titleTranslate": {
+      "zh-Hans": [
+        "京四郎和永远的天空"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.kyoshiro-sora.net/",
+    "begin": "2007-01-05T04:30:00.000Z",
+    "end": "2007-03-23T05:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "LV4qqBB25iaSHBW0",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "7617"
+      },
+      {
+        "site": "bilibili",
+        "id": "2992",
+        "begin": "2007-01-04T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ひまわりっ！！",
+    "titleTranslate": {
+      "zh-Hans": [
+        "向日葵!!"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/himawari2/",
+    "begin": "2007-01-06T15:30:00.000Z",
+    "end": "2007-03-31T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "QPHMSrIYiaMYppw8",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "j/jzlxtdawrpcvsui",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "21100"
+      }
+    ]
+  },
+  {
+    "title": "のだめカンタービレ",
+    "titleTranslate": {
+      "en": [
+        "Nodame Cantabile"
+      ],
+      "zh-Hans": [
+        "交响情人梦"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nodame-anime.com/season1/index.html",
+    "begin": "2007-01-11T16:00:00.000Z",
+    "end": "2007-06-28T16:15:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "lLmEAmrQQH7hX8c",
+        "begin": ""
+      },
+      {
+        "site": "sohu",
+        "id": "s2013/jxqrm",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "443"
+      },
+      {
+        "site": "bilibili",
+        "id": "1039",
+        "begin": "2007-01-10T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "SHUFFLE! MEMORIES",
+    "titleTranslate": {
+      "zh-Hans": [
+        "SHUFFLE! MEMORIES"
+      ],
+      "en": [
+        "SHUFFLE! MEMORIES"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shuffle-tv.com/",
+    "begin": "2007-01-07T15:00:00.000Z",
+    "end": "2007-03-25T15:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "r4l08lrAMG7RT7c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2938"
+      }
+    ]
+  },
+  {
+    "title": "Venus Versus Virus",
+    "titleTranslate": {
+      "zh-Hans": [
+        "除魔维纳斯"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.tbs.co.jp/anime/vvv/",
+    "begin": "2007-01-11T17:05:00.000Z",
+    "end": "2007-03-29T17:29:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "2XtGxCySAkCjIYk",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3400"
+      }
+    ]
+  },
+  {
+    "title": "月面兎兵器ミーナ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "月面兔兵器米娜"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.mi-na.jp/",
+    "begin": "2007-01-13T17:15:00.000Z",
+    "end": "2007-03-24T17:25:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3416"
+      },
+      {
+        "site": "bilibili",
+        "id": "1322",
+        "begin": "2007-01-12T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "レ・ミゼラブル 少女コゼット",
+    "titleTranslate": {
+      "zh-Hans": [
+        "悲惨世界 少女柯塞特",
+        "孤星泪"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.nippon-animation.co.jp/lesmise/",
+    "begin": "2007-01-07T10:30:00.000Z",
+    "end": "2007-12-30T11:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "eLSQDnbcTIrta9M",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrifu8mo",
+        "begin": "2014-09-12T06:32:44.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "9571"
+      },
+      {
+        "site": "bilibili",
+        "id": "1314",
+        "begin": "2007-01-06T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "恋する天使アンジェリーク ～かがやきの明日～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "恋爱天使 安琪莉可 闪耀的明日"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gamecity.ne.jp/neoromance/tv/ange/02/index.htm",
+    "begin": "2007-01-05T16:30:00.000Z",
+    "end": "2007-03-23T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "21037"
+      }
+    ]
+  },
+  {
+    "title": "東京魔人學園剣風帖 龖",
+    "titleTranslate": {
+      "zh-Hans": [
+        "东京魔人学园剑风帖 龙龙"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://web.archive.org/web/*/www.majin.tv/",
+    "begin": "2007-01-19T14:00:00.000Z",
+    "end": "2007-04-20T14:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "a/am0nal8x8ak0ovf",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "4100"
+      },
+      {
+        "site": "letv",
+        "id": "46653",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "マスター オブ エピック～The Animation Age～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "史诗创造者年代纪"
+      ],
+      "en": [
+        "Master of Epic The Animation Age"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://moepic.com/anime/",
+    "begin": "2007-01-07T17:00:00.000Z",
+    "end": "2007-03-25T17:36:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ecG8OqIIeLYZlic8",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "40543"
+      },
+      {
+        "site": "bilibili",
+        "id": "4817",
+        "begin": "2007-01-06T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "銀河鉄道物語～忘れられた時の惑星～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "银河铁道物语 被遗忘时间的惑星"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2007-01-24T16:00:00.000Z",
+    "end": "2007-04-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Roh08lrAMG7RT7c",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "49267"
+      }
+    ]
+  },
+  {
+    "title": ".hack//G.U. Returner",
+    "titleTranslate": {},
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.hack.channel.or.jp/gu/",
+    "begin": "2007-01-18T16:00:00.000Z",
+    "end": "2007-01-18T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "68953"
+      }
+    ]
+  }
+]

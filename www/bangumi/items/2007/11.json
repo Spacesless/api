@@ -1,0 +1,104 @@
+[
+  {
+    "title": "さぁイコー！たまごっち",
+    "titleTranslate": {
+      "zh-Hans": [
+        "最高! 拓麻歌子"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.gyao.jp/bkids/tamago/index.php",
+    "begin": "2007-11-29T03:00:00.000Z",
+    "end": "2008-02-14T03:03:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "84052"
+      }
+    ]
+  },
+  {
+    "title": "ツバサ TOKYO REVELATIONS",
+    "titleTranslate": {
+      "zh-Hans": [
+        "翼·年代记 东京默示录"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.shonenmagazine.com/tsubasa_tokyo/",
+    "begin": "2007-11-16T16:00:00.000Z",
+    "end": "2008-03-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "k8G7OaEHd7UYlv4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "2894"
+      },
+      {
+        "site": "bilibili",
+        "id": "2854",
+        "begin": "2007-11-15T16:00:00.000Z"
+      },
+      {
+        "site": "letv",
+        "id": "10387",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "Candy☆Boy",
+    "titleTranslate": {},
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2007-11-22T16:00:00.000Z",
+    "end": "2007-11-22T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "95419"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch157",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "映画 Yes! プリキュア5 鏡の国のミラクル大冒険!",
+    "titleTranslate": {
+      "zh-Hans": [
+        "Yes! 光之美少女5 镜之国的奇迹大冒险!"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.toei-anim.co.jp/movie/2007_precure5/",
+    "begin": "2007-11-10T16:00:00.000Z",
+    "end": "2007-11-10T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4419"
+      },
+      {
+        "site": "letv",
+        "id": "89803",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4tzt",
+        "begin": "2015-08-07T08:45:07.000Z"
+      }
+    ]
+  }
+]

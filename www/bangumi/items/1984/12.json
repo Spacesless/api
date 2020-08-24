@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Dr.スランプ アラレちゃん ほよよ!ナナバ城の秘宝",
+    "titleTranslate": {
+      "zh-Hans": [
+        "阿拉蕾 哦呦呦！那那巴城的秘宝"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1984-12-22T16:00:00.000Z",
+    "end": "1984-12-22T16:50:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "82720"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb54vl",
+        "begin": "2015-08-04T01:02:58.000Z"
+      }
+    ]
+  }
+]

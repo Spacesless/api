@@ -1,0 +1,306 @@
+[
+  {
+    "title": "ロックマンエグゼ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "洛克人EXE Season"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/archive/rockman/",
+    "begin": "2002-03-04T09:30:00.000Z",
+    "end": "2003-03-31T10:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "5230"
+      }
+    ]
+  },
+  {
+    "title": "ドラえもん のび太とロボット王国",
+    "titleTranslate": {
+      "zh-Hans": [
+        "哆啦A梦 大雄与机器人王国"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "http://www.shopro.co.jp/tv/archive/rockman/",
+    "begin": "2002-03-09T16:00:00.000Z",
+    "end": "2003-03-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "80962",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "468"
+      },
+      {
+        "site": "pptv",
+        "id": "7qoHhe1TwwFk4ko",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "z/z8alyhrvkd3jp2y",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrh6mrdl",
+        "begin": "2018-05-31T16:00:12.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3866",
+        "begin": "2002-03-08T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "私立荒磯高等学校生徒会執行部",
+    "titleTranslate": {
+      "zh-Hans": [
+        "私立荒矶高等学校生徒会执行部"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-29T16:00:00.000Z",
+    "end": "2002-07-26T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "o/ouf9a0601tiexsy",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "95526"
+      }
+    ]
+  },
+  {
+    "title": "YOU'RE UNDER ARREST 〜逮捕しちゃうぞ〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "You're Under Arrest 逮捕令"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-29T16:00:00.000Z",
+    "end": "2002-03-29T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "u/ug20xje2k1ueg8n",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "45907"
+      }
+    ]
+  },
+  {
+    "title": "WXIII 機動警察パトレイバー",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动警察 十三号废弃物"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-30T16:00:00.000Z",
+    "end": "2002-03-30T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "qq",
+        "id": "a/aj5o1l8zjhv7etb",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3499"
+      },
+      {
+        "site": "bilibili",
+        "id": "4017",
+        "begin": "2002-03-29T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ONE PIECE 珍獣島のチョッパー王国",
+    "titleTranslate": {
+      "zh-Hans": [
+        "海贼王 珍兽岛之乔巴王国"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-02T16:00:00.000Z",
+    "end": "2002-03-02T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "1901"
+      }
+    ]
+  },
+  {
+    "title": "デジモンテイマーズ 暴走デジモン特急",
+    "titleTranslate": {
+      "zh-Hans": [
+        "数码暴龙03驯兽师之王 暴走的数码列车"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-02T16:00:00.000Z",
+    "end": "2002-03-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "3138"
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrhb4tgp",
+        "begin": "2015-08-06T12:03:19.000Z"
+      }
+    ]
+  },
+  {
+    "title": "ミニパト",
+    "titleTranslate": {
+      "zh-Hans": [
+        "机动警察迷你版"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-30T16:00:00.000Z",
+    "end": "2002-03-30T16:35:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "sYVv7VW7K2nMSrI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "13612"
+      },
+      {
+        "site": "bilibili",
+        "id": "5266",
+        "begin": "2002-03-29T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "サイキックアカデミー煌羅万象",
+    "titleTranslate": {
+      "zh-Hans": [
+        "煌罗万象"
+      ]
+    },
+    "type": "web",
+    "lang": "ja",
+    "officialSite": "http://www.starchild.co.jp/special/aura/index.html",
+    "begin": "2002-03-29T16:00:00.000Z",
+    "end": "2002-09-13T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "4210"
+      }
+    ]
+  },
+  {
+    "title": "ガンフロンティア",
+    "titleTranslate": {
+      "zh-Hans": [
+        "枪之国度"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-28T16:00:00.000Z",
+    "end": "2002-06-24T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "2BHradE3pibVIxia4",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "69698"
+      }
+    ]
+  },
+  {
+    "title": "カナリア 〜この想いを歌に乗せて〜",
+    "titleTranslate": {
+      "zh-Hans": [
+        "金丝雀"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-22T16:00:00.000Z",
+    "end": "2002-03-22T16:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "78038"
+      },
+      {
+        "site": "nicovideo",
+        "id": "ch61002",
+        "begin": ""
+      }
+    ]
+  },
+  {
+    "title": "パルムの樹",
+    "titleTranslate": {
+      "zh-Hans": [
+        "帕卢姆之树"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "2002-03-16T16:00:00.000Z",
+    "end": "2002-03-16T16:00:00.000Z",
+    "comment": "",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "25411"
+      },
+      {
+        "site": "qq",
+        "id": "m/mzc0020082ywx0v",
+        "begin": ""
+      }
+    ]
+  }
+]

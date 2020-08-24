@@ -1,0 +1,31 @@
+[
+  {
+    "title": "PERFECT BLUE",
+    "titleTranslate": {
+      "en": [
+        "PERFECT BLUE"
+      ],
+      "zh-Hans": [
+        "蓝色恐惧",
+        "未麻的部屋",
+        "未麻的房间"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1998-02-28T16:00:00.000Z",
+    "end": "1998-02-28T17:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "18638",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "839"
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "title": "ルパン三世 ナポレオンの辞書を奪え",
+    "titleTranslate": {
+      "zh-Hans": [
+        "鲁邦三世：拿破仑词典争夺战"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://lupin-3rd.net/sakuhin_tvsp.html",
+    "begin": "1991-08-09T16:00:00.000Z",
+    "end": "1991-08-09T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "67766"
+      },
+      {
+        "site": "nicovideo",
+        "id": "lupin-3rd-SP",
+        "begin": ""
+      },
+      {
+        "site": "pptv",
+        "id": "ibZ32dNxCsvBT0Tk",
+        "begin": ""
+      },
+      {
+        "site": "bilibili",
+        "id": "3931",
+        "begin": "1991-08-08T16:00:01.000Z"
+      }
+    ]
+  },
+  {
+    "title": "人魚の森",
+    "titleTranslate": {
+      "zh-Hans": [
+        "人鱼之森"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-08-16T16:00:00.000Z",
+    "end": "1991-08-16T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "K2Vf3UWrG1m8OqI",
+        "begin": ""
+      },
+      {
+        "site": "qq",
+        "id": "i/izzhgoy2bctltv6",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "52826"
+      },
+      {
+        "site": "bilibili",
+        "id": "1965",
+        "begin": "2003-10-03T16:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "DETONATORオーガン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "暴风战士奥刚"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-08-25T16:00:00.000Z",
+    "end": "1992-04-25T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "Pw34dt5EtPJV0zs",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "32291"
+      }
+    ]
+  },
+  {
+    "title": "アルスラーン戦記",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亚尔斯兰战记"
+      ]
+    },
+    "type": "movie",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1991-08-17T16:00:00.000Z",
+    "end": "1991-08-17T17:00:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "7kUvrRV76ymMCnI",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "28628"
+      }
+    ]
+  }
+]

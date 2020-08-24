@@ -1,0 +1,45 @@
+[
+  {
+    "title": "まんが世界昔ばなし",
+    "titleTranslate": {
+      "zh-Hans": [
+        "世界童话名作选"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1976-10-07T21:30:00.000Z",
+    "end": "1979-03-28T22:00:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "172850"
+      }
+    ]
+  },
+  {
+    "title": "キャンディ・キャンディ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "小甜甜"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "",
+    "begin": "1976-10-01T16:00:00.000Z",
+    "end": "1979-02-02T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "ibDMNiaicNZyQdq6FA",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "60346"
+      }
+    ]
+  }
+]

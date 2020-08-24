@@ -1,0 +1,132 @@
+[
+  {
+    "title": "クイーンズブレイド 玉座を継ぐ者",
+    "titleTranslate": {
+      "zh-Hans": [
+        "女皇之刃 王座的继承者"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://queensblade.tv/",
+    "begin": "2009-09-23T23:00:00.000Z",
+    "end": "2009-12-09T23:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "2605"
+      },
+      {
+        "site": "nicovideo",
+        "id": "queensblade02",
+        "begin": "2012-04-11T06:00:00.000Z"
+      }
+    ]
+  },
+  {
+    "title": "バトルスピリッツ 少年激覇ダン",
+    "titleTranslate": {
+      "zh-Hans": [
+        "战斗之魂 少年激霸"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://www.sunrise-inc.co.jp/battlespirits2/",
+    "begin": "2009-09-12T22:00:00.000Z",
+    "end": "2010-09-04T22:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "hMfBP6cNfbsenAQ",
+        "begin": ""
+      },
+      {
+        "site": "iqiyi",
+        "id": "a_19rrk7hgtt",
+        "begin": "2012-12-11T11:56:51.000Z"
+      },
+      {
+        "site": "bangumi",
+        "id": "14766"
+      }
+    ]
+  },
+  {
+    "title": "ジャングル大帝～勇気が未来をかえる～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "森林大帝 -勇气改变未来-"
+      ]
+    },
+    "type": "tv",
+    "lang": "ja",
+    "officialSite": "http://wwwz.fujitv.co.jp/leo/index.html",
+    "begin": "2009-09-05T16:00:00.000Z",
+    "end": "2009-09-05T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "bangumi",
+        "id": "62930"
+      }
+    ]
+  },
+  {
+    "title": "その花びらにくちづけを 玲緒麻衣だいありぃ",
+    "titleTranslate": {
+      "zh-Hans": [
+        "亲吻那片花瓣 玲绪麻衣日记"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://www.a1c.jp/~chuchu/top.html",
+    "begin": "2009-09-26T16:00:00.000Z",
+    "end": "2009-11-27T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "letv",
+        "id": "30210",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "210715"
+      }
+    ]
+  },
+  {
+    "title": "魔法先生ネギま! ～もうひとつの世界～",
+    "titleTranslate": {
+      "zh-Hans": [
+        "魔法老师！～另一个世界～"
+      ]
+    },
+    "type": "ova",
+    "lang": "ja",
+    "officialSite": "http://negima.kc.kodansha.co.jp",
+    "begin": "2009-09-17T16:00:00.000Z",
+    "end": "2010-08-17T16:30:00.000Z",
+    "sites": [
+      {
+        "site": "pptv",
+        "id": "4CwYlv5k1BJ181s",
+        "begin": ""
+      },
+      {
+        "site": "bangumi",
+        "id": "3341"
+      },
+      {
+        "site": "nicovideo",
+        "id": "negima-oad02",
+        "begin": "2017-09-07T06:00:00.000Z"
+      },
+      {
+        "site": "bilibili",
+        "id": "3773",
+        "begin": "2009-09-16T16:00:01.000Z"
+      }
+    ]
+  }
+]
