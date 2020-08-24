@@ -6,13 +6,12 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ROOT_PATH, 'www');
     this.postals = [];
   }
 
   async indexAction() {
     const { keyword } = this.get();
-    const jsonPath = path.join(this.baseurl, 'postalcode.json');
+    const jsonPath = path.join(think.ASSETS_PATH, 'postalcode.json');
     const isExist = think.isExist(jsonPath);
     this.postals = isExist ? await fs.readJson(jsonPath) : this.formatToJson();
     const data = this.postals.filter(item => item.province.includes(keyword) || item.city.includes(keyword) || item.area.includes(keyword));
@@ -21,7 +20,7 @@ module.exports = class extends Base {
 
   formatToJson() {
     // 解析得到文档中的所有 sheet
-    const sheets = xlsx.parse(path.join(this.baseurl, 'xlsx', 'youbian.xlsx'));
+    const sheets = xlsx.parse(path.join(think.ASSETS_PATH, '/xlsx', 'youbian.xlsx'));
     const temp = [];
     // 遍历 sheet
     sheets.forEach(sheet => {
@@ -37,7 +36,7 @@ module.exports = class extends Base {
         temp.push(format);
       }
     });
-    fs.writeJsonSync(path.join(this.baseurl, 'postalcode.json'), temp);
+    fs.writeJsonSync(path.join(think.ASSETS_PATH, 'postalcode.json'), temp);
     return temp;
   }
 };

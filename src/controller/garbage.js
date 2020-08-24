@@ -3,11 +3,6 @@ const path = require('path');
 const fs = require('fs-extra');
 
 module.exports = class extends Base {
-  constructor(...arg) {
-    super(...arg);
-    this.baseurl = path.join(think.ROOT_PATH, 'www');
-  }
-
   async indexAction() {
     const { keyword } = this.get();
     const garbages = await fs.readJson(path.join(this.baseurl, 'garbage.json'));

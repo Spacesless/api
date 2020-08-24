@@ -14,7 +14,7 @@ module.exports = [
     enable: isDev,
     options: {
       root: path.join(think.ROOT_PATH, 'www'),
-      publicPath: /^\/(model|swagger|favicon\.ico)/
+      publicPath: /^\/(almanac|cascade|model|swagger)/
     }
   },
   {

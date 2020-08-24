@@ -8,7 +8,7 @@ module.exports = class extends Base {
       const { models } = item;
       if (!think.isArray(models)) {
         const modelDir = path.join(this.basePath, models);
-        if (fs.statSync(modelDir)) {
+        if (think.isExist(modelDir)) {
           this.setTextures(modelDir);
         }
       }
@@ -20,62 +20,49 @@ module.exports = class extends Base {
    * 设置材质
    * @param {String} modelName 模型名称
    */
-  setTextures(modelName) {
-    const listPath = path.join(modelName, 'textures_list.json');
-    if (think.isExist(listPath)) return;
+  async setTextures(modelName) {
     const orderPath = path.join(modelName, 'textures_order.json');
     let texturesList = [];
-    let result = [];
+    const switchList = [];
+    let randomList = [];
     if (think.isExist(orderPath)) {
-      const order = fs.readJsonSync(orderPath);
-      order.forEach(texturesDir => {
-        let files = think.getdirFiles(path.join(modelName, texturesDir));
-        files = files.map(item => {
-          return `${texturesDir}/${item}`;
-        });
-        texturesList.push(files);
+      const orderList = await fs.readJson(orderPath);
+      const { faceName, upperName, lowerName, headwearName } = orderList;
+
+      const faceTextures = think.getdirFiles(path.join(modelName, faceName));
+      const upperTextures = think.getdirFiles(path.join(modelName, upperName));
+      const lowerTextures = think.getdirFiles(path.join(modelName, lowerName));
+      const headwearTextures = think.getdirFiles(path.join(modelName, headwearName));
+      const bodyTextures = upperTextures.map((item, index) => {
+        return [`${upperName}/${item}`, `${lowerName}/${lowerTextures[index]}`];
       });
-      for (let i = 0; i < texturesList[3].length; i++) {
-        texturesList[1].forEach((item, index) => {
-          result.push([texturesList[0][0], item, texturesList[2][index], texturesList[3][i]]);
+
+      // switch
+      headwearTextures.forEach(headwear => {
+        const name = headwear.split('-');
+        name.pop();
+        const target = name.join('-');
+        const bodyIndex = upperTextures.findIndex(item => item.includes(target));
+        switchList.push([`${faceName}/${faceTextures[0]}`, ...bodyTextures[bodyIndex], `${headwearName}/${headwear}`]);
+      });
+      const switchPath = path.join(modelName, 'switch_list.json');
+      await fs.writeJson(switchPath, switchList);
+
+      // random
+      headwearTextures.forEach(headwear => {
+        bodyTextures.forEach(body => {
+          randomList.push([`${faceName}/${faceTextures[0]}`, ...body, `${headwearName}/${headwear}`]);
         });
-      }
+      });
+      const randomPath = path.join(modelName, 'random_list.json');
+      await fs.writeJson(randomPath, randomList);
     } else {
-      const modelJson = fs.readJsonSync(path.join(modelName, 'model.json'));
+      const modelJson = await fs.readJson(path.join(modelName, 'model.json'));
       const texturesDir = modelJson.textures[0].split('/')[0];
       texturesList = think.getdirFiles(path.join(modelName, texturesDir));
-      result = texturesList.map(item => {
-        return `${texturesDir}/${item}`;
-      });
-    }
-    return fs.writeJsonSync(listPath, result);
-  }
-
-  convertWebp(modelName) {
-    const orderPath = path.join(modelName, '/textures_order.json');
-    if (think.isExist(orderPath)) {
-      const order = fs.readJsonSync(orderPath);
-      order.forEach(texturesDir => {
-        let files = think.getdirFiles(path.join(modelName, texturesDir));
-        files = files.map(item => {
-          return `${texturesDir}/${item}`;
-        });
-        files.forEach(async(item) => {
-          const src = path.join(modelName, item);
-          const dest = path.join(modelName, 'assets/', path.dirname(item), path.basename(src, '.png') + '.webp');
-          await think.sharpFormat(src, dest);
-        });
-      });
-    } else {
-      const modelJson = fs.readJsonSync(path.join(modelName, 'model.json'));
-      const texturesDir = modelJson.textures[0].split('/')[0];
-      const files = think.getdirFiles(path.join(modelName, texturesDir));
-      files.forEach(async(item) => {
-        item = `${texturesDir}/${item}`;
-        const src = path.join(modelName, item);
-        const dest = path.join(modelName, 'assets/', path.dirname(item), path.basename(src, '.png') + '.webp');
-        await think.sharpFormat(src, dest);
-      });
+      randomList = texturesList.map(item => `${texturesDir}/${item}`);
+      const switchPath = path.join(modelName, 'switch_list.json');
+      await fs.writeJson(switchPath, randomList);
     }
   }
 };
