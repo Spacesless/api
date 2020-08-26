@@ -13,6 +13,7 @@
     "axios": "^0.19.2",
     "fs-extra": "^8.1.0",
     "js-base64": "^2.5.1",
+    "lunar-javascript": "^1.0.15",
     "node-xlsx": "^0.15.0",
     "think-cache": "^1.0.0",
     "think-cache-file": "^1.0.8",

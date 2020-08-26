@@ -1,586 +1,132 @@
 const Base = require('./base');
-const path = require('path');
-const fs = require('fs-extra');
+const { Solar, SolarUtil, LunarUtil } = require('lunar-javascript');
 
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.monthEnMap = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    this.weekCnMap = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-    this.weekEnMap = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', '星期六'];
-    // 公历每个月份的天数普通表
-    this.solarMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-    // 二十四节气
-    this.solarTerm = [
-      '小寒', '大寒', '立春', '雨水', '惊蛰', '春分',
-      '清明', '谷雨', '立夏', '小满', '芒种', '夏至',
-      '小暑', '大暑', '立秋', '处暑', '白露', '秋分',
-      '寒露', '霜降', '立冬', '小雪', '大雪', '冬至'];
-    // 公历节日
-    this.solarFestivals = [
-      {1: '元旦'},
-      {2: '湿地日', 14: '情人节'},
-      {8: '妇女节', 12: '植树节', 15: '消费者权益日'},
-      {1: '愚人节', 22: '地球日'},
-      {1: '国际劳动节', 4: '青年节', 12: '护士节', 18: '博物馆日'},
-      {1: '儿童节', 5: '环境日', 23: '奥林匹克日'},
-      {1: '建党节'},
-      {1: '建军节'},
-      {4: '抗战胜利日', 10: '教师节'},
-      {1: '国庆节', 31: '万圣节'},
-      {17: '学生日'},
-      {24: '平安夜', 25: '圣诞节'}
-    ];
-    // 农历1900-2100的润大小信息表
-    this.lunarInfo = [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2, // 1900-1909
-      0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977, // 1910-1919
-      0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970, // 1920-1929
-      0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950, // 1930-1939
-      0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557, // 1940-1949
-      0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0, // 1950-1959
-      0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0, // 1960-1969
-      0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6, // 1970-1979
-      0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570, // 1980-1989
-      0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0, // 1990-1999
-      0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5, // 2000-2009
-      0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930, // 2010-2019
-      0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530, // 2020-2029
-      0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45, // 2030-2039
-      0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0, // 2040-2049
-      0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0, // 2050-2059
-      0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4, // 2060-2069
-      0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0, // 2070-2079
-      0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160, // 2080-2089
-      0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252, // 2090-2099
-      0x0d520];
-    // 农历节日
-    this.lunarFestivals = [
-      {1: '春节', 15: '元宵节'},
-      {2: '龙抬头'},
-      {3: '上巳节'},
-      {},
-      {4: '端午节'},
-      {},
-      {5: '七夕', 15: '中元节'},
-      {15: '中秋节'},
-      {9: '重阳节'},
-      {1: '寒衣节'},
-      {},
-      {8: '腊八节', 23: '小年', 30: '除夕'}
-    ];
-    // 天干地支之天干速查表
-    this.Gan = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
-    // 天干地支之地支速查表
-    this.Zhi = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
-    // 数字转中文速查表
-    this.numberStr = ['日', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二'];
-    this.chineseNumber = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖'];
-    // 日期转农历称呼速查表
-    this.dateStr = ['初', '十', '廿', '卅'];
-    // 月份转农历称呼速查表
-    this.monthStr = ['正', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '冬', '腊'];
-    // 十二生肖速查表
-    this.Zodiac = ['鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴', '鸡', '狗', '猪'];
-    this.calendar = {};
+    this.monthEnEnum = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    this.weekCnEnum = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+    this.weekEnEnum = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   }
 
   async indexAction() {
-    const calendar = await this.getCalendar();
-    return this.success(calendar);
-  }
+    const { date, includeLunar, includeAlmanac } = this.get();
 
-  getCurrentTimeAction() {
-    const now = new Date();
+    const calcTime = date ? new Date(date) : new Date();
+    const solarInstance = Solar.fromDate(calcTime);
+    const lunarInstance = solarInstance.getLunar();
+
+    const solarYear = solarInstance.getYear();
+    const solarMonth = solarInstance.getMonth();
+    const solarWeek = solarInstance.getWeek();
+    const hour = calcTime.getHours();
+    const minute = calcTime.getMinutes();
+
     const result = {
-      timestamp: now.getTime(),
-      UTC: now.toUTCString(),
-      Local: now.toLocaleString()
+      year: solarYear, // 公历年
+      leapYear: solarInstance.isLeapYear(), // 是否为闰年
+      month: solarMonth, // 公历月
+      maxDayInMonth: SolarUtil.getDaysOfMonth(solarYear, solarMonth), // 公历当月天数
+      enMonth: this.monthEnEnum[solarMonth - 1], // 公历月（英文）
+      astro: solarInstance.getXingZuo() + '座', // 星座
+      cnWeek: this.weekCnEnum[solarWeek], // 星期（中文）
+      enWeek: this.weekEnEnum[solarWeek], // 星期（英文）
+      day: solarInstance.getDay(), // 公历日
+      hour,
+      minute,
+      second: calcTime.getSeconds(),
+      festivals: [...solarInstance.getFestivals(), ...solarInstance.getOtherFestivals()] // 公历节日
     };
+
+    if (includeLunar) {
+      const lunarYear = lunarInstance.getYear();
+      const cnYear = lunarInstance.getYearInChinese();
+      const lunarMonth = lunarInstance.getMonth();
+
+      // 计算当月的二十四节气
+      const solarTerms = [];
+      const jieQiList = lunarInstance.getJieQiList();
+      const jieQi = lunarInstance.getJieQiTable();
+      for (let i = 0, j = jieQiList.length; i < j; i++) {
+        const name = jieQiList[i];
+        const time = jieQi[name].toYmdHms();
+        if (jieQi[name].getMonth() === solarMonth) {
+          solarTerms.push({ name, time });
+        }
+      }
+
+      const lunar = {
+        zodiac: lunarInstance.getYearShengXiao(), // 生肖
+        year: lunarYear, // 农历年
+        month: lunarMonth, // 农历月
+        day: lunarInstance.getDay(), // 农历日
+        cnYear: cnYear ? cnYear.replace(new RegExp('〇', 'g'), '零') : '', // 农历年（中文）
+        cnMonth: lunarInstance.getMonthInChinese() + '月', // 农历月（中文）
+        cnDay: lunarInstance.getDayInChinese(), // 农历日（中文）
+        cyclicalYear: lunarInstance.getYearInGanZhi(), // 干支纪年
+        cyclicalMonth: lunarInstance.getMonthInGanZhi(), // 干支纪月
+        cyclicalDay: lunarInstance.getDayInGanZhi(), // 干支纪日
+        hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
+        maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
+        leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
+        yuexiang: lunarInstance.getYueXiang() + '月', // 月相
+        festivals: [...lunarInstance.getFestivals(), ...lunarInstance.getOtherFestivals()], // 农历节日
+        solarTerms // 二十四节气
+      };
+      result.lunar = lunar;
+    }
+
+    if (includeAlmanac) {
+      const almanac = {
+        yi: {
+          day: lunarInstance.getDayYi().join('.'), // 日宜
+          time: lunarInstance.getTimeYi().join('.') // 时宜
+        },
+        ji: {
+          day: lunarInstance.getDayJi().join('.'), // 日忌
+          time: lunarInstance.getTimeJi().join('.') // 时忌
+        },
+        chong: {
+          day: '生肖冲' + lunarInstance.getDayChongDesc(), // 日冲
+          time: '生肖冲' + lunarInstance.getTimeChongDesc() // 时冲
+        },
+        sha: {
+          day: '煞' + lunarInstance.getDaySha(), // 日煞
+          time: '煞' + lunarInstance.getTimeSha() // 时煞
+        },
+        xingxiu: lunarInstance.getXiu() + '宿', // 二十八宿
+        zheng: lunarInstance.getZheng(), // 七政
+        pengzubaiji: [lunarInstance.getPengZuGan(), lunarInstance.getPengZuZhi()], // 彭祖百忌
+        jishenfangwei: { // 吉神方位
+          xi: lunarInstance.getDayPositionXiDesc(), // 喜神
+          yanggui: lunarInstance.getDayPositionYangGuiDesc(), // 阳贵神
+          yingui: lunarInstance.getDayPositionYinGuiDesc(), // 阴贵神
+          fu: lunarInstance.getDayPositionFuDesc(), // 福神
+          cai: lunarInstance.getDayPositionCaiDesc() // 财神
+        },
+        taishen: { // 胎神
+          month: lunarInstance.getMonthPositionTai(),
+          day: lunarInstance.getDayPositionTai()
+        },
+        nayin: { // 纳音
+          year: lunarInstance.getYearNaYin(),
+          month: lunarInstance.getMonthNaYin(),
+          day: lunarInstance.getDayNaYin(),
+          time: lunarInstance.getTimeNaYin()
+        },
+        shiershen: lunarInstance.getZhiXing() + '执神' // 建除十二执星
+      };
+      result.almanac = almanac;
+    }
+
     return this.success(result);
   }
 
   /**
-   * 判断公历节日
-   * @param {Number} month 公历月份
-   * @param {Number} date 公历日
-   * @returns {Array} festivals 当天的节日
+   * 格式化成两位数
+   * @param {Number} val
    */
-  getSolarfestival(month, date) {
-    const festivals = [];
-    const festivalJson = this.SolarFestivals[month - 1];
-    for (const key in festivalJson) {
-      if (key === date) {
-        festivals.push(festivalJson[key]);
-        return;
-      }
-    }
-    if (month === 5 && date === this.uncertainty(5, 2, 7)) {
-      festivals.push('母亲节');
-    } else if (month === 6 && date === this.uncertainty(6, 3, 7)) {
-      festivals.push('父亲节');
-    }
-    return festivals;
-  }
-
-  /**
-   * 判断不固定节日
-   * @param {Number} month 阳历月份
-   * @param {Number} week 阳历第几周
-   * @param {Number} day 一周里第几天
-   */
-  uncertainty(month, week, day) {
-    const setTime = new Date(this.calendar.year, month - 1, 1);
-    const fwk = setTime.getDay();
-    let count;
-    if (fwk > day) {
-      count = 7 - fwk + day + (week - 1) * 7 + 1;
-    } else {
-      count = day - fwk + (week - 1) * 7 + 1;
-    }
-    return count;
-  }
-  /**
-   * 判断是否是闰年
-   * @param {Number} year 阳历年
-   * @returns {Boolean} 是否为闰年
-   */
-  isLeapYear(year) {
-    return year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0);
-  }
-  /**
-  * 返回农历y年一整年的总天数
-  * @param lunar Year
-  * @return Number
-  * @eg:var count = calendar.getLunarYearDays(1987) ;//count=387
-  */
-  getLunarYearDays(y) {
-    let sum = 348;
-    for (let i = 0x8000; i > 0x8; i >>= 1) {
-      sum += (this.lunarInfo[y - 1900] & i) ? 1 : 0;
-    }
-    return (sum + this.getLunarLeapDays(y));
-  }
-
-  /**
-  * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
-  * @param lunar Year
-  * @return Number (0-12)
-  * @eg:var getLunarLeapMonth = calendar.getLunarLeapMonth(1987) ;//getLunarLeapMonth=6
-  */
-  getLunarLeapMonth(y) { // 闰字编码 \u95f0
-    return (this.lunarInfo[y - 1900] & 0xf);
-  }
-
-  /**
-  * 返回农历y年闰月的天数 若该年没有闰月则返回0
-  * @param lunar Year
-  * @return Number (0、29、30)
-  * @eg:var getLunarLeapMonthDay = calendar.getLunarLeapDays(1987) ;//getLunarLeapMonthDay=29
-  */
-  getLunarLeapDays(y) {
-    if (this.getLunarLeapMonth(y)) {
-      return ((this.lunarInfo[y - 1900] & 0x10000) ? 30 : 29);
-    }
-    return (0);
-  }
-
-  /**
-  * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用getLunarLeapDays方法
-  * @param lunar Year
-  * @return Number (-1、29、30)
-  * @eg:var MonthDay = calendar.getLunarMonthDays(1987,9) ;//MonthDay=29
-  */
-  getLunarMonthDays(y, m) {
-    if (m > 12 || m < 1) { return -1 }// 月份参数从1至12，参数错误返回-1
-    return ((this.lunarInfo[y - 1900] & (0x10000 >> m)) ? 30 : 29);
-  }
-
-  /**
-   * 农历年份转换为干支纪年
-   * @param  lYear 农历年的年份数
-   * @return Cn string
-   */
-  toGanZhiYear(lYear) {
-    var ganKey = (lYear - 3) % 10;
-    var zhiKey = (lYear - 3) % 12;
-    if (ganKey === 0) ganKey = 10;// 如果余数为0则为最后一个天干
-    if (zhiKey === 0) zhiKey = 12;// 如果余数为0则为最后一个地支
-    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
-  }
-
-  /**
-   * 公历月、日判断所属星座
-   * @param  cMonth [description]
-   * @param  cDay [description]
-   * @return Cn string
-   */
-  getAstro(cMonth, cDay) {
-    var s = '\u9b54\u7faf\u6c34\u74f6\u53cc\u9c7c\u767d\u7f8a\u91d1\u725b\u53cc\u5b50\u5de8\u87f9\u72ee\u5b50\u5904\u5973\u5929\u79e4\u5929\u874e\u5c04\u624b\u9b54\u7faf';
-    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
-    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + '\u5ea7';// 座
-  }
-
-  /**
-  * 传入offset偏移量返回干支
-  * @param offset 相对甲子的偏移量
-  * @return Cn string
-  */
-  toGanZhi(offset) {
-    return this.Gan[offset % 10] + this.Zhi[offset % 12];
-  }
-
-  /**
-  * 天文法计算二十四节气
-  * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
-  * @return day Number
-  * @eg:var _24 = calendar.getTerms(1987,3) ;//_24=4;意即1987年2月4日立春
-  */
-  getTerms(_year, month, day) {
-    const year = _year.toString().substr(-2) - 0;
-    const coefficient = [
-      [5.4055, 2019, -1],
-      [20.12, 2082, 1],
-      [3.87],
-      [18.74, 2026, -1],
-      [5.63],
-      [20.646, 2084, 1],
-      [4.81],
-      [20.1],
-      [5.52, 1911, 1],
-      [21.04, 2008, 1],
-      [5.678, 1902, 1],
-      [21.37, 1928, 1],
-      [7.108, 2016, 1],
-      [22.83, 1922, 1],
-      [7.5, 2002, 1],
-      [23.13],
-      [7.646, 1927, 1],
-      [23.042, 1942, 1],
-      [8.318],
-      [23.438, 2089, 1],
-      [7.438, 2089, 1],
-      [22.36, 1978, 1],
-      [7.18, 1954, 1],
-      [21.94, 2021, -1]
-    ];
-
-    const ratio = (month - 1) * 2;
-    const leapValue = Math.floor((year - 1) / 4);
-    let firstNode = Math.floor(year * 0.2422 + coefficient[ratio][0]) - leapValue;
-    if (coefficient[ratio][1] && coefficient[ratio][1] === _year) {
-      firstNode += coefficient[ratio][2];
-    }
-    const secondNode = Math.floor(year * 0.2422 + coefficient[ratio + 1][0]) - leapValue;
-    if (coefficient[ratio + 1][1] && coefficient[ratio + 1][1] === _year) {
-      firstNode += coefficient[ratio + 1][2];
-    }
-
-    const terms = [
-      {
-        date: firstNode,
-        term: this.solarTerm[ratio]
-      },
-      {
-        date: secondNode,
-        term: this.solarTerm[ratio + 1]
-      }
-    ];
-    return terms;
-  }
-
-  toLunarYear(year) {
-    const upercase = this.chineseNumber;
-    const thousands = Math.floor(year / 1000) % 10;
-    const hundreds = Math.floor(year / 100) % 10;
-    const tens = Math.floor(year / 10) % 10;
-    const units = year % 10;
-    return `${upercase[thousands]}${upercase[hundreds]}${upercase[tens]}${upercase[units]}`;
-  }
-
-  /**
-  * 传入农历数字月份返回汉语通俗表示法
-  * @param lunar month
-  * @return Cn string
-  * @eg:var cnMonth = calendar.toLunarMonth(12) ;//cnMonth='腊月'
-  */
-  toLunarMonth(m) { // 月 => \u6708
-    if (m > 12 || m < 1) { return -1 } // 若参数错误 返回-1
-    var s = this.monthStr[m - 1];
-    s += '\u6708';// 加上月字
-    return s;
-  }
-
-  /**
-    * 传入农历日期数字返回汉字表示法
-    * @param lunar day
-    * @return Cn string
-    * @eg:var cnDay = calendar.toLunarDay(21) ;//cnMonth='廿一'
-    */
-  toLunarDay(d) {
-    var s;
-    switch (d) {
-      case 10:
-        s = '初十';
-        break;
-      case 20:
-        s = '二十';
-        break;
-      case 30:
-        s = '三十';
-        break;
-      default :
-        s = this.dateStr[Math.floor(d / 10)];
-        s += this.numberStr[d % 10];
-    }
-    return (s);
-  }
-
-  /*
-    * 获取当前时间属于哪个时辰
-    @param int $time 时间戳
-    */
-  getLunarHour(hour) {
-    const hourMap = [
-      { time: 23, name: '子' },
-      { time: 1, name: '丑' },
-      { time: 3, name: '寅' },
-      { time: 5, name: '卯' },
-      { time: 7, name: '辰' },
-      { time: 9, name: '巳' },
-      { time: 11, name: '午' },
-      { time: 13, name: '未' },
-      { time: 15, name: '申' },
-      { time: 17, name: '酉' },
-      { time: 19, name: '戌' },
-      { time: 21, name: '亥' }
-    ];
-    const row = hourMap.find(item => {
-      return hour === item.time || hour === (item.time + 1 > 23 ? 0 : item.time + 1);
-    });
-    return row ? `${row.name}时` : '';
-  }
-
-  /**
-    * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
-    * @param y year
-    * @return Cn string
-    * @eg:var animal = calendar.getZodiac(1987) ;//animal='兔'
-    */
-  getZodiac(y) {
-    return this.Zodiac[(y - 4) % 12];
-  }
-
-  async getAlmanac(year, month, date) {
-    if (year < 2008 || year > 2020) {
-      return null;
-    }
-    const jsonPath = path.join(think.ASSETS_PATH, `/almanac/${year}.json`);
-    const jsonObj = await fs.readJson(jsonPath);
-    const keys = `d${month < 10 ? '0' + month : month}${date < 10 ? '0' + date : date}`;
-    return Object.assign({keys}, jsonObj[keys]);
-  }
-
-  /**
-    * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
-    * @param y  solar year
-    * @param m  solar month
-    * @param d  solar day
-    * @return JSON object
-    * @eg:console.log(calendar.solar2lunar(1987,11,01));
-    */
-  async getCalendar(year, month, date) { // 参数区间1900.1.31~2100.12.31
-    // 年份限定、上限
-    if (year < 1900 || year > 2100) {
-      return -1;// undefined转换为数字变为NaN
-    }
-    // 公历传参最下限
-    if (year === 1900 && month === 1 && date < 31) {
-      return -1;
-    }
-    // 未传参  获得当天
-    let currentDate;
-    if (!year) {
-      currentDate = new Date();
-    } else {
-      currentDate = new Date(year, parseInt(month) - 1, date);
-    }
-
-    // 修正ymd参数
-    year = currentDate.getFullYear();
-    month = currentDate.getMonth() + 1;
-    date = currentDate.getDate();
-    const hour = currentDate.getHours();
-    const minute = currentDate.getMinutes();
-    const second = currentDate.getSeconds();
-
-    let i = 0;
-    let temp = 0;
-    let offset = (Date.UTC(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
-    for (i = 1900; i < 2101 && offset > 0; i++) {
-      temp = this.getLunarYearDays(i);
-      offset -= temp;
-    }
-    if (offset < 0) {
-      offset += temp; i--;
-    }
-
-    // 星期几
-    const nWeek = currentDate.getDay();
-
-    // 农历年
-    const lunarYear = i;
-    const leap = this.getLunarLeapMonth(i); // 闰哪个月
-    let isLeapYear = false;
-    const isLeapMonth = this.getLunarLeapMonth(lunarYear) === month;
-
-    // 效验闰月
-    for (i = 1; i < 13 && offset > 0; i++) {
-      // 闰月
-      if (leap > 0 && i === (leap + 1) && isLeapYear === false) {
-        --i;
-        isLeapYear = true; temp = this.getLunarLeapDays(lunarYear); // 计算农历闰月天数
-      } else {
-        temp = this.getLunarMonthDays(lunarYear, i);// 计算农历普通月天数
-      }
-      // 解除闰月
-      if (isLeapYear === true && i === (leap + 1)) { isLeapYear = false }
-      offset -= temp;
-    }
-    // 闰月导致数组下标重叠取反
-    if (offset === 0 && leap > 0 && i === leap + 1) {
-      if (isLeapYear) {
-        isLeapYear = false;
-      } else {
-        isLeapYear = true; --i;
-      }
-    }
-    if (offset < 0) {
-      offset += temp; --i;
-    }
-
-    // 农历月
-    const lunarMonth = i;
-    // 农历日
-    var day = offset + 1;
-    // 天干地支处理
-    var sm = month - 1;
-
-    // 当月的两个节气
-    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
-    var Term = this.getTerms(year, month, date);
-    var firstNode = Term[0].date;// 返回当月「节」为几日开始
-    // var secondNode = Term[1].date;// 返回当月「节」为几日开始
-
-    // 依据12节气修正干支月
-    var gzM = this.toGanZhi((year - 1900) * 12 + month + 11);
-    if (date >= firstNode) {
-      gzM = this.toGanZhi((year - 1900) * 12 + month + 12);
-    }
-
-    // 日柱 当月一日与 1900/1/1 相差天数
-    var dayCyclical = Date.UTC(year, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
-    var gzD = this.toGanZhi(dayCyclical + date - 1);
-
-    const {
-      y: suit,
-      j: taboo,
-      c: chong,
-      s: sha,
-      ch: cheng,
-      zc: zhengchong,
-      ts: taishen
-    } = await this.getAlmanac(year, month, date);
-
-    return {
-      timestamp: currentDate.getTime(),
-      year,
-      leapYear: isLeapYear,
-      animal: this.getZodiac(lunarYear),
-      month,
-      maxDayInMonth: this.solarMonth[month],
-      enMonth: this.monthEnMap[month - 1],
-      cnMonth: `${this.numberStr[month]}月`,
-      astro: this.getAstro(month, date),
-      enWeek: this.weekEnMap[nWeek],
-      cnWeek: this.weekCnMap[nWeek],
-      date,
-      festivalList: null,
-      solarTerms: Term,
-      hour,
-      minute,
-      second,
-      lunar: {
-        lunarYear,
-        cnyear: this.toLunarYear(lunarYear),
-        cyclicalYear: this.toGanZhiYear(lunarYear),
-        cyclicalMonth: gzM,
-        cyclicalDay: gzD,
-        lunarMonth: this.toLunarMonth(month),
-        dayInLunarMonth: this.getLunarMonthDays(lunarYear, lunarMonth),
-        leapMonth: isLeapMonth,
-        lunarDay: this.toLunarDay(day),
-        lunarHour: this.getLunarHour(hour)
-      },
-      almanac: {
-        suit,
-        taboo,
-        chong,
-        sha,
-        cheng,
-        zhengchong,
-        taishen
-      }
-    };
-  }
-
-  /**
-    * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
-    * @param y  lunar year
-    * @param m  lunar month
-    * @param d  lunar day
-    * @param isgetLunarLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
-    * @return JSON object
-    * @eg:console.log(calendar.lunar2solar(1987,9,10));
-    */
-  async lunar2solar(y, m, d, isgetLunarLeapMonth) { // 参数区间1900.1.31~2100.12.1
-    isgetLunarLeapMonth = !!isgetLunarLeapMonth;
-    const getLunarLeapMonth = this.getLunarLeapMonth(y);
-    if (isgetLunarLeapMonth && (getLunarLeapMonth !== m)) { return -1 }// 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
-    if (y === 2100 && m === 12 && (d > 1 || y === 1900) && m === 1 && d < 31) { return -1 }// 超出了最大极限值
-    const day = this.getLunarMonthDays(y, m);
-    let _day = day;
-    // bugFix 2016-9-25
-    // if month is leap, _day use getLunarLeapDays method
-    if (isgetLunarLeapMonth) {
-      _day = this.getLunarLeapDays(y, m);
-    }
-    if (y < 1900 || y > 2100 || d > _day) { return -1 }// 参数合法性效验
-
-    // 计算农历的时间差
-    let offset = 0;
-    for (let i = 1900; i < y; i++) {
-      offset += this.getLunarYearDays(i);
-    }
-    let leap = 0;
-    let isAdd = false;
-    for (let i = 1; i < m; i++) {
-      leap = this.getLunarLeapMonth(y);
-      if (!isAdd) { // 处理闰月
-        if (leap <= i && leap > 0) {
-          offset += this.getLunarLeapDays(y); isAdd = true;
-        }
-      }
-      offset += this.getLunarMonthDays(y, i);
-    }
-    // 转换闰月农历 需补充该年闰月的前一个月的时差
-    if (isgetLunarLeapMonth) { offset += day }
-    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
-    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
-    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
-    var cY = calObj.getUTCFullYear();
-    var cM = calObj.getUTCMonth() + 1;
-    var cD = calObj.getUTCDate();
-
-    await this.getCalendar(cY, cM, cD);
+  formatTwoDigit(val) {
+    return val < 10 ? '0' + val : val;
   }
 };

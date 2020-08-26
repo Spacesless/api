@@ -37,7 +37,7 @@
     },
     {
       "name": "time",
-      "description": "时间"
+      "description": "公历、农历、老黄历"
     },
     {
       "name": "bangumi",
@@ -63,9 +63,9 @@
           {
             "name": "level",
             "in": "query",
-            "description": "联动等级",
+            "description": "联动等级2、3、4",
             "required": true,
-            "type": "string"
+            "type": "integer"
           }
         ],
         "responses": {
@@ -347,8 +347,28 @@
         "tags": [
           "time"
         ],
-        "summary": "获取当前时间的信息",
+        "summary": "获取公历、农历、老黄历信息",
         "description": "",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "description": "时间",
+            "type": "string"
+          },
+          {
+            "name": "includeLunar",
+            "in": "query",
+            "description": "是否包含农历",
+            "type": "boolean"
+          },
+          {
+            "name": "includeAlmanac",
+            "in": "query",
+            "description": "是否包含老黄历",
+            "type": "boolean"
+          }
+        ],
         "produces": [
           "application/json"
         ],
@@ -377,13 +397,13 @@
             "name": "year",
             "in": "query",
             "description": "年份",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "month",
             "in": "query",
             "description": "月份",
-            "type": "number"
+            "type": "integer"
           },
           {
             "name": "title",
