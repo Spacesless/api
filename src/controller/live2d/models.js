@@ -6,8 +6,7 @@ module.exports = class extends Base {
   async indexAction() {
     const id = this.get('id') ? +this.get('id') : 10;
     const texture = this.get('texture') ? +this.get('texture') : 1;
-    const isMixins = this.get('mixins');
-    const result = await this.formatJson(id, texture, isMixins);
+    const result = await this.formatJson(id, texture);
     if (think.isEmpty(result)) return this.fail('没有找到模型或材质哟');
     else this.body = result;
   }
@@ -32,7 +31,7 @@ module.exports = class extends Base {
     else this.success({id: next.id, message: next.message});
   }
 
-  async formatJson(id, texture, isMixins) {
+  async formatJson(id, texture) {
     const row = this.modelLists.find(item => item.id === id);
     if (!row) return;
     let modelDir;
@@ -40,7 +39,7 @@ module.exports = class extends Base {
     if (!think.isArray(row.models)) {
       modelDir = path.join(this.basePath, row.models);
       modelJson = await fs.readJson(path.join(modelDir, 'model.json'));
-      const textures = await this.getTextures(modelDir, texture, isMixins);
+      const textures = await this.getTextures(modelDir, texture);
       if (think.isEmpty(textures)) return;
       modelJson.textures = textures;
     } else {

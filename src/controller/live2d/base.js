@@ -8,6 +8,7 @@ module.exports = class extends Base {
     super.__before();
     this.basePath = path.join(think.ASSETS_PATH, '/model');
     this.modelLists = await this.getList();
+    this.isSupportWebp = this.get('isSupportWebp');
   }
 
   async getList() {
@@ -30,26 +31,19 @@ module.exports = class extends Base {
     return relative;
   }
 
-  async getTextures(modelDir, texture, isMixins) {
-    const randomPath = path.join(modelDir, 'random_list.json');
+  async getTextures(modelDir, texture) {
     const switchPath = path.join(modelDir, 'switch_list.json');
     let texturesJson;
-    if (+isMixins) {
-      if (think.isExist(randomPath)) {
-        texturesJson = await fs.readJson(randomPath);
-      }
-    } else {
-      if (think.isExist(switchPath)) {
-        texturesJson = await fs.readJson(switchPath);
-      }
+    if (think.isExist(switchPath)) {
+      texturesJson = await fs.readJson(switchPath);
     }
     const _textures = texturesJson ? texturesJson[texture - 1] : [];
     if (think.isArray(_textures)) {
       return _textures.map(item => {
-        return this.replaceUrl(modelDir, `assets/${item}`);
+        return this.replaceUrl(modelDir, `assets/${item}@.${this.isSupportWebp ? 'webp' : 'png'}`);
       });
     } else {
-      return [this.replaceUrl(modelDir, `assets/${_textures}`)];
+      return [this.replaceUrl(modelDir, `assets/${_textures}@.${this.isSupportWebp ? 'webp' : 'png'}`)];
     }
   }
 };

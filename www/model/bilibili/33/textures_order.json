@@ -1,6 +1,4 @@
-{
-    "faceName": "texture_00",
-    "upperName": "texture_01",
-    "lowerName": "texture_02",
-    "headwearName": "texture_03"
-}
+[
+  "texture_00",
+  ["texture_01","texture_02", "texture_03"]
+]
