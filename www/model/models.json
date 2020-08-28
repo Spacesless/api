@@ -4,14 +4,14 @@
 		"name": "bilibili",
 		"children": [
 			{
-				"id": 10,
+				"id": 100,
 				"name": "22娘",
 				"models": "bilibili/22",
 				"message": "来自 Bilibili Live 的 22 哦 ~",
 				"from": "https://github.com/xb2016/poster-girl-l2d-2233"
 			},
 			{
-				"id": 11,
+				"id": 101,
 				"name": "33娘",
 				"models": "bilibili/33",
 				"message": "来自 Bilibili Live 的 33 的说",
@@ -24,14 +24,14 @@
 		"name": "药水制作师",
 		"children": [
 			{
-				"id": 20,
+				"id": 200,
 				"name": "Pio酱",
 				"models": "potion-maker/Pio",
 				"message": "来自 Potion Maker 的 Pio 酱 ~",
 				"from": "https://www.fghrsh.net/post/123.html"
 			},
 			{
-				"id": 21,
+				"id": 201,
 				"name": "Tia酱",
 				"models": "potion-maker/Tia",
 				"message": "来自 Potion Maker 的 Tia 酱 ~",
@@ -44,7 +44,7 @@
 		"name": "超次元游戏：海王星",
 		"children": [
 			{
-				"id": 30,
+				"id": 300,
 				"name": "Blanc",
 				"models": [
           "neptune/blanc",
@@ -55,7 +55,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
 			},
 			{
-				"id": 31,
+				"id": 301,
 				"name": "Histoire",
 				"models": [
           "neptune/histoire"
@@ -64,7 +64,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
-				"id": 32,
+				"id": 302,
 				"name": "Nepgear",
 				"models": [
           "neptune/nepgear",
@@ -75,7 +75,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
-				"id": 33,
+				"id": 303,
 				"name": "NepNep",
 				"models": [
           "neptune/nepnep",
@@ -86,7 +86,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
-				"id": 34,
+				"id": 304,
 				"name": "Neptune",
 				"models": [
           "neptune/neptune-classic",
@@ -96,7 +96,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
-				"id": 35,
+				"id": 305,
 				"name": "Noire",
 				"models": [
           "neptune/noire",
@@ -108,7 +108,7 @@
 				"from": "https://www.fghrsh.net/post/123.html"
       },
       {
-				"id": 36,
+				"id": 306,
 				"name": "Vert",
 				"models": [
           "neptune/vert",

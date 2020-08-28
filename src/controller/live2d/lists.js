@@ -3,54 +3,33 @@ const path = require('path');
 const fs = require('fs-extra');
 
 module.exports = class extends Base {
+  // 模型列表 id、数量
   async indexAction() {
     const JSONpath = path.join(this.basePath, 'models.json');
     const modelJson = await fs.readJson(JSONpath);
     const modelLists = [];
-    modelJson.forEach(item => {
+    for (const item of modelJson) {
       const { id, name, children } = item;
-      let temp = [];
+      const temp = [];
       if (!think.isEmpty(children)) {
-        temp = children.map(childs => {
-          const { id, name } = childs;
-          return { id, name };
-        });
+        for (const child of children) {
+          const { id, name, models, message, from } = child;
+          let total;
+          if (think.isArray(models)) {
+            total = models.length;
+          } else {
+            const modelDir = path.join(this.basePath, models);
+            const switchPath = path.join(modelDir, 'switch_list.json');
+            if (think.isExist(switchPath)) {
+              const texturesJson = await fs.readJson(switchPath);
+              total = texturesJson ? texturesJson.length : 0;
+            }
+          }
+          temp.push({ id, name, message, from, total });
+        }
       }
       modelLists.push({ id, name, children: temp });
-    });
-    return this.success(modelLists);
-  }
-
-  async modelAction() {
-    const id = this.get('id') ? +this.get('id') : 0;
-    const row = this.modelLists.find(item => item.id === id);
-    let result = {};
-    let modelDir;
-    if (row) {
-      if (!think.isArray(row.models)) {
-        modelDir = path.join(this.basePath, row.models);
-        const switchPath = path.join(modelDir, 'switch_list.json');
-        let texturesJson;
-        if (think.isExist(switchPath)) {
-          texturesJson = await fs.readJson(switchPath);
-        }
-        result = {
-          id: row.id,
-          name: row.name,
-          message: row.message,
-          from: row.from,
-          total: texturesJson ? texturesJson.length : 0
-        };
-      } else {
-        result = {
-          id: row.id,
-          name: row.name,
-          message: row.message,
-          from: row.from,
-          total: row.models.length
-        };
-      }
     }
-    return this.success(result);
+    return this.success(modelLists);
   }
 };

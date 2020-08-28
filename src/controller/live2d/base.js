@@ -7,11 +7,11 @@ module.exports = class extends Base {
   async __before() {
     super.__before();
     this.basePath = path.join(think.ASSETS_PATH, '/model');
-    this.modelLists = await this.getList();
-    this.isSupportWebp = this.get('isSupportWebp');
+    this.modelLists = await this.getModelList();
   }
 
-  async getList() {
+  // 获取模型列表
+  async getModelList() {
     const JSONpath = path.join(this.basePath, 'models.json');
     const modelJson = await fs.readJson(JSONpath);
     let modelLists = [];
@@ -20,30 +20,48 @@ module.exports = class extends Base {
         modelLists.push(item);
       } else {
         const childs = item.children.map(child => child);
-        modelLists = modelLists.concat(childs);
+        modelLists = [ ...modelLists, ...childs ];
       }
     });
     return modelLists;
   }
 
-  replaceUrl(source, target) {
-    const relative = url.resolve(source.replace(this.basePath, '../model') + '/', target);
+  /**
+   * 获取绝对地址
+   * @param {String} prefix
+   * @param {String} suffix
+   */
+  getAbsolutePath(prefix, suffix = '') {
+    const relative = url.resolve(prefix.replace(this.basePath, '../model') + '/', suffix);
     return relative;
   }
 
-  async getTextures(modelDir, texture) {
-    const switchPath = path.join(modelDir, 'switch_list.json');
-    let texturesJson;
-    if (think.isExist(switchPath)) {
-      texturesJson = await fs.readJson(switchPath);
-    }
-    const _textures = texturesJson ? texturesJson[texture - 1] : [];
-    if (think.isArray(_textures)) {
-      return _textures.map(item => {
-        return this.replaceUrl(modelDir, `assets/${item}@.${this.isSupportWebp ? 'webp' : 'png'}`);
-      });
+  /**
+   * 获取材质地址
+   * @param {String} modelPath 模型目录
+   * @param {*} texture
+   * @returns {Array}
+   */
+  async getTextures(modelPath, texture) {
+    if (think.isArray(texture)) {
+      const texturesPath = this.getAbsolutePath(modelPath, 'textures');
+      const texturesStr = JSON.stringify(texture).replace(/textures/g, texturesPath);
+      return JSON.parse(texturesStr);
     } else {
-      return [this.replaceUrl(modelDir, `assets/${_textures}@.${this.isSupportWebp ? 'webp' : 'png'}`)];
+      const switchPath = path.join(modelPath, 'switch_list.json');
+      let texturesJson;
+      if (think.isExist(switchPath)) {
+        texturesJson = await fs.readJson(switchPath);
+      }
+      const _textures = texturesJson ? texturesJson[texture - 1] : [];
+      if (!_textures) return; // 没有找到材质
+      if (think.isArray(_textures)) {
+        return _textures.map(item => {
+          return this.getAbsolutePath(modelPath, `${item}`);
+        });
+      } else {
+        return [this.getAbsolutePath(modelPath, `${_textures}`)];
+      }
     }
   }
 };

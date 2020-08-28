@@ -4,8 +4,8 @@ const fs = require('fs-extra');
 
 module.exports = class extends Base {
   async switchAction() {
-    const id = +this.get('id') || 10;
-    let _texture = +this.get('texture') || 0;
+    const id = +this.get('id');
+    let _texture = +this.get('texture');
     _texture += 1;
     const row = this.modelLists.find(item => item.id === id);
     let modelDir;
@@ -17,13 +17,13 @@ module.exports = class extends Base {
       modelDir = path.join(this.basePath, row.models[_texture - 1]);
       const modelJson = fs.readJson(path.join(modelDir, 'model.json'));
       if (think.isEmpty(modelJson)) return this.fail('没有找到新衣服哟');
-      textures = this.replaceUrl(modelDir, 'textures');
+      textures = this.getAbsolutePath(modelDir, 'textures');
     }
     return this.success({id, texture: think.isEmpty(textures) ? 0 : _texture});
   }
 
   async randomAction() {
-    const id = +this.get('id') || 10;
+    const id = +this.get('id');
     let _texture;
     const row = this.modelLists.find(item => item.id === id);
     let modelDir;
@@ -40,7 +40,7 @@ module.exports = class extends Base {
       modelDir = path.join(this.basePath, row.models[_texture - 1]);
       const modelJson = await fs.readJson(path.join(modelDir, 'model.json'));
       if (think.isEmpty(modelJson)) return this.fail('没有找到新衣服哟');
-      textures = this.replaceUrl(modelDir, 'textures');
+      textures = this.getAbsolutePath(modelDir, 'textures');
     }
     return this.success({id, texture: think.isEmpty(textures) ? 0 : _texture});
   }

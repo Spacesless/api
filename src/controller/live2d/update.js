@@ -1,8 +1,7 @@
 const Base = require('./base');
 const path = require('path');
 const fs = require('fs-extra');
-const { zip, flatten } = require('lodash/array');
-const { think } = require('thinkjs');
+const { zip } = require('lodash/array');
 
 module.exports = class extends Base {
   constructor(...arg) {
@@ -32,7 +31,6 @@ module.exports = class extends Base {
    */
   async writeTexturesList(modelPath) {
     let switchList = [];
-    let texturesList = [];
 
     const orderPath = path.join(modelPath, 'textures_order.json');
     const switchPath = path.join(modelPath, 'switch_list.json');
@@ -53,7 +51,7 @@ module.exports = class extends Base {
           singleTextures = [...singleTextures, ...textures];
         }
       });
-      texturesList = [...singleTextures, ...zipTextures];
+
       zipTextures = zip(...zipTextures);
       switchList = zipTextures.map(item => {
         return [...singleTextures, ...item];
@@ -65,15 +63,8 @@ module.exports = class extends Base {
       const texturesDir = modelJson.textures[0].split('/')[0];
       const fileList = think.getdirFiles(path.join(modelPath, texturesDir));
       switchList = fileList.map(item => `${texturesDir}/${item}`);
-      texturesList = switchList;
       await fs.writeJson(switchPath, switchList);
     }
-
-    // const flattenList = flatten(texturesList);
-    // for (const item of flattenList) {
-    //   const dirname = path.dirname(item);
-    //   think.sharpFormat(path.join(modelPath, item), `../${dirname}`, { format: 'webp' });
-    // }
   }
 
   /**
