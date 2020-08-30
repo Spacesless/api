@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs-extra');
 
 module.exports = class extends Base {
+  // 根据模型id、模式id获取下一材质id
   async switchAction() {
     const id = +this.get('id');
     let _texture = +this.get('texture');
@@ -22,6 +23,7 @@ module.exports = class extends Base {
     return this.success({id, texture: think.isEmpty(textures) ? 0 : _texture});
   }
 
+  // 根据模型id随机获取一材质
   async randomAction() {
     const id = +this.get('id');
     let _texture;

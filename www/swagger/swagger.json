@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "",
+    "description": "自用api，可能时不时更新，不一定兼容老版本",
     "version": "1.0.0",
-    "title": "Swagger Petstore",
+    "title": "Timelss Api",
     "contact": {
-      "email": "apiteam@swagger.io"
+      "email": "804093032@qq.com"
     },
     "license": {
       "name": "Apache 2.0",
@@ -15,6 +15,22 @@
   "host": "api.timelessq.com",
   "basePath": "/",
   "tags": [
+    {
+      "name": "time",
+      "description": "公历、农历、老黄历"
+    },
+    {
+      "name": "bangumi",
+      "description": "动画番组信息"
+    },
+    {
+      "name": "music",
+      "description": "QQ音乐歌单"
+    },
+    {
+      "name": "live2d",
+      "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本"
+    },
     {
       "name": "cascade",
       "description": "中国五级行政区域"
@@ -28,20 +44,8 @@
       "description": "车牌号查询"
     },
     {
-      "name": "music",
-      "description": "QQ音乐"
-    },
-    {
       "name": "postalcode",
       "description": "邮编查询"
-    },
-    {
-      "name": "time",
-      "description": "公历、农历、老黄历"
-    },
-    {
-      "name": "bangumi",
-      "description": "动画番组"
     }
   ],
   "schemes": [
@@ -49,6 +53,380 @@
     "http"
   ],
   "paths": {
+    "/time": {
+      "get": {
+        "tags": [
+          "time"
+        ],
+        "summary": "获取公历、农历、老黄历信息",
+        "description": "",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "description": "时间",
+            "type": "string"
+          },
+          {
+            "name": "includeLunar",
+            "in": "query",
+            "description": "是否包含农历",
+            "type": "boolean"
+          },
+          {
+            "name": "includeAlmanac",
+            "in": "query",
+            "description": "是否包含老黄历",
+            "type": "boolean"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/bangumi": {
+      "get": {
+        "tags": [
+          "bangumi"
+        ],
+        "summary": "动画番组信息查询",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "description": "年份",
+            "type": "integer"
+          },
+          {
+            "name": "month",
+            "in": "query",
+            "description": "月份",
+            "type": "integer"
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "description": "标题",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/dissts": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据QQ号获取歌单",
+        "description": "只支持QQ音乐的查询",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "qquin",
+            "in": "query",
+            "description": "QQ号码",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Dissts"
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/lists": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌单id查找歌单列表",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "disstid",
+            "in": "query",
+            "description": "歌单id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/songs": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌曲id获取音乐文件地址以及key",
+        "description": "部分要版权的歌曲可能获取不到",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "songmid",
+            "in": "query",
+            "description": "歌曲id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/lyric": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "根据歌曲id获取歌词",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "songmid",
+            "in": "query",
+            "description": "歌曲id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/lists": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "获取live2d模型列表",
+        "description": "live2d模型列表、材质数量、出处",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/models": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "根据id、材质id获取模型贴图文件、Moc、动作组、物理效果文件、姿势文件等信息",
+        "description": "模型id通过列表可查，材质id(1-材质总数范围内)",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "模型id",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "texture",
+            "in": "query",
+            "description": "材质id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/models/switch": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "根据模型id获取下一模型",
+        "description": "模型id通过列表可查",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "模型id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/models/random": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "根据模型id随机获取一模型",
+        "description": "模型id通过列表可查",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "模型id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/textures/switch": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "根据模型id、模式id获取下一材质id",
+        "description": "模型id通过列表可查，材质id(1-材质总数范围内)",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "模型id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/live2d/textures/random": {
+      "get": {
+        "tags": [
+          "live2d"
+        ],
+        "summary": "根据模型id随机获取一材质",
+        "description": "模型id通过列表可查",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "模型id",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
     "/cascade": {
       "get": {
         "tags": [
@@ -207,208 +585,6 @@
             "in": "query",
             "description": "省份、城市",
             "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/dissts": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据QQ号获取歌单",
-        "description": "只支持QQ音乐的查询",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "qquin",
-            "in": "query",
-            "description": "QQ号码",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Dissts"
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/lists": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌单id查找歌单列表",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "disstid",
-            "in": "query",
-            "description": "歌单id",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/songs": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌曲id获取音乐文件地址以及key",
-        "description": "部分要版权的歌曲可能获取不到",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "songmid",
-            "in": "query",
-            "description": "歌曲id",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/lyric": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌曲id获取歌词",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "songmid",
-            "in": "query",
-            "description": "歌曲id",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/time": {
-      "get": {
-        "tags": [
-          "time"
-        ],
-        "summary": "获取公历、农历、老黄历信息",
-        "description": "",
-        "parameters": [
-          {
-            "name": "date",
-            "in": "query",
-            "description": "时间",
-            "type": "string"
-          },
-          {
-            "name": "includeLunar",
-            "in": "query",
-            "description": "是否包含农历",
-            "type": "boolean"
-          },
-          {
-            "name": "includeAlmanac",
-            "in": "query",
-            "description": "是否包含老黄历",
-            "type": "boolean"
-          }
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/bangumi": {
-      "get": {
-        "tags": [
-          "bangumi"
-        ],
-        "summary": "动画番组信息查询",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "year",
-            "in": "query",
-            "description": "年份",
-            "type": "integer"
-          },
-          {
-            "name": "month",
-            "in": "query",
-            "description": "月份",
-            "type": "integer"
-          },
-          {
-            "name": "title",
-            "in": "query",
-            "description": "标题",
             "type": "string"
           }
         ],
