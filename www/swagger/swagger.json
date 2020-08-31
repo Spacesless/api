@@ -527,6 +527,7 @@
             "name": "keyword",
             "in": "query",
             "description": "垃圾名称",
+            "required": true,
             "type": "string"
           }
         ],

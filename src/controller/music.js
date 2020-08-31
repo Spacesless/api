@@ -206,9 +206,9 @@ module.exports = class extends Base {
       const start = res.indexOf('{');
       const end = res.lastIndexOf(')');
       res = JSON.parse(res.substring(start, end));
-      res.lyric = Base64.decode(res.lyric);
-      res.trans = Base64.decode(res.trans);
-      return this.success(res);
+      const lyric = Base64.decode(res.lyric);
+      const trans = Base64.decode(res.trans);
+      return this.success({ lyric, trans });
     }).catch(error => {
       return this.fail(error);
     });

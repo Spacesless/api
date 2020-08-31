@@ -4,8 +4,7 @@ module.exports = class extends think.Logic {
 
     this.rules = {
       keyword: {
-        required: true,
-        uppercase: true
+        required: true
       }
     };
   }

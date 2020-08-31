@@ -70,7 +70,7 @@ module.exports = class extends Base {
         maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
         leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
         yuexiang: lunarInstance.getYueXiang() + '月', // 月相
-        festivals: [...lunarInstance.getFestivals(), ...lunarInstance.getOtherFestivals()], // 农历节日
+        festivals: lunarInstance.getFestivals(), // 农历节日
         solarTerms // 二十四节气
       };
       result.lunar = lunar;
@@ -114,7 +114,8 @@ module.exports = class extends Base {
           day: lunarInstance.getDayNaYin(),
           time: lunarInstance.getTimeNaYin()
         },
-        shiershen: lunarInstance.getZhiXing() + '执神' // 建除十二执星
+        shiershen: lunarInstance.getZhiXing() + '执神', // 建除十二执星
+        festivals: lunarInstance.getOtherFestivals() // 老黄历节日
       };
       result.almanac = almanac;
     }
