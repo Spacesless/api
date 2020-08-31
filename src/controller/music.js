@@ -77,7 +77,7 @@ module.exports = class extends Base {
   }
 
   async searchAction() {
-    const { keyword, page, limit } = this.get();
+    const { keyword, page, pageSize } = this.get();
     const APIURL = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp';
     await axios.get(APIURL, {
       params: {
@@ -93,7 +93,7 @@ module.exports = class extends Base {
         lossless: 0,
         flag_qc: 0,
         p: page,
-        n: limit,
+        n: pageSize,
         w: keyword,
         g_tk: 5381,
         loginUin: 804093032,

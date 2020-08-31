@@ -255,6 +255,47 @@
         }
       }
     },
+    "/music/search": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "summary": "搜索音乐",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "description": "音乐名称",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "description": "页码",
+            "type": "integer"
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "每页个数",
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
     "/live2d/lists": {
       "get": {
         "tags": [
