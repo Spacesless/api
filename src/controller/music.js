@@ -3,6 +3,14 @@ const axios = require('axios');
 const Base64 = require('js-base64').Base64;
 
 module.exports = class extends Base {
+  __before() {
+    super.__before();
+    const referer = this.referer(true);
+    if (!referer.includes('timelessq.com')) {
+      return this.fail('REFERER IS NOT ALLOWED');
+    }
+  }
+
   async disstsAction() {
     const qquin = this.get('qquin');
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';

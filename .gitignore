@@ -33,6 +33,7 @@ output.tar.gz
 runtime/
 app/
 
+music.js
 config.development.js
 adapter.development.js
 

@@ -24,10 +24,6 @@
       "description": "动画番组信息"
     },
     {
-      "name": "music",
-      "description": "QQ音乐歌单"
-    },
-    {
       "name": "live2d",
       "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本"
     },
@@ -120,128 +116,6 @@
             "name": "title",
             "in": "query",
             "description": "标题",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/dissts": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据QQ号获取歌单",
-        "description": "只支持QQ音乐的查询",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "qquin",
-            "in": "query",
-            "description": "QQ号码",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation",
-            "schema": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/Dissts"
-              }
-            }
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/lists": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌单id查找歌单列表",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "disstid",
-            "in": "query",
-            "description": "歌单id",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/songs": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌曲id获取音乐文件地址以及key",
-        "description": "部分要版权的歌曲可能获取不到",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "songmid",
-            "in": "query",
-            "description": "歌曲id",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "successful operation"
-          },
-          "400": {
-            "description": "Invalid status value"
-          }
-        }
-      }
-    },
-    "/music/lyric": {
-      "get": {
-        "tags": [
-          "music"
-        ],
-        "summary": "根据歌曲id获取歌词",
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "songmid",
-            "in": "query",
-            "description": "歌曲id",
-            "required": true,
             "type": "string"
           }
         ],
