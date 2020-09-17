@@ -18,6 +18,7 @@ module.exports = class extends Base {
     return this.success(data);
   }
 
+  // 解析xlsx成json
   formatToJson() {
     // 解析得到文档中的所有 sheet
     const sheets = xlsx.parse(path.join(think.ASSETS_PATH, '/xlsx', 'youbian.xlsx'));

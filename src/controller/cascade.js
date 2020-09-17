@@ -8,25 +8,32 @@ module.exports = class extends Base {
     this.baseurl = path.join(think.ROOT_PATH, 'www/cascade');
   }
 
+  /**
+   * 根据联动等级获取级联数据
+   * @summary level {2 省-地,}
+   */
   async indexAction() {
     const { level } = this.get();
     let data = [];
-    switch (level) {
-      case '2':
+    switch (+level) {
+      case 2:
         data = await fs.readJson(path.join(this.baseurl, 'pc-code.json'));
         break;
-      case '3':
+      case 3:
         data = await fs.readJson(path.join(this.baseurl, 'pca-code.json'));
         break;
-      case '4':
+      case 4:
         data = await fs.readJson(path.join(this.baseurl, 'pcas-code.json'));
         break;
     }
     return this.success(data);
   }
 
-  // level: {0: "省级（省份、直辖市、自治区）", 1: "地级（城市）", 2: "县级（区县）", 3: "乡级（乡镇、街道）", 4: "村级（村委会、居委会）"}
-  // code: 父节点code
+  /**
+   * 根据区域编码获取子级联动数据
+   * @summary level: {0: "省级（省份、直辖市、自治区）", 1: "地级（城市）", 2: "县级（区县）", 3: "乡级（乡镇、街道）"}
+   * @summary code: 父节点code
+   */
   async citysAction() {
     const code = this.get('code') || '';
     let data = [];
@@ -46,14 +53,13 @@ module.exports = class extends Base {
         const streets = await fs.readJson(path.join(this.baseurl, 'streets.json'));
         data = streets.filter(item => item.areaCode === code);
         break;
-      case 9:
-        const villages = await fs.readJson(path.join(this.baseurl, 'villages.json'));
-        data = villages.filter(item => item.streetCode === code);
-        break;
     }
     return this.success(data);
   }
 
+  /**
+   * 根据关键词搜索区域的级联数据
+   */
   async searchAction() {
     const { keyword } = this.get();
     let data = [];
@@ -67,6 +73,7 @@ module.exports = class extends Base {
   * @param {Node[]} nodes 要过滤的节点
   * @param {node => boolean} predicate 过滤条件，符合条件的节点保留
   * @return 过滤后的根节点数组
+  * @see https://segmentfault.com/q/1010000018197249/a-1020000018203261
   */
   dealDeep(nodes, predicate) {
     // 如果已经没有节点了，结束递归

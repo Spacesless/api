@@ -7,7 +7,7 @@ module.exports = class extends Base {
     const { keyword } = this.get();
     const garbages = await fs.readJson(path.join(think.ASSETS_PATH, 'garbage.json'));
     const filterGarbages = garbages.filter(item => item.name.includes(keyword));
-    const categroysMap = {
+    const categroysEnum = {
       1: '可回收物',
       2: '有害垃圾',
       4: '湿垃圾',
@@ -18,7 +18,7 @@ module.exports = class extends Base {
       const { name, categroy } = item;
       return {
         name,
-        categroy: categroysMap[categroy]
+        categroy: categroysEnum[categroy]
       };
     });
     return this.success(data);

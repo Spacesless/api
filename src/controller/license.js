@@ -17,12 +17,16 @@ module.exports = class extends Base {
     this.licenses = isExist ? await fs.readJson(jsonPath) : this.formatToJson();
   }
 
+  /**
+   * 根据省份、城市名、城市缩写等关键字查询车牌信息
+   */
   indexAction() {
     const { keyword } = this.get();
     const data = this.licenses.filter(item => JSON.stringify(item).includes(keyword));
     return this.success(data);
   }
 
+  // 解析xlsx成json
   formatToJson() {
     // 解析得到文档中的所有 sheet
     const sheets = xlsx.parse(path.join(think.ASSETS_PATH, '/xlsx', 'chepaihao.xlsx'));

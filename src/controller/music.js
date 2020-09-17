@@ -1,16 +1,20 @@
 const Base = require('./base');
 const axios = require('axios');
-const Base64 = require('js-base64').Base64;
 
 module.exports = class extends Base {
+  /**
+   * 添加referer防盗链，仅自用，毕竟是鹅厂家的资源
+   * 勿作商业用途
+   */
   __before() {
     super.__before();
-    const referer = this.referer(true);
-    if (!referer.includes('timelessq.com')) {
+    const referer = this.referer();
+    if (!(referer && (referer.includes('timelessq.com') || referer.includes('127.0.0.1')))) {
       return this.fail('REFERER IS NOT ALLOWED');
     }
   }
 
+  // 根据QQ号获取歌单
   async disstsAction() {
     const qquin = this.get('qquin');
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';
@@ -41,6 +45,7 @@ module.exports = class extends Base {
     });
   }
 
+  // 根据歌单详情获取歌单列表
   async listsAction() {
     const { disstid } = this.get();
     const APIURL = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg';
@@ -84,6 +89,7 @@ module.exports = class extends Base {
     });
   }
 
+  // 搜索歌曲名
   async searchAction() {
     const { keyword, page, pageSize } = this.get();
     const APIURL = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp';
@@ -120,6 +126,7 @@ module.exports = class extends Base {
     });
   }
 
+  // 根据歌曲id获取音乐文件地址
   async songsAction() {
     const { songmid } = this.get();
     const APIURL = 'https://u.y.qq.com/cgi-bin/musicu.fcg';
@@ -186,6 +193,7 @@ module.exports = class extends Base {
     });
   }
 
+  // 根据歌曲id获取歌词
   async lyricAction() {
     const { songmid } = this.get();
     const APIURL = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg';
@@ -214,8 +222,8 @@ module.exports = class extends Base {
       const start = res.indexOf('{');
       const end = res.lastIndexOf(')');
       res = JSON.parse(res.substring(start, end));
-      const lyric = Base64.decode(res.lyric);
-      const trans = Base64.decode(res.trans);
+      const lyric = Buffer.from(res.lyric, 'base64').toString();
+      const trans = Buffer.from(res.trans, 'base64').toString();
       return this.success({ lyric, trans });
     }).catch(error => {
       return this.fail(error);
