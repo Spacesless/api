@@ -38,7 +38,7 @@ module.exports = class extends Base {
       festivals: [...solarInstance.getFestivals(), ...solarInstance.getOtherFestivals()] // 公历节日
     };
 
-    if (includeLunar) {
+    if (includeLunar === 'true') {
       const lunarYear = lunarInstance.getYear();
       const cnYear = lunarInstance.getYearInChinese();
       const lunarMonth = lunarInstance.getMonth();
@@ -76,7 +76,7 @@ module.exports = class extends Base {
       result.lunar = lunar;
     }
 
-    if (includeAlmanac) {
+    if (includeAlmanac === 'true') {
       const almanac = {
         yi: {
           day: lunarInstance.getDayYi().join('.'), // 日宜
