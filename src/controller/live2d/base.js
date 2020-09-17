@@ -10,7 +10,7 @@ module.exports = class extends Base {
     this.modelLists = await this.getModelList();
 
     // 是否使用cdn加速，需客户端live2d支持http协议
-    this.isuseCdn = this.get('isuseCdn');
+    this.isuseCDN = this.get('isuseCDN');
   }
 
   // 获取模型列表
@@ -35,7 +35,7 @@ module.exports = class extends Base {
    * @param {String} suffix
    */
   getAbsolutePath(prefix, suffix = '') {
-    const targetPrefix = this.isuseCdn ? 'https://cos.timelessq.com/model' : '../model';
+    const targetPrefix = this.isuseCDN ? 'https://cos.timelessq.com/model' : '../model';
     const relative = url.resolve(prefix.replace(this.basePath, targetPrefix) + '/', suffix);
     return relative;
   }
