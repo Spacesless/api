@@ -10,7 +10,7 @@ module.exports = class extends Base {
     this.modelLists = await this.getModelList();
 
     // 是否使用cdn加速，需客户端live2d支持http协议
-    this.isuseCDN = this.get('isuseCDN');
+    this.isuseCDN = this.get('isuseCDN') === 'true';
   }
 
   // 获取模型列表
