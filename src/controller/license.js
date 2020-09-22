@@ -6,13 +6,12 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ASSETS_PATH, 'www');
     this.licenses = [];
   }
 
   async __before() {
     super.__before();
-    const jsonPath = path.join(this.baseurl, 'license.json');
+    const jsonPath = path.join(think.ASSETS_PATH, 'license.json');
     const isExist = think.isExist(jsonPath);
     this.licenses = isExist ? await fs.readJson(jsonPath) : this.formatToJson();
   }

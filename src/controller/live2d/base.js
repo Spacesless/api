@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   async __before() {
     super.__before();
-    this.basePath = path.join(think.ASSETS_PATH, '/model');
+    this.basePath = path.join(think.ASSETS_PATH, 'model');
     this.modelLists = await this.getModelList();
 
     // 是否使用cdn加速，需客户端live2d支持http协议

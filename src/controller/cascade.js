@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ROOT_PATH, 'www/cascade');
+    this.baseurl = path.join(think.ASSETS_PATH, 'cascade');
   }
 
   /**
