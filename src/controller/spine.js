@@ -39,7 +39,7 @@ module.exports = class extends Base {
   }
 
   // 获取SD小人列表
-  async listAction() {
+  async listsAction() {
     const sdList = await fs.readdir(this.baseurl);
     return this.success(sdList);
   }

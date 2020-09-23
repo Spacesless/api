@@ -15,7 +15,7 @@ module.exports = class extends Base {
   }
 
   // 根据QQ号获取歌单
-  async disstAction() {
+  async cdListAction() {
     const qquin = this.get('qquin');
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';
     await axios.get(APIURL, {
@@ -45,8 +45,8 @@ module.exports = class extends Base {
     });
   }
 
-  // 根据歌单详情获取歌单列表
-  async listAction() {
+  // 根据歌单id获取歌曲列表
+  async songListAction() {
     const { disstid } = this.get();
     const APIURL = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg';
     await axios.get(APIURL, {
@@ -127,7 +127,7 @@ module.exports = class extends Base {
   }
 
   // 根据歌曲id获取音乐文件地址
-  async songAction() {
+  async songUrlAction() {
     const { songmid } = this.get();
     const APIURL = 'https://u.y.qq.com/cgi-bin/musicu.fcg';
     const postData = {

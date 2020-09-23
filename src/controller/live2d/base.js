@@ -68,4 +68,60 @@ module.exports = class extends Base {
       }
     }
   }
+
+  /**
+   * 格式化model.json
+   * @param {Number [int]} id 模型id
+   * @param {Number [int]} texture 模型材质
+   */
+  async formatJson(id, texture) {
+    const row = this.modelLists.find(item => item.id === id);
+    if (!row) return;
+    let modelPath;
+    let modelJson;
+    let texturesList;
+
+    // Textures 贴图文件
+    if (!think.isArray(row.models)) {
+      modelPath = path.join(this.basePath, row.models);
+      modelJson = await fs.readJson(path.join(modelPath, 'model.json'));
+      texturesList = await this.getTextures(modelPath, texture);
+      if (think.isEmpty(texturesList)) return;
+      modelJson.textures = texturesList;
+    } else {
+      const findModel = row.models[texture - 1];
+      if (!findModel) return;
+      modelPath = path.join(this.basePath, findModel);
+      modelJson = await fs.readJson(path.join(modelPath, 'model.json'));
+      modelJson.textures = await this.getTextures(modelPath, modelJson.textures);
+    }
+
+    // Moc
+    modelJson.model = this.getAbsolutePath(modelPath) + modelJson.model;
+
+    // Pose 姿势文件
+    if (modelJson.pose) modelJson.pose = this.getAbsolutePath(modelPath) + modelJson.pose;
+
+    // Physics 物理效果文件
+    if (modelJson.physics) modelJson.physics = this.getAbsolutePath(modelPath) + modelJson.physics;
+
+    // Sounds 音频文件
+    if (modelJson.sounds) modelJson.sounds = this.getAbsolutePath(modelPath) + modelJson.sounds;
+
+    // Motions 动作组
+    if (modelJson.motions) {
+      const motions = this.getAbsolutePath(modelPath, 'motions/');
+      const motionsStr = JSON.stringify(modelJson.motions);
+      modelJson.motions = JSON.parse(motionsStr.replace(/motions\//g, motions));
+    }
+
+    // Expressions 表情组
+    if (modelJson.expressions) {
+      const expressions = this.getAbsolutePath(modelPath, 'expressions/');
+      const expressionsStr = JSON.stringify(modelJson.expressions);
+      modelJson.expressions = JSON.parse(expressionsStr.replace(/motions\//g, expressions));
+    }
+
+    return modelJson;
+  }
 };

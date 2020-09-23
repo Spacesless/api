@@ -139,7 +139,7 @@
         }
       }
     },
-    "/live2d/list": {
+    "/live2d/lists": {
       "get": {
         "tags": [
           "live2d"
@@ -159,7 +159,7 @@
         }
       }
     },
-    "/live2d/model": {
+    "/live2d": {
       "get": {
         "tags": [
           "live2d"
@@ -317,7 +317,7 @@
         }
       }
     },
-    "/spine/list": {
+    "/spine/lists": {
       "get": {
         "tags": [
           "spine"
@@ -372,7 +372,7 @@
         }
       }
     },
-    "/music/disst": {
+    "/music/cdList": {
       "get": {
         "tags": [
           "music"
@@ -401,7 +401,7 @@
         }
       }
     },
-    "/music/list": {
+    "/music/songList": {
       "get": {
         "tags": [
           "music"
@@ -430,7 +430,7 @@
         }
       }
     },
-    "/music/song": {
+    "/music/songUrl": {
       "get": {
         "tags": [
           "music"
@@ -558,7 +558,7 @@
         }
       }
     },
-    "/cascade/citys": {
+    "/cascade/getAreaByCode": {
       "get": {
         "tags": [
           "cascade"
