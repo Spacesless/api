@@ -5,5 +5,8 @@ module.exports = class extends think.Controller {
     this.header('Access-Control-Allow-Headers', 'x-requested-with');
     this.header('Access-Control-Allow-Methods', 'GET,OPTIONS');
     this.header('Access-Control-Allow-Credentials', true);
+
+    // cdn加速域名
+    this.CDNDomain = '//cos.timelessq.com';
   }
 };

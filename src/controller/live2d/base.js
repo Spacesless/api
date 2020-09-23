@@ -35,7 +35,7 @@ module.exports = class extends Base {
    * @param {String} suffix
    */
   getAbsolutePath(prefix, suffix = '') {
-    const targetPrefix = this.isuseCDN ? 'https://cos.timelessq.com/model' : '../model';
+    const targetPrefix = this.isuseCDN ? `${this.CDNDomain}/model` : '../model';
     const relative = url.resolve(prefix.replace(this.basePath, targetPrefix) + '/', suffix);
     return relative;
   }

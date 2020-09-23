@@ -12,7 +12,6 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
-  "host": "api.timelessq.com",
   "basePath": "/",
   "tags": [
     {
@@ -25,7 +24,11 @@
     },
     {
       "name": "live2d",
-      "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本，请勿作商业用途"
+      "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本，请勿用于商业用途！"
+    },
+    {
+      "name": "spine",
+      "description": "Spine小人动画，适用于spine-runtimes v3版本，请勿用于商业用途！"
     },
     {
       "name": "music",
@@ -49,8 +52,8 @@
     }
   ],
   "schemes": [
-    "https",
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/time": {
@@ -136,7 +139,7 @@
         }
       }
     },
-    "/live2d/lists": {
+    "/live2d/list": {
       "get": {
         "tags": [
           "live2d"
@@ -156,7 +159,7 @@
         }
       }
     },
-    "/live2d/models": {
+    "/live2d/model": {
       "get": {
         "tags": [
           "live2d"
@@ -184,7 +187,7 @@
           {
             "name": "isuseCDN",
             "in": "query",
-            "description": "是否使用CDN加速，需要客户端live2d支持http协议的资源文件",
+            "description": "是否使用CDN加速，不加速也有tinypng、gzip压缩，需要客户端live2d支持http协议的资源文件",
             "type": "boolean"
           }
         ],
@@ -198,7 +201,7 @@
         }
       }
     },
-    "/live2d/models/switch": {
+    "/live2d/model/switch": {
       "get": {
         "tags": [
           "live2d"
@@ -227,7 +230,7 @@
         }
       }
     },
-    "/live2d/models/random": {
+    "/live2d/model/random": {
       "get": {
         "tags": [
           "live2d"
@@ -256,7 +259,7 @@
         }
       }
     },
-    "/live2d/textures/switch": {
+    "/live2d/texture/switch": {
       "get": {
         "tags": [
           "live2d"
@@ -285,7 +288,7 @@
         }
       }
     },
-    "/live2d/textures/random": {
+    "/live2d/texture/random": {
       "get": {
         "tags": [
           "live2d"
@@ -314,7 +317,62 @@
         }
       }
     },
-    "/music/dissts": {
+    "/spine/list": {
+      "get": {
+        "tags": [
+          "spine"
+        ],
+        "summary": "获取spine小人列表",
+        "description": "获取SD小人名称列表，只有碧蓝航线的",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/spine": {
+      "get": {
+        "tags": [
+          "spine"
+        ],
+        "summary": "根据id获取skel或json格式的skeleton文件、atlas、texture等文件地址，skel类型文件需要SkeletonBinary读取，json用SkeletonJson就行",
+        "description": "id为列表接口拿到的名称",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "SD名称，如：lafei_4",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "isuseCDN",
+            "in": "query",
+            "description": "是否使用CDN加速，不加速也有tinypng、gzip压缩",
+            "type": "boolean"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/music/disst": {
       "get": {
         "tags": [
           "music"
@@ -343,7 +401,7 @@
         }
       }
     },
-    "/music/lists": {
+    "/music/list": {
       "get": {
         "tags": [
           "music"
@@ -372,7 +430,7 @@
         }
       }
     },
-    "/music/songs": {
+    "/music/song": {
       "get": {
         "tags": [
           "music"
