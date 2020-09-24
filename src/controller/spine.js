@@ -2,7 +2,6 @@ const Base = require('./base');
 const path = require('path');
 const url = require('url');
 const fs = require('fs-extra');
-const { think } = require('thinkjs');
 
 module.exports = class extends Base {
   constructor(...arg) {
@@ -38,9 +37,9 @@ module.exports = class extends Base {
     }
   }
 
-  // 获取SD小人列表
+  // 获取SD小人列表，瓜游用拼音命名...
   async listsAction() {
-    const sdList = await fs.readdir(this.baseurl);
-    return this.success(sdList);
+    const spineList = await fs.readJSON(path.join(this.baseurl, '../spine.json'));
+    return this.success(spineList);
   }
 };

@@ -1,5 +1,5 @@
 module.exports = class extends think.Logic {
-  disstsAction() {
+  cdListAction() {
     this.allowMethods = 'get';
 
     this.rules = {
@@ -9,7 +9,7 @@ module.exports = class extends think.Logic {
     };
   }
 
-  async listsAction() {
+  songListAction() {
     this.allowMethods = 'get';
 
     this.rules = {
@@ -19,7 +19,7 @@ module.exports = class extends think.Logic {
     };
   }
 
-  async searchAction() {
+  searchAction() {
     this.allowMethods = 'get';
 
     this.rules = {
@@ -29,7 +29,7 @@ module.exports = class extends think.Logic {
     };
   }
 
-  async songsAction() {
+  songUrlAction() {
     this.allowMethods = 'get';
 
     this.rules = {
@@ -39,7 +39,7 @@ module.exports = class extends think.Logic {
     };
   }
 
-  async lyricAction() {
+  lyricAction() {
     this.allowMethods = 'get';
 
     this.rules = {

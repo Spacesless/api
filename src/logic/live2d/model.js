@@ -7,15 +7,4 @@ module.exports = class extends think.Logic {
       }
     };
   }
-
-  indexAction() {
-    this.allowMethods = 'get';
-
-    this.rules = {
-      texture: {
-        required: true,
-        int: { min: 1 }
-      }
-    };
-  }
 };
