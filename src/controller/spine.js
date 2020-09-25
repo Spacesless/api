@@ -38,8 +38,41 @@ module.exports = class extends Base {
   }
 
   // 获取SD小人列表，瓜游用拼音命名...
+  async shipsAction() {
+    const { name, hullType, nationality, rarity, retrofit } = this.get();
+    const spineList = await fs.readJSON(path.join(this.baseurl, '../spine.json'));
+    const targetList = spineList.filter(item => {
+      let includeName = true;
+      let includeHullType = true;
+      let includeNationality = true;
+      let includeRarity = true;
+      let includeRetrofit = true;
+
+      if (name) includeName = JSON.stringify(item.names).includes(name);
+      if (hullType) includeHullType = item.hullType === hullType;
+      if (nationality) includeNationality = item.nationality === nationality;
+      if (rarity) includeRarity = item.rarity === rarity;
+      if (retrofit) includeRetrofit = retrofit === 'true';
+
+      return includeName && includeHullType && includeNationality && includeRarity && includeRetrofit;
+    });
+
+    return this.success(targetList);
+  }
+
   async listsAction() {
     const spineList = await fs.readJSON(path.join(this.baseurl, '../spine.json'));
-    return this.success(spineList);
+    let targetList = [];
+    spineList.forEach(item => {
+      const rows = item.skins.map(skin => {
+        return {
+          name: skin.name,
+          value: skin.spineId
+        };
+      });
+      targetList = [...targetList, ...rows];
+    });
+
+    return this.success(targetList);
   }
 };
