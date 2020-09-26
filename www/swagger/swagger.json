@@ -159,7 +159,7 @@
         }
       }
     },
-    "/live2d": {
+    "/live2d/get": {
       "get": {
         "tags": [
           "live2d"

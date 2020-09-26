@@ -1,6 +1,6 @@
 module.exports = class extends think.Logic {
   indexAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       level: {
@@ -10,6 +10,6 @@ module.exports = class extends think.Logic {
   }
 
   searchAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
   }
 };

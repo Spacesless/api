@@ -1,6 +1,6 @@
 module.exports = class extends think.Logic {
   cdListAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       qquin: {
@@ -10,7 +10,7 @@ module.exports = class extends think.Logic {
   }
 
   songListAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       disstid: {
@@ -20,7 +20,7 @@ module.exports = class extends think.Logic {
   }
 
   searchAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       keyword: {
@@ -30,7 +30,7 @@ module.exports = class extends think.Logic {
   }
 
   songUrlAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       songmid: {
@@ -40,7 +40,7 @@ module.exports = class extends think.Logic {
   }
 
   lyricAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       songmid: {

@@ -9,7 +9,7 @@ module.exports = class extends think.Logic {
   }
 
   switchAction() {
-    this.allowMethods = 'get';
+    this.allowMethods = 'get,options';
 
     this.rules = {
       texture: {
