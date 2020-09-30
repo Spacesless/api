@@ -2811,6 +2811,12 @@
     "jp": "明石"
   },
   {
+    "name": "茗",
+    "value": "mingshi_h",
+    "remark": "誓约",
+    "jp": "明石"
+  },
+  {
     "name": "明斯克",
     "value": "mingsike"
   },
@@ -3542,6 +3548,12 @@
     "name": "鲐",
     "value": "sanli_4",
     "remark": "赏樱日和",
+    "jp": "三笠"
+  },
+  {
+    "name": "鲐",
+    "value": "sanli_h",
+    "remark": "誓约",
     "jp": "三笠"
   },
   {
@@ -4845,6 +4857,12 @@
     "name": "榎",
     "value": "youming_2",
     "remark": "四季团圆",
+    "jp": "有明"
+  },
+  {
+    "name": "榎",
+    "value": "youming_g",
+    "remark": "改",
     "jp": "有明"
   },
   {
