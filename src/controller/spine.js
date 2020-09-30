@@ -6,8 +6,19 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    super.__before();
     this.baseurl = path.join(think.ASSETS_PATH, 'SD');
+  }
+
+  /**
+   * 添加referer防盗链，仅自用
+   * 勿作商业用途
+   */
+  __before() {
+    super.__before();
+    const referer = this.referer();
+    if (!(referer && (referer.includes('timelessq.com') || referer.includes('127.0.0.1')))) {
+      return this.fail('Permission denied');
+    }
   }
 
   // 通过SD小人id获取skeleton、atlas、texture地址

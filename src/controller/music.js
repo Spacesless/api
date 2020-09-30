@@ -3,14 +3,14 @@ const axios = require('axios');
 
 module.exports = class extends Base {
   /**
-   * 添加referer防盗链，仅自用，毕竟是鹅厂家的资源
+   * 添加referer防盗链，仅自用
    * 勿作商业用途
    */
   __before() {
     super.__before();
     const referer = this.referer();
     if (!(referer && (referer.includes('timelessq.com') || referer.includes('127.0.0.1')))) {
-      return this.fail('REFERER IS NOT ALLOWED');
+      return this.fail('Permission denied');
     }
   }
 
