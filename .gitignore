@@ -37,8 +37,3 @@ config.development.js
 adapter.development.js
 
 package-lock.json
-
-src/controller/music
-src/controller/spine
-www/SD
-www/spine.json

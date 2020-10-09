@@ -2,10 +2,6 @@ const Base = require('./base');
 const axios = require('axios');
 
 module.exports = class extends Base {
-  /**
-   * 添加referer防盗链，仅自用
-   * 勿作商业用途
-   */
   __before() {
     super.__before();
     const referer = this.referer();

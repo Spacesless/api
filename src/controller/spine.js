@@ -9,10 +9,6 @@ module.exports = class extends Base {
     this.baseurl = path.join(think.ASSETS_PATH, 'SD');
   }
 
-  /**
-   * 添加referer防盗链，仅自用
-   * 勿作商业用途
-   */
   __before() {
     super.__before();
     const referer = this.referer();
