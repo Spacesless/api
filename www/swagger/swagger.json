@@ -66,13 +66,15 @@
             "name": "includeLunar",
             "in": "query",
             "description": "是否包含农历",
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           },
           {
             "name": "includeAlmanac",
             "in": "query",
             "description": "是否包含老黄历",
-            "type": "boolean"
+            "type": "boolean",
+            "default": true
           }
         ],
         "produces": [
