@@ -340,6 +340,11 @@
     "remark": "夜风minuet"
   },
   {
+    "name": "巴尔的摩",
+    "value": "baerdimo_idol",
+    "remark": "μ兵装"
+  },
+  {
     "name": "梿",
     "value": "bailu",
     "jp": "白露"
@@ -482,6 +487,11 @@
   {
     "name": "本森",
     "value": "bensen"
+  },
+  {
+    "name": "本森",
+    "value": "bensen_2",
+    "remark": "万圣兔兔美少女！"
   },
   {
     "name": "标枪",
@@ -753,6 +763,11 @@
   },
   {
     "name": "长岛",
+    "value": "changdao_3",
+    "remark": "L.I.@万圣限时直播中"
+  },
+  {
+    "name": "长岛",
     "value": "changdao_g",
     "remark": "改"
   },
@@ -981,6 +996,12 @@
     "jp": "大凤"
   },
   {
+    "name": "鹩",
+    "value": "dafeng_idol",
+    "remark": "μ兵装",
+    "jp": "大凤"
+  },
+  {
     "name": "大黄蜂",
     "value": "dahuangfeng"
   },
@@ -999,6 +1020,11 @@
     "remark": "多愁的BIsqueDoll"
   },
   {
+    "name": "黛朵",
+    "value": "daiduo_idol",
+    "remark": "μ兵装"
+  },
+  {
     "name": "丹佛",
     "value": "danfo"
   },
@@ -1010,6 +1036,11 @@
     "name": "大青花鱼",
     "value": "daqinghuayu_4",
     "remark": "黑裙下的「秘密」"
+  },
+  {
+    "name": "大青花鱼",
+    "value": "daqinghuayu_idol",
+    "remark": "μ兵装"
   },
   {
     "name": "德雷克",
@@ -1093,8 +1124,13 @@
   },
   {
     "name": "独角兽",
+    "value": "dujiaoshou_6",
+    "remark": "天使的My Night"
+  },
+  {
+    "name": "独角兽",
     "value": "dujiaoshou_h",
-    "remark": "誓约"
+    "remark": "梦想的纯白誓约"
   },
   {
     "name": "独立",
@@ -1155,6 +1191,11 @@
     "name": "恶毒",
     "value": "edu_3",
     "remark": "秘密基地的Mercredi"
+  },
+  {
+    "name": "恶毒",
+    "value": "edu_idol",
+    "remark": "μ兵装"
   },
   {
     "name": "俄克拉荷马",
@@ -1441,6 +1482,11 @@
     "remark": "誓约"
   },
   {
+    "name": "光辉",
+    "value": "guanghui_idol",
+    "remark": "μ兵装"
+  },
+  {
     "name": "小光辉",
     "value": "guanghui_younv"
   },
@@ -1552,6 +1598,11 @@
     "name": "哈曼",
     "value": "haman_3",
     "remark": "舞会的傲娇妖精"
+  },
+  {
+    "name": "哈曼",
+    "value": "haman_4",
+    "remark": "兽耳喵喵拳！"
   },
   {
     "name": "哈曼",
@@ -2295,6 +2346,11 @@
     "value": "ladefute"
   },
   {
+    "name": "拉德福特",
+    "value": "ladefute_3",
+    "remark": "Sweet Magic!"
+  },
+  {
     "name": "拉菲",
     "value": "lafei"
   },
@@ -2651,6 +2707,11 @@
     "name": "罗恩",
     "value": "luoen_2",
     "remark": "暗红色的微笑"
+  },
+  {
+    "name": "罗恩",
+    "value": "luoen_idol",
+    "remark": "μ兵装"
   },
   {
     "name": "罗利",
@@ -3907,6 +3968,11 @@
     "remark": "受缚的巡洋舰"
   },
   {
+    "name": "塔什干",
+    "value": "tashigan_idol",
+    "remark": "μ兵装"
+  },
+  {
     "name": "特伦托",
     "value": "teluntuo"
   },
@@ -4018,6 +4084,11 @@
     "name": "U-110",
     "value": "u110_3",
     "remark": "鲨鱼小可爱"
+  },
+  {
+    "name": "U-110",
+    "value": "u110_3",
+    "remark": "Girlish Idolish"
   },
   {
     "name": "U-47",
@@ -4179,6 +4250,11 @@
     "name": "威奇塔",
     "value": "weiqita_2",
     "remark": "“将军”的晚宴"
+  },
+  {
+    "name": "威奇塔",
+    "value": "weiqita_3",
+    "remark": "万圣的支配者？"
   },
   {
     "name": "威严",
@@ -4617,6 +4693,11 @@
   },
   {
     "name": "吸血鬼",
+    "value": "xixuegui_5",
+    "remark": "偶像小恶魔"
+  },
+  {
+    "name": "吸血鬼",
     "value": "xixuegui_h",
     "remark": "誓约"
   },
@@ -4734,6 +4815,11 @@
     "name": "厌战",
     "value": "yanzhan_2",
     "remark": "战士的圣诞任务"
+  },
+  {
+    "name": "厌战",
+    "value": "yanzhan_3",
+    "remark": "Under Pleasure"
   },
   {
     "name": "厌战",

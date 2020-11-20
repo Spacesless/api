@@ -57,24 +57,10 @@
         "description": "",
         "parameters": [
           {
-            "name": "date",
+            "name": "datetime",
             "in": "query",
             "description": "时间",
             "type": "string"
-          },
-          {
-            "name": "includeLunar",
-            "in": "query",
-            "description": "是否包含农历",
-            "type": "boolean",
-            "default": true
-          },
-          {
-            "name": "includeAlmanac",
-            "in": "query",
-            "description": "是否包含老黄历",
-            "type": "boolean",
-            "default": true
           }
         ],
         "produces": [

@@ -1,5 +1,5 @@
 const Base = require('./base');
-const { Solar, SolarUtil, LunarUtil } = require('lunar-javascript');
+const { Solar, Lunar, SolarUtil, LunarUtil } = require('lunar-javascript');
 
 module.exports = class extends Base {
   constructor(...arg) {
@@ -9,13 +9,14 @@ module.exports = class extends Base {
     this.weekEnEnum = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   }
 
-  async indexAction() {
-    const { date, includeLunar, includeAlmanac } = this.get();
+  indexAction() {
+    const { datetime } = this.get();
 
-    const calcTime = date ? new Date(date) : new Date();
+    const calcTime = datetime ? new Date(datetime) : new Date();
     const solarInstance = Solar.fromDate(calcTime);
     const lunarInstance = solarInstance.getLunar();
 
+    // 阳历
     const solarYear = solarInstance.getYear();
     const solarMonth = solarInstance.getMonth();
     const solarWeek = solarInstance.getWeek();
@@ -38,86 +39,146 @@ module.exports = class extends Base {
       festivals: [...solarInstance.getFestivals(), ...solarInstance.getOtherFestivals()] // 公历节日
     };
 
-    if (includeLunar === 'true') {
-      const lunarYear = lunarInstance.getYear();
-      const cnYear = lunarInstance.getYearInChinese();
-      const lunarMonth = lunarInstance.getMonth();
+    // 农历
+    const lunarYear = lunarInstance.getYear();
+    const cnYear = lunarInstance.getYearInChinese();
+    const lunarMonth = lunarInstance.getMonth();
 
-      // 计算当月的二十四节气
-      const solarTerms = [];
-      const jieQiList = lunarInstance.getJieQiList();
-      const jieQi = lunarInstance.getJieQiTable();
-      for (let i = 0, j = jieQiList.length; i < j; i++) {
-        const name = jieQiList[i];
-        const time = jieQi[name].toYmdHms();
-        if (jieQi[name].getMonth() === solarMonth) {
-          solarTerms.push({ name, time });
-        }
+    // 计算当月的二十四节气
+    const solarTerms = [];
+    const jieQiList = lunarInstance.getJieQiList();
+    const jieQi = lunarInstance.getJieQiTable();
+    for (let i = 0, j = jieQiList.length; i < j; i++) {
+      const name = jieQiList[i];
+      const time = jieQi[name].toYmdHms();
+      if (jieQi[name].getMonth() === solarMonth) {
+        solarTerms.push({ name, time });
       }
-
-      const lunar = {
-        zodiac: lunarInstance.getYearShengXiao(), // 生肖
-        year: lunarYear, // 农历年
-        month: lunarMonth, // 农历月
-        day: lunarInstance.getDay(), // 农历日
-        cnYear: cnYear ? cnYear.replace(new RegExp('〇', 'g'), '零') : '', // 农历年（中文）
-        cnMonth: lunarInstance.getMonthInChinese() + '月', // 农历月（中文）
-        cnDay: lunarInstance.getDayInChinese(), // 农历日（中文）
-        cyclicalYear: lunarInstance.getYearInGanZhi(), // 干支纪年
-        cyclicalMonth: lunarInstance.getMonthInGanZhi(), // 干支纪月
-        cyclicalDay: lunarInstance.getDayInGanZhi(), // 干支纪日
-        hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
-        maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
-        leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
-        yuexiang: lunarInstance.getYueXiang() + '月', // 月相
-        festivals: lunarInstance.getFestivals(), // 农历节日
-        solarTerms // 二十四节气
-      };
-      result.lunar = lunar;
     }
 
-    if (includeAlmanac === 'true') {
-      const almanac = {
-        yi: {
-          day: lunarInstance.getDayYi().join('.'), // 日宜
-          time: lunarInstance.getTimeYi().join('.') // 时宜
-        },
-        ji: {
-          day: lunarInstance.getDayJi().join('.'), // 日忌
-          time: lunarInstance.getTimeJi().join('.') // 时忌
-        },
-        chong: {
-          day: '生肖冲' + lunarInstance.getDayChongDesc(), // 日冲
-          time: '生肖冲' + lunarInstance.getTimeChongDesc() // 时冲
-        },
-        sha: {
-          day: '煞' + lunarInstance.getDaySha(), // 日煞
-          time: '煞' + lunarInstance.getTimeSha() // 时煞
-        },
-        xingxiu: lunarInstance.getXiu() + '宿', // 二十八宿
-        zheng: lunarInstance.getZheng(), // 七政
-        pengzubaiji: [lunarInstance.getPengZuGan(), lunarInstance.getPengZuZhi()], // 彭祖百忌
-        jishenfangwei: { // 吉神方位
-          xi: lunarInstance.getDayPositionXiDesc(), // 喜神
-          yanggui: lunarInstance.getDayPositionYangGuiDesc(), // 阳贵神
-          yingui: lunarInstance.getDayPositionYinGuiDesc(), // 阴贵神
-          fu: lunarInstance.getDayPositionFuDesc(), // 福神
-          cai: lunarInstance.getDayPositionCaiDesc() // 财神
-        },
-        taishen: { // 胎神
-          month: lunarInstance.getMonthPositionTai(),
-          day: lunarInstance.getDayPositionTai()
-        },
-        nayin: { // 纳音
-          year: lunarInstance.getYearNaYin(),
-          month: lunarInstance.getMonthNaYin(),
-          day: lunarInstance.getDayNaYin(),
-          time: lunarInstance.getTimeNaYin()
-        },
-        shiershen: lunarInstance.getZhiXing() + '执神', // 建除十二执星
-        festivals: lunarInstance.getOtherFestivals() // 老黄历节日
+    result.lunar = {
+      zodiac: lunarInstance.getYearShengXiao(), // 生肖
+      year: lunarYear, // 农历年
+      month: lunarMonth, // 农历月
+      day: lunarInstance.getDay(), // 农历日
+      cnYear: cnYear ? cnYear.replace(new RegExp('〇', 'g'), '零') : '', // 农历年（中文）
+      cnMonth: lunarInstance.getMonthInChinese() + '月', // 农历月（中文）
+      cnDay: lunarInstance.getDayInChinese(), // 农历日（中文）
+      cyclicalYear: lunarInstance.getYearInGanZhi(), // 干支纪年
+      cyclicalMonth: lunarInstance.getMonthInGanZhi(), // 干支纪月
+      cyclicalDay: lunarInstance.getDayInGanZhi(), // 干支纪日
+      hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
+      maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
+      leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
+      yuexiang: lunarInstance.getYueXiang() + '月', // 月相
+      festivals: lunarInstance.getFestivals(), // 农历节日
+      solarTerms // 二十四节气
+    };
+
+    // 老黄历
+    result.almanac = {
+      yi: {
+        day: lunarInstance.getDayYi().join('.'), // 日宜
+        hour: lunarInstance.getTimeYi().join('.') // 时宜
+      },
+      ji: {
+        day: lunarInstance.getDayJi().join('.'), // 日忌
+        hour: lunarInstance.getTimeJi().join('.') // 时忌
+      },
+      chong: {
+        day: '生肖冲' + lunarInstance.getDayChongDesc(), // 日冲
+        hour: '生肖冲' + lunarInstance.getTimeChongDesc() // 时冲
+      },
+      sha: {
+        day: '煞' + lunarInstance.getDaySha(), // 日煞
+        hour: '煞' + lunarInstance.getTimeSha() // 时煞
+      },
+      xingxiu: lunarInstance.getXiu() + '宿', // 二十八宿
+      zheng: lunarInstance.getZheng(), // 七政
+      pengzubaiji: [lunarInstance.getPengZuGan(), lunarInstance.getPengZuZhi()], // 彭祖百忌
+      jishenfangwei: { // 吉神方位
+        xi: lunarInstance.getDayPositionXiDesc(), // 喜神
+        yanggui: lunarInstance.getDayPositionYangGuiDesc(), // 阳贵神
+        yingui: lunarInstance.getDayPositionYinGuiDesc(), // 阴贵神
+        fu: lunarInstance.getDayPositionFuDesc(), // 福神
+        cai: lunarInstance.getDayPositionCaiDesc() // 财神
+      },
+      taishen: { // 胎神
+        month: lunarInstance.getMonthPositionTai(),
+        day: lunarInstance.getDayPositionTai()
+      },
+      nayin: { // 纳音
+        year: lunarInstance.getYearNaYin(),
+        month: lunarInstance.getMonthNaYin(),
+        day: lunarInstance.getDayNaYin(),
+        time: lunarInstance.getTimeNaYin()
+      },
+      shiershen: lunarInstance.getZhiXing() + '执神', // 建除十二执星
+      festivals: lunarInstance.getOtherFestivals() // 老黄历节日
+    };
+
+    return this.success(result);
+  }
+
+  // 时辰黄历信息
+  hourAction() {
+    const { date } = this.get();
+
+    const calcTime = date ? new Date(date) : new Date();
+    const solarInstance = Solar.fromDate(calcTime);
+    const lunarInstance = solarInstance.getLunar();
+
+    // 公历
+    const solarYear = solarInstance.getYear();
+    const solarMonth = solarInstance.getMonth();
+
+    // 农历
+    const lunarYear = lunarInstance.getYear();
+    const lunarMonth = lunarInstance.getMonth();
+    const lunarDay = lunarInstance.getYear();
+
+    const result = [];
+    for (let i = 0; i < 24; i += 2) {
+      const middleHour = i + 2 >= 24 ? 24 - (i + 2) : i + 2;
+      const lunarInstance = Lunar.fromYmdHms(lunarYear, lunarMonth, lunarDay, middleHour, 0, 0);
+
+      const row = {
+        date: `${solarYear}-${solarMonth}-${solarInstance.getDay()}`,
+        hours: `${this.formatTwoDigit(i + 1)}:00-${this.formatTwoDigit(middleHour)}:59`,
+        hour: LunarUtil.convertTime(`${this.formatTwoDigit(middleHour)}:00`) + '时', // 时辰
+        yi: lunarInstance.getTimeYi().join('.'),
+        ji: lunarInstance.getTimeJi().join('.'),
+        chong: '生肖冲' + lunarInstance.getTimeChongDesc(), // 时冲,
+        sha: '煞' + lunarInstance.getTimeSha() // 时煞
       };
-      result.almanac = almanac;
+      result.push(row);
+    }
+
+    result.unshift(result.pop()); // 将子时提前
+    return this.success(result);
+  }
+
+  // 二十四节气
+  solarTermsAction() {
+    const { year, month } = this.get();
+
+    const calcTime = year ? new Date(`${year}-01-01`) : new Date();
+    const solarInstance = Solar.fromDate(calcTime);
+    const lunarInstance = solarInstance.getLunar();
+
+    const result = [];
+    const jieQiList = lunarInstance.getJieQiList();
+    const jieQi = lunarInstance.getJieQiTable();
+    for (let i = 0, j = jieQiList.length; i < j; i++) {
+      const name = jieQiList[i];
+      const time = jieQi[name].toYmdHms();
+      if (month) { // 查询指定月份的节气
+        if (jieQi[name].getMonth() === +month) {
+          result.push({ name, time });
+        }
+      } else { // 查询整年的节气
+        if (name !== 'DONG_ZHI') result.push({ name, time });
+      }
     }
 
     return this.success(result);
