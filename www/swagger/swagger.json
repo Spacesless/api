@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "自用api，可能时不时更新，不一定兼容老版本，探讨或侵权问题请联系下方邮箱，可自行搭建：https://github.com/Spacesless/tl-api",
+    "description": "https://github.com/Spacesless/tl-api",
     "version": "1.0.1",
     "title": "Timeless Api",
     "contact": {
@@ -31,7 +31,7 @@
       "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本，请勿用于商业用途！"
     },
     {
-      "name": "cascade",
+      "name": "district",
       "description": "中国五级行政区域"
     },
     {
@@ -63,8 +63,73 @@
           {
             "name": "datetime",
             "in": "query",
-            "description": "时间",
+            "description": "时间：2020-10-01、2020-10-07 23:59:59",
             "type": "string"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/Calendar"
+            }
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/time/shichen": {
+      "get": {
+        "tags": [
+          "time"
+        ],
+        "summary": "获取十二时辰黄历信息",
+        "description": "",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "description": "日期：2020-10-01",
+            "type": "string"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/time/jieqi": {
+      "get": {
+        "tags": [
+          "time"
+        ],
+        "summary": "获取二十四节气信息",
+        "description": "",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "description": "公历年：2020",
+            "type": "number"
+          },
+          {
+            "name": "year",
+            "in": "query",
+            "description": "公历月：10",
+            "type": "number"
           }
         ],
         "produces": [
@@ -366,10 +431,10 @@
         }
       }
     },
-    "/cascade": {
+    "/district": {
       "get": {
         "tags": [
-          "cascade"
+          "district"
         ],
         "summary": "根据联动等级查找",
         "description": "获取二、三、四级联动数据",
@@ -395,10 +460,10 @@
         }
       }
     },
-    "/cascade/getAreaByCode": {
+    "/district/getAreaByCode": {
       "get": {
         "tags": [
-          "cascade"
+          "district"
         ],
         "summary": "根据地区编号查找",
         "description": "地区编号",
@@ -423,10 +488,10 @@
         }
       }
     },
-    "/cascade/search": {
+    "/district/search": {
       "get": {
         "tags": [
-          "cascade"
+          "district"
         ],
         "summary": "名称、编号搜索",
         "description": "根据地区名称、地区编号查找",
@@ -578,6 +643,110 @@
         "day": {
           "type": "integer",
           "description": "公历日"
+        },
+        "hour": {
+          "type": "integer",
+          "description": "时"
+        },
+        "minute": {
+          "type": "integer",
+          "description": "分"
+        },
+        "second": {
+          "type": "integer",
+          "description": "秒"
+        },
+        "festivals": {
+          "type": "array",
+          "description": "公历节日",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lunar": {
+          "type": "object",
+          "properties":{
+            "zodiac": {
+              "type": "string",
+              "description": "生肖"
+            },
+            "year": {
+              "type": "integer",
+              "description": "农历年"
+            },
+            "month": {
+              "type": "integer",
+              "description": "农历月"
+            },
+            "day": {
+              "type": "integer",
+              "description": "农历日"
+            },
+            "cnYear": {
+              "type": "string",
+              "description": "农历年份"
+            },
+            "cnMonth": {
+              "type": "string",
+              "description": "农历月份"
+            },
+            "cnDay": {
+              "type": "string",
+              "description": "农历日期"
+            },
+            "cyclicalYear": {
+              "type": "string",
+              "description": "干支纪年"
+            },
+            "cyclicalMonth": {
+              "type": "string",
+              "description": "干支纪月"
+            },
+            "cyclicalDay": {
+              "type": "string",
+              "description": "干支纪日"
+            },
+            "hour": {
+              "type": "string",
+              "description": "时辰"
+            },
+            "maxDayInMonth": {
+              "type": "string",
+              "description": "农历当月天数"
+            },
+            "leapMonth": {
+              "type": "string",
+              "description": "闰月"
+            },
+            "yuexiang": {
+              "type": "string",
+              "description": "月相"
+            },
+            "festivals": {
+              "type": "array",
+              "description": "农历节日",
+              "items": {
+                "type": "string"
+              }
+            },
+            "solarTerms": {
+              "type": "array",
+              "description": "二十四节气",
+              "items": {
+                "type": "object",
+                "properties":{
+                  "name": {
+                    "type": "string",
+                    "description": "节气名称"
+                  },
+                  "time": {
+                    "type": "string",
+                    "description": "节气时间"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

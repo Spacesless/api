@@ -1,5 +1,6 @@
 const Base = require('./base');
 const { Solar, Lunar, SolarUtil, LunarUtil } = require('lunar-javascript');
+// http://6tail.cn/calendar/api.html
 
 module.exports = class extends Base {
   constructor(...arg) {
@@ -78,12 +79,12 @@ module.exports = class extends Base {
     // 老黄历
     result.almanac = {
       yi: {
-        day: lunarInstance.getDayYi().join('.'), // 日宜
-        hour: lunarInstance.getTimeYi().join('.') // 时宜
+        day: lunarInstance.getDayYi().join(' '), // 日宜
+        hour: lunarInstance.getTimeYi().join(' ') // 时宜
       },
       ji: {
-        day: lunarInstance.getDayJi().join('.'), // 日忌
-        hour: lunarInstance.getTimeJi().join('.') // 时忌
+        day: lunarInstance.getDayJi().join(' '), // 日忌
+        hour: lunarInstance.getTimeJi().join(' ') // 时忌
       },
       chong: {
         day: '生肖冲' + lunarInstance.getDayChongDesc(), // 日冲
@@ -121,7 +122,7 @@ module.exports = class extends Base {
   }
 
   // 时辰黄历信息
-  hourAction() {
+  shichenAction() {
     const { date } = this.get();
 
     const calcTime = date ? new Date(date) : new Date();
@@ -146,8 +147,8 @@ module.exports = class extends Base {
         date: `${solarYear}-${solarMonth}-${solarInstance.getDay()}`,
         hours: `${this.formatTwoDigit(i + 1)}:00-${this.formatTwoDigit(middleHour)}:59`,
         hour: LunarUtil.convertTime(`${this.formatTwoDigit(middleHour)}:00`) + '时', // 时辰
-        yi: lunarInstance.getTimeYi().join('.'),
-        ji: lunarInstance.getTimeJi().join('.'),
+        yi: lunarInstance.getTimeYi().join(' '), // 时宜
+        ji: lunarInstance.getTimeJi().join(' '), // 时忌
         chong: '生肖冲' + lunarInstance.getTimeChongDesc(), // 时冲,
         sha: '煞' + lunarInstance.getTimeSha() // 时煞
       };
@@ -159,7 +160,7 @@ module.exports = class extends Base {
   }
 
   // 二十四节气
-  solarTermsAction() {
+  jieqiAction() {
     const { year, month } = this.get();
 
     const calcTime = year ? new Date(`${year}-01-01`) : new Date();
@@ -177,7 +178,7 @@ module.exports = class extends Base {
           result.push({ name, time });
         }
       } else { // 查询整年的节气
-        if (name !== 'DONG_ZHI') result.push({ name, time });
+        result.push({ name, time });
       }
     }
 
