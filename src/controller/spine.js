@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ASSETS_PATH, 'SD');
+    this.basePath = path.join(think.ASSETS_PATH, 'SD');
   }
 
   __before() {
@@ -20,7 +20,7 @@ module.exports = class extends Base {
   // 通过SD小人id获取skeleton、atlas、texture地址
   async indexAction() {
     const { id, isuseCDN } = this.get();
-    const sdPath = path.join(this.baseurl, id);
+    const sdPath = path.join(this.basePath, id);
     if (think.isExist(sdPath)) {
       const prefix = isuseCDN === 'true' ? this.CDNDomain : this.ctx.origin.replace(/http:|https:/, '');
       const binaryPath = path.join(sdPath, `${id}.skel`);
@@ -46,7 +46,7 @@ module.exports = class extends Base {
   }
 
   async listsAction() {
-    const spineList = await fs.readJSON(path.join(this.baseurl, '../spine.json'));
+    const spineList = await fs.readJSON(path.join(this.basePath, '../spine.json'));
     return this.success(spineList);
   }
 };

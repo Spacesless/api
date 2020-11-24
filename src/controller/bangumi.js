@@ -5,7 +5,7 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.baseurl = path.join(think.ASSETS_PATH, 'bangumi');
+    this.basePath = path.join(think.ASSETS_PATH, 'bangumi');
   }
 
   /**
@@ -16,7 +16,7 @@ module.exports = class extends Base {
     const { year, month, title } = this.get();
     let data = [];
 
-    const readJsonContent = await fs.readJson(path.join(this.baseurl, 'data.json'));
+    const readJsonContent = await fs.readJson(path.join(this.basePath, 'data.json'));
     const bangumis = readJsonContent ? readJsonContent.items : [];
     data = bangumis.filter(item => {
       let includeYear = true;

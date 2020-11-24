@@ -23,6 +23,10 @@
       "description": "动画番组信息"
     },
     {
+      "name": "weather",
+      "description": "天气预报"
+    },
+    {
       "name": "live2d",
       "description": "Live2d模型api，适用于Live2D Cubism SDK v2版本，请勿用于商业用途！"
     },
@@ -106,6 +110,71 @@
             "name": "title",
             "in": "query",
             "description": "标题",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/weather": {
+      "get": {
+        "tags": [
+          "weather"
+        ],
+        "summary": "实时天气、天气预报查询",
+        "description": "实时天气、未来5-7天预报、未来逐小时预报、PM2.5 aqi、生活指数。",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "description": "城市名称",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/weather/history": {
+      "get": {
+        "tags": [
+          "weather"
+        ],
+        "summary": "历史天气查询",
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "city",
+            "in": "query",
+            "description": "城市名称",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "description": "日期，2015-07-07之后",
+            "required": true,
             "type": "string"
           }
         ],
