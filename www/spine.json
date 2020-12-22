@@ -4887,6 +4887,11 @@
     "remark": "女王的舞踏会"
   },
   {
+    "name": "伊丽莎白女王",
+    "value": "yilishabai_4",
+    "remark": "女王的学园命令"
+  },
+  {
     "name": "鹰",
     "value": "ying"
   },
@@ -5245,5 +5250,68 @@
     "name": "佐治亚",
     "value": "zuozhiya_4",
     "remark": "Lanier Swan"
+  },
+  {
+    "name": "霞",
+    "value": "xia_DOA"
+  },
+  {
+    "name": "霞",
+    "value": "xia_2_DOA",
+    "remark": "水边的霞光"
+  },
+  {
+    "name": "穗香",
+    "value": "suixiang_doa"
+  },
+  {
+    "name": "穗香",
+    "value": "suixiang_2_doa",
+    "remark": "礁石边的盛夏天使"
+  },
+  {
+    "name": "女天狗",
+    "value": "nvtiangou_DOA"
+  },
+  {
+    "name": "女天狗",
+    "value": "nvtiangou_2_DOA",
+    "remark": "红枫与温泉假日"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_DOA"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_2_DOA",
+    "remark": "红枫与温泉假日"
+  },
+  {
+    "name": "玛莉萝丝",
+    "value": "maliluosi_DOA"
+  },
+  {
+    "name": "玛莉萝丝",
+    "value": "maliluosi_2_DOA",
+    "remark": "浪花与小恶魔从者"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_DOA"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_2_DOA",
+    "remark": "金色的特别摄影"
+  },
+  {
+    "name": "凪咲",
+    "value": "zhixiao_DOA"
+  },
+  {
+    "name": "凪咲",
+    "value": "zhixiao_DOA",
+    "remark": "蓝天好心情"
   }
 ]

@@ -14,19 +14,20 @@ module.exports = class extends Base {
    */
   async indexAction() {
     const { year, month, title } = this.get();
-    let data = [];
 
     const readJsonContent = await fs.readJson(path.join(this.basePath, 'data.json'));
     const bangumis = readJsonContent ? readJsonContent.items : [];
-    data = bangumis.filter(item => {
-      let includeYear = true;
+    const data = bangumis.filter(item => {
+      let includeYear = true; // 默认不进行筛选
       let includeMonth = true;
       let includeTitle = true;
 
-      const beginTime = new Date(item.begin);
+      const beginTime = new Date(item.begin); // 筛选上映时间
       if (year) includeYear = beginTime.getFullYear() === +year;
       if (month) includeMonth = (beginTime.getMonth() + 1) === +month;
-      if (title) includeTitle = item.title.includes(title) || JSON.stringify(item.titleTranslate).includes(title);
+
+      if (title) includeTitle = item.title.includes(title) || JSON.stringify(item.titleTranslate).includes(title); // 筛选番剧的标题和翻译标题
+
       return includeYear && includeMonth && includeTitle;
     });
 
