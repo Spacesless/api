@@ -8,8 +8,4 @@ module.exports = class extends think.Logic {
       }
     };
   }
-
-  searchAction() {
-    this.allowMethods = 'get,options';
-  }
 };
