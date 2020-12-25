@@ -24,7 +24,7 @@ module.exports = class extends Base {
       params: {
         app: 'weather.realtime',
         weaid: weaid,
-        ag: 'today,futureDay,lifeIndex,futureHour' || ag,
+        ag: ag || 'today,futureDay,lifeIndex,futureHour',
         appkey: 10003,
         sign: sign || this.signKey.sign
       }
