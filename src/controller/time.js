@@ -114,7 +114,7 @@ module.exports = class extends Base {
         day: lunarInstance.getDayNaYin(),
         time: lunarInstance.getTimeNaYin()
       },
-      shiershen: lunarInstance.getZhiXing() + '执神', // 建除十二执星
+      shiershen: lunarInstance.getZhiXing() + '神', // 建除十二执星
       festivals: lunarInstance.getOtherFestivals() // 老黄历节日
     };
 
