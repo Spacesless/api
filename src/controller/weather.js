@@ -19,12 +19,12 @@ module.exports = class extends Base {
    * @see https://www.nowapi.com/api/weather.realtime
    */
   async indexAction(failFlag = 0, sign) {
-    const { city } = this.get();
+    const { weaid, ag } = this.get();
     await axios.get(this.apiUrl, {
       params: {
         app: 'weather.realtime',
-        weaid: city,
-        ag: 'today,futureDay,lifeIndex,futureHour',
+        weaid: weaid,
+        ag: ag || 'today,futureDay,lifeIndex,futureHour',
         appkey: 10003,
         sign: sign || this.signKey.sign
       }
@@ -33,7 +33,7 @@ module.exports = class extends Base {
       if (success === '1') {
         return this.success(result);
       } else {
-        if (msgid === '1000553' && failFlag < 1) { // sign过期，刷新后重试一次
+        if (msgid === '1000553' && failFlag < 1) { // sign过期，重试一次
           const sign = await this.refreshSign();
           failFlag++;
           return this.indexAction(failFlag, sign);
@@ -49,11 +49,11 @@ module.exports = class extends Base {
    * @see https://www.nowapi.com/api/weather.history
    */
   async historyAction(failFlag = 0, sign) {
-    const { city, date } = this.get();
+    const { weaid, date } = this.get();
     await axios.get(this.apiUrl, {
       params: {
         app: 'weather.history',
-        weaid: city,
+        weaid: weaid,
         date: date,
         appkey: 10003,
         sign: sign || this.signKey.sign
@@ -63,7 +63,7 @@ module.exports = class extends Base {
       if (success === '1') {
         return this.success(result);
       } else {
-        if (msgid === '1000553' && failFlag < 1) { // sign过期，刷新后重试一次
+        if (msgid === '1000553' && failFlag < 1) { // sign过期，重试一次
           const sign = await this.refreshSign();
           failFlag++;
           return this.historyAction(failFlag, sign);

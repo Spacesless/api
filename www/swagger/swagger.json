@@ -199,10 +199,16 @@
         ],
         "parameters": [
           {
-            "name": "city",
+            "name": "weaid",
             "in": "query",
-            "description": "城市名称",
+            "description": "地区代码、气象局编号、ip地址、城市名",
             "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ag",
+            "in": "query",
+            "description": "today今日天气节点、futureDay天气预报(未来5-7天)、lifeIndex生活指数、futureHour天气预报(逐小时)，多个用逗号隔开",
             "type": "string"
           }
         ],
@@ -228,9 +234,9 @@
         ],
         "parameters": [
           {
-            "name": "city",
+            "name": "weaid",
             "in": "query",
-            "description": "城市名称",
+            "description": "地区代码、气象局编号、ip地址、城市名",
             "required": true,
             "type": "string"
           },

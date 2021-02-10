@@ -8,6 +8,12 @@ module.exports = class extends Base {
     this.monthEnEnum = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     this.weekCnEnum = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
     this.weekEnEnum = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    this.solarTermEnum = {
+      'DA_XUE': '大雪',
+      'DONG_ZHI': '冬至',
+      'XIAO_HAN': '小寒',
+      'DA_HAN': '大寒'
+    };
   }
 
   indexAction() {
@@ -50,9 +56,10 @@ module.exports = class extends Base {
     const jieQiList = lunarInstance.getJieQiList();
     const jieQi = lunarInstance.getJieQiTable();
     for (let i = 0, j = jieQiList.length; i < j; i++) {
-      const name = jieQiList[i];
+      let name = jieQiList[i];
       const time = jieQi[name].toYmdHms();
-      if (jieQi[name].getMonth() === solarMonth) {
+      if (jieQi[name].getYear() === solarYear && jieQi[name].getMonth() === solarMonth) {
+        name = this.solarTermEnum[name] || name;
         solarTerms.push({ name, time });
       }
     }
@@ -71,7 +78,6 @@ module.exports = class extends Base {
       hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
       maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
       leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
-      yuexiang: lunarInstance.getYueXiang() + '月', // 月相
       festivals: lunarInstance.getFestivals(), // 农历节日
       solarTerms // 二十四节气
     };
@@ -96,6 +102,7 @@ module.exports = class extends Base {
       },
       xingxiu: lunarInstance.getXiu() + '宿', // 二十八宿
       zheng: lunarInstance.getZheng(), // 七政
+      shou: lunarInstance.getShou(), // 四神兽
       pengzubaiji: [lunarInstance.getPengZuGan(), lunarInstance.getPengZuZhi()], // 彭祖百忌
       jishenfangwei: { // 吉神方位
         xi: lunarInstance.getDayPositionXiDesc(), // 喜神
@@ -150,7 +157,9 @@ module.exports = class extends Base {
         yi: lunarInstance.getTimeYi().join(' '), // 时宜
         ji: lunarInstance.getTimeJi().join(' '), // 时忌
         chong: '生肖冲' + lunarInstance.getTimeChongDesc(), // 时冲,
-        sha: '煞' + lunarInstance.getTimeSha() // 时煞
+        sha: '煞' + lunarInstance.getTimeSha(), // 时煞
+        nayin: lunarInstance.getTimeNaYin(), // 纳音
+        jiuxing: lunarInstance.getTimeNineStar().toString() // 九星
       };
       result.push(row);
     }
@@ -171,13 +180,15 @@ module.exports = class extends Base {
     const jieQiList = lunarInstance.getJieQiList();
     const jieQi = lunarInstance.getJieQiTable();
     for (let i = 0, j = jieQiList.length; i < j; i++) {
-      const name = jieQiList[i];
+      let name = jieQiList[i];
       const time = jieQi[name].toYmdHms();
       if (month) { // 查询指定月份的节气
-        if (jieQi[name].getMonth() === +month) {
+        if (jieQi[name].getYear() === year && jieQi[name].getMonth() === +month) {
+          name = this.solarTermEnum[name] || name;
           result.push({ name, time });
         }
-      } else { // 查询整年的节气
+      } else { // 查询全部的节气
+        name = this.solarTermEnum[name] || name;
         result.push({ name, time });
       }
     }
