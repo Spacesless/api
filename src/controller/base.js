@@ -4,6 +4,7 @@ module.exports = class extends think.Controller {
     this.header('Access-Control-Allow-Origin', this.header('origin') || '*');
     this.header('Access-Control-Allow-Methods', 'GET,OPTIONS');
     // this.header('Access-Control-Allow-Credentials', true); // 是否可以发送cookie
+    this.header('Access-Control-Allow-Headers', '*');
 
     // cdn加速域名
     this.CDNDomain = '//cos.timelessq.com';

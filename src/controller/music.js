@@ -2,14 +2,6 @@ const Base = require('./base');
 const axios = require('axios');
 
 module.exports = class extends Base {
-  __before() {
-    super.__before();
-    const referer = this.referer();
-    if (!(referer && (referer.includes('timelessq.com') || referer.includes('127.0.0.1')))) {
-      return this.fail('Permission denied');
-    }
-  }
-
   // 根据QQ号获取歌单
   async cdListAction() {
     const qquin = this.get('qquin');
@@ -23,8 +15,9 @@ module.exports = class extends Base {
         hostuin: qquin,
         sin: 0,
         size: 40,
-        r: 1571120577356,
-        g_tk: 5381,
+        r: 1614957597503,
+        g_tk_new_20200303: 1718906646,
+        g_tk: 1718906646,
         loginUin: 804093032,
         hostUin: 0,
         format: 'json',

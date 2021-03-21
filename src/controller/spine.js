@@ -9,14 +9,6 @@ module.exports = class extends Base {
     this.basePath = path.join(think.ASSETS_PATH, 'SD');
   }
 
-  __before() {
-    super.__before();
-    const referer = this.referer();
-    if (!(referer && (referer.includes('timelessq.com') || referer.includes('127.0.0.1')))) {
-      return this.fail('Permission denied');
-    }
-  }
-
   // 通过SD小人id获取skeleton、atlas、texture地址
   async indexAction() {
     const { id, isuseCDN } = this.get();
