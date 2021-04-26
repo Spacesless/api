@@ -17,6 +17,15 @@
     "remark": "惊叫南瓜！"
   },
   {
+    "name": "阿布鲁奇公爵",
+    "value": "abuluqi"
+  },
+  {
+    "name": "阿布鲁奇公爵",
+    "value": "abuluqi_2",
+    "remark": "漆黑的人鱼公主"
+  },
+  {
     "name": "阿尔及利亚",
     "value": "aerjiliya"
   },
@@ -56,6 +65,10 @@
     "value": "aheye_4",
     "remark": "告白的蓝闪蝶",
     "jp": "阿贺野"
+  },
+  {
+    "name": "艾伦萨姆纳",
+    "value": "ailunsamuna"
   },
   {
     "name": "犬",
@@ -232,6 +245,11 @@
   },
   {
     "name": "阿贾克斯",
+    "value": "ajiakesi_3",
+    "remark": "节日的'特别奖励'"
+  },
+  {
+    "name": "阿贾克斯",
     "value": "ajiakesi_g",
     "remark": "改"
   },
@@ -282,7 +300,7 @@
   },
   {
     "name": "奥丁",
-    "value": "aoding",
+    "value": "aoding_2",
     "remark": "挥毫苍雪"
   },
   {
@@ -338,6 +356,11 @@
     "name": "巴尔的摩",
     "value": "baerdimo_2",
     "remark": "放学后的ACE"
+  },
+  {
+    "name": "巴尔的摩",
+    "value": "baerdimo_3",
+    "remark": "ACE的旅行记"
   },
   {
     "name": "巴尔的摩",
@@ -435,7 +458,7 @@
   },
   {
     "name": "贝尔法斯特",
-    "value": "beierfasite_7",
+    "value": "beierfasite_8",
     "remark": "倾城之华扇"
   },
   {
@@ -640,6 +663,11 @@
     "value": "bola"
   },
   {
+    "name": "波拉",
+    "value": "bola_2",
+    "remark": ""
+  },
+  {
     "name": "印第安纳波利斯",
     "value": "bolisi"
   },
@@ -832,6 +860,12 @@
     "name": "鲨",
     "value": "changmen_3",
     "remark": "御狐的辉振袖",
+    "jp": "长门"
+  },
+  {
+    "name": "鲨",
+    "value": "changmen_4",
+    "remark": "神子的闲暇一刻",
     "jp": "长门"
   },
   {
@@ -1191,7 +1225,12 @@
   {
     "name": "独立",
     "value": "duli_5",
-    "remark": "skin unavailable"
+    "remark": "「独立」品牌"
+  },
+  {
+    "name": "独立",
+    "value": "duli_6",
+    "remark": "Relaxation.I"
   },
   {
     "name": "敦刻尔克",
@@ -1399,6 +1438,11 @@
     "name": "甘古特",
     "value": "gangute_2",
     "remark": "坚定的执行者"
+  },
+  {
+    "name": "甘古特",
+    "value": "gangute_3",
+    "remark": "挚爱伏特加"
   },
   {
     "name": "塞壬",
@@ -1808,6 +1852,10 @@
     "remark": "新年的守护者"
   },
   {
+    "name": "皇家方舟",
+    "value": "huangjiafangzhou_alter"
+  },
+  {
     "name": "华盛顿",
     "value": "huashengdun"
   },
@@ -1830,6 +1878,11 @@
     "name": "胡德",
     "value": "hude_2",
     "remark": "照耀太阳的淑女"
+  },
+  {
+    "name": "胡德",
+    "value": "hude_3",
+    "remark": ""
   },
   {
     "name": "胡德",
@@ -1898,6 +1951,33 @@
     "name": "狐提",
     "value": "huti_g",
     "remark": "改"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_DOA"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_2_DOA",
+    "remark": "金色的特别摄影"
+  },
+  {
+    "name": "海因里希亲王",
+    "value": "haiyinlixi"
+  },
+  {
+    "name": "海因里希亲王",
+    "value": "haiyinlixi_3",
+    "remark": "花火烂漫的春绘卷"
+  },
+  {
+    "name": "洪亮",
+    "value": "hongliang"
+  },
+  {
+    "name": "洪亮",
+    "value": "hongliang_2",
+    "remark": "清晨的呼唤！"
   },
   {
     "name": "伊13",
@@ -1987,6 +2067,11 @@
     "value": "jiafuerbojue"
   },
   {
+    "name": "加富尔伯爵",
+    "value": "jiafuerbojue_2",
+    "remark": "激战的盛夏海滩"
+  },
+  {
     "name": "狌",
     "value": "jiagu",
     "jp": "加古"
@@ -2016,14 +2101,20 @@
   },
   {
     "name": "鸾",
+    "value": "jiahe_4",
+    "remark": "白狐贺正",
+    "jp": "加贺"
+  },
+  {
+    "name": "鸾",
     "value": "jiahe_5",
-    "remark": "白羽风华",
+    "remark": "",
     "jp": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_h",
-    "remark": "誓约",
+    "remark": "苍染的君子兰",
     "jp": "加贺"
   },
   {
@@ -2230,6 +2321,15 @@
     "remark": "赭红爵祿"
   },
   {
+    "name": "基洛夫",
+    "value": "jiluofu"
+  },
+  {
+    "name": "基洛夫",
+    "value": "jiluofu_2",
+    "remark": "居家咖啡时间"
+  },
+  {
     "name": "卡尔斯鲁厄",
     "value": "kaersilue"
   },
@@ -2246,6 +2346,11 @@
     "name": "朱利奥·凯撒",
     "value": "kaisa_2",
     "remark": "锻炼达人？"
+  },
+  {
+    "name": "朱利奥·凯撒",
+    "value": "kaisa_3",
+    "remark": "阳光下的Alta marea"
   },
   {
     "name": "凯旋",
@@ -2771,6 +2876,11 @@
     "remark": "盛夏Festival！"
   },
   {
+    "name": "鲁莽",
+    "value": "lumang_3",
+    "remark": "Dream.Dolce"
+  },
+  {
     "name": "伦敦",
     "value": "lundun"
   },
@@ -2824,6 +2934,15 @@
     "name": "路易九世",
     "value": "luyijiushi_3",
     "remark": "瑰丽的执勤人"
+  },
+  {
+    "name": "雷鸣",
+    "value": "leiming"
+  },
+  {
+    "name": "雷鸣",
+    "value": "leiming_2",
+    "remark": "梦幻的阅读时光"
   },
   {
     "name": "马布尔黑德",
@@ -2943,7 +3062,7 @@
   },
   {
     "name": "明尼阿波利斯",
-    "value": "mingniabolisi_3",
+    "value": "mingniabolisi_4",
     "remark": "圣夜的月下疾驰"
   },
   {
@@ -3041,6 +3160,33 @@
     "value": "muyue_g",
     "remark": "改",
     "jp": "睦月"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_DOA"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_2_DOA",
+    "remark": "红枫与温泉假日"
+  },
+  {
+    "name": "摩尔曼斯克",
+    "value": "moermansike"
+  },
+  {
+    "name": "摩尔曼斯克",
+    "value": "moermansike_2",
+    "remark": "纯白雪景"
+  },
+  {
+    "name": "玛莉萝丝",
+    "value": "maliluosi_DOA"
+  },
+  {
+    "name": "玛莉萝丝",
+    "value": "maliluosi_2_DOA",
+    "remark": "浪花与小恶魔从者"
   },
   {
     "name": "纳尔逊",
@@ -3152,49 +3298,52 @@
   },
   {
     "name": "尼古拉斯",
+    "value": "nigulasi_5",
+    "remark": "放学后的“惊喜”？"
+  },
+  {
+    "name": "尼古拉斯",
     "value": "nigulasi_g",
     "remark": "改"
   },
   {
     "name": "宁海",
-    "value": "ninghai",
-    "jp": "寧海"
+    "value": "ninghai"
   },
   {
     "name": "宁海",
     "value": "ninghai_2",
-    "remark": "食欲之夏",
-    "jp": "寧海"
+    "remark": "食欲之夏"
   },
   {
     "name": "宁海",
     "value": "ninghai_3",
-    "remark": "月宫玉兔",
-    "jp": "寧海"
+    "remark": "月宫玉兔"
   },
   {
     "name": "宁海",
     "value": "ninghai_4",
-    "remark": "东煌姐妹！·N",
-    "jp": "寧海"
+    "remark": "东煌姐妹！·N"
   },
   {
     "name": "宁海",
     "value": "ninghai_5",
-    "remark": "新年旅游！",
-    "jp": "寧海"
+    "remark": "新年旅游！"
   },
   {
     "name": "宁海",
     "value": "ninghai_6",
-    "remark": "姹紫盛筵",
-    "jp": "寧海"
+    "remark": "姹紫盛筵"
+  },
+  {
+    "name": "宁海",
+    "value": "ninghai_7",
+    "remark": "大宝的伙伴！"
   },
   {
     "name": "宁海",
     "value": "ninghai_g",
-    "remark": "改",
-    "jp": "寧海"
+    "remark": "改"
   },
   {
     "name": "纽卡斯尔",
@@ -3227,6 +3376,15 @@
     "name": "女将",
     "value": "nvjiang_g",
     "remark": "改"
+  },
+  {
+    "name": "女天狗",
+    "value": "nvtiangou_DOA"
+  },
+  {
+    "name": "女天狗",
+    "value": "nvtiangou_2_DOA",
+    "remark": "红枫与温泉假日"
   },
   {
     "name": "欧根亲王",
@@ -3286,53 +3444,47 @@
     "remark": "嫣红深闺"
   },
   {
-    "name": "普林斯顿",
-    "value": "pulinsidun"
-  },
-  {
     "name": "彭萨科拉",
     "value": "pengsakela"
   },
   {
     "name": "平海",
-    "value": "pinghai",
-    "jp": "平海"
+    "value": "pinghai"
   },
   {
     "name": "平海",
     "value": "pinghai_2",
-    "remark": "游兴之夏",
-    "jp": "平海"
+    "remark": "游兴之夏"
   },
   {
     "name": "平海",
     "value": "pinghai_3",
-    "remark": "桂花月兔",
-    "jp": "平海"
+    "remark": "桂花月兔"
   },
   {
     "name": "平海",
     "value": "pinghai_4",
-    "remark": "东煌姐妹！·P",
-    "jp": "平海"
+    "remark": "东煌姐妹！·P"
   },
   {
     "name": "平海",
     "value": "pinghai_5",
-    "remark": "美食大远征！",
-    "jp": "平海"
+    "remark": "美食大远征！"
   },
   {
     "name": "平海",
     "value": "pinghai_6",
-    "remark": "甜蜜嫣红",
-    "jp": "平海"
+    "remark": "甜蜜嫣红"
+  },
+  {
+    "name": "平海",
+    "value": "pinghai_7",
+    "remark": "二宝的伙伴！"
   },
   {
     "name": "平海",
     "value": "pinghai_g",
-    "remark": "改",
-    "jp": "平海"
+    "remark": "改"
   },
   {
     "name": "朴",
@@ -3366,6 +3518,11 @@
     "remark": "浅海的特别训练"
   },
   {
+    "name": "普林斯顿",
+    "value": "pulinsidun_3",
+    "remark": "心跳的糖果乐园"
+  },
+  {
     "name": "恰巴耶夫",
     "value": "qiabayefu"
   },
@@ -3373,6 +3530,11 @@
     "name": "恰巴耶夫",
     "value": "qiabayefu_2",
     "remark": "拘束的白骑兵"
+  },
+  {
+    "name": "恰巴耶夫",
+    "value": "qiabayefu_3",
+    "remark": "白骑兵的假日"
   },
   {
     "name": "鹃",
@@ -3779,6 +3941,12 @@
   },
   {
     "name": "鲐",
+    "value": "sanli_5",
+    "remark": "养精蓄锐的假日",
+    "jp": "三笠"
+  },
+  {
+    "name": "鲐",
     "value": "sanli_h",
     "remark": "誓约",
     "jp": "三笠"
@@ -4021,6 +4189,16 @@
     "remark": "囚牢与诱惑"
   },
   {
+    "name": "水星纪念",
+    "value": "shuixingjinian_4",
+    "remark": "樱桃与休息时间"
+  },
+  {
+    "name": "水星纪念",
+    "value": "shuixingjinian_g",
+    "remark": "改造"
+  },
+  {
     "name": "斯莫利",
     "value": "simoli"
   },
@@ -4101,6 +4279,37 @@
     "remark": "怠惰的监视者"
   },
   {
+    "name": "穗香",
+    "value": "suixiang_doa"
+  },
+  {
+    "name": "穗香",
+    "value": "suixiang_2_doa",
+    "remark": "礁石边的盛夏天使"
+  },
+  {
+    "name": "神速",
+    "value": "shensu"
+  },
+  {
+    "name": "神速",
+    "value": "shensu_2",
+    "remark": "悠哉游戏时光"
+  },
+  {
+    "name": "史蒂芬·波特",
+    "value": "shidifenbote"
+  },
+  {
+    "name": "苏维埃贝拉罗斯",
+    "value": "suweiaibeilaluosi"
+  },
+  {
+    "name": "苏维埃贝拉罗斯",
+    "value": "suweiaibeilaluosi_2",
+    "remark": "消磨时间的方式"
+  },
+  {
     "name": "塔尔图",
     "value": "taertu"
   },
@@ -4162,6 +4371,11 @@
     "value": "tiancheng_2",
     "remark": "走水静莲",
     "jp": "天城"
+  },
+  {
+    "name": "小鳐",
+    "value": "tiancheng_younv",
+    "jp": "小天城"
   },
   {
     "name": "天后",
@@ -4237,6 +4451,33 @@
     "value": "tuzuo_2",
     "remark": "鸣子小夏",
     "jp": "土佐"
+  },
+  {
+    "name": "托里拆利",
+    "value": "tuolichaili"
+  },
+  {
+    "name": "托里拆利",
+    "value": "tuolichaili_2",
+    "remark": "阴暗的沙滩一角"
+  },
+  {
+    "name": "塔林",
+    "value": "talin"
+  },
+  {
+    "name": "塔林",
+    "value": "talin_3",
+    "remark": "Pilsner·Nostalgic"
+  },
+  {
+    "name": "天鹰",
+    "value": "tianying"
+  },
+  {
+    "name": "天鹰",
+    "value": "tianying_2",
+    "remark": "阳光与浅潮的假日"
   },
   {
     "name": "U-101",
@@ -4455,6 +4696,11 @@
     "value": "weineituo"
   },
   {
+    "name": "维内托",
+    "value": "weineituo_2",
+    "remark": ""
+  },
+  {
     "name": "威奇塔",
     "value": "weiqita"
   },
@@ -4476,6 +4722,11 @@
     "name": "威严",
     "value": "weiyan_2",
     "remark": "囚牢里的危险兔"
+  },
+  {
+    "name": "威严",
+    "value": "weiyan_3",
+    "remark": "武器改造计划？"
   },
   {
     "name": "文森斯",
@@ -4998,6 +5249,33 @@
     "remark": "Loisirs balnéaires"
   },
   {
+    "name": "霞",
+    "value": "xia_DOA"
+  },
+  {
+    "name": "霞",
+    "value": "xia_2_DOA",
+    "remark": "水边的霞光"
+  },
+  {
+    "name": "西北风",
+    "value": "xibeifeng"
+  },
+  {
+    "name": "西北风",
+    "value": "xibeifeng_2",
+    "remark": "独处的沙滩一角"
+  },
+  {
+    "name": "西南风",
+    "value": "xinanfeng"
+  },
+  {
+    "name": "西南风",
+    "value": "xinanfeng_2",
+    "remark": "水手向西南进发!"
+  },
+  {
     "name": "亚利桑那",
     "value": "yalisangna"
   },
@@ -5495,6 +5773,17 @@
     "value": "zhijiage"
   },
   {
+    "name": "椎",
+    "value": "zhuifeng",
+    "jp": "追風"
+  },
+  {
+    "name": "椎",
+    "value": "zhuifeng_3",
+    "remark": "夏日的全力一击",
+    "jp": "追風"
+  },
+  {
     "name": "追赶者",
     "value": "zhuiganzhe"
   },
@@ -5562,69 +5851,6 @@
     "name": "佐治亚",
     "value": "zuozhiya_6",
     "remark": "雅色彩华"
-  },
-  {
-    "name": "霞",
-    "value": "xia_DOA"
-  },
-  {
-    "name": "霞",
-    "value": "xia_2_DOA",
-    "remark": "水边的霞光"
-  },
-  {
-    "name": "穗香",
-    "value": "suixiang_doa"
-  },
-  {
-    "name": "穗香",
-    "value": "suixiang_2_doa",
-    "remark": "礁石边的盛夏天使"
-  },
-  {
-    "name": "女天狗",
-    "value": "nvtiangou_DOA"
-  },
-  {
-    "name": "女天狗",
-    "value": "nvtiangou_2_DOA",
-    "remark": "红枫与温泉假日"
-  },
-  {
-    "name": "莫妮卡",
-    "value": "monika_DOA"
-  },
-  {
-    "name": "莫妮卡",
-    "value": "monika_2_DOA",
-    "remark": "红枫与温泉假日"
-  },
-  {
-    "name": "玛莉萝丝",
-    "value": "maliluosi_DOA"
-  },
-  {
-    "name": "玛莉萝丝",
-    "value": "maliluosi_2_DOA",
-    "remark": "浪花与小恶魔从者"
-  },
-  {
-    "name": "海咲",
-    "value": "haixiao_DOA"
-  },
-  {
-    "name": "海咲",
-    "value": "haixiao_2_DOA",
-    "remark": "金色的特别摄影"
-  },
-  {
-    "name": "海因里希亲王",
-    "value": "haiyinlixi"
-  },
-  {
-    "name": "海因里希亲王",
-    "value": "haiyinlixi_3",
-    "remark": "花火烂漫的春绘卷"
   },
   {
     "name": "凪咲",
