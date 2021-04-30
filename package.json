@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "big-integer": "^1.6.48",
+    "crypto": "^1.0.1",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.20",
     "lunar-javascript": "^1.0.34",

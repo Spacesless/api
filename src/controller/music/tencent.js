@@ -1,10 +1,11 @@
-const Base = require('./base');
+const Base = require('../base');
 const axios = require('axios');
 
 module.exports = class extends Base {
   // 根据QQ号获取歌单
   async cdListAction() {
-    const qquin = this.get('qquin');
+    const uid = this.get('uid');
+
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';
     await axios.get(APIURL, {
       headers: {
@@ -12,7 +13,7 @@ module.exports = class extends Base {
         referer: 'https://y.qq.com/'
       },
       params: {
-        hostuin: qquin,
+        hostuin: uid,
         sin: 0,
         size: 40,
         r: 1614957597503,
@@ -27,8 +28,27 @@ module.exports = class extends Base {
         platform: 'yqq.json',
         needNewCode: 0
       }
-    }).then(response => {
-      return this.success(response.data.data);
+    }).then(res => {
+      const { hostuin, hostname, totoal, disslist } = res.data.data;
+      const lists = [];
+      disslist.forEach(item => {
+        if (item.tid) {
+          lists.push({
+            tid: item.tid,
+            name: item.diss_name,
+            cover: item.diss_cover,
+            songCount: item.song_cnt,
+            playCount: item.listen_num
+          });
+        }
+      });
+      const result = {
+        uid: hostuin,
+        nickname: hostname,
+        total: totoal,
+        lists
+      };
+      return this.success(result);
     }).catch(error => {
       return this.fail(error);
     });
@@ -59,18 +79,35 @@ module.exports = class extends Base {
         platform: 'yqq.json',
         needNewCode: 0
       }
-    }).then(response => {
-      const fetch = response.data;
-      if (fetch.code !== 0) return this.fail();
-      const cdlist = fetch.cdlist ? fetch.cdlist[0] : [];
-      const { nickname, disstid, dissname, logo, desc, tags, songnum, songlist, visitnum } = cdlist;
+    }).then(res => {
+      const { code, cdlist } = res.data;
+      if (code !== 0) return this.fail();
+      const firstCd = cdlist ? cdlist[0] : [];
+      const { nickname, disstid, dissname, logo, desc, tags, songnum, songlist, visitnum } = firstCd;
       const lists = [];
       for (const item of songlist) {
-        const { albumdesc, albumid, albummid, albumname, interval, pay, singer, songmid, songname, songorig } = item;
-        lists.push({ albumdesc, albumid, albummid, albumname, interval, pay, singer, songmid, songname, songorig });
+        const { albumdesc, albummid, albumname, interval, msgid, pay, singer, songmid, songname } = item;
+        lists.push({
+          songmid,
+          songname,
+          interval,
+          singer,
+          albumcover: this.getAlbumCover(albummid),
+          albumname: albumname,
+          albumdesc: albumdesc,
+          free: msgid === 0 && pay.payplay === 0
+        });
       }
       const result = {
-        nickname, disstid, dissname, logo, desc, tags, songnum, songlist: lists, visitnum
+        disstid,
+        dissname,
+        nickname,
+        cover: logo,
+        desc,
+        tags: tags.map(item => item.name),
+        playCount: visitnum,
+        songnum,
+        songlist: lists
       };
       return this.success(result);
     }).catch(error => {
@@ -108,8 +145,32 @@ module.exports = class extends Base {
         platform: 'yqq.json',
         needNewCode: 0
       }
-    }).then(response => {
-      return this.success(response.data.data);
+    }).then(res => {
+      const song = res.data.data.song;
+      const { totalnum, list } = song;
+      const songlists = list.map(item => {
+        const { album, interval, name, mid, singer, pay } = item;
+        return {
+          songmid: mid,
+          songname: name,
+          interval,
+          singer: singer.map(child => {
+            return {
+              id: child.id,
+              name: child.name
+            };
+          }),
+          albumcover: this.getAlbumCover(album.mid),
+          albumname: album.name,
+          albumdesc: album.subtitle,
+          free: pay.pay_play === 0
+        };
+      });
+      const result = {
+        total: totalnum,
+        list: songlists
+      };
+      return this.success(result);
     }).catch(error => {
       return this.fail(error);
     });
@@ -162,21 +223,17 @@ module.exports = class extends Base {
         needNewCode: 0,
         data: JSON.stringify(postData)
       }
-    }).then(response => {
-      const fetch = response.data;
-      if (fetch.code !== 0) return this.fail();
-      const req = fetch.req_0.data;
+    }).then(res => {
+      const { code, req_0: req0 } = res.data;
+      if (code !== 0) return this.fail();
+      const req = req0.data;
       const { sip, midurlinfo } = req;
       const lists = [];
       for (const item of midurlinfo) {
-        const { filename, purl, songmid, vkey } = item;
-        lists.push({ filename, purl, songmid, vkey });
+        const { purl, songmid } = item;
+        lists.push({ songmid, url: sip[0] + purl });
       }
-      const result = {
-        sip,
-        lists
-      };
-      return this.success(result);
+      return this.success(lists);
     }).catch(error => {
       return this.fail(error);
     });
@@ -206,16 +263,20 @@ module.exports = class extends Base {
         platform: 'yqq',
         needNewCode: 0
       }
-    }).then(response => {
-      let res = response.data;
-      const start = res.indexOf('{');
-      const end = res.lastIndexOf(')');
-      res = JSON.parse(res.substring(start, end));
-      const lyric = Buffer.from(res.lyric, 'base64').toString();
-      const trans = Buffer.from(res.trans, 'base64').toString();
-      return this.success({ lyric, trans });
+    }).then(res => {
+      let data = res.data;
+      const start = data.indexOf('{');
+      const end = data.lastIndexOf(')');
+      data = JSON.parse(res.substring(start, end));
+      const lyric = Buffer.from(data.lyric, 'base64').toString();
+      const tlyric = Buffer.from(data.trans, 'base64').toString();
+      return this.success({ lyric, tlyric });
     }).catch(error => {
       return this.fail(error);
     });
+  }
+
+  getAlbumCover(id) {
+    return id ? `https://y.gtimg.cn/music/photo_new/T002R300x300M000${id}.jpg?max_age=2592000` : '';
   }
 };
