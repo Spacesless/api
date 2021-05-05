@@ -31,8 +31,10 @@ module.exports = class extends Base {
     }).then(res => {
       const { hostuin, hostname, totoal, disslist } = res.data.data;
       const lists = [];
+      let firstDisst = -1;
       disslist.forEach(item => {
         if (item.tid) {
+          if (firstDisst === -1 || item.tid < firstDisst) firstDisst = item.tid;
           lists.push({
             tid: item.tid,
             name: item.diss_name,
@@ -42,9 +44,14 @@ module.exports = class extends Base {
           });
         }
       });
+      lists.push({
+        tid: firstDisst - 1,
+        name: '我喜欢'
+      });
       const result = {
         uid: hostuin,
         nickname: hostname,
+        avatar: '//q1.qlogo.cn/g?b=qq&s=100&nk=' + hostuin,
         total: totoal,
         lists
       };
@@ -106,7 +113,7 @@ module.exports = class extends Base {
         desc,
         tags: tags.map(item => item.name),
         playCount: visitnum,
-        songnum,
+        songCount: songnum,
         songlist: lists
       };
       return this.success(result);
@@ -267,7 +274,7 @@ module.exports = class extends Base {
       let data = res.data;
       const start = data.indexOf('{');
       const end = data.lastIndexOf(')');
-      data = JSON.parse(res.substring(start, end));
+      data = JSON.parse(data.substring(start, end));
       const lyric = Buffer.from(data.lyric, 'base64').toString();
       const tlyric = Buffer.from(data.trans, 'base64').toString();
       return this.success({ lyric, tlyric });

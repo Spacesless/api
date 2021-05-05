@@ -32,6 +32,7 @@ module.exports = class extends Base {
       const result = {
         uid: creator.userId,
         nickname: creator.nickname,
+        avatar: creator.avatarUrl,
         total: playlist.length || 0,
         lists: playlist.map(item => {
           return {
@@ -90,7 +91,7 @@ module.exports = class extends Base {
         desc: description,
         tags,
         playCount: playCount,
-        songnum: trackCount,
+        songCount: trackCount,
         songlist: lists
       };
       return this.success(data);
