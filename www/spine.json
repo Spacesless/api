@@ -2701,12 +2701,6 @@
   },
   {
     "name": "柚",
-    "value": "lingbo_10",
-    "remark": "黯然礼服",
-    "jp": "绫波"
-  },
-  {
-    "name": "柚",
     "value": "lingbo_2",
     "remark": "待宵的魔女",
     "jp": "绫波"
@@ -2751,6 +2745,18 @@
     "name": "柚",
     "value": "lingbo_9",
     "remark": "新年的愿望",
+    "jp": "绫波"
+  },
+  {
+    "name": "柚",
+    "value": "lingbo_10",
+    "remark": "黯然礼服",
+    "jp": "绫波"
+  },
+  {
+    "name": "柚",
+    "value": "lingbo_11",
+    "remark": "",
     "jp": "绫波"
   },
   {

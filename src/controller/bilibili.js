@@ -14,10 +14,6 @@ module.exports = class extends Base {
       }
     }).then(response => {
       const info = response.data.data || {};
-      const faceUrl = new URL(info.face);
-      info.face = '//api.timelessq.com' + faceUrl.pathname;
-      const topPhotoUrl = new URL(info.top_photo);
-      info.top_photo = '//api.timelessq.com' + topPhotoUrl.pathname;
       return this.success(info);
     }).catch(error => {
       return this.fail(error);
@@ -61,10 +57,6 @@ module.exports = class extends Base {
       }
     }).then(response => {
       const lists = response.data.data || {};
-      lists.medias.forEach(item => {
-        const url = new URL(item.cover);
-        item.cover = '//api.timelessq.com' + url.pathname;
-      });
       return this.success(lists);
     }).catch(error => {
       return this.fail(error);
@@ -89,10 +81,6 @@ module.exports = class extends Base {
       }
     }).then(response => {
       const lists = response.data.data || {};
-      lists.list.forEach(item => {
-        const url = new URL(item.face);
-        item.face = '//api.timelessq.com' + url.pathname;
-      });
       return this.success(lists);
     }).catch(error => {
       return this.fail(error);
