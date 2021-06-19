@@ -46,64 +46,69 @@
   {
     "name": "豼",
     "value": "aheye",
-    "jp": "阿贺野"
+    "alias": "阿贺野"
   },
   {
     "name": "豼",
     "value": "aheye_2",
     "remark": "圣夜的小小捉弄",
-    "jp": "阿贺野"
+    "alias": "阿贺野"
   },
   {
     "name": "豼",
     "value": "aheye_3",
     "remark": "约会游戏？",
-    "jp": "阿贺野"
+    "alias": "阿贺野"
   },
   {
     "name": "豼",
     "value": "aheye_4",
     "remark": "告白的蓝闪蝶",
-    "jp": "阿贺野"
+    "alias": "阿贺野"
   },
   {
-    "name": "艾伦萨姆纳",
+    "name": "艾伦·萨姆纳",
     "value": "ailunsamuna"
+  },
+  {
+    "name": "艾伦·萨姆纳",
+    "value": "ailunsamuna_2",
+    "remark": "Charming Rabbit"
   },
   {
     "name": "犬",
     "value": "aidang",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "犬",
     "value": "aidang_2",
     "remark": "盛夏进行曲",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "犬",
     "value": "aidang_3",
     "remark": "冬季风物诗",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "犬",
     "value": "aidang_4",
     "remark": "学园幻想曲",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "犬",
     "value": "aidang_5",
     "remark": "巅峰时速",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "犬",
     "value": "aidang_h",
     "remark": "誓约",
-    "jp": "爱宕"
+    "alias": "爱宕"
   },
   {
     "name": "爱丁堡",
@@ -278,6 +283,11 @@
   },
   {
     "name": "阿卡司塔",
+    "value": "akasita_4",
+    "remark": "「白」与「黑」"
+  },
+  {
+    "name": "阿卡司塔",
     "value": "akasita_g",
     "remark": "改"
   },
@@ -331,13 +341,13 @@
   {
     "name": "貃",
     "value": "awuwei",
-    "jp": "阿武隈"
+    "alias": "阿武隈"
   },
   {
     "name": "貃",
     "value": "awuwei_g",
     "remark": "改",
-    "jp": "阿武隈"
+    "alias": "阿武隈"
   },
   {
     "name": "巴丹",
@@ -380,30 +390,30 @@
   {
     "name": "梿",
     "value": "bailu",
-    "jp": "白露"
+    "alias": "白露"
   },
   {
     "name": "梿",
     "value": "bailu_2",
     "remark": "要来点鱼雷吗？",
-    "jp": "白露"
+    "alias": "白露"
   },
   {
     "name": "樇",
     "value": "bangfeng",
-    "jp": "浜风"
+    "alias": "浜风"
   },
   {
     "name": "樇",
     "value": "bangfeng_2",
     "remark": "模范优等生",
-    "jp": "浜风"
+    "alias": "浜风"
   },
   {
     "name": "樇",
     "value": "bangfeng_g",
     "remark": "改",
-    "jp": "浜风"
+    "alias": "浜风"
   },
   {
     "name": "邦克山",
@@ -473,13 +483,13 @@
   {
     "name": "苝",
     "value": "beifeng",
-    "jp": "北风"
+    "alias": "北风"
   },
   {
     "name": "苝",
     "value": "beifeng_2",
     "remark": "祭典制霸！",
-    "jp": "北风"
+    "alias": "北风"
   },
   {
     "name": "北卡罗来纳",
@@ -615,30 +625,30 @@
   {
     "name": "鲟",
     "value": "birui",
-    "jp": "比叡"
+    "alias": "比叡"
   },
   {
     "name": "鲟",
     "value": "birui_2",
     "remark": "月下巡游",
-    "jp": "比叡"
+    "alias": "比叡"
   },
   {
     "name": "鲟",
     "value": "birui_4",
     "remark": "红梅垂香",
-    "jp": "比叡"
+    "alias": "比叡"
   },
   {
     "name": "鲟",
     "value": "birui_5",
     "remark": "海滩瑰景",
-    "jp": "比叡"
+    "alias": "比叡"
   },
   {
     "name": "小鲟",
     "value": "birui_younv",
-    "jp": "小比叡"
+    "alias": "小比叡"
   },
   {
     "name": "俾斯麦",
@@ -742,42 +752,59 @@
   {
     "name": "蒲",
     "value": "buzhihuo",
-    "jp": "不知火"
+    "alias": "不知火"
   },
   {
     "name": "蒲",
     "value": "buzhihuo_2",
     "remark": "月饼、不来一点吗？",
-    "jp": "不知火"
+    "alias": "不知火"
   },
   {
     "name": "蒲",
     "value": "buzhihuo_g",
     "remark": "改",
-    "jp": "不知火"
+    "alias": "不知火"
+  },
+  {
+    "name": "树城",
+    "value": "boyixi",
+    "remark": "羞怯的蓝宝石",
+    "alias": "博伊西"
+  },
+  {
+    "name": "树城",
+    "value": "boyixi_2",
+    "remark": "",
+    "alias": "博伊西"
   },
   {
     "name": "蛟",
     "value": "canglong",
-    "jp": "苍龙"
+    "alias": "苍龙"
   },
   {
     "name": "蛟",
     "value": "canglong_2",
     "remark": "松间鹤",
-    "jp": "苍龙"
+    "alias": "苍龙"
   },
   {
     "name": "蛟",
     "value": "canglong_3",
     "remark": "走廊上的风纪委员",
-    "jp": "苍龙"
+    "alias": "苍龙"
   },
   {
     "name": "蛟",
     "value": "canglong_g",
     "remark": "改",
-    "jp": "苍龙"
+    "alias": "苍龙"
+  },
+  {
+    "name": "蛟·META",
+    "value": "canglong_alter",
+    "alias": "苍龙"
   },
   {
     "name": "柴郡",
@@ -796,24 +823,30 @@
   {
     "name": "苌",
     "value": "changbo",
-    "jp": "长波"
+    "alias": "长波"
   },
   {
     "name": "苌",
     "value": "changbo_2",
     "remark": "幸福的「长波」",
-    "jp": "长波"
+    "alias": "长波"
+  },
+  {
+    "name": "苌",
+    "value": "changbo_3",
+    "remark": "安心的“长波”",
+    "alias": "长波"
   },
   {
     "name": "长春",
     "value": "changchun",
-    "jp": "長春"
+    "alias": "長春"
   },
   {
     "name": "长春",
     "value": "changchun_2",
     "remark": "春之嬉",
-    "jp": "長春"
+    "alias": "長春"
   },
   {
     "name": "长岛",
@@ -837,88 +870,88 @@
   {
     "name": "貊",
     "value": "changliang",
-    "jp": "长良"
+    "alias": "长良"
   },
   {
     "name": "貊",
     "value": "changliang_2",
     "remark": "悠闲春日",
-    "jp": "长良"
+    "alias": "长良"
   },
   {
     "name": "鲨",
     "value": "changmen",
-    "jp": "长门"
+    "alias": "长门"
   },
   {
     "name": "鲨",
     "value": "changmen_2",
     "remark": "神子的休憩",
-    "jp": "长门"
+    "alias": "长门"
   },
   {
     "name": "鲨",
     "value": "changmen_3",
     "remark": "御狐的辉振袖",
-    "jp": "长门"
+    "alias": "长门"
   },
   {
     "name": "鲨",
     "value": "changmen_4",
     "remark": "神子的闲暇一刻",
-    "jp": "长门"
+    "alias": "长门"
   },
   {
     "name": "鲨",
     "value": "changmen_h",
     "remark": "誓约",
-    "jp": "长门"
+    "alias": "长门"
   },
   {
     "name": "枨",
     "value": "changyue",
-    "jp": "长月"
+    "alias": "长月"
   },
   {
     "name": "枨",
     "value": "changyue_2",
     "remark": "喵喵女仆有点危险？",
-    "jp": "长月"
+    "alias": "长月"
   },
   {
     "name": "凰",
     "value": "chicheng",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "凰",
     "value": "chicheng_2",
     "remark": "乐园的彼岸花",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "凰",
     "value": "chicheng_3",
     "remark": "梅与雪",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "凰",
     "value": "chicheng_4",
     "remark": "朱娟余醺",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "凰",
     "value": "chicheng_h",
     "remark": "誓约",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "凰",
     "value": "chicheng_idol",
     "remark": "μ兵装",
-    "jp": "赤城"
+    "alias": "赤城"
   },
   {
     "name": "小赤城",
@@ -927,127 +960,133 @@
   {
     "name": "貆",
     "value": "chuannei",
-    "jp": "川内"
+    "alias": "川内"
   },
   {
     "name": "貆",
     "value": "chuannei_g",
     "remark": "改",
-    "jp": "川内"
+    "alias": "川内"
   },
   {
     "name": "梅",
     "value": "chuchun",
-    "jp": "初春"
+    "alias": "初春"
   },
   {
     "name": "梅",
     "value": "chuchun_2",
     "remark": "初春之雪",
-    "jp": "初春"
+    "alias": "初春"
+  },
+  {
+    "name": "梅",
+    "value": "chuchun_3",
+    "remark": "春邀灯火",
+    "alias": "初春"
   },
   {
     "name": "梅",
     "value": "chuchun_g",
     "remark": "改",
-    "jp": "初春"
+    "alias": "初春"
   },
   {
     "name": "桐",
     "value": "chuixue",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桐",
     "value": "chuixue_2",
     "remark": "迟到前的一刻",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桐",
     "value": "chuixue_3",
     "remark": "小鸡看板娘",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桐",
     "value": "chuixue_4",
     "remark": "Music Pixy",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桐",
     "value": "chuixue_5",
     "remark": "特型偶像Fubuki",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桐",
     "value": "chuixue_6",
     "remark": "实习服务生Fubuki",
-    "jp": "吹雪"
+    "alias": "吹雪"
   },
   {
     "name": "桸",
     "value": "chunyue",
-    "jp": "春月"
+    "alias": "春月"
   },
   {
     "name": "桸",
     "value": "chunyue_2",
     "remark": "迎春的神乐舞",
-    "jp": "春月"
+    "alias": "春月"
   },
   {
     "name": "檨",
     "value": "chushuang",
-    "jp": "初霜"
+    "alias": "初霜"
   },
   {
     "name": "檨",
     "value": "chushuang_2",
     "remark": "吉时祝宴",
-    "jp": "初霜"
+    "alias": "初霜"
   },
   {
     "name": "檨",
     "value": "chushuang_g",
     "remark": "改",
-    "jp": "初霜"
+    "alias": "初霜"
   },
   {
     "name": "侌",
     "value": "chuyun",
-    "jp": "出云"
+    "alias": "出云"
   },
   {
     "name": "侌",
     "value": "chuyun_2",
     "remark": "出云千本樱",
-    "jp": "出云"
+    "alias": "出云"
   },
   {
     "name": "荙",
     "value": "dachao",
-    "jp": "大潮"
+    "alias": "大潮"
   },
   {
     "name": "荙",
     "value": "dachao_2",
     "remark": "驯鹿与圣诞礼物",
-    "jp": "大潮"
+    "alias": "大潮"
   },
   {
     "name": "荙",
     "value": "dachao_3",
     "remark": "夜宴微醺",
-    "jp": "大潮"
+    "alias": "大潮"
   },
   {
     "name": "荙",
     "value": "dachao_4",
     "remark": "新春福至",
-    "jp": "大潮"
+    "alias": "大潮"
   },
   {
     "name": "大斗犬",
@@ -1056,31 +1095,31 @@
   {
     "name": "鹩",
     "value": "dafeng",
-    "jp": "大凤"
+    "alias": "大凤"
   },
   {
     "name": "鹩",
     "value": "dafeng_2",
     "remark": "毒苹果",
-    "jp": "大凤"
+    "alias": "大凤"
   },
   {
     "name": "鹩",
     "value": "dafeng_4",
     "remark": "凤鸣春晓",
-    "jp": "大凤"
+    "alias": "大凤"
   },
   {
     "name": "鹩",
     "value": "dafeng_5",
     "remark": "恋慕伴侣",
-    "jp": "大凤"
+    "alias": "大凤"
   },
   {
     "name": "鹩",
     "value": "dafeng_idol",
     "remark": "μ兵装",
-    "jp": "大凤"
+    "alias": "大凤"
   },
   {
     "name": "大黄蜂",
@@ -1159,25 +1198,25 @@
   {
     "name": "柏",
     "value": "dian",
-    "jp": "电"
+    "alias": "电"
   },
   {
     "name": "柏",
     "value": "dian_2",
     "remark": "香草布丁",
-    "jp": "电"
+    "alias": "电"
   },
   {
     "name": "柏",
     "value": "dian_3",
     "remark": "花火Inatuma",
-    "jp": "电"
+    "alias": "电"
   },
   {
     "name": "柏",
     "value": "dian_4",
     "remark": "月下妖精",
-    "jp": "电"
+    "alias": "电"
   },
   {
     "name": "独角兽",
@@ -1210,6 +1249,11 @@
   },
   {
     "name": "独角兽",
+    "value": "dujiaoshou_7",
+    "remark": "清凉阅读时光"
+  },
+  {
+    "name": "独角兽",
     "value": "dujiaoshou_h",
     "remark": "梦想的纯白誓约"
   },
@@ -1231,6 +1275,11 @@
     "name": "独立",
     "value": "duli_6",
     "remark": "Relaxation.I"
+  },
+  {
+    "name": "独立",
+    "value": "duli_g",
+    "remark": "改造"
   },
   {
     "name": "敦刻尔克",
@@ -1308,24 +1357,24 @@
   {
     "name": "龙",
     "value": "feilong",
-    "jp": "飞龙"
+    "alias": "飞龙"
   },
   {
     "name": "龙",
     "value": "feilong_2_1",
     "remark": "放学后的极道少女",
-    "jp": "飞龙"
+    "alias": "飞龙"
   },
   {
     "name": "龙",
     "value": "feilong_g",
     "remark": "改",
-    "jp": "飞龙"
+    "alias": "飞龙"
   },
   {
     "name": "龙·META",
     "value": "feilong_alter",
-    "jp": "飞龙"
+    "alias": "飞龙"
   },
   {
     "name": "菲尼克斯",
@@ -1348,18 +1397,18 @@
   {
     "name": "鸱",
     "value": "feiying",
-    "jp": "飞鹰"
+    "alias": "飞鹰"
   },
   {
     "name": "凤",
     "value": "fengxiang",
-    "jp": "凤翔"
+    "alias": "凤翔"
   },
   {
     "name": "凤",
     "value": "fengxiang_2",
     "remark": "秋枕梦",
-    "jp": "凤翔"
+    "alias": "凤翔"
   },
   {
     "name": "福尔班",
@@ -1401,30 +1450,30 @@
   {
     "name": "魟",
     "value": "fusang",
-    "jp": "扶桑"
+    "alias": "扶桑"
   },
   {
     "name": "魟",
     "value": "fusang_2",
     "remark": "春之祝",
-    "jp": "扶桑"
+    "alias": "扶桑"
   },
   {
     "name": "魟",
     "value": "fusang_3",
     "remark": "家有贤妻？",
-    "jp": "扶桑"
+    "alias": "扶桑"
   },
   {
     "name": "魟",
     "value": "fusang_g",
     "remark": "改",
-    "jp": "扶桑"
+    "alias": "扶桑"
   },
   {
     "name": "抚顺",
     "value": "fushun",
-    "jp": "撫順"
+    "alias": "撫順"
   },
   {
     "name": "富特",
@@ -1452,43 +1501,43 @@
   {
     "name": "獒",
     "value": "gaoxiong",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_2",
     "remark": "沙滩狂想曲",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_3",
     "remark": "春之意",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_4",
     "remark": "校园浪漫曲",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_5",
     "remark": "至高焦点",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_alter",
     "remark": "修改版",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "獒",
     "value": "gaoxiong_h",
     "remark": "誓约",
-    "jp": "高雄"
+    "alias": "高雄"
   },
   {
     "name": "格拉斯哥",
@@ -1603,47 +1652,53 @@
   {
     "name": "栭",
     "value": "gufeng",
-    "jp": "谷风"
+    "alias": "谷风"
   },
   {
     "name": "栭",
     "value": "gufeng_2",
     "remark": "海边的迷路少女",
-    "jp": "谷风"
+    "alias": "谷风"
   },
   {
     "name": "栭",
     "value": "gufeng_g",
     "remark": "改",
-    "jp": "谷风"
+    "alias": "谷风"
   },
   {
     "name": "猤",
     "value": "guinu",
-    "jp": "鬼怒"
+    "alias": "鬼怒"
   },
   {
     "name": "猤",
     "value": "guinu_2",
     "remark": "新年的剑鬼",
-    "jp": "鬼怒"
+    "alias": "鬼怒"
+  },
+  {
+    "name": "猤",
+    "value": "guinu_3",
+    "remark": "Token＆Ghost",
+    "alias": "鬼怒"
   },
   {
     "name": "猤",
     "value": "guinu_g",
     "remark": "改",
-    "jp": "鬼怒"
+    "alias": "鬼怒"
   },
   {
     "name": "狼",
     "value": "guying",
-    "jp": "古鹰"
+    "alias": "古鹰"
   },
   {
     "name": "狼",
     "value": "guying_g",
     "remark": "改",
-    "jp": "古鹰"
+    "alias": "古鹰"
   },
   {
     "name": "哈尔西·鲍威尔",
@@ -1793,7 +1848,7 @@
   {
     "name": "蓉",
     "value": "heichao",
-    "jp": "黒潮"
+    "alias": "黒潮"
   },
   {
     "name": "黑太子",
@@ -1808,6 +1863,11 @@
     "name": "黑太子",
     "value": "heitaizi_3",
     "remark": "Fairmaid·Spring"
+  },
+  {
+    "name": "黑太子",
+    "value": "heitaizi_4",
+    "remark": "Pop The Cork"
   },
   {
     "name": "黑泽伍德",
@@ -1828,9 +1888,14 @@
     "remark": "纯白的悠闲假日"
   },
   {
+    "name": "赫敏",
+    "value": "hemin_4",
+    "remark": "女仆的优雅午后"
+  },
+  {
     "name": "栘",
     "value": "huangchao",
-    "jp": "荒潮"
+    "alias": "荒潮"
   },
   {
     "name": "皇家方舟",
@@ -1862,13 +1927,13 @@
   {
     "name": "榵",
     "value": "huayue",
-    "jp": "花月"
+    "alias": "花月"
   },
   {
     "name": "榵",
     "value": "huayue_3",
     "remark": "白昼月、盛夏之华",
-    "jp": "花月"
+    "alias": "花月"
   },
   {
     "name": "胡德",
@@ -1882,7 +1947,12 @@
   {
     "name": "胡德",
     "value": "hude_3",
-    "remark": ""
+    "remark": "五彩的Glorius"
+  },
+  {
+    "name": "胡德",
+    "value": "hude_4",
+    "remark": "晨曦的淑女"
   },
   {
     "name": "胡德",
@@ -1982,85 +2052,91 @@
   {
     "name": "伊13",
     "value": "i13",
-    "jp": "伊13"
+    "alias": "伊13"
   },
   {
     "name": "伊168",
     "value": "I168",
-    "jp": "伊168"
+    "alias": "伊168"
   },
   {
     "name": "伊168",
     "value": "I168_2",
     "remark": "祭典之日！",
-    "jp": "伊168"
+    "alias": "伊168"
   },
   {
     "name": "伊19",
     "value": "I19",
-    "jp": "伊19"
+    "alias": "伊19"
   },
   {
     "name": "伊19",
     "value": "I19_2",
     "remark": "启程的微风",
-    "jp": "伊19"
+    "alias": "伊19"
   },
   {
     "name": "伊19",
     "value": "I19_3",
     "remark": "枕头天堂",
-    "jp": "伊19"
+    "alias": "伊19"
+  },
+  {
+    "name": "伊19",
+    "value": "i19_4",
+    "remark": "粉红甜心兔",
+    "alias": "伊19"
   },
   {
     "name": "伊25",
     "value": "I25",
-    "jp": "伊25"
+    "alias": "伊25"
   },
   {
     "name": "伊25",
     "value": "I25_2",
     "remark": "兔兔与珊瑚礁",
-    "jp": "伊25"
+    "alias": "伊25"
   },
   {
     "name": "伊25",
     "value": "i25_3",
     "remark": "甘美的新春祝福",
-    "jp": "伊25"
+    "alias": "伊25"
   },
   {
     "name": "伊26",
     "value": "I26",
-    "jp": "伊26"
+    "alias": "伊26"
   },
   {
     "name": "伊26",
     "value": "I26_2",
     "remark": "深海少女",
-    "jp": "伊26"
+    "alias": "伊26"
   },
   {
     "name": "伊26",
     "value": "i26_3",
     "remark": "烟火大会前",
-    "jp": "伊26"
+    "alias": "伊26"
   },
   {
     "name": "伊56",
     "value": "I56",
-    "jp": "伊56"
+    "alias": "伊56"
   },
   {
     "name": "伊56",
     "value": "I56_2",
     "remark": "角落的向日葵",
-    "jp": "伊56"
+    "alias": "伊56"
   },
   {
     "name": "伊58",
     "value": "I58",
-    "jp": "伊58"
+    "alias": "伊58"
   },
   {
     "name": "加富尔伯爵",
@@ -2074,53 +2150,53 @@
   {
     "name": "狌",
     "value": "jiagu",
-    "jp": "加古"
+    "alias": "加古"
   },
   {
     "name": "狌",
     "value": "jiagu_g",
     "remark": "改",
-    "jp": "加古"
+    "alias": "加古"
   },
   {
     "name": "鸾",
     "value": "jiahe",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_2",
     "remark": "常夏的杀生石",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_3",
     "remark": "白狐贺正",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_4",
     "remark": "白狐贺正",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_5",
     "remark": "",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahe_h",
     "remark": "苍染的君子兰",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "鸾",
     "value": "jiahezhanlie",
-    "jp": "加贺"
+    "alias": "加贺"
   },
   {
     "name": "加拉蒂亚",
@@ -2147,30 +2223,30 @@
   {
     "name": "茳",
     "value": "jiangfeng",
-    "jp": "江风"
+    "alias": "江风"
   },
   {
     "name": "茳",
     "value": "jiangfeng_2",
     "remark": "间奏·黑白",
-    "jp": "江风"
+    "alias": "江风"
   },
   {
     "name": "茳",
     "value": "jiangfeng_h",
     "remark": "誓约",
-    "jp": "江风"
+    "alias": "江风"
   },
   {
     "name": "㭴",
     "value": "jianye",
-    "jp": null
+    "alias": null
   },
   {
     "name": "㭴",
     "value": "jianye_2",
     "remark": "温泉放松时间",
-    "jp": null
+    "alias": null
   },
   {
     "name": "加斯科涅",
@@ -2198,13 +2274,13 @@
   {
     "name": "柉",
     "value": "jifeng",
-    "jp": "矶风"
+    "alias": "矶风"
   },
   {
     "name": "柉",
     "value": "jifeng_2",
     "remark": "新年合战",
-    "jp": "矶风"
+    "alias": "矶风"
   },
   {
     "name": "金伯利",
@@ -2218,19 +2294,19 @@
   {
     "name": "鲤",
     "value": "jingang",
-    "jp": "金刚"
+    "alias": "金刚"
   },
   {
     "name": "鲤",
     "value": "jingang_2",
     "remark": "华鸟风月",
-    "jp": "金刚"
+    "alias": "金刚"
   },
   {
     "name": "鲤",
     "value": "jingang_3",
     "remark": "Talent Hospital",
-    "jp": "金刚"
+    "alias": "金刚"
   },
   {
     "name": "竞技神",
@@ -2267,24 +2343,24 @@
   {
     "name": "鲣",
     "value": "jiyi",
-    "jp": "纪伊"
+    "alias": "纪伊"
   },
   {
     "name": "鲣",
     "value": "jiyi_2",
     "remark": "水边的诱惑",
-    "jp": "纪伊"
+    "alias": "纪伊"
   },
   {
     "name": "棬",
     "value": "juanbo",
-    "jp": "巻波"
+    "alias": "巻波"
   },
   {
     "name": "棬",
     "value": "juanbo_2",
     "remark": "元气RUN TIME！",
-    "jp": "巻波"
+    "alias": "巻波"
   },
   {
     "name": "倔强",
@@ -2298,13 +2374,13 @@
   {
     "name": "鲪",
     "value": "junhe",
-    "jp": "骏河"
+    "alias": "骏河"
   },
   {
     "name": "鲪",
     "value": "junhe_5",
     "remark": "百花庆云",
-    "jp": "骏河"
+    "alias": "骏河"
   },
   {
     "name": "君主",
@@ -2480,6 +2556,11 @@
     "remark": "海边的“皇家淑女”"
   },
   {
+    "name": "可畏",
+    "value": "kewei_3",
+    "remark": "梳妆的“大小姐”"
+  },
+  {
     "name": "试作型布里MKII",
     "value": "kin"
   },
@@ -2612,25 +2693,25 @@
   {
     "name": "梓",
     "value": "lei",
-    "jp": "雷"
+    "alias": "雷"
   },
   {
     "name": "梓",
     "value": "lei_2",
     "remark": "樱花茶",
-    "jp": "雷"
+    "alias": "雷"
   },
   {
     "name": "梓",
     "value": "lei_3",
     "remark": "祭典Ikatuchi",
-    "jp": "雷"
+    "alias": "雷"
   },
   {
     "name": "梓",
     "value": "lei_4",
     "remark": "晨曦精灵Ikatuchi",
-    "jp": "雷"
+    "alias": "雷"
   },
   {
     "name": "勒马尔",
@@ -2663,19 +2744,19 @@
   {
     "name": "栎",
     "value": "liangyue",
-    "jp": "凉月"
+    "alias": "凉月"
   },
   {
     "name": "栎",
     "value": "liangyue_2",
     "remark": "栎、伴你在海边！",
-    "jp": "凉月"
+    "alias": "凉月"
   },
   {
     "name": "栎",
     "value": "liangyue_3",
     "remark": "新年羽板球大战！",
-    "jp": "凉月"
+    "alias": "凉月"
   },
   {
     "name": "列克星敦",
@@ -2697,84 +2778,84 @@
   {
     "name": "柚",
     "value": "lingbo",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_2",
     "remark": "待宵的魔女",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_3",
     "remark": "skin unavailable",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_4",
     "remark": "乐队型鬼神",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_5",
     "remark": "新岁之鬼神",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_6",
     "remark": "一式水手风制服",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_7",
     "remark": "特殊潜入作战披风",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_8",
     "remark": "冷静偶像·迷惑中",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_9",
     "remark": "新年的愿望",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_10",
     "remark": "黯然礼服",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_11",
     "remark": "",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_g",
     "remark": "改",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "柚",
     "value": "lingbo_h",
     "remark": "誓约",
-    "jp": "绫波"
+    "alias": "绫波"
   },
   {
     "name": "狺",
     "value": "linggu",
-    "jp": "铃谷"
+    "alias": "铃谷"
   },
   {
     "name": "里诺",
@@ -2825,13 +2906,13 @@
   {
     "name": "鸗",
     "value": "longfeng",
-    "jp": "龙凤"
+    "alias": "龙凤"
   },
   {
     "name": "鸗",
     "value": "longfeng_2",
     "remark": "凤舞新年",
-    "jp": "龙凤"
+    "alias": "龙凤"
   },
   {
     "name": "龙骑兵",
@@ -2845,23 +2926,23 @@
   {
     "name": "枭",
     "value": "longxiang",
-    "jp": "龙骧"
+    "alias": "龙骧"
   },
   {
     "name": "枭",
     "value": "longxiang_2",
-    "jp": "龙骧"
+    "alias": "龙骧"
   },
   {
     "name": "鲛",
     "value": "luao",
-    "jp": "陆奥"
+    "alias": "陆奥"
   },
   {
     "name": "鲛",
     "value": "luao_2",
     "remark": "战国风云少女",
-    "jp": "陆奥"
+    "alias": "陆奥"
   },
   {
     "name": "露露缇耶",
@@ -2989,7 +3070,7 @@
   {
     "name": "樠",
     "value": "manchao",
-    "jp": "満潮"
+    "alias": "満潮"
   },
   {
     "name": "猫音",
@@ -3003,13 +3084,13 @@
   {
     "name": "楙",
     "value": "maoyue",
-    "jp": "卯月"
+    "alias": "卯月"
   },
   {
     "name": "楙",
     "value": "maoyue_2",
     "remark": "贪睡的天使",
-    "jp": "卯月"
+    "alias": "卯月"
   },
   {
     "name": "马萨诸塞",
@@ -3034,6 +3115,11 @@
     "remark": "雪夜之花"
   },
   {
+    "name": "蒙彼利埃",
+    "value": "mengbiliai_3",
+    "remark": "魔境的公主？"
+  },
+  {
     "name": "孟菲斯",
     "value": "mengfeisi"
   },
@@ -3050,7 +3136,7 @@
   {
     "name": "獌",
     "value": "miaogao",
-    "jp": "妙高"
+    "alias": "妙高"
   },
   {
     "name": "明尼阿波利斯",
@@ -3079,37 +3165,37 @@
   {
     "name": "茗",
     "value": "mingshi",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "茗",
     "value": "mingshi_2",
     "remark": "正月，浴衣，赤字",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "茗",
     "value": "mingshi_3",
     "remark": "黑猫来袭！",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "茗",
     "value": "mingshi_4",
     "remark": "IJN_在A1摊位喵！",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "茗",
     "value": "mingshi_5",
     "remark": "欢迎光临Sofmap！",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "茗",
     "value": "mingshi_h",
     "remark": "誓约",
-    "jp": "明石"
+    "alias": "明石"
   },
   {
     "name": "明斯克",
@@ -3136,36 +3222,36 @@
   {
     "name": "犮",
     "value": "moye",
-    "jp": "摩耶"
+    "alias": "摩耶"
   },
   {
     "name": "松",
     "value": "muyue",
-    "jp": "睦月"
+    "alias": "睦月"
   },
   {
     "name": "松",
     "value": "muyue_2",
     "remark": "驯鹿先生，出发！",
-    "jp": "睦月"
+    "alias": "睦月"
   },
   {
     "name": "松",
     "value": "muyue_3",
     "remark": "糖果祭典！",
-    "jp": "睦月"
+    "alias": "睦月"
   },
   {
     "name": "松",
     "value": "muyue_4",
     "remark": "春节的糖果",
-    "jp": "睦月"
+    "alias": "睦月"
   },
   {
     "name": "松",
     "value": "muyue_g",
     "remark": "改",
-    "jp": "睦月"
+    "alias": "睦月"
   },
   {
     "name": "莫妮卡",
@@ -3206,13 +3292,13 @@
   {
     "name": "豻",
     "value": "nake",
-    "jp": "那珂"
+    "alias": "那珂"
   },
   {
     "name": "豻",
     "value": "nake_2",
     "remark": "激浪之夏！",
-    "jp": "那珂"
+    "alias": "那珂"
   },
   {
     "name": "南安普顿",
@@ -3235,7 +3321,7 @@
   {
     "name": "狏",
     "value": "nazhi",
-    "jp": "那智"
+    "alias": "那智"
   },
   {
     "name": "内华达",
@@ -3249,25 +3335,25 @@
   {
     "name": "貅",
     "value": "nengdai",
-    "jp": "能代"
+    "alias": "能代"
   },
   {
     "name": "貅",
     "value": "nengdai_2",
     "remark": "祭典的秘境?",
-    "jp": "能代"
+    "alias": "能代"
   },
   {
     "name": "貅",
     "value": "nengdai_4",
     "remark": "夜响的绝园",
-    "jp": "能代"
+    "alias": "能代"
   },
   {
     "name": "貅",
     "value": "nengdai_6",
     "remark": "冬雪沁香",
-    "jp": "能代"
+    "alias": "能代"
   },
   {
     "name": "纽伦堡",
@@ -3281,7 +3367,7 @@
   {
     "name": "猋",
     "value": "niaohai",
-    "jp": "鸟海"
+    "alias": "鸟海"
   },
   {
     "name": "尼古拉斯",
@@ -3495,24 +3581,24 @@
   {
     "name": "朴",
     "value": "pubo",
-    "jp": "浦波"
+    "alias": "浦波"
   },
   {
     "name": "朴",
     "value": "pubo_2",
     "remark": "雪地先锋",
-    "jp": "浦波"
+    "alias": "浦波"
   },
   {
     "name": "槆",
     "value": "pufeng",
-    "jp": "浦风"
+    "alias": "浦风"
   },
   {
     "name": "槆",
     "value": "pufeng_2",
     "remark": "圣诞大将军",
-    "jp": "浦风"
+    "alias": "浦风"
   },
   {
     "name": "普林斯顿",
@@ -3545,24 +3631,24 @@
   {
     "name": "鹃",
     "value": "qiandaitian",
-    "jp": "千代田"
+    "alias": "千代田"
   },
   {
     "name": "鹃",
     "value": "qiandaitian_2",
     "remark": "碧波灿烂之日",
-    "jp": "千代田"
+    "alias": "千代田"
   },
   {
     "name": "鹂",
     "value": "qiansui",
-    "jp": "千歳"
+    "alias": "千歳"
   },
   {
     "name": "鹂",
     "value": "qiansui_2",
     "remark": "夏阳璀璨之日",
-    "jp": "千歳"
+    "alias": "千歳"
   },
   {
     "name": "英王乔治五世",
@@ -3589,23 +3675,23 @@
   {
     "name": "樋",
     "value": "qifeng",
-    "jp": "旗风"
+    "alias": "旗风"
   },
   {
     "name": "藮",
     "value": "qinchao",
-    "jp": "亲潮"
+    "alias": "亲潮"
   },
   {
     "name": "棈",
     "value": "qingbo",
-    "jp": "清波"
+    "alias": "清波"
   },
   {
     "name": "棈",
     "value": "qingbo_3",
     "remark": "圣诞小红帽？",
-    "jp": "清波"
+    "alias": "清波"
   },
   {
     "name": "塞壬",
@@ -3615,7 +3701,7 @@
   {
     "name": "犹",
     "value": "qingye",
-    "jp": "青叶"
+    "alias": "青叶"
   },
   {
     "name": "塞壬",
@@ -3669,6 +3755,10 @@
     "name": "企业",
     "value": "qiye_h",
     "remark": "誓约"
+  },
+  {
+    "name": "小企业",
+    "value": "qiye_younv"
   },
   {
     "name": "确捷",
@@ -3725,58 +3815,58 @@
   {
     "name": "螯",
     "value": "rixiang",
-    "jp": "日向"
+    "alias": "日向"
   },
   {
     "name": "螯",
     "value": "rixiang_g",
     "remark": "改",
-    "jp": "日向"
+    "alias": "日向"
   },
   {
     "name": "鹤",
     "value": "ruihe",
-    "jp": "瑞鹤"
+    "alias": "瑞鹤"
   },
   {
     "name": "鹤",
     "value": "ruihe_2",
     "remark": "祭华之鹤",
-    "jp": "瑞鹤"
+    "alias": "瑞鹤"
   },
   {
     "name": "鹤",
     "value": "ruihe_3",
     "remark": "飙速之鹤",
-    "jp": "瑞鹤"
+    "alias": "瑞鹤"
   },
   {
     "name": "楉",
     "value": "ruoye",
-    "jp": "若叶"
+    "alias": "若叶"
   },
   {
     "name": "楉",
     "value": "ruoye_2",
     "remark": "限时圣诞Wakaba",
-    "jp": "若叶"
+    "alias": "若叶"
   },
   {
     "name": "樟",
     "value": "ruyue",
-    "jp": "如月"
+    "alias": "如月"
   },
   {
     "name": "樟",
     "value": "ruyue_2",
     "remark": "新年祈愿",
-    "jp": "如月"
+    "alias": "如月"
   },
   {
     "name": "樟",
     "value": "ruyue_g",
     "remark": "改",
-    "jp": "如月"
+    "alias": "如月"
   },
   {
     "name": "萨福克",
@@ -3925,53 +4015,58 @@
   },
   {
     "name": "萨拉托加",
+    "value": "salatuojia_8",
+    "remark": "悠哉野餐时光"
+  },
+  {
+    "name": "萨拉托加",
     "value": "salatuojia_g",
     "remark": "改"
   },
   {
     "name": "鲐",
     "value": "sanli",
-    "jp": "三笠"
+    "alias": "三笠"
   },
   {
     "name": "鲐",
     "value": "sanli_2",
     "remark": "樱都之风",
-    "jp": "三笠"
+    "alias": "三笠"
   },
   {
     "name": "鲐",
     "value": "sanli_4",
     "remark": "赏樱日和",
-    "jp": "三笠"
+    "alias": "三笠"
   },
   {
     "name": "鲐",
     "value": "sanli_5",
     "remark": "养精蓄锐的假日",
-    "jp": "三笠"
+    "alias": "三笠"
   },
   {
     "name": "鲐",
     "value": "sanli_h",
     "remark": "誓约",
-    "jp": "三笠"
+    "alias": "三笠"
   },
   {
     "name": "檧",
     "value": "sanriyue",
-    "jp": "三日月"
+    "alias": "三日月"
   },
   {
     "name": "檧",
     "value": "sanriyue_2",
     "remark": "僵尸小姐驾到！",
-    "jp": "三日月"
+    "alias": "三日月"
   },
   {
     "name": "狻",
     "value": "sanwei",
-    "jp": "三隈"
+    "alias": "三隈"
   },
   {
     "name": "撒切尔",
@@ -3989,66 +4084,66 @@
   {
     "name": "鲼",
     "value": "shancheng",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_2",
     "remark": "季夏攻势？",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_3",
     "remark": "圣诞攻势！",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_4",
     "remark": "盛装的黑猫",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_6",
     "remark": "看板娘攻势！？",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_7",
     "remark": "skin unavailable",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_8",
     "remark": "制服攻势！",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_g",
     "remark": "改",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "鲼",
     "value": "shancheng_h",
     "remark": "誓约",
-    "jp": "山城"
+    "alias": "山城"
   },
   {
     "name": "榊",
     "value": "shenfeng",
-    "jp": "神风"
+    "alias": "神风"
   },
   {
     "name": "榊",
     "value": "shenfeng_g",
     "remark": "改",
-    "jp": "神风"
+    "alias": "神风"
   },
   {
     "name": "圣地亚哥",
@@ -4139,19 +4234,19 @@
   {
     "name": "貎",
     "value": "shentong",
-    "jp": "神通"
+    "alias": "神通"
   },
   {
     "name": "貎",
     "value": "shentong_2",
     "remark": "军师大人@休假中",
-    "jp": "神通"
+    "alias": "神通"
   },
   {
     "name": "貎",
     "value": "shentong_g",
     "remark": "改",
-    "jp": "神通"
+    "alias": "神通"
   },
   {
     "name": "什罗普郡",
@@ -4160,30 +4255,30 @@
   {
     "name": "栴",
     "value": "shiyu",
-    "jp": "时雨"
+    "alias": "时雨"
   },
   {
     "name": "栴",
     "value": "shiyu_2",
     "remark": "进击，伊490！",
-    "jp": "时雨"
+    "alias": "时雨"
   },
   {
     "name": "栴",
     "value": "shiyu_3",
     "remark": "晚会幸运星！",
-    "jp": "时雨"
+    "alias": "时雨"
   },
   {
     "name": "栴",
     "value": "shiyu_g",
     "remark": "改",
-    "jp": "时雨"
+    "alias": "时雨"
   },
   {
     "name": "杌",
     "value": "shuiwuyue",
-    "jp": "水无月"
+    "alias": "水无月"
   },
   {
     "name": "水星纪念",
@@ -4248,18 +4343,18 @@
   {
     "name": "棡",
     "value": "songfeng",
-    "jp": "松风"
+    "alias": "松风"
   },
   {
     "name": "棡",
     "value": "songfeng_g",
     "remark": "改",
-    "jp": "松风"
+    "alias": "松风"
   },
   {
     "name": "鸢",
     "value": "sunying",
-    "jp": "隼鹰"
+    "alias": "隼鹰"
   },
   {
     "name": "苏塞克斯",
@@ -4307,6 +4402,11 @@
     "value": "shidifenbote"
   },
   {
+    "name": "史蒂芬·波特",
+    "value": "shidifenbote_2",
+    "remark": "粉红干物兔"
+  },
+  {
     "name": "苏维埃贝拉罗斯",
     "value": "suweiaibeilaluosi"
   },
@@ -4327,13 +4427,13 @@
   {
     "name": "太原",
     "value": "taiyuan",
-    "jp": "太原"
+    "alias": "太原"
   },
   {
     "name": "太原",
     "value": "taiyuan_2",
     "remark": "金蛇闹春",
-    "jp": "太原"
+    "alias": "太原"
   },
   {
     "name": "唐斯",
@@ -4370,18 +4470,18 @@
   {
     "name": "鳐",
     "value": "tiancheng",
-    "jp": "天城"
+    "alias": "天城"
   },
   {
     "name": "鳐",
     "value": "tiancheng_2",
     "remark": "走水静莲",
-    "jp": "天城"
+    "alias": "天城"
   },
   {
     "name": "小鳐",
     "value": "tiancheng_younv",
-    "jp": "小天城"
+    "alias": "小天城"
   },
   {
     "name": "天后",
@@ -4450,13 +4550,13 @@
   {
     "name": "䲠",
     "value": "tuzuo",
-    "jp": "土佐"
+    "alias": "土佐"
   },
   {
     "name": "䲠",
     "value": "tuzuo_2",
     "remark": "鸣子小夏",
-    "jp": "土佐"
+    "alias": "土佐"
   },
   {
     "name": "托里拆利",
@@ -4675,8 +4775,13 @@
   },
   {
     "name": "威悉",
+    "value": "weixi_2",
+    "remark": "黯调铅华"
+  },
+  {
+    "name": "威悉",
     "value": "weixi_3",
-    "remark": "暗金绣色"
+    "remark": "暗金锈色"
   },
   {
     "name": "威尔士亲王",
@@ -4751,13 +4856,13 @@
   {
     "name": "橗",
     "value": "wenyue",
-    "jp": "文月"
+    "alias": "文月"
   },
   {
     "name": "橗",
     "value": "wenyue_2",
     "remark": "迷糊的妖精",
-    "jp": "文月"
+    "alias": "文月"
   },
   {
     "name": "沃克兰",
@@ -4771,31 +4876,31 @@
   {
     "name": "鳗",
     "value": "wudao",
-    "jp": "雾岛"
+    "alias": "雾岛"
   },
   {
     "name": "鳗",
     "value": "wudao_2",
     "remark": "放学后的退敌时间",
-    "jp": "雾岛"
+    "alias": "雾岛"
   },
   {
     "name": "鳗",
     "value": "wudao_3",
     "remark": "夏日的大胆尝试",
-    "jp": "雾岛"
+    "alias": "雾岛"
   },
   {
     "name": "鳗",
     "value": "wudao_4",
     "remark": "随性的闪耀之星",
-    "jp": "雾岛"
+    "alias": "雾岛"
   },
   {
     "name": "鳗",
     "value": "wudao_5",
     "remark": "雅致墨香",
-    "jp": "雾岛"
+    "alias": "雾岛"
   },
   {
     "name": "无敌",
@@ -4818,36 +4923,36 @@
   {
     "name": "吾妻",
     "value": "wuqi",
-    "jp": "吾妻"
+    "alias": "吾妻"
   },
   {
     "name": "吾妻",
     "value": "wuqi_2",
     "remark": "细语春霞",
-    "jp": "吾妻"
+    "alias": "吾妻"
   },
   {
     "name": "貉",
     "value": "wushiling",
-    "jp": "五十铃"
+    "alias": "五十铃"
   },
   {
     "name": "貉",
     "value": "wushiling_2",
     "remark": "童话之夜",
-    "jp": "五十铃"
+    "alias": "五十铃"
   },
   {
     "name": "貉",
     "value": "wushiling_3",
     "remark": "暖洋洋的圣诞夜",
-    "jp": "五十铃"
+    "alias": "五十铃"
   },
   {
     "name": "貉",
     "value": "wushiling_g",
     "remark": "改",
-    "jp": "五十铃"
+    "alias": "五十铃"
   },
   {
     "name": "无畏",
@@ -4861,24 +4966,24 @@
   {
     "name": "蕸",
     "value": "xia",
-    "jp": "霞"
+    "alias": "霞"
   },
   {
     "name": "蕸",
     "value": "xia_2",
     "remark": "新年暖洋洋",
-    "jp": "霞"
+    "alias": "霞"
   },
   {
     "name": "栀",
     "value": "xiang",
-    "jp": "响"
+    "alias": "响"
   },
   {
     "name": "栀",
     "value": "xiang_2",
     "remark": "正月小恶魔",
-    "jp": "响"
+    "alias": "响"
   },
   {
     "name": "香槟",
@@ -4892,19 +4997,19 @@
   {
     "name": "鹞",
     "value": "xiangfeng",
-    "jp": "祥凤"
+    "alias": "祥凤"
   },
   {
     "name": "鹞",
     "value": "xiangfeng_2",
     "remark": "夜巡的魔女",
-    "jp": "祥凤"
+    "alias": "祥凤"
   },
   {
     "name": "鹞",
     "value": "xiangfeng_g",
     "remark": "改",
-    "jp": "祥凤"
+    "alias": "祥凤"
   },
   {
     "name": "香格里拉",
@@ -4923,36 +5028,36 @@
   {
     "name": "鹬",
     "value": "xianghe",
-    "jp": "翔鹤"
+    "alias": "翔鹤"
   },
   {
     "name": "鹬",
     "value": "xianghe_2",
     "remark": "散花舞鹤",
-    "jp": "翔鹤"
+    "alias": "翔鹤"
   },
   {
     "name": "鹬",
     "value": "xianghe_3",
     "remark": "疾速之鹤",
-    "jp": "翔鹤"
+    "alias": "翔鹤"
   },
   {
     "name": "枫",
     "value": "xiao",
-    "jp": "暁"
+    "alias": "暁"
   },
   {
     "name": "枫",
     "value": "xiao_2",
     "remark": "北极的迷途",
-    "jp": "暁"
+    "alias": "暁"
   },
   {
     "name": "枫",
     "value": "xiao_3",
     "remark": "摩托忍者，出击！",
-    "jp": "暁"
+    "alias": "暁"
   },
   {
     "name": "小猎兔犬",
@@ -4995,13 +5100,13 @@
   {
     "name": "楛",
     "value": "xiaoyue",
-    "jp": "宵月"
+    "alias": "宵月"
   },
   {
     "name": "楛",
     "value": "xiaoyue_2",
     "remark": "运动会的准备",
-    "jp": "宵月"
+    "alias": "宵月"
   },
   {
     "name": "谢菲尔德",
@@ -5039,66 +5144,66 @@
   {
     "name": "椿",
     "value": "xili",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "椿",
     "value": "xili_2",
     "remark": "雪仗将军",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "椿",
     "value": "xili_3",
     "remark": "肉包杀手",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "椿",
     "value": "xili_4",
     "remark": "肉肉之宴！",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "椿",
     "value": "xili_5",
     "remark": "美梦环绕圣诞夜",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "椿",
     "value": "xili_h",
     "remark": "誓约",
-    "jp": "夕立"
+    "alias": "夕立"
   },
   {
     "name": "棭",
     "value": "ximu",
-    "jp": "夕暮"
+    "alias": "夕暮"
   },
   {
     "name": "棭",
     "value": "ximu_2",
     "remark": "女仆练习生",
-    "jp": "夕暮"
+    "alias": "夕暮"
   },
   {
     "name": "棭",
     "value": "ximu_3",
     "remark": "夕暮春华",
-    "jp": "夕暮"
+    "alias": "夕暮"
   },
   {
     "name": "棭",
     "value": "ximu_4",
     "remark": "盛绽樱华",
-    "jp": "夕暮"
+    "alias": "夕暮"
   },
   {
     "name": "棭",
     "value": "ximu_g",
     "remark": "改",
-    "jp": "夕暮"
+    "alias": "夕暮"
   },
   {
     "name": "西姆斯",
@@ -5112,13 +5217,13 @@
   {
     "name": "鵗",
     "value": "xinnong",
-    "jp": "信浓"
+    "alias": "信浓"
   },
   {
     "name": "鵗",
     "value": "xinnong_2",
     "remark": "胧月十夜",
-    "jp": "信浓"
+    "alias": "信浓"
   },
   {
     "name": "新月",
@@ -5132,18 +5237,18 @@
   {
     "name": "枥",
     "value": "xinyue_jp",
-    "jp": "新月"
+    "alias": "新月"
   },
   {
     "name": "猁",
     "value": "xiongye",
-    "jp": null
+    "alias": null
   },
   {
     "name": "猁",
     "value": "xiongye_2",
     "remark": "Fancy Wave",
-    "jp": null
+    "alias": null
   },
   {
     "name": "希佩尔海军上将",
@@ -5209,36 +5314,36 @@
   {
     "name": "狐",
     "value": "xizhang",
-    "jp": "夕张"
+    "alias": "夕张"
   },
   {
     "name": "狐",
     "value": "xizhang_g",
     "remark": "改",
-    "jp": "夕张"
+    "alias": "夕张"
   },
   {
     "name": "莲",
     "value": "xuefeng",
-    "jp": "雪风"
+    "alias": "雪风"
   },
   {
     "name": "莲",
     "value": "xuefeng_2",
     "remark": "秋千上的天津风大人",
-    "jp": "雪风"
+    "alias": "雪风"
   },
   {
     "name": "莲",
     "value": "xuefeng_3",
     "remark": "冬之雪风",
-    "jp": "雪风"
+    "alias": "雪风"
   },
   {
     "name": "莲",
     "value": "xuefeng_h",
     "remark": "誓约",
-    "jp": "雪风"
+    "alias": "雪风"
   },
   {
     "name": "絮库夫",
@@ -5302,19 +5407,19 @@
   {
     "name": "萩",
     "value": "yangyan",
-    "jp": "阳炎"
+    "alias": "阳炎"
   },
   {
     "name": "萩",
     "value": "yangyan_2",
     "remark": "南瓜与万圣夜",
-    "jp": "阳炎"
+    "alias": "阳炎"
   },
   {
     "name": "萩",
     "value": "yangyan_g",
     "remark": "改",
-    "jp": "阳炎"
+    "alias": "阳炎"
   },
   {
     "name": "盐湖城",
@@ -5346,30 +5451,30 @@
   {
     "name": "苓",
     "value": "yefen",
-    "jp": "野分"
+    "alias": "野分"
   },
   {
     "name": "峦",
     "value": "yichui",
-    "jp": "伊吹"
+    "alias": "伊吹"
   },
   {
     "name": "峦",
     "value": "yichui_2",
     "remark": "永梦的青女",
-    "jp": "伊吹"
+    "alias": "伊吹"
   },
   {
     "name": "峦",
     "value": "yichui_3",
     "remark": "轻扬的风花",
-    "jp": "伊吹"
+    "alias": "伊吹"
   },
   {
     "name": "峦",
     "value": "yichui_4",
     "remark": "新桃换旧符",
-    "jp": "伊吹"
+    "alias": "伊吹"
   },
   {
     "name": "伊卡洛斯",
@@ -5388,7 +5493,7 @@
   {
     "name": "猅",
     "value": "yili",
-    "jp": "衣笠"
+    "alias": "衣笠"
   },
   {
     "name": "伊丽莎白女王",
@@ -5460,26 +5565,31 @@
     "remark": "小护士的时间"
   },
   {
+    "name": "英勇",
+    "value": "yingyong_3",
+    "remark": "英勇女王陛下？"
+  },
+  {
     "name": "鳌",
     "value": "yishi",
-    "jp": "伊势"
+    "alias": "伊势"
   },
   {
     "name": "鳌",
     "value": "yishi_g",
     "remark": "改",
-    "jp": "伊势"
+    "alias": "伊势"
   },
   {
     "name": "逸仙",
     "value": "yixian",
-    "jp": "逸仙"
+    "alias": "逸仙"
   },
   {
     "name": "逸仙",
     "value": "yixian_h",
     "remark": "誓约",
-    "jp": "逸仙"
+    "alias": "逸仙"
   },
   {
     "name": "勇敢",
@@ -5488,19 +5598,19 @@
   {
     "name": "榎",
     "value": "youming",
-    "jp": "有明"
+    "alias": "有明"
   },
   {
     "name": "榎",
     "value": "youming_2",
     "remark": "四季团圆",
-    "jp": "有明"
+    "alias": "有明"
   },
   {
     "name": "榎",
     "value": "youming_g",
     "remark": "改",
-    "jp": "有明"
+    "alias": "有明"
   },
   {
     "name": "约克",
@@ -5729,19 +5839,19 @@
   {
     "name": "棹",
     "value": "zhaochao",
-    "jp": "朝潮"
+    "alias": "朝潮"
   },
   {
     "name": "棹",
     "value": "zhaochao_2",
     "remark": "樱花下的转校生",
-    "jp": "朝潮"
+    "alias": "朝潮"
   },
   {
     "name": "棹",
     "value": "zhaochao_4",
     "remark": "雪朝与铃",
-    "jp": "朝潮"
+    "alias": "朝潮"
   },
   {
     "name": "肇和",
@@ -5755,24 +5865,24 @@
   {
     "name": "鲑",
     "value": "zhenming",
-    "jp": "榛名"
+    "alias": "榛名"
   },
   {
     "name": "鲑",
     "value": "zhenming_2",
-    "jp": "榛名"
+    "alias": "榛名"
   },
   {
     "name": "鲑",
     "value": "zhenming_3",
     "remark": "授课前的自由时间",
-    "jp": "榛名"
+    "alias": "榛名"
   },
   {
     "name": "鲑",
     "value": "zhenming_4",
     "remark": "绯红Innocence",
-    "jp": "榛名"
+    "alias": "榛名"
   },
   {
     "name": "芝加哥",
@@ -5781,13 +5891,13 @@
   {
     "name": "椎",
     "value": "zhuifeng",
-    "jp": "追風"
+    "alias": "追風"
   },
   {
     "name": "椎",
     "value": "zhuifeng_3",
     "remark": "夏日的全力一击",
-    "jp": "追風"
+    "alias": "追風"
   },
   {
     "name": "追赶者",
@@ -5814,30 +5924,30 @@
   {
     "name": "狳",
     "value": "zubing",
-    "jp": "足柄"
+    "alias": "足柄"
   },
   {
     "name": "狳",
     "value": "zubing_2",
     "remark": "幕间小憩",
-    "jp": "足柄"
+    "alias": "足柄"
   },
   {
     "name": "狳",
     "value": "zubing_3",
     "remark": "缤纷之夏",
-    "jp": "足柄"
+    "alias": "足柄"
   },
   {
     "name": "猨",
     "value": "zuishang",
-    "jp": "最上"
+    "alias": "最上"
   },
   {
     "name": "猨",
     "value": "zuishang_g",
     "remark": "改",
-    "jp": "最上"
+    "alias": "最上"
   },
   {
     "name": "佐治亚",
@@ -5866,5 +5976,66 @@
     "name": "凪咲",
     "value": "zhixiao_2_DOA",
     "remark": "蓝天好心情"
+  },
+  {
+    "name": "花园",
+    "value": "xinzexi",
+    "alias": "新泽西"
+  },
+  {
+    "name": "花园",
+    "value": "xinzexi_2",
+    "remark": "跃动的舞台时间！",
+    "alias": "新泽西"
+  },
+  {
+    "name": "卡莉永",
+    "value": "tikangdeluojia",
+    "alias": "提康德罗加"
+  },
+  {
+    "name": "卡莉永",
+    "value": "tikangdeluojia_2",
+    "remark": "黑兔的舞台秀",
+    "alias": "提康德罗加"
+  },
+  {
+    "name": "卡莉永",
+    "value": "tikangdeluojia_2_hx",
+    "remark": "",
+    "alias": "提康德罗加"
+  },
+  {
+    "name": "喷水鱼",
+    "value": "sheshuiyu",
+    "alias": "射水鱼"
+  },
+  {
+    "name": "喷水鱼",
+    "value": "sheshuiyu_3",
+    "remark": "兔兔特调",
+    "alias": "射水鱼"
+  },
+  {
+    "name": "赛普拉斯",
+    "value": "molisen",
+    "alias": "莫里森"
+  },
+  {
+    "name": "赛普拉斯",
+    "value": "molisen_2",
+    "remark": "小熊整备中",
+    "alias": "莫里森"
+  },
+  {
+    "name": "雾城",
+    "value": "jiujinshan",
+    "alias": "旧金山"
+  },
+  {
+    "name": "雾城",
+    "value": "jiujinshan_3",
+    "remark": "Funny Bunny!",
+    "alias": "旧金山"
   }
 ]

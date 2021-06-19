@@ -1,5 +1,6 @@
 const Base = require('./base');
-const { Solar, Lunar, SolarUtil, LunarUtil } = require('lunar-javascript');
+const { Solar, Lunar, SolarUtil, LunarUtil, LunarYear } = require('lunar-javascript');
+
 // http://6tail.cn/calendar/api.html
 
 module.exports = class extends Base {
@@ -51,6 +52,8 @@ module.exports = class extends Base {
     const cnYear = lunarInstance.getYearInChinese();
     const lunarMonth = lunarInstance.getMonth();
 
+    const lunarYearInstance = LunarYear.fromYear(lunarYear);
+
     // 计算当月的二十四节气
     const solarTerms = [];
     const jieQiList = lunarInstance.getJieQiList();
@@ -76,8 +79,8 @@ module.exports = class extends Base {
       cyclicalMonth: lunarInstance.getMonthInGanZhi(), // 干支纪月
       cyclicalDay: lunarInstance.getDayInGanZhi(), // 干支纪日
       hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
-      maxDayInMonth: LunarUtil.getDaysOfMonth(lunarYear, lunarMonth), // 农历当月天数
-      leapMonth: LunarUtil.getLeapMonth(lunarYear), // 当年闰几月
+      maxDayInMonth: lunarYearInstance.getMonth(lunarMonth)['_p'].dayCount, // 农历当月天数
+      leapMonth: lunarYearInstance.getLeapMonth(lunarYear), // 当年闰几月
       festivals: lunarInstance.getFestivals(), // 农历节日
       solarTerms // 二十四节气
     };
