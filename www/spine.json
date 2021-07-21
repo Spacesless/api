@@ -1918,6 +1918,11 @@
   },
   {
     "name": "皇家方舟",
+    "value": "huangjiafangzhou_h",
+    "remark": "誓约"
+  },
+  {
+    "name": "皇家方舟",
     "value": "huangjiafangzhou_alter"
   },
   {
@@ -2378,6 +2383,12 @@
   },
   {
     "name": "鲪",
+    "value": "junhe_3",
+    "remark": "偶遇的优等生",
+    "alias": "骏河"
+  },
+  {
+    "name": "鲪",
     "value": "junhe_5",
     "remark": "百花庆云",
     "alias": "骏河"
@@ -2458,6 +2469,11 @@
   {
     "name": "卡辛",
     "value": "kaxin"
+  },
+  {
+    "name": "卡辛",
+    "value": "kaxin_2",
+    "remark": "购物车大小姐"
   },
   {
     "name": "卡辛",
@@ -2652,6 +2668,11 @@
     "name": "拉菲",
     "value": "lafei_8",
     "remark": "兔兔偶像·提不起劲"
+  },
+  {
+    "name": "拉菲",
+    "value": "lafei_9",
+    "remark": ""
   },
   {
     "name": "拉菲",
@@ -2931,6 +2952,13 @@
   {
     "name": "枭",
     "value": "longxiang_2",
+    "remark": "干物武士？",
+    "alias": "龙骧"
+  },
+  {
+    "name": "枭",
+    "value": "longxiang_3",
+    "remark": "课后狩猎时间",
     "alias": "龙骧"
   },
   {
@@ -2989,6 +3017,11 @@
     "name": "罗德尼",
     "value": "luodeni_3",
     "remark": "一日见习店员"
+  },
+  {
+    "name": "罗德尼",
+    "value": "luodeni_h",
+    "remark": "誓约"
   },
   {
     "name": "罗恩",
@@ -3132,6 +3165,11 @@
     "name": "孟菲斯",
     "value": "mengfeisi_3",
     "remark": "Mystical Night"
+  },
+  {
+    "name": "孟菲斯",
+    "value": "mengfeisi_4",
+    "remark": "课间的微风"
   },
   {
     "name": "獌",
@@ -3598,6 +3636,12 @@
     "name": "槆",
     "value": "pufeng_2",
     "remark": "圣诞大将军",
+    "alias": "浦风"
+  },
+  {
+    "name": "槆",
+    "value": "pufeng_3",
+    "remark": "战国乐队!",
     "alias": "浦风"
   },
   {
@@ -4441,6 +4485,11 @@
   },
   {
     "name": "唐斯",
+    "value": "tangsi_2",
+    "remark": "捣蛋的帮手？"
+  },
+  {
+    "name": "唐斯",
     "value": "tangsi_g",
     "remark": "改"
   },
@@ -4973,6 +5022,17 @@
     "value": "xia_2",
     "remark": "新年暖洋洋",
     "alias": "霞"
+  },
+  {
+    "name": "蕸",
+    "value": "xia_3",
+    "remark": "开学晃悠悠",
+    "alias": "霞"
+  },
+  {
+    "name": "蕸",
+    "value": "xia_g",
+    "remark": "改"
   },
   {
     "name": "栀",
@@ -5729,7 +5789,12 @@
   {
     "name": "Z23",
     "value": "z23_8",
-    "remark": "skin unavailable"
+    "remark": "黑曜的嫁衣"
+  },
+  {
+    "name": "Z23",
+    "value": "z23_9",
+    "remark": "秘密的起居室"
   },
   {
     "name": "Z23",
@@ -6037,5 +6102,52 @@
     "value": "jiujinshan_3",
     "remark": "Funny Bunny!",
     "alias": "旧金山"
+  },
+  {
+    "name": "埃吉尔",
+    "value": "aijier"
+  },
+  {
+    "name": "安克雷奇",
+    "value": "ankeleiqi"
+  },
+  {
+    "name": "奥古斯特·冯·帕塞瓦尔",
+    "value": "aogusite"
+  },
+  {
+    "name": "鹫",
+    "value": "bailong",
+    "alias": "白龙"
+  },
+  {
+    "name": "杉",
+    "value": "baixue",
+    "alias": "白雪"
+  },
+  {
+    "name": "杉",
+    "value": "baixue_2",
+    "remark": "白兔饲养员",
+    "alias": "白雪"
+  },
+  {
+    "name": "枟",
+    "value": "fengyun",
+    "alias": "风云"
+  },
+  {
+    "name": "枟",
+    "value": "fengyun_3",
+    "remark": "放学后的悠扬",
+    "alias": "风云"
+  },
+  {
+    "name": "海伦娜·META",
+    "value": "hailunna_alter"
+  },
+  {
+    "name": "马可·波罗",
+    "value": "makeboluo"
   }
 ]

@@ -18,7 +18,7 @@ module.exports = class extends Base {
    * 5.生活指数。
    * @see https://www.nowapi.com/api/weather.realtime
    */
-  async indexAction(failFlag = 0, sign) {
+  async indexAction(sign, failFlag = 0) {
     const { weaid, ag } = this.get();
     await axios.get(this.apiUrl, {
       params: {
@@ -36,7 +36,7 @@ module.exports = class extends Base {
         if (msgid === '1000553' && failFlag < 1) { // sign过期，重试一次
           const sign = await this.refreshSign();
           failFlag++;
-          return this.indexAction(failFlag, sign);
+          return this.indexAction(sign, failFlag);
         }
         return this.fail(`${msgid}，${msg}`);
       }
@@ -48,7 +48,7 @@ module.exports = class extends Base {
    * 2015-07-07之后，包括当天
    * @see https://www.nowapi.com/api/weather.history
    */
-  async historyAction(failFlag = 0, sign) {
+  async historyAction(sign, failFlag = 0) {
     const { weaid, date } = this.get();
     await axios.get(this.apiUrl, {
       params: {
@@ -66,7 +66,7 @@ module.exports = class extends Base {
         if (msgid === '1000553' && failFlag < 1) { // sign过期，重试一次
           const sign = await this.refreshSign();
           failFlag++;
-          return this.historyAction(failFlag, sign);
+          return this.historyAction(sign, failFlag);
         }
         return this.fail(`${msgid}，${msg}`);
       }
