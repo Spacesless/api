@@ -27,6 +27,8 @@ output.tar.gz
 runtime/
 app/
 
+www/SD
+
 config.development.js
 adapter.development.js
 

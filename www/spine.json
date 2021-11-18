@@ -1,966 +1,1017 @@
 [
   {
     "name": "22",
-    "value": "22"
+    "value": "22",
+    "remark": "22"
   },
   {
     "name": "33",
-    "value": "33"
+    "value": "33",
+    "remark": "33"
   },
   {
     "name": "阿贝克隆比",
-    "value": "abeikelongbi"
+    "value": "abeikelongbi",
+    "remark": "阿贝克隆比"
   },
   {
     "name": "阿贝克隆比",
-    "remark": "惊叫南瓜！",
-    "value": "abeikelongbi_2"
+    "value": "abeikelongbi_2",
+    "remark": "惊叫南瓜！"
   },
   {
     "name": "阿贝克隆比",
-    "remark": "坏坏兔的恶作剧！",
-    "value": "abeikelongbi_3"
+    "value": "abeikelongbi_3",
+    "remark": "坏坏兔的恶作剧！"
   },
   {
-    "name": "阿布鲁奇公爵",
-    "value": "abuluqi"
+    "name": "阿布鲁齐公爵",
+    "value": "abuluqi",
+    "remark": "阿布鲁齐公爵"
   },
   {
-    "name": "阿布鲁奇公爵",
-    "remark": "漆黑的人鱼公主",
-    "value": "abuluqi_2"
+    "name": "阿布鲁齐公爵",
+    "value": "abuluqi_2",
+    "remark": "漆黑的人鱼公主"
   },
   {
     "name": "阿尔及利亚",
-    "value": "aerjiliya"
+    "value": "aerjiliya",
+    "remark": "阿尔及利亚"
   },
   {
     "name": "阿尔及利亚",
-    "remark": "白沙天堂",
-    "value": "aerjiliya_2"
+    "value": "aerjiliya_2",
+    "remark": "白沙天堂"
   },
   {
     "name": "阿芙乐尔",
-    "value": "afuleer"
+    "value": "afuleer",
+    "remark": "阿芙乐尔"
   },
   {
     "name": "阿芙乐尔",
-    "remark": "囚塔中的曙光公主",
-    "value": "afuleer_2"
+    "value": "afuleer_2",
+    "remark": "囚塔中的曙光公主"
   },
   {
-    "alias": "阿贺野",
-    "name": "豼",
+    "name": "阿贺野",
     "value": "aheye"
   },
   {
-    "alias": "阿贺野",
-    "name": "豼",
-    "remark": "圣夜的小小捉弄",
-    "value": "aheye_2"
+    "name": "阿贺野",
+    "value": "aheye_2",
+    "remark": "约会游戏？"
   },
   {
-    "alias": "阿贺野",
-    "name": "豼",
-    "remark": "约会游戏？",
-    "value": "aheye_3"
+    "name": "阿贺野",
+    "value": "aheye_3",
+    "remark": "圣夜的小小捉弄"
   },
   {
-    "alias": "阿贺野",
-    "name": "豼",
-    "remark": "告白的蓝闪蝶",
-    "value": "aheye_4"
+    "name": "阿贺野",
+    "value": "aheye_4",
+    "remark": "告白的蓝闪蝶"
   },
   {
-    "name": "艾伦·萨姆纳",
-    "value": "ailunsamuna"
-  },
-  {
-    "name": "艾伦·萨姆纳",
-    "remark": "Charming Rabbit",
-    "value": "ailunsamuna_2"
-  },
-  {
-    "alias": "爱宕",
-    "name": "犬",
+    "name": "爱宕",
     "value": "aidang"
   },
   {
-    "alias": "爱宕",
-    "name": "犬",
-    "remark": "盛夏进行曲",
-    "value": "aidang_2"
+    "name": "爱宕",
+    "value": "aidang_2",
+    "remark": "盛夏进行曲"
   },
   {
-    "alias": "爱宕",
-    "name": "犬",
-    "remark": "冬季风物诗",
-    "value": "aidang_3"
+    "name": "爱宕",
+    "value": "aidang_3",
+    "remark": "冬季风物诗"
   },
   {
-    "alias": "爱宕",
-    "name": "犬",
-    "remark": "学园幻想曲",
-    "value": "aidang_4"
+    "name": "爱宕",
+    "value": "aidang_4",
+    "remark": "学园幻想曲"
   },
   {
-    "alias": "爱宕",
-    "name": "犬",
-    "remark": "巅峰时速",
-    "value": "aidang_5"
+    "name": "爱宕",
+    "value": "aidang_5",
+    "remark": "巅峰时速"
   },
   {
-    "alias": "爱宕",
-    "name": "犬",
-    "remark": "誓约",
-    "value": "aidang_h"
+    "name": "爱宕",
+    "value": "aidang_h",
+    "remark": "白花的誓言"
   },
   {
     "name": "爱丁堡",
-    "value": "aidingbao"
+    "value": "aidingbao",
+    "remark": "爱丁堡"
   },
   {
     "name": "爱丁堡",
-    "remark": "图书室的妖精",
-    "value": "aidingbao_2"
+    "value": "aidingbao_2",
+    "remark": "图书室的妖精"
   },
   {
     "name": "爱丁堡",
-    "remark": "Candy Maid",
-    "value": "aidingbao_3"
+    "value": "aidingbao_3",
+    "remark": "Candy Maid"
   },
   {
     "name": "埃尔德里奇",
-    "value": "aierdeliqi"
+    "value": "aierdeliqi",
+    "remark": "埃尔德里奇"
   },
   {
     "name": "埃尔德里奇",
-    "remark": "圣夜的拥抱",
-    "value": "aierdeliqi_2"
+    "value": "aierdeliqi_2",
+    "remark": "圣夜的拥抱"
   },
   {
     "name": "埃尔德里奇",
-    "remark": "空教室的不可思议",
-    "value": "aierdeliqi_3"
+    "value": "aierdeliqi_3",
+    "remark": "空教室的不可思议"
   },
   {
     "name": "埃尔德里奇",
-    "remark": "正月的牵手",
-    "value": "aierdeliqi_4"
+    "value": "aierdeliqi_4",
+    "remark": "正月的牵手"
   },
   {
     "name": "埃尔德里奇",
-    "remark": "喵喵偶像团？",
-    "value": "aierdeliqi_5"
+    "value": "aierdeliqi_5",
+    "remark": "喵喵偶像团？"
+  },
+  {
+    "name": "埃尔德里奇",
+    "value": "aierdeliqi_7",
+    "remark": "太空中秋节"
   },
   {
     "name": "艾尔温",
-    "value": "aierwen"
+    "value": "aierwen",
+    "remark": "艾尔温"
   },
   {
     "name": "艾尔温",
-    "remark": "星期天的水族馆",
-    "value": "aierwen_2"
+    "value": "aierwen_2",
+    "remark": "星期天的水族馆"
   },
   {
     "name": "绊爱·SuperGamer",
-    "value": "aijiangBB"
+    "value": "aijiangBB",
+    "remark": "绊爱·SuperGamer"
   },
   {
     "name": "绊爱·Elegant",
-    "value": "aijiangCL"
+    "value": "aijiangCL",
+    "remark": "绊爱·Elegant"
   },
   {
     "name": "绊爱·Anniversary",
-    "value": "aijiangCV"
+    "value": "aijiangCV",
+    "remark": "绊爱·Anniversary"
   },
   {
-    "name": "绊爱DD",
-    "value": "aijiangDD"
+    "name": "绊爱",
+    "value": "aijiangDD",
+    "remark": "绊爱"
   },
   {
-    "name": "绊爱DD",
-    "remark": "Sakura Festival",
-    "value": "aijiangDD_2"
+    "name": "绊爱",
+    "value": "aijiangDD_2",
+    "remark": "Sakura Festival"
+  },
+  {
+    "name": "埃吉尔",
+    "value": "aijier",
+    "remark": "埃吉尔"
   },
   {
     "name": "埃克塞特",
-    "value": "aikesaite"
+    "value": "aikesaite",
+    "remark": "埃克塞特"
   },
   {
     "name": "埃克塞特",
-    "remark": "改",
-    "value": "aikesaite_g"
+    "value": "aikesaite_2",
+    "remark": "荣耀与举杯同在"
+  },
+  {
+    "name": "埃克塞特",
+    "value": "aikesaite_g",
+    "remark": "埃克塞特.改"
+  },
+  {
+    "name": "艾伦·萨姆纳",
+    "value": "ailunsamuna",
+    "remark": "艾伦·萨姆纳"
+  },
+  {
+    "name": "艾伦·萨姆纳",
+    "value": "ailunsamuna_2",
+    "remark": "Charming Rabbit"
   },
   {
     "name": "埃米尔·贝尔汀",
-    "value": "aimierbeierding"
+    "value": "aimierbeierding",
+    "remark": "埃米尔·贝尔汀"
   },
   {
     "name": "埃米尔·贝尔汀",
-    "remark": "蓝色海岸",
-    "value": "aimierbeierding_2"
+    "value": "aimierbeierding_2",
+    "remark": "蓝色海岸"
   },
   {
     "name": "埃米尔·贝尔汀",
-    "remark": "「女仆」浪漫",
-    "value": "aimierbeierding_3"
+    "value": "aimierbeierding_3",
+    "remark": "「女仆」浪漫"
   },
   {
     "name": "埃米尔·贝尔汀",
-    "remark": "改",
-    "value": "aimierbeierding_g"
+    "value": "aimierbeierding_4",
+    "remark": "芬芳的舞姬"
+  },
+  {
+    "name": "埃米尔·贝尔汀",
+    "value": "aimierbeierding_g",
+    "remark": "埃米尔·贝尔汀.改"
   },
   {
     "name": "埃塞克斯",
-    "value": "aisaikesi"
+    "value": "aisaikesi",
+    "remark": "埃塞克斯"
   },
   {
     "name": "埃塞克斯",
-    "remark": "自行车",
-    "value": "aisaikesi_2"
+    "value": "aisaikesi_3",
+    "remark": "66号公路之旅"
   },
   {
     "name": "埃塞克斯",
-    "remark": "66号公路之旅",
-    "value": "aisaikesi_3"
+    "value": "aisaikesi_4",
+    "remark": "Craft Fairytail"
   },
   {
     "name": "埃塞克斯",
-    "remark": "Craft Fairytail",
-    "value": "aisaikesi_4"
-  },
-  {
-    "name": "埃塞克斯",
-    "remark": "笔墨乾坤",
-    "value": "aisaikesi_5"
+    "value": "aisaikesi_5",
+    "remark": "笔墨乾坤"
   },
   {
     "name": "爱斯基摩人",
-    "value": "aisijimo"
+    "value": "aisijimo",
+    "remark": "爱斯基摩人"
   },
   {
     "name": "爱斯基摩人",
-    "remark": "海边的“问题儿童”",
-    "value": "aisijimo_2"
+    "value": "aisijimo_2",
+    "remark": "海边的“问题儿童”"
   },
   {
     "name": "阿贾克斯",
-    "value": "ajiakesi"
+    "value": "ajiakesi",
+    "remark": "阿贾克斯"
   },
   {
     "name": "阿贾克斯",
-    "remark": "晚会女王",
-    "value": "ajiakesi_2"
+    "value": "ajiakesi_2",
+    "remark": "晚会女王"
   },
   {
     "name": "阿贾克斯",
-    "remark": "节日的'特别奖励'",
-    "value": "ajiakesi_3"
+    "value": "ajiakesi_3",
+    "remark": "节日的“特别奖励”"
   },
   {
     "name": "阿贾克斯",
-    "remark": "改",
-    "value": "ajiakesi_g"
+    "value": "ajiakesi_g",
+    "remark": "阿贾克斯.改"
   },
   {
     "name": "阿基里斯",
-    "value": "ajilisi"
+    "value": "ajilisi",
+    "remark": "阿基里斯"
   },
   {
     "name": "阿基里斯",
-    "remark": "改",
-    "value": "ajilisi_g"
+    "value": "ajilisi_g",
+    "remark": "阿基里斯.改"
   },
   {
     "name": "阿卡司塔",
-    "value": "akasita"
+    "value": "akasita",
+    "remark": "阿卡司塔"
   },
   {
     "name": "阿卡司塔",
-    "remark": "外出模式",
-    "value": "akasita_2"
+    "value": "akasita_2",
+    "remark": "外出模式"
   },
   {
     "name": "阿卡司塔",
-    "remark": "元宵灯会",
-    "value": "akasita_3"
+    "value": "akasita_3",
+    "remark": "元宵灯会"
   },
   {
     "name": "阿卡司塔",
-    "remark": "「白」与「黑」",
-    "value": "akasita_4"
+    "value": "akasita_4",
+    "remark": "「白」与「黑」"
   },
   {
     "name": "阿卡司塔",
-    "remark": "改",
-    "value": "akasita_g"
+    "value": "akasita_g",
+    "remark": "阿卡司塔.改"
   },
   {
     "name": "阿拉巴马",
-    "value": "alabama"
+    "value": "alabama",
+    "remark": "阿拉巴马"
+  },
+  {
+    "name": "安克雷奇",
+    "value": "ankeleiqi",
+    "remark": "安克雷奇"
   },
   {
     "name": "鞍山",
-    "value": "anshan"
+    "value": "anshan",
+    "remark": "鞍山"
   },
   {
     "name": "鞍山",
-    "remark": "和平的号角",
-    "value": "anshan_2"
+    "value": "anshan_2",
+    "remark": "和平的号角"
   },
   {
     "name": "奥丁",
-    "value": "aoding"
+    "value": "aoding",
+    "remark": "奥丁"
   },
   {
     "name": "奥丁",
-    "remark": "挥毫苍雪",
-    "value": "aoding_2"
+    "value": "aoding_2",
+    "remark": "挥毫苍雪"
+  },
+  {
+    "name": "奥古斯特·冯·帕塞瓦尔",
+    "value": "aogusite",
+    "remark": "奥古斯特·冯·帕塞瓦尔"
   },
   {
     "name": "奥利克",
-    "value": "aolike"
+    "value": "aolike",
+    "remark": "奥利克"
   },
   {
     "name": "奥马哈",
-    "value": "aomaha"
+    "value": "aomaha",
+    "remark": "奥马哈"
   },
   {
     "name": "查尔斯·奥斯本",
-    "value": "aosiben"
+    "value": "aosiben",
+    "remark": "查尔斯·奥斯本"
   },
   {
     "name": "阿瑞托莎",
-    "value": "aruituosha"
+    "value": "aruituosha",
+    "remark": "阿瑞托莎"
   },
   {
     "name": "阿斯托利亚",
-    "value": "asituoliya"
+    "value": "asituoliya",
+    "remark": "阿斯托利亚"
   },
   {
     "name": "阿斯托利亚",
-    "remark": "清纯系辣妹？",
-    "value": "asituoliya_3"
+    "value": "asituoliya_3",
+    "remark": "清纯系辣妹？"
   },
   {
-    "alias": "阿武隈",
-    "name": "貃",
+    "name": "阿武隈",
     "value": "awuwei"
   },
   {
-    "alias": "阿武隈",
-    "name": "貃",
-    "remark": "改",
-    "value": "awuwei_g"
+    "name": "阿武隈",
+    "value": "awuwei_g",
+    "remark": "改"
   },
   {
     "name": "巴丹",
-    "value": "badan"
+    "value": "badan",
+    "remark": "巴丹"
   },
   {
     "name": "巴丹",
-    "remark": "软绵绵睡衣",
-    "value": "badan_2"
+    "value": "badan_2",
+    "remark": "软绵绵睡衣"
   },
   {
     "name": "巴尔的摩",
-    "value": "baerdimo"
+    "value": "baerdimo",
+    "remark": "巴尔的摩"
   },
   {
     "name": "巴尔的摩",
-    "remark": "放学后的ACE",
-    "value": "baerdimo_2"
+    "value": "baerdimo_2",
+    "remark": "放学后的ACE"
   },
   {
     "name": "巴尔的摩",
-    "remark": "ACE的旅行记",
-    "value": "baerdimo_3"
+    "value": "baerdimo_3",
+    "remark": "ACE的旅行记"
   },
   {
     "name": "巴尔的摩",
-    "remark": "Black Ace",
-    "value": "baerdimo_4"
+    "value": "baerdimo_4",
+    "remark": "Black Ace"
   },
   {
     "name": "巴尔的摩",
-    "remark": "夜风minuet",
-    "value": "baerdimo_5"
+    "value": "baerdimo_5",
+    "remark": "夜风Minuet"
   },
   {
-    "name": "巴尔的摩",
-    "remark": "μ兵装",
-    "value": "baerdimo_idol"
+    "name": "巴尔的摩(μ兵装)",
+    "value": "baerdimo_idol",
+    "remark": "巴尔的摩(μ兵装)"
   },
   {
-    "alias": "白露",
-    "name": "梿",
+    "name": "白龙",
+    "value": "bailong"
+  },
+  {
+    "name": "白露",
     "value": "bailu"
   },
   {
-    "alias": "白露",
-    "name": "梿",
-    "remark": "要来点鱼雷吗？",
-    "value": "bailu_2"
+    "name": "白露",
+    "value": "bailu_2",
+    "remark": "要来点鱼雷吗？"
   },
   {
-    "alias": "浜风",
-    "name": "樇",
+    "name": "白雪",
+    "value": "baixue"
+  },
+  {
+    "name": "白雪",
+    "value": "baixue_2",
+    "remark": "白兔饲养员"
+  },
+  {
+    "name": "滨风",
     "value": "bangfeng"
   },
   {
-    "alias": "浜风",
-    "name": "樇",
-    "remark": "模范优等生",
-    "value": "bangfeng_2"
+    "name": "滨风",
+    "value": "bangfeng_2",
+    "remark": "模范优等生"
   },
   {
-    "alias": "浜风",
-    "name": "樇",
-    "remark": "改",
-    "value": "bangfeng_g"
+    "name": "滨风",
+    "value": "bangfeng_g",
+    "remark": "改"
   },
   {
     "name": "邦克山",
-    "value": "bangkeshan"
+    "value": "bangkeshan",
+    "remark": "邦克山"
   },
   {
     "name": "半人马",
-    "value": "banrenma"
+    "value": "banrenma",
+    "remark": "半人马"
   },
   {
     "name": "半人马",
-    "remark": "沙滨的水之精灵",
-    "value": "banrenma_2"
+    "value": "banrenma_2",
+    "remark": "沙滨的水之精灵"
   },
   {
     "name": "半人马",
-    "remark": "清冽的春风",
-    "value": "banrenma_3"
+    "value": "banrenma_3",
+    "remark": "清冽的春风"
   },
   {
     "name": "北安普敦",
-    "value": "beianpudun"
+    "value": "beianpudun",
+    "remark": "北安普敦"
   },
   {
     "name": "贝尔法斯特",
-    "value": "beierfasite"
+    "value": "beierfasite",
+    "remark": "贝尔法斯特"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "彩云之玫瑰",
-    "value": "beierfasite_2"
+    "value": "beierfasite_2",
+    "remark": "彩云之玫瑰"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "凛冽的钢之从者",
-    "value": "beierfasite_3"
+    "value": "beierfasite_3",
+    "remark": "优雅而高贵的从者"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "优雅而高贵的从者",
-    "value": "beierfasite_4"
+    "value": "beierfasite_4",
+    "remark": "女仆长的购物日"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "女仆长的购物日",
-    "value": "beierfasite_5"
+    "value": "beierfasite_5",
+    "remark": "凛冽的钢之从者"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "完美的代理店长",
-    "value": "beierfasite_7"
+    "value": "beierfasite_7",
+    "remark": "完美的代理店长"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "倾城之华扇",
-    "value": "beierfasite_8"
+    "value": "beierfasite_8",
+    "remark": "倾城之华扇"
   },
   {
     "name": "贝尔法斯特",
-    "remark": "誓约",
-    "value": "beierfasite_h"
+    "value": "beierfasite_h",
+    "remark": "克拉达的誓约"
   },
   {
     "name": "小贝法",
-    "value": "beierfasite_younv"
+    "value": "beierfasite_younv",
+    "remark": "小贝法"
   },
   {
-    "alias": "北风",
-    "name": "苝",
+    "name": "北风",
     "value": "beifeng"
   },
   {
-    "alias": "北风",
-    "name": "苝",
-    "remark": "祭典制霸！",
-    "value": "beifeng_2"
+    "name": "北风",
+    "value": "beifeng_2",
+    "remark": "祭典制霸！"
   },
   {
     "name": "北卡罗来纳",
-    "value": "beikaluolaina"
+    "value": "beikaluolaina",
+    "remark": "北卡罗来纳"
   },
   {
     "name": "北卡罗来纳",
-    "remark": "秘密的换装练习？",
-    "value": "beikaluolaina_2"
+    "value": "beikaluolaina_2",
+    "remark": "秘密的换装练习？"
   },
   {
     "name": "贝利",
-    "value": "beili"
+    "value": "beili",
+    "remark": "贝利"
   },
   {
     "name": "贝利",
-    "remark": "捣蛋黑兔",
-    "value": "beili_2"
+    "value": "beili_2",
+    "remark": "捣蛋黑兔"
   },
   {
     "name": "贝利",
-    "remark": "改",
-    "value": "beili_g"
+    "value": "beili_g",
+    "remark": "贝利.改"
   },
   {
     "name": "贝奇",
-    "value": "beiqi"
+    "value": "beiqi",
+    "remark": "贝奇"
   },
   {
     "name": "贝奇",
-    "remark": "华丽的速度之星",
-    "value": "beiqi_2"
+    "value": "beiqi_2",
+    "remark": "华丽的速度之星"
   },
   {
     "name": "贝奇",
-    "remark": "炫目的赛场之星",
-    "value": "beiqi_3"
+    "value": "beiqi_3",
+    "remark": "炫目的赛场之星"
   },
   {
     "name": "贝亚恩",
-    "value": "beiyaen"
+    "value": "beiyaen",
+    "remark": "贝亚恩"
   },
   {
     "name": "贝亚恩",
-    "remark": "夏日救生站",
-    "value": "beiyaen_2"
+    "value": "beiyaen_2",
+    "remark": "夏日救生站"
   },
   {
     "name": "本森",
-    "value": "bensen"
+    "value": "bensen",
+    "remark": "本森"
   },
   {
     "name": "本森",
-    "remark": "万圣兔兔美少女！",
-    "value": "bensen_2"
+    "value": "bensen_2",
+    "remark": "万圣兔兔美少女！"
   },
   {
     "name": "标枪",
-    "value": "biaoqiang"
+    "value": "biaoqiang",
+    "remark": "标枪"
   },
   {
     "name": "标枪",
-    "remark": "22娘",
-    "value": "biaoqiang_2"
+    "value": "biaoqiang_2",
+    "remark": "22娘"
   },
   {
     "name": "标枪",
-    "remark": "沙滩野餐会",
-    "value": "biaoqiang_3"
+    "value": "biaoqiang_3",
+    "remark": "沙滩野餐会"
   },
   {
     "name": "标枪",
-    "remark": "一起成为服务生！",
-    "value": "biaoqiang_4"
+    "value": "biaoqiang_4",
+    "remark": "一起成为服务生！"
   },
   {
     "name": "标枪",
-    "remark": "微速前进！",
-    "value": "biaoqiang_5"
+    "value": "biaoqiang_5",
+    "remark": "微速前进！"
   },
   {
     "name": "标枪",
-    "remark": "枕头大战！",
-    "value": "biaoqiang_6"
+    "value": "biaoqiang_6",
+    "remark": "王道偶像·元气120！"
   },
   {
     "name": "标枪",
-    "remark": "王道偶像·元气120！",
-    "value": "biaoqiang_7"
+    "value": "biaoqiang_7",
+    "remark": "枕头大战！"
   },
   {
     "name": "标枪",
-    "remark": "改",
-    "value": "biaoqiang_g"
+    "value": "biaoqiang_g",
+    "remark": "标枪.改"
   },
   {
     "name": "标枪",
-    "remark": "誓约",
-    "value": "biaoqiang_h"
+    "value": "biaoqiang_h",
+    "remark": "幸福纯白"
   },
   {
     "name": "杓鹬",
-    "value": "biaoyu"
+    "value": "biaoyu",
+    "remark": "杓鹬"
   },
   {
     "name": "杓鹬",
-    "remark": "东煌之韵",
-    "value": "biaoyu_2"
+    "value": "biaoyu_2",
+    "remark": "东煌之韵"
   },
   {
     "name": "杓鹬",
-    "remark": "改",
-    "value": "biaoyu_g"
+    "value": "biaoyu_g",
+    "remark": "杓鹬.改"
   },
   {
     "name": "比洛克西",
-    "value": "biluokexi"
+    "value": "biluokexi",
+    "remark": "比洛克西"
   },
   {
     "name": "比洛克西",
-    "remark": "俊俏丽人",
-    "value": "biluokexi_2"
+    "value": "biluokexi_2",
+    "remark": "俊俏丽人"
   },
   {
     "name": "比洛克西",
-    "remark": "洛城女帝",
-    "value": "biluokexi_4"
+    "value": "biluokexi_4",
+    "remark": "洛城女帝"
   },
   {
     "name": "比洛克西",
-    "remark": "绚烂缤纷花火夜",
-    "value": "biluokexi_5"
+    "value": "biluokexi_5",
+    "remark": "绚烂缤纷花火夜"
   },
   {
     "name": "宾夕法尼亚",
-    "value": "binxifaniya"
+    "value": "binxifaniya",
+    "remark": "宾夕法尼亚"
   },
   {
-    "alias": "比叡",
-    "name": "鲟",
+    "name": "比叡",
     "value": "birui"
   },
   {
-    "alias": "比叡",
-    "name": "鲟",
-    "remark": "月下巡游",
-    "value": "birui_2"
+    "name": "比叡",
+    "value": "birui_2",
+    "remark": "月下巡游"
   },
   {
-    "alias": "比叡",
-    "name": "鲟",
-    "remark": "红梅垂香",
-    "value": "birui_4"
+    "name": "比叡",
+    "value": "birui_4",
+    "remark": "红梅垂香"
   },
   {
-    "alias": "比叡",
-    "name": "鲟",
-    "remark": "海滩瑰景",
-    "value": "birui_5"
+    "name": "比叡",
+    "value": "birui_5",
+    "remark": "海滩瑰景"
   },
   {
-    "alias": "小比叡",
-    "name": "小鲟",
+    "name": "小比叡",
     "value": "birui_younv"
   },
   {
     "name": "俾斯麦",
-    "value": "bisimai"
+    "value": "bisimai",
+    "remark": "俾斯麦"
   },
   {
     "name": "俾斯麦",
-    "remark": "铁血的辉光",
-    "value": "bisimai_2"
+    "value": "bisimai_2",
+    "remark": "铁血的辉光"
   },
   {
     "name": "博格",
-    "value": "boge"
+    "value": "boge",
+    "remark": "博格"
   },
   {
     "name": "博格",
-    "remark": "改",
-    "value": "boge_g"
+    "value": "boge_g",
+    "remark": "博格.改"
   },
   {
     "name": "波拉",
-    "value": "bola"
+    "value": "bola",
+    "remark": "波拉"
   },
   {
     "name": "波拉",
-    "remark": "",
-    "value": "bola_2"
+    "value": "bola_2",
+    "remark": "水边的事故？"
   },
   {
     "name": "印第安纳波利斯",
-    "value": "bolisi"
+    "value": "bolisi",
+    "remark": "印第安纳波利斯"
   },
   {
     "name": "印第安纳波利斯",
-    "value": "bolisi_2"
+    "value": "bolisi_2",
+    "remark": "与姐姐一起的校园生活？"
   },
   {
     "name": "印第安纳波利斯",
-    "remark": "与姐姐一起的校园生活？",
-    "value": "bolisi_3"
+    "value": "bolisi_3",
+    "remark": "环城之夜"
   },
   {
     "name": "伯明翰",
-    "value": "bominghan"
+    "value": "bominghan",
+    "remark": "伯明翰"
   },
   {
     "name": "伯明翰",
-    "remark": "赤色的骑行者",
-    "value": "bominghan_2"
+    "value": "bominghan_2",
+    "remark": "赤色的骑行者"
   },
   {
     "name": "伯明翰",
-    "remark": "瑞雪丰年",
-    "value": "bominghan_4"
+    "value": "bominghan_4",
+    "remark": "瑞雪丰年"
   },
   {
     "name": "波特兰",
-    "value": "botelan"
+    "value": "botelan",
+    "remark": "波特兰"
   },
   {
     "name": "波特兰",
-    "remark": "与印第一起的校园生活",
-    "value": "botelan_2"
+    "value": "botelan_2",
+    "remark": "与印第一起的校园生活"
   },
   {
     "name": "波特兰",
-    "remark": "改",
-    "value": "botelan_g"
+    "value": "botelan_g",
+    "remark": "波特兰.改"
   },
   {
-    "name": "布莱默顿",
-    "value": "bulaimodun"
-  },
-  {
-    "name": "布莱默顿",
-    "remark": "炙热的网球练习",
-    "value": "bulaimodun_3"
-  },
-  {
-    "name": "布莱默顿",
-    "remark": "功夫少女！",
-    "value": "bulaimodun_4"
-  },
-  {
-    "name": "特装型布里MKIII",
-    "value": "buli_super"
-  },
-  {
-    "name": "布鲁克林",
-    "value": "bulukelin"
-  },
-  {
-    "name": "布什",
-    "value": "bushi"
-  },
-  {
-    "name": "布什",
-    "remark": "小小画家",
-    "value": "bushi_2"
-  },
-  {
-    "alias": "不知火",
-    "name": "蒲",
-    "value": "buzhihuo"
-  },
-  {
-    "alias": "不知火",
-    "name": "蒲",
-    "remark": "月饼、不来一点吗？",
-    "value": "buzhihuo_2"
-  },
-  {
-    "alias": "不知火",
-    "name": "蒲",
-    "remark": "改",
-    "value": "buzhihuo_g"
-  },
-  {
-    "alias": "博伊西",
-    "name": "树城",
-    "remark": "羞怯的蓝宝石",
+    "name": "博伊西",
     "value": "boyixi"
   },
   {
-    "alias": "博伊西",
-    "name": "树城",
-    "remark": "",
-    "value": "boyixi_2"
+    "name": "博伊西",
+    "value": "boyixi_2",
+    "remark": "羞怯的蓝宝石"
   },
   {
-    "alias": "苍龙",
-    "name": "蛟",
+    "name": "博伊西",
+    "value": "boyixi_3",
+    "remark": "古堡奇谈"
+  },
+  {
+    "name": "布莱默顿",
+    "value": "bulaimodun",
+    "remark": "布莱默顿"
+  },
+  {
+    "name": "布莱默顿",
+    "value": "bulaimodun_3",
+    "remark": "炙热的网球练习"
+  },
+  {
+    "name": "布莱默顿",
+    "value": "bulaimodun_4",
+    "remark": "功夫少女！"
+  },
+  {
+    "name": "特装型布里MKIII",
+    "value": "buli_super",
+    "remark": "特装型布里MKIII "
+  },
+  {
+    "name": "布鲁克林",
+    "value": "bulukelin",
+    "remark": "布鲁克林"
+  },
+  {
+    "name": "布什",
+    "value": "bushi",
+    "remark": "布什"
+  },
+  {
+    "name": "布什",
+    "value": "bushi_2",
+    "remark": "小小画家"
+  },
+  {
+    "name": "不知火",
+    "value": "buzhihuo"
+  },
+  {
+    "name": "不知火",
+    "value": "buzhihuo_2",
+    "remark": "月饼、不来一点吗？"
+  },
+  {
+    "name": "不知火",
+    "value": "buzhihuo_g",
+    "remark": "改"
+  },
+  {
+    "name": "苍龙",
     "value": "canglong"
   },
   {
-    "alias": "苍龙",
-    "name": "蛟",
-    "remark": "松间鹤",
-    "value": "canglong_2"
+    "name": "苍龙",
+    "value": "canglong_2",
+    "remark": "松间鹤"
   },
   {
-    "alias": "苍龙",
-    "name": "蛟",
-    "remark": "走廊上的风纪委员",
-    "value": "canglong_3"
+    "name": "苍龙",
+    "value": "canglong_3",
+    "remark": "走廊上的风纪委员"
   },
   {
-    "alias": "苍龙",
-    "name": "蛟",
-    "remark": "改",
-    "value": "canglong_g"
-  },
-  {
-    "alias": "苍龙",
-    "name": "蛟·META",
+    "name": "苍龙·META",
     "value": "canglong_alter"
   },
   {
-    "name": "柴郡",
-    "value": "chaijun"
+    "name": "苍龙",
+    "value": "canglong_g",
+    "remark": "改"
   },
   {
     "name": "柴郡",
-    "remark": "Dating Summer！",
-    "value": "chaijun_2"
+    "value": "chaijun",
+    "remark": "柴郡"
   },
   {
     "name": "柴郡",
-    "remark": "音乐绚烂CaitSith",
-    "value": "chaijun_3"
+    "value": "chaijun_2",
+    "remark": "Dating Summer！"
   },
   {
-    "alias": "长波",
-    "name": "苌",
+    "name": "柴郡",
+    "value": "chaijun_3",
+    "remark": "音乐绚烂CaitSith"
+  },
+  {
+    "name": "柴郡",
+    "value": "chaijun_4",
+    "remark": "冰雪公主"
+  },
+  {
+    "name": "长波",
     "value": "changbo"
   },
   {
-    "alias": "长波",
-    "name": "苌",
-    "remark": "幸福的「长波」",
-    "value": "changbo_2"
+    "name": "长波",
+    "value": "changbo_2",
+    "remark": "幸福的「长波」"
   },
   {
-    "alias": "长波",
-    "name": "苌",
-    "remark": "安心的“长波”",
-    "value": "changbo_3"
+    "name": "长波",
+    "value": "changbo_3",
+    "remark": "安心的“长波”"
   },
   {
-    "alias": "長春",
     "name": "长春",
-    "value": "changchun"
+    "value": "changchun",
+    "remark": "长春"
   },
   {
-    "alias": "長春",
     "name": "长春",
-    "remark": "春之嬉",
-    "value": "changchun_2"
+    "value": "changchun_2",
+    "remark": "春之嬉"
   },
   {
     "name": "长岛",
-    "value": "changdao"
+    "value": "changdao",
+    "remark": "长岛"
   },
   {
     "name": "长岛",
-    "remark": "干物三连！",
-    "value": "changdao_2"
+    "value": "changdao_2",
+    "remark": "干物三连！"
   },
   {
     "name": "长岛",
-    "remark": "L.I.@万圣限时直播中",
-    "value": "changdao_3"
+    "value": "changdao_3",
+    "remark": "L.I.@万圣限时直播中"
   },
   {
     "name": "长岛",
-    "remark": "改",
-    "value": "changdao_g"
+    "value": "changdao_g",
+    "remark": "长岛.改"
   },
   {
-    "alias": "长良",
-    "name": "貊",
+    "name": "长良",
     "value": "changliang"
   },
   {
-    "alias": "长良",
-    "name": "貊",
-    "remark": "悠闲春日",
-    "value": "changliang_2"
+    "name": "长良",
+    "value": "changliang_2",
+    "remark": "悠闲春日"
   },
   {
-    "alias": "长门",
-    "name": "鲨",
+    "name": "长门",
     "value": "changmen"
   },
   {
-    "alias": "长门",
-    "name": "鲨",
-    "remark": "神子的休憩",
-    "value": "changmen_2"
+    "name": "长门",
+    "value": "changmen_2",
+    "remark": "神子的休憩"
   },
   {
-    "alias": "长门",
-    "name": "鲨",
-    "remark": "御狐的辉振袖",
-    "value": "changmen_3"
+    "name": "长门",
+    "value": "changmen_3",
+    "remark": "御狐的辉振袖"
   },
   {
-    "alias": "长门",
-    "name": "鲨",
-    "remark": "神子的闲暇一刻",
-    "value": "changmen_4"
+    "name": "长门",
+    "value": "changmen_4",
+    "remark": "神子的闲暇一刻"
   },
   {
-    "alias": "长门",
-    "name": "鲨",
-    "remark": "誓约",
-    "value": "changmen_h"
+    "name": "长门",
+    "value": "changmen_h",
+    "remark": "御狐的白装束"
   },
   {
-    "alias": "长月",
-    "name": "枨",
+    "name": "长月",
     "value": "changyue"
   },
   {
-    "alias": "长月",
-    "name": "枨",
-    "remark": "喵喵女仆有点危险？",
-    "value": "changyue_2"
+    "name": "长月",
+    "value": "changyue_2",
+    "remark": "喵喵女仆有点危险？"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
+    "name": "赤城",
     "value": "chicheng"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
-    "remark": "乐园的彼岸花",
-    "value": "chicheng_2"
+    "name": "赤城",
+    "value": "chicheng_2",
+    "remark": "乐园的彼岸花"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
-    "remark": "梅与雪",
-    "value": "chicheng_3"
+    "name": "赤城",
+    "value": "chicheng_3",
+    "remark": "梅与雪"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
-    "remark": "朱娟余醺",
-    "value": "chicheng_4"
+    "name": "赤城",
+    "value": "chicheng_4",
+    "remark": "朱娟余醺"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
-    "remark": "誓约",
-    "value": "chicheng_h"
+    "name": "赤城",
+    "value": "chicheng_h",
+    "remark": "深红的虞美人"
   },
   {
-    "alias": "赤城",
-    "name": "凰",
-    "remark": "μ兵装",
+    "name": "赤城(μ兵装)",
     "value": "chicheng_idol"
   },
   {
@@ -968,5297 +1019,5372 @@
     "value": "chicheng_younv"
   },
   {
-    "alias": "川内",
-    "name": "貆",
+    "name": "川内",
     "value": "chuannei"
   },
   {
-    "alias": "川内",
-    "name": "貆",
-    "remark": "改",
-    "value": "chuannei_g"
+    "name": "川内",
+    "value": "chuannei_g",
+    "remark": "改"
   },
   {
-    "alias": "初春",
-    "name": "梅",
+    "name": "初春",
     "value": "chuchun"
   },
   {
-    "alias": "初春",
-    "name": "梅",
-    "remark": "初春之雪",
-    "value": "chuchun_2"
+    "name": "初春",
+    "value": "chuchun_2",
+    "remark": "初春之雪"
   },
   {
-    "alias": "初春",
-    "name": "梅",
-    "remark": "春邀灯火",
-    "value": "chuchun_3"
+    "name": "初春",
+    "value": "chuchun_3",
+    "remark": "春邀灯火"
   },
   {
-    "alias": "初春",
-    "name": "梅",
-    "remark": "改",
-    "value": "chuchun_g"
+    "name": "初春",
+    "value": "chuchun_g",
+    "remark": "改"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
+    "name": "吹雪",
     "value": "chuixue"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
-    "remark": "迟到前的一刻",
-    "value": "chuixue_2"
+    "name": "吹雪",
+    "value": "chuixue_2",
+    "remark": "迟到前的一刻"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
-    "remark": "小鸡看板娘",
-    "value": "chuixue_3"
+    "name": "吹雪",
+    "value": "chuixue_3",
+    "remark": "Music Pixy"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
-    "remark": "Music Pixy",
-    "value": "chuixue_4"
+    "name": "吹雪",
+    "value": "chuixue_4",
+    "remark": "小鸡看板娘"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
-    "remark": "特型偶像Fubuki",
-    "value": "chuixue_5"
+    "name": "吹雪",
+    "value": "chuixue_5",
+    "remark": "特型偶像Fubuki"
   },
   {
-    "alias": "吹雪",
-    "name": "桐",
-    "remark": "实习服务生Fubuki",
-    "value": "chuixue_6"
+    "name": "吹雪",
+    "value": "chuixue_6",
+    "remark": "实习服务生Fubuki"
   },
   {
-    "alias": "春月",
-    "name": "桸",
+    "name": "天海春香",
+    "value": "chunxiang",
+    "remark": "天海春香"
+  },
+  {
+    "name": "天海春香",
+    "value": "chunxiang_2",
+    "remark": "喧嚣中的静谧"
+  },
+  {
+    "name": "春月",
     "value": "chunyue"
   },
   {
-    "alias": "春月",
-    "name": "桸",
-    "remark": "迎春的神乐舞",
-    "value": "chunyue_2"
+    "name": "春月",
+    "value": "chunyue_2",
+    "remark": "迎春的神乐舞"
   },
   {
-    "alias": "初霜",
-    "name": "檨",
+    "name": "初霜",
     "value": "chushuang"
   },
   {
-    "alias": "初霜",
-    "name": "檨",
-    "remark": "吉时祝宴",
-    "value": "chushuang_2"
+    "name": "初霜",
+    "value": "chushuang_2",
+    "remark": "吉时祝宴"
   },
   {
-    "alias": "初霜",
-    "name": "檨",
-    "remark": "改",
-    "value": "chushuang_g"
+    "name": "初霜",
+    "value": "chushuang_g",
+    "remark": "改"
   },
   {
-    "alias": "出云",
-    "name": "侌",
+    "name": "出云",
     "value": "chuyun"
   },
   {
-    "alias": "出云",
-    "name": "侌",
-    "remark": "出云千本樱",
-    "value": "chuyun_2"
+    "name": "出云",
+    "value": "chuyun_2",
+    "remark": "出云千本樱"
   },
   {
-    "alias": "大潮",
-    "name": "荙",
+    "name": "大潮",
     "value": "dachao"
   },
   {
-    "alias": "大潮",
-    "name": "荙",
-    "remark": "驯鹿与圣诞礼物",
-    "value": "dachao_2"
+    "name": "大潮",
+    "value": "dachao_2",
+    "remark": "驯鹿与圣诞礼物"
   },
   {
-    "alias": "大潮",
-    "name": "荙",
-    "remark": "夜宴微醺",
-    "value": "dachao_3"
+    "name": "大潮",
+    "value": "dachao_3",
+    "remark": "夜宴微醺"
   },
   {
-    "alias": "大潮",
-    "name": "荙",
-    "remark": "新春福至",
-    "value": "dachao_4"
+    "name": "大潮",
+    "value": "dachao_4",
+    "remark": "新春福至 "
   },
   {
     "name": "大斗犬",
-    "value": "dadouquan"
+    "value": "dadouquan",
+    "remark": "大斗犬"
   },
   {
-    "alias": "大凤",
-    "name": "鹩",
+    "name": "大凤",
     "value": "dafeng"
   },
   {
-    "alias": "大凤",
-    "name": "鹩",
-    "remark": "毒苹果",
-    "value": "dafeng_2"
+    "name": "大凤",
+    "value": "dafeng_2",
+    "remark": "毒苹果"
   },
   {
-    "alias": "大凤",
-    "name": "鹩",
-    "remark": "凤鸣春晓",
-    "value": "dafeng_4"
+    "name": "大凤",
+    "value": "dafeng_4",
+    "remark": "凤鸣春晓"
   },
   {
-    "alias": "大凤",
-    "name": "鹩",
-    "remark": "恋慕伴侣",
-    "value": "dafeng_5"
+    "name": "大凤",
+    "value": "dafeng_5",
+    "remark": "恋慕伴侣"
   },
   {
-    "alias": "大凤",
-    "name": "鹩",
-    "remark": "μ兵装",
+    "name": "大凤",
+    "value": "dafeng_h",
+    "remark": "潮风的吸引"
+  },
+  {
+    "name": "大凤(μ兵装)",
     "value": "dafeng_idol"
   },
   {
     "name": "大黄蜂",
-    "value": "dahuangfeng"
+    "value": "dahuangfeng",
+    "remark": "大黄蜂"
   },
   {
     "name": "大黄蜂",
-    "remark": "Bubbly Anniversary！",
-    "value": "dahuangfeng_2"
+    "value": "dahuangfeng_2",
+    "remark": "Bubbly Anniversary！"
   },
   {
     "name": "黛朵",
-    "value": "daiduo"
+    "value": "daiduo",
+    "remark": "黛朵"
   },
   {
     "name": "黛朵",
-    "remark": "多愁的BIsqueDoll",
-    "value": "daiduo_2"
+    "value": "daiduo_2",
+    "remark": "多愁的BIsqueDoll"
   },
   {
-    "name": "黛朵",
-    "remark": "μ兵装",
-    "value": "daiduo_idol"
+    "name": "黛朵(μ兵装)",
+    "value": "daiduo_idol",
+    "remark": "黛朵(μ兵装)"
+  },
+  {
+    "name": "尼科洛索·达雷科",
+    "value": "daleike",
+    "remark": "尼科洛索·达雷科"
+  },
+  {
+    "name": "尼科洛索·达雷科",
+    "value": "daleike_2",
+    "remark": "出航前的余兴"
   },
   {
     "name": "丹佛",
-    "value": "danfo"
+    "value": "danfo",
+    "remark": "丹佛"
+  },
+  {
+    "name": "岛风",
+    "value": "daofeng"
+  },
+  {
+    "name": "岛风",
+    "value": "daofeng_4",
+    "remark": "最速兔兔的邀请函(?)"
   },
   {
     "name": "大青花鱼",
-    "value": "daqinghuayu"
+    "value": "daqinghuayu",
+    "remark": "大青花鱼"
   },
   {
     "name": "大青花鱼",
-    "remark": "黑裙下的「秘密」",
-    "value": "daqinghuayu_4"
+    "value": "daqinghuayu_4",
+    "remark": "黑裙下的「秘密」"
   },
   {
-    "name": "大青花鱼",
-    "remark": "μ兵装",
-    "value": "daqinghuayu_idol"
+    "name": "大青花鱼(μ兵装)",
+    "value": "daqinghuayu_idol",
+    "remark": "大青花鱼(μ兵装)"
   },
   {
     "name": "德雷克",
-    "value": "deleike"
+    "value": "deleike",
+    "remark": "德雷克"
   },
   {
     "name": "德雷克",
-    "remark": "黄金鹿的闲暇时光",
-    "value": "deleike_2"
+    "value": "deleike_2",
+    "remark": "黄金鹿的闲暇时光"
   },
   {
     "name": "德意志",
-    "value": "deyizhi"
+    "value": "deyizhi",
+    "remark": "德意志"
   },
   {
     "name": "德意志",
-    "remark": "漆黑的魔姬",
-    "value": "deyizhi_2"
+    "value": "deyizhi_2",
+    "remark": "漆黑的魔姬"
   },
   {
     "name": "德意志",
-    "remark": "艳阳下的“福利”时间",
-    "value": "deyizhi_3"
+    "value": "deyizhi_3",
+    "remark": "艳阳下的“福利”时间"
   },
   {
     "name": "德意志",
-    "remark": "魔姬的夜宴",
-    "value": "deyizhi_4"
+    "value": "deyizhi_4",
+    "remark": "魔姬的夜宴"
   },
   {
     "name": "德意志",
-    "remark": "华灯下的支配者",
-    "value": "deyizhi_5"
+    "value": "deyizhi_5",
+    "remark": "华灯下的支配者"
   },
   {
-    "alias": "电",
-    "name": "柏",
+    "name": "电",
     "value": "dian"
   },
   {
-    "alias": "电",
-    "name": "柏",
-    "remark": "香草布丁",
-    "value": "dian_2"
+    "name": "电",
+    "value": "dian_2",
+    "remark": "香草布丁"
   },
   {
-    "alias": "电",
-    "name": "柏",
-    "remark": "花火Inatuma",
-    "value": "dian_3"
+    "name": "电",
+    "value": "dian_3",
+    "remark": "花火Inazuma"
   },
   {
-    "alias": "电",
-    "name": "柏",
-    "remark": "月下妖精",
-    "value": "dian_4"
+    "name": "电",
+    "value": "dian_4",
+    "remark": "月下妖精Inazuma"
   },
   {
     "name": "独角兽",
-    "value": "dujiaoshou"
+    "value": "dujiaoshou",
+    "remark": "独角兽"
   },
   {
     "name": "独角兽",
-    "remark": "小小的星之歌姬",
-    "value": "dujiaoshou_2"
+    "value": "dujiaoshou_2",
+    "remark": "小小的星之歌姬"
   },
   {
     "name": "独角兽",
-    "remark": "春之礼",
-    "value": "dujiaoshou_3"
+    "value": "dujiaoshou_3",
+    "remark": "春之礼"
   },
   {
     "name": "独角兽",
-    "remark": "憧憬的约会日",
-    "value": "dujiaoshou_4"
+    "value": "dujiaoshou_4",
+    "remark": "憧憬的约会日"
   },
   {
     "name": "独角兽",
-    "remark": "祈愿的雪与梅",
-    "value": "dujiaoshou_5"
+    "value": "dujiaoshou_5",
+    "remark": "祈愿的雪与梅"
   },
   {
     "name": "独角兽",
-    "remark": "天使的My Night",
-    "value": "dujiaoshou_6"
+    "value": "dujiaoshou_6",
+    "remark": "天使的My Night"
   },
   {
     "name": "独角兽",
-    "remark": "清凉阅读时光",
-    "value": "dujiaoshou_7"
+    "value": "dujiaoshou_7",
+    "remark": "清凉阅读时光"
   },
   {
     "name": "独角兽",
-    "remark": "梦想的纯白誓约",
-    "value": "dujiaoshou_h"
+    "value": "dujiaoshou_h",
+    "remark": "梦想的纯白誓约"
   },
   {
     "name": "独立",
-    "value": "duli"
+    "value": "duli",
+    "remark": "独立"
   },
   {
     "name": "独立",
-    "remark": "远道而来的转校生",
-    "value": "duli_2"
+    "value": "duli_2",
+    "remark": "远道而来的转校生"
   },
   {
     "name": "独立",
-    "remark": "「独立」品牌",
-    "value": "duli_5"
+    "value": "duli_5",
+    "remark": "「独立」品牌"
   },
   {
     "name": "独立",
-    "remark": "Relaxation.I",
-    "value": "duli_6"
+    "value": "duli_6",
+    "remark": "Relaxation.I"
   },
   {
     "name": "独立",
-    "remark": "改造",
-    "value": "duli_g"
+    "value": "duli_g",
+    "remark": "独立.改"
   },
   {
     "name": "敦刻尔克",
-    "value": "dunkeerke"
+    "value": "dunkeerke",
+    "remark": "敦刻尔克"
   },
   {
     "name": "敦刻尔克",
-    "remark": "“甜蜜”夏日",
-    "value": "dunkeerke_2"
+    "value": "dunkeerke_2",
+    "remark": "“甜蜜”夏日"
   },
   {
     "name": "敦刻尔克",
-    "remark": "午后三时的Venus",
-    "value": "dunkeerke_3"
+    "value": "dunkeerke_3",
+    "remark": "午后三时的Venus"
   },
   {
     "name": "多塞特郡",
-    "value": "duosaitejun"
+    "value": "duosaitejun",
+    "remark": "多塞特郡"
   },
   {
     "name": "杜威",
-    "value": "duwei"
+    "value": "duwei",
+    "remark": "杜威"
   },
   {
     "name": "杜威",
-    "remark": "夏日憧憬",
-    "value": "duwei_2"
+    "value": "duwei_2",
+    "remark": "夏日憧憬"
   },
   {
     "name": "杜威",
-    "remark": "冬夜的感谢",
-    "value": "duwei_3"
+    "value": "duwei_3",
+    "remark": "冬夜的感谢"
   },
   {
     "name": "恶毒",
-    "value": "edu"
+    "value": "edu",
+    "remark": "恶毒"
   },
   {
     "name": "恶毒",
-    "remark": "懒懒的星期天",
-    "value": "edu_2"
+    "value": "edu_2",
+    "remark": "懒懒的星期天"
   },
   {
     "name": "恶毒",
-    "remark": "秘密基地的Mercredi",
-    "value": "edu_3"
+    "value": "edu_3",
+    "remark": "秘密基地的Mercredi"
   },
   {
     "name": "恶毒",
-    "remark": "μ兵装",
-    "value": "edu_idol"
+    "value": "edu_4",
+    "remark": "懒懒的白兔"
+  },
+  {
+    "name": "恶毒(μ兵装)",
+    "value": "edu_idol",
+    "remark": "恶毒(μ兵装)"
   },
   {
     "name": "俄克拉荷马",
-    "value": "ekelahema"
+    "value": "ekelahema",
+    "remark": "俄克拉荷马"
   },
   {
     "name": "俄克拉荷马",
-    "remark": "改",
-    "value": "ekelahema_g"
+    "value": "ekelahema_g",
+    "remark": "俄克拉荷马.改"
   },
   {
     "name": "反击",
-    "value": "fanji"
+    "value": "fanji",
+    "remark": "反击"
   },
   {
     "name": "斐济",
-    "value": "feiji"
+    "value": "feiji",
+    "remark": "斐济"
   },
   {
     "name": "斐济",
-    "remark": "时尚风情？",
-    "value": "feiji_2"
+    "value": "feiji_2",
+    "remark": "时尚风情？"
   },
   {
-    "alias": "飞龙",
-    "name": "龙",
+    "name": "飞龙",
     "value": "feilong"
   },
   {
-    "alias": "飞龙",
-    "name": "龙",
-    "remark": "放学后的极道少女",
-    "value": "feilong_2_1"
-  },
-  {
-    "alias": "飞龙",
-    "name": "龙",
-    "remark": "改",
-    "value": "feilong_g"
-  },
-  {
-    "alias": "飞龙",
-    "name": "龙·META",
+    "name": "飞龙·META",
     "value": "feilong_alter"
   },
   {
+    "name": "飞龙",
+    "value": "feilong_g",
+    "remark": "改"
+  },
+  {
     "name": "菲尼克斯",
-    "value": "feinikesi"
+    "value": "feinikesi",
+    "remark": "菲尼克斯"
   },
   {
     "name": "腓特烈大帝",
-    "value": "feiteliedadi"
+    "value": "feiteliedadi",
+    "remark": "腓特烈大帝"
   },
   {
     "name": "腓特烈大帝",
-    "remark": "雅乐的黯衣",
-    "value": "feiteliedadi_2"
+    "value": "feiteliedadi_2",
+    "remark": "雅乐的黯衣"
   },
   {
     "name": "腓特烈大帝",
-    "remark": "誓约",
-    "value": "feiteliedadi_h"
+    "value": "feiteliedadi_h",
+    "remark": "摇篮的Zeremonie"
   },
   {
-    "alias": "飞鹰",
-    "name": "鸱",
+    "name": "飞鹰",
     "value": "feiying"
   },
   {
-    "alias": "凤翔",
-    "name": "凤",
+    "name": "凤翔",
     "value": "fengxiang"
   },
   {
-    "alias": "凤翔",
-    "name": "凤",
-    "remark": "秋枕梦",
-    "value": "fengxiang_2"
+    "name": "凤翔",
+    "value": "fengxiang_2",
+    "remark": "秋枕梦"
+  },
+  {
+    "name": "风云",
+    "value": "fengyun"
+  },
+  {
+    "name": "风云",
+    "value": "fengyun_3",
+    "remark": "放学后的悠扬"
   },
   {
     "name": "福尔班",
-    "value": "fuerban"
+    "value": "fuerban",
+    "remark": "福尔班"
   },
   {
     "name": "福尔班",
-    "remark": "纯白花语",
-    "value": "fuerban_2"
+    "value": "fuerban_2",
+    "remark": "纯白花语"
   },
   {
     "name": "福尔班",
-    "remark": "学园的见习骑士",
-    "value": "fuerban_3"
+    "value": "fuerban_3",
+    "remark": "学园的见习骑士"
   },
   {
     "name": "福尔班",
-    "remark": "香槟盛宴",
-    "value": "fuerban_4"
+    "value": "fuerban_4",
+    "remark": "香槟盛宴"
   },
   {
     "name": "福尔班",
-    "remark": "改",
-    "value": "fuerban_g"
+    "value": "fuerban_g",
+    "remark": "福尔班.改"
   },
   {
     "name": "弗莱彻",
-    "value": "fulaiche"
+    "value": "fulaiche",
+    "remark": "弗莱彻"
   },
   {
     "name": "芙米露露",
-    "value": "fumilulu"
+    "value": "fumilulu",
+    "remark": "芙米露露"
   },
   {
     "name": "芙米露露",
-    "remark": "芙米露露",
-    "value": "fumilulu_2"
+    "value": "fumilulu_2",
+    "remark": "芙米露露(传颂之物)"
   },
   {
-    "alias": "扶桑",
-    "name": "魟",
+    "name": "扶桑",
     "value": "fusang"
   },
   {
-    "alias": "扶桑",
-    "name": "魟",
-    "remark": "春之祝",
-    "value": "fusang_2"
+    "name": "扶桑",
+    "value": "fusang_2",
+    "remark": "春之祝"
   },
   {
-    "alias": "扶桑",
-    "name": "魟",
-    "remark": "家有贤妻？",
-    "value": "fusang_3"
+    "name": "扶桑",
+    "value": "fusang_3",
+    "remark": "家有贤妻？"
   },
   {
-    "alias": "扶桑",
-    "name": "魟",
-    "remark": "改",
-    "value": "fusang_g"
+    "name": "扶桑·META",
+    "value": "fusang_alter"
   },
   {
-    "alias": "撫順",
+    "name": "扶桑",
+    "value": "fusang_g",
+    "remark": "改"
+  },
+  {
     "name": "抚顺",
-    "value": "fushun"
+    "value": "fushun",
+    "remark": "抚顺"
   },
   {
     "name": "富特",
-    "value": "fute"
+    "value": "fute",
+    "remark": "富特"
+  },
+  {
+    "name": "福煦",
+    "value": "fuxu",
+    "remark": "福煦"
+  },
+  {
+    "name": "福煦",
+    "value": "fuxu_2",
+    "remark": "虹彩的rendez-vous"
   },
   {
     "name": "甘古特",
-    "value": "gangute"
+    "value": "gangute",
+    "remark": "甘古特"
   },
   {
     "name": "甘古特",
-    "remark": "坚定的执行者",
-    "value": "gangute_2"
+    "value": "gangute_2",
+    "remark": "坚定的执行者"
   },
   {
     "name": "甘古特",
-    "remark": "挚爱伏特加",
-    "value": "gangute_3"
+    "value": "gangute_3",
+    "remark": "挚爱伏特加"
   },
   {
-    "name": "塞壬",
-    "remark": "干扰者",
-    "value": "ganraozhe"
-  },
-  {
-    "alias": "高雄",
-    "name": "獒",
+    "name": "高雄",
     "value": "gaoxiong"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "沙滩狂想曲",
-    "value": "gaoxiong_2"
+    "name": "高雄",
+    "value": "gaoxiong_2",
+    "remark": "沙滩狂想曲"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "春之意",
-    "value": "gaoxiong_3"
+    "name": "高雄",
+    "value": "gaoxiong_3",
+    "remark": "春之意"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "校园浪漫曲",
-    "value": "gaoxiong_4"
+    "name": "高雄",
+    "value": "gaoxiong_4",
+    "remark": "校园浪漫曲"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "至高焦点",
-    "value": "gaoxiong_5"
+    "name": "高雄",
+    "value": "gaoxiong_5",
+    "remark": "至高焦点"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "修改版",
-    "value": "gaoxiong_alter"
+    "name": "高雄",
+    "value": "gaoxiong_h",
+    "remark": "神护樱华"
   },
   {
-    "alias": "高雄",
-    "name": "獒",
-    "remark": "誓约",
-    "value": "gaoxiong_h"
+    "name": "葛城",
+    "value": "gecheng"
   },
   {
-    "name": "格拉斯哥",
-    "value": "gelasige"
+    "name": "葛城",
+    "value": "gecheng_2",
+    "remark": "黎明辉祭"
   },
   {
     "name": "格拉斯哥",
-    "remark": "女仆小姐是同级生",
-    "value": "gelasige_2"
+    "value": "gelasige",
+    "remark": "格拉斯哥"
+  },
+  {
+    "name": "格拉斯哥",
+    "value": "gelasige_2",
+    "remark": "女仆小姐是同级生"
   },
   {
     "name": "格里德利",
-    "value": "gelideli"
+    "value": "gelideli",
+    "remark": "格里德利"
   },
   {
     "name": "格里德利",
-    "remark": "圣诞摄影会！",
-    "value": "gelideli_2"
+    "value": "gelideli_2",
+    "remark": "圣诞摄影会！"
   },
   {
     "name": "哥伦比亚",
-    "value": "gelunbiya"
+    "value": "gelunbiya",
+    "remark": "哥伦比亚"
   },
   {
     "name": "哥伦比亚",
-    "remark": "放学前的Odette",
-    "value": "gelunbiya_2"
+    "value": "gelunbiya_2",
+    "remark": "放学前的Odette"
   },
   {
     "name": "格伦维尔",
-    "value": "gelunweier"
+    "value": "gelunweier",
+    "remark": "格伦维尔"
   },
   {
     "name": "格罗斯特",
-    "value": "geluosite"
+    "value": "geluosite",
+    "remark": "格罗斯特"
   },
   {
     "name": "格罗斯特",
-    "remark": "绛紫奢情",
-    "value": "geluosite_2"
+    "value": "geluosite_2",
+    "remark": "绛紫奢情"
   },
   {
     "name": "格奈森瑙",
-    "value": "genaisennao"
+    "value": "genaisennao",
+    "remark": "格奈森瑙"
   },
   {
     "name": "格奈森瑙",
-    "remark": "梦魇魅影",
-    "value": "genaisennao_2"
+    "value": "genaisennao_2",
+    "remark": "梦魇魅影"
   },
   {
     "name": "泛用型布里",
-    "value": "gin"
+    "value": "gin",
+    "remark": "泛用型布里"
   },
   {
     "name": "泛用型布里",
-    "remark": "泛用型强化武装(工作用)",
-    "value": "gin_2"
+    "value": "gin_2",
+    "remark": "泛用型强化武装(工作用)"
   },
   {
     "name": "光辉",
-    "value": "guanghui"
+    "value": "guanghui",
+    "remark": "光辉"
   },
   {
     "name": "光辉",
-    "remark": "永不落幕的茶会",
-    "value": "guanghui_2"
+    "value": "guanghui_2",
+    "remark": "永不落幕的茶会"
   },
   {
     "name": "光辉",
-    "remark": "光辉的舞会",
-    "value": "guanghui_3"
+    "value": "guanghui_3",
+    "remark": "光辉的舞会"
   },
   {
     "name": "光辉",
-    "remark": "异国的光辉",
-    "value": "guanghui_4"
+    "value": "guanghui_4",
+    "remark": "异国的光辉"
   },
   {
     "name": "光辉",
-    "remark": "钟情春日",
-    "value": "guanghui_5"
+    "value": "guanghui_5",
+    "remark": "钟情春日"
   },
   {
     "name": "光辉",
-    "remark": "誓约",
-    "value": "guanghui_h"
+    "value": "guanghui_h",
+    "remark": "爱与希望的晨星"
   },
   {
-    "name": "光辉",
-    "remark": "μ兵装",
-    "value": "guanghui_idol"
+    "name": "光辉(μ兵装)",
+    "value": "guanghui_idol",
+    "remark": "光辉(μ兵装)"
   },
   {
     "name": "小光辉",
-    "value": "guanghui_younv"
+    "value": "guanghui_younv",
+    "remark": "小光辉"
   },
   {
     "name": "光荣",
-    "value": "guangrong"
+    "value": "guangrong",
+    "remark": "光荣"
   },
   {
     "name": "光荣",
-    "remark": "荣光的校园生活",
-    "value": "guangrong_2"
+    "value": "guangrong_2",
+    "remark": "荣光的校园生活"
   },
   {
     "name": "光荣",
-    "remark": "凉夜香雪",
-    "value": "guangrong_3"
+    "value": "guangrong_3",
+    "remark": "凉夜香雪"
   },
   {
-    "alias": "谷风",
-    "name": "栭",
+    "name": "谷风",
     "value": "gufeng"
   },
   {
-    "alias": "谷风",
-    "name": "栭",
-    "remark": "海边的迷路少女",
-    "value": "gufeng_2"
+    "name": "谷风",
+    "value": "gufeng_2",
+    "remark": "海边的迷路少女"
   },
   {
-    "alias": "谷风",
-    "name": "栭",
-    "remark": "改",
-    "value": "gufeng_g"
+    "name": "谷风",
+    "value": "gufeng_g",
+    "remark": "改"
   },
   {
-    "alias": "鬼怒",
-    "name": "猤",
+    "name": "鬼怒",
     "value": "guinu"
   },
   {
-    "alias": "鬼怒",
-    "name": "猤",
-    "remark": "新年的剑鬼",
-    "value": "guinu_2"
+    "name": "鬼怒",
+    "value": "guinu_2",
+    "remark": "新年的剑鬼"
   },
   {
-    "alias": "鬼怒",
-    "name": "猤",
-    "remark": "Token＆Ghost",
-    "value": "guinu_3"
+    "name": "鬼怒",
+    "value": "guinu_3",
+    "remark": "Token＆Ghost"
   },
   {
-    "alias": "鬼怒",
-    "name": "猤",
-    "remark": "改",
-    "value": "guinu_g"
+    "name": "鬼怒",
+    "value": "guinu_g",
+    "remark": "改"
   },
   {
-    "alias": "古鹰",
-    "name": "狼",
+    "name": "古鹰",
     "value": "guying"
   },
   {
-    "alias": "古鹰",
-    "name": "狼",
-    "remark": "改",
-    "value": "guying_g"
+    "name": "古鹰",
+    "value": "guying_g",
+    "remark": "改"
   },
   {
     "name": "哈尔西·鲍威尔",
-    "value": "haerxibaoweier"
+    "value": "haerxibaoweier",
+    "remark": "哈尔西鲍威尔"
   },
   {
     "name": "哈尔西·鲍威尔",
-    "remark": "春节小福星！",
-    "value": "haerxibaoweier_3"
+    "value": "haerxibaoweier_3",
+    "remark": "春节小福星！"
+  },
+  {
+    "name": "海风",
+    "value": "haifeng"
+  },
+  {
+    "name": "海风",
+    "value": "haifeng_2",
+    "remark": "软绵绵治愈系"
   },
   {
     "name": "海伦娜",
-    "value": "hailunna"
+    "value": "hailunna",
+    "remark": "海伦娜"
   },
   {
     "name": "海伦娜",
-    "remark": "正月与青鸟",
-    "value": "hailunna_2"
+    "value": "hailunna_2",
+    "remark": "正月与青鸟"
   },
   {
     "name": "海伦娜",
-    "remark": "与君共舞",
-    "value": "hailunna_3"
+    "value": "hailunna_3",
+    "remark": "与君共舞"
+  },
+  {
+    "name": "海伦娜·META",
+    "value": "hailunna_alter",
+    "remark": "海伦娜·META"
   },
   {
     "name": "海伦娜",
-    "remark": "改",
-    "value": "hailunna_g"
+    "value": "hailunna_g",
+    "remark": "海伦娜.改"
   },
   {
     "name": "小海伦娜",
-    "value": "hailunna_younv"
+    "value": "hailunna_younv",
+    "remark": "小海伦娜"
   },
   {
     "name": "海王星",
-    "value": "haiwangxing"
+    "value": "haiwangxing",
+    "remark": "海王星"
   },
   {
     "name": "海王星",
-    "remark": "圣诞麋鹿公主",
-    "value": "haiwangxing_2"
+    "value": "haiwangxing_2",
+    "remark": "圣诞麋鹿公主"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_2_DOA",
+    "remark": "金色的特别摄影"
+  },
+  {
+    "name": "海咲",
+    "value": "haixiao_DOA",
+    "remark": "海咲"
+  },
+  {
+    "name": "海因里希亲王",
+    "value": "haiyinlixi",
+    "remark": "海因里希亲王"
+  },
+  {
+    "name": "海因里希亲王",
+    "value": "haiyinlixi_3",
+    "remark": "花火烂漫的春绘卷"
   },
   {
     "name": "哈曼",
-    "value": "haman"
+    "value": "haman",
+    "remark": "哈曼"
   },
   {
     "name": "哈曼",
-    "remark": "小小的夏日战争",
-    "value": "haman_2"
+    "value": "haman_2",
+    "remark": "小小的夏日战争"
   },
   {
     "name": "哈曼",
-    "remark": "舞会的傲娇妖精",
-    "value": "haman_3"
+    "value": "haman_3",
+    "remark": "舞会的傲娇妖精"
   },
   {
     "name": "哈曼",
-    "remark": "兽耳喵喵拳！",
-    "value": "haman_4"
+    "value": "haman_4",
+    "remark": "兽耳喵喵拳！"
   },
   {
     "name": "哈曼",
-    "remark": "圣诞Surprise！",
-    "value": "haman_5"
+    "value": "haman_5",
+    "remark": "圣诞Surprise！"
   },
   {
     "name": "哈曼",
-    "remark": "改",
-    "value": "haman_g"
+    "value": "haman_g",
+    "remark": "哈曼.改"
   },
   {
     "name": "豪",
-    "value": "hao"
+    "value": "hao",
+    "remark": "豪"
   },
   {
     "name": "豪",
-    "remark": "Noble Rouge",
-    "value": "hao_2"
+    "value": "hao_2",
+    "remark": "Noble Rouge"
   },
   {
     "name": "涅普顿",
-    "value": "HDN101"
+    "value": "HDN101",
+    "remark": "涅普顿"
   },
   {
     "name": "绀紫之心",
-    "value": "HDN102_1"
+    "value": "HDN102_1",
+    "remark": "绀紫之心"
   },
   {
     "name": "绀紫之心",
-    "remark": "女神的约定",
-    "value": "HDN102_2"
+    "value": "HDN102_2",
+    "remark": "女神的约定"
   },
   {
     "name": "诺瓦露",
-    "value": "HDN201"
+    "value": "HDN201",
+    "remark": "诺瓦露"
   },
   {
     "name": "圣黑之心",
-    "value": "HDN202_1"
+    "value": "HDN202_1",
+    "remark": "圣黑之心"
   },
   {
     "name": "圣黑之心",
-    "remark": "女神的微笑",
-    "value": "HDN202_2"
+    "value": "HDN202_2",
+    "remark": "女神的微笑"
   },
   {
     "name": "布兰",
-    "value": "HDN301"
+    "value": "HDN301",
+    "remark": "布兰"
   },
   {
     "name": "群白之心",
-    "value": "HDN302_1"
+    "value": "HDN302_1",
+    "remark": "群白之心"
   },
   {
     "name": "群白之心",
-    "remark": "女神的羞怯",
-    "value": "HDN302_2"
+    "value": "HDN302_2",
+    "remark": "女神的羞怯"
   },
   {
     "name": "贝露",
-    "value": "HDN401"
+    "value": "HDN401",
+    "remark": "贝露"
   },
   {
     "name": "翡绿之心",
-    "value": "HDN402_1"
+    "value": "HDN402_1",
+    "remark": "翡绿之心"
   },
   {
     "name": "翡绿之心",
-    "remark": "女神的一刻",
-    "value": "HDN402_2"
+    "value": "HDN402_2",
+    "remark": "女神的一刻"
   },
   {
     "name": "黑暗界",
-    "value": "heianjie"
+    "value": "heianjie",
+    "remark": "黑暗界"
   },
   {
     "name": "黑暗界",
-    "remark": "虚幻的幸福",
-    "value": "heianjie_2"
+    "value": "heianjie_2",
+    "remark": "虚幻的幸福"
   },
   {
     "name": "黑暗界",
-    "remark": "变装魔法",
-    "value": "heianjie_3"
+    "value": "heianjie_3",
+    "remark": "变装魔法"
   },
   {
-    "alias": "黒潮",
-    "name": "蓉",
+    "name": "黑潮",
     "value": "heichao"
   },
   {
     "name": "黑太子",
-    "value": "heitaizi"
+    "value": "heitaizi",
+    "remark": "黑太子"
   },
   {
     "name": "黑太子",
-    "remark": "White Princess",
-    "value": "heitaizi_2"
+    "value": "heitaizi_2",
+    "remark": "White Princess"
   },
   {
     "name": "黑太子",
-    "remark": "Fairmaid·Spring",
-    "value": "heitaizi_3"
+    "value": "heitaizi_3",
+    "remark": "Fairmaid·Spring"
   },
   {
     "name": "黑太子",
-    "remark": "Pop The Cork",
-    "value": "heitaizi_4"
+    "value": "heitaizi_4",
+    "remark": "Pop The Cork"
+  },
+  {
+    "name": "黑太子",
+    "value": "heitaizi_5",
+    "remark": "迷糊的侍者？"
   },
   {
     "name": "黑泽伍德",
-    "value": "heizewude"
+    "value": "heizewude",
+    "remark": "黑泽伍德"
   },
   {
     "name": "赫敏",
-    "value": "hemin"
+    "value": "hemin",
+    "remark": "赫敏"
   },
   {
     "name": "赫敏",
-    "remark": "温柔的纯白天使",
-    "value": "hemin_2"
+    "value": "hemin_2",
+    "remark": "纯白的悠闲假日"
   },
   {
     "name": "赫敏",
-    "remark": "纯白的悠闲假日",
-    "value": "hemin_3"
+    "value": "hemin_3",
+    "remark": "温柔的纯白天使"
   },
   {
     "name": "赫敏",
-    "remark": "女仆的优雅午后",
-    "value": "hemin_4"
+    "value": "hemin_4",
+    "remark": "女仆的优雅午后"
   },
   {
-    "alias": "荒潮",
-    "name": "栘",
+    "name": "洪亮",
+    "value": "hongliang",
+    "remark": "洪亮"
+  },
+  {
+    "name": "洪亮",
+    "value": "hongliang_2",
+    "remark": "清晨的呼唤！"
+  },
+  {
+    "name": "荒潮",
     "value": "huangchao"
   },
   {
-    "alias": "荒潮",
-    "name": "栘",
-    "remark": "映照花火",
-    "value": "huangchao_3"
+    "name": "荒潮",
+    "value": "huangchao_3",
+    "remark": "映照花火"
   },
   {
     "name": "皇家方舟",
-    "value": "huangjiafangzhou"
+    "value": "huangjiafangzhou",
+    "remark": "皇家方舟"
   },
   {
     "name": "皇家方舟",
-    "remark": "沙滩守望者",
-    "value": "huangjiafangzhou_2"
+    "value": "huangjiafangzhou_2",
+    "remark": "沙滩守望者"
   },
   {
     "name": "皇家方舟",
-    "remark": "晚会的守护者",
-    "value": "huangjiafangzhou_3"
+    "value": "huangjiafangzhou_3",
+    "remark": "晚会的守护者"
   },
   {
     "name": "皇家方舟",
-    "remark": "新年的守护者",
-    "value": "huangjiafangzhou_4"
+    "value": "huangjiafangzhou_4",
+    "remark": "新年的守护者"
+  },
+  {
+    "name": "皇家方舟·META",
+    "value": "huangjiafangzhou_alter",
+    "remark": "皇家方舟·META"
   },
   {
     "name": "皇家方舟",
-    "remark": "誓约",
-    "value": "huangjiafangzhou_h"
+    "value": "huangjiafangzhou_g",
+    "remark": "皇家方舟·改"
   },
   {
     "name": "皇家方舟",
-    "remark": "改造",
-    "value": "huangjiafangzhou_g"
-  },
-  {
-    "name": "皇家方舟",
-    "value": "huangjiafangzhou_alter"
+    "value": "huangjiafangzhou_h",
+    "remark": "纯白的守护者"
   },
   {
     "name": "华盛顿",
-    "value": "huashengdun"
+    "value": "huashengdun",
+    "remark": "华盛顿"
   },
   {
-    "alias": "花月",
-    "name": "榵",
+    "name": "花月",
     "value": "huayue"
   },
   {
-    "alias": "花月",
-    "name": "榵",
-    "remark": "白昼月、盛夏之华",
-    "value": "huayue_3"
+    "name": "花月",
+    "value": "huayue_3",
+    "remark": "白昼月、盛夏之华"
   },
   {
     "name": "胡德",
-    "value": "hude"
+    "value": "hude",
+    "remark": "胡德"
   },
   {
     "name": "胡德",
-    "remark": "照耀太阳的淑女",
-    "value": "hude_2"
+    "value": "hude_2",
+    "remark": "照耀太阳的淑女"
   },
   {
     "name": "胡德",
-    "remark": "五彩的Glorius",
-    "value": "hude_3"
+    "value": "hude_3",
+    "remark": "五彩的Glorius"
   },
   {
     "name": "胡德",
-    "remark": "晨曦的淑女",
-    "value": "hude_4"
+    "value": "hude_4",
+    "remark": "晨曦的淑女"
   },
   {
     "name": "胡德",
-    "remark": "誓约",
-    "value": "hude_h"
+    "value": "hude_h",
+    "remark": "蔷薇恋诗"
   },
   {
     "name": "胡蜂",
-    "value": "hufeng"
+    "value": "hufeng",
+    "remark": "胡蜂"
   },
   {
     "name": "回声",
-    "value": "huisheng"
+    "value": "huisheng",
+    "remark": "回声"
   },
   {
     "name": "彗星",
-    "value": "huixing"
+    "value": "huixing",
+    "remark": "彗星"
   },
   {
     "name": "彗星",
-    "remark": "改",
-    "value": "huixing_g"
+    "value": "huixing_g",
+    "remark": "彗星.改"
   },
   {
     "name": "霍比",
-    "value": "huobi"
+    "value": "huobi",
+    "remark": "霍比"
   },
   {
     "name": "霍比",
-    "remark": "小小学园偶像",
-    "value": "huobi_2"
+    "value": "huobi_2",
+    "remark": "小小学园偶像"
   },
   {
     "name": "火奴鲁鲁",
-    "value": "huonululu"
+    "value": "huonululu",
+    "remark": "火奴鲁鲁"
   },
   {
     "name": "火奴鲁鲁",
-    "remark": "阳伞下的同桌",
-    "value": "huonululu_2"
+    "value": "huonululu_2",
+    "remark": "阳伞下的同桌"
   },
   {
     "name": "火奴鲁鲁",
-    "remark": "盛夏的「灾难」",
-    "value": "huonululu_3"
+    "value": "huonululu_3",
+    "remark": "盛夏的「灾难」"
   },
   {
     "name": "火奴鲁鲁",
-    "remark": "大胆",
-    "value": "huonululu_4"
+    "value": "huonululu_4",
+    "remark": "大胆(?)的麋鹿小姐"
   },
   {
     "name": "火奴鲁鲁",
-    "remark": "两人的夏日祭",
-    "value": "huonululu_5"
+    "value": "huonululu_5",
+    "remark": "两人的夏日祭"
   },
   {
     "name": "火枪手",
-    "value": "huoqiangshou"
+    "value": "huoqiangshou",
+    "remark": "火枪手"
   },
   {
     "name": "狐提",
-    "value": "huti"
+    "value": "huti",
+    "remark": "狐提"
   },
   {
     "name": "狐提",
-    "remark": "改",
-    "value": "huti_g"
+    "value": "huti_g",
+    "remark": "狐提.改"
   },
   {
-    "name": "海咲",
-    "value": "haixiao_DOA"
-  },
-  {
-    "name": "海咲",
-    "remark": "金色的特别摄影",
-    "value": "haixiao_2_DOA"
-  },
-  {
-    "name": "海因里希亲王",
-    "value": "haiyinlixi"
-  },
-  {
-    "name": "海因里希亲王",
-    "remark": "花火烂漫的春绘卷",
-    "value": "haiyinlixi_3"
-  },
-  {
-    "name": "洪亮",
-    "value": "hongliang"
-  },
-  {
-    "name": "洪亮",
-    "remark": "清晨的呼唤！",
-    "value": "hongliang_2"
-  },
-  {
-    "alias": "伊13",
     "name": "伊13",
     "value": "i13"
   },
   {
-    "alias": "伊168",
     "name": "伊168",
     "value": "I168"
   },
   {
-    "alias": "伊168",
     "name": "伊168",
-    "remark": "祭典之日！",
-    "value": "I168_2"
+    "value": "I168_2",
+    "remark": "祭典之日！"
   },
   {
-    "alias": "伊19",
     "name": "伊19",
     "value": "I19"
   },
   {
-    "alias": "伊19",
     "name": "伊19",
-    "remark": "启程的微风",
-    "value": "I19_2"
+    "value": "I19_2",
+    "remark": "启程的微风"
   },
   {
-    "alias": "伊19",
     "name": "伊19",
-    "remark": "枕头天堂",
-    "value": "I19_3"
+    "value": "I19_3",
+    "remark": "枕头天堂"
   },
   {
-    "alias": "伊19",
     "name": "伊19",
-    "remark": "粉红甜心兔",
-    "value": "i19_4"
+    "value": "i19_4",
+    "remark": "粉红甜心兔"
   },
   {
-    "alias": "伊25",
     "name": "伊25",
     "value": "I25"
   },
   {
-    "alias": "伊25",
     "name": "伊25",
-    "remark": "兔兔与珊瑚礁",
-    "value": "I25_2"
+    "value": "I25_2",
+    "remark": "兔兔与珊瑚礁"
   },
   {
-    "alias": "伊25",
     "name": "伊25",
-    "remark": "甘美的新春祝福",
-    "value": "i25_3"
+    "value": "i25_3",
+    "remark": "甘美的新春祝福"
   },
   {
-    "alias": "伊26",
     "name": "伊26",
     "value": "I26"
   },
   {
-    "alias": "伊26",
     "name": "伊26",
-    "remark": "深海少女",
-    "value": "I26_2"
+    "value": "I26_2",
+    "remark": "深海少女"
   },
   {
-    "alias": "伊26",
     "name": "伊26",
-    "remark": "烟火大会前",
-    "value": "i26_3"
+    "value": "i26_3",
+    "remark": "烟火大会前"
   },
   {
-    "alias": "伊56",
     "name": "伊56",
     "value": "I56"
   },
   {
-    "alias": "伊56",
     "name": "伊56",
-    "remark": "角落的向日葵",
-    "value": "I56_2"
+    "value": "I56_2",
+    "remark": "角落的向日葵"
   },
   {
-    "alias": "伊58",
     "name": "伊58",
     "value": "I58"
   },
   {
     "name": "加富尔伯爵",
-    "value": "jiafuerbojue"
+    "value": "jiafuerbojue",
+    "remark": "加富尔伯爵"
   },
   {
     "name": "加富尔伯爵",
-    "remark": "激战的盛夏海滩",
-    "value": "jiafuerbojue_2"
+    "value": "jiafuerbojue_2",
+    "remark": "激战的盛夏海滩"
   },
   {
-    "alias": "加古",
-    "name": "狌",
+    "name": "加古",
     "value": "jiagu"
   },
   {
-    "alias": "加古",
-    "name": "狌",
-    "remark": "改",
-    "value": "jiagu_g"
+    "name": "加古",
+    "value": "jiagu_g",
+    "remark": "改"
   },
   {
-    "alias": "加贺",
-    "name": "鸾",
+    "name": "加贺",
     "value": "jiahe"
   },
   {
-    "alias": "加贺",
-    "name": "鸾",
-    "remark": "常夏的杀生石",
-    "value": "jiahe_2"
-  },
-  {
-    "alias": "加贺",
-    "name": "鸾",
-    "remark": "白狐贺正",
-    "value": "jiahe_3"
-  },
-  {
-    "alias": "加贺",
-    "name": "鸾",
-    "remark": "白狐贺正",
-    "value": "jiahe_4"
-  },
-  {
-    "alias": "加贺",
-    "name": "鸾",
-    "remark": "",
-    "value": "jiahe_5"
-  },
-  {
-    "alias": "加贺",
-    "name": "鸾",
-    "remark": "苍染的君子兰",
-    "value": "jiahe_h"
-  },
-  {
-    "alias": "加贺",
-    "name": "鸾",
+    "name": "加贺",
     "value": "jiahezhanlie"
   },
   {
+    "name": "加贺",
+    "value": "jiahe_2",
+    "remark": "常夏的杀生石"
+  },
+  {
+    "name": "加贺",
+    "value": "jiahe_3",
+    "remark": "白狐贺正"
+  },
+  {
+    "name": "加贺",
+    "value": "jiahe_4",
+    "remark": "淡樱之息"
+  },
+  {
+    "name": "加贺",
+    "value": "jiahe_5",
+    "remark": "白羽风华"
+  },
+  {
+    "name": "加贺",
+    "value": "jiahe_h",
+    "remark": "苍染的君子兰"
+  },
+  {
     "name": "加拉蒂亚",
-    "value": "jialadiya"
+    "value": "jialadiya",
+    "remark": "加拉蒂亚"
   },
   {
     "name": "加利福尼亚",
-    "value": "jialifuniya"
+    "value": "jialifuniya",
+    "remark": "加利福尼亚"
   },
   {
     "name": "拉·加利索尼埃",
-    "value": "jialisuoniye"
+    "value": "jialisuoniye",
+    "remark": "拉·加利索尼埃"
   },
   {
     "name": "拉·加利索尼埃",
-    "remark": "无垢的Piscine",
-    "value": "jialisuoniye_2"
+    "value": "jialisuoniye_2",
+    "remark": "无垢的Piscine"
   },
   {
     "name": "拉·加利索尼埃",
-    "remark": "春晓醉梦",
-    "value": "jialisuoniye_3"
+    "value": "jialisuoniye_3",
+    "remark": "黑猫与南瓜之夜"
   },
   {
-    "alias": "江风",
-    "name": "茳",
+    "name": "拉·加利索尼埃",
+    "value": "jialisuoniye_4",
+    "remark": "春晓醉梦"
+  },
+  {
+    "name": "江风",
     "value": "jiangfeng"
   },
   {
-    "alias": "江风",
-    "name": "茳",
-    "remark": "间奏·黑白",
-    "value": "jiangfeng_2"
+    "name": "江风",
+    "value": "jiangfeng_2",
+    "remark": "间奏·黑白"
   },
   {
-    "alias": "江风",
-    "name": "茳",
-    "remark": "誓约",
-    "value": "jiangfeng_h"
+    "name": "江风",
+    "value": "jiangfeng_h",
+    "remark": "美梦构造论"
   },
   {
-    "alias": null,
-    "name": "㭴",
+    "name": "樫野",
     "value": "jianye"
   },
   {
-    "alias": null,
-    "name": "㭴",
-    "remark": "温泉放松时间",
-    "value": "jianye_2"
+    "name": "樫野",
+    "value": "jianye_2",
+    "remark": "温泉放松时间"
   },
   {
     "name": "加斯科涅",
-    "value": "jiasikenie"
+    "value": "jiasikenie",
+    "remark": "加斯科涅"
   },
   {
     "name": "加斯科涅",
-    "remark": "夏季环境应对外装",
-    "value": "jiasikenie_2"
+    "value": "jiasikenie_2",
+    "remark": "夏季环境应对外装"
   },
   {
-    "name": "加斯科涅",
-    "remark": "μ兵装",
-    "value": "jiasikenie_idol"
+    "name": "加斯科涅(μ兵装)",
+    "value": "jiasikenie_idol",
+    "remark": "加斯科涅(μ兵装)"
   },
   {
     "name": "杰金斯",
-    "value": "jiejinsi"
+    "value": "jiejinsi",
+    "remark": "杰金斯"
   },
   {
     "name": "杰金斯",
-    "remark": "星光与白雪的平安夜",
-    "value": "jiejinsi_3"
+    "value": "jiejinsi_3",
+    "remark": "星光与白雪的平安夜"
   },
   {
-    "alias": "矶风",
-    "name": "柉",
+    "name": "矶风",
     "value": "jifeng"
   },
   {
-    "alias": "矶风",
-    "name": "柉",
-    "remark": "新年合战",
-    "value": "jifeng_2"
+    "name": "矶风",
+    "value": "jifeng_2",
+    "remark": "新年合战"
   },
   {
-    "alias": "矶风",
-    "name": "柉",
-    "remark": "战国组合！",
-    "value": "jifeng_3"
+    "name": "矶风",
+    "value": "jifeng_3",
+    "remark": "战国组合！"
+  },
+  {
+    "name": "基洛夫",
+    "value": "jiluofu",
+    "remark": "基洛夫"
+  },
+  {
+    "name": "基洛夫",
+    "value": "jiluofu_2",
+    "remark": "居家咖啡时间"
   },
   {
     "name": "金伯利",
-    "value": "jinboli"
+    "value": "jinboli",
+    "remark": "金伯利"
   },
   {
     "name": "金伯利",
-    "remark": "东煌之风",
-    "value": "jinboli_3"
+    "value": "jinboli_3",
+    "remark": "东煌之风"
   },
   {
-    "alias": "金刚",
-    "name": "鲤",
+    "name": "金刚",
     "value": "jingang"
   },
   {
-    "alias": "金刚",
-    "name": "鲤",
-    "remark": "华鸟风月",
-    "value": "jingang_2"
+    "name": "金刚",
+    "value": "jingang_2",
+    "remark": "华鸟风月"
   },
   {
-    "alias": "金刚",
-    "name": "鲤",
-    "remark": "Talent Hospital",
-    "value": "jingang_3"
-  },
-  {
-    "name": "竞技神",
-    "value": "jingjishen"
+    "name": "金刚",
+    "value": "jingang_3",
+    "remark": "Talent Hospital"
   },
   {
     "name": "竞技神",
-    "remark": "改",
-    "value": "jingjishen_g"
+    "value": "jingjishen",
+    "remark": "竞技神"
+  },
+  {
+    "name": "竞技神",
+    "value": "jingjishen_g",
+    "remark": "竞技神.改"
   },
   {
     "name": "棘鳍",
-    "value": "jiqi"
+    "value": "jiqi",
+    "remark": "棘鳍"
   },
   {
     "name": "棘鳍",
-    "remark": "便利店大作战！",
-    "value": "jiqi_2"
+    "value": "jiqi_2",
+    "remark": "便利店大作战！"
   },
   {
     "name": "棘鳍",
-    "remark": "五彩斑斓的宴会",
-    "value": "jiqi_3"
+    "value": "jiqi_3",
+    "remark": "五彩斑斓的宴会"
+  },
+  {
+    "name": "旧金山",
+    "value": "jiujinshan"
+  },
+  {
+    "name": "旧金山",
+    "value": "jiujinshan_3",
+    "remark": "Funny Bunny！"
   },
   {
     "name": "久远",
-    "value": "jiuyuan"
+    "value": "jiuyuan",
+    "remark": "久远"
   },
   {
     "name": "久远",
-    "remark": "久远",
-    "value": "jiuyuan_2"
+    "value": "jiuyuan_2",
+    "remark": "久远(传颂之物)"
   },
   {
-    "alias": "纪伊",
-    "name": "鲣",
+    "name": "纪伊",
     "value": "jiyi"
   },
   {
-    "alias": "纪伊",
-    "name": "鲣",
-    "remark": "水边的诱惑",
-    "value": "jiyi_2"
+    "name": "纪伊",
+    "value": "jiyi_2",
+    "remark": "水边的诱惑"
   },
   {
-    "alias": "巻波",
-    "name": "棬",
+    "name": "卷波",
     "value": "juanbo"
   },
   {
-    "alias": "巻波",
-    "name": "棬",
-    "remark": "元气RUN TIME！",
-    "value": "juanbo_2"
+    "name": "卷波",
+    "value": "juanbo_2",
+    "remark": "元气RUN TIME！"
   },
   {
     "name": "倔强",
-    "value": "juejiang"
+    "value": "juejiang",
+    "remark": "倔强"
   },
   {
     "name": "倔强",
-    "remark": "沙滩上的魔法使",
-    "value": "juejiang_2"
+    "value": "juejiang_2",
+    "remark": "沙滩上的魔法使(?)"
   },
   {
-    "alias": "骏河",
-    "name": "鲪",
+    "name": "骏河",
     "value": "junhe"
   },
   {
-    "alias": "骏河",
-    "name": "鲪",
-    "remark": "偶遇的优等生",
-    "value": "junhe_3"
+    "name": "骏河",
+    "value": "junhe_3",
+    "remark": "偶遇的优等生"
   },
   {
-    "alias": "骏河",
-    "name": "鲪",
-    "remark": "百花庆云",
-    "value": "junhe_5"
-  },
-  {
-    "name": "君主",
-    "value": "junzhu"
+    "name": "骏河",
+    "value": "junhe_5",
+    "remark": "百花庆云"
   },
   {
     "name": "君主",
-    "remark": "素罗华威",
-    "value": "junzhu_2"
+    "value": "junzhu",
+    "remark": "君主"
   },
   {
     "name": "君主",
-    "remark": "赭红爵祿",
-    "value": "junzhu_3"
+    "value": "junzhu_2",
+    "remark": "素罗华威"
   },
   {
-    "name": "基洛夫",
-    "value": "jiluofu"
-  },
-  {
-    "name": "基洛夫",
-    "remark": "居家咖啡时间",
-    "value": "jiluofu_2"
+    "name": "君主",
+    "value": "junzhu_3",
+    "remark": "赭红爵祿"
   },
   {
     "name": "卡尔斯鲁厄",
-    "value": "kaersilue"
+    "value": "kaersilue",
+    "remark": "卡尔斯鲁厄"
   },
   {
     "name": "卡尔斯鲁厄",
-    "remark": "改",
-    "value": "kaersilue_g"
+    "value": "kaersilue_g",
+    "remark": "卡尔斯鲁厄.改"
   },
   {
     "name": "朱利奥·凯撒",
-    "value": "kaisa"
+    "value": "kaisa",
+    "remark": "朱利奥·凯撒"
   },
   {
     "name": "朱利奥·凯撒",
-    "remark": "锻炼达人？",
-    "value": "kaisa_2"
+    "value": "kaisa_2",
+    "remark": "锻炼达人？"
   },
   {
     "name": "朱利奥·凯撒",
-    "remark": "阳光下的Alta marea",
-    "value": "kaisa_3"
+    "value": "kaisa_3",
+    "remark": "阳光下的Alta marea"
   },
   {
     "name": "凯旋",
-    "value": "kaixuan"
+    "value": "kaixuan",
+    "remark": "凯旋"
   },
   {
     "name": "康克德",
-    "value": "kangkede"
+    "value": "kangkede",
+    "remark": "康克德"
   },
   {
     "name": "康克德",
-    "remark": "红色苹果糖",
-    "value": "kangkede_2"
+    "value": "kangkede_2",
+    "remark": "红色苹果糖"
   },
   {
     "name": "康克德",
-    "remark": "圣诞☆糖分天国",
-    "value": "kangkede_3"
+    "value": "kangkede_3",
+    "remark": "圣诞☆糖分天国"
   },
   {
     "name": "卡萨布兰卡",
-    "value": "kasabulanka"
+    "value": "kasabulanka",
+    "remark": "卡萨布兰卡"
   },
   {
     "name": "卡萨布兰卡",
-    "remark": "啦啦队的休息时间",
-    "value": "kasabulanka_2"
+    "value": "kasabulanka_2",
+    "remark": "啦啦队的休息时间"
   },
   {
     "name": "卡辛",
-    "value": "kaxin"
+    "value": "kaxin",
+    "remark": "卡辛"
   },
   {
     "name": "卡辛",
-    "remark": "购物车大小姐",
-    "value": "kaxin_2"
+    "value": "kaxin_2",
+    "remark": "购物车大小姐"
   },
   {
     "name": "卡辛",
-    "remark": "改",
-    "value": "kaxin_g"
+    "value": "kaxin_g",
+    "remark": "卡辛.改"
+  },
+  {
+    "name": "可怖",
+    "value": "kebu",
+    "remark": "可怖"
+  },
+  {
+    "name": "可怖",
+    "value": "kebu_3",
+    "remark": "静寂，微眠，安宁之白"
   },
   {
     "name": "科尔克",
-    "value": "keerke"
+    "value": "keerke",
+    "remark": "科尔克"
   },
   {
     "name": "科尔克",
-    "remark": "学园的雪之妖精",
-    "value": "keerke_2"
+    "value": "keerke_2",
+    "remark": "学园的雪之妖精"
   },
   {
     "name": "克雷文",
-    "value": "keleiwen"
+    "value": "keleiwen",
+    "remark": "克雷文"
   },
   {
     "name": "克雷文",
-    "remark": "操场边的拉拉队长",
-    "value": "keleiwen_2"
+    "value": "keleiwen_2",
+    "remark": "操场边的拉拉队长"
   },
   {
     "name": "克利夫兰",
-    "value": "kelifulan"
+    "value": "kelifulan",
+    "remark": "克利夫兰"
   },
   {
     "name": "克利夫兰",
-    "remark": "恶魔降临之夜",
-    "value": "kelifulan_2"
+    "value": "kelifulan_2",
+    "remark": "恶魔降临之夜"
   },
   {
     "name": "克利夫兰",
-    "remark": "骑士之夜",
-    "value": "kelifulan_3"
+    "value": "kelifulan_3",
+    "remark": "骑士之夜"
   },
   {
     "name": "克利夫兰",
-    "remark": "Road·Traveler",
-    "value": "kelifulan_4"
+    "value": "kelifulan_4",
+    "remark": "Road·Traveler"
   },
   {
     "name": "克利夫兰",
-    "remark": "新年对决！",
-    "value": "kelifulan_5"
+    "value": "kelifulan_5",
+    "remark": "新年对决！"
   },
   {
     "name": "克利夫兰",
-    "remark": "誓约",
-    "value": "kelifulan_h"
+    "value": "kelifulan_h",
+    "remark": "心动一刻"
   },
   {
-    "name": "克利夫兰",
-    "remark": "μ兵装",
-    "value": "kelifulan_idol"
+    "name": "克利夫兰(μ兵装)",
+    "value": "kelifulan_idol",
+    "remark": "克利夫兰(μ兵装)"
   },
   {
     "name": "小克利夫兰",
-    "value": "kelifulan_younv"
+    "value": "kelifulan_younv",
+    "remark": "小克利夫兰"
   },
   {
     "name": "科隆",
-    "value": "kelong"
+    "value": "kelong",
+    "remark": "科隆"
   },
   {
     "name": "科隆",
-    "remark": "改",
-    "value": "kelong_g"
+    "value": "kelong_g",
+    "remark": "科隆.改"
   },
   {
     "name": "科罗拉多",
-    "value": "keluoladuo"
+    "value": "keluoladuo",
+    "remark": "科罗拉多"
   },
   {
     "name": "科罗拉多",
-    "remark": "科罗拉多",
-    "value": "keluoladuo_2"
+    "value": "keluoladuo_2",
+    "remark": "科罗拉多"
   },
   {
     "name": "柯尼斯堡",
-    "value": "kenisibao"
+    "value": "kenisibao",
+    "remark": "柯尼斯堡"
   },
   {
     "name": "肯特",
-    "value": "kente"
+    "value": "kente",
+    "remark": "肯特"
   },
   {
     "name": "可畏",
-    "value": "kewei"
+    "value": "kewei",
+    "remark": "可畏"
   },
   {
     "name": "可畏",
-    "remark": "海边的“皇家淑女”",
-    "value": "kewei_2"
+    "value": "kewei_2",
+    "remark": "海边的“皇家淑女”"
   },
   {
     "name": "可畏",
-    "remark": "梳妆的“大小姐”",
-    "value": "kewei_3"
+    "value": "kewei_3",
+    "remark": "梳妆的“大小姐”"
   },
   {
     "name": "试作型布里MKII",
-    "value": "kin"
+    "value": "kin",
+    "remark": "试作型布里MKII"
   },
   {
     "name": "恐怖",
-    "value": "kongbu"
+    "value": "kongbu",
+    "remark": "恐怖"
   },
   {
     "name": "恐怖",
-    "remark": "万圣夜的恐怖",
-    "value": "kongbu_2"
+    "value": "kongbu_2",
+    "remark": "万圣夜的恐怖"
   },
   {
     "name": "库珀",
-    "value": "kubo"
+    "value": "kubo",
+    "remark": "库珀"
   },
   {
     "name": "库珀",
-    "remark": "烈日的网球场",
-    "value": "kubo_2"
+    "value": "kubo_2",
+    "remark": "烈日的网球场"
   },
   {
     "name": "库珀",
-    "remark": "圣夜的温暖馈赠",
-    "value": "kubo_3"
+    "value": "kubo_3",
+    "remark": "圣夜的温暖馈赠"
   },
   {
     "name": "库拉索",
-    "value": "kulasuo"
+    "value": "kulasuo",
+    "remark": "库拉索"
   },
   {
     "name": "库拉索",
-    "remark": "东煌之雅",
-    "value": "kulasuo_2"
+    "value": "kulasuo_2",
+    "remark": "东煌之雅"
   },
   {
     "name": "库拉索",
-    "remark": "改",
-    "value": "kulasuo_g"
+    "value": "kulasuo_g",
+    "remark": "库拉索.改"
   },
   {
     "name": "昆西",
-    "value": "kunxi"
+    "value": "kunxi",
+    "remark": "昆西"
   },
   {
     "name": "昆西",
-    "remark": "炎夏凉风",
-    "value": "kunxi_2"
+    "value": "kunxi_2",
+    "remark": "炎夏凉风"
   },
   {
     "name": "拉德福特",
-    "value": "ladefute"
+    "value": "ladefute",
+    "remark": "拉德福特"
   },
   {
     "name": "拉德福特",
-    "remark": "Sweet Magic!",
-    "value": "ladefute_3"
+    "value": "ladefute_3",
+    "remark": "Candy Magic！"
   },
   {
     "name": "拉菲",
-    "value": "lafei"
+    "value": "lafei",
+    "remark": "拉菲"
   },
   {
     "name": "拉菲",
-    "remark": "33娘",
-    "value": "lafei_2"
+    "value": "lafei_2",
+    "remark": "33娘"
   },
   {
     "name": "拉菲",
-    "remark": "雪兔与苹果糖",
-    "value": "lafei_3"
+    "value": "lafei_3",
+    "remark": "雪兔与苹果糖"
   },
   {
     "name": "拉菲",
-    "remark": "白兔迎春",
-    "value": "lafei_4"
+    "value": "lafei_4",
+    "remark": "白兔迎春"
   },
   {
     "name": "拉菲",
-    "remark": "兔兔店员？",
-    "value": "lafei_5"
+    "value": "lafei_5",
+    "remark": "兔兔店员？"
   },
   {
     "name": "拉菲",
-    "remark": "野餐奇遇？",
-    "value": "lafei_6"
+    "value": "lafei_6",
+    "remark": "兔兔偶像·提不起劲"
   },
   {
     "name": "拉菲",
-    "remark": "兔兔偶像·提不起劲",
-    "value": "lafei_8"
+    "value": "lafei_8",
+    "remark": "野餐奇遇？"
   },
   {
     "name": "拉菲",
-    "remark": "",
-    "value": "lafei_9"
+    "value": "lafei_9",
+    "remark": "大扫除的始末"
   },
   {
     "name": "拉菲",
-    "remark": "改",
-    "value": "lafei_g"
+    "value": "lafei_g",
+    "remark": "拉菲.改"
   },
   {
     "name": "拉菲",
-    "remark": "誓约",
-    "value": "lafei_h"
+    "value": "lafei_h",
+    "remark": "白兔与誓约"
   },
   {
     "name": "莱比锡",
-    "value": "laibixi"
+    "value": "laibixi",
+    "remark": "莱比锡"
   },
   {
     "name": "莱比锡",
-    "remark": "改",
-    "value": "laibixi_g"
+    "value": "laibixi_g",
+    "remark": "莱比锡.改"
   },
   {
     "name": "兰利",
-    "value": "lanli"
+    "value": "lanli",
+    "remark": "兰利"
   },
   {
     "name": "兰利",
-    "remark": "改",
-    "value": "lanli_g"
+    "value": "lanli_g",
+    "remark": "兰利.改"
   },
   {
     "name": "蓝鳃鱼",
-    "value": "lansaiyu"
+    "value": "lansaiyu",
+    "remark": "蓝鳃鱼"
   },
   {
     "name": "蓝鳃鱼",
-    "remark": "见习王牌守备！",
-    "value": "lansaiyu_2"
+    "value": "lansaiyu_2",
+    "remark": "见习王牌守备！"
   },
   {
-    "alias": "雷",
-    "name": "梓",
+    "name": "雷",
     "value": "lei"
   },
   {
-    "alias": "雷",
-    "name": "梓",
-    "remark": "樱花茶",
-    "value": "lei_2"
+    "name": "雷鸣",
+    "value": "leiming",
+    "remark": "雷鸣"
   },
   {
-    "alias": "雷",
-    "name": "梓",
-    "remark": "祭典Ikatuchi",
-    "value": "lei_3"
+    "name": "雷鸣",
+    "value": "leiming_2",
+    "remark": "梦幻的阅读时光"
   },
   {
-    "alias": "雷",
-    "name": "梓",
-    "remark": "晨曦精灵Ikatuchi",
-    "value": "lei_4"
+    "name": "雷",
+    "value": "lei_2",
+    "remark": "樱花茶"
   },
   {
-    "name": "勒马尔",
-    "value": "lemaer"
+    "name": "雷",
+    "value": "lei_3",
+    "remark": "祭典Ikatuchi"
   },
   {
-    "name": "勒马尔",
-    "remark": "闪耀的夏天",
-    "value": "lemaer_2"
-  },
-  {
-    "name": "勒马尔",
-    "remark": "闪耀的幸福学园",
-    "value": "lemaer_3"
+    "name": "雷",
+    "value": "lei_4",
+    "remark": "晨曦精灵Ikazuchi"
   },
   {
     "name": "勒马尔",
-    "remark": "改",
-    "value": "lemaer_g"
+    "value": "lemaer",
+    "remark": "勒马尔"
+  },
+  {
+    "name": "勒马尔",
+    "value": "lemaer_2",
+    "remark": "闪耀的夏天"
+  },
+  {
+    "name": "勒马尔",
+    "value": "lemaer_3",
+    "remark": "闪耀的幸福学园"
+  },
+  {
+    "name": "勒马尔",
+    "value": "lemaer_g",
+    "remark": "勒马尔.改"
   },
   {
     "name": "利安得",
-    "value": "liande"
+    "value": "liande",
+    "remark": "利安得"
   },
   {
     "name": "利安得",
-    "remark": "改",
-    "value": "liande_g"
+    "value": "liande_g",
+    "remark": "利安得.改"
   },
   {
-    "alias": "凉月",
-    "name": "栎",
+    "name": "凉月",
     "value": "liangyue"
   },
   {
-    "alias": "凉月",
-    "name": "栎",
-    "remark": "栎、伴你在海边！",
+    "name": "凉月",
     "value": "liangyue_2"
   },
   {
-    "alias": "凉月",
-    "name": "栎",
-    "remark": "新年羽板球大战！",
-    "value": "liangyue_3"
+    "name": "凉月",
+    "value": "liangyue_3",
+    "remark": "新年板羽球大战！"
   },
   {
     "name": "列克星敦",
-    "value": "liekexingdun"
+    "value": "liekexingdun",
+    "remark": "列克星敦"
   },
   {
     "name": "列克星敦",
-    "remark": "春华佳人",
-    "value": "liekexingdun_2"
+    "value": "liekexingdun_2",
+    "remark": "春华佳人"
   },
   {
     "name": "猎人",
-    "value": "lieren"
+    "value": "lieren",
+    "remark": "猎人"
   },
   {
-    "name": "ligen",
-    "value": "ligen"
+    "name": "利根",
+    "value": "ligen",
+    "remark": "利根"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
+    "name": "绫波",
     "value": "lingbo"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "待宵的魔女",
-    "value": "lingbo_2"
+    "name": "绫波",
+    "value": "lingbo_10",
+    "remark": "黯然礼装"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "skin unavailable",
-    "value": "lingbo_3"
+    "name": "绫波",
+    "value": "lingbo_11",
+    "remark": "微速战斗姿势"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "乐队型鬼神",
-    "value": "lingbo_4"
+    "name": "绫波",
+    "value": "lingbo_2",
+    "remark": "待宵的魔女"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "新岁之鬼神",
-    "value": "lingbo_5"
+    "name": "绫波",
+    "value": "lingbo_4",
+    "remark": "乐队型鬼神"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "一式水手风制服",
-    "value": "lingbo_6"
+    "name": "绫波",
+    "value": "lingbo_5",
+    "remark": "新岁之鬼神"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "特殊潜入作战披风",
-    "value": "lingbo_7"
+    "name": "绫波",
+    "value": "lingbo_6",
+    "remark": "一式水手风制服"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "冷静偶像·迷惑中",
-    "value": "lingbo_8"
+    "name": "绫波",
+    "value": "lingbo_7",
+    "remark": "冷静偶像·迷惑中"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "新年的愿望",
-    "value": "lingbo_9"
+    "name": "绫波",
+    "value": "lingbo_8",
+    "remark": "新年的愿望"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "黯然礼服",
-    "value": "lingbo_10"
+    "name": "绫波",
+    "value": "lingbo_9",
+    "remark": "特殊潜入作战披风"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "",
-    "value": "lingbo_11"
+    "name": "绫波",
+    "value": "lingbo_g",
+    "remark": "改"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "改",
-    "value": "lingbo_g"
+    "name": "绫波",
+    "value": "lingbo_h",
+    "remark": "鬼神之华裳"
   },
   {
-    "alias": "绫波",
-    "name": "柚",
-    "remark": "誓约",
-    "value": "lingbo_h"
-  },
-  {
-    "alias": "铃谷",
-    "name": "狺",
+    "name": "铃谷",
     "value": "linggu"
   },
   {
     "name": "里诺",
-    "value": "linuo"
+    "value": "linuo",
+    "remark": "里诺"
   },
   {
     "name": "里诺",
-    "remark": "波涛的啦啦队长！",
-    "value": "linuo_2"
+    "value": "linuo_2",
+    "remark": "波涛的啦啦队长！"
   },
   {
     "name": "里诺",
-    "remark": "bunny·reno！",
-    "value": "linuo_3"
+    "value": "linuo_3",
+    "remark": "bunny·reno！"
   },
   {
     "name": "里诺",
-    "remark": "夏日番外篇",
-    "value": "linuo_4"
+    "value": "linuo_4",
+    "remark": "夏日番外篇"
   },
   {
     "name": "黎塞留",
-    "value": "lisailiu"
+    "value": "lisailiu",
+    "remark": "黎塞留"
   },
   {
     "name": "黎塞留",
-    "remark": "潮风的Fleuron",
-    "value": "lisailiu_2"
+    "value": "lisailiu_2",
+    "remark": "潮风的Fleuron"
   },
   {
     "name": "黎塞留",
-    "remark": "常緑Rêve prophétique",
-    "value": "lisailiu_3"
+    "value": "lisailiu_3",
+    "remark": "常緑Rêve prophétique"
   },
   {
     "name": "里士满",
-    "value": "lishiman"
+    "value": "lishiman",
+    "remark": "里士满"
   },
   {
     "name": "利托里奥",
-    "value": "lituoliao"
+    "value": "lituoliao",
+    "remark": "利托里奥"
   },
   {
     "name": "利托里奥",
-    "remark": "那不勒斯之光",
-    "value": "lituoliao_2"
+    "value": "lituoliao_2",
+    "remark": "那不勒斯之光"
   },
   {
     "name": "利托里奥",
-    "remark": "Calabria Aurea",
-    "value": "lituoliao_3"
+    "value": "lituoliao_3",
+    "remark": "Calabria Aurea"
   },
   {
-    "alias": "龙凤",
-    "name": "鸗",
+    "name": "利托里奥",
+    "value": "lituoliao_4",
+    "remark": "居家私人时间"
+  },
+  {
+    "name": "龙凤",
     "value": "longfeng"
   },
   {
-    "alias": "龙凤",
-    "name": "鸗",
-    "remark": "凤舞新年",
-    "value": "longfeng_2"
+    "name": "龙凤",
+    "value": "longfeng_2",
+    "remark": "凤舞新年"
   },
   {
     "name": "龙骑兵",
-    "value": "longqibing"
+    "value": "longqibing",
+    "remark": "龙骑兵"
   },
   {
     "name": "龙骑兵",
-    "remark": "清爽的夏日Choice",
-    "value": "longqibing_2"
+    "value": "longqibing_2",
+    "remark": "清爽的夏日Choice"
   },
   {
-    "alias": "龙骧",
-    "name": "枭",
+    "name": "龙骧",
     "value": "longxiang"
   },
   {
-    "alias": "龙骧",
-    "name": "枭",
-    "remark": "干物武士？",
-    "value": "longxiang_2"
+    "name": "龙骧",
+    "value": "longxiang_2",
+    "remark": "干物武士？"
   },
   {
-    "alias": "龙骧",
-    "name": "枭",
-    "remark": "课后狩猎时间",
-    "value": "longxiang_3"
+    "name": "龙骧",
+    "value": "longxiang_3",
+    "remark": "课后狩猎时间"
   },
   {
-    "alias": "陆奥",
-    "name": "鲛",
+    "name": "陆奥",
     "value": "luao"
   },
   {
-    "alias": "陆奥",
-    "name": "鲛",
-    "remark": "战国风云少女",
-    "value": "luao_2"
+    "name": "陆奥",
+    "value": "luao_2",
+    "remark": "战国风云少女"
   },
   {
     "name": "露露缇耶",
-    "value": "lulutiye"
+    "value": "lulutiye",
+    "remark": "露露缇耶"
   },
   {
     "name": "露露缇耶",
-    "remark": "传颂之物",
-    "value": "lulutiye_2"
+    "value": "lulutiye_2",
+    "remark": "露露缇耶(传颂之物)"
   },
   {
     "name": "鲁莽",
-    "value": "lumang"
+    "value": "lumang",
+    "remark": "鲁莽"
   },
   {
     "name": "鲁莽",
-    "remark": "盛夏Festival！",
-    "value": "lumang_2"
+    "value": "lumang_2",
+    "remark": "盛夏Festival！"
   },
   {
     "name": "鲁莽",
-    "remark": "Dream.Dolce",
-    "value": "lumang_3"
+    "value": "lumang_3",
+    "remark": "Dream.Dolce"
   },
   {
     "name": "伦敦",
-    "value": "lundun"
+    "value": "lundun",
+    "remark": "伦敦"
   },
   {
     "name": "伦敦",
-    "remark": "改",
-    "value": "lundun_g"
+    "value": "lundun_g",
+    "remark": "伦敦.改"
   },
   {
     "name": "罗德尼",
-    "value": "luodeni"
+    "value": "luodeni",
+    "remark": "罗德尼"
   },
   {
     "name": "罗德尼",
-    "remark": "未来的海滨上将",
-    "value": "luodeni_2"
+    "value": "luodeni_2",
+    "remark": "未来的海滨上将"
   },
   {
     "name": "罗德尼",
-    "remark": "一日见习店员",
-    "value": "luodeni_3"
+    "value": "luodeni_3",
+    "remark": "一日见习店员"
   },
   {
     "name": "罗德尼",
-    "remark": "誓约",
-    "value": "luodeni_h"
+    "value": "luodeni_h",
+    "remark": "幸福殿堂"
   },
   {
     "name": "罗恩",
-    "value": "luoen"
+    "value": "luoen",
+    "remark": "罗恩"
   },
   {
     "name": "罗恩",
-    "remark": "暗红色的微笑",
-    "value": "luoen_2"
+    "value": "luoen_2",
+    "remark": "暗红色的微笑"
   },
   {
-    "name": "罗恩",
-    "remark": "μ兵装",
-    "value": "luoen_idol"
+    "name": "罗恩(μ兵装)",
+    "value": "luoen_idol",
+    "remark": "罗恩(μ兵装)"
   },
   {
     "name": "罗利",
-    "value": "luoli"
+    "value": "luoli",
+    "remark": "罗利"
   },
   {
     "name": "路易九世",
-    "value": "luyijiushi"
+    "value": "luyijiushi",
+    "remark": "路易九世"
   },
   {
     "name": "路易九世",
-    "remark": "华服的圣骑士",
-    "value": "luyijiushi_2"
+    "value": "luyijiushi_2",
+    "remark": "华服的圣骑士"
   },
   {
     "name": "路易九世",
-    "remark": "瑰丽的执勤人",
-    "value": "luyijiushi_3"
+    "value": "luyijiushi_3",
+    "remark": "瑰丽的执勤人"
   },
   {
-    "name": "雷鸣",
-    "value": "leiming"
+    "name": "秋月律子",
+    "value": "lvzi",
+    "remark": "秋月律子"
   },
   {
-    "name": "雷鸣",
-    "remark": "梦幻的阅读时光",
-    "value": "leiming_2"
-  },
-  {
-    "name": "马布尔黑德",
-    "value": "mabuerheide"
+    "name": "秋月律子",
+    "value": "lvzi_2",
+    "remark": "盛夏时光·乒乓对决"
   },
   {
     "name": "马布尔黑德",
-    "remark": "Boxing Girl！",
-    "value": "mabuerheide_2"
+    "value": "mabuerheide",
+    "remark": "马布尔黑德"
   },
   {
     "name": "马布尔黑德",
-    "remark": "魅惑的缤纷雪夜",
-    "value": "mabuerheide_3"
+    "value": "mabuerheide_2",
+    "remark": "Boxing Girl！"
+  },
+  {
+    "name": "马布尔黑德",
+    "value": "mabuerheide_3",
+    "remark": "魅惑的缤纷雪夜"
+  },
+  {
+    "name": "马布尔黑德",
+    "value": "mabuerheide_4",
+    "remark": "29.5日的赏月时间"
   },
   {
     "name": "麦考尔",
-    "value": "maikaoer"
+    "value": "maikaoer",
+    "remark": "麦考尔"
+  },
+  {
+    "name": "马可波罗",
+    "value": "makeboluo",
+    "remark": "马可波罗"
   },
   {
     "name": "马拉尼",
-    "value": "malani"
+    "value": "malani",
+    "remark": "马拉尼"
   },
   {
     "name": "马拉尼",
-    "remark": "东煌之仪",
-    "value": "malani_3"
+    "value": "malani_3",
+    "remark": "东煌之仪"
   },
   {
     "name": "马里兰",
-    "value": "malilan"
+    "value": "malilan",
+    "remark": "马里兰"
   },
   {
     "name": "马里兰",
-    "remark": "马里兰",
-    "value": "malilan_2"
+    "value": "malilan_2",
+    "remark": "马里兰"
   },
   {
-    "alias": "満潮",
-    "name": "樠",
+    "name": "玛莉萝丝",
+    "value": "maliluosi_2_DOA",
+    "remark": "浪花与小恶魔从者"
+  },
+  {
+    "name": "玛莉萝丝",
+    "value": "maliluosi_DOA",
+    "remark": "玛莉萝丝"
+  },
+  {
+    "name": "满潮",
     "value": "manchao"
   },
   {
-    "name": "猫音",
-    "value": "maoyin"
+    "name": "满潮",
+    "value": "manchao_2",
+    "remark": "缎带轻飘飘"
   },
   {
     "name": "猫音",
-    "remark": "猫音",
-    "value": "maoyin_2"
+    "value": "maoyin",
+    "remark": "猫音"
   },
   {
-    "alias": "卯月",
-    "name": "楙",
+    "name": "猫音",
+    "value": "maoyin_2",
+    "remark": "猫音(传颂之物)"
+  },
+  {
+    "name": "卯月",
     "value": "maoyue"
   },
   {
-    "alias": "卯月",
-    "name": "楙",
-    "remark": "贪睡的天使",
-    "value": "maoyue_2"
+    "name": "卯月",
+    "value": "maoyue_2",
+    "remark": "贪睡的天使"
   },
   {
     "name": "马萨诸塞",
-    "value": "masazhusai"
+    "value": "masazhusai",
+    "remark": "马萨诸塞"
   },
   {
     "name": "马萨诸塞",
-    "remark": "盛宴的准备",
-    "value": "masazhusai_2"
+    "value": "masazhusai_2",
+    "remark": "盛宴的准备"
+  },
+  {
+    "name": "马耶·布雷泽",
+    "value": "mayebuleize",
+    "remark": "马耶·布雷泽"
+  },
+  {
+    "name": "马耶·布雷泽",
+    "value": "mayebuleize_3",
+    "remark": "女骑士的最后倔强！"
   },
   {
     "name": "美因茨",
-    "value": "meiyinci"
+    "value": "meiyinci",
+    "remark": "美因茨"
   },
   {
     "name": "蒙彼利埃",
-    "value": "mengbiliai"
+    "value": "mengbiliai",
+    "remark": "蒙彼利埃"
   },
   {
     "name": "蒙彼利埃",
-    "remark": "雪夜之花",
-    "value": "mengbiliai_2"
+    "value": "mengbiliai_2",
+    "remark": "雪夜之花"
   },
   {
     "name": "蒙彼利埃",
-    "remark": "魔境的公主？",
-    "value": "mengbiliai_3"
+    "value": "mengbiliai_3",
+    "remark": "魔境的公主？"
   },
   {
     "name": "孟菲斯",
-    "value": "mengfeisi"
+    "value": "mengfeisi",
+    "remark": "孟菲斯"
   },
   {
     "name": "孟菲斯",
-    "remark": "海风之旅",
-    "value": "mengfeisi_2"
+    "value": "mengfeisi_2",
+    "remark": "海风之旅"
   },
   {
     "name": "孟菲斯",
-    "remark": "Mystical Night",
-    "value": "mengfeisi_3"
+    "value": "mengfeisi_3",
+    "remark": "Mystical Night"
   },
   {
     "name": "孟菲斯",
-    "remark": "课间的微风",
-    "value": "mengfeisi_4"
+    "value": "mengfeisi_4",
+    "remark": "课间的微风"
   },
   {
-    "alias": "妙高",
-    "name": "獌",
+    "name": "妙高",
     "value": "miaogao"
   },
   {
     "name": "明尼阿波利斯",
-    "value": "mingniabolisi"
+    "value": "mingniabolisi",
+    "remark": "明尼阿波利斯"
   },
   {
     "name": "明尼阿波利斯",
-    "remark": "野性派学生",
-    "value": "mingniabolisi_2"
+    "value": "mingniabolisi_2",
+    "remark": "野性派学生"
   },
   {
     "name": "明尼阿波利斯",
-    "remark": "极限运动X",
-    "value": "mingniabolisi_3"
+    "value": "mingniabolisi_3",
+    "remark": "极限运动X"
   },
   {
     "name": "明尼阿波利斯",
-    "remark": "圣夜的月下疾驰",
-    "value": "mingniabolisi_4"
+    "value": "mingniabolisi_4",
+    "remark": "圣夜的月下疾驰"
   },
   {
     "name": "明尼阿波利斯",
-    "remark": "誓约",
-    "value": "mingniabolisi_h"
+    "value": "mingniabolisi_h",
+    "remark": "Trapper white"
   },
   {
-    "alias": "明石",
-    "name": "茗",
+    "name": "明石",
     "value": "mingshi"
   },
   {
-    "alias": "明石",
-    "name": "茗",
-    "remark": "正月，浴衣，赤字",
-    "value": "mingshi_2"
+    "name": "明石",
+    "value": "mingshi_2",
+    "remark": "正月，浴衣，赤字"
   },
   {
-    "alias": "明石",
-    "name": "茗",
-    "remark": "黑猫来袭！",
-    "value": "mingshi_3"
+    "name": "明石",
+    "value": "mingshi_3",
+    "remark": "黑猫来袭！"
   },
   {
-    "alias": "明石",
-    "name": "茗",
-    "remark": "IJN_在A1摊位喵！",
+    "name": "明石",
     "value": "mingshi_4"
   },
   {
-    "alias": "明石",
-    "name": "茗",
-    "remark": "欢迎光临Sofmap！",
-    "value": "mingshi_5"
+    "name": "明石",
+    "value": "mingshi_5",
+    "remark": "欢迎光临Sofmap！"
   },
   {
-    "alias": "明石",
-    "name": "茗",
-    "remark": "誓约",
-    "value": "mingshi_h"
-  },
-  {
-    "name": "明斯克",
-    "value": "mingsike"
+    "name": "明石",
+    "value": "mingshi_h",
+    "remark": "白猫的报恩"
   },
   {
     "name": "明斯克",
-    "remark": "霹雳典狱长",
-    "value": "mingsike_2"
+    "value": "mingsike",
+    "remark": "明斯克"
+  },
+  {
+    "name": "明斯克",
+    "value": "mingsike_2",
+    "remark": "霹雳典狱长"
   },
   {
     "name": "命运女神",
-    "value": "mingyunnvshen"
+    "value": "mingyunnvshen",
+    "remark": "命运女神"
   },
   {
     "name": "命运女神",
-    "remark": "改",
-    "value": "mingyunnvshen_g"
+    "value": "mingyunnvshen_2",
+    "remark": "晴空下的命运丝线"
+  },
+  {
+    "name": "命运女神",
+    "value": "mingyunnvshen_g",
+    "remark": "命运女神.改"
+  },
+  {
+    "name": "摩尔曼斯克",
+    "value": "moermansike",
+    "remark": "摩尔曼斯克"
+  },
+  {
+    "name": "摩尔曼斯克",
+    "value": "moermansike_2",
+    "remark": "纯白雪景"
   },
   {
     "name": "莫里",
-    "value": "moli"
+    "value": "moli",
+    "remark": "莫里"
   },
   {
-    "alias": "摩耶",
-    "name": "犮",
+    "name": "莫里森",
+    "value": "molisen"
+  },
+  {
+    "name": "莫里森",
+    "value": "molisen_2",
+    "remark": "小熊整备中"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_2_DOA",
+    "remark": "特别的红心Ace"
+  },
+  {
+    "name": "莫妮卡",
+    "value": "monika_DOA",
+    "remark": "莫妮卡"
+  },
+  {
+    "name": "摩耶",
     "value": "moye"
   },
   {
-    "alias": "睦月",
-    "name": "松",
+    "name": "睦月",
     "value": "muyue"
   },
   {
-    "alias": "睦月",
-    "name": "松",
-    "remark": "驯鹿先生，出发！",
-    "value": "muyue_2"
+    "name": "睦月",
+    "value": "muyue_2",
+    "remark": "驯鹿先生，出发！"
   },
   {
-    "alias": "睦月",
-    "name": "松",
-    "remark": "糖果祭典！",
-    "value": "muyue_3"
+    "name": "睦月",
+    "value": "muyue_3",
+    "remark": "糖果祭典！"
   },
   {
-    "alias": "睦月",
-    "name": "松",
-    "remark": "春节的糖果",
-    "value": "muyue_4"
+    "name": "睦月",
+    "value": "muyue_4",
+    "remark": "春节的糖果"
   },
   {
-    "alias": "睦月",
-    "name": "松",
-    "remark": "改",
-    "value": "muyue_g"
-  },
-  {
-    "name": "莫妮卡",
-    "value": "monika_DOA"
-  },
-  {
-    "name": "莫妮卡",
-    "remark": "红枫与温泉假日",
-    "value": "monika_2_DOA"
-  },
-  {
-    "name": "摩尔曼斯克",
-    "value": "moermansike"
-  },
-  {
-    "name": "摩尔曼斯克",
-    "remark": "纯白雪景",
-    "value": "moermansike_2"
-  },
-  {
-    "name": "玛莉萝丝",
-    "value": "maliluosi_DOA"
-  },
-  {
-    "name": "玛莉萝丝",
-    "remark": "浪花与小恶魔从者",
-    "value": "maliluosi_2_DOA"
+    "name": "睦月",
+    "value": "muyue_g",
+    "remark": "改"
   },
   {
     "name": "纳尔逊",
-    "value": "naerxun"
+    "value": "naerxun",
+    "remark": "纳尔逊"
   },
   {
     "name": "纳尔逊",
-    "remark": "月之魔女",
-    "value": "naerxun_2"
+    "value": "naerxun_2",
+    "remark": "月之魔女"
   },
   {
-    "alias": "那珂",
-    "name": "豻",
+    "name": "那珂",
     "value": "nake"
   },
   {
-    "alias": "那珂",
-    "name": "豻",
-    "remark": "激浪之夏！",
-    "value": "nake_2"
+    "name": "那珂",
+    "value": "nake_2",
+    "remark": "激浪之夏！"
   },
   {
     "name": "南安普顿",
-    "value": "nananpudun"
+    "value": "nananpudun",
+    "remark": "南安普顿"
   },
   {
     "name": "南安普顿",
-    "remark": "新年的LittleKnight",
-    "value": "nananpudun_2"
+    "value": "nananpudun_2",
+    "remark": "新年的LittleKnight"
   },
   {
     "name": "南达科他",
-    "value": "nandaketa"
+    "value": "nandaketa",
+    "remark": "南达科他"
   },
   {
     "name": "南达科他",
-    "remark": "剧场上的独奏",
-    "value": "nandaketa_2"
+    "value": "nandaketa_2",
+    "remark": "剧场上的独奏"
   },
   {
-    "alias": "那智",
-    "name": "狏",
+    "name": "那智",
     "value": "nazhi"
   },
   {
     "name": "内华达",
-    "value": "neihuada"
+    "value": "neihuada",
+    "remark": "内华达"
   },
   {
     "name": "内华达",
-    "remark": "改",
-    "value": "neihuada_g"
+    "value": "neihuada_g",
+    "remark": "内华达.改"
   },
   {
-    "alias": "能代",
-    "name": "貅",
+    "name": "能代",
     "value": "nengdai"
   },
   {
-    "alias": "能代",
-    "name": "貅",
-    "remark": "祭典的秘境?",
-    "value": "nengdai_2"
+    "name": "能代",
+    "value": "nengdai_2",
+    "remark": "祭典的秘境?"
   },
   {
-    "alias": "能代",
-    "name": "貅",
-    "remark": "夜响的绝园",
-    "value": "nengdai_4"
+    "name": "能代",
+    "value": "nengdai_4",
+    "remark": "夜响的绝园"
   },
   {
-    "alias": "能代",
-    "name": "貅",
-    "remark": "冬雪沁香",
-    "value": "nengdai_6"
+    "name": "能代",
+    "value": "nengdai_5",
+    "remark": "宁静的六叠间"
   },
   {
-    "name": "纽伦堡",
-    "value": "niulunbao"
+    "name": "能代",
+    "value": "nengdai_6",
+    "remark": "冬雪沁香"
   },
   {
-    "name": "纽伦堡",
-    "remark": "正月的漫游",
-    "value": "niulunbao_2"
+    "name": "能代",
+    "value": "nengdai_h",
+    "remark": "恋结奇谭"
   },
   {
-    "alias": "鸟海",
-    "name": "猋",
+    "name": "鸟海",
     "value": "niaohai"
   },
   {
     "name": "尼古拉斯",
-    "value": "nigulasi"
+    "value": "nigulasi",
+    "remark": "尼古拉斯"
   },
   {
     "name": "尼古拉斯",
-    "remark": "尼古纳斯",
-    "value": "nigulasi_2"
+    "value": "nigulasi_2",
+    "remark": "尼古纳斯"
   },
   {
     "name": "尼古拉斯",
-    "remark": "装错的圣诞礼物",
-    "value": "nigulasi_3"
+    "value": "nigulasi_3",
+    "remark": "装错的圣诞礼物"
   },
   {
     "name": "尼古拉斯",
-    "remark": "夏日清扫运动",
-    "value": "nigulasi_4"
+    "value": "nigulasi_4",
+    "remark": "夏日清扫运动"
   },
   {
     "name": "尼古拉斯",
-    "remark": "放学后的“惊喜”？",
-    "value": "nigulasi_5"
+    "value": "nigulasi_5",
+    "remark": "放学后的“惊喜”？"
   },
   {
     "name": "尼古拉斯",
-    "remark": "改",
-    "value": "nigulasi_g"
+    "value": "nigulasi_g",
+    "remark": "尼古拉斯.改"
   },
   {
     "name": "宁海",
-    "value": "ninghai"
+    "value": "ninghai",
+    "remark": "宁海"
   },
   {
     "name": "宁海",
-    "remark": "食欲之夏",
-    "value": "ninghai_2"
+    "value": "ninghai_2",
+    "remark": "食欲之夏"
   },
   {
     "name": "宁海",
-    "remark": "月宫玉兔",
-    "value": "ninghai_3"
+    "value": "ninghai_3",
+    "remark": "月宫玉兔"
   },
   {
     "name": "宁海",
-    "remark": "东煌姐妹！·N",
-    "value": "ninghai_4"
+    "value": "ninghai_4",
+    "remark": "东煌姐妹！·N"
   },
   {
     "name": "宁海",
-    "remark": "新年旅游！",
-    "value": "ninghai_5"
+    "value": "ninghai_5",
+    "remark": "新年旅游！"
   },
   {
     "name": "宁海",
-    "remark": "姹紫盛筵",
-    "value": "ninghai_6"
+    "value": "ninghai_6",
+    "remark": "姹紫盛筵"
   },
   {
     "name": "宁海",
-    "remark": "大宝的伙伴！",
-    "value": "ninghai_7"
+    "value": "ninghai_7",
+    "remark": "大宝的伙伴！"
   },
   {
     "name": "宁海",
-    "remark": "改",
-    "value": "ninghai_g"
+    "value": "ninghai_g",
+    "remark": "宁海.改"
   },
   {
     "name": "纽卡斯尔",
-    "value": "niukasier"
+    "value": "niukasier",
+    "remark": "纽卡斯尔 "
   },
   {
     "name": "纽卡斯尔",
-    "remark": "木槿风情",
-    "value": "niukasier_2"
+    "value": "niukasier_2",
+    "remark": "木槿风情"
   },
   {
     "name": "纽卡斯尔",
-    "remark": "改",
-    "value": "niukasier_g"
+    "value": "niukasier_g",
+    "remark": "纽卡斯尔.改 "
+  },
+  {
+    "name": "纽伦堡",
+    "value": "niulunbao",
+    "remark": "纽伦堡"
+  },
+  {
+    "name": "纽伦堡",
+    "value": "niulunbao_2",
+    "remark": "正月的漫游"
   },
   {
     "name": "诺福克",
-    "value": "nuofuke"
+    "value": "nuofuke",
+    "remark": "诺福克"
   },
   {
     "name": "女将",
-    "value": "nvjiang"
+    "value": "nvjiang",
+    "remark": "女将"
   },
   {
     "name": "女将",
-    "remark": "小小的管弦乐队",
-    "value": "nvjiang_2"
+    "value": "nvjiang_2",
+    "remark": "小小的管弦乐队"
   },
   {
     "name": "女将",
-    "remark": "改",
-    "value": "nvjiang_g"
+    "value": "nvjiang_g",
+    "remark": "女将.改"
   },
   {
     "name": "女天狗",
-    "value": "nvtiangou_DOA"
+    "value": "nvtiangou_2_DOA",
+    "remark": "红枫与温泉假日"
   },
   {
     "name": "女天狗",
-    "remark": "红枫与温泉假日",
-    "value": "nvtiangou_2_DOA"
+    "value": "nvtiangou_DOA",
+    "remark": "女天狗"
   },
   {
     "name": "欧根亲王",
-    "value": "ougen"
+    "value": "ougen",
+    "remark": "欧根亲王"
   },
   {
     "name": "欧根亲王",
-    "remark": "永不褪色的笑容",
-    "value": "ougen_2"
+    "value": "ougen_2",
+    "remark": "永不褪色的笑容"
   },
   {
     "name": "欧根亲王",
-    "remark": "百花缭乱",
-    "value": "ougen_3"
+    "value": "ougen_3",
+    "remark": "百花缭乱"
   },
   {
     "name": "欧根亲王",
-    "remark": "Wein Kornblume",
-    "value": "ougen_4"
+    "value": "ougen_4",
+    "remark": "Wein Kornblume"
   },
   {
     "name": "欧根亲王",
-    "remark": "誓约",
-    "value": "ougen_h"
+    "value": "ougen_5",
+    "remark": "Final Lap"
+  },
+  {
+    "name": "欧根亲王",
+    "value": "ougen_h",
+    "remark": "命运交响曲"
   },
   {
     "name": "欧若拉",
-    "value": "ouruola"
+    "value": "ouruola",
+    "remark": "欧若拉"
   },
   {
     "name": "欧若拉",
-    "remark": "春之语",
-    "value": "ouruola_2"
+    "value": "ouruola_2",
+    "remark": "春之语"
   },
   {
     "name": "欧若拉",
-    "remark": "黎明的赞歌",
-    "value": "ouruola_3"
+    "value": "ouruola_3",
+    "remark": "黎明的赞歌"
   },
   {
     "name": "欧若拉",
-    "remark": "渝城秘技",
-    "value": "ouruola_4"
+    "value": "ouruola_4",
+    "remark": "渝城秘技"
   },
   {
     "name": "欧若拉",
-    "remark": "誓约",
-    "value": "ouruola_h"
+    "value": "ouruola_h",
+    "remark": "良辰凤褂"
   },
   {
     "name": "佩内洛珀",
-    "value": "peineiluopo"
+    "value": "peineiluopo",
+    "remark": "佩内洛珀"
   },
   {
     "name": "佩内洛珀",
-    "remark": "嫣红深闺",
-    "value": "peineiluopo_2"
+    "value": "peineiluopo_2",
+    "remark": "嫣红深闺"
   },
   {
     "name": "彭萨科拉",
-    "value": "pengsakela"
+    "value": "pengsakela",
+    "remark": "彭萨科拉"
   },
   {
     "name": "平海",
-    "value": "pinghai"
+    "value": "pinghai",
+    "remark": "平海"
   },
   {
     "name": "平海",
-    "remark": "游兴之夏",
-    "value": "pinghai_2"
+    "value": "pinghai_2",
+    "remark": "游兴之夏"
   },
   {
     "name": "平海",
-    "remark": "桂花月兔",
-    "value": "pinghai_3"
+    "value": "pinghai_3",
+    "remark": "桂花月兔"
   },
   {
     "name": "平海",
-    "remark": "东煌姐妹！·P",
-    "value": "pinghai_4"
+    "value": "pinghai_4",
+    "remark": "东煌姐妹！·P"
   },
   {
     "name": "平海",
-    "remark": "美食大远征！",
-    "value": "pinghai_5"
+    "value": "pinghai_5",
+    "remark": "美食大远征！"
   },
   {
     "name": "平海",
-    "remark": "甜蜜嫣红",
-    "value": "pinghai_6"
+    "value": "pinghai_6",
+    "remark": "甜蜜嫣红"
   },
   {
     "name": "平海",
-    "remark": "二宝的伙伴！",
-    "value": "pinghai_7"
+    "value": "pinghai_7",
+    "remark": "二宝的伙伴！"
   },
   {
     "name": "平海",
-    "remark": "改",
-    "value": "pinghai_g"
+    "value": "pinghai_g",
+    "remark": "平海.改"
   },
   {
-    "alias": "浦波",
-    "name": "朴",
+    "name": "浦波",
     "value": "pubo"
   },
   {
-    "alias": "浦波",
-    "name": "朴",
-    "remark": "雪地先锋",
-    "value": "pubo_2"
+    "name": "浦波",
+    "value": "pubo_2",
+    "remark": "雪地先锋"
   },
   {
-    "alias": "浦风",
-    "name": "槆",
+    "name": "浦风",
     "value": "pufeng"
   },
   {
-    "alias": "浦风",
-    "name": "槆",
-    "remark": "圣诞大将军",
-    "value": "pufeng_2"
+    "name": "浦风",
+    "value": "pufeng_2",
+    "remark": "圣诞大将军"
   },
   {
-    "alias": "浦风",
-    "name": "槆",
-    "remark": "战国乐队!",
-    "value": "pufeng_3"
-  },
-  {
-    "name": "普林斯顿",
-    "value": "pulinsidun"
+    "name": "浦风",
+    "value": "pufeng_3",
+    "remark": "战国乐队！"
   },
   {
     "name": "普林斯顿",
-    "remark": "浅海的特别训练",
-    "value": "pulinsidun_2"
+    "value": "pulinsidun",
+    "remark": "普林斯顿"
   },
   {
     "name": "普林斯顿",
-    "remark": "心跳的糖果乐园",
-    "value": "pulinsidun_3"
+    "value": "pulinsidun_2",
+    "remark": "浅海的特别训练"
+  },
+  {
+    "name": "普林斯顿",
+    "value": "pulinsidun_3",
+    "remark": "心跳的糖果乐园"
   },
   {
     "name": "恰巴耶夫",
-    "value": "qiabayefu"
+    "value": "qiabayefu",
+    "remark": "恰巴耶夫"
   },
   {
     "name": "恰巴耶夫",
-    "remark": "拘束的白骑兵",
-    "value": "qiabayefu_2"
+    "value": "qiabayefu_2",
+    "remark": "拘束的白骑兵"
   },
   {
     "name": "恰巴耶夫",
-    "remark": "白骑兵的假日",
-    "value": "qiabayefu_3"
+    "value": "qiabayefu_3",
+    "remark": "白骑兵的假日"
   },
   {
-    "alias": "千代田",
-    "name": "鹃",
+    "name": "千代田",
     "value": "qiandaitian"
   },
   {
-    "alias": "千代田",
-    "name": "鹃",
-    "remark": "碧波灿烂之日",
-    "value": "qiandaitian_2"
+    "name": "千代田",
+    "value": "qiandaitian_2",
+    "remark": "碧波灿烂之日"
   },
   {
-    "alias": "千歳",
-    "name": "鹂",
+    "name": "千岁",
     "value": "qiansui"
   },
   {
-    "alias": "千歳",
-    "name": "鹂",
-    "remark": "夏阳璀璨之日",
-    "value": "qiansui_2"
+    "name": "千岁",
+    "value": "qiansui_2",
+    "remark": "夏阳璀璨之日"
+  },
+  {
+    "name": "如月千早",
+    "value": "qianzao",
+    "remark": "如月千早"
+  },
+  {
+    "name": "如月千早",
+    "value": "qianzao_2",
+    "remark": "水月镜花"
   },
   {
     "name": "英王乔治五世",
-    "value": "qiaozhiwushi"
+    "value": "qiaozhiwushi",
+    "remark": "英王乔治五世"
   },
   {
     "name": "英王乔治五世",
-    "remark": "温莎的玫瑰",
-    "value": "qiaozhiwushi_2"
+    "value": "qiaozhiwushi_2",
+    "remark": "温莎的玫瑰"
   },
   {
     "name": "齐柏林伯爵",
-    "value": "qibolin"
+    "value": "qibolin",
+    "remark": "齐柏林伯爵"
   },
   {
     "name": "齐柏林伯爵",
-    "remark": "沙滩上的乌尔德",
-    "value": "qibolin_2"
+    "value": "qibolin_2",
+    "remark": "沙滩上的乌尔德"
   },
   {
     "name": "小齐柏林",
-    "value": "qibolin_younv"
+    "value": "qibolin_younv",
+    "remark": "小齐柏林"
   },
   {
-    "alias": "旗风",
-    "name": "樋",
+    "name": "旗风",
     "value": "qifeng"
   },
   {
-    "alias": "亲潮",
-    "name": "藮",
+    "name": "亲潮",
     "value": "qinchao"
   },
   {
-    "alias": "清波",
-    "name": "棈",
+    "name": "清波",
     "value": "qingbo"
   },
   {
-    "alias": "清波",
-    "name": "棈",
-    "remark": "圣诞小红帽？",
-    "value": "qingbo_3"
+    "name": "清波",
+    "value": "qingbo_3",
+    "remark": "圣诞小红帽？"
   },
   {
-    "name": "塞壬",
-    "remark": "清除者",
-    "value": "qingchuzhe"
+    "name": "清除者",
+    "value": "qingchuzhe",
+    "remark": "清除者"
   },
   {
-    "alias": "青叶",
-    "name": "犹",
+    "name": "青叶",
     "value": "qingye"
   },
   {
-    "name": "塞壬",
-    "remark": "侵扰者",
-    "value": "qinraozhe"
+    "name": "丘比特",
+    "value": "qiubite",
+    "remark": "丘比特"
   },
   {
     "name": "丘比特",
-    "value": "qiubite"
-  },
-  {
-    "name": "丘比特",
-    "remark": "新番组之夜",
-    "value": "qiubite_2"
+    "value": "qiubite_2",
+    "remark": "新番组之夜"
   },
   {
     "name": "企业",
-    "value": "qiye"
+    "value": "qiye",
+    "remark": "企业"
   },
   {
     "name": "企业",
-    "remark": "驯鹿之主",
-    "value": "qiye_2"
+    "value": "qiye_2",
+    "remark": "驯鹿之主"
   },
   {
     "name": "企业",
-    "remark": "傲春之牡丹",
-    "value": "qiye_3"
+    "value": "qiye_3",
+    "remark": "傲春之牡丹"
   },
   {
     "name": "企业",
-    "remark": "Anniversary Drive！",
-    "value": "qiye_4"
+    "value": "qiye_4",
+    "remark": "Anniversary Drive！"
   },
   {
     "name": "企业",
-    "remark": "翱翔的自由之翼",
-    "value": "qiye_5"
+    "value": "qiye_5",
+    "remark": "翱翔的自由之翼"
   },
   {
     "name": "企业",
-    "remark": "英雄的礼服",
-    "value": "qiye_6"
+    "value": "qiye_6",
+    "remark": "英雄的礼服"
   },
   {
     "name": "企业",
-    "remark": "黑化",
-    "value": "qiye_dark"
+    "value": "qiye_7",
+    "remark": "Wind Catcher"
   },
   {
     "name": "企业",
-    "remark": "誓约",
-    "value": "qiye_h"
+    "value": "qiye_dark",
+    "remark": "企业"
+  },
+  {
+    "name": "企业",
+    "value": "qiye_h",
+    "remark": "誓约的星光"
   },
   {
     "name": "小企业",
-    "value": "qiye_younv"
+    "value": "qiye_younv",
+    "remark": "小企业"
   },
   {
     "name": "确捷",
-    "value": "quejie"
+    "value": "quejie",
+    "remark": "确捷"
   },
   {
     "name": "确捷",
-    "remark": "自习室的Cyclamen",
-    "value": "quejie_2"
+    "value": "quejie_2",
+    "remark": "自习室的Cyclamen"
   },
   {
     "name": "确捷",
-    "remark": "白玉佳人",
-    "value": "quejie_3"
+    "value": "quejie_3",
+    "remark": "白玉佳人"
   },
   {
     "name": "确捷",
-    "remark": "盛夏的特别服务",
-    "value": "quejie_4"
+    "value": "quejie_4",
+    "remark": "盛夏的特别服务"
   },
   {
     "name": "让·巴尔",
-    "value": "rangbaer"
+    "value": "rangbaer",
+    "remark": "让·巴尔"
   },
   {
     "name": "让·巴尔",
-    "remark": "不羁的BloodStone",
-    "value": "rangbaer_2"
+    "value": "rangbaer_2",
+    "remark": "不羁的BloodStone"
   },
   {
     "name": "让·巴尔",
-    "remark": "秘密的Après midi",
-    "value": "rangbaer_3"
+    "value": "rangbaer_3",
+    "remark": "秘密的Après midi"
   },
   {
     "name": "让·巴尔",
-    "remark": "舶刀Première neige",
-    "value": "rangbaer_4"
+    "value": "rangbaer_4",
+    "remark": "舶刀Première neige"
   },
   {
     "name": "热心",
-    "value": "rexin"
+    "value": "rexin",
+    "remark": "热心"
   },
   {
     "name": "热心",
-    "remark": "热心的情人节",
-    "value": "rexin_2"
+    "value": "rexin_2",
+    "remark": "热心的情人节"
   },
   {
     "name": "热心",
-    "remark": "Master·热心？",
-    "value": "rexin_3"
+    "value": "rexin_3",
+    "remark": "Master·热心？"
   },
   {
     "name": "热心",
-    "remark": "改",
-    "value": "rexin_g"
+    "value": "rexin_g",
+    "remark": "热心.改"
   },
   {
-    "alias": "日向",
-    "name": "螯",
+    "name": "日向",
     "value": "rixiang"
   },
   {
-    "alias": "日向",
-    "name": "螯",
-    "remark": "改",
-    "value": "rixiang_g"
+    "name": "日向",
+    "value": "rixiang_g",
+    "remark": "改"
   },
   {
-    "alias": "瑞鹤",
-    "name": "鹤",
+    "name": "瑞鹤",
     "value": "ruihe"
   },
   {
-    "alias": "瑞鹤",
-    "name": "鹤",
-    "remark": "祭华之鹤",
-    "value": "ruihe_2"
+    "name": "瑞鹤",
+    "value": "ruihe_2",
+    "remark": "祭华之鹤"
   },
   {
-    "alias": "瑞鹤",
-    "name": "鹤",
-    "remark": "飙速之鹤",
-    "value": "ruihe_3"
+    "name": "瑞鹤",
+    "value": "ruihe_3",
+    "remark": "飙速之鹤"
   },
   {
-    "alias": "若叶",
-    "name": "楉",
+    "name": "若叶",
     "value": "ruoye"
   },
   {
-    "alias": "若叶",
-    "name": "楉",
-    "remark": "限时圣诞Wakaba",
-    "value": "ruoye_2"
+    "name": "若叶",
+    "value": "ruoye_2",
+    "remark": "限时圣诞Wakaba"
   },
   {
-    "alias": "如月",
-    "name": "樟",
+    "name": "如月",
     "value": "ruyue"
   },
   {
-    "alias": "如月",
-    "name": "樟",
-    "remark": "新年祈愿",
-    "value": "ruyue_2"
+    "name": "如月",
+    "value": "ruyue_2",
+    "remark": "新年祈愿"
   },
   {
-    "alias": "如月",
-    "name": "樟",
-    "remark": "改",
-    "value": "ruyue_g"
-  },
-  {
-    "name": "萨福克",
-    "value": "safuke"
+    "name": "如月",
+    "value": "ruyue_g",
+    "remark": "改"
   },
   {
     "name": "萨福克",
-    "remark": "改",
-    "value": "safuke_g"
+    "value": "safuke",
+    "remark": "萨福克"
   },
   {
-    "name": "塞壬",
-    "value": "sairen_youyizhe"
-  },
-  {
-    "name": "塞壬BOSS",
-    "value": "sairenboss11"
-  },
-  {
-    "name": "塞壬BOSS",
-    "value": "sairenboss5"
-  },
-  {
-    "name": "塞壬BOSS",
-    "value": "sairenboss6"
-  },
-  {
-    "name": "塞壬BOSS",
-    "value": "sairenboss8"
-  },
-  {
-    "name": "塞壬BOSS",
-    "value": "sairenboss9"
-  },
-  {
-    "name": "塞壬BOSS",
-    "remark": "构建者",
-    "value": "sairenboss9-shuimu"
-  },
-  {
-    "name": "塞壬航母",
-    "value": "sairenhangmu"
-  },
-  {
-    "name": "塞壬航母",
-    "value": "sairenhangmu_i"
-  },
-  {
-    "name": "塞壬航母",
-    "value": "sairenhangmu_ii"
-  },
-  {
-    "name": "塞壬潜艇",
-    "value": "sairenqianting"
-  },
-  {
-    "name": "塞壬轻巡",
-    "value": "sairenqingxun"
-  },
-  {
-    "name": "塞壬轻巡",
-    "value": "sairenqingxun_i"
-  },
-  {
-    "name": "塞壬轻巡",
-    "value": "sairenqingxun_iI"
-  },
-  {
-    "name": "塞壬驱逐",
-    "value": "sairenquzhu"
-  },
-  {
-    "name": "塞壬驱逐",
-    "value": "sairenquzhu_i"
-  },
-  {
-    "name": "塞壬驱逐",
-    "value": "sairenquzhu_ii"
-  },
-  {
-    "name": "塞壬战列",
-    "value": "sairenzhanlie"
-  },
-  {
-    "name": "塞壬战列",
-    "value": "sairenzhanlie_i"
-  },
-  {
-    "name": "塞壬战列",
-    "value": "sairenzhanlie_ii"
-  },
-  {
-    "name": "塞壬重巡",
-    "value": "sairenzhongxun"
-  },
-  {
-    "name": "塞壬重巡",
-    "value": "sairenzhongxun_i"
-  },
-  {
-    "name": "塞壬重巡",
-    "value": "sairenzhongxun_ii"
+    "name": "萨福克",
+    "value": "safuke_g",
+    "remark": "萨福克.改"
   },
   {
     "name": "萨拉娜",
-    "value": "salana"
+    "value": "salana",
+    "remark": "萨拉娜"
   },
   {
     "name": "萨拉娜",
-    "remark": "萨拉娜",
-    "value": "salana_2"
+    "value": "salana_2",
+    "remark": "萨拉娜(传颂之物)"
   },
   {
     "name": "萨拉托加",
-    "value": "salatuojia"
+    "value": "salatuojia",
+    "remark": "萨拉托加"
   },
   {
     "name": "萨拉托加",
-    "remark": "七海的憩日",
-    "value": "salatuojia_2"
+    "value": "salatuojia_2",
+    "remark": "七海的憩日"
   },
   {
     "name": "萨拉托加",
-    "remark": "异国的偶像？",
-    "value": "salatuojia_3"
+    "value": "salatuojia_3",
+    "remark": "异国的偶像？"
   },
   {
     "name": "萨拉托加",
-    "remark": "虚拟偶像？",
-    "value": "salatuojia_4"
+    "value": "salatuojia_4",
+    "remark": "虚拟偶像？"
   },
   {
     "name": "萨拉托加",
-    "remark": "碧海的偶像",
-    "value": "salatuojia_5"
+    "value": "salatuojia_5",
+    "remark": "碧海的偶像"
   },
   {
     "name": "萨拉托加",
-    "remark": "圣夜的偶像",
-    "value": "salatuojia_6"
+    "value": "salatuojia_6",
+    "remark": "圣夜的偶像"
   },
   {
     "name": "萨拉托加",
-    "remark": "偶像迎春！",
-    "value": "salatuojia_7"
+    "value": "salatuojia_7",
+    "remark": "偶像迎春！"
   },
   {
     "name": "萨拉托加",
-    "remark": "悠哉野餐时光",
-    "value": "salatuojia_8"
+    "value": "salatuojia_8",
+    "remark": "悠哉野餐时光"
   },
   {
     "name": "萨拉托加",
-    "remark": "改",
-    "value": "salatuojia_g"
+    "value": "salatuojia_9",
+    "remark": "杯面大使？"
   },
   {
-    "alias": "三笠",
-    "name": "鲐",
+    "name": "萨拉托加",
+    "value": "salatuojia_g",
+    "remark": "萨拉托加.改"
+  },
+  {
+    "name": "三笠",
     "value": "sanli"
   },
   {
-    "alias": "三笠",
-    "name": "鲐",
-    "remark": "樱都之风",
-    "value": "sanli_2"
+    "name": "三笠",
+    "value": "sanli_2",
+    "remark": "樱都之风"
   },
   {
-    "alias": "三笠",
-    "name": "鲐",
-    "remark": "赏樱日和",
-    "value": "sanli_4"
+    "name": "三笠",
+    "value": "sanli_4",
+    "remark": "赏樱日和 "
   },
   {
-    "alias": "三笠",
-    "name": "鲐",
-    "remark": "养精蓄锐的假日",
-    "value": "sanli_5"
+    "name": "三笠",
+    "value": "sanli_5",
+    "remark": "养精蓄锐的假日"
   },
   {
-    "alias": "三笠",
-    "name": "鲐",
-    "remark": "誓约",
-    "value": "sanli_h"
+    "name": "三笠",
+    "value": "sanli_h",
+    "remark": "无垢舰裳"
   },
   {
-    "alias": "三日月",
-    "name": "檧",
+    "name": "三日月",
     "value": "sanriyue"
   },
   {
-    "alias": "三日月",
-    "name": "檧",
-    "remark": "僵尸小姐驾到！",
-    "value": "sanriyue_2"
+    "name": "三日月",
+    "value": "sanriyue_2",
+    "remark": "僵尸小姐驾到！"
   },
   {
-    "alias": "三隈",
-    "name": "狻",
+    "name": "三隈",
     "value": "sanwei"
   },
   {
     "name": "撒切尔",
-    "value": "saqieer"
+    "value": "saqieer",
+    "remark": "撒切尔"
   },
   {
     "name": "沙恩霍斯特",
-    "value": "shaenhuosite"
+    "value": "shaenhuosite",
+    "remark": "沙恩霍斯特"
   },
   {
     "name": "沙恩霍斯特",
-    "remark": "雪豹与白梅",
-    "value": "shaenhuosite_2"
+    "value": "shaenhuosite_2",
+    "remark": "雪豹与白梅"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
+    "name": "山城",
     "value": "shancheng"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "季夏攻势？",
-    "value": "shancheng_2"
+    "name": "山城",
+    "value": "shancheng_2",
+    "remark": "季夏攻势？"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "圣诞攻势！",
-    "value": "shancheng_3"
+    "name": "山城",
+    "value": "shancheng_3",
+    "remark": "圣诞攻势！"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "盛装的黑猫",
-    "value": "shancheng_4"
+    "name": "山城",
+    "value": "shancheng_4",
+    "remark": "盛装的黑猫"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "看板娘攻势！？",
-    "value": "shancheng_6"
+    "name": "山城",
+    "value": "shancheng_6",
+    "remark": "制服攻势！"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "skin unavailable",
-    "value": "shancheng_7"
+    "name": "山城",
+    "value": "shancheng_7",
+    "remark": "看板娘攻势！？"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "制服攻势！",
-    "value": "shancheng_8"
+    "name": "山城",
+    "value": "shancheng_8",
+    "remark": "假日攻势！"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "改",
-    "value": "shancheng_g"
+    "name": "山城",
+    "value": "shancheng_g",
+    "remark": "改"
   },
   {
-    "alias": "山城",
-    "name": "鲼",
-    "remark": "誓约",
-    "value": "shancheng_h"
+    "name": "山城",
+    "value": "shancheng_h",
+    "remark": "花嫁攻势！"
   },
   {
-    "alias": "神风",
-    "name": "榊",
+    "name": "山风",
+    "value": "shanfeng"
+  },
+  {
+    "name": "山风",
+    "value": "shanfeng_2",
+    "remark": "魔术时间到！"
+  },
+  {
+    "name": "神风",
     "value": "shenfeng"
   },
   {
-    "alias": "神风",
-    "name": "榊",
-    "remark": "改",
-    "value": "shenfeng_g"
+    "name": "神风",
+    "value": "shenfeng_g",
+    "remark": "改"
   },
   {
     "name": "圣地亚哥",
-    "value": "shengdiyage"
+    "value": "shengdiyage",
+    "remark": "圣地亚哥"
   },
   {
     "name": "圣地亚哥",
-    "remark": "圣诞亚哥！",
-    "value": "shengdiyage_2"
+    "value": "shengdiyage_2",
+    "remark": "圣诞亚哥！"
   },
   {
     "name": "圣地亚哥",
-    "remark": "改",
-    "value": "shengdiyage_g"
+    "value": "shengdiyage_g",
+    "remark": "圣地亚哥.改"
   },
   {
     "name": "圣地亚哥",
-    "remark": "誓约",
-    "value": "shengdiyage_h"
+    "value": "shengdiyage_h",
+    "remark": "June Bride No.1！"
   },
   {
     "name": "小圣地亚哥",
-    "value": "shengdiyage_younv"
+    "value": "shengdiyage_younv",
+    "remark": "小圣地亚哥"
   },
   {
     "name": "圣胡安",
-    "value": "shenghuan"
+    "value": "shenghuan",
+    "remark": "圣胡安"
+  },
+  {
+    "name": "圣胡安",
+    "value": "shenghuan_2",
+    "remark": "Loinging Princess"
   },
   {
     "name": "胜利",
-    "value": "shengli"
+    "value": "shengli",
+    "remark": "胜利"
   },
   {
     "name": "胜利",
-    "remark": "女神的休憩日",
-    "value": "shengli_2"
+    "value": "shengli_2",
+    "remark": "女神的休憩日"
   },
   {
     "name": "胜利",
-    "remark": "春之女神的引导",
-    "value": "shengli_3"
-  },
-  {
-    "name": "彼得·史特拉塞",
-    "value": "shitelasai"
-  },
-  {
-    "name": "彼得·史特拉塞",
-    "remark": "节庆的Chronos",
-    "value": "shitelasai_2"
+    "value": "shengli_3",
+    "remark": "春之女神的引导"
   },
   {
     "name": "圣路易斯",
-    "value": "shengluyisi"
+    "value": "shengluyisi",
+    "remark": "圣路易斯"
   },
   {
     "name": "圣路易斯",
-    "remark": "春之华",
-    "value": "shengluyisi_2"
+    "value": "shengluyisi_2",
+    "remark": "春之华"
   },
   {
     "name": "圣路易斯",
-    "remark": "雪下之饮",
-    "value": "shengluyisi_3"
+    "value": "shengluyisi_3",
+    "remark": "雪下之饮"
   },
   {
     "name": "圣路易斯",
-    "remark": "Luxury Handle",
-    "value": "shengluyisi_4"
+    "value": "shengluyisi_4",
+    "remark": "Luxury Handle"
   },
   {
     "name": "圣女贞德",
-    "value": "shengnvzhende"
+    "value": "shengnvzhende",
+    "remark": "圣女贞德"
   },
   {
     "name": "圣女贞德",
-    "remark": "海之圣女",
-    "value": "shengnvzhende_2"
+    "value": "shengnvzhende_2",
+    "remark": "海之圣女"
   },
   {
     "name": "声望",
-    "value": "shengwang"
+    "value": "shengwang",
+    "remark": "声望"
   },
   {
     "name": "小声望",
-    "value": "shengwang_younv"
+    "value": "shengwang_younv",
+    "remark": "小声望"
   },
   {
-    "alias": "神通",
-    "name": "貎",
+    "name": "神速",
+    "value": "shensu",
+    "remark": "神速"
+  },
+  {
+    "name": "神速",
+    "value": "shensu_2",
+    "remark": "悠哉游戏时光"
+  },
+  {
+    "name": "神通",
     "value": "shentong"
   },
   {
-    "alias": "神通",
-    "name": "貎",
-    "remark": "军师大人@休假中",
-    "value": "shentong_2"
+    "name": "神通",
+    "value": "shentong_2",
+    "remark": "军师大人@休假中"
   },
   {
-    "alias": "神通",
-    "name": "貎",
-    "remark": "改",
-    "value": "shentong_g"
+    "name": "神通",
+    "value": "shentong_g",
+    "remark": "改"
+  },
+  {
+    "name": "射水鱼",
+    "value": "sheshuiyu"
+  },
+  {
+    "name": "射水鱼",
+    "value": "sheshuiyu_3",
+    "remark": "兔兔特调"
+  },
+  {
+    "name": "史蒂芬·波特",
+    "value": "shidifenbote",
+    "remark": "史蒂芬·波特"
+  },
+  {
+    "name": "史蒂芬·波特",
+    "value": "shidifenbote_2",
+    "remark": "粉红干物兔"
   },
   {
     "name": "什罗普郡",
-    "value": "shiluopujun"
+    "value": "shiluopujun",
+    "remark": "什罗普郡"
   },
   {
-    "alias": "时雨",
-    "name": "栴",
+    "name": "彼得·史特拉塞",
+    "value": "shitelasai",
+    "remark": "彼得·史特拉塞"
+  },
+  {
+    "name": "彼得·史特拉塞",
+    "value": "shitelasai_2",
+    "remark": "节庆的Chronos"
+  },
+  {
+    "name": "彼得·史特拉塞",
+    "value": "shitelasai_3",
+    "remark": "Weiß Uhrzeiger"
+  },
+  {
+    "name": "时雨",
     "value": "shiyu"
   },
   {
-    "alias": "时雨",
-    "name": "栴",
-    "remark": "进击，伊490！",
+    "name": "时雨",
     "value": "shiyu_2"
   },
   {
-    "alias": "时雨",
-    "name": "栴",
-    "remark": "晚会幸运星！",
-    "value": "shiyu_3"
+    "name": "时雨",
+    "value": "shiyu_3",
+    "remark": "晚会幸运星！"
   },
   {
-    "alias": "时雨",
-    "name": "栴",
-    "remark": "改",
-    "value": "shiyu_g"
+    "name": "时雨",
+    "value": "shiyu_g",
+    "remark": "改"
   },
   {
-    "alias": "水无月",
-    "name": "杌",
+    "name": "水无月",
     "value": "shuiwuyue"
   },
   {
     "name": "水星纪念",
-    "value": "shuixingjinian"
+    "value": "shuixingjinian",
+    "remark": "水星纪念"
   },
   {
     "name": "水星纪念",
-    "remark": "囚牢与诱惑",
-    "value": "shuixingjinian_2"
+    "value": "shuixingjinian_2",
+    "remark": "囚牢与诱惑"
   },
   {
     "name": "水星纪念",
-    "remark": "樱桃与休息时间",
-    "value": "shuixingjinian_4"
+    "value": "shuixingjinian_4",
+    "remark": "樱桃与休息时间"
   },
   {
     "name": "水星纪念",
-    "remark": "改造",
-    "value": "shuixingjinian_g"
+    "value": "shuixingjinian_g",
+    "remark": "水星纪念.改"
   },
   {
     "name": "斯莫利",
-    "value": "simoli"
+    "value": "simoli",
+    "remark": "斯莫利"
   },
   {
     "name": "斯莫利",
-    "remark": "魔女快递",
-    "value": "simoli_3"
+    "value": "simoli_3",
+    "remark": "魔女快递"
   },
   {
     "name": "斯佩伯爵海军上将",
-    "value": "sipeibojue"
+    "value": "sipeibojue",
+    "remark": "斯佩伯爵"
   },
   {
     "name": "斯佩伯爵海军上将",
-    "remark": "少女的星期日",
-    "value": "sipeibojue_2"
+    "value": "sipeibojue_2",
+    "remark": "少女的星期日"
   },
   {
     "name": "斯佩伯爵海军上将",
-    "remark": "平和的每一天",
-    "value": "sipeibojue_3"
+    "value": "sipeibojue_3",
+    "remark": "平和的每一天"
   },
   {
     "name": "斯佩伯爵海军上将",
-    "remark": "未知的晚会",
-    "value": "sipeibojue_4"
+    "value": "sipeibojue_4",
+    "remark": "未知的晚会"
   },
   {
     "name": "斯佩伯爵海军上将",
-    "remark": "铁血♥最可爱",
-    "value": "sipeibojue_5"
+    "value": "sipeibojue_5",
+    "remark": "铁血♥最可爱"
   },
   {
     "name": "斯彭斯",
-    "value": "sipengsi"
+    "value": "sipengsi",
+    "remark": "斯彭斯"
   },
   {
     "name": "斯坦利",
-    "value": "sitanli"
+    "value": "sitanli",
+    "remark": "斯坦利"
   },
   {
-    "alias": "松风",
-    "name": "棡",
+    "name": "松风",
     "value": "songfeng"
   },
   {
-    "alias": "松风",
-    "name": "棡",
-    "remark": "改",
-    "value": "songfeng_g"
+    "name": "松风",
+    "value": "songfeng_g",
+    "remark": "改"
   },
   {
-    "alias": "隼鹰",
-    "name": "鸢",
+    "name": "穗香",
+    "value": "suixiang_2_doa",
+    "remark": "礁石边的盛夏天使"
+  },
+  {
+    "name": "穗香",
+    "value": "suixiang_doa",
+    "remark": "穗香"
+  },
+  {
+    "name": "隼鹰",
     "value": "sunying"
   },
   {
     "name": "苏塞克斯",
-    "value": "susaikesi"
+    "value": "susaikesi",
+    "remark": "苏塞克斯"
   },
   {
     "name": "苏塞克斯",
-    "remark": "艳阳与郁金香",
-    "value": "susaikesi_2"
+    "value": "susaikesi_2",
+    "remark": "艳阳与郁金香"
   },
   {
     "name": "苏塞克斯",
-    "remark": "葡萄酒与红玫瑰",
-    "value": "susaikesi_3"
-  },
-  {
-    "name": "苏维埃罗西亚",
-    "value": "suweiailuoxiya"
-  },
-  {
-    "name": "苏维埃罗西亚",
-    "remark": "怠惰的监视者",
-    "value": "suweiailuoxiya_2"
-  },
-  {
-    "name": "穗香",
-    "value": "suixiang_doa"
-  },
-  {
-    "name": "穗香",
-    "remark": "礁石边的盛夏天使",
-    "value": "suixiang_2_doa"
-  },
-  {
-    "name": "神速",
-    "value": "shensu"
-  },
-  {
-    "name": "神速",
-    "remark": "悠哉游戏时光",
-    "value": "shensu_2"
-  },
-  {
-    "name": "史蒂芬·波特",
-    "value": "shidifenbote"
-  },
-  {
-    "name": "史蒂芬·波特",
-    "remark": "粉红干物兔",
-    "value": "shidifenbote_2"
+    "value": "susaikesi_3",
+    "remark": "葡萄酒与红玫瑰"
   },
   {
     "name": "苏维埃贝拉罗斯",
-    "value": "suweiaibeilaluosi"
+    "value": "suweiaibeilaluosi",
+    "remark": "苏维埃贝拉罗斯"
   },
   {
     "name": "苏维埃贝拉罗斯",
-    "remark": "消磨时间的方式",
-    "value": "suweiaibeilaluosi_2"
+    "value": "suweiaibeilaluosi_2",
+    "remark": "消磨时间的方式"
+  },
+  {
+    "name": "苏维埃罗西亚",
+    "value": "suweiailuoxiya",
+    "remark": "苏维埃罗西亚"
+  },
+  {
+    "name": "苏维埃罗西亚",
+    "value": "suweiailuoxiya_2",
+    "remark": "怠惰的监视者"
   },
   {
     "name": "塔尔图",
-    "value": "taertu"
+    "value": "taertu",
+    "remark": "塔尔图"
   },
   {
     "name": "塔尔图",
-    "remark": "多虑的盛夏",
-    "value": "taertu_2"
+    "value": "taertu_2",
+    "remark": "多虑的盛夏"
   },
   {
-    "alias": "太原",
     "name": "太原",
-    "value": "taiyuan"
+    "value": "taiyuan",
+    "remark": "太原"
   },
   {
-    "alias": "太原",
     "name": "太原",
-    "remark": "金蛇闹春",
-    "value": "taiyuan_2"
+    "value": "taiyuan_2",
+    "remark": "金蛇闹春"
+  },
+  {
+    "name": "塔林",
+    "value": "talin",
+    "remark": "塔林"
+  },
+  {
+    "name": "塔林",
+    "value": "talin_3",
+    "remark": "Pilsner·Nostalgic"
   },
   {
     "name": "唐斯",
-    "value": "tangsi"
+    "value": "tangsi",
+    "remark": "唐斯"
   },
   {
     "name": "唐斯",
-    "remark": "捣蛋的帮手？",
-    "value": "tangsi_2"
+    "value": "tangsi_2",
+    "remark": "捣蛋的帮手？"
   },
   {
     "name": "唐斯",
-    "remark": "改",
-    "value": "tangsi_g"
+    "value": "tangsi_g",
+    "remark": "唐斯.改"
   },
   {
     "name": "塔什干",
-    "value": "tashigan"
+    "value": "tashigan",
+    "remark": "塔什干"
   },
   {
     "name": "塔什干",
-    "remark": "受缚的巡洋舰",
-    "value": "tashigan_2"
+    "value": "tashigan_2",
+    "remark": "受缚的巡洋舰"
   },
   {
     "name": "塔什干",
-    "remark": "μ兵装",
-    "value": "tashigan_idol"
+    "value": "tashigan_3",
+    "remark": "天蓝色的休息日"
+  },
+  {
+    "name": "塔什干(μ兵装)",
+    "value": "tashigan_idol",
+    "remark": "塔什干(μ兵装)"
   },
   {
     "name": "特伦托",
-    "value": "teluntuo"
+    "value": "teluntuo",
+    "remark": "特伦托"
   },
   {
     "name": "特伦托",
-    "remark": "盛夏的多重诱惑？",
-    "value": "teluntuo_2"
+    "value": "teluntuo_2",
+    "remark": "盛夏的多重诱惑？"
   },
   {
-    "alias": "天城",
-    "name": "鳐",
+    "name": "天城",
     "value": "tiancheng"
   },
   {
-    "alias": "天城",
-    "name": "鳐",
-    "remark": "走水静莲",
-    "value": "tiancheng_2"
+    "name": "天城",
+    "value": "tiancheng_2",
+    "remark": "走水静莲"
   },
   {
-    "alias": "小天城",
-    "name": "小鳐",
+    "name": "小天城",
     "value": "tiancheng_younv"
   },
   {
     "name": "天后",
-    "value": "tianhou"
+    "value": "tianhou",
+    "remark": "天后"
   },
   {
     "name": "天后",
-    "remark": "美味的祭典？",
-    "value": "tianhou_2"
+    "value": "tianhou_2",
+    "remark": "美味的祭典？"
   },
   {
     "name": "天狼星",
-    "value": "tianlangxing"
+    "value": "tianlangxing",
+    "remark": "天狼星"
   },
   {
     "name": "天狼星",
-    "remark": "纯白蔷薇",
-    "value": "tianlangxing_2"
+    "value": "tianlangxing_2",
+    "remark": "纯白蔷薇"
   },
   {
     "name": "天狼星",
-    "remark": "盛夏的Seirios",
-    "value": "tianlangxing_3"
+    "value": "tianlangxing_3",
+    "remark": "盛夏的Seirios "
   },
   {
     "name": "天狼星",
-    "remark": "碧波青云",
-    "value": "tianlangxing_4"
+    "value": "tianlangxing_4",
+    "remark": "碧波青云"
   },
   {
     "name": "田纳西",
-    "value": "tiannaxi"
+    "value": "tiannaxi",
+    "remark": "田纳西"
+  },
+  {
+    "name": "天鹰",
+    "value": "tianying",
+    "remark": "天鹰"
+  },
+  {
+    "name": "天鹰",
+    "value": "tianying_2",
+    "remark": "阳光与浅潮的假日"
+  },
+  {
+    "name": "天鹰",
+    "value": "tianying_3",
+    "remark": "绿苑的优雅花园"
   },
   {
     "name": "鲦鱼",
-    "value": "tiaoyu"
+    "value": "tiaoyu",
+    "remark": "鲦鱼"
   },
   {
     "name": "提尔比茨",
-    "value": "tierbici"
+    "value": "tierbici",
+    "remark": "提尔比茨"
   },
   {
     "name": "提尔比茨",
-    "remark": "冰雪消融的夏日",
-    "value": "tierbici_2"
+    "value": "tierbici_2",
+    "remark": "冰雪消融的夏日"
   },
   {
     "name": "提尔比茨",
-    "remark": "铁血的冰风",
-    "value": "tierbici_3"
+    "value": "tierbici_3",
+    "remark": "铁血的冰风"
   },
   {
     "name": "提尔比茨",
-    "remark": "松之节句、白之冰华",
-    "value": "tierbici_4"
+    "value": "tierbici_4",
+    "remark": "松之节句、白之冰华"
+  },
+  {
+    "name": "提康德罗加",
+    "value": "tikangdeluojia"
+  },
+  {
+    "name": "提康德罗加",
+    "value": "tikangdeluojia_2",
+    "remark": "黑兔的舞台秀"
   },
   {
     "name": "突击者",
-    "value": "tujizhe"
+    "value": "tujizhe",
+    "remark": "突击者"
   },
   {
     "name": "突击者",
-    "remark": "改",
-    "value": "tujizhe_g"
+    "value": "tujizhe_g",
+    "remark": "突击者.改"
   },
   {
-    "alias": "土佐",
-    "name": "䲠",
+    "name": "托里拆利",
+    "value": "tuolichaili",
+    "remark": "托里拆利"
+  },
+  {
+    "name": "托里拆利",
+    "value": "tuolichaili_2",
+    "remark": "阴暗的沙滩一角"
+  },
+  {
+    "name": "土佐",
     "value": "tuzuo"
   },
   {
-    "alias": "土佐",
-    "name": "䲠",
-    "remark": "鸣子小夏",
-    "value": "tuzuo_2"
-  },
-  {
-    "name": "托里拆利",
-    "value": "tuolichaili"
-  },
-  {
-    "name": "托里拆利",
-    "remark": "阴暗的沙滩一角",
-    "value": "tuolichaili_2"
-  },
-  {
-    "name": "塔林",
-    "value": "talin"
-  },
-  {
-    "name": "塔林",
-    "remark": "Pilsner·Nostalgic",
-    "value": "talin_3"
-  },
-  {
-    "name": "天鹰",
-    "value": "tianying"
-  },
-  {
-    "name": "天鹰",
-    "remark": "阳光与浅潮的假日",
-    "value": "tianying_2"
+    "name": "土佐",
+    "value": "tuzuo_2",
+    "remark": "鸣子小夏"
   },
   {
     "name": "U-101",
-    "value": "U101"
+    "value": "U101",
+    "remark": "U-101"
   },
   {
     "name": "U-101",
-    "remark": "学园的Posaunist",
-    "value": "U101_2"
+    "value": "U101_2",
+    "remark": "学园的Posaunist"
   },
   {
     "name": "U-110",
-    "value": "U110"
+    "value": "U110",
+    "remark": "U-110"
   },
   {
     "name": "U-110",
-    "remark": "Kleiner Hai",
-    "value": "u110_2"
+    "value": "u110_2",
+    "remark": "Kleiner Hai"
   },
   {
     "name": "U-110",
-    "remark": "鲨鱼小可爱",
-    "value": "u110_3"
+    "value": "u110_3",
+    "remark": "鲨鱼小可爱"
   },
   {
     "name": "U-110",
-    "remark": "Girlish Idolish",
-    "value": "u110_4"
+    "value": "u110_4",
+    "remark": "Girlish Idolish"
   },
   {
     "name": "U-110",
-    "remark": "小鲨鱼的初梦",
-    "value": "u110_5"
+    "value": "u110_5",
+    "remark": "小鲨鱼的初梦"
   },
   {
     "name": "U-37",
-    "value": "u37"
+    "value": "u37",
+    "remark": "U-37"
   },
   {
     "name": "U-37",
-    "remark": "轻弹浅唱正月时",
-    "value": "u37_2"
+    "value": "u37_2",
+    "remark": "轻弹浅唱正月时"
   },
   {
     "name": "U-410",
-    "value": "u410"
+    "value": "u410",
+    "remark": "U-410"
   },
   {
     "name": "U-410",
-    "remark": "寒梅映春",
-    "value": "u410_2"
+    "value": "u410_2",
+    "remark": "寒梅映春"
   },
   {
     "name": "U-47",
-    "value": "U47"
+    "value": "U47",
+    "remark": "U-47"
   },
   {
     "name": "U-47",
-    "remark": "新晋骑行达人？",
-    "value": "U47_2"
+    "value": "U47_2",
+    "remark": "新晋骑行达人？"
   },
   {
     "name": "U-47",
-    "remark": "静谧一隅",
-    "value": "U47_3"
+    "value": "U47_3",
+    "remark": "静谧一隅"
   },
   {
     "name": "U-522",
-    "value": "U522"
+    "value": "U522",
+    "remark": "U-522"
   },
   {
     "name": "U-556",
-    "value": "u556"
+    "value": "u556",
+    "remark": "U-556"
   },
   {
     "name": "U-556",
-    "remark": "嬉闹之夜！",
-    "value": "U556_2"
+    "value": "U556_2",
+    "remark": "嬉闹之夜！"
   },
   {
     "name": "U-557",
-    "value": "U557"
+    "value": "U557",
+    "remark": "U-557"
   },
   {
     "name": "U-73",
-    "value": "U73"
+    "value": "U73",
+    "remark": "U-73"
   },
   {
     "name": "U-73",
-    "remark": "理科实验时间！",
-    "value": "U73_3"
+    "value": "U73_3",
+    "remark": "理科实验时间！"
   },
   {
     "name": "U-81",
-    "value": "U81"
+    "value": "U81",
+    "remark": "U-81"
   },
   {
     "name": "U-81",
-    "remark": "静谧小夜曲",
-    "value": "U81_2"
+    "value": "U81_2",
+    "remark": "静谧小夜曲"
   },
   {
     "name": "U-96",
-    "value": "U96"
+    "value": "U96",
+    "remark": "U-96"
   },
   {
     "name": "U-96",
-    "remark": "秘密的游戏时间",
-    "value": "u96_2"
+    "value": "u96_2",
+    "remark": "秘密的游戏时间"
   },
   {
-    "name": "塞壬",
-    "value": "unknown1"
+    "name": "？？？？？",
+    "value": "unknown1",
+    "remark": "？？？？？"
   },
   {
-    "name": "塞壬",
-    "value": "unknown3"
+    "name": "？？？？？",
+    "value": "unknown3",
+    "remark": "？？？？？"
   },
   {
     "name": "湊阿库娅",
-    "value": "Vtuber_aqua"
+    "value": "Vtuber_aqua",
+    "remark": "湊阿库娅"
   },
   {
     "name": "湊阿库娅",
-    "remark": "海之女仆",
-    "value": "Vtuber_aqua_2"
+    "value": "Vtuber_aqua_2",
+    "remark": "海之女仆"
   },
   {
     "name": "百鬼绫目",
-    "value": "Vtuber_Ayame"
+    "value": "Vtuber_Ayame",
+    "remark": "百鬼绫目"
   },
   {
     "name": "百鬼绫目",
-    "remark": "夏之百鬼",
-    "value": "Vtuber_Ayame_2"
+    "value": "Vtuber_Ayame_2",
+    "remark": "夏之百鬼"
   },
   {
     "name": "白上吹雪",
-    "value": "Vtuber_Fubuki"
+    "value": "Vtuber_Fubuki",
+    "remark": "白上吹雪"
   },
   {
     "name": "白上吹雪",
-    "remark": "沙滩之狐",
-    "value": "Vtuber_Fubuki_2"
+    "value": "Vtuber_Fubuki_2",
+    "remark": "沙滩之狐"
   },
   {
     "name": "夏色祭",
-    "value": "Vtuber_matsuri"
+    "value": "Vtuber_matsuri",
+    "remark": "夏色祭"
   },
   {
     "name": "夏色祭",
-    "remark": "祭的居家日",
-    "value": "Vtuber_matsuri_2"
+    "value": "Vtuber_matsuri_2",
+    "remark": "祭的居家日"
   },
   {
     "name": "大神澪",
-    "value": "Vtuber_Mio"
+    "value": "Vtuber_Mio",
+    "remark": "大神澪"
   },
   {
     "name": "大神澪",
-    "remark": "Summer Vacance",
-    "value": "Vtuber_Mio_2"
+    "value": "Vtuber_Mio_2",
+    "remark": "Summer Vacance"
   },
   {
     "name": "紫咲诗音",
-    "value": "Vtuber_Shion"
+    "value": "Vtuber_Shion",
+    "remark": "紫咲诗音"
   },
   {
     "name": "紫咲诗音",
-    "remark": "虚拟魔法使",
-    "value": "Vtuber_Shion_2"
+    "value": "Vtuber_Shion_2",
+    "remark": "虚拟魔法使"
   },
   {
     "name": "时乃空",
-    "value": "vtuber_sora"
+    "value": "vtuber_sora",
+    "remark": "时乃空"
   },
   {
     "name": "时乃空",
-    "remark": "晴空之夏",
-    "value": "vtuber_sora_2"
+    "value": "vtuber_sora_2",
+    "remark": "晴空之夏"
+  },
+  {
+    "name": "威尔士亲王",
+    "value": "weiershiqinwang",
+    "remark": "威尔士亲王"
+  },
+  {
+    "name": "威尔士亲王",
+    "value": "weiershiqinwang_2",
+    "remark": "阳光照耀着温莎"
+  },
+  {
+    "name": "威尔士亲王",
+    "value": "weiershiqinwang_3",
+    "remark": "桂冠的胜利竞速"
+  },
+  {
+    "name": "威尔士亲王",
+    "value": "weiershiqinwang_4",
+    "remark": "皇家式风流"
+  },
+  {
+    "name": "维托里奥·维内托",
+    "value": "weineituo",
+    "remark": "维托里奥·维内托"
+  },
+  {
+    "name": "维托里奥·维内托",
+    "value": "weineituo_2",
+    "remark": "拉斯佩齐亚之花"
+  },
+  {
+    "name": "威奇塔",
+    "value": "weiqita",
+    "remark": "威奇塔"
+  },
+  {
+    "name": "威奇塔",
+    "value": "weiqita_2",
+    "remark": "“将军”的晚宴"
+  },
+  {
+    "name": "威奇塔",
+    "value": "weiqita_3",
+    "remark": "万圣的支配者？"
+  },
+  {
+    "name": "威悉",
+    "value": "weixi",
+    "remark": "威悉"
+  },
+  {
+    "name": "威悉",
+    "value": "weixi_2",
+    "remark": "黯调铅华"
+  },
+  {
+    "name": "威悉",
+    "value": "weixi_3",
+    "remark": "暗金绣色"
+  },
+  {
+    "name": "威严",
+    "value": "weiyan",
+    "remark": "威严"
+  },
+  {
+    "name": "威严",
+    "value": "weiyan_2",
+    "remark": "囚牢里的危险兔"
+  },
+  {
+    "name": "威严",
+    "value": "weiyan_3",
+    "remark": "武器改造计划？"
   },
   {
     "name": "文琴佐·焦贝蒂",
-    "value": "wenqinzuojiaobeidi"
+    "value": "wenqinzuojiaobeidi",
+    "remark": "文琴佐·焦贝蒂"
   },
   {
-    "name": "威悉",
-    "value": "weixi"
-  },
-  {
-    "name": "威悉",
-    "remark": "黯调铅华",
-    "value": "weixi_2"
-  },
-  {
-    "name": "威悉",
-    "remark": "暗金锈色",
-    "value": "weixi_3"
-  },
-  {
-    "name": "威尔士亲王",
-    "value": "weiershiqinwang"
-  },
-  {
-    "name": "威尔士亲王",
-    "remark": "阳光照耀着温莎",
-    "value": "weiershiqinwang_2"
-  },
-  {
-    "name": "威尔士亲王",
-    "remark": "皇家式风流",
-    "value": "weiershiqinwang_3"
-  },
-  {
-    "name": "威尔士亲王",
-    "remark": "桂冠的胜利竞速",
-    "value": "weiershiqinwang_4"
-  },
-  {
-    "name": "维内托",
-    "value": "weineituo"
-  },
-  {
-    "name": "维内托",
-    "remark": "",
-    "value": "weineituo_2"
-  },
-  {
-    "name": "威奇塔",
-    "value": "weiqita"
-  },
-  {
-    "name": "威奇塔",
-    "remark": "“将军”的晚宴",
-    "value": "weiqita_2"
-  },
-  {
-    "name": "威奇塔",
-    "remark": "万圣的支配者？",
-    "value": "weiqita_3"
-  },
-  {
-    "name": "威严",
-    "value": "weiyan"
-  },
-  {
-    "name": "威严",
-    "remark": "囚牢里的危险兔",
-    "value": "weiyan_2"
-  },
-  {
-    "name": "威严",
-    "remark": "武器改造计划？",
-    "value": "weiyan_3"
+    "name": "文琴佐·焦贝蒂",
+    "value": "wenqinzuojiaobeidi_3",
+    "remark": "“淑女”的邀约"
   },
   {
     "name": "文森斯",
-    "value": "wensensi"
+    "value": "wensensi",
+    "remark": "文森斯"
   },
   {
     "name": "文森斯",
-    "remark": "喵喵的美梦",
-    "value": "wensensi_2"
+    "value": "wensensi_2",
+    "remark": "悠哉进行曲"
   },
   {
     "name": "文森斯",
-    "remark": "悠哉进行曲",
-    "value": "wensensi_3"
+    "value": "wensensi_3",
+    "remark": "喵喵的美梦"
   },
   {
-    "alias": "文月",
-    "name": "橗",
+    "name": "文月",
     "value": "wenyue"
   },
   {
-    "alias": "文月",
-    "name": "橗",
-    "remark": "迷糊的妖精",
-    "value": "wenyue_2"
+    "name": "文月",
+    "value": "wenyue_2",
+    "remark": "迷糊的妖精"
   },
   {
     "name": "沃克兰",
-    "value": "wokelan"
+    "value": "wokelan",
+    "remark": "沃克兰"
   },
   {
     "name": "沃克兰",
-    "remark": "天然纯真夏日骑士",
-    "value": "wokelan_2"
+    "value": "wokelan_2",
+    "remark": "天然纯真夏日骑士"
   },
   {
-    "alias": "雾岛",
-    "name": "鳗",
+    "name": "沃克兰",
+    "value": "wokelan_3",
+    "remark": "全自动交响乐？"
+  },
+  {
+    "name": "雾岛",
     "value": "wudao"
   },
   {
-    "alias": "雾岛",
-    "name": "鳗",
-    "remark": "放学后的退敌时间",
-    "value": "wudao_2"
+    "name": "雾岛",
+    "value": "wudao_2",
+    "remark": "放学后的退敌时间"
   },
   {
-    "alias": "雾岛",
-    "name": "鳗",
-    "remark": "夏日的大胆尝试",
-    "value": "wudao_3"
+    "name": "雾岛",
+    "value": "wudao_3",
+    "remark": "夏日的大胆尝试"
   },
   {
-    "alias": "雾岛",
-    "name": "鳗",
-    "remark": "随性的闪耀之星",
-    "value": "wudao_4"
+    "name": "雾岛",
+    "value": "wudao_4",
+    "remark": "随性的闪耀之星"
   },
   {
-    "alias": "雾岛",
-    "name": "鳗",
-    "remark": "雅致墨香",
-    "value": "wudao_5"
+    "name": "雾岛",
+    "value": "wudao_5",
+    "remark": "雅致墨香"
   },
   {
     "name": "无敌",
-    "value": "wudi"
+    "value": "wudi",
+    "remark": "无敌"
   },
   {
     "name": "无敌",
-    "remark": "护花使者？",
-    "value": "wudi_2"
+    "value": "wudi_2",
+    "remark": "护花使者？"
   },
   {
     "name": "乌璐露",
-    "value": "wululu"
+    "value": "wululu",
+    "remark": "乌璐露"
   },
   {
     "name": "乌璐露",
-    "remark": "传颂之物",
-    "value": "wululu_2"
+    "value": "wululu_2",
+    "remark": "乌璐露(传颂之物)"
   },
   {
-    "alias": "吾妻",
     "name": "吾妻",
     "value": "wuqi"
   },
   {
-    "alias": "吾妻",
     "name": "吾妻",
-    "remark": "细语春霞",
-    "value": "wuqi_2"
+    "value": "wuqi_2",
+    "remark": "细语春霞"
   },
   {
-    "alias": "五十铃",
-    "name": "貉",
+    "name": "吾妻",
+    "value": "wuqi_h",
+    "remark": "纯洁憧憬"
+  },
+  {
+    "name": "五十铃",
     "value": "wushiling"
   },
   {
-    "alias": "五十铃",
-    "name": "貉",
-    "remark": "童话之夜",
-    "value": "wushiling_2"
+    "name": "五十铃",
+    "value": "wushiling_2",
+    "remark": "童话之夜"
   },
   {
-    "alias": "五十铃",
-    "name": "貉",
-    "remark": "暖洋洋的圣诞夜",
-    "value": "wushiling_3"
+    "name": "五十铃",
+    "value": "wushiling_3",
+    "remark": "暖洋洋的圣诞夜"
   },
   {
-    "alias": "五十铃",
-    "name": "貉",
-    "remark": "改",
-    "value": "wushiling_g"
+    "name": "五十铃",
+    "value": "wushiling_5",
+    "remark": "过热事故？"
+  },
+  {
+    "name": "五十铃",
+    "value": "wushiling_g",
+    "remark": "改"
   },
   {
     "name": "无畏",
-    "value": "wuwei"
+    "value": "wuwei",
+    "remark": "无畏"
   },
   {
     "name": "无畏",
-    "remark": "无畏的一投",
-    "value": "wuwei_2"
+    "value": "wuwei_2",
+    "remark": "无畏的一投"
   },
   {
-    "alias": "霞",
-    "name": "蕸",
+    "name": "霞.改",
     "value": "xia"
   },
   {
-    "alias": "霞",
-    "name": "蕸",
-    "remark": "新年暖洋洋",
-    "value": "xia_2"
-  },
-  {
-    "alias": "霞",
-    "name": "蕸",
-    "remark": "开学晃悠悠",
-    "value": "xia_3"
-  },
-  {
-    "name": "蕸",
-    "remark": "改",
-    "value": "xia_g"
-  },
-  {
-    "alias": "响",
-    "name": "栀",
+    "name": "响",
     "value": "xiang"
   },
   {
-    "alias": "响",
-    "name": "栀",
-    "remark": "正月小恶魔",
-    "value": "xiang_2"
+    "name": "香槟",
+    "value": "xiangbin",
+    "remark": "香槟"
   },
   {
     "name": "香槟",
-    "value": "xiangbin"
+    "value": "xiangbin_2",
+    "remark": "初梦蓝彩"
   },
   {
-    "name": "香槟",
-    "remark": "初梦蓝彩",
-    "value": "xiangbin_2"
-  },
-  {
-    "alias": "祥凤",
-    "name": "鹞",
+    "name": "祥凤",
     "value": "xiangfeng"
   },
   {
-    "alias": "祥凤",
-    "name": "鹞",
-    "remark": "夜巡的魔女",
-    "value": "xiangfeng_2"
+    "name": "祥凤",
+    "value": "xiangfeng_2",
+    "remark": "夜巡的魔女"
   },
   {
-    "alias": "祥凤",
-    "name": "鹞",
-    "remark": "改",
-    "value": "xiangfeng_g"
-  },
-  {
-    "name": "香格里拉",
-    "value": "xianggelila"
+    "name": "祥凤",
+    "value": "xiangfeng_g",
+    "remark": "改"
   },
   {
     "name": "香格里拉",
-    "remark": "乐园的收藏家",
-    "value": "xianggelila_2"
+    "value": "xianggelila",
+    "remark": "香格里拉"
   },
   {
     "name": "香格里拉",
-    "remark": "失落世界的探险者",
-    "value": "xianggelila_3"
+    "value": "xianggelila_2",
+    "remark": "乐园的收藏家"
   },
   {
-    "alias": "翔鹤",
-    "name": "鹬",
+    "name": "香格里拉",
+    "value": "xianggelila_3",
+    "remark": "失落世界的探险者"
+  },
+  {
+    "name": "翔鹤",
     "value": "xianghe"
   },
   {
-    "alias": "翔鹤",
-    "name": "鹬",
-    "remark": "散花舞鹤",
-    "value": "xianghe_2"
+    "name": "翔鹤",
+    "value": "xianghe_2",
+    "remark": "散花舞鹤"
   },
   {
-    "alias": "翔鹤",
-    "name": "鹬",
-    "remark": "疾速之鹤",
-    "value": "xianghe_3"
+    "name": "翔鹤",
+    "value": "xianghe_3",
+    "remark": "疾速之鹤"
   },
   {
-    "alias": "暁",
-    "name": "枫",
+    "name": "响",
+    "value": "xiang_2",
+    "remark": "正月小恶魔"
+  },
+  {
+    "name": "晓",
     "value": "xiao"
   },
   {
-    "alias": "暁",
-    "name": "枫",
-    "remark": "北极的迷途",
-    "value": "xiao_2"
-  },
-  {
-    "alias": "暁",
-    "name": "枫",
-    "remark": "摩托忍者，出击！",
-    "value": "xiao_3"
-  },
-  {
     "name": "小猎兔犬",
-    "value": "xiaolietuquan"
+    "value": "xiaolietuquan",
+    "remark": "小猎兔犬"
   },
   {
     "name": "小天鹅",
-    "value": "xiaotiane"
+    "value": "xiaotiane",
+    "remark": "小天鹅"
   },
   {
     "name": "小天鹅",
-    "remark": "海滨的十字星",
-    "value": "xiaotiane_2"
+    "value": "xiaotiane_2",
+    "remark": "海滨的十字星"
   },
   {
     "name": "小天鹅",
-    "remark": "圣夜的赞美诗",
-    "value": "xiaotiane_3"
+    "value": "xiaotiane_3",
+    "remark": "圣夜的赞美诗"
   },
   {
     "name": "小天鹅",
-    "remark": "冬日的约会",
-    "value": "xiaotiane_4"
+    "value": "xiaotiane_4",
+    "remark": "女仆体验周？"
   },
   {
     "name": "小天鹅",
-    "remark": "女仆体验周？",
-    "value": "xiaotiane_5"
+    "value": "xiaotiane_5",
+    "remark": "冬日的约会"
   },
   {
     "name": "小天鹅",
-    "remark": "皇家应援曲",
-    "value": "xiaotiane_6"
+    "value": "xiaotiane_6",
+    "remark": "皇家应援曲"
   },
   {
     "name": "小天鹅",
-    "remark": "改",
-    "value": "xiaotiane_g"
+    "value": "xiaotiane_g",
+    "remark": "小天鹅.改"
   },
   {
-    "alias": "宵月",
-    "name": "楛",
+    "name": "宵月",
     "value": "xiaoyue"
   },
   {
-    "alias": "宵月",
-    "name": "楛",
-    "remark": "运动会的准备",
-    "value": "xiaoyue_2"
+    "name": "宵月",
+    "value": "xiaoyue_2",
+    "remark": "运动会的准备"
+  },
+  {
+    "name": "晓",
+    "value": "xiao_2",
+    "remark": "北极的迷途"
+  },
+  {
+    "name": "晓",
+    "value": "xiao_3",
+    "remark": "摩托忍者，出击！"
+  },
+  {
+    "name": "霞.改",
+    "value": "xia_2",
+    "remark": "新年暖洋洋"
+  },
+  {
+    "name": "霞",
+    "value": "xia_2_DOA",
+    "remark": "水边的霞光"
+  },
+  {
+    "name": "霞.改",
+    "value": "xia_3",
+    "remark": "开学晃悠悠"
+  },
+  {
+    "name": "霞",
+    "value": "xia_DOA",
+    "remark": "霞"
+  },
+  {
+    "name": "霞.改",
+    "value": "xia_g",
+    "remark": "改"
+  },
+  {
+    "name": "西北风",
+    "value": "xibeifeng",
+    "remark": "西北风"
+  },
+  {
+    "name": "西北风",
+    "value": "xibeifeng_2",
+    "remark": "独处的沙滩一角"
   },
   {
     "name": "谢菲尔德",
-    "value": "xiefeierde"
+    "value": "xiefeierde",
+    "remark": "谢菲尔德"
   },
   {
     "name": "谢菲尔德",
-    "remark": "二重生活？",
-    "value": "xiefeierde_2"
+    "value": "xiefeierde_2",
+    "remark": "二重生活？"
   },
   {
     "name": "谢菲尔德",
-    "remark": "小憩一刻",
-    "value": "xiefeierde_3"
+    "value": "xiefeierde_3",
+    "remark": "小憩一刻"
   },
   {
     "name": "谢菲尔德",
-    "remark": "黑鸦的晚宴",
-    "value": "xiefeierde_4"
+    "value": "xiefeierde_4",
+    "remark": "黑鸦的晚宴"
   },
   {
-    "name": "谢菲尔德",
-    "remark": "μ兵装",
-    "value": "xiefeierde_idol"
+    "name": "谢菲尔德(μ兵装)",
+    "value": "xiefeierde_idol",
+    "remark": "谢菲尔德(μ兵装)"
   },
   {
     "name": "西弗吉尼亚",
-    "value": "xifujiniya"
+    "value": "xifujiniya",
+    "remark": "西弗吉尼亚"
   },
   {
     "name": "西弗吉尼亚",
-    "remark": "西弗吉尼亚",
-    "value": "xifujiniya_2"
+    "value": "xifujiniya_2",
+    "remark": "西弗吉尼亚"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
+    "name": "夕立",
     "value": "xili"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
-    "remark": "雪仗将军",
-    "value": "xili_2"
+    "name": "夕立",
+    "value": "xili_2",
+    "remark": "雪仗将军"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
-    "remark": "肉包杀手",
-    "value": "xili_3"
+    "name": "夕立",
+    "value": "xili_3",
+    "remark": "肉包杀手"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
-    "remark": "肉肉之宴！",
-    "value": "xili_4"
+    "name": "夕立",
+    "value": "xili_4",
+    "remark": "肉肉之宴！"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
-    "remark": "美梦环绕圣诞夜",
-    "value": "xili_5"
+    "name": "夕立",
+    "value": "xili_5",
+    "remark": "美梦环绕圣诞夜"
   },
   {
-    "alias": "夕立",
-    "name": "椿",
-    "remark": "誓约",
-    "value": "xili_h"
+    "name": "夕立",
+    "value": "xili_g",
+    "remark": "改"
   },
   {
-    "alias": "夕暮",
-    "name": "棭",
+    "name": "夕立",
+    "value": "xili_h",
+    "remark": "所罗门的新娘"
+  },
+  {
+    "name": "夕暮",
     "value": "ximu"
   },
   {
-    "alias": "夕暮",
-    "name": "棭",
-    "remark": "女仆练习生",
-    "value": "ximu_2"
-  },
-  {
-    "alias": "夕暮",
-    "name": "棭",
-    "remark": "夕暮春华",
-    "value": "ximu_3"
-  },
-  {
-    "alias": "夕暮",
-    "name": "棭",
-    "remark": "盛绽樱华",
-    "value": "ximu_4"
-  },
-  {
-    "alias": "夕暮",
-    "name": "棭",
-    "remark": "庆典购物时",
-    "value": "ximu_6"
-  },
-  {
-    "alias": "夕暮",
-    "name": "棭",
-    "remark": "改",
-    "value": "ximu_g"
+    "name": "西姆斯",
+    "value": "ximusi",
+    "remark": "西姆斯"
   },
   {
     "name": "西姆斯",
-    "value": "ximusi"
+    "value": "ximusi_g",
+    "remark": "西姆斯.改"
   },
   {
-    "name": "西姆斯",
-    "remark": "改",
-    "value": "ximusi_g"
+    "name": "夕暮",
+    "value": "ximu_2",
+    "remark": "女仆练习生"
   },
   {
-    "alias": "信浓",
-    "name": "鵗",
+    "name": "夕暮",
+    "value": "ximu_3",
+    "remark": "夕暮春华"
+  },
+  {
+    "name": "夕暮",
+    "value": "ximu_4",
+    "remark": "盛绽樱华"
+  },
+  {
+    "name": "夕暮",
+    "value": "ximu_6",
+    "remark": "庆典购物时"
+  },
+  {
+    "name": "夕暮",
+    "value": "ximu_g",
+    "remark": "改"
+  },
+  {
+    "name": "西南风",
+    "value": "xinanfeng",
+    "remark": "西南风"
+  },
+  {
+    "name": "西南风",
+    "value": "xinanfeng_2",
+    "remark": "水手向西南进发！"
+  },
+  {
+    "name": "新奥尔良",
+    "value": "xinaoerliang",
+    "remark": "新奥尔良"
+  },
+  {
+    "name": "信浓",
     "value": "xinnong"
   },
   {
-    "alias": "信浓",
-    "name": "鵗",
-    "remark": "胧月十夜",
-    "value": "xinnong_2"
+    "name": "信浓",
+    "value": "xinnong_2",
+    "remark": "胧月十夜"
   },
   {
     "name": "新月",
-    "value": "xinyue"
+    "value": "xinyue",
+    "remark": "新月"
   },
   {
     "name": "新月",
-    "remark": "改",
-    "value": "xinyue_g"
+    "value": "xinyue_g",
+    "remark": "新月.改"
   },
   {
-    "alias": "新月",
-    "name": "枥",
+    "name": "新月",
     "value": "xinyue_jp"
   },
   {
-    "alias": null,
-    "name": "猁",
+    "name": "新泽西",
+    "value": "xinzexi"
+  },
+  {
+    "name": "新泽西",
+    "value": "xinzexi_2",
+    "remark": "跃动的舞台时间！"
+  },
+  {
+    "name": "熊野",
     "value": "xiongye"
   },
   {
-    "alias": null,
-    "name": "猁",
-    "remark": "Fancy Wave",
-    "value": "xiongye_2"
+    "name": "熊野",
+    "value": "xiongye_2",
+    "remark": "Fancy Wave"
+  },
+  {
+    "name": "熊野",
+    "value": "xiongye_3",
+    "remark": "激斗☆抽鬼牌派对"
   },
   {
     "name": "希佩尔海军上将",
-    "remark": "μ兵装",
-    "value": "xipeier_idol"
+    "value": "xipeierhaijunshangjiang",
+    "remark": "希佩尔海军上将"
   },
   {
-    "name": "希佩尔海军上将",
-    "value": "xipeierhaijunshangjiang"
+    "name": "希佩尔海军上将(μ兵装)",
+    "value": "xipeier_idol",
+    "remark": "希佩尔海军上将(μ兵装)"
   },
   {
     "name": "休斯敦",
-    "value": "xiusidun"
+    "value": "xiusidun",
+    "remark": "休斯敦"
   },
   {
     "name": "吸血鬼",
-    "value": "xixuegui"
+    "value": "xixuegui",
+    "remark": "吸血鬼"
   },
   {
     "name": "吸血鬼",
-    "remark": "春之风",
-    "value": "xixuegui_2"
+    "value": "xixuegui_2",
+    "remark": "春之风"
   },
   {
     "name": "吸血鬼",
-    "remark": "白衣小恶魔",
-    "value": "xixuegui_3"
+    "value": "xixuegui_3",
+    "remark": "白衣小恶魔"
   },
   {
     "name": "吸血鬼",
-    "remark": "夜姬的正装?",
-    "value": "xixuegui_4"
+    "value": "xixuegui_4",
+    "remark": "夜姬的正装?"
   },
   {
     "name": "吸血鬼",
-    "remark": "偶像小恶魔",
-    "value": "xixuegui_5"
+    "value": "xixuegui_5",
+    "remark": "偶像小恶魔"
   },
   {
     "name": "吸血鬼",
-    "remark": "誓约",
-    "value": "xixuegui_h"
+    "value": "xixuegui_h",
+    "remark": "以罗伊的赐福"
   },
   {
     "name": "西雅图",
-    "value": "xiyatu"
+    "value": "xiyatu",
+    "remark": "西雅图"
   },
   {
     "name": "西雅图",
-    "remark": "绚烂的盛宴",
-    "value": "xiyatu_2"
+    "value": "xiyatu_2",
+    "remark": "绚烂的盛宴"
   },
   {
     "name": "西雅图",
-    "remark": "圣诞派对准备中！",
-    "value": "xiyatu_3"
+    "value": "xiyatu_3",
+    "remark": "圣诞派对准备中！"
   },
   {
     "name": "西雅图",
-    "remark": "Sunfish Spell！",
-    "value": "xiyatu_4"
+    "value": "xiyatu_4",
+    "remark": "Sunfish Spell！"
   },
   {
-    "alias": "夕张",
-    "name": "狐",
+    "name": "夕张",
     "value": "xizhang"
   },
   {
-    "alias": "夕张",
-    "name": "狐",
-    "remark": "改",
-    "value": "xizhang_g"
+    "name": "夕张",
+    "value": "xizhang_g",
+    "remark": "改"
   },
   {
-    "alias": "雪风",
-    "name": "莲",
+    "name": "雪风",
     "value": "xuefeng"
   },
   {
-    "alias": "雪风",
-    "name": "莲",
-    "remark": "秋千上的天津风大人",
+    "name": "雪风",
     "value": "xuefeng_2"
   },
   {
-    "alias": "雪风",
-    "name": "莲",
-    "remark": "冬之雪风",
-    "value": "xuefeng_3"
+    "name": "雪风",
+    "value": "xuefeng_3",
+    "remark": "冬之雪风"
   },
   {
-    "alias": "雪风",
-    "name": "莲",
-    "remark": "誓约",
-    "value": "xuefeng_h"
-  },
-  {
-    "name": "絮库夫",
-    "value": "xukufu"
+    "name": "雪风",
+    "value": "xuefeng_h",
+    "remark": "春日的暖风"
   },
   {
     "name": "絮库夫",
-    "remark": "购物时光！",
-    "value": "xukufu_2"
+    "value": "xukufu",
+    "remark": "絮库夫"
   },
   {
     "name": "絮库夫",
-    "remark": "Loisirs balnéaires",
-    "value": "xukufu_3"
+    "value": "xukufu_2",
+    "remark": "购物时光！"
   },
   {
-    "name": "霞",
-    "value": "xia_DOA"
-  },
-  {
-    "name": "霞",
-    "remark": "水边的霞光",
-    "value": "xia_2_DOA"
-  },
-  {
-    "name": "西北风",
-    "value": "xibeifeng"
-  },
-  {
-    "name": "西北风",
-    "remark": "独处的沙滩一角",
-    "value": "xibeifeng_2"
-  },
-  {
-    "name": "西南风",
-    "value": "xinanfeng"
-  },
-  {
-    "name": "西南风",
-    "remark": "水手向西南进发!",
-    "value": "xinanfeng_2"
+    "name": "絮库夫",
+    "value": "xukufu_3",
+    "remark": "Loisirs balnéaires"
   },
   {
     "name": "亚利桑那",
-    "value": "yalisangna"
+    "value": "yalisangna",
+    "remark": "亚利桑那"
   },
   {
     "name": "牙买加",
-    "value": "yamaijia"
+    "value": "yamaijia",
+    "remark": "牙买加"
   },
   {
     "name": "牙买加",
-    "remark": "地下行者",
-    "value": "yamaijia_2"
+    "value": "yamaijia_2",
+    "remark": "地下行者"
   },
   {
     "name": "牙买加",
-    "remark": "Highway·Star",
-    "value": "yamaijia_3"
+    "value": "yamaijia_3",
+    "remark": "Highway·Star"
   },
   {
-    "alias": "阳炎",
-    "name": "萩",
+    "name": "双海亚美",
+    "value": "yamei",
+    "remark": "双海亚美"
+  },
+  {
+    "name": "双海亚美",
+    "value": "yamei_2",
+    "remark": "大太鼓、夏之华"
+  },
+  {
+    "name": "阳炎",
     "value": "yangyan"
   },
   {
-    "alias": "阳炎",
-    "name": "萩",
-    "remark": "南瓜与万圣夜",
-    "value": "yangyan_2"
+    "name": "阳炎",
+    "value": "yangyan_2",
+    "remark": "南瓜与万圣夜"
   },
   {
-    "alias": "阳炎",
-    "name": "萩",
-    "remark": "改",
-    "value": "yangyan_g"
+    "name": "阳炎",
+    "value": "yangyan_g",
+    "remark": "改"
   },
   {
     "name": "盐湖城",
-    "value": "yanhucheng"
+    "value": "yanhucheng",
+    "remark": "盐湖城"
   },
   {
     "name": "厌战",
-    "value": "yanzhan"
+    "value": "yanzhan",
+    "remark": "厌战"
   },
   {
     "name": "厌战",
-    "remark": "战士的圣诞任务",
-    "value": "yanzhan_2"
+    "value": "yanzhan_2",
+    "remark": "战士的圣诞任务"
   },
   {
     "name": "厌战",
-    "remark": "Under Pleasure",
-    "value": "yanzhan_3"
+    "value": "yanzhan_3",
+    "remark": "Under Pleasure"
   },
   {
     "name": "厌战",
-    "remark": "改",
-    "value": "yanzhan_g"
+    "value": "yanzhan_g",
+    "remark": "厌战.改"
   },
   {
     "name": "亚特兰大",
-    "value": "yatelanda"
+    "value": "yatelanda",
+    "remark": "亚特兰大"
   },
   {
-    "alias": "野分",
-    "name": "苓",
+    "name": "野分",
     "value": "yefen"
   },
   {
-    "alias": "伊吹",
-    "name": "峦",
+    "name": "伊吹",
     "value": "yichui"
   },
   {
-    "alias": "伊吹",
-    "name": "峦",
-    "remark": "永梦的青女",
-    "value": "yichui_2"
+    "name": "伊吹",
+    "value": "yichui_2",
+    "remark": "永梦的青女"
   },
   {
-    "alias": "伊吹",
-    "name": "峦",
-    "remark": "轻扬的风花",
-    "value": "yichui_3"
+    "name": "伊吹",
+    "value": "yichui_3",
+    "remark": "轻扬的风花"
   },
   {
-    "alias": "伊吹",
-    "name": "峦",
-    "remark": "新桃换旧符",
-    "value": "yichui_4"
+    "name": "伊吹",
+    "value": "yichui_4",
+    "remark": "新桃换旧符"
   },
   {
-    "name": "伊卡洛斯",
-    "value": "yikaluosi"
-  },
-  {
-    "name": "伊卡洛斯",
-    "remark": "港区医院体验周?",
-    "value": "yikaluosi_2"
+    "name": "伊吹",
+    "value": "yichui_5",
+    "remark": "恬静无为"
   },
   {
     "name": "伊卡洛斯",
-    "remark": "海底探险摄影会",
-    "value": "yikaluosi_3"
+    "value": "yikaluosi",
+    "remark": "伊卡洛斯"
   },
   {
-    "alias": "衣笠",
-    "name": "猅",
+    "name": "伊卡洛斯",
+    "value": "yikaluosi_2",
+    "remark": "海底探险摄影会"
+  },
+  {
+    "name": "伊卡洛斯",
+    "value": "yikaluosi_3",
+    "remark": "港区医院体验周?"
+  },
+  {
+    "name": "衣笠",
     "value": "yili"
   },
   {
     "name": "伊丽莎白女王",
-    "value": "yilishabai"
+    "value": "yilishabai",
+    "remark": "伊丽莎白女王"
   },
   {
     "name": "伊丽莎白女王",
-    "remark": "女王的舞踏会",
-    "value": "yilishabai_2"
+    "value": "yilishabai_2",
+    "remark": "女王的舞踏会"
   },
   {
     "name": "伊丽莎白女王",
-    "remark": "A Night At The Stage",
-    "value": "yilishabai_3"
+    "value": "yilishabai_3",
+    "remark": "A Night At The Stage"
   },
   {
     "name": "伊丽莎白女王",
-    "remark": "女王的学园命令",
-    "value": "yilishabai_4"
+    "value": "yilishabai_4",
+    "remark": "女王的学园命令"
   },
   {
     "name": "伊丽莎白女王",
-    "remark": "皇家进宝",
-    "value": "yilishabai_5"
+    "value": "yilishabai_5",
+    "remark": "皇家进宝"
   },
   {
     "name": "鹰",
-    "value": "ying"
+    "value": "ying",
+    "remark": "鹰"
+  },
+  {
+    "name": "英格拉罕",
+    "value": "yinggelahan",
+    "remark": "英格拉罕"
+  },
+  {
+    "name": "英格拉罕",
+    "value": "yinggelahan_2",
+    "remark": "饮品研究员？"
+  },
+  {
+    "name": "萤火虫",
+    "value": "yinghuochong",
+    "remark": "萤火虫"
+  },
+  {
+    "name": "萤火虫",
+    "value": "yinghuochong_2",
+    "remark": "铁面无私萤火虫！"
+  },
+  {
+    "name": "应瑞",
+    "value": "yingrui",
+    "remark": "应瑞"
+  },
+  {
+    "name": "应瑞",
+    "value": "yingrui_2",
+    "remark": "寒松雪暖"
+  },
+  {
+    "name": "鹦鹉螺",
+    "value": "yingwuluo",
+    "remark": "鹦鹉螺"
+  },
+  {
+    "name": "鹦鹉螺",
+    "value": "yingwuluo_2",
+    "remark": "黑兔休息中"
+  },
+  {
+    "name": "英仙座",
+    "value": "yingxianzuo",
+    "remark": "英仙座"
+  },
+  {
+    "name": "英仙座",
+    "value": "yingxianzuo_2",
+    "remark": "生疏的执勤时间"
+  },
+  {
+    "name": "英勇",
+    "value": "yingyong",
+    "remark": "英勇"
+  },
+  {
+    "name": "英勇",
+    "value": "yingyong_2",
+    "remark": "小护士的时间"
+  },
+  {
+    "name": "英勇",
+    "value": "yingyong_3",
+    "remark": "英勇女王陛下？"
   },
   {
     "name": "鹰",
-    "remark": "实习医生伊格",
-    "value": "ying_2"
+    "value": "ying_2",
+    "remark": "实习医生伊格"
   },
   {
-    "name": "萤火虫",
-    "value": "yinghuochong"
-  },
-  {
-    "name": "萤火虫",
-    "remark": "铁面无私萤火虫！",
-    "value": "yinghuochong_2"
-  },
-  {
-    "name": "应瑞",
-    "value": "yingrui"
-  },
-  {
-    "name": "应瑞",
-    "remark": "寒松雪暖",
-    "value": "yingrui_2"
-  },
-  {
-    "name": "英仙座",
-    "value": "yingxianzuo"
-  },
-  {
-    "name": "英仙座",
-    "remark": "生疏的执勤时间",
-    "value": "yingxianzuo_2"
-  },
-  {
-    "name": "英勇",
-    "value": "yingyong"
-  },
-  {
-    "name": "英勇",
-    "remark": "小护士的时间",
-    "value": "yingyong_2"
-  },
-  {
-    "name": "英勇",
-    "remark": "英勇女王陛下？",
-    "value": "yingyong_3"
-  },
-  {
-    "alias": "伊势",
-    "name": "鳌",
+    "name": "伊势",
     "value": "yishi"
   },
   {
-    "alias": "伊势",
-    "name": "鳌",
-    "remark": "改",
-    "value": "yishi_g"
+    "name": "伊势",
+    "value": "yishi_g",
+    "remark": "改"
   },
   {
-    "alias": "逸仙",
     "name": "逸仙",
-    "value": "yixian"
+    "value": "yixian",
+    "remark": "逸仙"
   },
   {
-    "alias": "逸仙",
     "name": "逸仙",
-    "remark": "誓约",
-    "value": "yixian_h"
+    "value": "yixian_h",
+    "remark": "凤冠霞帔"
+  },
+  {
+    "name": "水濑伊织",
+    "value": "yizhi",
+    "remark": "水濑伊织"
+  },
+  {
+    "name": "水濑伊织",
+    "value": "yizhi_2",
+    "remark": "黄昏的小秘密"
   },
   {
     "name": "勇敢",
-    "value": "yonggan"
+    "value": "yonggan",
+    "remark": "勇敢"
   },
   {
-    "alias": "有明",
-    "name": "榎",
+    "name": "由良",
+    "value": "youliang"
+  },
+  {
+    "name": "由良",
+    "value": "youliang_2",
+    "remark": "二重吸引?"
+  },
+  {
+    "name": "有明",
     "value": "youming"
   },
   {
-    "alias": "有明",
-    "name": "榎",
-    "remark": "四季团圆",
-    "value": "youming_2"
+    "name": "有明",
+    "value": "youming_2",
+    "remark": "四季团圆"
   },
   {
-    "alias": "有明",
-    "name": "榎",
-    "remark": "改",
-    "value": "youming_g"
-  },
-  {
-    "name": "约克",
-    "value": "yueke"
+    "name": "有明",
+    "value": "youming_g",
+    "remark": "改"
   },
   {
     "name": "约克",
-    "remark": "真理探寻者/truth seeker",
-    "value": "yueke_2"
-  },
-  {
-    "name": "约克",
-    "remark": "碧波的召唤者",
-    "value": "yueke_3"
-  },
-  {
-    "name": "约克",
-    "remark": "改",
-    "value": "yueke_g"
+    "value": "yueke",
+    "remark": "约克"
   },
   {
     "name": "约克城",
-    "value": "yuekecheng"
+    "value": "yuekecheng",
+    "remark": "约克城"
   },
   {
     "name": "约克城",
-    "remark": "优雅与朦胧之夜",
-    "value": "yuekecheng_2"
+    "value": "yuekecheng_2",
+    "remark": "优雅与朦胧之夜"
+  },
+  {
+    "name": "约克城",
+    "value": "yuekecheng_3",
+    "remark": "圣者之翼"
   },
   {
     "name": "约克公爵",
-    "value": "yuekegongjue"
+    "value": "yuekegongjue",
+    "remark": "约克公爵"
   },
   {
     "name": "约克公爵",
-    "remark": "永夜的卡罗拉",
-    "value": "yuekegongjue_2"
+    "value": "yuekegongjue_2",
+    "remark": "盛誉的光荣方程"
   },
   {
     "name": "约克公爵",
-    "remark": "盛誉的光荣方程",
-    "value": "yuekegongjue_3"
+    "value": "yuekegongjue_3",
+    "remark": "永夜的卡罗拉"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_2",
+    "remark": "真理探寻者/truth seeker"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_3",
+    "remark": "碧波的召唤者"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_g",
+    "remark": "约克.改"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_h",
+    "remark": "莹白誓约"
   },
   {
     "name": "Z1",
-    "value": "z1"
+    "value": "z1",
+    "remark": "Z1"
   },
   {
     "name": "Z18",
-    "value": "z18"
+    "value": "z18",
+    "remark": "Z18"
   },
   {
     "name": "Z19",
-    "value": "Z19"
+    "value": "Z19",
+    "remark": "Z19"
   },
   {
     "name": "Z1",
-    "value": "Z1_2"
+    "value": "Z1_2",
+    "remark": "“叛逆”的优等生"
   },
   {
     "name": "Z1",
-    "remark": "改",
-    "value": "z1_g"
+    "value": "z1_g",
+    "remark": "Z1.改"
   },
   {
     "name": "Z2",
-    "value": "z2"
-  },
-  {
-    "name": "Z2",
-    "remark": "异色的日常风景",
-    "value": "Z2_2"
-  },
-  {
-    "name": "Z2",
-    "remark": "夜色锦鲤",
-    "value": "Z2_3"
+    "value": "z2",
+    "remark": "Z2"
   },
   {
     "name": "Z20",
-    "value": "z20"
+    "value": "z20",
+    "remark": "Z20"
   },
   {
     "name": "Z21",
-    "value": "z21"
+    "value": "z21",
+    "remark": "Z21"
   },
   {
     "name": "Z23",
-    "value": "z23"
+    "value": "z23",
+    "remark": "Z23"
   },
   {
     "name": "Z23",
-    "remark": "哲学讲师",
-    "value": "z23_2"
+    "value": "z23_2",
+    "remark": "哲学讲师"
   },
   {
     "name": "Z23",
-    "remark": "非正式沙滩排球赛",
-    "value": "z23_3"
+    "value": "z23_3",
+    "remark": "宴会上的优等生"
   },
   {
     "name": "Z23",
-    "remark": "标准笑容？",
-    "value": "z23_4"
+    "value": "z23_4",
+    "remark": "标准笑容？"
   },
   {
     "name": "Z23",
-    "remark": "宴会上的优等生",
-    "value": "z23_5"
+    "value": "z23_5",
+    "remark": "正经偶像·经纪人担当？"
   },
   {
     "name": "Z23",
-    "remark": "新设基地・茶店体验",
-    "value": "z23_6"
+    "value": "z23_6",
+    "remark": "书架边的“风景”？"
   },
   {
     "name": "Z23",
-    "remark": "正经偶像·经纪人担当？",
-    "value": "z23_7"
+    "value": "z23_7",
+    "remark": "非正式沙滩排球赛"
   },
   {
     "name": "Z23",
-    "remark": "黑曜的嫁衣",
-    "value": "z23_8"
+    "value": "z23_8",
+    "remark": "新设基地・茶店体验"
   },
   {
     "name": "Z23",
-    "remark": "秘密的起居室",
-    "value": "z23_9"
+    "value": "z23_9",
+    "remark": "秘密的起居室"
   },
   {
     "name": "Z23",
-    "remark": "改",
-    "value": "z23_g"
+    "value": "z23_g",
+    "remark": "Z23.改"
   },
   {
     "name": "Z23",
-    "remark": "誓约",
-    "value": "z23_h"
+    "value": "z23_h",
+    "remark": "黑曜的嫁衣"
   },
   {
     "name": "Z24",
-    "value": "z24"
+    "value": "z24",
+    "remark": "Z24"
   },
   {
     "name": "Z24",
-    "remark": "「魔王」的祝祭",
-    "value": "Z24_2"
+    "value": "Z24_2",
+    "remark": "「魔王」的祝祭"
   },
   {
     "name": "Z25",
-    "value": "Z25"
+    "value": "Z25",
+    "remark": "Z25"
   },
   {
     "name": "Z25",
-    "remark": "暑夏的海风",
-    "value": "z25_2"
+    "value": "z25_2",
+    "remark": "暑夏的海风"
   },
   {
     "name": "Z26",
-    "value": "z26"
+    "value": "z26",
+    "remark": "Z26"
   },
   {
     "name": "Z26",
-    "remark": "友好的分享时间",
-    "value": "z26_2"
+    "value": "z26_2",
+    "remark": "友好的分享时间"
   },
   {
     "name": "Z28",
-    "value": "Z28"
+    "value": "Z28",
+    "remark": "Z28"
   },
   {
     "name": "Z28",
-    "remark": "新年大杂烩！",
-    "value": "Z28_3"
+    "value": "Z28_3",
+    "remark": "新年大杂烩！"
+  },
+  {
+    "name": "Z2",
+    "value": "Z2_2",
+    "remark": "异色的日常风景"
+  },
+  {
+    "name": "Z2",
+    "value": "z2_3",
+    "remark": "夜色锦鲤"
   },
   {
     "name": "Z35",
-    "value": "z35"
+    "value": "z35",
+    "remark": "Z35"
   },
   {
     "name": "Z35",
-    "remark": "projekt Kirschblüte",
-    "value": "z35_2"
+    "value": "z35_2",
+    "remark": "projekt Kirschblüte"
   },
   {
     "name": "Z36",
-    "value": "z36"
+    "value": "z36",
+    "remark": "Z36"
   },
   {
     "name": "Z46",
-    "value": "Z46"
+    "value": "Z46",
+    "remark": "Z46"
   },
   {
     "name": "Z46",
-    "remark": "夏之初体验",
-    "value": "Z46_2"
+    "value": "Z46_2",
+    "remark": "夏之初体验"
   },
   {
     "name": "Z46",
-    "remark": "少女的借物竞赛",
-    "value": "Z46_3"
+    "value": "Z46_3",
+    "remark": "少女的借物竞赛"
   },
   {
     "name": "Z46",
-    "remark": "未知的闪亮舞台",
-    "value": "Z46_4"
+    "value": "z46_4",
+    "remark": "未知的闪亮舞台"
   },
   {
     "name": "Z46",
-    "remark": "剪纸幻梦",
-    "value": "Z46_5"
+    "value": "z46_5",
+    "remark": "剪纸幻梦"
   },
   {
     "name": "女灶神",
-    "value": "zaoshen"
+    "value": "zaoshen",
+    "remark": "女灶神"
   },
   {
     "name": "女灶神",
-    "remark": "清凉的赫斯提亚",
-    "value": "zaoshen_2"
+    "value": "zaoshen_2",
+    "remark": "清凉的赫斯提亚"
   },
   {
     "name": "泽西",
-    "value": "zexi"
+    "value": "zexi",
+    "remark": "泽西"
   },
   {
     "name": "扎拉",
-    "value": "zhala"
+    "value": "zhala",
+    "remark": "扎拉"
   },
   {
     "name": "扎拉",
-    "remark": "泳池边的“偶遇”",
-    "value": "zhala_2"
+    "value": "zhala_2",
+    "remark": "泳池边的“偶遇”"
   },
   {
-    "alias": "朝潮",
-    "name": "棹",
+    "name": "朝潮",
     "value": "zhaochao"
   },
   {
-    "alias": "朝潮",
-    "name": "棹",
-    "remark": "樱花下的转校生",
-    "value": "zhaochao_2"
+    "name": "朝潮",
+    "value": "zhaochao_2",
+    "remark": "樱花下的转校生"
   },
   {
-    "alias": "朝潮",
-    "name": "棹",
-    "remark": "雪朝与铃",
-    "value": "zhaochao_4"
-  },
-  {
-    "name": "肇和",
-    "value": "zhaohe"
+    "name": "朝潮",
+    "value": "zhaochao_4",
+    "remark": "雪朝与铃"
   },
   {
     "name": "肇和",
-    "remark": "花枝映梅",
-    "value": "zhaohe_2"
+    "value": "zhaohe",
+    "remark": "肇和"
   },
   {
-    "alias": "榛名",
-    "name": "鲑",
+    "name": "肇和",
+    "value": "zhaohe_2",
+    "remark": "花枝映梅"
+  },
+  {
+    "name": "双海真美",
+    "value": "zhenmei",
+    "remark": "双海真美"
+  },
+  {
+    "name": "双海真美",
+    "value": "zhenmei_2",
+    "remark": "性感嘉年华！"
+  },
+  {
+    "name": "榛名",
     "value": "zhenming"
   },
   {
-    "alias": "榛名",
-    "name": "鲑",
-    "value": "zhenming_2"
+    "name": "榛名",
+    "value": "zhenming_2",
+    "remark": "授课前的自由时间"
   },
   {
-    "alias": "榛名",
-    "name": "鲑",
-    "remark": "授课前的自由时间",
-    "value": "zhenming_3"
+    "name": "榛名",
+    "value": "zhenming_3",
+    "remark": "绯红Innocence"
   },
   {
-    "alias": "榛名",
-    "name": "鲑",
-    "remark": "绯红Innocence",
-    "value": "zhenming_4"
+    "name": "榛名",
+    "value": "zhenming_4",
+    "remark": "雅致莲华"
   },
   {
     "name": "芝加哥",
-    "value": "zhijiage"
+    "value": "zhijiage",
+    "remark": "芝加哥"
   },
   {
-    "alias": "追風",
-    "name": "椎",
+    "name": "凪咲",
+    "value": "zhixiao_2_DOA",
+    "remark": "蓝天好心情"
+  },
+  {
+    "name": "凪咲",
+    "value": "zhixiao_DOA",
+    "remark": "凪咲"
+  },
+  {
+    "name": "追风",
     "value": "zhuifeng"
   },
   {
-    "alias": "追風",
-    "name": "椎",
-    "remark": "夏日的全力一击",
-    "value": "zhuifeng_3"
+    "name": "追风",
+    "value": "zhuifeng_3",
+    "remark": "夏日的全力一击"
   },
   {
     "name": "追赶者",
-    "value": "zhuiganzhe"
+    "value": "zhuiganzhe",
+    "remark": "追赶者"
   },
   {
     "name": "追赶者",
-    "remark": "东煌之道",
-    "value": "zhuiganzhe_2"
+    "value": "zhuiganzhe_2",
+    "remark": "东煌之道"
   },
   {
     "name": "追赶者",
-    "remark": "Gamer Style",
-    "value": "zhuiganzhe_3"
+    "value": "zhuiganzhe_3",
+    "remark": "Gamer Style"
   },
   {
-    "name": "zhumo",
+    "name": "筑摩",
     "value": "zhumo"
   },
   {
     "name": "朱诺",
-    "value": "zhunuo"
+    "value": "zhunuo",
+    "remark": "朱诺"
   },
   {
-    "alias": "足柄",
-    "name": "狳",
+    "name": "三浦 梓",
+    "value": "zi",
+    "remark": "三浦 梓"
+  },
+  {
+    "name": "三浦 梓",
+    "value": "zi_2",
+    "remark": "盛夏的休憩之所"
+  },
+  {
+    "name": "足柄",
     "value": "zubing"
   },
   {
-    "alias": "足柄",
-    "name": "狳",
-    "remark": "幕间小憩",
-    "value": "zubing_2"
+    "name": "足柄",
+    "value": "zubing_2",
+    "remark": "幕间小憩"
   },
   {
-    "alias": "足柄",
-    "name": "狳",
-    "remark": "缤纷之夏",
-    "value": "zubing_3"
+    "name": "足柄",
+    "value": "zubing_3",
+    "remark": "缤纷之夏"
   },
   {
-    "alias": "最上",
-    "name": "猨",
+    "name": "最上",
     "value": "zuishang"
   },
   {
-    "alias": "最上",
-    "name": "猨",
-    "remark": "改",
-    "value": "zuishang_g"
+    "name": "最上",
+    "value": "zuishang_g",
+    "remark": "改"
   },
   {
     "name": "佐治亚",
-    "value": "zuozhiya"
+    "value": "zuozhiya",
+    "remark": "佐治亚"
   },
   {
     "name": "佐治亚",
-    "remark": "南方的黑珍珠",
-    "value": "zuozhiya_2"
+    "value": "zuozhiya_2",
+    "remark": "南方的黑珍珠"
   },
   {
     "name": "佐治亚",
-    "remark": "Lanier Swan",
-    "value": "zuozhiya_4"
+    "value": "zuozhiya_4",
+    "remark": "Lanier Swan"
   },
   {
     "name": "佐治亚",
-    "remark": "雅色彩华",
-    "value": "zuozhiya_6"
-  },
-  {
-    "name": "凪咲",
-    "value": "zhixiao_DOA"
-  },
-  {
-    "name": "凪咲",
-    "remark": "蓝天好心情",
-    "value": "zhixiao_2_DOA"
-  },
-  {
-    "alias": "新泽西",
-    "name": "花园",
-    "value": "xinzexi"
-  },
-  {
-    "alias": "新泽西",
-    "name": "花园",
-    "remark": "跃动的舞台时间！",
-    "value": "xinzexi_2"
-  },
-  {
-    "alias": "提康德罗加",
-    "name": "卡莉永",
-    "value": "tikangdeluojia"
-  },
-  {
-    "alias": "提康德罗加",
-    "name": "卡莉永",
-    "remark": "黑兔的舞台秀",
-    "value": "tikangdeluojia_2"
-  },
-  {
-    "alias": "提康德罗加",
-    "name": "卡莉永",
-    "remark": "",
-    "value": "tikangdeluojia_2_hx"
-  },
-  {
-    "alias": "射水鱼",
-    "name": "喷水鱼",
-    "value": "sheshuiyu"
-  },
-  {
-    "alias": "射水鱼",
-    "name": "喷水鱼",
-    "remark": "兔兔特调",
-    "value": "sheshuiyu_3"
-  },
-  {
-    "alias": "莫里森",
-    "name": "赛普拉斯",
-    "value": "molisen"
-  },
-  {
-    "alias": "莫里森",
-    "name": "赛普拉斯",
-    "remark": "小熊整备中",
-    "value": "molisen_2"
-  },
-  {
-    "alias": "旧金山",
-    "name": "雾城",
-    "value": "jiujinshan"
-  },
-  {
-    "alias": "旧金山",
-    "name": "雾城",
-    "remark": "Funny Bunny!",
-    "value": "jiujinshan_3"
-  },
-  {
-    "name": "埃吉尔",
-    "value": "aijier"
-  },
-  {
-    "name": "安克雷奇",
-    "value": "ankeleiqi"
-  },
-  {
-    "name": "奥古斯特·冯·帕塞瓦尔",
-    "value": "aogusite"
-  },
-  {
-    "alias": "白龙",
-    "name": "鹫",
-    "value": "bailong"
-  },
-  {
-    "alias": "白雪",
-    "name": "杉",
-    "value": "baixue"
-  },
-  {
-    "alias": "白雪",
-    "name": "杉",
-    "remark": "白兔饲养员",
-    "value": "baixue_2"
-  },
-  {
-    "alias": "风云",
-    "name": "枟",
-    "value": "fengyun"
-  },
-  {
-    "alias": "风云",
-    "name": "枟",
-    "remark": "放学后的悠扬",
-    "value": "fengyun_3"
-  },
-  {
-    "name": "海伦娜·META",
-    "value": "hailunna_alter"
-  },
-  {
-    "name": "马可·波罗",
-    "value": "makeboluo"
-  },
-  {
-    "name": "天海春香",
-    "value": "chunxiang"
-  },
-  {
-    "name": "天海春香",
-    "remark": "喧嚣中的静谧",
-    "value": "chunxiang_2"
-  },
-  {
-    "name": "秋月律子",
-    "value": "lvzi"
-  },
-  {
-    "name": "秋月律子",
-    "remark": "盛夏时光·乒乓对决",
-    "value": "lvzi_2"
-  },
-  {
-    "name": "如月千早",
-    "value": "qianzao"
-  },
-  {
-    "name": "如月千早",
-    "remark": "水月镜花",
-    "value": "qianzao_2"
-  },
-  {
-    "name": "双海亚美",
-    "value": "yamei"
-  },
-  {
-    "name": "双海亚美",
-    "remark": "大太鼓、夏之华",
-    "value": "yamei_2"
-  },
-  {
-    "name": "水濑伊织",
-    "value": "yizhi"
-  },
-  {
-    "name": "水濑伊织",
-    "remark": "黄昏的小秘密",
-    "value": "yizhi_2"
-  },
-  {
-    "name": "双海真美",
-    "value": "zhenmei"
-  },
-  {
-    "name": "双海真美",
-    "remark": "性感嘉年华！",
-    "value": "zhenmei_2"
-  },
-  {
-    "name": "三浦梓",
-    "value": "zi"
-  },
-  {
-    "name": "三浦梓",
-    "remark": "盛夏的休憩之所",
-    "value": "zi_2"
+    "value": "zuozhiya_6",
+    "remark": "雅色彩华"
   }
 ]

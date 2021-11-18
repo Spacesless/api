@@ -41,4 +41,65 @@ module.exports = class extends Base {
     const spineList = await fs.readJSON(path.join(this.basePath, '../spine.json'));
     return this.success(spineList);
   }
+
+  async updateListAction() {
+    if (think.isExist(path.join(think.ASSETS_PATH, 'spine.json'))) {
+      return this.success();
+    }
+
+    const ships = await fs.readJSON(path.join(this.basePath, '../azurland/ships.json'));
+    const skins = await fs.readJSON(path.join(this.basePath, '../azurland/ship_skin_template.json'));
+
+    const textures = fs.readdirSync(this.basePath);
+
+    const map = {
+      undefined: '',
+      g: '改',
+      h: '誓约',
+      idol: undefined,
+      younv: undefined,
+      alter: undefined
+    };
+
+    const result = textures.map(item => {
+      const findSkin = Object.values(skins).find(shin => shin.painting.toLowerCase() === item.toLowerCase());
+      let findShip;
+      if (findSkin) findShip = ships.find(ship => ship._gid === findSkin.ship_group);
+      const skinName = findSkin ? findSkin.name : null;
+      const nameSuffix = item.split('_')[1];
+      const remark = skinName && skinName.includes('namecode') ? map[nameSuffix] : skinName;
+      return {
+        'name': findShip ? findShip.names.cn : (findSkin ? findSkin.name : null),
+        'value': item,
+        'remark': remark || undefined
+      };
+    });
+
+    fs.writeJsonSync(path.join(think.ASSETS_PATH, 'spine.json'), result.filter(item => Boolean(item.name)), { spaces: 2 });
+
+    this.success(result.filter(item => !item.name));
+  }
+
+  async shipAction() {
+    const ships = await fs.readJSON(path.join(this.basePath, '../azurland/ships.json'));
+
+    const targetShips = ships.map(item => {
+      const { class: classify, hullType, names, nationality, rarity, skins, stars, thumbnail, _code, _gid, _sid } = item;
+      return {
+        classify,
+        hullType,
+        names,
+        nationality,
+        rarity,
+        skins,
+        stars,
+        thumbnail,
+        _code,
+        _gid,
+        _sid
+      };
+    });
+
+    return this.success(targetShips);
+  }
 };
