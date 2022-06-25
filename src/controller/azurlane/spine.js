@@ -1,4 +1,4 @@
-const Base = require('./base');
+const Base = require('../base');
 const path = require('path');
 const url = require('url');
 const fs = require('fs-extra');
@@ -37,7 +37,7 @@ module.exports = class extends Base {
     }
   }
 
-  async listsAction() {
+  async listAction() {
     const spineList = await fs.readJSON(path.join(this.basePath, '../spine.json'));
     return this.success(spineList);
   }
@@ -47,8 +47,8 @@ module.exports = class extends Base {
       return this.success();
     }
 
-    const ships = await fs.readJSON(path.join(this.basePath, '../azurland/ships.json'));
-    const skins = await fs.readJSON(path.join(this.basePath, '../azurland/ship_skin_template.json'));
+    const ships = await fs.readJSON(path.join(this.basePath, '../azurlane/ships.json'));
+    const skins = await fs.readJSON(path.join(this.basePath, '../azurlane/ship_skin_template.json'));
 
     const textures = fs.readdirSync(this.basePath);
 
@@ -78,28 +78,5 @@ module.exports = class extends Base {
     fs.writeJsonSync(path.join(think.ASSETS_PATH, 'spine.json'), result.filter(item => Boolean(item.name)), { spaces: 2 });
 
     this.success(result.filter(item => !item.name));
-  }
-
-  async shipAction() {
-    const ships = await fs.readJSON(path.join(this.basePath, '../azurland/ships.json'));
-
-    const targetShips = ships.map(item => {
-      const { class: classify, hullType, names, nationality, rarity, skins, stars, thumbnail, _code, _gid, _sid } = item;
-      return {
-        classify,
-        hullType,
-        names,
-        nationality,
-        rarity,
-        skins,
-        stars,
-        thumbnail,
-        _code,
-        _gid,
-        _sid
-      };
-    });
-
-    return this.success(targetShips);
   }
 };

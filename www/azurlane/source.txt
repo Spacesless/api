@@ -1,0 +1,3 @@
+https://hub.fastgit.xyz/Pelom777/AzurLaneSD.git
+https://raw.fastgit.org/AzurAPI/azurapi-js-setup/master/ships.json
+https://raw.fastgit.org/AzurLaneTools/AzurLaneData/23bd957494477e1d2dcdf77bc153e156aa8f7b34/CN/ShareCfg/ship_skin_template.json
