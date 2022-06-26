@@ -1232,6 +1232,11 @@
     "remark": "新春福至 "
   },
   {
+    "name": "大潮",
+    "value": "dachao_5",
+    "remark": "午餐的邀约？"
+  },
+  {
     "name": "大斗犬",
     "value": "dadouquan",
     "remark": "大斗犬"
@@ -1386,6 +1391,26 @@
     "name": "电",
     "value": "dian_4",
     "remark": "月下妖精Inazuma"
+  },
+  {
+    "name": "帝国",
+    "value": "diguo",
+    "remark": "帝国"
+  },
+  {
+    "name": "帝国",
+    "value": "diguo_2",
+    "remark": "图书管理员的倦怠"
+  },
+  {
+    "name": "的里雅斯特",
+    "value": "diliyasite",
+    "remark": "的里雅斯特"
+  },
+  {
+    "name": "的里雅斯特",
+    "value": "diliyasite_2",
+    "remark": "期待的便当时间？"
   },
   {
     "name": "独角兽",
@@ -2650,6 +2675,11 @@
     "name": "金刚",
     "value": "jingang_3",
     "remark": "Talent Hospital"
+  },
+  {
+    "name": "金刚",
+    "value": "jingang_4",
+    "remark": "微风的上学路"
   },
   {
     "name": "竞技神",
@@ -4118,6 +4148,16 @@
     "remark": "良辰凤褂"
   },
   {
+    "name": "庞培·马格诺",
+    "value": "pangpeimagenuo",
+    "remark": "庞培·马格诺"
+  },
+  {
+    "name": "庞培·马格诺",
+    "value": "pangpeimagenuo_2",
+    "remark": "八分音符的美梦"
+  },
+  {
     "name": "佩内洛珀",
     "value": "peineiluopo",
     "remark": "佩内洛珀"
@@ -4376,6 +4416,11 @@
   },
   {
     "name": "企业",
+    "value": "qiye_8",
+    "remark": "旅行的启程"
+  },
+  {
+    "name": "企业",
     "value": "qiye_dark",
     "remark": "企业"
   },
@@ -4480,6 +4525,11 @@
     "name": "若叶",
     "value": "ruoye_2",
     "remark": "限时圣诞Wakaba"
+  },
+  {
+    "name": "若叶",
+    "value": "ruoye_3",
+    "remark": "暖阳与午睡时光"
   },
   {
     "name": "如月",
@@ -4657,6 +4707,10 @@
     "remark": "假日攻势！"
   },
   {
+    "name": "山城·META",
+    "value": "shancheng_alter"
+  },
+  {
     "name": "山城",
     "value": "shancheng_g",
     "remark": "改"
@@ -4801,6 +4855,11 @@
   {
     "name": "射水鱼",
     "value": "sheshuiyu"
+  },
+  {
+    "name": "射水鱼",
+    "value": "sheshuiyu_2",
+    "remark": "不安分的邻座同学？"
   },
   {
     "name": "射水鱼",

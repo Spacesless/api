@@ -6,7 +6,7 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   async __before() {
     super.__before();
-    this.basePath = path.join(think.ASSETS_PATH, 'model');
+    this.basePath = path.join(think.ASSETS_PATH, 'live2d-assets');
     this.modelLists = await this.getModelList();
 
     // 是否使用cdn加速，需客户端live2d支持http协议
@@ -35,7 +35,7 @@ module.exports = class extends Base {
    * @param {String} suffix
    */
   getAbsolutePath(prefix, suffix = '') {
-    const targetPrefix = this.isuseCDN ? `${this.CDNDomain}/model` : '../model';
+    const targetPrefix = this.isuseCDN ? `${this.CDNDomain}/live2d-assets` : '../live2d-assets';
     const relative = url.resolve(prefix.replace(this.basePath, targetPrefix) + '/', suffix);
     return relative;
   }

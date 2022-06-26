@@ -51,17 +51,17 @@ const rarityMap = {
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.basePath = path.join(think.ASSETS_PATH, 'SD');
+    this.basePath = path.join(think.ASSETS_PATH, 'azurlane-assets');
   }
 
   async __before() {
     super.__before();
-    const jsonPath = path.join(this.basePath, '../azurlane/ships.json');
+    const jsonPath = path.join(this.basePath, 'ships.json');
     const isExist = think.isExist(jsonPath);
     this.ships = isExist ? await fs.readJson(jsonPath) : [];
   }
 
-  async listAction() {
+  async listsAction() {
     const {
       name,
       nationality: nationalityParam,

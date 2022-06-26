@@ -27,7 +27,7 @@ output.tar.gz
 runtime/
 app/
 
-www/SD
+www/azurlane-assets/spine
 
 config.development.js
 adapter.development.js

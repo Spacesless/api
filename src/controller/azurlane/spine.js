@@ -6,13 +6,13 @@ const fs = require('fs-extra');
 module.exports = class extends Base {
   constructor(...arg) {
     super(...arg);
-    this.basePath = path.join(think.ASSETS_PATH, 'SD');
+    this.basePath = path.join(think.ASSETS_PATH, 'azurlane-assets');
   }
 
   // 通过SD小人id获取skeleton、atlas、texture地址
   async indexAction() {
     const { id, isuseCDN } = this.get();
-    const sdPath = path.join(this.basePath, id);
+    const sdPath = path.join(this.basePath, 'spine', id);
     if (think.isExist(sdPath)) {
       const prefix = isuseCDN === 'true' ? this.CDNDomain : this.ctx.origin.replace(/http:|https:/, '');
       const binaryPath = path.join(sdPath, `${id}.skel`);
@@ -37,18 +37,19 @@ module.exports = class extends Base {
     }
   }
 
-  async listAction() {
-    const spineList = await fs.readJSON(path.join(this.basePath, '../spine.json'));
+  async listsAction() {
+    const spineList = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
     return this.success(spineList);
   }
 
-  async updateListAction() {
-    if (think.isExist(path.join(think.ASSETS_PATH, 'spine.json'))) {
+  async updateAction() {
+    const listPath = path.join(this.basePath, 'spine-list.json');
+    if (think.isExist(listPath)) {
       return this.success();
     }
 
-    const ships = await fs.readJSON(path.join(this.basePath, '../azurlane/ships.json'));
-    const skins = await fs.readJSON(path.join(this.basePath, '../azurlane/ship_skin_template.json'));
+    const ships = await fs.readJSON(path.join(this.basePath, 'ships.json'));
+    const skins = await fs.readJSON(path.join(this.basePath, 'ship_skin_template.json'));
 
     const textures = fs.readdirSync(this.basePath);
 
@@ -75,7 +76,7 @@ module.exports = class extends Base {
       };
     });
 
-    fs.writeJsonSync(path.join(think.ASSETS_PATH, 'spine.json'), result.filter(item => Boolean(item.name)), { spaces: 2 });
+    fs.writeJsonSync(listPath, result.filter(item => Boolean(item.name)), { spaces: 2 });
 
     this.success(result.filter(item => !item.name));
   }
