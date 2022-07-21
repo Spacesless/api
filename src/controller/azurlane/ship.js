@@ -68,6 +68,7 @@ module.exports = class extends Base {
       hullType: hullTypeParam,
       rarity: rarityParam
     } = this.get();
+    const formatName = name ? name.trim() : '';
 
     const targetShips = [];
     this.ships.forEach(item => {
@@ -84,12 +85,12 @@ module.exports = class extends Base {
         id,
         classify,
         names,
-        hullType: hullTypeMap[hullType] || hullType,
-        nationality: nationalityMap[nationality] || nationality,
-        rarity: rarityMap[rarity] || rarity,
-        thumbnail
+        thumbnail,
+        hullType: hullTypeMap[hullType] || hullType || '',
+        nationality: nationalityMap[nationality] || nationality || '',
+        rarity: rarityMap[rarity] || rarity || ''
       };
-      const inNames = JSON.stringify(names).includes(name);
+      const inNames = JSON.stringify(names).includes(formatName);
       const inNationality = nationalityParam ? result.nationality.includes(nationalityParam) : true;
       const inHullType = hullTypeParam ? result.hullType.includes(hullTypeParam) : true;
       const inRarity = rarityParam ? result.rarity.includes(rarityParam) : true;
