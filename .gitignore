@@ -28,7 +28,7 @@ runtime/
 app/
 
 www/azurlane-assets/spine
-
+config/adapter.model.js
 config.development.js
 adapter.development.js
 

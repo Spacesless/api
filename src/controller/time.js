@@ -146,7 +146,7 @@ module.exports = class extends Base {
     // 农历
     const lunarYear = lunarInstance.getYear();
     const lunarMonth = lunarInstance.getMonth();
-    const lunarDay = lunarInstance.getYear();
+    const lunarDay = lunarInstance.getDay();
 
     const result = [];
     for (let i = 0; i < 24; i += 2) {

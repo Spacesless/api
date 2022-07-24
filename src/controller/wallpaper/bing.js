@@ -8,7 +8,7 @@ const baseUrl = 'https://cn.bing.com';
 module.exports = class extends Base {
   constructor(...args) {
     super(...args);
-    this.modelInstance = this.model('image/bing');
+    this.modelInstance = this.mongo('wallpaper/bing');
   }
 
   async indexAction() {
@@ -54,14 +54,15 @@ module.exports = class extends Base {
 
     const list = await this.modelInstance.selectRecord(page, pageSize);
 
+    list.data.forEach(item => {
+      item.url = baseUrl + item.url;
+    });
+
     this.success(list);
   }
 
+  // 定时采集任务
   crontabAction() {
-    if (!this.isCli) {
-      return this.fail(1000, 'deny');
-    }
-
     axios({
       url: bingApi,
       methods: 'get',
@@ -71,10 +72,16 @@ module.exports = class extends Base {
         format: 'js',
         mkt: 'zh-CN'
       }
-    }).then(res => {
+    }).then(async res => {
       const { images } = res.data || {};
       if (images[0]) {
-        this.modelInstance.addRecord(images[0]);
+        const inserId = this.modelInstance.addRecord(images[0]);
+
+        if (inserId) {
+          return this.success();
+        } else {
+          return this.fail();
+        }
       }
     });
   }
