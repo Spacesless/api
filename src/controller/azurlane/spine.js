@@ -51,7 +51,7 @@ module.exports = class extends Base {
     const ships = await fs.readJSON(path.join(this.basePath, 'ships.json'));
     const skins = await fs.readJSON(path.join(this.basePath, 'ship_skin_template.json'));
 
-    const textures = fs.readdirSync(this.basePath);
+    const textures = fs.readdirSync(path.join(this.basePath, 'spine'));
 
     const map = {
       undefined: '',

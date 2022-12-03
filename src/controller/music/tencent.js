@@ -125,36 +125,46 @@ module.exports = class extends Base {
   // 搜索歌曲名
   async searchAction() {
     const { keyword, page, pageSize } = this.get();
-    const APIURL = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp';
-    await axios.get(APIURL, {
-      params: {
-        ct: 24,
-        qqmusic_ver: 1298,
-        new_json: 1,
-        remoteplace: 'txt.yqq.song',
-        searchid: 54551315998285841,
-        t: 0,
-        aggr: 1,
-        cr: 1,
-        catZhida: 1,
-        lossless: 0,
-        flag_qc: 0,
-        p: page,
-        n: pageSize,
-        w: keyword,
-        g_tk: 5381,
-        loginUin: 804093032,
-        hostUin: 0,
-        format: 'json',
-        inCharset: 'utf8',
-        outCharset: 'utf-8',
-        notice: 0,
-        platform: 'yqq.json',
-        needNewCode: 0
+    const APIURL = 'https://u.y.qq.com/cgi-bin/musicu.fcg?_webcgikey=DoSearchForQQMusicDesktop&_=1670036427815';
+    await axios({
+      url: APIURL,
+      method: 'post',
+      headers: {
+        'content-type': 'application/x-www-form-urlencoded',
+        origin: 'https://i.y.qq.com',
+        referer: 'https://i.y.qq.com/',
+        cookie: 'pgv_info=ssid=s9268983182; pgv_pvid=8522563286; fqm_pvqid=5c4e7d16-cede-420f-b825-4e3697f6310b; fqm_sessionid=8c038f17-f47f-464b-93d1-eebf5a2182ff; ts_last=y.qq.com/; ts_refer=ADTAGmyqq; ts_uid=1610010400; _qpsvr_localtk=0.358278404153356; RK=ccWVdTMlMf; ptcz=6e545d154dfb0897ff676d2a35aa469ae6b05137cad310e7a92437f468c4ad5a; login_type=1; psrf_musickey_createtime=1670037082; psrf_qqunionid=D51878163E1B14E650C8F7C6032A8A11; qm_keyst=Q_H_L_5mpchHUsB8W36tANFFNYq5nAJeJ_5gxIyzRDN02nCcIs2X7Fs_bsU1w; euin=NenPoeEioeoA; qm_keyst=Q_H_L_5mpchHUsB8W36tANFFNYq5nAJeJ_5gxIyzRDN02nCcIs2X7Fs_bsU1w; psrf_qqopenid=2630361632591FC66FD7D1B33CB8221C; wxrefresh_token=; psrf_qqrefresh_token=43C1638955A06879ADBA9CFE8D9B1C66; wxopenid=; tmeLoginType=2; psrf_access_token_expiresAt=1677813082; psrf_qqaccess_token=882DD9F4368370019D38C0DA2788E438; uin=804093032; qqmusic_key=Q_H_L_5mpchHUsB8W36tANFFNYq5nAJeJ_5gxIyzRDN02nCcIs2X7Fs_bsU1w; wxunionid='
+      },
+      data: {
+        'comm': {
+          'g_tk': 1848893775,
+          'uin': 804093032,
+          'format': 'json',
+          'inCharset': 'utf-8',
+          'outCharset': 'utf-8',
+          'notice': 0,
+          'platform': 'h5',
+          'needNewCode': 1,
+          'ct': 23,
+          'cv': 0
+        },
+        'req_0': {
+          'method': 'DoSearchForQQMusicDesktop',
+          'module': 'music.search.SearchCgiService',
+          'param': {
+            'remoteplace': 'txt.mqq.all',
+            'searchid': '60602074485533734',
+            'search_type': 0,
+            'query': keyword,
+            'page_num': +page || 1,
+            'num_per_page': +pageSize || 20
+          }
+        }
       }
     }).then(res => {
-      const song = res.data.data.song;
-      const { totalnum, list } = song;
+      const response = (res.data.req_0 && res.data.req_0.data) || {};
+      const list = (response.body && response.body.song.list) || [];
+      const total = response.meta && response.meta.sum;
       const songlists = list.map(item => {
         const { album, interval, name, mid, singer, pay } = item;
         return {
@@ -174,7 +184,7 @@ module.exports = class extends Base {
         };
       });
       const result = {
-        total: totalnum,
+        total: total || 0,
         list: songlists
       };
       return this.success(result);

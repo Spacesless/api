@@ -76,7 +76,7 @@ module.exports = class extends Base {
       const { images } = res.data || {};
       if (images[0]) {
         const inserId = this.modelInstance.addRecord(images[0]);
-
+        think.logger.debug(images[0]);
         if (inserId) {
           return this.success();
         } else {

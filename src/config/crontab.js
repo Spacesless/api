@@ -1,4 +1,4 @@
 module.exports = [{
-  cron: '1 0 * * *',
-  handle: 'image/bing/crontab'
+  cron: '0,3,5 0 * * *',
+  handle: 'bing/crontab'
 }];

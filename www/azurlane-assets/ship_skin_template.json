@@ -201,7 +201,7 @@
     "ship_group": 10000,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -3328,7 +3328,7 @@
     "ship_group": 10117,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -3682,7 +3682,7 @@
     "ship_group": 10117,
     "ship_l2d_id": "",
     "shop_id": 70175,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -3789,7 +3789,7 @@
     "ship_group": 10117,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -4007,7 +4007,7 @@
     "ship_group": 10117,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -5889,7 +5889,7 @@
     "ship_group": 10126,
     "ship_l2d_id": "",
     "shop_id": 70592,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -6869,7 +6869,7 @@
     "ship_group": 10131,
     "ship_l2d_id": "",
     "shop_id": 70049,
-    "shop_type_id": 15,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -7528,7 +7528,7 @@
     "ship_group": 10133,
     "ship_l2d_id": "",
     "shop_id": 70182,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -17712,115 +17712,6 @@
     "voice_actor": 217,
     "voice_actor_2": -1
   },
-  "102254": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.259,
-          1.054,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.159,
-          1.093,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.13,
-          1.003,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "你问这个面具是什么？是用在舞会的剧目上的道具哦。……对了，指挥官，能陪我练习吗？——那就，“您愿意与我共舞一曲吗？”",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 4,
-    "gyro": 0,
-    "hand_id": 1,
-    "id": 102254,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "罗密欧or朱丽叶？",
-    "painting": "biluokexi_6",
-    "prefab": "biluokexi_6",
-    "rarity_bg": "",
-    "ship_group": 10225,
-    "ship_l2d_id": "",
-    "shop_id": 70712,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.524,
-              2.251,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      2
-    ],
-    "time": "",
-    "voice_actor": 217,
-    "voice_actor_2": -1
-  },
   "102260": {
     "air_bomb_skin": "",
     "air_bullet_skin": "",
@@ -18846,7 +18737,7 @@
     "ship_group": 10227,
     "ship_l2d_id": "",
     "shop_id": 70593,
-    "shop_type_id": 3,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -21401,7 +21292,7 @@
     "ship_group": 10310,
     "ship_l2d_id": "",
     "shop_id": 70084,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -25397,7 +25288,7 @@
     "ship_group": 10509,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 3,
     "smoke": [
@@ -25720,7 +25611,7 @@
     "ship_group": 10510,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 3,
     "smoke": [
@@ -25934,7 +25825,7 @@
     "ship_group": 10511,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 3,
     "smoke": [
@@ -27550,7 +27441,7 @@
     "ship_group": 10601,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -29086,7 +28977,7 @@
     "ship_group": 10703,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -29193,7 +29084,7 @@
     "ship_group": 10703,
     "ship_l2d_id": "",
     "shop_id": 70179,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -29302,7 +29193,7 @@
     "ship_group": 10703,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -30895,7 +30786,7 @@
     "ship_group": 10706,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -31632,7 +31523,7 @@
     "ship_group": 10707,
     "ship_l2d_id": "",
     "shop_id": 70479,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -32756,7 +32647,7 @@
     "ship_group": 10717,
     "ship_l2d_id": "",
     "shop_id": 70526,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -33162,7 +33053,7 @@
     "ship_group": 10722,
     "ship_l2d_id": "",
     "shop_id": 70518,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -33881,7 +33772,7 @@
     "ship_group": 10729,
     "ship_l2d_id": "",
     "shop_id": 70210,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -36123,7 +36014,7 @@
     "ship_group": 10703,
     "ship_l2d_id": "",
     "shop_id": 70588,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -37672,7 +37563,7 @@
     "ship_group": 20102,
     "ship_l2d_id": "",
     "shop_id": 70066,
-    "shop_type_id": 9,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -39753,7 +39644,7 @@
     "ship_group": 20110,
     "ship_l2d_id": "",
     "shop_id": 70172,
-    "shop_type_id": 17,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -41367,7 +41258,7 @@
     "ship_group": 20121,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -41612,7 +41503,7 @@
     "ship_group": 20121,
     "ship_l2d_id": "",
     "shop_id": 70176,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -41828,7 +41719,7 @@
     "ship_group": 20121,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -42779,7 +42670,7 @@
     "ship_group": 20123,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 15,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -43406,7 +43297,7 @@
     "ship_group": 20124,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -46691,7 +46582,7 @@
     "ship_group": 20208,
     "ship_l2d_id": "",
     "shop_id": 70142,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -47998,7 +47889,7 @@
     "ship_group": 20212,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -48344,7 +48235,7 @@
     "ship_group": 20212,
     "ship_l2d_id": "",
     "shop_id": 70364,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -49323,7 +49214,7 @@
     "ship_group": 20215,
     "ship_l2d_id": "",
     "shop_id": 70314,
-    "shop_type_id": 3,
+    "shop_type_id": 9999,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -49896,7 +49787,7 @@
     "ship_group": 20217,
     "ship_l2d_id": "",
     "shop_id": 70144,
-    "shop_type_id": 9,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -50356,7 +50247,7 @@
     "ship_group": 20219,
     "ship_l2d_id": "",
     "shop_id": 70107,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -54613,120 +54504,6 @@
     ],
     "time": "",
     "voice_actor": 319,
-    "voice_actor_2": -1
-  },
-  "202320": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.033,
-          1.042,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.182,
-          0.802,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          0.928,
-          0.864,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "翡翠级轻巡洋舰—进取",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 13,
-    "id": 202320,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "进取",
-    "painting": "jinqu",
-    "prefab": "jinqu",
-    "rarity_bg": "",
-    "ship_group": 20232,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.501,
-              2.294,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": 326,
     "voice_actor_2": -1
   },
   "203010": {
@@ -59894,7 +59671,7 @@
     "ship_group": 20504,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand2",
     "skin_type": 4,
     "smoke": [
@@ -62936,7 +62713,7 @@
     "ship_group": 20603,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -63599,7 +63376,7 @@
     "ship_group": 20603,
     "ship_l2d_id": "",
     "shop_id": 70552,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -66035,7 +65812,7 @@
     "ship_group": 20703,
     "ship_l2d_id": "",
     "shop_id": 70021,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -66237,7 +66014,7 @@
     "ship_group": 20703,
     "ship_l2d_id": "",
     "shop_id": 70170,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -68022,7 +67799,7 @@
     "ship_group": 21301,
     "ship_l2d_id": "",
     "shop_id": 70001,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -70069,139 +69846,6 @@
     "voice_actor": 80,
     "voice_actor_2": -1
   },
-  "299050": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.633,
-          0.953,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.676,
-          0.962,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          -0.019,
-          -0.011,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.69,
-          0.924,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "轻巡洋舰—普利茅斯",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 1,
-    "id": 299050,
-    "illustrator": 1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "普利茅斯",
-    "painting": "pulimaosi",
-    "prefab": "pulimaosi",
-    "rarity_bg": "",
-    "ship_group": 29905,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.51,
-              2.507,
-              -0.16
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": [
-      "lihui_pulimaosi",
-      [
-        -114,
-        236,
-        0
-      ],
-      [
-        1.9
-      ]
-    ],
-    "spine_offset": [
-      [
-        -113,
-        -775,
-        0
-      ],
-      [
-        0.86
-      ]
-    ],
-    "tag": [],
-    "time": "",
-    "voice_actor": 327,
-    "voice_actor_2": -1
-  },
   "301010": {
     "air_bomb_skin": "",
     "air_bullet_skin": "",
@@ -70521,7 +70165,7 @@
     "ship_group": 30101,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -70883,7 +70527,7 @@
     "ship_group": 30101,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -71470,7 +71114,7 @@
     "ship_group": 30105,
     "ship_l2d_id": "",
     "shop_id": 70061,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -71700,7 +71344,7 @@
     "ship_group": 30105,
     "ship_l2d_id": "",
     "shop_id": 70177,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -71814,7 +71458,7 @@
     "ship_group": 30105,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -72385,7 +72029,7 @@
     "ship_group": 30109,
     "ship_l2d_id": "",
     "shop_id": 70108,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -73214,7 +72858,7 @@
     "ship_group": 30111,
     "ship_l2d_id": "",
     "shop_id": 70022,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -73687,7 +73331,7 @@
     "ship_group": 30112,
     "ship_l2d_id": "",
     "shop_id": 70023,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -74172,7 +73816,7 @@
     "ship_group": 30113,
     "ship_l2d_id": "",
     "shop_id": 70062,
-    "shop_type_id": 17,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -74510,7 +74154,7 @@
     "ship_group": 30114,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -75757,7 +75401,7 @@
     "ship_group": 30116,
     "ship_l2d_id": "",
     "shop_id": 70057,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -77030,7 +76674,7 @@
     "ship_group": 30121,
     "ship_l2d_id": "",
     "shop_id": 70139,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -78535,7 +78179,7 @@
     "ship_group": 30126,
     "ship_l2d_id": "",
     "shop_id": 70063,
-    "shop_type_id": 17,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -78767,7 +78411,7 @@
     "ship_group": 30126,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 7,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -79506,156 +79150,6 @@
             [
               -0.43,
               2.46,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      1,
-      2
-    ],
-    "time": "",
-    "voice_actor": 284,
-    "voice_actor_2": -1
-  },
-  "301292": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.026,
-          1.031,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.235,
-          0.977,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0.117,
-          0.093,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.12,
-          0.909,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "啊呀！又是这个地方？！明明刚才开始已经连着跑了1小时了……指挥官？！呜哇幸好~！！请救救{namecode:18}吧！TOT",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 2,
-    "gyro": 0,
-    "hand_id": 14,
-    "id": 301292,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": [
-      "idle",
-      "main_1",
-      "main_2",
-      "main_3",
-      "mission",
-      "mission_complete",
-      "complete",
-      "login",
-      "home",
-      "mail",
-      "touch_body",
-      "touch_head"
-    ],
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": {
-      "ParamAngleX": [
-        -20,
-        15
-      ],
-      "ParamAngleY": [
-        -20,
-        20
-      ],
-      "ParamBodyAngleY": [
-        -5,
-        5
-      ]
-    },
-    "l2d_se": "",
-    "l2d_voice_calibrate": {
-      "use_event": true
-    },
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "不思议国度的白兔",
-    "painting": "daofeng_5",
-    "prefab": "daofeng_5",
-    "rarity_bg": "",
-    "ship_group": 30129,
-    "ship_l2d_id": [
-      3012921,
-      3012922,
-      3012923,
-      3012924
-    ],
-    "shop_id": 70713,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.504,
-              2.311,
               0
             ]
           ]
@@ -81251,7 +80745,7 @@
     "ship_group": 30135,
     "ship_l2d_id": "",
     "shop_id": 70064,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -81579,7 +81073,7 @@
     "ship_group": 30138,
     "ship_l2d_id": "",
     "shop_id": 70070,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -81793,7 +81287,7 @@
     "ship_group": 30139,
     "ship_l2d_id": "",
     "shop_id": 70316,
-    "shop_type_id": 17,
+    "shop_type_id": 9999,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -82723,7 +82217,7 @@
     "ship_group": 30149,
     "ship_l2d_id": "",
     "shop_id": 70069,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -83596,7 +83090,7 @@
     "ship_group": 30158,
     "ship_l2d_id": "",
     "shop_id": 70168,
-    "shop_type_id": 13,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -84971,7 +84465,7 @@
     "ship_group": 30162,
     "ship_l2d_id": "",
     "shop_id": 70058,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -88128,7 +87622,7 @@
     "ship_group": 30183,
     "ship_l2d_id": "",
     "shop_id": 70348,
-    "shop_type_id": 17,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -92122,122 +91616,6 @@
     "voice_actor": 77,
     "voice_actor_2": -1
   },
-  "302132": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "1101",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.13,
-          1.138,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.151,
-          0.995,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0.12,
-          0.02,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          0.941,
-          0.995,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "“大早上的要去哪里呀，小红帽”……哎呀，这不是指挥官么。虽然是我的任性，不过关于这个角色我有不少想法…方便的话能帮我看下演技吗？",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 2,
-    "gyro": 0,
-    "hand_id": 2,
-    "id": 302132,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "“大灰狼”的谋算",
-    "painting": "shentong_4",
-    "prefab": "shentong_4",
-    "rarity_bg": "",
-    "ship_group": 30213,
-    "ship_l2d_id": "",
-    "shop_id": 70710,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.456,
-              2.395,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      2
-    ],
-    "time": "",
-    "voice_actor": 77,
-    "voice_actor_2": -1
-  },
   "302139": {
     "air_bomb_skin": "",
     "air_bullet_skin": "",
@@ -93630,7 +93008,7 @@
     "ship_group": 30221,
     "ship_l2d_id": "",
     "shop_id": 70519,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -97590,7 +96968,7 @@
     "ship_group": 30318,
     "ship_l2d_id": "",
     "shop_id": 70610,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -98267,7 +97645,7 @@
     "ship_group": 30402,
     "ship_l2d_id": "",
     "shop_id": 70091,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand2",
     "skin_type": 4,
     "smoke": [
@@ -100313,7 +99691,7 @@
     "ship_group": 30501,
     "ship_l2d_id": "",
     "shop_id": 70160,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -102158,7 +101536,7 @@
     "ship_group": 30505,
     "ship_l2d_id": "",
     "shop_id": 70166,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -102376,7 +101754,7 @@
     "ship_group": 30505,
     "ship_l2d_id": "",
     "shop_id": 70523,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -102699,7 +102077,7 @@
     "ship_group": 30506,
     "ship_l2d_id": "",
     "shop_id": 70173,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -103259,7 +102637,7 @@
     "ship_group": 30511,
     "ship_l2d_id": "",
     "shop_id": 70090,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand2",
     "skin_type": 4,
     "smoke": [
@@ -103375,7 +102753,7 @@
     "ship_group": 30511,
     "ship_l2d_id": "",
     "shop_id": 70171,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand2",
     "skin_type": 4,
     "smoke": [
@@ -103491,7 +102869,7 @@
     "ship_group": 30511,
     "ship_l2d_id": "",
     "shop_id": 70520,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand2",
     "skin_type": 4,
     "smoke": [
@@ -104780,7 +104158,7 @@
     "ship_group": 30603,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -105307,7 +104685,7 @@
     "ship_group": 30606,
     "ship_l2d_id": "",
     "shop_id": 70124,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -110482,7 +109860,7 @@
     "ship_group": 30801,
     "ship_l2d_id": "",
     "shop_id": 70391,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -112186,7 +111564,7 @@
     "ship_group": 31201,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -113138,7 +112516,7 @@
     "ship_group": 30105,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -113831,7 +113209,7 @@
     "ship_group": 39901,
     "ship_l2d_id": "",
     "shop_id": 70522,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -116256,7 +115634,7 @@
     "ship_group": 40123,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -116499,7 +115877,7 @@
     "ship_group": 40123,
     "ship_l2d_id": "",
     "shop_id": 70178,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -116729,7 +116107,7 @@
     "ship_group": 40123,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -117875,7 +117253,7 @@
     "ship_group": 40126,
     "ship_l2d_id": "",
     "shop_id": 70405,
-    "shop_type_id": 20,
+    "shop_type_id": 9999,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -122477,7 +121855,7 @@
     "ship_group": 40304,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 7,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -128535,7 +127913,7 @@
     "ship_group": 40802,
     "ship_l2d_id": "",
     "shop_id": 70079,
-    "shop_type_id": 9,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -129141,7 +128519,7 @@
     "ship_group": 40804,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 7,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -129341,7 +128719,7 @@
     "ship_group": 40805,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 4,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -130453,7 +129831,7 @@
     "ship_group": 40809,
     "ship_l2d_id": "",
     "shop_id": 70404,
-    "shop_type_id": 20,
+    "shop_type_id": 9999,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -131175,7 +130553,7 @@
     "ship_group": 40123,
     "ship_l2d_id": "",
     "shop_id": 0,
-    "shop_type_id": 20,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -131198,120 +130576,6 @@
     "tag": [
       2
     ],
-    "time": "",
-    "voice_actor": 3,
-    "voice_actor_2": -1
-  },
-  "431231": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          0.95,
-          0.92,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          0.98,
-          0.87,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          0.97,
-          0.92,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "欢迎光临！要不要来份现炸出炉的美味薯条呢？…指挥官，别再盯着我看了！这只是快餐店的制服而已，快点点单啦！",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 11,
-    "gyro": 0,
-    "hand_id": 13,
-    "id": 431231,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "薯条，以及笑容！",
-    "painting": "z23_11",
-    "prefab": "z23_11",
-    "rarity_bg": "",
-    "ship_group": 40123,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.44,
-              2.33,
-              -0.27
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
     "time": "",
     "voice_actor": 3,
     "voice_actor_2": -1
@@ -132847,120 +132111,6 @@
     "voice_actor": 202,
     "voice_actor_2": -1
   },
-  "499070": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.6,
-          1.94,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.81,
-          1.44,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.66,
-          1.37,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "战列巡洋舰—鲁普雷希特亲王",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 13,
-    "id": 499070,
-    "illustrator": 1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "鲁普雷希特亲王",
-    "painting": "lupuleixite",
-    "prefab": "lupuleixite",
-    "rarity_bg": "",
-    "ship_group": 49907,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.92,
-              1.91,
-              -0.16
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": 328,
-    "voice_actor_2": -1
-  },
   "501010": {
     "air_bomb_skin": "",
     "air_bullet_skin": "",
@@ -133164,7 +132314,7 @@
     "ship_group": 50101,
     "ship_l2d_id": "",
     "shop_id": 70180,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -134682,7 +133832,7 @@
     "ship_group": 50202,
     "ship_l2d_id": "",
     "shop_id": 70013,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -135631,7 +134781,7 @@
     "ship_group": 50203,
     "ship_l2d_id": "",
     "shop_id": 70014,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -137653,120 +136803,6 @@
     "time": "",
     "voice_actor": 81,
     "voice_actor_2": 193
-  },
-  "599010": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1,
-          1.29,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.15,
-          0.97,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.1,
-          0.95,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "轻巡洋舰—{namecode:224}",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 9,
-    "id": 599010,
-    "illustrator": 1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "{namecode:224}",
-    "painting": "haerbin",
-    "prefab": "haerbin",
-    "rarity_bg": "",
-    "ship_group": 59901,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.82,
-              1.82,
-              -0.16
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": -1,
-    "voice_actor_2": -1
   },
   "601020": {
     "air_bomb_skin": "",
@@ -141022,7 +140058,7 @@
     "ship_group": 60502,
     "ship_l2d_id": "",
     "shop_id": 70521,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -141482,7 +140518,7 @@
     "ship_group": 60506,
     "ship_l2d_id": "",
     "shop_id": 70233,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -142940,7 +141976,7 @@
     "ship_group": 70102,
     "ship_l2d_id": "",
     "shop_id": 70515,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -143764,7 +142800,7 @@
     "ship_group": 70104,
     "ship_l2d_id": "",
     "shop_id": 70517,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -144108,7 +143144,7 @@
     "ship_group": 70106,
     "ship_l2d_id": "",
     "shop_id": 70516,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -144338,7 +143374,7 @@
     "ship_group": 70107,
     "ship_l2d_id": "",
     "shop_id": 70508,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -144568,7 +143604,7 @@
     "ship_group": 70108,
     "ship_l2d_id": "",
     "shop_id": 70510,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -145733,7 +144769,7 @@
     "ship_group": 70202,
     "ship_l2d_id": "",
     "shop_id": 70513,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -146193,7 +145229,7 @@
     "ship_group": 70203,
     "ship_l2d_id": "",
     "shop_id": 70514,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -146539,7 +145575,7 @@
     "ship_group": 70204,
     "ship_l2d_id": "",
     "shop_id": 70507,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -146901,7 +145937,7 @@
     "ship_group": 70206,
     "ship_l2d_id": "",
     "shop_id": 70509,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -147131,7 +146167,7 @@
     "ship_group": 70301,
     "ship_l2d_id": "",
     "shop_id": 70505,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -147593,7 +146629,7 @@
     "ship_group": 70501,
     "ship_l2d_id": "",
     "shop_id": 70511,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -147823,7 +146859,7 @@
     "ship_group": 70504,
     "ship_l2d_id": "",
     "shop_id": 70506,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -148763,106 +147799,6 @@
     "voice_actor": 272,
     "voice_actor_2": -1
   },
-  "799010": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "cannon": [
-        [
-          1.502,
-          1.145,
-          0
-        ]
-      ],
-      "plane": [
-        [
-          1.723,
-          0.543,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "航空母舰—契卡洛夫",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 1,
-    "id": 799010,
-    "illustrator": 1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "契卡洛夫",
-    "painting": "qikaluofu",
-    "prefab": "qikaluofu",
-    "rarity_bg": "",
-    "ship_group": 79901,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.829,
-              0.834,
-              -0.16
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": 329,
-    "voice_actor_2": -1
-  },
   "801010": {
     "air_bomb_skin": "",
     "air_bullet_skin": "",
@@ -149180,7 +148116,7 @@
     "ship_group": 80102,
     "ship_l2d_id": "",
     "shop_id": 70087,
-    "shop_type_id": 9,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -149984,7 +148920,7 @@
     "ship_group": 80103,
     "ship_l2d_id": "",
     "shop_id": 70524,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -150444,7 +149380,7 @@
     "ship_group": 80107,
     "ship_l2d_id": "",
     "shop_id": 70608,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -150790,7 +149726,7 @@
     "ship_group": 80108,
     "ship_l2d_id": "",
     "shop_id": 70609,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -151178,7 +150114,7 @@
     "ship_group": 80201,
     "ship_l2d_id": "",
     "shop_id": 70361,
-    "shop_type_id": 17,
+    "shop_type_id": 9999,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -153210,139 +152146,6 @@
     ],
     "time": "",
     "voice_actor": 64,
-    "voice_actor_2": -1
-  },
-  "899030": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.492,
-          2.069,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.792,
-          1.696,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          2.433,
-          1.164,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "大型巡洋舰—布雷斯特",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 1,
-    "id": 899030,
-    "illustrator": 1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "布雷斯特",
-    "painting": "buleisite",
-    "prefab": "buleisite",
-    "rarity_bg": "",
-    "ship_group": 89903,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.51,
-              2.507,
-              -0.16
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": [
-      "lihui_buleisite",
-      [
-        -51,
-        162,
-        0
-      ],
-      [
-        2.2
-      ]
-    ],
-    "spine_offset": [
-      [
-        -35,
-        -1749,
-        0
-      ],
-      [
-        1.2
-      ]
-    ],
-    "tag": [],
-    "time": "",
-    "voice_actor": 330,
     "voice_actor_2": -1
   },
   "900001": {
@@ -177520,7 +176323,7 @@
     "ship_group": 90111,
     "ship_l2d_id": "",
     "shop_id": 70198,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -177919,236 +176722,6 @@
     "tag": [],
     "time": "",
     "voice_actor": 132,
-    "voice_actor_2": -1
-  },
-  "901130": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.213,
-          1.217,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.321,
-          1.034,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0.054,
-          0.027,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.152,
-          1.055,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "空想级驱逐舰—不屈",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 5,
-    "id": 901130,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "不屈",
-    "painting": "buqu",
-    "prefab": "buqu",
-    "rarity_bg": "",
-    "ship_group": 90113,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.499,
-              2.186,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": 325,
-    "voice_actor_2": -1
-  },
-  "901131": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          1.537,
-          1.095,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          1.511,
-          1.041,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0.054,
-          0.027,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          1.233,
-          0.994,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "身为堂堂骄傲的教廷骑士，居然要扮演一个手无寸铁的柔弱少女……你说为什么现在躺在这里——因为恶毒说，要这样才能找到“柔弱少女”的感觉……",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 1,
-    "gyro": 0,
-    "hand_id": 5,
-    "id": 901131,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "“小红帽”的烦恼",
-    "painting": "buqu_2",
-    "prefab": "buqu_2",
-    "rarity_bg": "",
-    "ship_group": 90113,
-    "ship_l2d_id": "",
-    "shop_id": 70709,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.499,
-              2.26,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      2
-    ],
-    "time": "",
-    "voice_actor": 325,
     "voice_actor_2": -1
   },
   "902010": {
@@ -179088,122 +177661,6 @@
             [
               -0.498,
               2.252,
-              0
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      2
-    ],
-    "time": "",
-    "voice_actor": 142,
-    "voice_actor_2": -1
-  },
-  "903022": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "antiaircraft": [
-        [
-          0.693,
-          1.042,
-          0
-        ]
-      ],
-      "cannon": [
-        [
-          0.705,
-          1.022,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0.019,
-          0
-        ]
-      ],
-      "vicegun": [
-        [
-          0.971,
-          0.85,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "来的不是爱丽丝，而是指挥官啊。你也是来反抗我的么？这样的话，就不得不审判你了呢…——怎么样，我的演技如何？呵呵~",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 2,
-    "gyro": 0,
-    "hand_id": 1,
-    "id": 903022,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "红桃皇后的审判",
-    "painting": "aerjiliya_3",
-    "prefab": "aerjiliya_3",
-    "rarity_bg": "",
-    "ship_group": 90302,
-    "ship_l2d_id": "",
-    "shop_id": 70714,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.498,
-              0.676,
               0
             ]
           ]
@@ -180198,222 +178655,6 @@
     "tag": [],
     "time": "",
     "voice_actor": 98,
-    "voice_actor_2": -1
-  },
-  "907010": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "cannon": [
-        [
-          1.268,
-          1.035,
-          0
-        ]
-      ],
-      "plane": [
-        [
-          1.312,
-          1.223,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "霞飞级航空母舰—霞飞",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 0,
-    "gyro": 0,
-    "hand_id": 13,
-    "id": 907010,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "霞飞",
-    "painting": "xiafei",
-    "prefab": "xiafei",
-    "rarity_bg": "",
-    "ship_group": 90701,
-    "ship_l2d_id": "",
-    "shop_id": 0,
-    "shop_type_id": 0,
-    "show_skin": "stand",
-    "skin_type": -1,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.422,
-              2.117,
-              -1.85
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [],
-    "time": "",
-    "voice_actor": 187,
-    "voice_actor_2": -1
-  },
-  "907011": {
-    "air_bomb_skin": "",
-    "air_bullet_skin": "",
-    "air_torpedo_skin": "",
-    "aircraft_skin": "",
-    "bg": "158",
-    "bg_sp": "",
-    "bgm": "",
-    "bound_bone": {
-      "cannon": [
-        [
-          1.268,
-          0.995,
-          0
-        ]
-      ],
-      "plane": [
-        [
-          1.129,
-          1.054,
-          0
-        ]
-      ],
-      "torpedo": [
-        [
-          0,
-          0,
-          0
-        ]
-      ]
-    },
-    "bullet_skin_main": "",
-    "bullet_skin_secondary": "",
-    "desc": "打算把我从这里救出来吗？那么，你做好接吻的准备了吗，指挥官？虽然我醒着，嗯……这算是一种仪式吧？",
-    "fx_container": [
-      [
-        0,
-        1.99185,
-        1.15
-      ],
-      [
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0.75,
-        -1.299
-      ],
-      [
-        0,
-        0,
-        0
-      ]
-    ],
-    "group_index": 1,
-    "gyro": 0,
-    "hand_id": 13,
-    "id": 907011,
-    "illustrator": -1,
-    "illustrator2": -1,
-    "l2d_animations": "",
-    "l2d_ignore_drag": 0,
-    "l2d_para_range": "",
-    "l2d_se": "",
-    "l2d_voice_calibrate": "",
-    "lip_smoothing": 0,
-    "lip_sync_gain": 0,
-    "live2d_offset": [
-      0,
-      0,
-      0
-    ],
-    "main_UI_FX": "",
-    "name": "笼中的白雪公主",
-    "painting": "xiafei_2",
-    "prefab": "xiafei_2",
-    "rarity_bg": "",
-    "ship_group": 90701,
-    "ship_l2d_id": "",
-    "shop_id": 70711,
-    "shop_type_id": 19,
-    "show_skin": "stand",
-    "skin_type": 4,
-    "smoke": [
-      [
-        50,
-        [
-          [
-            "smoke",
-            [
-              -0.482,
-              2.205,
-              -1.85
-            ]
-          ]
-        ]
-      ]
-    ],
-    "special_effects": "",
-    "spine_offset": "",
-    "tag": [
-      2
-    ],
-    "time": "",
-    "voice_actor": 187,
     "voice_actor_2": -1
   },
   "999010": {
@@ -182589,7 +180830,7 @@
     "ship_group": 1010005,
     "ship_l2d_id": "",
     "shop_id": 70038,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -182805,7 +181046,7 @@
     "ship_group": 1010006,
     "ship_l2d_id": "",
     "shop_id": 70039,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -183021,7 +181262,7 @@
     "ship_group": 1010007,
     "ship_l2d_id": "",
     "shop_id": 70040,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -183237,7 +181478,7 @@
     "ship_group": 1010008,
     "ship_l2d_id": "",
     "shop_id": 70041,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -183667,7 +181908,7 @@
     "ship_group": 1030001,
     "ship_l2d_id": "",
     "shop_id": 70118,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -183883,7 +182124,7 @@
     "ship_group": 1030002,
     "ship_l2d_id": "",
     "shop_id": 70119,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -184099,7 +182340,7 @@
     "ship_group": 1030003,
     "ship_l2d_id": "",
     "shop_id": 70122,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -184315,7 +182556,7 @@
     "ship_group": 1030004,
     "ship_l2d_id": "",
     "shop_id": 70120,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -184531,7 +182772,7 @@
     "ship_group": 1030005,
     "ship_l2d_id": "",
     "shop_id": 70121,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -184747,7 +182988,7 @@
     "ship_group": 1030006,
     "ship_l2d_id": "",
     "shop_id": 70123,
-    "shop_type_id": 9999,
+    "shop_type_id": 0,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -185951,7 +184192,7 @@
     "ship_group": 1050003,
     "ship_l2d_id": "",
     "shop_id": 70269,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -186168,7 +184409,7 @@
     "ship_group": 1050004,
     "ship_l2d_id": "",
     "shop_id": 70268,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -186602,7 +184843,7 @@
     "ship_group": 1050006,
     "ship_l2d_id": "",
     "shop_id": 70273,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [
@@ -190431,7 +188672,7 @@
     "ship_group": 1080002,
     "ship_l2d_id": "",
     "shop_id": 70617,
-    "shop_type_id": 20,
+    "shop_type_id": 9,
     "show_skin": "stand",
     "skin_type": 4,
     "smoke": [

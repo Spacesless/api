@@ -143,6 +143,16 @@
     "remark": "Candy Maid"
   },
   {
+    "name": "埃尔宾",
+    "value": "aierbin",
+    "remark": "埃尔宾"
+  },
+  {
+    "name": "埃尔宾",
+    "value": "aierbin_2",
+    "remark": "幻梦的普洛塞庇娜"
+  },
+  {
     "name": "埃尔德里奇",
     "value": "aierdeliqi",
     "remark": "埃尔德里奇"
@@ -213,6 +223,11 @@
     "remark": "埃吉尔"
   },
   {
+    "name": "埃吉尔",
+    "value": "aijier_2",
+    "remark": "港区的龙女仆"
+  },
+  {
     "name": "埃克塞特",
     "value": "aikesaite",
     "remark": "埃克塞特"
@@ -261,6 +276,16 @@
     "name": "埃米尔·贝尔汀",
     "value": "aimierbeierding_g",
     "remark": "埃米尔·贝尔汀.改"
+  },
+  {
+    "name": "埃姆登",
+    "value": "aimudeng",
+    "remark": "埃姆登"
+  },
+  {
+    "name": "埃姆登",
+    "value": "aimudeng_2",
+    "remark": "黑白的夜之主"
   },
   {
     "name": "埃塞克斯",
@@ -874,6 +899,11 @@
     "remark": "古堡奇谈"
   },
   {
+    "name": "博伊西",
+    "value": "boyixi_4",
+    "remark": "翠玉的海人鱼"
+  },
+  {
     "name": "布莱默顿",
     "value": "bulaimodun",
     "remark": "布莱默顿"
@@ -912,6 +942,16 @@
     "name": "布鲁克林",
     "value": "bulukelin",
     "remark": "布鲁克林"
+  },
+  {
+    "name": "不挠",
+    "value": "bunao",
+    "remark": "不挠"
+  },
+  {
+    "name": "不挠",
+    "value": "bunao_2",
+    "remark": "没干劲的女仆小姐"
   },
   {
     "name": "布什",
@@ -979,6 +1019,11 @@
     "name": "柴郡",
     "value": "chaijun_4",
     "remark": "冰雪公主"
+  },
+  {
+    "name": "小柴郡",
+    "value": "chaijun_younv",
+    "remark": "小柴郡"
   },
   {
     "name": "长波",
@@ -1449,6 +1494,11 @@
   },
   {
     "name": "独角兽",
+    "value": "dujiaoshou_g",
+    "remark": "独角兽·改"
+  },
+  {
+    "name": "独角兽",
     "value": "dujiaoshou_h",
     "remark": "梦想的纯白誓约"
   },
@@ -1558,6 +1608,11 @@
     "remark": "反击"
   },
   {
+    "name": "反击·META",
+    "value": "fanji_alter",
+    "remark": "反击·META"
+  },
+  {
     "name": "斐济",
     "value": "feiji",
     "remark": "斐济"
@@ -1632,6 +1687,16 @@
     "remark": "放学后的悠扬"
   },
   {
+    "name": "复仇",
+    "value": "fuchou",
+    "remark": "复仇"
+  },
+  {
+    "name": "复仇",
+    "value": "fuchou_2",
+    "remark": "进击的冒失女仆"
+  },
+  {
     "name": "福尔班",
     "value": "fuerban",
     "remark": "福尔班"
@@ -1655,6 +1720,11 @@
     "name": "福尔班",
     "value": "fuerban_g",
     "remark": "福尔班.改"
+  },
+  {
+    "name": "福尔班",
+    "value": "fuerban_h",
+    "remark": "誓约的神圣花束"
   },
   {
     "name": "伏尔加",
@@ -2094,6 +2164,11 @@
     "remark": "Cookie·Maid·Princess"
   },
   {
+    "name": "豪",
+    "value": "hao_5",
+    "remark": "奢华之夜宴"
+  },
+  {
     "name": "涅普顿",
     "value": "HDN101",
     "remark": "涅普顿"
@@ -2277,6 +2352,11 @@
     "remark": "新年的守护者"
   },
   {
+    "name": "皇家方舟",
+    "value": "huangjiafangzhou_5",
+    "remark": "咖啡馆的观察约会？"
+  },
+  {
     "name": "皇家方舟·META",
     "value": "huangjiafangzhou_alter",
     "remark": "皇家方舟·META"
@@ -2295,6 +2375,11 @@
     "name": "华盛顿",
     "value": "huashengdun",
     "remark": "华盛顿"
+  },
+  {
+    "name": "华盛顿",
+    "value": "huashengdun_2",
+    "remark": "微笑嘉年华"
   },
   {
     "name": "花月",
@@ -2604,6 +2689,16 @@
     "remark": "加斯科涅(μ兵装)"
   },
   {
+    "name": "贾维斯",
+    "value": "jiaweisi",
+    "remark": "贾维斯"
+  },
+  {
+    "name": "贾维斯",
+    "value": "jiaweisi_2",
+    "remark": "青空下的微风"
+  },
+  {
     "name": "杰金斯",
     "value": "jiejinsi",
     "remark": "杰金斯"
@@ -2881,6 +2976,11 @@
     "name": "可怖",
     "value": "kebu",
     "remark": "可怖"
+  },
+  {
+    "name": "可怖",
+    "value": "kebu_2",
+    "remark": "阳光、大海、圣洁之青"
   },
   {
     "name": "可怖",
@@ -3190,6 +3290,11 @@
     "name": "勒马尔",
     "value": "lemaer_3",
     "remark": "闪耀的幸福学园"
+  },
+  {
+    "name": "勒马尔",
+    "value": "lemaer_4",
+    "remark": "华丽的宴会登场"
   },
   {
     "name": "勒马尔",
@@ -3505,6 +3610,11 @@
     "remark": "暗红色的微笑"
   },
   {
+    "name": "罗恩",
+    "value": "luoen_4",
+    "remark": "苍翠的安眠曲"
+  },
+  {
     "name": "罗恩(μ兵装)",
     "value": "luoen_idol",
     "remark": "罗恩(μ兵装)"
@@ -3538,6 +3648,16 @@
     "name": "秋月律子",
     "value": "lvzi_2",
     "remark": "盛夏时光·乒乓对决"
+  },
+  {
+    "name": "吕佐夫",
+    "value": "lvzuofu",
+    "remark": "吕佐夫"
+  },
+  {
+    "name": "吕佐夫",
+    "value": "lvzuofu_2",
+    "remark": "永夜的赤之贵族"
   },
   {
     "name": "马布尔黑德",
@@ -3703,6 +3823,11 @@
     "remark": "课间的微风"
   },
   {
+    "name": "孟菲斯·META",
+    "value": "mengfeisi_alter",
+    "remark": "孟菲斯·META"
+  },
+  {
     "name": "南梦芽",
     "value": "mengya",
     "remark": "南梦芽"
@@ -3865,6 +3990,11 @@
     "name": "纳尔逊",
     "value": "naerxun_2",
     "remark": "月之魔女"
+  },
+  {
+    "name": "纳尔逊",
+    "value": "naerxun_3",
+    "remark": "蓝金的夏夜之光"
   },
   {
     "name": "奈美子",
@@ -4119,8 +4249,18 @@
   },
   {
     "name": "欧根亲王",
+    "value": "ougen_6",
+    "remark": "沉醉于夜"
+  },
+  {
+    "name": "欧根亲王",
     "value": "ougen_h",
     "remark": "命运交响曲"
+  },
+  {
+    "name": "小欧根",
+    "value": "ougen_younv",
+    "remark": "小欧根"
   },
   {
     "name": "欧若拉",
@@ -4271,6 +4411,11 @@
     "remark": "白骑兵的假日"
   },
   {
+    "name": "恰巴耶夫",
+    "value": "qiabayefu_4",
+    "remark": "夏夜青蓝"
+  },
+  {
     "name": "新条茜",
     "value": "qian",
     "remark": "新条茜"
@@ -4302,6 +4447,21 @@
     "name": "千岁",
     "value": "qiansui_2",
     "remark": "夏阳璀璨之日"
+  },
+  {
+    "name": "千岁",
+    "value": "qiansui_3",
+    "remark": "水墨丽色"
+  },
+  {
+    "name": "前卫",
+    "value": "qianwei",
+    "remark": "前卫"
+  },
+  {
+    "name": "前卫",
+    "value": "qianwei_2",
+    "remark": "摇摆不定的伪装"
   },
   {
     "name": "如月千早",
@@ -4556,6 +4716,16 @@
     "remark": "萨福克.改"
   },
   {
+    "name": "塞德利茨",
+    "value": "saidelici",
+    "remark": "塞德利茨"
+  },
+  {
+    "name": "塞德利茨",
+    "value": "saidelici_4",
+    "remark": "黯灭之系谱"
+  },
+  {
     "name": "萨拉娜",
     "value": "salana",
     "remark": "萨拉娜"
@@ -4614,6 +4784,11 @@
     "name": "萨拉托加",
     "value": "salatuojia_g",
     "remark": "萨拉托加.改"
+  },
+  {
+    "name": "萨拉托加",
+    "value": "salatuojia_h",
+    "remark": "敲响幸福之钟"
   },
   {
     "name": "三笠",
@@ -4989,6 +5164,16 @@
     "remark": "斯坦利"
   },
   {
+    "name": "司战女神",
+    "value": "sizhannvshen",
+    "remark": "司战女神"
+  },
+  {
+    "name": "司战女神",
+    "value": "sizhannvshen_2",
+    "remark": "女仆的战斗体验"
+  },
+  {
     "name": "松风",
     "value": "songfeng"
   },
@@ -5219,6 +5404,11 @@
     "remark": "松之节句、白之冰华"
   },
   {
+    "name": "提尔比茨",
+    "value": "tierbici_5",
+    "remark": "独秀的冰华"
+  },
+  {
     "name": "提康德罗加",
     "value": "tikangdeluojia"
   },
@@ -5236,6 +5426,16 @@
     "name": "突击者",
     "value": "tujizhe_g",
     "remark": "突击者.改"
+  },
+  {
+    "name": "图林根",
+    "value": "tulingen",
+    "remark": "图林根"
+  },
+  {
+    "name": "图林根",
+    "value": "tulingen_2",
+    "remark": "月下的大清扫"
   },
   {
     "name": "托里拆利",
@@ -5340,6 +5540,11 @@
     "name": "U-47",
     "value": "u47_4",
     "remark": "女仆极速达"
+  },
+  {
+    "name": "U-47",
+    "value": "U47_5",
+    "remark": "赤月下的慵懒"
   },
   {
     "name": "U-522",
@@ -5550,6 +5755,11 @@
     "name": "威严",
     "value": "weiyan_4",
     "remark": "突袭！暗黑基地！"
+  },
+  {
+    "name": "威严",
+    "value": "weiyan_5",
+    "remark": "别样的品茶时光"
   },
   {
     "name": "文琴佐·焦贝蒂",
@@ -5842,6 +6052,11 @@
     "remark": "驯鹿忍者派送中！"
   },
   {
+    "name": "晓",
+    "value": "xiao_5",
+    "remark": "压轴！忍者戏法！"
+  },
+  {
     "name": "霞",
     "value": "xia_2",
     "remark": "新年暖洋洋"
@@ -5895,6 +6110,11 @@
     "name": "谢菲尔德",
     "value": "xiefeierde_4",
     "remark": "黑鸦的晚宴"
+  },
+  {
+    "name": "谢菲尔德",
+    "value": "xiefeierde_5",
+    "remark": "BulletBorne"
   },
   {
     "name": "谢菲尔德(μ兵装)",
@@ -6037,6 +6257,11 @@
     "remark": "跃动的舞台时间！"
   },
   {
+    "name": "新泽西",
+    "value": "xinzexi_h",
+    "remark": "白雪之仪"
+  },
+  {
     "name": "熊野",
     "value": "xiongye"
   },
@@ -6054,6 +6279,11 @@
     "name": "希佩尔海军上将",
     "value": "xipeierhaijunshangjiang",
     "remark": "希佩尔海军上将"
+  },
+  {
+    "name": "希佩尔海军上将",
+    "value": "xipeierhaijunshangjiang_3",
+    "remark": "阳光下的温泉街"
   },
   {
     "name": "希佩尔海军上将(μ兵装)",
@@ -6509,6 +6739,16 @@
     "name": "约克",
     "value": "yueke_g",
     "remark": "约克.改"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_ger",
+    "remark": "约克"
+  },
+  {
+    "name": "约克",
+    "value": "yueke_ger_2",
+    "remark": "朱月的破坏者"
   },
   {
     "name": "约克",
