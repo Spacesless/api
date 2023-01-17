@@ -7,7 +7,7 @@ module.exports = class extends Base {
   async indexAction() {
     const { keyword } = this.get();
 
-    const list = await this.mongo('postalcode')
+    const list = await this.mongo('license')
       .where({
         $or: [
           {
