@@ -2,12 +2,9 @@ const Base = require('./base');
 const path = require('path');
 const fs = require('fs-extra');
 
-module.exports = class extends Base {
-  constructor(...arg) {
-    super(...arg);
-    this.basePath = path.join(think.ASSETS_PATH, 'bangumi');
-  }
+const basePath = path.join(think.ASSETS_PATH, 'bangumi');
 
+module.exports = class extends Base {
   /**
    * 根据年、月、标题(翻译标题)查找番组信息
    * @see https://github.com/bangumi-data/bangumi-data 数据来源
@@ -15,7 +12,7 @@ module.exports = class extends Base {
   async indexAction() {
     const { year, month, title } = this.get();
 
-    const readJsonContent = await fs.readJson(path.join(this.basePath, 'data.json'));
+    const readJsonContent = await fs.readJson(path.join(basePath, 'data.json'));
     const bangumis = readJsonContent ? readJsonContent.items : [];
     const data = bangumis.filter(item => {
       let includeYear = true; // 默认不进行筛选

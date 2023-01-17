@@ -2,12 +2,9 @@ const Base = require('./base');
 const path = require('path');
 const fs = require('fs-extra');
 
-module.exports = class extends Base {
-  constructor(...arg) {
-    super(...arg);
-    this.baseUrl = path.join(think.ASSETS_PATH, 'cascade');
-  }
+const basePath = path.join(think.ASSETS_PATH, 'cascade');
 
+module.exports = class extends Base {
   /**
    * 根据联动等级获取级联数据
    * @summary level {2 省-地,}
@@ -17,13 +14,13 @@ module.exports = class extends Base {
     let data = [];
     switch (+level) {
       case 2:
-        data = await fs.readJson(path.join(this.baseUrl, 'pc-code.json'));
+        data = await fs.readJson(path.join(basePath, 'pc-code.json'));
         break;
       case 3:
-        data = await fs.readJson(path.join(this.baseUrl, 'pca-code.json'));
+        data = await fs.readJson(path.join(basePath, 'pca-code.json'));
         break;
       case 4:
-        data = await fs.readJson(path.join(this.baseUrl, 'pcas-code.json'));
+        data = await fs.readJson(path.join(basePath, 'pcas-code.json'));
         break;
     }
     return this.success(data);
@@ -39,18 +36,18 @@ module.exports = class extends Base {
     let data = [];
     switch (code.length) {
       case 0:
-        data = await fs.readJson(path.join(this.baseUrl, 'provinces.json'));
+        data = await fs.readJson(path.join(basePath, 'provinces.json'));
         break;
       case 2:
-        const cities = await fs.readJson(path.join(this.baseUrl, 'cities.json'));
+        const cities = await fs.readJson(path.join(basePath, 'cities.json'));
         data = cities.filter(item => item.provinceCode === code);
         break;
       case 4:
-        const areas = await fs.readJson(path.join(this.baseUrl, 'areas.json'));
+        const areas = await fs.readJson(path.join(basePath, 'areas.json'));
         data = areas.filter(item => item.cityCode === code);
         break;
       case 6:
-        const streets = await fs.readJson(path.join(this.baseUrl, 'streets.json'));
+        const streets = await fs.readJson(path.join(basePath, 'streets.json'));
         data = streets.filter(item => item.areaCode === code);
         break;
     }
@@ -63,7 +60,7 @@ module.exports = class extends Base {
   async searchAction() {
     const { keyword, keepParent } = this.get();
     let data = [];
-    const relationship = await fs.readJson(path.join(this.baseUrl, 'pcas-code.json'));
+    const relationship = await fs.readJson(path.join(basePath, 'pcas-code.json'));
     if (keepParent === 'true' || keepParent === '1') {
       data = this.filterNodesDeep(relationship, node => node.name.indexOf(keyword) === 0);
     } else {

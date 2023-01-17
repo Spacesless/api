@@ -7,6 +7,7 @@ module.exports = class extends Base {
   async indexAction() {
     const JSONpath = path.join(this.basePath, 'models.json');
     const modelJson = await fs.readJson(JSONpath);
+
     const modelLists = [];
     for (const item of modelJson) {
       const { id, name, children } = item;
@@ -30,6 +31,7 @@ module.exports = class extends Base {
       }
       modelLists.push({ id, name, children: temp });
     }
+
     return this.success(modelLists);
   }
 };

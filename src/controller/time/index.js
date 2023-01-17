@@ -1,4 +1,4 @@
-const Base = require('./base');
+const Base = require('../base');
 const { Solar, Lunar, SolarUtil, LunarUtil, LunarYear } = require('lunar-javascript');
 
 // http://6tail.cn/calendar/api.html
