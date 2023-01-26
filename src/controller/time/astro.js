@@ -5,15 +5,16 @@ const moment = require('moment');
 
 module.exports = class extends Base {
   async indexAction() {
-    const { keyword } = this.get();
+    let { keyword } = this.get();
+    keyword = keyword || new Date();
 
     const readJsonContent = await fs.readJson(path.join(think.ASSETS_PATH, 'xing-zuo.json'));
     const { role, monthRange } = readJsonContent || {};
 
     let result = {};
     let key = '';
-    const isTimeOrEmpty = think.isEmpty(keyword) || (isNaN(keyword) && !isNaN(Date.parse(keyword)));
-    if (isTimeOrEmpty) {
+    const isTime = !isNaN(Date.parse(keyword));
+    if (isTime) {
       const momentTime = moment(keyword);
       const year = momentTime.year();
       const findRange = monthRange.find(item => {
