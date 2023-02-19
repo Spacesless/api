@@ -31,7 +31,7 @@ module.exports = class extends Base {
    * @summary level: {0: "省级（省份、直辖市、自治区）", 1: "地级（城市）", 2: "县级（区县）", 3: "乡级（乡镇、街道）"}
    * @summary code: 父节点code
    */
-  async getAreaByCodeAction() {
+  async getChildrenAction() {
     const code = this.get('code') || '';
     let data = [];
     switch (code.length) {
