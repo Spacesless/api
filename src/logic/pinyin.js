@@ -10,7 +10,7 @@ module.exports = class extends think.Logic {
         int: { min: 0, max: 5 }
       },
       segment: {
-        int: { min: 1, max: 5 }
+        int: { min: 0, max: 1 }
       },
       heteronym: {
         int: { min: 0, max: 1 }

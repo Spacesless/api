@@ -1,5 +1,5 @@
 const Base = require('../base');
-const { Solar, Lunar, SolarUtil, LunarUtil, LunarYear } = require('lunar-javascript');
+const { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear } = require('lunar-javascript');
 
 // http://6tail.cn/calendar/api.html
 
@@ -22,12 +22,14 @@ module.exports = class extends Base {
 
     const calcTime = datetime ? new Date(datetime) : new Date();
     const solarInstance = Solar.fromDate(calcTime);
+    const solarWeekInstance = SolarWeek.fromDate(calcTime, 1);
     const lunarInstance = solarInstance.getLunar();
 
     // 阳历
     const solarYear = solarInstance.getYear();
     const solarMonth = solarInstance.getMonth();
     const solarWeek = solarInstance.getWeek();
+    const solarDay = solarInstance.getDay();
     const hour = calcTime.getHours();
     const minute = calcTime.getMinutes();
 
@@ -40,11 +42,19 @@ module.exports = class extends Base {
       astro: solarInstance.getXingZuo() + '座', // 星座
       cnWeek: this.weekCnEnum[solarWeek], // 星期（中文）
       enWeek: this.weekEnEnum[solarWeek], // 星期（英文）
-      day: solarInstance.getDay(), // 公历日
+      weekInYear: solarWeekInstance.getIndexInYear(),
+      day: solarDay, // 公历日
+      dayInYear: SolarUtil.getDaysInYear(solarYear, solarMonth, solarDay),
+      julianDay: solarInstance.getJulianDay(),
       hour,
       minute,
       second: calcTime.getSeconds(),
-      festivals: [...solarInstance.getFestivals(), ...solarInstance.getOtherFestivals()] // 公历节日
+      festivals: [
+        ...solarInstance.getFestivals(),
+        ...lunarInstance.getFestivals(),
+        ...solarInstance.getOtherFestivals(),
+        ...lunarInstance.getOtherFestivals()
+      ] // 节日
     };
 
     // 农历
@@ -54,18 +64,17 @@ module.exports = class extends Base {
 
     const lunarYearInstance = LunarYear.fromYear(lunarYear);
 
-    // 计算当月的二十四节气
-    const solarTerms = [];
-    const jieQiList = lunarInstance.getJieQiList();
-    const jieQi = lunarInstance.getJieQiTable();
-    for (let i = 0, j = jieQiList.length; i < j; i++) {
-      let name = jieQiList[i];
-      const time = jieQi[name].toYmdHms();
-      if (jieQi[name].getYear() === solarYear && jieQi[name].getMonth() === solarMonth) {
-        name = this.solarTermEnum[name] || name;
-        solarTerms.push({ name, time });
-      }
+    // 计算当天的二十四节气
+    let solarTerms = {};
+    const jieQi = lunarInstance.getCurrentQi();
+    if (jieQi) {
+      solarTerms = {
+        name: jieQi.getName(),
+        time: jieQi.getSolar().toYmdHms()
+      };
     }
+
+    const shujiu = lunarInstance.getShuJiu();
 
     result.lunar = {
       zodiac: lunarInstance.getYearShengXiao(), // 生肖
@@ -81,51 +90,37 @@ module.exports = class extends Base {
       hour: LunarUtil.convertTime(`${this.formatTwoDigit(hour)}:${this.formatTwoDigit(minute)}`) + '时', // 时辰
       maxDayInMonth: lunarYearInstance.getMonth(lunarMonth)['_p'].dayCount, // 农历当月天数
       leapMonth: lunarYearInstance.getLeapMonth(lunarYear), // 当年闰几月
-      festivals: lunarInstance.getFestivals(), // 农历节日
+      yuexiang: lunarInstance.getYueXiang(), // 月相
+      wuhou: lunarInstance.getWuHou(), // 物候
+      shujiu: shujiu ? shujiu.getName() : '', // 数九
+      sanfu: lunarInstance.getFu() || '', // 三伏
       solarTerms // 二十四节气
     };
 
+    const jiuxing = lunarInstance.getDayNineStar();
+
     // 老黄历
     result.almanac = {
-      yi: {
-        day: lunarInstance.getDayYi().join(' '), // 日宜
-        hour: lunarInstance.getTimeYi().join(' ') // 时宜
-      },
-      ji: {
-        day: lunarInstance.getDayJi().join(' '), // 日忌
-        hour: lunarInstance.getTimeJi().join(' ') // 时忌
-      },
-      chong: {
-        day: '生肖冲' + lunarInstance.getDayChongDesc(), // 日冲
-        hour: '生肖冲' + lunarInstance.getTimeChongDesc() // 时冲
-      },
-      sha: {
-        day: '煞' + lunarInstance.getDaySha(), // 日煞
-        hour: '煞' + lunarInstance.getTimeSha() // 时煞
-      },
+      yi: lunarInstance.getDayYi().join(' '), // 宜,
+      ji: lunarInstance.getDayJi().join(' '), // 忌,
+      chong: '生肖冲' + lunarInstance.getDayChongDesc(), // 冲,
+      sha: '煞' + lunarInstance.getDaySha(), // 煞,
+      nayin: lunarInstance.getDayNaYin(), // 纳音
+      shiershen: lunarInstance.getZhiXing() + '神', // 建除十二执星
       xingxiu: lunarInstance.getXiu() + '宿', // 二十八宿
       zheng: lunarInstance.getZheng(), // 七政
       shou: lunarInstance.getShou(), // 四神兽
       pengzubaiji: [lunarInstance.getPengZuGan(), lunarInstance.getPengZuZhi()], // 彭祖百忌
       jishenfangwei: { // 吉神方位
-        xi: lunarInstance.getDayPositionXiDesc(), // 喜神
-        yanggui: lunarInstance.getDayPositionYangGuiDesc(), // 阳贵神
-        yingui: lunarInstance.getDayPositionYinGuiDesc(), // 阴贵神
-        fu: lunarInstance.getDayPositionFuDesc(), // 福神
-        cai: lunarInstance.getDayPositionCaiDesc() // 财神
+        xi: lunarInstance.getDayPositionXi() + '-' + lunarInstance.getDayPositionXiDesc(), // 喜神
+        yanggui: lunarInstance.getDayPositionYangGui() + '-' + lunarInstance.getDayPositionYangGuiDesc(), // 阳贵神
+        yingui: lunarInstance.getDayPositionYinGui() + '-' + lunarInstance.getDayPositionYinGuiDesc(), // 阴贵神
+        fu: lunarInstance.getDayPositionFu() + '-' + lunarInstance.getDayPositionFuDesc(), // 福神
+        cai: lunarInstance.getDayPositionCai() + '-' + lunarInstance.getDayPositionCaiDesc() // 财神
       },
-      taishen: { // 胎神
-        month: lunarInstance.getMonthPositionTai(),
-        day: lunarInstance.getDayPositionTai()
-      },
-      nayin: { // 纳音
-        year: lunarInstance.getYearNaYin(),
-        month: lunarInstance.getMonthNaYin(),
-        day: lunarInstance.getDayNaYin(),
-        time: lunarInstance.getTimeNaYin()
-      },
-      shiershen: lunarInstance.getZhiXing() + '神', // 建除十二执星
-      festivals: lunarInstance.getOtherFestivals() // 老黄历节日
+      liuyao: lunarInstance.getLiuYao(),
+      jiuxing: jiuxing ? jiuxing.toString() : '',
+      taisui: lunarInstance.getDayPositionTaiSui() + '-' + lunarInstance.getDayPositionTaiSuiDesc()
     };
 
     return this.success(result);
@@ -202,8 +197,9 @@ module.exports = class extends Base {
   /**
    * 格式化成两位数
    * @param {Number} val
+   * @returns {String}
    */
   formatTwoDigit(val) {
-    return val < 10 ? '0' + val : val;
+    return val.toString().padEnd(2, '0');
   }
 };
