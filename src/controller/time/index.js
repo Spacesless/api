@@ -66,7 +66,7 @@ module.exports = class extends Base {
 
     // 计算当天的二十四节气
     let solarTerms = {};
-    const jieQi = lunarInstance.getCurrentQi();
+    const jieQi = lunarInstance.getCurrentJieQi();
     if (jieQi) {
       solarTerms = {
         name: jieQi.getName(),
