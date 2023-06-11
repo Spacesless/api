@@ -5,12 +5,14 @@ module.exports = class extends Base {
   // 个人信息
   async infoAction() {
     const mid = this.get('mid');
-    await axios.get('https://api.bilibili.com/x/space/acc/info', {
-      headers: {
-        origin: 'https://space.bilibili.com'
-      },
+    await axios.get('https://api.bilibili.com/x/space/wbi/acc/info', {
       params: {
-        mid
+        mid,
+        token: '',
+        platform: 'web',
+        web_location: 1550101,
+        w_rid: '4c6c994b0e424c72232aab8e2fe5ca56',
+        wts: 1686361415
       }
     }).then(response => {
       const info = response.data.data || {};
