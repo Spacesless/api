@@ -28,6 +28,7 @@ runtime/
 app/
 
 www/azurlane-assets/spine
+www/live2d-assets
 config/adapter.model.js
 config.development.js
 adapter.development.js

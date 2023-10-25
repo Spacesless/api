@@ -200,6 +200,6 @@ module.exports = class extends Base {
    * @returns {String}
    */
   formatTwoDigit(val) {
-    return val.toString().padEnd(2, '0');
+    return val.toString().padStart(2, '0');
   }
 };
