@@ -2,7 +2,7 @@ const Base = require('./base');
 
 module.exports = class extends Base {
   async indexAction() {
-    const { wd } = this.get();
+    const { wd, page, pageSize } = this.get();
 
     let list = [];
     const where = {
@@ -13,7 +13,8 @@ module.exports = class extends Base {
 
     list = await this.mongo('idiom')
       .where(where)
-      .select();
+      .page(page, pageSize)
+      .countSelect();
 
     return this.success(list);
   }

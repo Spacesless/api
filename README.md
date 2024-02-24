@@ -9,9 +9,11 @@
 - 垃圾分类 (可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾, 基于[https://github.com/alexayan/garbage-classification-data](https://github.com/alexayan/garbage-classification-data))
 - 中国邮政编码
 - 中国车牌号及其简称
+- 成语大全、成语接龙
+- 等等
 
 ## Documenet
-文档先看swagger吧 :tw-1f60b:
+Api文档看这吧
 [https://api.timelessq.com](https://api.timelessq.com)
 
 ## 快速开始
