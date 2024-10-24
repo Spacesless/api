@@ -7,10 +7,10 @@ module.exports = class extends Base {
   async __before() {
     super.__before();
     this.basePath = path.join(think.ASSETS_PATH, 'live2d-assets');
-    this.modelLists = await this.getModelList();
-
     // 是否使用cdn加速，需客户端live2d支持http协议
-    this.isuseCDN = this.get('isuseCDN') === 'true';
+    this.isuseCDN = this.get('isuseCDN');
+
+    this.modelLists = await this.getModelList();
   }
 
   // 获取模型列表
@@ -35,7 +35,7 @@ module.exports = class extends Base {
    * @param {String} suffix
    */
   getAbsolutePath(prefix, suffix = '') {
-    const targetPrefix = this.isuseCDN ? `${this.CDNDomain}/live2d-assets` : '../live2d-assets';
+    const targetPrefix = this.isuseCDN ? `//cos.timelessq.com/live2d-assets` : '../live2d-assets';
     const relative = url.resolve(prefix.replace(this.basePath, targetPrefix) + '/', suffix);
     return relative;
   }

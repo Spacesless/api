@@ -14,7 +14,7 @@ module.exports = class extends Base {
     const { id, isuseCDN } = this.get();
     const sdPath = path.join(this.basePath, 'spine', id);
     if (think.isExist(sdPath)) {
-      const prefix = isuseCDN === 'true' ? this.CDNDomain : this.ctx.origin.replace(/http:|https:/, '');
+      const prefix = isuseCDN ? '//cos.timelessq.com' : this.ctx.origin.replace(/http:|https:/, '');
       const binaryPath = path.join(sdPath, `${id}.skel`);
       const jsonPath = path.join(sdPath, `${id}.json`);
       const atlasPath = path.join(sdPath, `${id}.atlas`);
