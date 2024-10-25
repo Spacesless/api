@@ -1,0 +1,1394 @@
+[
+  {
+    "englishName": "Afghanistan",
+    "name": "阿富汗",
+    "countryCode": "AF",
+    "phoneCode": "93"
+  },
+  {
+    "englishName": "Alaska",
+    "name": "阿拉斯加",
+    "countryCode": "US",
+    "phoneCode": "1907"
+  },
+  {
+    "englishName": "Albania",
+    "name": "阿尔巴尼亚",
+    "countryCode": "AL",
+    "phoneCode": "355"
+  },
+  {
+    "englishName": "Algeria",
+    "name": "阿尔及利亚",
+    "countryCode": "DZ",
+    "phoneCode": "213"
+  },
+  {
+    "englishName": "American Samoa",
+    "name": "美属萨摩亚",
+    "countryCode": "AS",
+    "phoneCode": "1684"
+  },
+  {
+    "englishName": "Andorra",
+    "name": "安道尔",
+    "countryCode": "AD",
+    "phoneCode": "376"
+  },
+  {
+    "englishName": "Angola",
+    "name": "安哥拉",
+    "countryCode": "AO",
+    "phoneCode": "244"
+  },
+  {
+    "englishName": "Anguilla",
+    "name": "安圭拉",
+    "countryCode": "AI",
+    "phoneCode": "1264"
+  },
+  {
+    "englishName": "Antigua and Barbuda",
+    "name": "安提瓜和巴布达",
+    "countryCode": "AG",
+    "phoneCode": "1268"
+  },
+  {
+    "englishName": "Argentina",
+    "name": "阿根廷",
+    "countryCode": "AR",
+    "phoneCode": "54"
+  },
+  {
+    "englishName": "Armenia",
+    "name": "亚美尼亚",
+    "countryCode": "AM",
+    "phoneCode": "374"
+  },
+  {
+    "englishName": "Aruba",
+    "name": "阿鲁巴",
+    "countryCode": "AW",
+    "phoneCode": "297"
+  },
+  {
+    "englishName": "Ascension",
+    "name": "阿森松",
+    "countryCode": "SH",
+    "phoneCode": "247"
+  },
+  {
+    "englishName": "Australia",
+    "name": "澳大利亚",
+    "countryCode": "AU",
+    "phoneCode": "61"
+  },
+  {
+    "englishName": "Austria",
+    "name": "奥地利",
+    "countryCode": "AT",
+    "phoneCode": "43"
+  },
+  {
+    "englishName": "Azerbaijan",
+    "name": "阿塞拜疆",
+    "countryCode": "AZ",
+    "phoneCode": "994"
+  },
+  {
+    "englishName": "Bahamas",
+    "name": "巴哈马",
+    "countryCode": "BS",
+    "phoneCode": "1242"
+  },
+  {
+    "englishName": "Bahrain",
+    "name": "巴林",
+    "countryCode": "BH",
+    "phoneCode": "973"
+  },
+  {
+    "englishName": "Bangladesh",
+    "name": "孟加拉国",
+    "countryCode": "BD",
+    "phoneCode": "880"
+  },
+  {
+    "englishName": "Barbados",
+    "name": "巴巴多斯",
+    "countryCode": "BB",
+    "phoneCode": "1246"
+  },
+  {
+    "englishName": "Belarus",
+    "name": "白俄罗斯",
+    "countryCode": "BY",
+    "phoneCode": "375"
+  },
+  {
+    "englishName": "Belgium",
+    "name": "比利时",
+    "countryCode": "BE",
+    "phoneCode": "32"
+  },
+  {
+    "englishName": "Belize",
+    "name": "伯利兹",
+    "countryCode": "BZ",
+    "phoneCode": "501"
+  },
+  {
+    "englishName": "Benin",
+    "name": "贝宁",
+    "countryCode": "BJ",
+    "phoneCode": "229"
+  },
+  {
+    "englishName": "Bermuda",
+    "name": "百慕大群岛",
+    "countryCode": "BM",
+    "phoneCode": "1441"
+  },
+  {
+    "englishName": "Bhutan",
+    "name": "不丹",
+    "countryCode": "BT",
+    "phoneCode": "975"
+  },
+  {
+    "englishName": "Bolivia",
+    "name": "玻利维亚",
+    "countryCode": "BO",
+    "phoneCode": "591"
+  },
+  {
+    "englishName": "Bosnia and Herzegovina",
+    "name": "波斯尼亚和黑塞哥维那",
+    "countryCode": "BA",
+    "phoneCode": "387"
+  },
+  {
+    "englishName": "Botswana",
+    "name": "博茨瓦纳",
+    "countryCode": "BW",
+    "phoneCode": "267"
+  },
+  {
+    "englishName": "Brazil",
+    "name": "巴西",
+    "countryCode": "BR",
+    "phoneCode": "55"
+  },
+  {
+    "englishName": "Brunei",
+    "name": "文莱",
+    "countryCode": "BN",
+    "phoneCode": "673"
+  },
+  {
+    "englishName": "Bulgaria",
+    "name": "保加利亚",
+    "countryCode": "BG",
+    "phoneCode": "359"
+  },
+  {
+    "englishName": "Burkina Faso",
+    "name": "布基纳法索",
+    "countryCode": "BF",
+    "phoneCode": "226"
+  },
+  {
+    "englishName": "Burundi",
+    "name": "布隆迪",
+    "countryCode": "BI",
+    "phoneCode": "257"
+  },
+  {
+    "englishName": "Cambodia",
+    "name": "柬埔寨",
+    "countryCode": "KH",
+    "phoneCode": "855"
+  },
+  {
+    "englishName": "Cameroon",
+    "name": "喀麦隆",
+    "countryCode": "CM",
+    "phoneCode": "237"
+  },
+  {
+    "englishName": "Canada",
+    "name": "加拿大",
+    "countryCode": "CA",
+    "phoneCode": "1"
+  },
+  {
+    "englishName": "Islas Canarias",
+    "name": "加那利群岛",
+    "countryCode": "ES",
+    "phoneCode": "34"
+  },
+  {
+    "englishName": "Cape Verde",
+    "name": "开普",
+    "countryCode": "CV",
+    "phoneCode": "238"
+  },
+  {
+    "englishName": "Cayman Islands",
+    "name": "开曼群岛",
+    "countryCode": "KY",
+    "phoneCode": "1345"
+  },
+  {
+    "englishName": "Central African Republic",
+    "name": "中非共和国",
+    "countryCode": "CF",
+    "phoneCode": "236"
+  },
+  {
+    "englishName": "Chad",
+    "name": "乍得",
+    "countryCode": "TD",
+    "phoneCode": "235"
+  },
+  {
+    "englishName": "China",
+    "name": "中国",
+    "countryCode": "CN",
+    "phoneCode": "86"
+  },
+  {
+    "englishName": "Chile",
+    "name": "智利",
+    "countryCode": "CL",
+    "phoneCode": "56"
+  },
+  {
+    "englishName": "Christmas Island",
+    "name": "圣诞岛",
+    "countryCode": "CX",
+    "phoneCode": "0061 9164"
+  },
+  {
+    "englishName": "Cocos Island",
+    "name": "科科斯岛",
+    "countryCode": "CC",
+    "phoneCode": "0061 9162"
+  },
+  {
+    "englishName": "Colombia",
+    "name": "哥伦比亚",
+    "countryCode": "CO",
+    "phoneCode": "57"
+  },
+  {
+    "englishName": "Comoros",
+    "name": "科摩罗",
+    "countryCode": "KM",
+    "phoneCode": "269"
+  },
+  {
+    "englishName": "Republic Of The Congo",
+    "name": "刚果共和国",
+    "countryCode": "CG",
+    "phoneCode": "242"
+  },
+  {
+    "englishName": "Cook Islands",
+    "name": "库克群岛",
+    "countryCode": "CK",
+    "phoneCode": "682"
+  },
+  {
+    "englishName": "Costa Rica",
+    "name": "哥斯达黎加",
+    "countryCode": "CR",
+    "phoneCode": "506"
+  },
+  {
+    "englishName": "Croatia",
+    "name": "克罗地亚",
+    "countryCode": "HR",
+    "phoneCode": "385"
+  },
+  {
+    "englishName": "Cuba",
+    "name": "古巴",
+    "countryCode": "CU",
+    "phoneCode": "53"
+  },
+  {
+    "englishName": "Curacao",
+    "name": "库拉索",
+    "countryCode": "CW",
+    "phoneCode": "599"
+  },
+  {
+    "englishName": "Cyprus",
+    "name": "塞浦路斯",
+    "countryCode": "CY",
+    "phoneCode": "357"
+  },
+  {
+    "englishName": "Czech",
+    "name": "捷克",
+    "countryCode": "CZ",
+    "phoneCode": "420"
+  },
+  {
+    "englishName": "Denmark",
+    "name": "丹麦",
+    "countryCode": "DK",
+    "phoneCode": "45"
+  },
+  {
+    "englishName": "Djibouti",
+    "name": "吉布提",
+    "countryCode": "DJ",
+    "phoneCode": "253"
+  },
+  {
+    "englishName": "Dominica",
+    "name": "多米尼克",
+    "countryCode": "DM",
+    "phoneCode": "1767"
+  },
+  {
+    "englishName": "Dominican Republic",
+    "name": "多米尼加共和国",
+    "countryCode": "DO",
+    "phoneCode": "1809"
+  },
+  {
+    "englishName": "Ecuador",
+    "name": "厄瓜多尔",
+    "countryCode": "EC",
+    "phoneCode": "593"
+  },
+  {
+    "englishName": "Egypt",
+    "name": "埃及",
+    "countryCode": "EG",
+    "phoneCode": "20"
+  },
+  {
+    "englishName": "El Salvador",
+    "name": "萨尔瓦多",
+    "countryCode": "SV",
+    "phoneCode": "503"
+  },
+  {
+    "englishName": "Equatorial Guinea",
+    "name": "赤道几内亚",
+    "countryCode": "GQ",
+    "phoneCode": "240"
+  },
+  {
+    "englishName": "Eritrea",
+    "name": "厄立特里亚",
+    "countryCode": "ER",
+    "phoneCode": "291"
+  },
+  {
+    "englishName": "Estonia",
+    "name": "爱沙尼亚",
+    "countryCode": "EE",
+    "phoneCode": "372"
+  },
+  {
+    "englishName": "Ethiopia",
+    "name": "埃塞俄比亚",
+    "countryCode": "ET",
+    "phoneCode": "251"
+  },
+  {
+    "englishName": "Falkland Islands",
+    "name": "福克兰群岛",
+    "countryCode": "FK",
+    "phoneCode": "500"
+  },
+  {
+    "englishName": "Faroe Islands",
+    "name": "法罗群岛",
+    "countryCode": "FO",
+    "phoneCode": "298"
+  },
+  {
+    "englishName": "Fiji",
+    "name": "斐济",
+    "countryCode": "FJ",
+    "phoneCode": "679"
+  },
+  {
+    "englishName": "Finland",
+    "name": "芬兰",
+    "countryCode": "FI",
+    "phoneCode": "358"
+  },
+  {
+    "englishName": "France",
+    "name": "法国",
+    "countryCode": "FR",
+    "phoneCode": "33"
+  },
+  {
+    "englishName": "French Guiana",
+    "name": "法属圭亚那",
+    "countryCode": "GF",
+    "phoneCode": "594"
+  },
+  {
+    "englishName": "French Polynesia",
+    "name": "法属波利尼西亚",
+    "countryCode": "PF",
+    "phoneCode": "689"
+  },
+  {
+    "englishName": "Gabon",
+    "name": "加蓬",
+    "countryCode": "GA",
+    "phoneCode": "241"
+  },
+  {
+    "englishName": "Gambia",
+    "name": "冈比亚",
+    "countryCode": "GM",
+    "phoneCode": "220"
+  },
+  {
+    "englishName": "Georgia",
+    "name": "格鲁吉亚",
+    "countryCode": "GE",
+    "phoneCode": "995"
+  },
+  {
+    "englishName": "Germany",
+    "name": "德国",
+    "countryCode": "DE",
+    "phoneCode": "49"
+  },
+  {
+    "englishName": "Ghana",
+    "name": "加纳",
+    "countryCode": "GH",
+    "phoneCode": "233"
+  },
+  {
+    "englishName": "Gibraltar",
+    "name": "直布罗陀",
+    "countryCode": "GI",
+    "phoneCode": "350"
+  },
+  {
+    "englishName": "Greece",
+    "name": "希腊",
+    "countryCode": "GR",
+    "phoneCode": "30"
+  },
+  {
+    "englishName": "Greenland",
+    "name": "格陵兰岛",
+    "countryCode": "GL",
+    "phoneCode": "299"
+  },
+  {
+    "englishName": "Grenada",
+    "name": "格林纳达",
+    "countryCode": "GD",
+    "phoneCode": "1473"
+  },
+  {
+    "englishName": "Guadeloupe",
+    "name": "瓜德罗普岛",
+    "countryCode": "GP",
+    "phoneCode": "590"
+  },
+  {
+    "englishName": "Guam",
+    "name": "关岛",
+    "countryCode": "GU",
+    "phoneCode": "1671"
+  },
+  {
+    "englishName": "Guatemala",
+    "name": "瓜地马拉",
+    "countryCode": "GT",
+    "phoneCode": "502"
+  },
+  {
+    "englishName": "Guinea",
+    "name": "几内亚",
+    "countryCode": "GN",
+    "phoneCode": "224"
+  },
+  {
+    "englishName": "Guinea-Bissau",
+    "name": "几内亚比绍共和国",
+    "countryCode": "GW",
+    "phoneCode": "245"
+  },
+  {
+    "englishName": "Guyana",
+    "name": "圭亚那",
+    "countryCode": "GY",
+    "phoneCode": "592"
+  },
+  {
+    "englishName": "Haiti",
+    "name": "海地",
+    "countryCode": "HT",
+    "phoneCode": "509"
+  },
+  {
+    "englishName": "Hawaii",
+    "name": "夏威夷",
+    "countryCode": "US",
+    "phoneCode": "1808"
+  },
+  {
+    "englishName": "Honduras",
+    "name": "洪都拉斯",
+    "countryCode": "HN",
+    "phoneCode": "504"
+  },
+  {
+    "englishName": "Hong Kong",
+    "name": "中国香港",
+    "countryCode": "HK",
+    "phoneCode": "852"
+  },
+  {
+    "englishName": "Hungary",
+    "name": "匈牙利",
+    "countryCode": "HU",
+    "phoneCode": "36"
+  },
+  {
+    "englishName": "Iceland",
+    "name": "冰岛",
+    "countryCode": "IS",
+    "phoneCode": "354"
+  },
+  {
+    "englishName": "India",
+    "name": "印度",
+    "countryCode": "IN",
+    "phoneCode": "91"
+  },
+  {
+    "englishName": "Indonesia",
+    "name": "印度尼西亚",
+    "countryCode": "ID",
+    "phoneCode": "62"
+  },
+  {
+    "englishName": "Iran",
+    "name": "伊朗",
+    "countryCode": "IR",
+    "phoneCode": "98"
+  },
+  {
+    "englishName": "Iraq",
+    "name": "伊拉克",
+    "countryCode": "IQ",
+    "phoneCode": "964"
+  },
+  {
+    "englishName": "Ireland",
+    "name": "爱尔兰",
+    "countryCode": "IE",
+    "phoneCode": "353"
+  },
+  {
+    "englishName": "Israel",
+    "name": "以色列",
+    "countryCode": "IL",
+    "phoneCode": "972"
+  },
+  {
+    "englishName": "Italy",
+    "name": "意大利",
+    "countryCode": "IT",
+    "phoneCode": "39"
+  },
+  {
+    "englishName": "Ivory Coast",
+    "name": "象牙海岸",
+    "countryCode": "CI",
+    "phoneCode": "225"
+  },
+  {
+    "englishName": "Jamaica",
+    "name": "牙买加",
+    "countryCode": "JM",
+    "phoneCode": "1876"
+  },
+  {
+    "englishName": "Japan",
+    "name": "日本",
+    "countryCode": "JP",
+    "phoneCode": "81"
+  },
+  {
+    "englishName": "Jordan",
+    "name": "约旦",
+    "countryCode": "JO",
+    "phoneCode": "962"
+  },
+  {
+    "englishName": "Kazakhstan",
+    "name": "哈萨克斯坦",
+    "countryCode": "KZ",
+    "phoneCode": "7"
+  },
+  {
+    "englishName": "Kenya",
+    "name": "肯尼亚",
+    "countryCode": "KE",
+    "phoneCode": "254"
+  },
+  {
+    "englishName": "Kiribati",
+    "name": "基里巴斯",
+    "countryCode": "KI",
+    "phoneCode": "686"
+  },
+  {
+    "englishName": "Korea Democratic Rep.",
+    "name": "朝鲜",
+    "countryCode": "KP",
+    "phoneCode": "85"
+  },
+  {
+    "englishName": "South Korea",
+    "name": "韩国",
+    "countryCode": "KR",
+    "phoneCode": "82"
+  },
+  {
+    "englishName": "Kuwait",
+    "name": "科威特",
+    "countryCode": "KW",
+    "phoneCode": "965"
+  },
+  {
+    "englishName": "Kyrgyzstan",
+    "name": "吉尔吉斯斯坦",
+    "countryCode": "KG",
+    "phoneCode": "996"
+  },
+  {
+    "englishName": "Laos",
+    "name": "老挝",
+    "countryCode": "LA",
+    "phoneCode": "856"
+  },
+  {
+    "englishName": "Latvia",
+    "name": "拉脱维亚",
+    "countryCode": "LV",
+    "phoneCode": "371"
+  },
+  {
+    "englishName": "Lebanon",
+    "name": "黎巴嫩",
+    "countryCode": "LB",
+    "phoneCode": "961"
+  },
+  {
+    "englishName": "Lesotho",
+    "name": "莱索托",
+    "countryCode": "LS",
+    "phoneCode": "266"
+  },
+  {
+    "englishName": "Liberia",
+    "name": "利比里亚",
+    "countryCode": "LR",
+    "phoneCode": "231"
+  },
+  {
+    "englishName": "Libya",
+    "name": "利比亚",
+    "countryCode": "LY",
+    "phoneCode": "218"
+  },
+  {
+    "englishName": "Liechtenstein",
+    "name": "列支敦士登",
+    "countryCode": "LI",
+    "phoneCode": "423"
+  },
+  {
+    "englishName": "Lithuania",
+    "name": "立陶宛",
+    "countryCode": "LT",
+    "phoneCode": "370"
+  },
+  {
+    "englishName": "Luxembourg",
+    "name": "卢森堡",
+    "countryCode": "LU",
+    "phoneCode": "352"
+  },
+  {
+    "englishName": "Macau",
+    "name": "中国澳门",
+    "countryCode": "MO",
+    "phoneCode": "853"
+  },
+  {
+    "englishName": "Macedonia",
+    "name": "马其顿",
+    "countryCode": "MK",
+    "phoneCode": "389"
+  },
+  {
+    "englishName": "Madagascar",
+    "name": "马达加斯加",
+    "countryCode": "MG",
+    "phoneCode": "261"
+  },
+  {
+    "englishName": "Malawi",
+    "name": "马拉维",
+    "countryCode": "MW",
+    "phoneCode": "265"
+  },
+  {
+    "englishName": "Malaysia",
+    "name": "马来西亚",
+    "countryCode": "MY",
+    "phoneCode": "60"
+  },
+  {
+    "englishName": "Maldives",
+    "name": "马尔代夫",
+    "countryCode": "MV",
+    "phoneCode": "960"
+  },
+  {
+    "englishName": "Mali",
+    "name": "马里",
+    "countryCode": "ML",
+    "phoneCode": "223"
+  },
+  {
+    "englishName": "Malta",
+    "name": "马耳他",
+    "countryCode": "MT",
+    "phoneCode": "356"
+  },
+  {
+    "englishName": "Marshall Islands",
+    "name": "马绍尔群岛",
+    "countryCode": "MH",
+    "phoneCode": "692"
+  },
+  {
+    "englishName": "Martinique",
+    "name": "马提尼克",
+    "countryCode": "MQ",
+    "phoneCode": "596"
+  },
+  {
+    "englishName": "Mauritania",
+    "name": "毛里塔尼亚",
+    "countryCode": "MR",
+    "phoneCode": "222"
+  },
+  {
+    "englishName": "Mauritius",
+    "name": "毛里求斯",
+    "countryCode": "MU",
+    "phoneCode": "230"
+  },
+  {
+    "englishName": "Mayotte",
+    "name": "马约特",
+    "countryCode": "YT",
+    "phoneCode": "269"
+  },
+  {
+    "englishName": "Mexico",
+    "name": "墨西哥",
+    "countryCode": "MX",
+    "phoneCode": "52"
+  },
+  {
+    "englishName": "Micronesia",
+    "name": "密克罗尼西亚",
+    "countryCode": "FM",
+    "phoneCode": "691"
+  },
+  {
+    "englishName": "Moldova",
+    "name": "摩尔多瓦",
+    "countryCode": "MD",
+    "phoneCode": "373"
+  },
+  {
+    "englishName": "Monaco",
+    "name": "摩纳哥",
+    "countryCode": "MC",
+    "phoneCode": "377"
+  },
+  {
+    "englishName": "Mongolia",
+    "name": "蒙古",
+    "countryCode": "MN",
+    "phoneCode": "976"
+  },
+  {
+    "englishName": "Montenegro",
+    "name": "黑山",
+    "countryCode": "ME",
+    "phoneCode": "382"
+  },
+  {
+    "englishName": "Montserrat",
+    "name": "蒙特塞拉特岛",
+    "countryCode": "MS",
+    "phoneCode": "1664"
+  },
+  {
+    "englishName": "Morocco",
+    "name": "摩洛哥",
+    "countryCode": "MA",
+    "phoneCode": "212"
+  },
+  {
+    "englishName": "Mozambique",
+    "name": "莫桑比克",
+    "countryCode": "MZ",
+    "phoneCode": "258"
+  },
+  {
+    "englishName": "Myanmar",
+    "name": "缅甸",
+    "countryCode": "MM",
+    "phoneCode": "95"
+  },
+  {
+    "englishName": "Namibia",
+    "name": "纳米比亚",
+    "countryCode": "NA",
+    "phoneCode": "264"
+  },
+  {
+    "englishName": "Nauru",
+    "name": "拿鲁岛",
+    "countryCode": "NR",
+    "phoneCode": "674"
+  },
+  {
+    "englishName": "Nepal",
+    "name": "尼泊尔",
+    "countryCode": "NP",
+    "phoneCode": "977"
+  },
+  {
+    "englishName": "Netherlands",
+    "name": "荷兰",
+    "countryCode": "NL",
+    "phoneCode": "31"
+  },
+  {
+    "englishName": "New Caledonia",
+    "name": "新喀里多尼亚",
+    "countryCode": "NC",
+    "phoneCode": "687"
+  },
+  {
+    "englishName": "New Zealand",
+    "name": "新西兰",
+    "countryCode": "NZ",
+    "phoneCode": "64"
+  },
+  {
+    "englishName": "Nicaragua",
+    "name": "尼加拉瓜",
+    "countryCode": "NI",
+    "phoneCode": "505"
+  },
+  {
+    "englishName": "Niger",
+    "name": "尼日尔",
+    "countryCode": "NE",
+    "phoneCode": "227"
+  },
+  {
+    "englishName": "Nigeria",
+    "name": "尼日利亚",
+    "countryCode": "NG",
+    "phoneCode": "234"
+  },
+  {
+    "englishName": "Niue Island",
+    "name": "纽埃岛(新)",
+    "countryCode": "NU",
+    "phoneCode": "683"
+  },
+  {
+    "englishName": "Norfolk Island",
+    "name": "诺福克岛(澳)",
+    "countryCode": "NF",
+    "phoneCode": "6723"
+  },
+  {
+    "englishName": "Norway",
+    "name": "挪威",
+    "countryCode": "NO",
+    "phoneCode": "47"
+  },
+  {
+    "englishName": "Oman",
+    "name": "阿曼",
+    "countryCode": "OM",
+    "phoneCode": "968"
+  },
+  {
+    "englishName": "Palau",
+    "name": "帕劳",
+    "countryCode": "PW",
+    "phoneCode": "680"
+  },
+  {
+    "englishName": "Panama",
+    "name": "巴拿马",
+    "countryCode": "PA",
+    "phoneCode": "507"
+  },
+  {
+    "englishName": "Papua New Guinea",
+    "name": "巴布亚新几内亚",
+    "countryCode": "PG",
+    "phoneCode": "675"
+  },
+  {
+    "englishName": "Paraguay",
+    "name": "巴拉圭",
+    "countryCode": "PY",
+    "phoneCode": "595"
+  },
+  {
+    "englishName": "Peru",
+    "name": "秘鲁",
+    "countryCode": "PE",
+    "phoneCode": "51"
+  },
+  {
+    "englishName": "Philippines",
+    "name": "菲律宾",
+    "countryCode": "PH",
+    "phoneCode": "63"
+  },
+  {
+    "englishName": "Poland",
+    "name": "波兰",
+    "countryCode": "PL",
+    "phoneCode": "48"
+  },
+  {
+    "englishName": "Portugal",
+    "name": "葡萄牙",
+    "countryCode": "PT",
+    "phoneCode": "351"
+  },
+  {
+    "englishName": "Pakistan",
+    "name": "巴基斯坦",
+    "countryCode": "PK",
+    "phoneCode": "92"
+  },
+  {
+    "englishName": "Puerto Rico",
+    "name": "波多黎各",
+    "countryCode": "PR",
+    "phoneCode": "1787"
+  },
+  {
+    "englishName": "Qatar",
+    "name": "卡塔尔",
+    "countryCode": "QA",
+    "phoneCode": "974"
+  },
+  {
+    "englishName": "Réunion Island",
+    "name": "留尼汪",
+    "countryCode": "RE",
+    "phoneCode": "262"
+  },
+  {
+    "englishName": "Romania",
+    "name": "罗马尼亚",
+    "countryCode": "RO",
+    "phoneCode": "40"
+  },
+  {
+    "englishName": "Russia",
+    "name": "俄罗斯",
+    "countryCode": "RU",
+    "phoneCode": "7"
+  },
+  {
+    "englishName": "Rwanda",
+    "name": "卢旺达",
+    "countryCode": "RW",
+    "phoneCode": "250"
+  },
+  {
+    "englishName": "Samoa,Eastern",
+    "name": "东萨摩亚(美)",
+    "countryCode": "AS",
+    "phoneCode": "684"
+  },
+  {
+    "englishName": "Samoa",
+    "name": "萨摩亚",
+    "countryCode": "WS",
+    "phoneCode": "685"
+  },
+  {
+    "englishName": "San Marino",
+    "name": "圣马力诺",
+    "countryCode": "SM",
+    "phoneCode": "378"
+  },
+  {
+    "englishName": "Saint Pierre and Miquelon",
+    "name": "圣彼埃尔和密克隆岛",
+    "countryCode": "PM",
+    "phoneCode": "508"
+  },
+  {
+    "englishName": "Sao Tome and Principe",
+    "name": "圣多美和普林西比",
+    "countryCode": "ST",
+    "phoneCode": "239"
+  },
+  {
+    "englishName": "Saudi Arabia",
+    "name": "沙特阿拉伯",
+    "countryCode": "SA",
+    "phoneCode": "966"
+  },
+  {
+    "englishName": "Senegal",
+    "name": "塞内加尔",
+    "countryCode": "SN",
+    "phoneCode": "221"
+  },
+  {
+    "englishName": "Serbia",
+    "name": "塞尔维亚",
+    "countryCode": "RS",
+    "phoneCode": "381"
+  },
+  {
+    "englishName": "Seychelles",
+    "name": "塞舌尔",
+    "countryCode": "SC",
+    "phoneCode": "248"
+  },
+  {
+    "englishName": "Sierra Leone",
+    "name": "塞拉利昂",
+    "countryCode": "SL",
+    "phoneCode": "232"
+  },
+  {
+    "englishName": "Singapore",
+    "name": "新加坡",
+    "countryCode": "SG",
+    "phoneCode": "65"
+  },
+  {
+    "englishName": "Saint Maarten (Dutch Part)",
+    "name": "圣马丁岛（荷兰部分）",
+    "countryCode": "SX",
+    "phoneCode": "1721"
+  },
+  {
+    "englishName": "Slovakia",
+    "name": "斯洛伐克",
+    "countryCode": "SK",
+    "phoneCode": "421"
+  },
+  {
+    "englishName": "Slovenia",
+    "name": "斯洛文尼亚",
+    "countryCode": "SI",
+    "phoneCode": "386"
+  },
+  {
+    "englishName": "Solomon Islands",
+    "name": "所罗门群岛",
+    "countryCode": "SB",
+    "phoneCode": "677"
+  },
+  {
+    "englishName": "Somalia",
+    "name": "索马里",
+    "countryCode": "SO",
+    "phoneCode": "252"
+  },
+  {
+    "englishName": "South Africa",
+    "name": "南非",
+    "countryCode": "ZA",
+    "phoneCode": "27"
+  },
+  {
+    "englishName": "Spain",
+    "name": "西班牙",
+    "countryCode": "ES",
+    "phoneCode": "34"
+  },
+  {
+    "englishName": "Sri Lanka",
+    "name": "斯里兰卡",
+    "countryCode": "LK",
+    "phoneCode": "94"
+  },
+  {
+    "englishName": "St.Helena",
+    "name": "圣赫勒拿",
+    "countryCode": "SH",
+    "phoneCode": "290"
+  },
+  {
+    "englishName": "Saint Lucia",
+    "name": "圣露西亚",
+    "countryCode": "LC",
+    "phoneCode": "1758"
+  },
+  {
+    "englishName": "Saint Vincent and The Grenadines",
+    "name": "圣文森特和格林纳丁斯",
+    "countryCode": "VC",
+    "phoneCode": "1784"
+  },
+  {
+    "englishName": "Sudan",
+    "name": "苏丹",
+    "countryCode": "SD",
+    "phoneCode": "249"
+  },
+  {
+    "englishName": "Suriname",
+    "name": "苏里南",
+    "countryCode": "SR",
+    "phoneCode": "597"
+  },
+  {
+    "englishName": "Swaziland",
+    "name": "斯威士兰",
+    "countryCode": "SZ",
+    "phoneCode": "268"
+  },
+  {
+    "englishName": "Sweden",
+    "name": "瑞典",
+    "countryCode": "SE",
+    "phoneCode": "46"
+  },
+  {
+    "englishName": "Switzerland",
+    "name": "瑞士",
+    "countryCode": "CH",
+    "phoneCode": "41"
+  },
+  {
+    "englishName": "Syria",
+    "name": "叙利亚",
+    "countryCode": "SY",
+    "phoneCode": "963"
+  },
+  {
+    "englishName": "Taiwan",
+    "name": "中国台湾",
+    "countryCode": "TW",
+    "phoneCode": "886"
+  },
+  {
+    "englishName": "Tajikistan",
+    "name": "塔吉克斯坦",
+    "countryCode": "TJ",
+    "phoneCode": "992"
+  },
+  {
+    "englishName": "Tanzania",
+    "name": "坦桑尼亚",
+    "countryCode": "TZ",
+    "phoneCode": "255"
+  },
+  {
+    "englishName": "Thailand",
+    "name": "泰国",
+    "countryCode": "TH",
+    "phoneCode": "66"
+  },
+  {
+    "englishName": "Timor-Leste",
+    "name": "东帝汶",
+    "countryCode": "TL",
+    "phoneCode": "670"
+  },
+  {
+    "englishName": "United Arab Emirates",
+    "name": "阿拉伯联合酋长国",
+    "countryCode": "AE",
+    "phoneCode": "971"
+  },
+  {
+    "englishName": "Togo",
+    "name": "多哥",
+    "countryCode": "TG",
+    "phoneCode": "228"
+  },
+  {
+    "englishName": "Tokelau Is.",
+    "name": "托克劳群岛(新)",
+    "countryCode": "TK",
+    "phoneCode": "690"
+  },
+  {
+    "englishName": "Tonga",
+    "name": "汤加",
+    "countryCode": "TO",
+    "phoneCode": "676"
+  },
+  {
+    "englishName": "Trinidad and Tobago",
+    "name": "特立尼达和多巴哥",
+    "countryCode": "TT",
+    "phoneCode": "1868"
+  },
+  {
+    "englishName": "Tunisia",
+    "name": "突尼斯",
+    "countryCode": "TN",
+    "phoneCode": "216"
+  },
+  {
+    "englishName": "Turkey",
+    "name": "土耳其",
+    "countryCode": "TR",
+    "phoneCode": "90"
+  },
+  {
+    "englishName": "Turkmenistan",
+    "name": "土库曼斯坦",
+    "countryCode": "TM",
+    "phoneCode": "993"
+  },
+  {
+    "englishName": "Turks and Caicos Islands",
+    "name": "特克斯和凯科斯群岛",
+    "countryCode": "TC",
+    "phoneCode": "1649"
+  },
+  {
+    "englishName": "Tuvalu",
+    "name": "图瓦卢",
+    "countryCode": "TUV",
+    "phoneCode": "688"
+  },
+  {
+    "englishName": "United States",
+    "name": "美国",
+    "countryCode": "US",
+    "phoneCode": "1"
+  },
+  {
+    "englishName": "Uganda",
+    "name": "乌干达",
+    "countryCode": "UG",
+    "phoneCode": "256"
+  },
+  {
+    "englishName": "Ukraine",
+    "name": "乌克兰",
+    "countryCode": "UA",
+    "phoneCode": "380"
+  },
+  {
+    "englishName": "United Kingdom",
+    "name": "英国",
+    "countryCode": "GB",
+    "phoneCode": "44"
+  },
+  {
+    "englishName": "Uruguay",
+    "name": "乌拉圭",
+    "countryCode": "UY",
+    "phoneCode": "598"
+  },
+  {
+    "englishName": "Uzbekistan",
+    "name": "乌兹别克斯坦",
+    "countryCode": "UZ",
+    "phoneCode": "998"
+  },
+  {
+    "englishName": "Vanuatu",
+    "name": "瓦努阿图",
+    "countryCode": "VU",
+    "phoneCode": "678"
+  },
+  {
+    "englishName": "Venezuela",
+    "name": "委内瑞拉",
+    "countryCode": "VE",
+    "phoneCode": "58"
+  },
+  {
+    "englishName": "Vietnam",
+    "name": "越南",
+    "countryCode": "VN",
+    "phoneCode": "84"
+  },
+  {
+    "englishName": "Virgin Islands, British",
+    "name": "英属处女群岛",
+    "countryCode": "VG",
+    "phoneCode": "1340"
+  },
+  {
+    "englishName": "Virgin Islands, US",
+    "name": "美属维尔京群岛",
+    "countryCode": "VI",
+    "phoneCode": "1284"
+  },
+  {
+    "englishName": "Wake I.",
+    "name": "威克岛(美)",
+    "countryCode": "UM",
+    "phoneCode": "1808"
+  },
+  {
+    "englishName": "Yemen",
+    "name": "也门",
+    "countryCode": "YE",
+    "phoneCode": "967"
+  },
+  {
+    "englishName": "Zambia",
+    "name": "赞比亚",
+    "countryCode": "ZM",
+    "phoneCode": "260"
+  },
+  {
+    "englishName": "Zanzibar",
+    "name": "桑给巴尔",
+    "countryCode": "TZ",
+    "phoneCode": "259"
+  },
+  {
+    "englishName": "Zimbabwe",
+    "name": "津巴布韦",
+    "countryCode": "ZW",
+    "phoneCode": "263"
+  }
+]
