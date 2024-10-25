@@ -2,14 +2,14 @@
   "apps": [{
     "name": "api",
     "script": "production.js",
-    "cwd": "G:\App\nodejs\api",
+    "cwd": "G:\\App\\nodejs\\api",
     "exec_mode": "fork",
     "max_memory_restart": "1G",
     "autorestart": true,
     "node_args": [],
     "args": [],
     "env": {
-      
+
     }
   }]
 }

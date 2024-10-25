@@ -1,6 +1,9 @@
 const Base = require('./base');
 
 module.exports = class extends Base {
+  /**
+   * 成语大全
+   */
   async indexAction() {
     const { wd, page, pageSize } = this.get();
 
@@ -19,6 +22,9 @@ module.exports = class extends Base {
     return this.success(list);
   }
 
+  /**
+   * 成语接龙
+   */
   async relayAction() {
     const { wd, page, pageSize } = this.get();
 
@@ -26,8 +32,8 @@ module.exports = class extends Base {
     let list = [];
     const where = {
       name: {
-        $regex: new RegExp(lastWord + '$'),
-        $ne: wd
+        $regex: new RegExp('^' + lastWord), // 以上一个成语最后一个词开始
+        $ne: wd // 不等于上一个成语
       }
     };
 
