@@ -1,6 +1,6 @@
 # 一个公共Api服务
 
-基于Node.js搭建的Api服务，可免费试用，如果帮到您可以点个star或者请我喝杯咖啡。
+基于Node.js搭建的Api服务，服务器资源有限，少量请求可免费试用，如果帮到您可以点个star或者请我喝杯咖啡。
 
 数据来源于聚合数据、Github等社区，以文件或MongoDB方式存储，不定期更新数据源。
 
@@ -11,6 +11,7 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 - Think.js (Node.js框架)
 - MongoDB
 - Axios
+- Apifox
 
 ## 功能特性
 - 时间 (公历，农历，老黄历，十二时辰，基于[https://github.com/6tail/lunar-javascript](https://github.com/6tail/lunar-javascript))
@@ -41,4 +42,4 @@ npm install --production
 node production.js
 ```
 
-参考deploy目录下的nginx或pm2配置进行部署
+可以参考deploy目录下的nginx或pm2配置进行部署
