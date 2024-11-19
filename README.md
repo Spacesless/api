@@ -1,6 +1,6 @@
 # 一个公共Api服务
 
-基于Node.js搭建的Api服务，基本上是自用。
+基于Node.js搭建的Api服务，可免费试用，如果帮到您可以点个star或者请我喝杯咖啡。
 
 数据来源于聚合数据、Github等社区，以文件或MongoDB方式存储，不定期更新数据源。
 
@@ -8,7 +8,7 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 
 ## 技术栈
 
-- Think.ks (Node.js框架)
+- Think.js (Node.js框架)
 - MongoDB
 - Axios
 
