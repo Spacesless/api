@@ -1,7 +1,12 @@
 const Base = require('../base');
 const path = require('path');
 const fs = require('fs-extra');
-const moment = require('moment');
+const dayjs = require('dayjs');
+const isSameOrAfter = require('dayjs/plugin/isSameOrAfter');
+const isSameOrBefore = require('dayjs/plugin/isSameOrBefore');
+
+dayjs.extend(isSameOrAfter);
+dayjs.extend(isSameOrBefore);
 
 module.exports = class extends Base {
   async indexAction() {
@@ -15,7 +20,7 @@ module.exports = class extends Base {
     let key = '';
     const isTime = !isNaN(Date.parse(keyword));
     if (isTime) {
-      const momentTime = moment(keyword);
+      const momentTime = dayjs(keyword);
       const year = momentTime.year();
       const findRange = monthRange.find(item => {
         return momentTime.isSameOrAfter(`${year}-${item.start}`) && momentTime.isSameOrBefore(`${year}-${item.end}`);

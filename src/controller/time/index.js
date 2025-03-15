@@ -1,5 +1,6 @@
 const Base = require('../base');
-const { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear } = require('lunar-javascript');
+const { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear, HolidayUtil } = require('lunar-javascript');
+const dayjs = require('dayjs');
 
 // http://6tail.cn/calendar/api.html
 
@@ -195,11 +196,131 @@ module.exports = class extends Base {
   }
 
   /**
+   * 节日大全
+   */
+  festivalAction() {
+    const { year, month } = this.get();
+
+    const nowTime = dayjs();
+    const solarYear = dayjs(year).year();
+    const maxDays = month ? SolarUtil.getDaysOfMonth(solarYear, month) : SolarUtil.getDaysOfYear(solarYear);
+
+    const start = Solar.fromYmd(solarYear, month || 1, 1);
+    const result = [];
+
+    for (let i = 0; i < maxDays; i++) {
+      const solarInstance = start.next(i);
+      const lunarInstance = solarInstance.getLunar();
+
+      const festivals = [
+        ...solarInstance.getFestivals(),
+        ...lunarInstance.getFestivals(),
+        ...solarInstance.getOtherFestivals(),
+        ...lunarInstance.getOtherFestivals()
+      ];
+
+      if (festivals.length > 0) {
+        const day = solarInstance.toString();
+        const dayjsInstance = dayjs(day);
+        const month = dayjsInstance.format('M');
+        const monthEn = dayjsInstance.format('MMM');
+
+        festivals.forEach((item) => {
+          const row = {
+            month,
+            monthEn,
+            day: dayjsInstance.format('YYYY-MM-DD'),
+            cnDay: `${lunarInstance.getYearInChinese()}年${lunarInstance.getMonthInChinese()}月${lunarInstance.getDayInChinese()}`,
+            name: item,
+            distance: dayjsInstance.diff(nowTime, 'd')
+          };
+
+          result.push(row);
+        });
+      }
+    }
+
+    return this.success(result);
+  }
+
+  /**
+   * 法定节假日
+   */
+  holidayAction() {
+    const { year } = this.get();
+    const solarYear = dayjs(year).year();
+
+    const holidays = HolidayUtil.getHolidays(solarYear);
+    const result = {};
+
+    holidays.forEach((holiday) => {
+      const name = holiday.getName();
+      const target = holiday.getTarget();
+      const isWork = holiday.isWork();
+      const day = holiday.getDay();
+
+      result[name] = result[name] || {};
+
+      if (!isWork && dayjs(target).year() === solarYear) {
+        const distance = dayjs(target).diff(dayjs().startOf('day'), 'day');
+        const start = result[name]?.start || day;
+        result[name] = {
+          name,
+          start,
+          end: day,
+          distance,
+          length: this.getLength(start, day),
+          balance: this.getBalance(start, day)
+        };
+      }
+
+      result[name].work = isWork ? [...(result[name]?.work || []), day] : [];
+    });
+
+    return this.success(Object.values(result));
+  }
+
+  /**
    * 格式化成两位数
    * @param {Number} val
    * @returns {String}
    */
   formatTwoDigit(val) {
     return val.toString().padStart(2, '0');
+  }
+
+  /**
+   * 获取假期长度
+   * @param {string} start 开始日期
+   * @param {string} end 结束日期
+   * @returns {number}
+   */
+  getLength(start, end) {
+    const startDay = dayjs(start);
+    const endDay = dayjs(end);
+
+    return endDay.diff(startDay, 'day') + 1;
+  }
+
+  /**
+   * 获取假期余额
+   * @param {string} start 开始日期
+   * @param {string} end 结束日期
+   * @returns {number}
+   */
+  getBalance(start, end) {
+    const startDay = dayjs(start);
+    const endDay = dayjs(end);
+    const today = dayjs();
+
+    if (today.isBefore(startDay)) {
+      return this.getLength(start, end);
+    }
+
+    if (today.isAfter(endDay)) {
+      return 0;
+    }
+
+    return endDay.diff(today, 'day') + 1;
   }
 };
