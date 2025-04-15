@@ -64,8 +64,8 @@ module.exports = class extends Base {
   /**
    * 定时采集任务
    */
-  crontabAction() {
-    axios({
+  async crontabAction() {
+    const data = await axios({
       url: bingApi,
       methods: 'get',
       params: {
@@ -74,18 +74,21 @@ module.exports = class extends Base {
         format: 'js',
         mkt: 'zh-CN'
       }
-    }).then(async res => {
-      const { images } = res.data || {};
-      if (images[0]) {
-        const insertId = this.modelInstance.addRecord(images[0]);
-        think.logger.debug(images[0]);
-        if (insertId) {
-          return this.success();
-        } else {
-          return this.fail();
-        }
+    }).then(res => {
+      return res.data;
+    }).catch(() => {});
+
+    const { images } = data || {};
+    if (images[0]) {
+      const insertId = this.modelInstance.addRecord(images[0]);
+      think.logger.debug(images[0]);
+      if (insertId) {
+        return this.success();
+      } else {
+        return this.fail();
       }
-    });
+    }
+    return this.fail();
   }
 
   /**
