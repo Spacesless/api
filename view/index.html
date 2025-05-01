@@ -1,21 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timeless's Api</title>
-  <style>
-    .doc{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
-</head>
-<body>
-  <iframe class="doc" src="https://ry16yobzcy.apifox.cn/" frameborder="0"></iframe>
-</body>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeless's Api</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .header {
+        display: flex;
+        height: 60px;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .header__logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+      }
+
+      .container {
+        box-sizing: border-box;
+        width: 1280px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .main {
+        padding-top: 15vh;
+        padding-bottom: 100px;
+        min-height: calc(100vh - 110px);
+      }
+
+      .title {
+        background: linear-gradient(to right, #6644ff 0, #b37feb 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 60px;
+        font-weight: 500;
+        line-height: 60px;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+      }
+
+      .description {
+        font-size: 32px;
+        color: #303133;
+        margin-bottom: 24px;
+      }
+
+      .button {
+        display: inline-block;
+        color: #fff;
+        background: #6644ff;
+        padding: 8px 24px;
+        border-radius: 40px;
+        text-decoration: none;
+        transition: background 0.3s;
+        margin-right: 10px;
+      }
+
+      .button:hover {
+        background: #4930d9;
+      }
+
+      .button-plain {
+        display: inline-block;
+        padding: 7px 23px;
+        border-radius: 40px;
+        border: 1px solid #6644ff;
+        text-decoration: none;
+        color: #6644ff;
+        transition: background 0.3s;
+        margin-right: 10px;
+      }
+
+      .button-plain:hover {
+        background: #d1bfff;
+      }
+
+      .feature {
+        display: flex;
+        gap: 24px;
+        list-style: none;
+        padding: 0;
+        padding-top: 48px;
+        flex-wrap: wrap;
+      }
+
+      .feature-item {
+        border: 2px solid #6644ff;
+        border-radius: 20px;
+        padding: 20px 24px;
+        flex: 1;
+        overflow: hidden;
+        min-width: 300px;
+        min-height: 224px;
+        box-sizing: border-box;
+      }
+
+      .adsense {
+        padding: 0;
+      }
+
+      .feature-item__name {
+        font-size: 18px;
+        color: #606266;
+      }
+
+      .feature-item__value {
+        font-size: 40px;
+        color: #303133;
+        padding-top: 8px;
+      }
+
+      .spotlight {
+        position: fixed;
+        right: 0;
+        bottom: -20vh;
+        left: 0;
+        z-index: -1;
+        height: 50vh;
+        background: linear-gradient(45deg, #f759ab, #b37feb 50%, #6644ff);
+        opacity: 0.45;
+        filter: blur(25vh);
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #606266;
+      }
+
+      .footer__link {
+        color: #6644ff;
+        text-decoration: none;
+      }
+
+      .footer__icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      @media (width <= 1600px) {
+        .container {
+          width: 1152px;
+        }
+      }
+
+      @media (width <= 1280px) {
+        .container {
+          width: 992px;
+        }
+      }
+
+      @media (width <= 992px) {
+        .container {
+          width: 720px;
+        }
+      }
+
+      @media (width <= 768px) {
+        .container {
+          width: 100%;
+        }
+
+        .main {
+          padding-top: 50px;
+        }
+
+        .title {
+          font-size: 36px;
+        }
+
+        .description {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        class="header__logo"
+        src="https://cdn.apifox.com/app/project-icon/builtin/12.jpg"
+        alt=""
+      />
+      <span>Timeless's Api</span>
+    </header>
+    <main class="main container">
+      <h1 class="title">欢迎使用Timeless API服务</h1>
+      <p class="description">这是一个使用Node.js开发的公共API</p>
+      <a class="button" href="/docs" title="开始">开始</a>
+      <a class="button-plain" href="/comment" title="评论">评论</a>
+      <a
+        class="button-plain"
+        href="https://github.com/spacesless/api"
+        title="Github"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github</a
+      >
+      <ul class="feature">
+        <li class="feature-item">
+          <p class="feature-item__name">接口数量</p>
+          <p class="feature-item__value">50+</p>
+        </li>
+        <li class="feature-item">
+          <p class="feature-item__name">访问次数</p>
+          <p class="feature-item__value">10W+</p>
+        </li>
+        <li class="feature-item adsense">
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1379822583295856"
+            crossorigin="anonymous"
+          ></script>
+          <!-- 文档 -->
+          <ins
+            class="adsbygoogle"
+            style="display:block;width:100%;height:220px"
+            data-ad-client="ca-pub-1379822583295856"
+            data-ad-slot="6309241170"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </li>
+      </ul>
+      <section class="spotlight"></section>
+    </main>
+    <footer class="footer">
+      <span>Copyright © 2020 - 2025 Timeless. All rights reserved. </span>
+      <a
+        class="footer__link"
+        href="https://beian.miit.gov.cn/"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="ICP/IP地址/域名信息备案管理系统"
+        >桂ICP备18003656号-1</a
+      >
+      <a
+        class="footer__link"
+        href="http://www.beian.gov.cn"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="全国互联网安全管理服务平台"
+      >
+        <img
+          class="footer__icon"
+          width="20"
+          height="20"
+          src="https://www.timelessq.com/nuxt-front/dist/client/img/icp-beian.c5fa94c.png"
+          alt="公网安备"
+        />桂公网安备45092102000147号
+      </a>
+    </footer><script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?d6e0bed6a2ac890f7b39e95d029fd990";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+  </body>
 </html>
