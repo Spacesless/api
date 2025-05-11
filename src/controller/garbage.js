@@ -2,7 +2,7 @@ const Base = require('./base');
 
 module.exports = class extends Base {
   async indexAction() {
-    const { keyword, categroy } = this.get();
+    const { keyword, category, page, pageSize } = this.get();
 
     let list = [];
     const where = {};
@@ -12,14 +12,15 @@ module.exports = class extends Base {
       };
     }
 
-    if (categroy) {
-      where.categroy = categroy;
+    if (category) {
+      where.category = category;
     }
 
     list = await this.mongo('garbage')
-      .field('name,categroy')
+      .field('name,category')
       .where(where)
-      .select();
+      .page(page, pageSize)
+      .countSelect();
 
     return this.success(list);
   }
