@@ -1,0 +1,3 @@
+// invoked in worker
+
+export {};

@@ -4,10 +4,15 @@
   "version": "1.0.0",
   "author": "timeless",
   "scripts": {
-    "start": "node development.js",
-    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
-    "lint": "eslint src/",
-    "lint-fix": "eslint --fix src/"
+    "start": "npm run dev",
+    "test": "npm run build && node --test app/test/migration.test.js",
+    "lint": "npm run typecheck",
+    "dev": "tsc-watch --onSuccess \"node app/development.js\"",
+    "build": "tsc -p tsconfig.json",
+    "compile": "npm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "types:api": "openapi-typescript openapi.json -o src/types/openapi.d.ts",
+    "start:prod": "node app/production.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -32,16 +37,20 @@
     "thinkjs": "^3.2.13"
   },
   "devDependencies": {
-    "ava": "^3.15.0",
-    "eslint": "^7.29.0",
-    "eslint-config-think": "^1.0.3",
-    "nyc": "^15.1.0",
-    "think-watcher": "^3.0.4"
+    "@types/crypto-js": "^4.2.2",
+    "@types/fs-extra": "^11.0.4",
+    "@types/koa": "^2.15.2",
+    "@types/lodash": "^4.17.27",
+    "@types/node": "^22.20.5",
+    "@types/qrcode": "^1.5.6",
+    "openapi-typescript": "^7.13.0",
+    "tsc-watch": "^7.2.1",
+    "typescript": "^5.9.3"
   },
   "repository": "",
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=22"
   },
   "readmeFilename": "README.md",
   "thinkjs": {

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": ".",
+    "outDir": "app",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "sourceMap": true,
+    "types": [
+      "node"
+    ],
+    "useDefineForClassFields": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "development.ts",
+    "production.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "app",
+    "think-ts"
+  ]
+}
