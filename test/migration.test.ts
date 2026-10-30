@@ -72,12 +72,12 @@ test('all documented GET endpoints still have a controller action', () => {
   }
 });
 
-function request(url: string): Promise<{ status: number; body: string }> {
+function request(url: string, method = 'GET'): Promise<{ status: number; body: string }> {
   return new Promise((resolve, reject) => {
     const socket = new Socket();
     const req = new IncomingMessage(socket);
     req.url = url;
-    req.method = 'GET';
+    req.method = method;
     req.headers = { host: 'localhost', 'user-agent': 'migration-test' };
     const res = new ServerResponse(req);
     const timer = setTimeout(() => { socket.destroy(); reject(new Error(`Request timed out: ${url}`)); }, 5000);
@@ -103,6 +103,9 @@ test('home renders project documentation and serves the generated OpenAPI docume
   assert.equal(document.paths['/qrcode'].get.responses['200'].content['image/png'].schema.format, 'binary');
   assert.ok(document.paths['/bing'].get.responses['302']);
   assert.ok(!document.paths['/bing/crontab']);
+  for (const endpoint of ['/poetry', '/poetry/writer', '/poetry/sentence', '/dictionary/word', '/dictionary/xiehouyu', '/dictionary/couplet']) {
+    assert.ok(!document.paths[endpoint].get.parameters.some((parameter: { name: string }) => parameter.name === 'id'), endpoint);
+  }
 });
 
 test('compiled routes retain validation, response envelopes and local utility behavior', async () => {
@@ -125,6 +128,157 @@ test('compiled routes retain validation, response envelopes and local utility be
 
   const missing = await request('/crypto/cipher');
   assert.notEqual(JSON.parse(missing.body).errno, 0);
+});
+
+async function queryCollection(controllerName: 'poetry' | 'dictionary', action: string, query: Record<string, unknown>, records: unknown[] = []) {
+  const captured: { collection?: string; where?: unknown; order?: string; page?: unknown[] } = {};
+  const result = { count: records.length, totalPages: records.length ? 1 : 0, pageSize: 10, currentPage: 1, data: records };
+  const model = {
+    where(value: unknown) { captured.where = value; return this; },
+    order(value: string) { captured.order = value; return this; },
+    page(...value: unknown[]) { captured.page = value; return this; },
+    async countSelect() { return result; }
+  };
+  class Base {
+    getApiQuery() { return query; }
+    mongo(name: string) { captured.collection = name; return model; }
+    success(value: unknown) { return value; }
+  }
+  const module = { exports: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(root, `app/src/controller/${controllerName}.js`), 'utf8'), {
+    module, exports: module.exports,
+    require(name: string) {
+      if (name === './base') return Base;
+      throw new Error(`Unexpected module: ${name}`);
+    }
+  });
+  const Controller = module.exports as new (context: object) => Record<string, () => Promise<unknown>>;
+  const controller = new Controller({});
+  assert.equal(await controller[action](), result);
+  return JSON.parse(JSON.stringify(captured)) as typeof captured;
+}
+
+test('poetry searches use source fields, separate collections, literal search and stable pagination', async () => {
+  const poem = await queryCollection('poetry', 'indexAction', {
+    author: '李白', dynasty: '唐代', type: '乐府', keyword: '[将进酒].*', page: 2, pageSize: 5
+  });
+  assert.equal(poem.collection, 'poetry_guwen');
+  assert.equal(poem.order, '_id ASC');
+  assert.deepEqual(poem.page, [2, 5]);
+  assert.deepEqual(poem.where, {
+    writer: { $regex: '李白' }, dynasty: '唐代', type: '乐府',
+    $or: [
+      { title: { $regex: '\\[将进酒\\]\\.\\*' } },
+      { content: { $regex: '\\[将进酒\\]\\.\\*' } },
+      { type: { $regex: '\\[将进酒\\]\\.\\*' } }
+    ]
+  });
+
+  const writer = await queryCollection('poetry', 'writerAction', { name: '李白', keyword: '诗仙' });
+  assert.equal(writer.collection, 'poetry_writer');
+  assert.deepEqual(writer.page, [1, 10]);
+  assert.deepEqual(writer.where, { name: { $regex: '李白' }, $or: [{ name: { $regex: '诗仙' } }, { simpleIntro: { $regex: '诗仙' } }] });
+
+  const sentence = await queryCollection('poetry', 'sentenceAction', { from: '李白《将进酒》', keyword: '天生我材' });
+  assert.equal(sentence.collection, 'poetry_sentence');
+  assert.deepEqual(sentence.where, { from: { $regex: '李白《将进酒》' }, $or: [{ name: { $regex: '天生我材' } }, { from: { $regex: '天生我材' } }] });
+
+  for (const action of ['indexAction', 'writerAction', 'sentenceAction'] as const) {
+    const empty = await queryCollection('poetry', action, {});
+    assert.deepEqual(empty.where, {});
+    assert.deepEqual(empty.page, [1, 10]);
+  }
+});
+
+test('dictionary queries match source formats, original glyphs and both halves of a xiehouyu', async () => {
+  const word = await queryCollection('dictionary', 'wordAction', {
+    word: '樂', radicals: '丿', strokes: 5, keyword: '[音乐].*', page: 2, pageSize: 5
+  });
+  assert.equal(word.collection, 'dictionary_word');
+  assert.equal(word.order, '_id ASC');
+  assert.deepEqual(word.page, [2, 5]);
+  assert.deepEqual(word.where, {
+    radicals: '丿', strokes: '5',
+    $and: [
+      { $or: [{ word: '樂' }, { oldword: '樂' }] },
+      { $or: [
+        { word: { $regex: '\\[音乐\\]\\.\\*' } },
+        { oldword: { $regex: '\\[音乐\\]\\.\\*' } },
+        { explanation: { $regex: '\\[音乐\\]\\.\\*' } }
+      ] }
+    ]
+  });
+  const xiehouyu = await queryCollection('dictionary', 'xiehouyuAction', {
+    riddle: '飞机', answer: '高谈阔论', keyword: '(聊天)'
+  });
+  assert.equal(xiehouyu.collection, 'dictionary_xiehouyu');
+  assert.deepEqual(xiehouyu.where, {
+    riddle: { $regex: '飞机' }, answer: { $regex: '高谈阔论' },
+    $or: [{ riddle: { $regex: '\\(聊天\\)' } }, { answer: { $regex: '\\(聊天\\)' } }]
+  });
+  for (const action of ['wordAction', 'xiehouyuAction']) {
+    const empty = await queryCollection('dictionary', action, {});
+    assert.deepEqual(empty.where, {});
+    assert.deepEqual(empty.page, [1, 10]);
+  }
+});
+
+test('dictionary routes reject invalid pagination and stroke counts before accessing MongoDB', async () => {
+  for (const endpoint of ['/dictionary/word', '/dictionary/xiehouyu', '/dictionary/couplet']) {
+    const invalidQueries = ['page=0', 'pageSize=51', 'keyword=' + 'x'.repeat(101)];
+    for (const query of invalidQueries) {
+      const result = JSON.parse((await request(endpoint + '?' + query)).body);
+      assert.notEqual(result.errno, 0, endpoint + '?' + query);
+    }
+    const post = JSON.parse((await request(endpoint, 'POST')).body);
+    assert.equal(post.errmsg, 'METHOD_NOT_ALLOWED');
+  }
+  for (const strokes of ['0', '101', '1.5', 'abc']) {
+    const result = JSON.parse((await request('/dictionary/word?strokes=' + strokes)).body);
+    assert.notEqual(result.errno, 0, strokes);
+  }
+});
+
+test('couplet queries retrieve existing pairs, preserve multiple answers and treat keywords literally', async () => {
+  const pairs = [
+    { _id: '1', up: '同一上联', down: '已有下联之一' },
+    { _id: '2', up: '同一上联', down: '已有下联之二' }
+  ];
+  const byUpper = await queryCollection('dictionary', 'coupletAction', { up: '同一上联', page: 2, pageSize: 5 }, pairs);
+  assert.equal(byUpper.collection, 'dictionary_couplet');
+  assert.equal(byUpper.order, '_id ASC');
+  assert.deepEqual(byUpper.page, [2, 5]);
+  assert.deepEqual(byUpper.where, { up: '同一上联' });
+
+  const reverse = await queryCollection('dictionary', 'coupletAction', { down: '晨露润花花更红' });
+  assert.deepEqual(reverse.where, { down: '晨露润花花更红' });
+
+  const combined = await queryCollection('dictionary', 'coupletAction', {
+    up: '[上联].*', down: '下联', keyword: '(春)'
+  });
+  assert.deepEqual(combined.where, {
+    up: '[上联].*', down: '下联',
+    $or: [{ up: { $regex: '\\(春\\)' } }, { down: { $regex: '\\(春\\)' } }]
+  });
+  const empty = await queryCollection('dictionary', 'coupletAction', {});
+  assert.deepEqual(empty.where, {});
+  assert.deepEqual(empty.page, [1, 10]);
+
+  for (const field of ['up', 'down']) {
+    const result = JSON.parse((await request('/dictionary/couplet?' + field + '=' + 'x'.repeat(101))).body);
+    assert.notEqual(result.errno, 0);
+  }
+});
+
+test('poetry routes reject invalid pagination, search lengths and HTTP methods before querying MongoDB', async () => {
+  for (const endpoint of ['/poetry', '/poetry/writer', '/poetry/sentence']) {
+    for (const query of ['page=0', 'pageSize=51', 'pageSize=1.5', 'keyword=' + 'x'.repeat(101)]) {
+      const result = JSON.parse((await request(endpoint + '?' + query)).body);
+      assert.notEqual(result.errno, 0, endpoint + '?' + query);
+    }
+    const post = JSON.parse((await request(endpoint, 'POST')).body);
+    assert.equal(post.errmsg, 'METHOD_NOT_ALLOWED');
+  }
 });
 
 async function collect(responses: (IcibaResponse | Error | null)[]) {

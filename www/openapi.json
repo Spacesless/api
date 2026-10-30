@@ -474,6 +474,380 @@
         }
       }
     },
+    "/dictionary/word": {
+      "get": {
+        "summary": "汉字词典",
+        "description": "查询汉字的拼音、笔画、部首和释义。汉字同时匹配原字形，同字多条记录分别返回；数据源的部首和读音信息可能不完整。所有查询统一返回分页结果。",
+        "operationId": "dictionary_word",
+        "tags": [
+          "dictionary"
+        ],
+        "parameters": [
+          {
+            "name": "word",
+            "in": "query",
+            "required": false,
+            "description": "汉字精确查询，同时匹配 word 和 oldword，不合并同字的多条记录。",
+            "schema": {
+              "type": "string",
+              "maxLength": 10
+            }
+          },
+          {
+            "name": "radicals",
+            "in": "query",
+            "required": false,
+            "description": "部首精确查询，例如口。缺少部首的记录不会被匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 10
+            }
+          },
+          {
+            "name": "strokes",
+            "in": "query",
+            "required": false,
+            "description": "总笔画数，正整数；查询时转换为数据源的字符串格式。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "在汉字、原字形和基本释义中搜索字面内容，不支持正则表达式。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_DictionaryWord_"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dictionary/xiehouyu": {
+      "get": {
+        "summary": "歇后语查询",
+        "description": "按前半句查答案、按答案反查或搜索关键词，保留数据源的多个答案和原始标点。所有查询统一返回分页结果。",
+        "operationId": "dictionary_xiehouyu",
+        "tags": [
+          "dictionary"
+        ],
+        "parameters": [
+          {
+            "name": "riddle",
+            "in": "query",
+            "required": false,
+            "description": "按前半句的字面内容模糊查询。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "answer",
+            "in": "query",
+            "required": false,
+            "description": "按答案的字面内容反查。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "同时搜索前半句和答案，不支持正则表达式。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_Xiehouyu_"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/dictionary/couplet": {
+      "get": {
+        "summary": "对联查询",
+        "description": "按上联精确查询已有下联，或按下联反查、搜索关键词。同一上联可能对应多条下联，统一返回分页结果；本接口检索已有配对，不生成新对联。",
+        "operationId": "dictionary_couplet",
+        "tags": [
+          "dictionary"
+        ],
+        "parameters": [
+          {
+            "name": "up",
+            "in": "query",
+            "required": false,
+            "description": "按上联原文精确查找已有配对，包含原始标点；不会生成新的下联。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "down",
+            "in": "query",
+            "required": false,
+            "description": "按下联原文精确反查上联。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "在上联和下联中搜索字面内容，不支持正则表达式。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_Couplet_"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/district": {
       "get": {
         "summary": "省市区街道列表",
@@ -1907,8 +2281,8 @@
     },
     "/poetry": {
       "get": {
-        "summary": "中文诗歌",
-        "description": "中文诗歌，目前收录诗经、唐诗、宋词、元曲等诗歌12000多首，部分存在繁体字。",
+        "summary": "古诗文查询",
+        "description": "查询诗、词、歌、赋和古文，支持作者、朝代、分类和关键词筛选。统一返回分页数据。",
         "operationId": "poetry_index",
         "tags": [
           "poetry"
@@ -1918,36 +2292,61 @@
             "name": "author",
             "in": "query",
             "required": false,
-            "description": "作者",
+            "description": "作者姓名，按字面内容模糊匹配；保留原接口的 author 参数名。",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "maxLength": 50
+            }
+          },
+          {
+            "name": "dynasty",
+            "in": "query",
+            "required": false,
+            "description": "朝代，精确匹配，例如唐代。",
+            "schema": {
+              "type": "string",
+              "maxLength": 50
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "分类或标签，精确匹配，例如唐诗三百首。",
+            "schema": {
+              "type": "string",
+              "maxLength": 50
             }
           },
           {
             "name": "keyword",
             "in": "query",
             "required": false,
-            "description": "关键词",
+            "description": "在标题、正文和分类中按字面内容搜索，不支持正则表达式。",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "maxLength": 100
             }
           },
           {
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "页码",
+            "description": "页码，默认 1。",
             "schema": {
-              "type": "number"
+              "type": "integer",
+              "minimum": 1
             }
           },
           {
             "name": "pageSize",
             "in": "query",
             "required": false,
-            "description": "每页个数",
+            "description": "每页条数，默认 10，最多 50。",
             "schema": {
-              "type": "number"
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
             }
           }
         ],
@@ -1957,26 +2356,275 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "required": [
-                    "errno",
-                    "errmsg",
-                    "data"
-                  ],
-                  "properties": {
-                    "errno": {
-                      "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_Poem_"
+                        }
+                      }
                     },
-                    "errmsg": {
-                      "type": "string"
-                    },
-                    "data": {
-                      "$ref": "#/components/schemas/PageResult_Poem_"
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
                     }
-                  }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/poetry/writer": {
+      "get": {
+        "summary": "古诗文作者查询",
+        "description": "按姓名或简介关键词查询作者资料。详细介绍保留数据源中的字符串格式；所有查询统一返回分页数据。",
+        "operationId": "poetry_writer",
+        "tags": [
+          "poetry"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "按姓名模糊查询。",
+            "schema": {
+              "type": "string",
+              "maxLength": 50
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "在姓名和简介中按字面内容搜索。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_PoetryWriter_"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/poetry/sentence": {
+      "get": {
+        "summary": "古诗文名句查询",
+        "description": "按原文关键词或出处查询古诗文名句。出处是作者与作品的文字说明，统一返回分页数据。",
+        "operationId": "poetry_sentence",
+        "tags": [
+          "poetry"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "在名句原文和出处中按字面内容搜索。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "required": false,
+            "description": "按出处模糊查询，例如李白或将进酒。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg",
+                        "data"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer",
+                          "enum": [
+                            0
+                          ]
+                        },
+                        "errmsg": {
+                          "type": "string"
+                        },
+                        "data": {
+                          "$ref": "#/components/schemas/PageResult_PoetrySentence_"
+                        }
+                      }
+                    },
+                    {
+                      "type": "object",
+                      "required": [
+                        "errno",
+                        "errmsg"
+                      ],
+                      "properties": {
+                        "errno": {
+                          "type": "integer"
+                        },
+                        "errmsg": {
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "object",
+                              "additionalProperties": true
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
                 }
               }
             }
@@ -4949,6 +5597,199 @@
           "data"
         ]
       },
+      "PageResult_DictionaryWord_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DictionaryWord"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "DictionaryWord": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "word": {
+            "type": "string",
+            "description": "汉字。"
+          },
+          "oldword": {
+            "type": "string",
+            "description": "数据源的原字形，可能是繁体或异体字。"
+          },
+          "strokes": {
+            "type": "string",
+            "description": "总笔画数；保留数据源的字符串格式。"
+          },
+          "pinyin": {
+            "type": "string",
+            "description": "数据源提供的带声调拼音。"
+          },
+          "radicals": {
+            "type": "string",
+            "description": "部首；部分记录为空字符串。"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "基本释义，保留换行。"
+          },
+          "more": {
+            "type": "string",
+            "description": "详细释义，保留原始文本。"
+          }
+        },
+        "required": [
+          "_id",
+          "word",
+          "oldword",
+          "strokes",
+          "pinyin",
+          "radicals",
+          "explanation",
+          "more"
+        ]
+      },
+      "PageResult_Xiehouyu_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Xiehouyu"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "Xiehouyu": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "riddle": {
+            "type": "string",
+            "description": "歇后语前半句。"
+          },
+          "answer": {
+            "type": "string",
+            "description": "歇后语后半句，保留原始答案及标点。"
+          }
+        },
+        "required": [
+          "_id",
+          "riddle",
+          "answer"
+        ]
+      },
+      "PageResult_Couplet_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Couplet"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "Couplet": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "up": {
+            "type": "string",
+            "description": "上联。"
+          },
+          "down": {
+            "type": "string",
+            "description": "下联。"
+          }
+        },
+        "required": [
+          "_id",
+          "up",
+          "down"
+        ]
+      },
       "DistrictNode": {
         "type": "object",
         "properties": {
@@ -5449,40 +6290,178 @@
         "type": "object",
         "properties": {
           "_id": {
-            "type": "string"
-          },
-          "author": {
             "type": "string",
-            "description": "作者"
-          },
-          "paragraphs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "内容"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "标签"
+            "description": "MongoDB ObjectId，JSON 响应中为字符串。"
           },
           "title": {
             "type": "string",
-            "description": "标题"
+            "description": "作品标题。"
           },
-          "prologue": {
+          "dynasty": {
             "type": "string",
-            "description": "注释"
+            "description": "朝代，例如唐代、宋代。"
+          },
+          "writer": {
+            "type": "string",
+            "description": "作者姓名；原始数据通过文字关联作者。"
+          },
+          "content": {
+            "type": "string",
+            "description": "原文，保留换行。"
+          },
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "分类或标签。"
+          },
+          "remark": {
+            "type": "string",
+            "description": "注释，部分作品没有该字段。"
+          },
+          "shangxi": {
+            "type": "string",
+            "description": "赏析。"
+          },
+          "translation": {
+            "type": "string",
+            "description": "译文。"
+          },
+          "audioUrl": {
+            "type": "string",
+            "description": "数据源提供的朗诵音频地址。"
           }
         },
         "required": [
           "_id",
-          "author",
-          "paragraphs",
-          "title"
+          "title",
+          "dynasty",
+          "writer",
+          "content",
+          "type"
+        ]
+      },
+      "PageResult_PoetryWriter_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PoetryWriter"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "PoetryWriter": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "姓名。"
+          },
+          "headImageUrl": {
+            "type": "string",
+            "description": "头像地址；没有头像时为空字符串。"
+          },
+          "simpleIntro": {
+            "type": "string",
+            "description": "简介。"
+          },
+          "detailIntro": {
+            "type": "string",
+            "description": "详细介绍，原始数据通常是 JSON 编码的字符串。"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "headImageUrl",
+          "simpleIntro",
+          "detailIntro"
+        ]
+      },
+      "PageResult_PoetrySentence_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PoetrySentence"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "PoetrySentence": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "名句原文。"
+          },
+          "from": {
+            "type": "string",
+            "description": "出处，例如“佚名《越人歌》”，不是作品 ID。"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "from"
         ]
       },
       "PostalCode": {

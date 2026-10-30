@@ -23,6 +23,8 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 - 中国邮政编码
 - 中国车牌号及其简称
 - 成语大全、成语接龙
+- 古诗文、作者资料、名句查询（支持分页和关键词筛选）
+- 汉字词典、歇后语、对联查询（支持部首、笔画筛选、歇后语答案反查及已有上下联检索）
 - 等等
 
 ## 快速开始
@@ -102,6 +104,81 @@ export = class extends Base {
 ```
 
 该接口按默认路由对应 `GET /hello`；在 `src/logic/hello.ts` 中按现有写法添加 `name` 的必填和长度校验。开发编译或构建时会自动生成参数和响应文档，不使用装饰器。
+
+## 古诗文数据与查询
+
+诗歌模块使用 `chinese-gushiwen` 数据集，包含 10,000 篇古诗文、3,983 位作者和 10,000 条名句。三个 GET 接口分别读取独立的 MongoDB 集合：
+
+| 接口 | 数据目录 | 集合 | 业务筛选参数 |
+| --- | --- | --- | --- |
+| `/poetry` | `guwen/` | `poetry_guwen` | `author`、`dynasty`、`type`、`keyword` |
+| `/poetry/writer` | `writer/` | `poetry_writer` | `name`、`keyword` |
+| `/poetry/sentence` | `sentence/` | `poetry_sentence` | `from`、`keyword` |
+
+三个接口均支持 `page`、`pageSize`，不提供 ID 查询。页码默认 1，每页默认 10 条、最多 50 条，按 `_id` 升序排列。查询始终返回现有分页结构：`data` 中包含 `count`、`totalPages`、`pageSize`、`currentPage` 和记录数组 `data`；没有匹配时数组为空。
+
+示例（请求时中文参数应正常 URL 编码）：
+
+```text
+/poetry?author=李白&dynasty=唐代&type=乐府&pageSize=10
+/poetry/writer?name=李白
+/poetry/sentence?keyword=天生我材&from=李白
+```
+
+`author`、作者姓名、名句出处和关键词使用字面内容模糊匹配，不将用户输入作为正则表达式执行；朝代和分类精确匹配。古诗文关键词搜索标题、正文、分类；作者关键词搜索姓名、简介；名句关键词搜索原文、出处。
+
+数据文件是每行一条记录的 JSON（JSON Lines），不是 JSON 数组。后续导入 MongoDB 时，把各目录下所有文件分别导入表中的集合，并保留 Extended JSON 的 `_id.$oid` 为 MongoDB ObjectId。不要导入到“一言”使用的 `sentence` 集合。本次代码调整没有导入或修改数据库。
+
+返回字段保留数据源的名称：古诗文为 `title/dynasty/writer/content/type`，可选字段有 `remark/shangxi/translation/audioUrl`；作者为 `name/headImageUrl/simpleIntro/detailIntro`，其中 `detailIntro` 保留原始字符串，不自动解析为对象；名句为 `name/from`。数据没有作者 ID 或作品 ID 关联，`writer` 和 `from` 都是文字。
+
+此次更新替换了旧诗歌数据结构：`/poetry` 路径和 `author` 查询参数保留，但响应不再使用旧的 `author/paragraphs/tags/prologue` 字段，旧 `poetry` 集合也不再读取。使用新接口前需要完成三个集合的数据导入，并按新字段调整调用方。
+
+## 汉字词典、歇后语与对联
+
+词典模块使用 `chinese-xinhua` 的两份数据文件，暂不替换现有成语接口，也未新增词语接口：
+
+| 接口 | 数据文件 | MongoDB 集合 | 业务筛选参数 |
+| --- | --- | --- | --- |
+| `/dictionary/word` | `word.json` | `dictionary_word` | `word`、`radicals`、`strokes`、`keyword` |
+| `/dictionary/xiehouyu` | `xiehouyu.json` | `dictionary_xiehouyu` | `riddle`、`answer`、`keyword` |
+| `/dictionary/couplet` | 对联 `data.csv` | `dictionary_couplet` | `up`、`down`、`keyword` |
+
+三者均支持 `page`、`pageSize`，不提供 ID 查询。统一返回分页数据，默认每页 10 条、最多 50 条，按 `_id` 升序排列。所有关键词都是字面内容，不执行用户提供的正则表达式。
+
+```text
+/dictionary/word?word=乐
+/dictionary/word?word=樂
+/dictionary/word?radicals=口&strokes=13
+/dictionary/xiehouyu?riddle=飞机上聊天
+/dictionary/xiehouyu?answer=高谈阔论
+/dictionary/couplet?up=晚风摇树树还挺
+/dictionary/couplet?down=晨露润花花更红
+/dictionary/couplet?keyword=春风
+```
+
+汉字数据共 16,142 条记录、14,810 个不同字头；同一个字可能有多条读音或释义记录，不能把 `word` 设为唯一键。`word` 参数同时精确匹配 `word` 和 `oldword`，后者是数据源的原字形，可能是繁体或异体字。部首精确匹配，但有 9,044 条记录缺少部首。笔画查询参数使用整数，查询时转换成源数据的字符串格式；拼音、释义及换行按原样返回。
+
+歇后语有 14,032 条记录，前半句和答案均可按字面内容模糊查询，`keyword` 同时搜索两者。答案中的多个表述及标点不拆分、不改写。
+
+对联 CSV 有 774,491 条记录，表头为 `up,down`，分别是上联和下联。`up`、`down` 参数使用原文精确匹配（包含标点），`keyword` 同时搜索上下联。响应保留 `up`、`down` 和导入后生成的 `_id`；同一上联的多个已有下联分别返回。本接口只检索已有数据，不调用生成模型，也不承诺给任意新上联创作下联。
+
+对联文件有 5,088 条完全重复记录，可以按完整的 `(up, down)` 配对去重，但不能按 `up` 单独去重或建立唯一索引，否则会丢失同一上联的其他下联。导入时使用支持引号、逗号和换行的标准 CSV 解析器，不要直接按逗号切分。建议为上联和下联精确查询分别建立包含 `_id` 排序字段的普通索引；关键词检索仍是模糊查询，不能保证与精确查询相同的性能。
+
+这两份 JSON 文件都是数组，与古诗文的 JSON Lines 格式不同。导入时按数组格式处理，并让 MongoDB 为没有 `_id` 的记录分配 ObjectId。重复导入会产生重复记录，建议在新集合中准备数据再切换；不要依据字头直接覆盖多条记录。本次仅修改接口代码，没有导入数据库。
+
+可选的 `ci.json` 有 264,434 条词语记录，仅包含 `ci` 和 `explanation`，适合后续提供简单的查词释义接口。数据有 52 个同名词条包含不同释义、3 条完全重复记录及 28 条空释义，应整理有效释义后再导入，避免按词名去重时丢失含义。
+
+## 数据预处理
+
+`scripts/prepare-mongodb-data.cjs` 可以将上述古诗文 JSON Lines、新华词典 JSON 数组和对联 CSV 转换为统一的 UTF-8 标准 JSON 数组（`.json` 文件）。不连接数据库、不修改源文件；递归移除 `_id`，删除移除 ID 后完全相同的文档，保留同字多音、同词多释义、同一上联的不同下联以及原始文本格式。对联额外剔除上联或下联少于 5 字的记录，字数按 Unicode 字符统计，不计标点、符号和空白。
+
+```sh
+npm run data:prepare -- --poetry-root "D:/datasets/chinese-gushiwen-master" --dictionary-root "D:/datasets/chinese-xinhua-master/data" --couplets "D:/datasets/data.csv" --out "output/mongodb-import-json"
+```
+
+输出目录必须尚不存在，防止覆盖已有结果。目录下包含六个当前接口对应的集合文件、`manifest.json`（源条数、去重数、短对联剔除数、空字段、校验条数和 SHA-256）及独立的导入说明。词语和源成语放在 `optional/`，避免误导入当前使用其他结构的成语集合。所有输出通过 `JSON.parse` 校验为标准数组，并检查无 `_id`，生成结果位于已被 Git 忽略的 `output/` 下。
+
+每个数据集只输出一个完整 JSON 数组文件，不生成分片。导入时可用数据库驱动读取数组、分批写入集合，文件本身无需拆分。不含 `_id` 的文件重复导入会追加记录；准备好目标空集合后再导入。预处理不代表数据已经进入 MongoDB。较大文件不能直接使用有 [16 MB 输入限制的 `mongoimport --jsonArray`](https://www.mongodb.com/docs/database-tools/mongoimport/)。
 
 ## 线上部署
 ```sh

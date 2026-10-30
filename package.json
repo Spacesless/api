@@ -5,13 +5,14 @@
   "author": "timeless",
   "scripts": {
     "start": "npm run dev",
-    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs",
+    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs scripts/prepare-mongodb-data.test.cjs",
     "lint": "npm run typecheck",
     "dev": "tsc-watch --onSuccess \"npm run docs:generate && node app/development.js\"",
     "build": "npm run docs:generate && tsc -p tsconfig.json",
     "compile": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "docs:generate": "node scripts/generate-openapi.cjs",
+    "data:prepare": "node scripts/prepare-mongodb-data.cjs",
     "start:prod": "node app/production.js"
   },
   "dependencies": {
