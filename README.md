@@ -17,7 +17,6 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 ## 功能特性
 - 时间 (公历，农历，老黄历，十二时辰，基于[https://github.com/6tail/lunar-javascript](https://github.com/6tail/lunar-javascript))
 - 动画番组数据 (按年、月、动画名称查询, 基于[https://github.com/bangumi-data/bangumi-data](https://github.com/bangumi-data/bangumi-data))
-- QQ音乐 (通过QQ号查歌单, 通过歌单id查音乐列表, 查询带秘钥的音乐地址、歌词, 音乐搜索)
 - Live2d模型 (***勿做商用哦***, Live2D Cubism SDK v2版本, 材质图片经过tinypng压缩)
 - 中国行政区划联动 (只支持4级联动，需要5级联动找[https://github.com/modood/Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China))
 - 垃圾分类 (可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾, 基于[https://github.com/alexayan/garbage-classification-data](https://github.com/alexayan/garbage-classification-data))
@@ -66,7 +65,7 @@ npm run docs:generate
 文档来源于应用代码：
 
 - Controller 的 `*Action` 方法决定接口列表；遵循 ThinkJS 默认路径，并识别 `src/config/router.ts` 中的字面量路由别名。定时任务、更新资源等方法用 `/** @internal */` 排除（仅影响文档可见性）。
-- 类型按业务放在 `src/types/sentence.ts`、`bing.ts`、`bilibili.ts` 等文件中，同一业务的参数、响应数据和上游类型放在一起；分页、数据库公共类型放在 `src/types/common.ts`。Controller 通过 `getApiQuery<SentenceQuery>()` 显式引用参数类型，不需要维护全局路径表。字段说明写在对应属性的 JSDoc 中。直接 `this.get('参数')` 读取的参数也会被发现，缺少明确类型时按字符串记录。
+- 类型按业务放在 `src/types/sentence.ts`、`bing.ts`、`district.ts` 等文件中，同一业务的参数、响应数据和上游类型放在一起；分页、数据库公共类型放在 `src/types/common.ts`。Controller 通过 `getApiQuery<SentenceQuery>()` 显式引用参数类型，不需要维护全局路径表。字段说明写在对应属性的 JSDoc 中。直接 `this.get('参数')` 读取的参数也会被发现，缺少明确类型时按字符串记录。
 - 同名 Logic 的 `scope` 和 Action 中的 `this.rules` 提供必填、整数范围、枚举、长度和格式约束；`allowMethods` 决定 HTTP 方法，未指定时按当前服务约定记录为 GET。条件必填通过 `x-required-if` 保留；动态规则表达式会使生成失败，需扩展生成器支持。
 - `this.success(data)` 的实参类型决定成功响应字段；`this.body` 与图片重定向也会被提取。复杂或复用的数据在对应业务文件中声明类型，简单响应可以直接推导。业务含义写在 Action 的 `@summary`、`@description` 中。
 
