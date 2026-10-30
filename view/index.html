@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>API 文档</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css">
+  <link rel="stylesheet" href="/swagger/swagger-ui.css">
   <style>
     body { margin: 0; background: #fafafa; }
     .doc-header { padding: 16px 24px; background: #fff; border-bottom: 1px solid #ddd; }
@@ -18,18 +18,18 @@
 <body>
   <header class="doc-header">
     <h1>API 文档</h1>
-    <p>在线调试使用当前部署地址 · <a href="/openapi.json" download="openapi.json">下载 OpenAPI</a></p>
+    <p>在线调试使用当前部署地址 · <a href="/swagger/openapi.json" download="openapi.json">下载 OpenAPI</a></p>
   </header>
   <p id="doc-error" role="alert" hidden></p>
   <div id="swagger-ui"></div>
-  <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
+  <script src="/swagger/swagger-ui-bundle.js"></script>
   <script>
     (async function () {
       try {
         if (typeof SwaggerUIBundle !== 'function') {
-          throw new Error('Swagger UI 资源加载失败，请检查网络或 CDN 访问。');
+          throw new Error('Swagger UI 资源加载失败，请检查 www/swagger 目录。');
         }
-        const response = await fetch('/openapi.json');
+        const response = await fetch('/swagger/openapi.json');
         if (!response.ok) throw new Error('OpenAPI 加载失败（HTTP ' + response.status + '）。');
         const spec = await response.json();
         spec.servers = [{ url: window.location.origin, description: '当前部署' }];

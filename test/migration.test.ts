@@ -54,7 +54,7 @@ test('ThinkJS loads every migrated controller, logic and model from the compiled
 
 test('all documented GET endpoints still have a controller action', () => {
   const app = think.app as typeof think.app & LoadedApplication;
-  const document = JSON.parse(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8')) as {
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8')) as {
     paths: Record<string, { get?: unknown }>;
   };
   for (const [url, methods] of Object.entries(document.paths)) {
@@ -91,15 +91,12 @@ function request(url: string, method = 'GET'): Promise<{ status: number; body: s
   });
 }
 
-test('home renders project documentation and serves the generated OpenAPI document', async () => {
+test('home renders project documentation and the generated OpenAPI document exists', async () => {
   const home = await request('/');
   assert.equal(home.status, 200);
   assert.ok(home.body.includes('SwaggerUIBundle'));
   assert.ok(!home.body.includes('apifox.cn'));
-  const spec = await request('/openapi.json');
-  assert.equal(spec.status, 200);
-  const document = JSON.parse(spec.body);
-  assert.deepEqual(document, JSON.parse(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8')));
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8'));
   assert.equal(document.paths['/qrcode'].get.responses['200'].content['image/png'].schema.format, 'binary');
   assert.ok(document.paths['/bing'].get.responses['302']);
   assert.ok(!document.paths['/bing/crontab']);

@@ -266,7 +266,7 @@ const document = { openapi: '3.0.1', info: { title: '公共 API', version: JSON.
   servers: [{ url: '/', description: '当前部署' }], paths,
   components: { schemas } };
 const output = JSON.stringify(document, null, 2) + '\n';
-const destination = path.join(root, 'www', 'openapi.json');
+const destination = path.join(root, 'www', 'swagger', 'openapi.json');
 fs.mkdirSync(path.dirname(destination), { recursive: true });
 if (!fs.existsSync(destination) || fs.readFileSync(destination, 'utf8') !== output) fs.writeFileSync(destination, output);
 console.log('OpenAPI: generated ' + Object.keys(paths).length + ' endpoints.');

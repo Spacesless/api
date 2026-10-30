@@ -34,7 +34,7 @@ test('code changes regenerate parameters, constraints, response fields and route
   put('src/logic/sample.ts', logic(10));
   const generate = () => {
     execFileSync(process.execPath, [generator, root], { stdio: 'pipe' });
-    return JSON.parse(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8'));
+    return JSON.parse(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8'));
   };
   const initial = generate();
   assert.deepEqual(Object.keys(initial.paths), ['/sample']);
@@ -55,9 +55,9 @@ test('code changes regenerate parameters, constraints, response fields and route
   const properties = get.responses['200'].content['application/json'].schema.anyOf[0].properties.data.properties;
   assert.equal(properties.enabled.type, 'boolean');
   assert.ok(!('count' in properties));
-  const output = fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8');
+  const output = fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8');
   generate();
-  assert.equal(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8'), output);
+  assert.equal(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8'), output);
   assert.ok(!fs.existsSync(path.join(root, 'src/types/openapi.d.ts')));
 
   put('src/config/router.ts', 'export = [["/renamed", "sample/index"]];');
@@ -70,15 +70,15 @@ test('code changes regenerate parameters, constraints, response fields and route
   assert.ok(post.paths['/renamed'].post);
   assert.ok(!post.paths['/renamed'].get);
 
-  const previous = fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8');
+  const previous = fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8');
   put('src/controller/sample.ts', controller.replace('getApiQuery<SampleQuery>()', 'getApiQuery()'));
   const missingType = spawnSync(process.execPath, [generator, root], { encoding: 'utf8' });
   assert.notEqual(missingType.status, 0);
   assert.ok(missingType.stderr.includes('Use this.getApiQuery<BusinessQuery>()'));
-  assert.equal(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8'), previous);
+  assert.equal(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8'), previous);
 
   put('src/controller/sample.ts', controller.replace("count: 2", "count: missingVariable"));
   const failed = spawnSync(process.execPath, [generator, root], { encoding: 'utf8' });
   assert.notEqual(failed.status, 0);
-  assert.equal(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8'), previous);
+  assert.equal(fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8'), previous);
 });

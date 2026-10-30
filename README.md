@@ -56,9 +56,9 @@ npm test
 
 ## 接口文档与类型
 
-首页通过 Swagger UI 展示本项目的接口文档，支持搜索、在线调试和下载 OpenAPI，不依赖个人 Apifox 项目。在线请求使用当前部署地址；`/openapi.json` 返回原始规范，对应 `www/openapi.json`。应用提供该地址的路由，也可由 Nginx 直接映射为静态文件。页面的 Swagger UI JS/CSS 来自固定版本的 jsDelivr CDN，浏览器需要能访问该 CDN。现有 `/docs` 和 Nginx 配置由部署方自行管理。
+首页通过 Swagger UI 展示本项目的接口文档，支持搜索、在线调试和下载 OpenAPI，不依赖个人 Apifox 项目。在线请求使用当前部署地址；`/swagger/openapi.json` 返回原始规范，对应 `www/swagger/openapi.json`，由 Nginx 直接作为静态文件提供（开发模式由 resource 中间件提供）。页面的 Swagger UI JS/CSS（swagger-ui-dist@5.17.14）已下载到 `www/swagger/`，不依赖外部 CDN；升级时手动替换这两个文件。现有 `/docs` 和 Nginx 配置由部署方自行管理。
 
-`www/openapi.json` 现在是自动生成文件，不要手工编辑。开发模式每次编译成功后、生产构建时都会重新生成，也可以单独运行：
+`www/swagger/openapi.json` 现在是自动生成文件，不要手工编辑。开发模式每次编译成功后、生产构建时都会重新生成，也可以单独运行：
 
 ```sh
 npm run docs:generate
@@ -73,7 +73,7 @@ npm run docs:generate
 
 新增或修改接口时，修改 Controller、参数类型与实际校验规则即可，构建会更新文档。请为外部 JSON、Axios 和数据库结果声明准确的类型；`any`/`unknown` 无法推断真实字段，生成器会保留动态结构并输出提示，不会请求线上接口来猜测数据。它不会分析任意 helper 的响应副作用、动态路由或运行时生成的规则，目前也不提取请求体；遇到这类接口应扩展提取逻辑。
 
-`docs:generate` 只生成 `www/openapi.json`，无需额外生成接口声明文件。修改应用类型后可检查：
+`docs:generate` 只生成 `www/swagger/openapi.json`，无需额外生成接口声明文件。修改应用类型后可检查：
 
 ```sh
 npm run typecheck
@@ -188,6 +188,6 @@ npm prune --omit=dev
 npm run start:prod
 ```
 
-构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `openapi.json`）、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
+构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `swagger/openapi.json`）、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
 
 可以参考deploy目录下的nginx或pm2配置进行部署

@@ -1058,7 +1058,7 @@
     "/english-sentence": {
       "get": {
         "summary": "每日英语",
-        "description": "金山词霸每日英语句子。\n2012年至今。",
+        "description": "金山词霸每日英语句子。\r\n2012年至今。",
         "operationId": "english-sentence_index",
         "tags": [
           "english-sentence"
@@ -2906,7 +2906,7 @@
     "/sentence": {
       "get": {
         "summary": "随机获取句子",
-        "description": "- 动漫也好、小说也好、网络也好，不论在哪里，我们总会看到有那么一两个句子能穿透你的心。\n- 简单来说，一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。 或是感动，或是开心，有或是单纯的回忆。\n- 基于https://hitokoto.cn/实现",
+        "description": "- 动漫也好、小说也好、网络也好，不论在哪里，我们总会看到有那么一两个句子能穿透你的心。\r\n- 简单来说，一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。 或是感动，或是开心，有或是单纯的回忆。\r\n- 基于https://hitokoto.cn/实现",
         "operationId": "sentence_index",
         "tags": [
           "sentence"
@@ -4179,7 +4179,7 @@
     "/live2d/get": {
       "get": {
         "summary": "模型信息",
-        "description": "模型id通过模型列表可查，材质id(1-材质总数范围内，模型列表的total字段)\n也可以查看这里：https://www.timelessq.com/tool/live2d",
+        "description": "模型id通过模型列表可查，材质id(1-材质总数范围内，模型列表的total字段)\r\n也可以查看这里：https://www.timelessq.com/tool/live2d",
         "operationId": "live2d_get_index",
         "tags": [
           "live2d"
@@ -4250,7 +4250,7 @@
     "/live2d/lists": {
       "get": {
         "summary": "Live2d模型列表",
-        "description": "live2d模型列表、材质数量、出处\ndemo：https://www.timelessq.com/tool/live2d",
+        "description": "live2d模型列表、材质数量、出处\r\ndemo：https://www.timelessq.com/tool/live2d",
         "operationId": "live2d_lists_index",
         "tags": [
           "live2d"
@@ -6327,10 +6327,6 @@
           "translation": {
             "type": "string",
             "description": "译文。"
-          },
-          "audioUrl": {
-            "type": "string",
-            "description": "数据源提供的朗诵音频地址。"
           }
         },
         "required": [
