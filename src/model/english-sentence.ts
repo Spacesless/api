@@ -1,4 +1,5 @@
-import type { NumericQuery, IcibaSentence, EnglishSentence } from '../types/data';
+import type { NumericQuery } from '../types/common';
+import type { EnglishSentence, IcibaSentence } from '../types/english-sentence';
 export = class extends think.Mongo<EnglishSentence> {
   /**
    * 查询指定日期句子

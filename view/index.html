@@ -1,21 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Timeless's Api</title>
+  <title>API 文档</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui.css">
   <style>
-    .doc{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+    body { margin: 0; background: #fafafa; }
+    .doc-header { padding: 16px 24px; background: #fff; border-bottom: 1px solid #ddd; }
+    .doc-header h1 { margin: 0 0 8px; font-size: 22px; }
+    .doc-header p { margin: 0; color: #555; }
+    .doc-header a { color: #1769aa; }
+    #doc-error { padding: 24px; color: #a12622; }
   </style>
 </head>
 <body>
-  <iframe class="doc" src="https://ry16yobzcy.apifox.cn/" frameborder="0"></iframe>
+  <header class="doc-header">
+    <h1>API 文档</h1>
+    <p>在线调试使用当前部署地址 · <a href="/openapi.json" download="openapi.json">下载 OpenAPI</a></p>
+  </header>
+  <p id="doc-error" role="alert" hidden></p>
+  <div id="swagger-ui"></div>
+  <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5.17.14/swagger-ui-bundle.js"></script>
+  <script>
+    (async function () {
+      try {
+        if (typeof SwaggerUIBundle !== 'function') {
+          throw new Error('Swagger UI 资源加载失败，请检查网络或 CDN 访问。');
+        }
+        const response = await fetch('/openapi.json');
+        if (!response.ok) throw new Error('OpenAPI 加载失败（HTTP ' + response.status + '）。');
+        const spec = await response.json();
+        spec.servers = [{ url: window.location.origin, description: '当前部署' }];
+        SwaggerUIBundle({
+          spec: spec,
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          filter: true,
+          docExpansion: 'none',
+          defaultModelsExpandDepth: -1,
+          validatorUrl: null
+        });
+      } catch (error) {
+        const message = document.getElementById('doc-error');
+        message.textContent = error.message || '文档加载失败，请稍后重试。';
+        message.hidden = false;
+      }
+    })();
+  </script>
 </body>
 </html>

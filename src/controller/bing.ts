@@ -1,4 +1,4 @@
-import type { BingSourceImage } from '../types/data';
+import type { BingListQuery, BingQuery, BingRandomQuery, BingSourceImage } from '../types/bing';
 import type Model = require('../model/bing');
 import axios from 'axios';
 import dayjs = require('dayjs');
@@ -14,8 +14,11 @@ export = class extends Base {
     this.modelInstance = this.mongo('bing');
   }
 
+  /**
+   * @summary 每日图片
+   */
   async indexAction() {
-    const { date, format, size = 'default' } = this.getApiQuery('/bing');
+    const { date, format, size = 'default' } = this.getApiQuery<BingQuery>();
 
     const targetDate = date || dayjs().format('YYYY-MM-DD');
 
@@ -34,8 +37,11 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary 随机图片
+   */
   async randomAction() {
-    const { format, size = 'default' } = this.getApiQuery('/bing/random');
+    const { format, size = 'default' } = this.getApiQuery<BingRandomQuery>();
 
     const record = await this.modelInstance.randomRecord();
 
@@ -52,8 +58,11 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary 历史图片列表
+   */
   async listAction() {
-    const { page, pageSize, size = 'default' } = this.getApiQuery('/bing/list');
+    const { page, pageSize, size = 'default' } = this.getApiQuery<BingListQuery>();
 
     const list = await this.modelInstance.selectRecord(page, pageSize);
 
@@ -67,6 +76,7 @@ export = class extends Base {
   /**
    * 定时采集任务
    */
+  /** @internal */
   async crontabAction() {
     const data = await axios.request<{ images: BingSourceImage[] }>({
       url: bingApi,

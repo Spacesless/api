@@ -1,4 +1,4 @@
-import type { HolidayRecord } from '../../types/data';
+import type { HolidayRecord, TimeFestivalQuery, TimeHolidayQuery, TimeJieqiQuery, TimeQuery, TimeShichenQuery } from '../../types/time';
 import Base = require('../base');
 import { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear, HolidayUtil } from 'lunar-javascript';
 import dayjs = require('dayjs');
@@ -23,8 +23,12 @@ export = class extends Base {
     };
   }
 
+  /**
+   * @summary 万年历信息
+   * @description 查询公历、农历、老黄历信息
+   */
   indexAction() {
-    const { datetime } = this.getApiQuery('/time');
+    const { datetime } = this.getApiQuery<TimeQuery>();
 
     const calcTime = datetime ? new Date(datetime) : new Date();
     const solarInstance = Solar.fromDate(calcTime);
@@ -133,8 +137,12 @@ export = class extends Base {
   }
 
   // 时辰黄历信息
+  /**
+   * @summary 十二时辰黄历
+   * @description 查询十二时辰黄历信息
+   */
   shichenAction() {
-    const { date } = this.getApiQuery('/time/shichen');
+    const { date } = this.getApiQuery<TimeShichenQuery>();
 
     const calcTime = date ? new Date(date) : new Date();
     const solarInstance = Solar.fromDate(calcTime);
@@ -173,8 +181,12 @@ export = class extends Base {
   }
 
   // 二十四节气
+  /**
+   * @summary 二十四节气
+   * @description 查询二十四节气时间信息
+   */
   jieqiAction() {
-    const { year, month } = this.getApiQuery('/time/jieqi');
+    const { year, month } = this.getApiQuery<TimeJieqiQuery>();
 
     const calcTime = year ? new Date(`${year}-01-01`) : new Date();
     const solarInstance = Solar.fromDate(calcTime);
@@ -202,9 +214,12 @@ export = class extends Base {
 
   /**
    * 节日大全
+   *
+   * @summary 节日大全
+   * @description 公历、农历节日列表
    */
   festivalAction() {
-    const { year, month } = this.getApiQuery('/time/festival');
+    const { year, month } = this.getApiQuery<TimeFestivalQuery>();
 
     const nowTime = dayjs();
     const solarYear = dayjs(year).year();
@@ -250,9 +265,12 @@ export = class extends Base {
 
   /**
    * 法定节假日
+   *
+   * @summary 法定节假日
+   * @description 法定节假日列表（不存在的 doge）
    */
   holidayAction() {
-    const { year } = this.getApiQuery('/time/holiday');
+    const { year } = this.getApiQuery<TimeHolidayQuery>();
     const solarYear = dayjs(year).year();
 
     const holidays = HolidayUtil.getHolidays(solarYear);

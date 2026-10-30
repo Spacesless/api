@@ -1,4 +1,5 @@
-import type { NumericQuery, BingSourceImage, BingRecord } from '../types/data';
+import type { NumericQuery } from '../types/common';
+import type { BingRecord, BingSourceImage } from '../types/bing';
 export = class extends think.Mongo<BingRecord> {
   /**
    * 查询指定日期壁纸

@@ -1,11 +1,15 @@
-import type { TencentCdListResponse, TencentCd, TencentSearchResponse } from '../../types/data';
+import type { MusicTencentCdListQuery, MusicTencentLyricQuery, MusicTencentSearchQuery, MusicTencentSongListQuery, MusicTencentSongUrlQuery, TencentCd, TencentCdListResponse, TencentSearchResponse } from '../../types/music';
 import Base = require('../base');
 import axios from 'axios';
 
 export = class extends Base {
   // 根据QQ号获取歌单
+  /**
+   * @summary QQ音乐歌单
+   * @description 根据QQ号获取歌单
+   */
   async cdListAction() {
-    const uid = this.get('uid');
+    const uid = this.getApiQuery<MusicTencentCdListQuery>().uid;
 
     const APIURL = 'https://c.y.qq.com/rsc/fcgi-bin/fcg_user_created_diss';
     await axios.get<TencentCdListResponse>(APIURL, {
@@ -63,8 +67,12 @@ export = class extends Base {
   }
 
   // 根据歌单id获取歌曲列表
+  /**
+   * @summary 歌单音乐
+   * @description 根据歌单id获取歌曲列表
+   */
   async songListAction() {
-    const { disstid } = this.getApiQuery('/music/tencent/songList');
+    const { disstid } = this.getApiQuery<MusicTencentSongListQuery>();
     const APIURL = 'https://c.y.qq.com/qzone/fcg-bin/fcg_ucc_getcdinfo_byids_cp.fcg';
     await axios.get<{ code: number; cdlist: TencentCd[] }>(APIURL, {
       headers: {
@@ -124,8 +132,11 @@ export = class extends Base {
   }
 
   // 搜索歌曲名
+  /**
+   * @summary 歌曲搜索
+   */
   async searchAction() {
-    const { keyword, page, pageSize } = this.getApiQuery('/music/tencent/search');
+    const { keyword, page, pageSize } = this.getApiQuery<MusicTencentSearchQuery>();
     const APIURL = 'https://u.y.qq.com/cgi-bin/musicu.fcg?_webcgikey=DoSearchForQQMusicDesktop&_=1670036427815';
     await axios.request<TencentSearchResponse>({
       url: APIURL,
@@ -195,8 +206,12 @@ export = class extends Base {
   }
 
   // 根据歌曲id获取音乐文件地址
+  /**
+   * @summary 歌曲地址查询
+   * @description 根据歌曲id获取歌曲文件地址
+   */
   async songUrlAction() {
-    const { songmid } = this.getApiQuery('/music/tencent/songUrl');
+    const { songmid } = this.getApiQuery<MusicTencentSongUrlQuery>();
     const APIURL = 'https://u.y.qq.com/cgi-bin/musicu.fcg';
     const postData = {
       req: {
@@ -227,7 +242,7 @@ export = class extends Base {
         cv: 0
       }
     };
-    await axios.get(APIURL, {
+    await axios.get<{ code: number; req_0: { data: { sip: string[]; midurlinfo: { purl: string; songmid: string }[] } } }>(APIURL, {
       params: {
         '-': 'getplaysongvkey36597529893735015',
         g_tk: 5381,
@@ -258,8 +273,12 @@ export = class extends Base {
   }
 
   // 根据歌曲id获取歌词
+  /**
+   * @summary 歌词查询
+   * @description 根据歌曲id获取歌词
+   */
   async lyricAction() {
-    const { songmid } = this.getApiQuery('/music/tencent/lyric');
+    const { songmid } = this.getApiQuery<MusicTencentLyricQuery>();
     const APIURL = 'https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric_new.fcg';
     await axios.get(APIURL, {
       headers: {

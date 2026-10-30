@@ -1,3 +1,4 @@
+import type { CryptoCipherQuery } from '../../types/crypto';
 import Base = require('../base');
 import CryptoJS = require('crypto-js');
 
@@ -5,8 +6,11 @@ import CryptoJS = require('crypto-js');
 const SECRET_IV = CryptoJS.enc.Utf8.parse('66886688');
 
 export = class extends Base {
+  /**
+   * @summary 加解密
+   */
   indexAction() {
-    const { message, secret, algorithm, type } = this.getApiQuery('/crypto/cipher');
+    const { message, secret, algorithm, type } = this.getApiQuery<CryptoCipherQuery>();
 
     const findAlgorithm = CryptoJS[algorithm as 'AES' | 'DES' | 'TripleDES' | 'Rabbit' | 'RC4' | 'RC4Drop'];
     const secretHex = CryptoJS.enc.Utf8.parse(secret);

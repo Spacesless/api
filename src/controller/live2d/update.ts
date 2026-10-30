@@ -1,4 +1,4 @@
-import type { Live2dModel } from '../../types/data';
+import type { Live2dModel } from '../../types/live2d';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
@@ -12,6 +12,7 @@ export = class extends Base {
     this.contextBody = [];
   }
 
+  /** @internal */
   async indexAction() {
     this.writeDocument('开始更新材质列表');
     for (const item of this.modelLists) {

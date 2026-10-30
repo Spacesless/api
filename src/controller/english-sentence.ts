@@ -1,4 +1,4 @@
-import type { IcibaResponse, IcibaSentence } from '../types/data';
+import type { EnglishSentenceListQuery, EnglishSentenceQuery, IcibaResponse, IcibaSentence } from '../types/english-sentence';
 import type Model = require('../model/english-sentence');
 import axios from 'axios';
 import dayjs = require('dayjs');
@@ -11,8 +11,13 @@ export = class extends Base {
     this.modelInstance = this.mongo('english-sentence');
   }
 
+  /**
+   * @summary 每日英语
+   * @description 金山词霸每日英语句子。
+   * 2012年至今。
+   */
   async indexAction() {
-    const { date } = this.getApiQuery('/english-sentence');
+    const { date } = this.getApiQuery<EnglishSentenceQuery>();
 
     const targetDate = date || dayjs().format('YYYY-MM-DD');
 
@@ -25,6 +30,9 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary 随机英语句子
+   */
   async randomAction() {
     const record = await this.modelInstance.randomRecord();
 
@@ -36,8 +44,11 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary 英语句子列表
+   */
   async listAction() {
-    const { page, pageSize } = this.getApiQuery('/english-sentence/list');
+    const { page, pageSize } = this.getApiQuery<EnglishSentenceListQuery>();
 
     const list = await this.modelInstance.selectRecord(page, pageSize);
 
@@ -100,6 +111,7 @@ export = class extends Base {
   /**
    * 定时采集任务
    */
+  /** @internal */
   async crontabAction() {
     const data = await this.fetchSentence() || await this.fetchFallbackSentence();
 

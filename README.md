@@ -53,18 +53,56 @@ npm test
 
 测试覆盖编译后的 ThinkJS 模块加载、部分本地接口和参数校验，以及每日英语主备源回退，不请求外部数据源或写入 MongoDB。上线前仍需验证数据库接口、上游接口和资源文件。
 
-## 接口类型
+## 接口文档与类型
 
-`openapi.json` 是对外接口契约，`src/types/openapi.d.ts` 为生成文件。修改文档后执行：
+首页通过 Swagger UI 展示本项目的接口文档，支持搜索、在线调试和下载 OpenAPI，不依赖个人 Apifox 项目。在线请求使用当前部署地址；`/openapi.json` 返回原始规范，对应 `www/openapi.json`。应用提供该地址的路由，也可由 Nginx 直接映射为静态文件。页面的 Swagger UI JS/CSS 来自固定版本的 jsDelivr CDN，浏览器需要能访问该 CDN。现有 `/docs` 和 Nginx 配置由部署方自行管理。
+
+`www/openapi.json` 现在是自动生成文件，不要手工编辑。开发模式每次编译成功后、生产构建时都会重新生成，也可以单独运行：
 
 ```sh
-npm run types:api
+npm run docs:generate
+```
+
+文档来源于应用代码：
+
+- Controller 的 `*Action` 方法决定接口列表；遵循 ThinkJS 默认路径，并识别 `src/config/router.ts` 中的字面量路由别名。定时任务、更新资源等方法用 `/** @internal */` 排除（仅影响文档可见性）。
+- 类型按业务放在 `src/types/sentence.ts`、`bing.ts`、`bilibili.ts` 等文件中，同一业务的参数、响应数据和上游类型放在一起；分页、数据库公共类型放在 `src/types/common.ts`。Controller 通过 `getApiQuery<SentenceQuery>()` 显式引用参数类型，不需要维护全局路径表。字段说明写在对应属性的 JSDoc 中。直接 `this.get('参数')` 读取的参数也会被发现，缺少明确类型时按字符串记录。
+- 同名 Logic 的 `scope` 和 Action 中的 `this.rules` 提供必填、整数范围、枚举、长度和格式约束；`allowMethods` 决定 HTTP 方法，未指定时按当前服务约定记录为 GET。条件必填通过 `x-required-if` 保留；动态规则表达式会使生成失败，需扩展生成器支持。
+- `this.success(data)` 的实参类型决定成功响应字段；`this.body` 与图片重定向也会被提取。复杂或复用的数据在对应业务文件中声明类型，简单响应可以直接推导。业务含义写在 Action 的 `@summary`、`@description` 中。
+
+新增或修改接口时，修改 Controller、参数类型与实际校验规则即可，构建会更新文档。请为外部 JSON、Axios 和数据库结果声明准确的类型；`any`/`unknown` 无法推断真实字段，生成器会保留动态结构并输出提示，不会请求线上接口来猜测数据。它不会分析任意 helper 的响应副作用、动态路由或运行时生成的规则，目前也不提取请求体；遇到这类接口应扩展提取逻辑。
+
+`docs:generate` 只生成 `www/openapi.json`，无需额外生成接口声明文件。修改应用类型后可检查：
+
+```sh
 npm run typecheck
 ```
 
-Controller 通过 `getApiQuery('/接口路径')` 获取对应的参数类型；运行时校验继续由原有 Logic 执行。采集响应、本地 JSON 资源和 MongoDB 扩展的类型位于 `src/types/`。这些类型声明不会自动校验外部 JSON。
+运行时校验继续由原有 Logic 执行；TypeScript 类型声明不会自动校验外部 JSON。
 
-`think-ts/` 仅为迁移参考项目，不参与编译。
+新增接口示例：在 `src/types/hello.ts` 声明参数，然后在 Controller 中使用。
+
+```ts
+// src/types/hello.ts
+export interface HelloQuery {
+  /** 用户名称 */
+  name: string;
+}
+
+// src/controller/hello.ts
+import type { HelloQuery } from '../types/hello';
+import Base = require('./base');
+
+export = class extends Base {
+  /** @summary 问候 */
+  indexAction() {
+    const { name } = this.getApiQuery<HelloQuery>();
+    return this.success({ message: `你好，${name}` });
+  }
+};
+```
+
+该接口按默认路由对应 `GET /hello`；在 `src/logic/hello.ts` 中按现有写法添加 `name` 的必填和长度校验。开发编译或构建时会自动生成参数和响应文档，不使用装饰器。
 
 ## 线上部署
 ```sh
@@ -74,6 +112,6 @@ npm prune --omit=dev
 npm run start:prod
 ```
 
-构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
+构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `openapi.json`）、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
 
 可以参考deploy目录下的nginx或pm2配置进行部署

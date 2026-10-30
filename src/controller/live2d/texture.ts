@@ -1,12 +1,17 @@
+import type { Live2dTextureRandomQuery, Live2dTextureSwitchQuery } from '../../types/live2d';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
 
 export = class extends Base {
   // 根据模型id、模式id获取下一材质id
+  /**
+   * @summary 顺序获取材质
+   * @description 模型id通过列表可查，材质id(1-材质总数范围内)
+   */
   async switchAction() {
-    const id = +this.get('id');
-    let _texture = +this.get('texture');
+    const id = +this.getApiQuery<Live2dTextureSwitchQuery>().id;
+    let _texture = +this.getApiQuery<Live2dTextureSwitchQuery>().texture;
     _texture += 1;
     const row = this.modelLists.find(item => item.id === id)!;
 
@@ -30,8 +35,12 @@ export = class extends Base {
   }
 
   // 根据模型id随机获取一材质
+  /**
+   * @summary 随机获取材质
+   * @description 模型id通过列表可查
+   */
   async randomAction(): Promise<unknown> {
-    const id = +this.get('id');
+    const id = +this.getApiQuery<Live2dTextureRandomQuery>().id;
     let _texture;
     const row = this.modelLists.find(item => item.id === id)!;
 

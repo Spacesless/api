@@ -1,4 +1,4 @@
-import type { Ship, ShipSkin, SpineResult } from '../../types/data';
+import type { AzurlaneSpineQuery, Ship, ShipSkin, SpineResult } from '../../types/azurlane';
 import Base = require('../base');
 import path = require('path');
 import url = require('url');
@@ -12,8 +12,12 @@ export = class extends Base {
   }
 
   // 通过SD小人id获取skeleton、atlas、texture地址
+  /**
+   * @summary Spine模型信息
+   * @description SD动画小人模型资源信息
+   */
   async indexAction() {
-    const { id, isuseCDN } = this.getApiQuery('/azurlane/spine');
+    const { id, isuseCDN } = this.getApiQuery<AzurlaneSpineQuery>();
     const sdPath = path.join(this.basePath, 'spine', id);
     if (think.isExist(sdPath)) {
       const prefix = isuseCDN ? '//cos.timelessq.com' : this.ctx.origin.replace(/http:|https:/, '');
@@ -39,11 +43,16 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary Spine模型列表
+   * @description SD动画小人，可爱捏
+   */
   async listsAction() {
-    const spineList = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
+    const spineList: { name: string; value: string; remark?: string }[] = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
     return this.success(spineList);
   }
 
+  /** @internal */
   async updateAction() {
     const listPath = path.join(this.basePath, 'spine-list.json');
     if (think.isExist(listPath)) {

@@ -1,3 +1,4 @@
+import type { JokeListQuery, JokeQuery } from '../types/joke';
 import type Model = require('../model/joke');
 import Base = require('./base');
 
@@ -8,8 +9,12 @@ export = class extends Base {
     this.modelInstance = this.mongo('joke');
   }
 
+  /**
+   * @summary 随机笑话
+   * @description 随机返回一个笑话。
+   */
   async indexAction() {
-    const { type, level } = this.getApiQuery('/joke');
+    const { type, level } = this.getApiQuery<JokeQuery>();
 
     const record = await this.modelInstance.randomRecord(type, level);
 
@@ -21,8 +26,11 @@ export = class extends Base {
     }
   }
 
+  /**
+   * @summary 笑话列表
+   */
   async listAction() {
-    const params = this.getApiQuery('/joke/list');
+    const params = this.getApiQuery<JokeListQuery>();
 
     const list = await this.modelInstance.selectRecord(params);
 

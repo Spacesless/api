@@ -1,5 +1,5 @@
-import type { Sentence, SentenceQuery, NumericQuery } from '../types/data';
-import type { MongoFilter } from '../types/data';
+import type { Sentence, SentenceFilter } from '../types/sentence';
+import type { MongoFilter, NumericQuery } from '../types/common';
 const fields = 'id,uuid,commit_from,created_at,creator,from,from_who,hitokoto,length,type';
 
 export = class extends think.Mongo<Sentence> {
@@ -17,7 +17,7 @@ export = class extends think.Mongo<Sentence> {
    * 随机一言
    * @returns {Promise}
    */
-  async randomRecord(params: SentenceQuery) {
+  async randomRecord(params: SentenceFilter) {
     const { type, minLength, maxLength } = params;
 
     const where = this.getWhere(type, minLength, maxLength);
@@ -39,7 +39,7 @@ export = class extends think.Mongo<Sentence> {
    * @param {Number} pageSize 每页个数
    * @returns {Promise}
    */
-  selectRecord(params: SentenceQuery) {
+  selectRecord(params: SentenceFilter) {
     const { page, pageSize, type, minLength, maxLength } = params;
 
     const where = this.getWhere(type, minLength, maxLength);

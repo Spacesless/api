@@ -1,36 +1,39 @@
-import Base = require('./base');
+import type { License, LicenseQuery } from '../types/license';
+import Base = require("./base");
+
 
 export = class extends Base {
   /**
-   * 根据省份、城市名、城市缩写等关键字查询车牌信息
+   * @summary 车牌归属地查询
+   * @description 根据省份名称、简称，城市名查车牌号，根据车牌号查找城市信息
    */
   async indexAction() {
-    const { keyword } = this.getApiQuery('/license');
+    const { keyword } = this.getApiQuery<LicenseQuery>();
 
-    const list = await this.mongo('license')
+    const list = await this.mongo<License>("license")
       .where({
         $or: [
           {
             province: {
-              $regex: keyword
-            }
+              $regex: keyword,
+            },
           },
           {
             city: {
-              $regex: keyword
-            }
+              $regex: keyword,
+            },
           },
           {
             code: {
-              $regex: keyword
-            }
+              $regex: keyword,
+            },
           },
           {
             prefix: {
-              $regex: keyword
-            }
-          }
-        ]
+              $regex: keyword,
+            },
+          },
+        ],
       })
       .select();
 

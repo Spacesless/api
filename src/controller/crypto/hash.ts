@@ -1,9 +1,14 @@
+import type { CryptoHashMd5Query, CryptoHashShaQuery, CryptoHashUuidQuery } from '../../types/crypto';
 import Base = require('../base');
 import CryptoJS = require('crypto-js');
 
 export = class extends Base {
+  /**
+   * @summary MD5
+   * @description MD5 是一种广泛使用的哈希函数
+   */
   md5Action() {
-    const { message, size, textCase } = this.getApiQuery('/crypto/hash/md5');
+    const { message, size, textCase } = this.getApiQuery<CryptoHashMd5Query>();
 
     let hash = CryptoJS.MD5(message).toString(CryptoJS.enc.Hex);
 
@@ -18,8 +23,12 @@ export = class extends Base {
     return this.success(hash);
   }
 
+  /**
+   * @summary SHA
+   * @description SHA 哈希函数由国家安全局设计，是一个密码散列函数家族
+   */
   shaAction() {
-    const { message, algorithm } = this.getApiQuery('/crypto/hash/sha');
+    const { message, algorithm } = this.getApiQuery<CryptoHashShaQuery>();
 
     const algorithmEnum = {
       1: CryptoJS.SHA1,
@@ -33,8 +42,11 @@ export = class extends Base {
     return this.success(hash);
   }
 
+  /**
+   * @summary UUID
+   */
   uuidAction() {
-    const { textCase, version, count } = this.getApiQuery('/crypto/hash/uuid');
+    const { textCase, version, count } = this.getApiQuery<CryptoHashUuidQuery>();
 
     const result = [];
     const targetCount = count || 1;

@@ -1,5 +1,5 @@
-import type { Joke, JokeQuery, NumericQuery } from '../types/data';
-import type { MongoFilter } from '../types/data';
+import type { Joke, JokeFilter } from '../types/joke';
+import type { MongoFilter, NumericQuery } from '../types/common';
 export = class extends think.Mongo<Joke> {
   /**
    * 查询随机笑话
@@ -27,7 +27,7 @@ export = class extends think.Mongo<Joke> {
    * @param {Number} level 幽默等级
    * @returns {Promise}
    */
-  selectRecord({ page, pageSize, type, level }: JokeQuery) {
+  selectRecord({ page, pageSize, type, level }: JokeFilter) {
     const where = this.getWhere(type, level);
 
     return this.order('date DESC')

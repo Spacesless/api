@@ -1,9 +1,13 @@
-import type { MongoFilter } from '../types/data';
+import type { MongoFilter } from '../types/common';
+import type { GarbageQuery } from '../types/garbage';
 import Base = require('./base');
 
 export = class extends Base {
+  /**
+   * @summary 生活垃圾分类
+   */
   async indexAction() {
-    const { keyword, category, page, pageSize } = this.getApiQuery('/garbage');
+    const { keyword, category, page, pageSize } = this.getApiQuery<GarbageQuery>();
 
     const where: MongoFilter = {};
     if (keyword) {
@@ -16,7 +20,7 @@ export = class extends Base {
       where.category = category;
     }
 
-    const list = await this.mongo('garbage')
+    const list = await this.mongo<{ name: string; category: string }>('garbage')
       .field('name,category')
       .where(where)
       .page(page, pageSize)

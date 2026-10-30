@@ -1,10 +1,8 @@
-import type { ApiQuery } from '../types/data';
-import type { paths } from '../types/openapi';
 const isDev = think.env === 'development';
 
 export = class extends think.Controller {
-  /** Read query parameters using the public OpenAPI contract. Logic remains responsible for validation. */
-  protected getApiQuery<P extends keyof paths>(_path: P): ApiQuery<P> {
+  /** Query types and Logic rules are the source for generated API documentation. */
+  protected getApiQuery<T extends object>(): T {
     return this.get();
   }
 

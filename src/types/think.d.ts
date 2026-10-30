@@ -1,5 +1,6 @@
+import type { NumericQuery, PageResult } from './common';
 import 'thinkjs';
-import type { NumericQuery, PageResult } from './data';
+
 import type EnglishSentenceModel = require('../model/english-sentence');
 import type BingModel = require('../model/bing');
 import type JokeModel = require('../model/joke');

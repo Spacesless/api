@@ -1,4 +1,4 @@
-import type { DistrictNode } from '../types/data';
+import type { DistrictGetChildrenQuery, DistrictNode, DistrictQuery, DistrictSearchQuery } from '../types/district';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
@@ -9,9 +9,12 @@ export = class extends Base {
   /**
    * 根据联动等级获取级联数据
    * @summary level {2 省-地,}
+   *
+   * @summary 省市区街道列表
+   * @description 获取省市区街道四级行政区划，可用于生成城市列表控件等功能时使用。
    */
   async indexAction() {
-    const { level } = this.getApiQuery('/district');
+    const { level } = this.getApiQuery<DistrictQuery>();
     let data: DistrictNode[] | undefined = [];
     switch (+level) {
       case 2:
@@ -31,9 +34,12 @@ export = class extends Base {
    * 根据区域编码获取子级联动数据
    * @summary level: {0: "省级（省份、直辖市、自治区）", 1: "地级（城市）", 2: "县级（区县）", 3: "乡级（乡镇、街道）"}
    * @summary code: 父节点code
+   *
+   * @summary 获取下级行政区划
+   * @description 获取指定行政区划的子级行政区划。
    */
   async getChildrenAction() {
-    const code = this.get('code') || '';
+    const code = this.getApiQuery<DistrictGetChildrenQuery>().code || '';
     let data: DistrictNode[] | undefined = [];
     switch (code.length) {
       case 0:
@@ -57,9 +63,12 @@ export = class extends Base {
 
   /**
    * 根据关键词搜索区域的级联数据
+   *
+   * @summary 行政区划搜索
+   * @description 根据关键词或行政区划编码搜索
    */
   async searchAction() {
-    const { keyword, keepParent } = this.getApiQuery('/district/search');
+    const { keyword, keepParent } = this.getApiQuery<DistrictSearchQuery>();
     let data: DistrictNode[] | undefined = [];
     const relationship: DistrictNode[] = await fs.readJson(path.join(basePath, 'pcas-code.json'));
     if (keepParent === 'true' || keepParent === '1') {

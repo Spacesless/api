@@ -1,10 +1,15 @@
-import type { Live2dEntry } from '../../types/data';
+import type { Live2dEntry } from '../../types/live2d';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
 
 export = class extends Base {
   // 模型列表 id、数量
+  /**
+   * @summary Live2d模型列表
+   * @description live2d模型列表、材质数量、出处
+   * demo：https://www.timelessq.com/tool/live2d
+   */
   async indexAction() {
     const JSONpath = path.join(this.basePath, 'models.json');
     const modelJson: Live2dEntry[] = await fs.readJson(JSONpath);
@@ -23,7 +28,7 @@ export = class extends Base {
             const modelDir = path.join(this.basePath, models);
             const switchPath = path.join(modelDir, 'switch_list.json');
             if (think.isExist(switchPath)) {
-              const texturesJson = await fs.readJson(switchPath);
+              const texturesJson: unknown[] | null = await fs.readJson(switchPath);
               total = texturesJson ? texturesJson.length : 0;
             }
           }

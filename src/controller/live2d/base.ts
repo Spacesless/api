@@ -1,4 +1,4 @@
-import type { Live2dEntry, Live2dModel, TextureList } from '../../types/data';
+import type { Live2dEntry, Live2dModel, TextureList } from '../../types/live2d';
 import Base = require('../base');
 import path = require('path');
 import url = require('url');

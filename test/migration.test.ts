@@ -1,3 +1,4 @@
+import type { IcibaResponse, IcibaSentence } from '../src/types/english-sentence';
 import assert = require('node:assert/strict');
 import fs = require('node:fs');
 import path = require('node:path');
@@ -5,7 +6,7 @@ import vm = require('node:vm');
 import { IncomingMessage, ServerResponse } from 'node:http';
 import { Socket } from 'node:net';
 import { test } from 'node:test';
-import type { IcibaResponse, IcibaSentence } from '../src/types/data';
+
 import type SentenceController = require('../src/controller/english-sentence');
 
 const root = path.resolve(__dirname, '../..');
@@ -53,7 +54,7 @@ test('ThinkJS loads every migrated controller, logic and model from the compiled
 
 test('all documented GET endpoints still have a controller action', () => {
   const app = think.app as typeof think.app & LoadedApplication;
-  const document = JSON.parse(fs.readFileSync(path.join(root, 'openapi.json'), 'utf8')) as {
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8')) as {
     paths: Record<string, { get?: unknown }>;
   };
   for (const [url, methods] of Object.entries(document.paths)) {
@@ -89,6 +90,20 @@ function request(url: string): Promise<{ status: number; body: string }> {
     think.app.callback()(req, res);
   });
 }
+
+test('home renders project documentation and serves the generated OpenAPI document', async () => {
+  const home = await request('/');
+  assert.equal(home.status, 200);
+  assert.ok(home.body.includes('SwaggerUIBundle'));
+  assert.ok(!home.body.includes('apifox.cn'));
+  const spec = await request('/openapi.json');
+  assert.equal(spec.status, 200);
+  const document = JSON.parse(spec.body);
+  assert.deepEqual(document, JSON.parse(fs.readFileSync(path.join(root, 'www', 'openapi.json'), 'utf8')));
+  assert.equal(document.paths['/qrcode'].get.responses['200'].content['image/png'].schema.format, 'binary');
+  assert.ok(document.paths['/bing'].get.responses['302']);
+  assert.ok(!document.paths['/bing/crontab']);
+});
 
 test('compiled routes retain validation, response envelopes and local utility behavior', async () => {
   const md5 = await request('/crypto/hash/md5?message=hello');

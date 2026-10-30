@@ -1,9 +1,13 @@
+import type { CryptoEncoderQuery } from '../../types/crypto';
 import Base = require('../base');
 import CryptoJS = require('crypto-js');
 
 export = class extends Base {
+  /**
+   * @summary 编码转换
+   */
   indexAction() {
-    const { message, algorithm, type = 0 } = this.getApiQuery('/crypto/encoder');
+    const { message, algorithm, type = 0 } = this.getApiQuery<CryptoEncoderQuery>();
 
     const findAlgorithm = CryptoJS.enc[algorithm as keyof typeof CryptoJS.enc];
 
