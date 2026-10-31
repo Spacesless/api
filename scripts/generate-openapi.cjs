@@ -108,6 +108,28 @@ function schema(type, active = new Set()) {
   return result;
 }
 
+// ThinkJS response envelope: success() always sends errno 0 and data (default ''); fail() defaults to errno 1000,
+// and Logic validation failures send errno 1001 with errmsg as { field: message }.
+function envelope(results, emptySuccess, canFail, validated) {
+  const failable = canFail || validated;
+  const variants = [...new Map([...results, ...(emptySuccess ? [{ type: 'string' }] : [])].map(s => [JSON.stringify(s), s])).values()];
+  const errnoText = '错误码：0 表示成功' + (canFail ? '，1000 表示业务失败' : '') + (validated ? '，1001 表示参数校验失败' : '') + '。';
+  const errmsgText = '错误信息，成功时为空字符串' + (validated ? '；参数校验失败时为 { 参数名: 错误信息 }' : '') + '。';
+  const properties = {
+    errno: { type: 'integer', description: errnoText },
+    errmsg: validated
+      ? { anyOf: [{ type: 'string' }, { type: 'object', additionalProperties: { type: 'string' } }], description: errmsgText }
+      : { type: 'string', description: errmsgText }
+  };
+  if (variants.length) properties.data = variants.length === 1 ? variants[0] : { anyOf: variants };
+  return {
+    type: 'object',
+    description: failable ? 'errno 为 0 时 data 为响应数据，失败时一般不返回 data。' : 'data 为响应数据。',
+    required: ['errno', 'errmsg', ...(variants.length && !failable ? ['data'] : [])],
+    properties
+  };
+}
+
 // Only inspect literal validation declarations; never execute application code or connect to services.
 function literal(node) {
   if (ts.isObjectLiteralExpression(node)) return Object.fromEntries(node.properties.map(p => {
@@ -209,7 +231,7 @@ for (const file of sources.filter(f => f.fileName.replace(/\\/g, '/').includes('
       }
     }
     const results = [];
-    let binary, raw, redirect = false, canFail = false;
+    let binary, raw, redirect = false, canFail = false, emptySuccess = false;
     walk(method, n => {
       if (ts.isCallExpression(n)) {
         const callee = n.expression.getText();
@@ -217,10 +239,10 @@ for (const file of sources.filter(f => f.fileName.replace(/\\/g, '/').includes('
           const name = n.arguments[0].text;
           if (!queryProps.has(name)) queryProps.set(name, { name, in: 'query', required: false, schema: { type: 'string' } });
         }
-        if (callee === 'this.success') results.push({ type: 'object', required: ['errno', 'errmsg', ...(n.arguments.length ? ['data'] : [])], properties: {
-          errno: { type: 'integer', enum: [0] }, errmsg: { type: 'string' },
-          ...(n.arguments.length ? { data: schema(checker.getTypeAtLocation(n.arguments[0])) } : {})
-        } });
+        if (callee === 'this.success') {
+          if (n.arguments.length) results.push(schema(checker.getTypeAtLocation(n.arguments[0])));
+          else emptySuccess = true;
+        }
         if (callee === 'this.fail') canFail = true;
         if (callee === 'this.ctx.redirect') redirect = true;
       }
@@ -239,17 +261,15 @@ for (const file of sources.filter(f => f.fileName.replace(/\\/g, '/').includes('
     }
     const responses = {};
     const content = {};
-    if (results.length) content['application/json'] = { schema: results.length === 1 ? results[0] : { anyOf: results } };
-    if (raw) content['application/json'] = { schema: raw };
+    const validated = Object.keys(rules).length > 0;
+    const failable = canFail || validated;
+    if (results.length || emptySuccess) content['application/json'] = { schema: envelope(results, emptySuccess, canFail, validated) };
+    else if (failable && !raw) content['application/json'] = { schema: envelope([], false, canFail, validated) };
+    // this.body returns the raw value on success, while failures still use the envelope.
+    if (raw) content['application/json'] = { schema: failable ? { anyOf: [raw, envelope([], false, canFail, validated)] } : raw };
     if (binary) content['image/png'] = { schema: binary };
-    if (Object.keys(content).length) responses['200'] = { description: '成功响应', content };
+    if (Object.keys(content).length) responses['200'] = { description: failable ? '业务响应' : '成功响应', content };
     if (redirect) responses['302'] = { description: '重定向到图片地址', headers: { Location: { schema: { type: 'string' } } } };
-    if (canFail || Object.keys(rules).length) {
-      const failure = { type: 'object', required: ['errno', 'errmsg'], properties: { errno: { type: 'integer' }, errmsg: { anyOf: [{ type: 'string' }, { type: 'object', additionalProperties: true }] } } };
-      const response = responses['200'] ||= { description: '业务响应', content: {} };
-      const json = response.content['application/json'];
-      response.content['application/json'] = { schema: json ? { anyOf: [json.schema, failure] } : failure };
-    }
     if (!Object.keys(responses).length) throw new Error('No response inferred for ' + url + '; add a typed response or mark action @internal.');
     if (paths[url]) throw new Error('Duplicate API route: ' + url);
     const definition = {

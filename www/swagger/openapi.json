@@ -38,6 +38,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -46,12 +47,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -111,6 +111,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -119,12 +120,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -190,57 +190,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/Partial_BingRecord_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Partial_BingRecord_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -298,57 +280,29 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "$ref": "#/components/schemas/BingRecord"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                    "errmsg": {
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/BingRecord"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -416,57 +370,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_BingRecord_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_BingRecord_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -548,57 +484,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_DictionaryWord_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_DictionaryWord_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -669,57 +587,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Xiehouyu_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Xiehouyu_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -790,57 +690,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Couplet_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Couplet_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -869,60 +751,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "$ref": "#/components/schemas/DistrictNode"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/DistrictNode"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -956,6 +820,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -964,12 +829,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -1026,6 +890,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -1034,12 +899,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -1078,57 +942,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/Partial_EnglishSentence_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Partial_EnglishSentence_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1146,57 +992,29 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "$ref": "#/components/schemas/EnglishSentence"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                    "errmsg": {
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/EnglishSentence"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1236,57 +1054,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_EnglishSentence_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_EnglishSentence_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1346,6 +1146,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -1354,15 +1155,14 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
-                      "$ref": "#/components/schemas/PageResult___name__string__category__string____"
+                      "$ref": "#/components/schemas/PageResult_Garbage_"
                     }
                   }
                 }
@@ -1393,57 +1193,29 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                    "errmsg": {
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1491,57 +1263,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Idiom_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Idiom_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1589,57 +1343,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Idiom_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Idiom_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1669,81 +1405,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "ip": {
-                              "type": "string"
-                            },
-                            "country": {
-                              "type": "string"
-                            },
-                            "province": {
-                              "type": "string"
-                            },
-                            "city": {
-                              "type": "string"
-                            },
-                            "isp": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "ip",
-                            "country",
-                            "province",
-                            "city",
-                            "isp"
-                          ]
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/IpRegion"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1791,57 +1485,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/Joke"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Joke"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1909,57 +1585,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Joke_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Joke_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -1988,60 +1646,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "$ref": "#/components/schemas/License"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/License"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2098,6 +1738,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -2106,12 +1747,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -2215,63 +1855,45 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "type": "array",
-                            "items": {
-                              "type": "string"
-                            }
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
                         }
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2352,57 +1974,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Poem_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Poem_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2463,57 +2067,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_PoetryWriter_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_PoetryWriter_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2574,57 +2160,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_PoetrySentence_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_PoetrySentence_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2653,60 +2221,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "$ref": "#/components/schemas/PostalCode"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/PostalCode"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -2839,57 +2389,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
                         },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               },
               "image/png": {
@@ -2956,57 +2488,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/Sentence"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Sentence"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3034,57 +2548,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/Partial_Sentence_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Partial_Sentence_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3165,57 +2661,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/PageResult_Sentence_"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Sentence_"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3275,6 +2753,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -3283,61 +2762,16 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "classify": {
-                            "type": "string"
-                          },
-                          "names": {
-                            "type": "object",
-                            "properties": {
-                              "cn": {
-                                "type": "string",
-                                "description": "舰船中文名称。"
-                              }
-                            },
-                            "required": [
-                              "cn"
-                            ],
-                            "additionalProperties": {
-                              "type": "string"
-                            }
-                          },
-                          "thumbnail": {
-                            "type": "string"
-                          },
-                          "hullType": {
-                            "type": "string"
-                          },
-                          "nationality": {
-                            "type": "string"
-                          },
-                          "rarity": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "id",
-                          "classify",
-                          "names",
-                          "thumbnail",
-                          "hullType",
-                          "nationality",
-                          "rarity"
-                        ]
+                        "$ref": "#/components/schemas/ShipListItem"
                       }
                     }
                   }
@@ -3368,100 +2802,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "hullType": {
-                              "type": "string"
-                            },
-                            "nationality": {
-                              "type": "string"
-                            },
-                            "rarity": {
-                              "type": "string"
-                            },
-                            "id": {
-                              "type": "string",
-                              "description": "舰船资源 ID。"
-                            },
-                            "_gid": {
-                              "type": "number",
-                              "description": "舰船分组 ID，用于关联皮肤配置。"
-                            },
-                            "names": {
-                              "type": "object",
-                              "properties": {
-                                "cn": {
-                                  "type": "string",
-                                  "description": "舰船中文名称。"
-                                }
-                              },
-                              "required": [
-                                "cn"
-                              ],
-                              "additionalProperties": {
-                                "type": "string"
-                              },
-                              "description": "不同语言的舰船名称，至少包含中文名 cn。"
-                            },
-                            "thumbnail": {
-                              "type": "string",
-                              "description": "舰船缩略图地址。"
-                            },
-                            "class": {
-                              "type": "string",
-                              "description": "舰船级别或分类。"
-                            }
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/ShipDetail"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3499,57 +2872,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "$ref": "#/components/schemas/SpineResult"
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/SpineResult"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3573,6 +2928,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -3581,32 +2937,16 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "type": "string"
-                          },
-                          "value": {
-                            "type": "string"
-                          },
-                          "remark": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "name",
-                          "value"
-                        ]
+                        "$ref": "#/components/schemas/SpineListItem"
                       }
                     }
                   }
@@ -3676,57 +3016,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
                         },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3781,57 +3103,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
                         },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3887,57 +3191,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
                         },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -3993,57 +3279,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
-                          "type": "string"
-                        },
-                        "data": {
-                          "type": "string"
-                        }
-                      }
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
                     },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
                         },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "string"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4115,60 +3383,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
+                        {
+                          "type": "object",
+                          "additionalProperties": {
                             "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4208,7 +3458,7 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
@@ -4218,13 +3468,15 @@
                     },
                     {
                       "type": "object",
+                      "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
                       "required": [
                         "errno",
                         "errmsg"
                       ],
                       "properties": {
                         "errno": {
-                          "type": "integer"
+                          "type": "integer",
+                          "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
                         },
                         "errmsg": {
                           "anyOf": [
@@ -4233,9 +3485,12 @@
                             },
                             {
                               "type": "object",
-                              "additionalProperties": true
+                              "additionalProperties": {
+                                "type": "string"
+                              }
                             }
-                          ]
+                          ],
+                          "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
                         }
                       }
                     }
@@ -4250,7 +3505,7 @@
     "/live2d/lists": {
       "get": {
         "summary": "Live2d模型列表",
-        "description": "live2d模型列表、材质数量、出处\r\ndemo：https://www.timelessq.com/tool/live2d",
+        "description": "live2d模型列表、材质数量、出处\ndemo：https://www.timelessq.com/tool/live2d",
         "operationId": "live2d_lists_index",
         "tags": [
           "live2d"
@@ -4263,6 +3518,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -4271,57 +3527,16 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "id": {
-                            "type": "number"
-                          },
-                          "name": {
-                            "type": "string"
-                          },
-                          "children": {
-                            "type": "array",
-                            "items": {
-                              "type": "object",
-                              "properties": {
-                                "id": {
-                                  "type": "number"
-                                },
-                                "name": {
-                                  "type": "string"
-                                },
-                                "message": {
-                                  "type": "string"
-                                },
-                                "from": {
-                                  "type": "string"
-                                },
-                                "total": {
-                                  "type": "number"
-                                }
-                              },
-                              "required": [
-                                "id",
-                                "name"
-                              ]
-                            }
-                          }
-                        },
-                        "required": [
-                          "id",
-                          "name",
-                          "children"
-                        ]
+                        "$ref": "#/components/schemas/Live2dListGroup"
                       }
                     }
                   }
@@ -4354,68 +3569,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "number"
-                            },
-                            "message": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "id"
-                          ]
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Live2dModelResult"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4445,68 +3631,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "number"
-                            },
-                            "message": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "id"
-                          ]
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Live2dModelResult"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4546,69 +3703,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "number"
-                            },
-                            "texture": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "id",
-                            "texture"
-                          ]
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Live2dTextureResult"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4646,69 +3773,39 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
+                        {
                           "type": "object",
-                          "properties": {
-                            "id": {
-                              "type": "number"
-                            },
-                            "texture": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "id",
-                            "texture"
-                          ]
+                          "additionalProperties": {
+                            "type": "string"
+                          }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
-                      }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Live2dTextureResult"
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -4719,7 +3816,7 @@
     "/time/astro": {
       "get": {
         "summary": "星座查询",
-        "description": "查询星座信息",
+        "description": "查询星座信息，未匹配到星座时返回空对象",
         "operationId": "time_astro_index",
         "tags": [
           "time"
@@ -4742,6 +3839,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -4750,16 +3848,14 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
-                      "type": "object",
-                      "properties": {}
+                      "$ref": "#/components/schemas/AstroResult"
                     }
                   }
                 }
@@ -4795,6 +3891,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -4803,265 +3900,14 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
-                      "type": "object",
-                      "properties": {
-                        "lunar": {
-                          "type": "object",
-                          "properties": {
-                            "zodiac": {
-                              "type": "string"
-                            },
-                            "year": {
-                              "type": "number"
-                            },
-                            "month": {
-                              "type": "number"
-                            },
-                            "day": {
-                              "type": "number"
-                            },
-                            "cnYear": {
-                              "type": "string"
-                            },
-                            "cnMonth": {
-                              "type": "string"
-                            },
-                            "cnDay": {
-                              "type": "string"
-                            },
-                            "cyclicalYear": {
-                              "type": "string"
-                            },
-                            "cyclicalMonth": {
-                              "type": "string"
-                            },
-                            "cyclicalDay": {
-                              "type": "string"
-                            },
-                            "hour": {
-                              "type": "string"
-                            },
-                            "maxDayInMonth": {
-                              "type": "number"
-                            },
-                            "leapMonth": {
-                              "type": "number"
-                            },
-                            "yuexiang": {
-                              "type": "string"
-                            },
-                            "wuhou": {
-                              "type": "string"
-                            },
-                            "shujiu": {
-                              "type": "string"
-                            },
-                            "sanfu": {
-                              "anyOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "$ref": "#/components/schemas/NamedPeriod"
-                                }
-                              ]
-                            },
-                            "solarTerms": {
-                              "type": "object",
-                              "properties": {}
-                            }
-                          },
-                          "required": [
-                            "zodiac",
-                            "year",
-                            "month",
-                            "day",
-                            "cnYear",
-                            "cnMonth",
-                            "cnDay",
-                            "cyclicalYear",
-                            "cyclicalMonth",
-                            "cyclicalDay",
-                            "hour",
-                            "maxDayInMonth",
-                            "leapMonth",
-                            "yuexiang",
-                            "wuhou",
-                            "shujiu",
-                            "sanfu",
-                            "solarTerms"
-                          ]
-                        },
-                        "almanac": {
-                          "type": "object",
-                          "properties": {
-                            "yi": {
-                              "type": "string"
-                            },
-                            "ji": {
-                              "type": "string"
-                            },
-                            "chong": {
-                              "type": "string"
-                            },
-                            "sha": {
-                              "type": "string"
-                            },
-                            "nayin": {
-                              "type": "string"
-                            },
-                            "shiershen": {
-                              "type": "string"
-                            },
-                            "xingxiu": {
-                              "type": "string"
-                            },
-                            "zheng": {
-                              "type": "string"
-                            },
-                            "shou": {
-                              "type": "string"
-                            },
-                            "pengzubaiji": {
-                              "type": "array",
-                              "items": {
-                                "type": "string"
-                              }
-                            },
-                            "jishenfangwei": {
-                              "type": "object",
-                              "properties": {
-                                "xi": {
-                                  "type": "string"
-                                },
-                                "yanggui": {
-                                  "type": "string"
-                                },
-                                "yingui": {
-                                  "type": "string"
-                                },
-                                "fu": {
-                                  "type": "string"
-                                },
-                                "cai": {
-                                  "type": "string"
-                                }
-                              },
-                              "required": [
-                                "xi",
-                                "yanggui",
-                                "yingui",
-                                "fu",
-                                "cai"
-                              ]
-                            },
-                            "liuyao": {
-                              "type": "string"
-                            },
-                            "jiuxing": {
-                              "type": "string"
-                            },
-                            "taisui": {
-                              "type": "string"
-                            }
-                          },
-                          "required": [
-                            "yi",
-                            "ji",
-                            "chong",
-                            "sha",
-                            "nayin",
-                            "shiershen",
-                            "xingxiu",
-                            "zheng",
-                            "shou",
-                            "pengzubaiji",
-                            "jishenfangwei",
-                            "liuyao",
-                            "jiuxing",
-                            "taisui"
-                          ]
-                        },
-                        "year": {
-                          "type": "number"
-                        },
-                        "leapYear": {
-                          "type": "boolean"
-                        },
-                        "month": {
-                          "type": "number"
-                        },
-                        "maxDayInMonth": {
-                          "type": "number"
-                        },
-                        "enMonth": {
-                          "type": "string"
-                        },
-                        "astro": {
-                          "type": "string"
-                        },
-                        "cnWeek": {
-                          "type": "string"
-                        },
-                        "enWeek": {
-                          "type": "string"
-                        },
-                        "weekInYear": {
-                          "type": "number"
-                        },
-                        "day": {
-                          "type": "number"
-                        },
-                        "dayInYear": {
-                          "type": "number"
-                        },
-                        "julianDay": {
-                          "type": "number"
-                        },
-                        "hour": {
-                          "type": "number"
-                        },
-                        "minute": {
-                          "type": "number"
-                        },
-                        "second": {
-                          "type": "number"
-                        },
-                        "festivals": {
-                          "type": "array",
-                          "items": {
-                            "type": "string"
-                          }
-                        }
-                      },
-                      "required": [
-                        "lunar",
-                        "almanac",
-                        "year",
-                        "leapYear",
-                        "month",
-                        "maxDayInMonth",
-                        "enMonth",
-                        "astro",
-                        "cnWeek",
-                        "enWeek",
-                        "weekInYear",
-                        "day",
-                        "dayInYear",
-                        "julianDay",
-                        "hour",
-                        "minute",
-                        "second",
-                        "festivals"
-                      ]
+                      "$ref": "#/components/schemas/TimeInfo"
                     }
                   }
                 }
@@ -5097,6 +3943,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -5105,57 +3952,16 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
                       "items": {
-                        "type": "object",
-                        "properties": {
-                          "date": {
-                            "type": "string"
-                          },
-                          "hours": {
-                            "type": "string"
-                          },
-                          "hour": {
-                            "type": "string"
-                          },
-                          "yi": {
-                            "type": "string"
-                          },
-                          "ji": {
-                            "type": "string"
-                          },
-                          "chong": {
-                            "type": "string"
-                          },
-                          "sha": {
-                            "type": "string"
-                          },
-                          "nayin": {
-                            "type": "string"
-                          },
-                          "jiuxing": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "date",
-                          "hours",
-                          "hour",
-                          "yi",
-                          "ji",
-                          "chong",
-                          "sha",
-                          "nayin",
-                          "jiuxing"
-                        ]
+                        "$ref": "#/components/schemas/TimeShichen"
                       }
                     }
                   }
@@ -5199,72 +4005,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "name": {
-                                "type": "string"
-                              },
-                              "time": {
-                                "type": "string"
-                              }
-                            },
-                            "required": [
-                              "name",
-                              "time"
-                            ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TimeJieqi"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -5305,88 +4081,42 @@
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg",
-                        "data"
-                      ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer",
-                          "enum": [
-                            0
-                          ]
-                        },
-                        "errmsg": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
                           "type": "string"
                         },
-                        "data": {
-                          "type": "array",
-                          "items": {
-                            "type": "object",
-                            "properties": {
-                              "month": {
-                                "type": "string"
-                              },
-                              "monthEn": {
-                                "type": "string"
-                              },
-                              "day": {
-                                "type": "string"
-                              },
-                              "cnDay": {
-                                "type": "string"
-                              },
-                              "name": {
-                                "type": "string"
-                              },
-                              "distance": {
-                                "type": "number"
-                              }
-                            },
-                            "required": [
-                              "month",
-                              "monthEn",
-                              "day",
-                              "cnDay",
-                              "name",
-                              "distance"
-                            ]
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
                           }
                         }
-                      }
-                    },
-                    {
-                      "type": "object",
-                      "required": [
-                        "errno",
-                        "errmsg"
                       ],
-                      "properties": {
-                        "errno": {
-                          "type": "integer"
-                        },
-                        "errmsg": {
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "object",
-                              "additionalProperties": true
-                            }
-                          ]
-                        }
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TimeFestival"
                       }
                     }
-                  ]
+                  }
                 }
               }
             }
@@ -5420,6 +4150,7 @@
               "application/json": {
                 "schema": {
                   "type": "object",
+                  "description": "data 为响应数据。",
                   "required": [
                     "errno",
                     "errmsg",
@@ -5428,12 +4159,11 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "enum": [
-                        0
-                      ]
+                      "description": "错误码：0 表示成功。"
                     },
                     "errmsg": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "错误信息，成功时为空字符串。"
                     },
                     "data": {
                       "type": "array",
@@ -5990,7 +4720,7 @@
           "data"
         ]
       },
-      "PageResult___name__string__category__string____": {
+      "PageResult_Garbage_": {
         "type": "object",
         "properties": {
           "count": {
@@ -6012,19 +4742,7 @@
           "data": {
             "type": "array",
             "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "category": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "name",
-                "category"
-              ]
+              "$ref": "#/components/schemas/Garbage"
             },
             "description": "当前页的记录列表。"
           }
@@ -6035,6 +4753,28 @@
           "pageSize",
           "currentPage",
           "data"
+        ]
+      },
+      "Garbage": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "记录 ID。"
+          },
+          "name": {
+            "type": "string",
+            "description": "垃圾名称，如：牛奶盒。"
+          },
+          "category": {
+            "type": "string",
+            "description": "垃圾类别：可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾。"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "category"
         ]
       },
       "PageResult_Idiom_": {
@@ -6130,6 +4870,38 @@
             "description": "反义词"
           }
         }
+      },
+      "IpRegion": {
+        "type": "object",
+        "properties": {
+          "ip": {
+            "type": "string",
+            "description": "查询的 IP 地址。"
+          },
+          "country": {
+            "type": "string",
+            "description": "国家，如：中国。"
+          },
+          "province": {
+            "type": "string",
+            "description": "省份，如：广东省。"
+          },
+          "city": {
+            "type": "string",
+            "description": "城市，如：深圳市。"
+          },
+          "isp": {
+            "type": "string",
+            "description": "运营商，如：电信。"
+          }
+        },
+        "required": [
+          "ip",
+          "country",
+          "province",
+          "city",
+          "isp"
+        ]
       },
       "Joke": {
         "type": "object",
@@ -6657,6 +5429,1016 @@
           "data"
         ]
       },
+      "ShipListItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "舰船资源 ID。"
+          },
+          "classify": {
+            "type": "string",
+            "description": "舰级。"
+          },
+          "names": {
+            "$ref": "#/components/schemas/ShipNames",
+            "description": "各语言的舰船名称。"
+          },
+          "thumbnail": {
+            "type": "string",
+            "description": "舰船缩略图地址。"
+          },
+          "hullType": {
+            "type": "string",
+            "description": "舰种，如：驱逐。"
+          },
+          "nationality": {
+            "type": "string",
+            "description": "阵营，如：白鹰。"
+          },
+          "rarity": {
+            "type": "string",
+            "description": "稀有度，如：精锐。"
+          }
+        },
+        "required": [
+          "id",
+          "classify",
+          "names",
+          "thumbnail",
+          "hullType",
+          "nationality",
+          "rarity"
+        ]
+      },
+      "ShipNames": {
+        "type": "object",
+        "properties": {
+          "cn": {
+            "type": "string",
+            "description": "中文名。"
+          },
+          "en": {
+            "type": "string",
+            "description": "英文名。"
+          },
+          "jp": {
+            "type": "string",
+            "description": "日文名。"
+          },
+          "kr": {
+            "type": "string",
+            "description": "韩文名。"
+          },
+          "tw": {
+            "type": "string",
+            "description": "繁体中文名。"
+          },
+          "code": {
+            "type": "string",
+            "description": "带舰船前缀的英文名，如：USS Laffey。"
+          }
+        },
+        "required": [
+          "cn",
+          "en",
+          "jp",
+          "kr",
+          "code"
+        ]
+      },
+      "ShipDetail": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "舰船资源 ID。"
+          },
+          "_gid": {
+            "type": "number",
+            "description": "舰船分组 ID，用于关联皮肤配置。"
+          },
+          "_sid": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "舰船各突破阶段的数据 ID。"
+          },
+          "_code": {
+            "type": "number",
+            "description": "舰船内部编号。"
+          },
+          "wikiUrl": {
+            "type": "string",
+            "description": "Wiki 页面地址。"
+          },
+          "names": {
+            "$ref": "#/components/schemas/ShipNames",
+            "description": "各语言的舰船名称。"
+          },
+          "exists": {
+            "$ref": "#/components/schemas/ShipExists",
+            "description": "各服务器是否已实装。"
+          },
+          "hexagon": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "六维能力评级。"
+          },
+          "class": {
+            "type": "string",
+            "description": "舰级，如：Benson。"
+          },
+          "nationality": {
+            "type": "string",
+            "description": "阵营，上游为英文，接口返回时转换为中文。"
+          },
+          "hullType": {
+            "type": "string",
+            "description": "舰种，上游为英文，接口返回时转换为中文。"
+          },
+          "rarity": {
+            "type": "string",
+            "description": "稀有度，上游为英文，接口返回时转换为中文。"
+          },
+          "thumbnail": {
+            "type": "string",
+            "description": "舰船缩略图地址。"
+          },
+          "stars": {
+            "type": "number",
+            "description": "初始星级。"
+          },
+          "stats": {
+            "$ref": "#/components/schemas/ShipStatsGroups",
+            "description": "各等级的属性。"
+          },
+          "slots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipSlot"
+            },
+            "description": "装备栏位。"
+          },
+          "enhanceValue": {
+            "$ref": "#/components/schemas/ShipEnhanceValue",
+            "description": "作为强化素材时提供的强化值。"
+          },
+          "scrapValue": {
+            "$ref": "#/components/schemas/ShipScrapValue",
+            "description": "退役获得的资源。"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipSkill"
+            },
+            "description": "技能列表。"
+          },
+          "limitBreaks": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "nullable": true,
+            "description": "各次突破获得的加成，每次突破一组。"
+          },
+          "fleetTech": {
+            "$ref": "#/components/schemas/ShipFleetTech",
+            "description": "科技点与舰队科技加成。"
+          },
+          "construction": {
+            "$ref": "#/components/schemas/ShipConstruction",
+            "description": "建造信息。"
+          },
+          "obtainedFrom": {
+            "$ref": "#/components/schemas/ShipObtainedFrom",
+            "description": "获取途径。"
+          },
+          "misc": {
+            "$ref": "#/components/schemas/ShipMisc",
+            "description": "画师和声优。"
+          },
+          "skins": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipSkinData"
+            },
+            "description": "皮肤列表。"
+          },
+          "gallery": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipGalleryItem"
+            },
+            "description": "画廊图片。"
+          },
+          "retrofit": {
+            "type": "boolean",
+            "description": "是否可改造。"
+          },
+          "retrofitId": {
+            "type": "string",
+            "description": "改造后的舰船 ID。"
+          },
+          "retrofitHullType": {
+            "type": "string",
+            "description": "改造后的舰种。"
+          },
+          "retrofitProjects": {
+            "$ref": "#/components/schemas/ShipRetrofitProjects",
+            "description": "改造项目，键为项目编号（A、B、C...）。"
+          },
+          "devLevels": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipDevLevel"
+            },
+            "description": "科研舰的开发等级加成。"
+          }
+        }
+      },
+      "ShipExists": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "boolean",
+            "description": "国际服。"
+          },
+          "cn": {
+            "type": "boolean",
+            "description": "国服。"
+          },
+          "jp": {
+            "type": "boolean",
+            "description": "日服。"
+          },
+          "kr": {
+            "type": "boolean",
+            "description": "韩服。"
+          }
+        },
+        "required": [
+          "en",
+          "cn",
+          "jp",
+          "kr"
+        ]
+      },
+      "ShipStatsGroups": {
+        "type": "object",
+        "properties": {
+          "baseStats": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "1 级基础属性。"
+          },
+          "level100": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "100 级属性。"
+          },
+          "level120": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "120 级属性。"
+          },
+          "level125": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "125 级属性。"
+          },
+          "level100Retrofit": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "改造后 100 级属性。"
+          },
+          "level120Retrofit": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "改造后 120 级属性。"
+          },
+          "level125Retrofit": {
+            "$ref": "#/components/schemas/ShipStats",
+            "description": "改造后 125 级属性。"
+          }
+        },
+        "required": [
+          "baseStats",
+          "level100",
+          "level120",
+          "level125"
+        ]
+      },
+      "ShipStats": {
+        "type": "object",
+        "properties": {
+          "health": {
+            "type": "string",
+            "description": "耐久。"
+          },
+          "armor": {
+            "type": "string",
+            "description": "装甲类型，如：Light。"
+          },
+          "reload": {
+            "type": "string",
+            "description": "装填。"
+          },
+          "luck": {
+            "type": "string",
+            "description": "幸运。"
+          },
+          "firepower": {
+            "type": "string",
+            "description": "炮击。"
+          },
+          "torpedo": {
+            "type": "string",
+            "description": "雷击。"
+          },
+          "evasion": {
+            "type": "string",
+            "description": "机动。"
+          },
+          "speed": {
+            "type": "string",
+            "description": "航速。"
+          },
+          "antiair": {
+            "type": "string",
+            "description": "防空。"
+          },
+          "aviation": {
+            "type": "string",
+            "description": "航空。"
+          },
+          "oilConsumption": {
+            "type": "string",
+            "description": "油耗。"
+          },
+          "accuracy": {
+            "type": "string",
+            "description": "命中。"
+          },
+          "antisubmarineWarfare": {
+            "type": "string",
+            "description": "反潜。"
+          },
+          "oxygen": {
+            "type": "string",
+            "description": "氧气，仅潜艇。"
+          },
+          "ammunition": {
+            "type": "string",
+            "description": "弹药量，仅潜艇。"
+          },
+          "huntingRange": {
+            "type": "string",
+            "description": "狩猎范围示意图，仅潜艇。"
+          }
+        },
+        "required": [
+          "health",
+          "armor",
+          "reload",
+          "luck",
+          "firepower",
+          "torpedo",
+          "evasion",
+          "speed",
+          "antiair",
+          "aviation",
+          "oilConsumption",
+          "accuracy",
+          "antisubmarineWarfare"
+        ]
+      },
+      "ShipSlot": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "可装备类型，如：DD Guns。"
+          },
+          "minEfficiency": {
+            "type": "number",
+            "description": "初始装备效率（%）。"
+          },
+          "maxEfficiency": {
+            "type": "number",
+            "description": "满突破装备效率（%）。"
+          },
+          "kaiEfficiency": {
+            "type": "number",
+            "description": "改造后装备效率（%）。"
+          },
+          "max": {
+            "type": "number",
+            "description": "装备数量上限。"
+          }
+        },
+        "required": [
+          "type",
+          "minEfficiency",
+          "maxEfficiency",
+          "max"
+        ]
+      },
+      "ShipEnhanceValue": {
+        "type": "object",
+        "properties": {
+          "firepower": {
+            "type": "number",
+            "description": "炮击。"
+          },
+          "torpedo": {
+            "type": "number",
+            "description": "雷击。"
+          },
+          "aviation": {
+            "type": "number",
+            "description": "航空。"
+          },
+          "reload": {
+            "type": "number",
+            "description": "装填。"
+          }
+        }
+      },
+      "ShipScrapValue": {
+        "type": "object",
+        "properties": {
+          "coin": {
+            "type": "number",
+            "description": "物资。"
+          },
+          "medal": {
+            "type": "number",
+            "description": "勋章。"
+          },
+          "core": {
+            "type": "number",
+            "description": "心智单元。"
+          }
+        }
+      },
+      "ShipSkill": {
+        "type": "object",
+        "properties": {
+          "icon": {
+            "type": "string",
+            "description": "技能图标地址。"
+          },
+          "names": {
+            "$ref": "#/components/schemas/ShipSkillNames",
+            "description": "各语言的技能名称。"
+          },
+          "description": {
+            "type": "string",
+            "description": "技能描述（英文）。"
+          },
+          "color": {
+            "type": "string",
+            "description": "技能类型颜色，如：gold、red、blue。"
+          }
+        },
+        "required": [
+          "icon",
+          "names",
+          "description",
+          "color"
+        ]
+      },
+      "ShipSkillNames": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string",
+            "description": "英文名。"
+          },
+          "cn": {
+            "type": "string",
+            "nullable": true,
+            "description": "中文名，缺失时为 null。"
+          },
+          "jp": {
+            "type": "string",
+            "nullable": true,
+            "description": "日文名，缺失时为 null。"
+          }
+        },
+        "required": [
+          "en",
+          "cn",
+          "jp"
+        ]
+      },
+      "ShipFleetTech": {
+        "type": "object",
+        "properties": {
+          "statsBonus": {
+            "$ref": "#/components/schemas/ShipFleetTechStatsBonus",
+            "description": "舰队科技属性加成。"
+          },
+          "techPoints": {
+            "$ref": "#/components/schemas/ShipFleetTechPoints",
+            "description": "可获得的科技点。"
+          }
+        },
+        "required": [
+          "statsBonus",
+          "techPoints"
+        ]
+      },
+      "ShipFleetTechStatsBonus": {
+        "type": "object",
+        "properties": {
+          "collection": {
+            "$ref": "#/components/schemas/ShipFleetTechBonus",
+            "nullable": true,
+            "description": "获得舰船时的加成，没有时为 null。"
+          },
+          "maxLevel": {
+            "$ref": "#/components/schemas/ShipFleetTechBonus",
+            "nullable": true,
+            "description": "舰船满级时的加成，没有时为 null。"
+          }
+        },
+        "required": [
+          "collection",
+          "maxLevel"
+        ]
+      },
+      "ShipFleetTechBonus": {
+        "type": "object",
+        "properties": {
+          "applicable": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "适用舰种。"
+          },
+          "bonus": {
+            "type": "string",
+            "description": "加成值，如：+1。"
+          },
+          "stat": {
+            "type": "string",
+            "description": "加成属性，如：health。"
+          }
+        },
+        "required": [
+          "applicable",
+          "bonus",
+          "stat"
+        ]
+      },
+      "ShipFleetTechPoints": {
+        "type": "object",
+        "properties": {
+          "collection": {
+            "type": "number",
+            "nullable": true,
+            "description": "获得舰船时的科技点，没有时为 null。"
+          },
+          "maxLimitBreak": {
+            "type": "number",
+            "description": "满突破时的科技点。"
+          },
+          "maxLevel": {
+            "type": "number",
+            "description": "满级时的科技点。"
+          },
+          "total": {
+            "type": "number",
+            "description": "科技点合计。"
+          }
+        },
+        "required": [
+          "collection",
+          "maxLimitBreak",
+          "maxLevel",
+          "total"
+        ]
+      },
+      "ShipConstruction": {
+        "type": "object",
+        "properties": {
+          "constructionTime": {
+            "type": "string",
+            "description": "建造时间，不可建造时为说明文字，如：Cannot Be Constructed。"
+          },
+          "availableIn": {
+            "$ref": "#/components/schemas/ShipConstructionPools",
+            "description": "各建造池是否可获得。"
+          }
+        },
+        "required": [
+          "constructionTime",
+          "availableIn"
+        ]
+      },
+      "ShipConstructionPools": {
+        "type": "object",
+        "properties": {
+          "light": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
+            "description": "轻型舰建造。"
+          },
+          "heavy": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
+            "description": "重型舰建造。"
+          },
+          "aviation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
+            "description": "特型舰建造。"
+          },
+          "limited": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
+            "description": "限时建造。"
+          },
+          "exchange": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "boolean"
+              }
+            ],
+            "description": "商店兑换。"
+          }
+        },
+        "required": [
+          "light",
+          "heavy",
+          "aviation",
+          "limited",
+          "exchange"
+        ]
+      },
+      "ShipObtainedFrom": {
+        "type": "object",
+        "properties": {
+          "obtainedFrom": {
+            "type": "string",
+            "description": "其他获取方式说明。"
+          },
+          "fromMaps": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/components/schemas/ShipMapDrop"
+                }
+              ]
+            },
+            "description": "可掉落的地图，如：8-1；有附加条件时为对象。"
+          }
+        },
+        "required": [
+          "fromMaps"
+        ]
+      },
+      "ShipMapDrop": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "地图编号。"
+          },
+          "note": {
+            "type": "string",
+            "description": "掉落条件说明。"
+          }
+        },
+        "required": [
+          "name",
+          "note"
+        ]
+      },
+      "ShipMisc": {
+        "type": "object",
+        "properties": {
+          "artist": {
+            "$ref": "#/components/schemas/ShipArtist",
+            "description": "画师。"
+          },
+          "voice": {
+            "$ref": "#/components/schemas/ShipVoiceActor",
+            "description": "声优。"
+          }
+        },
+        "required": [
+          "artist",
+          "voice"
+        ]
+      },
+      "ShipArtist": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "画师名称。"
+          },
+          "urls": {
+            "type": "object",
+            "properties": {},
+            "additionalProperties": {
+              "type": "string"
+            },
+            "description": "画师主页，键为站点名，如：Wiki、Pixiv、Twitter、Link。"
+          }
+        },
+        "required": [
+          "name",
+          "urls"
+        ]
+      },
+      "ShipVoiceActor": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "声优名称。"
+          },
+          "url": {
+            "type": "string",
+            "description": "声优主页。"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "ShipSkinData": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "皮肤名称，如：Default。"
+          },
+          "image": {
+            "type": "string",
+            "description": "立绘地址。"
+          },
+          "bg": {
+            "type": "string",
+            "description": "带背景的立绘地址。"
+          },
+          "cn": {
+            "type": "string",
+            "description": "国服版本立绘地址。"
+          },
+          "background": {
+            "type": "string",
+            "description": "背景图地址。"
+          },
+          "chibi": {
+            "type": "string",
+            "description": "Q 版小人地址。"
+          },
+          "info": {
+            "$ref": "#/components/schemas/ShipSkinInfo",
+            "description": "皮肤详情。"
+          }
+        },
+        "required": [
+          "name",
+          "image",
+          "background",
+          "chibi",
+          "info"
+        ]
+      },
+      "ShipSkinInfo": {
+        "type": "object",
+        "properties": {
+          "live2dModel": {
+            "type": "boolean",
+            "description": "是否为 Live2D 皮肤。"
+          },
+          "obtainedFrom": {
+            "type": "string",
+            "description": "获取方式。"
+          },
+          "category": {
+            "type": "string",
+            "description": "皮肤分类。"
+          },
+          "icons": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ShipSkinIcon"
+            },
+            "description": "皮肤图标。"
+          },
+          "enClient": {
+            "type": "string",
+            "description": "国际服皮肤名。"
+          },
+          "enLimited": {
+            "type": "string",
+            "description": "国际服上架情况。"
+          },
+          "cnClient": {
+            "type": "string",
+            "description": "国服皮肤名。"
+          },
+          "cnLimited": {
+            "type": "string",
+            "description": "国服上架情况。"
+          },
+          "jpClient": {
+            "type": "string",
+            "description": "日服皮肤名。"
+          },
+          "jpLimited": {
+            "type": "string",
+            "description": "日服上架情况。"
+          },
+          "cost": {
+            "type": "number",
+            "description": "价格（钻石）。"
+          },
+          "firstIntroduced": {
+            "type": "string",
+            "description": "首次登场的活动。"
+          },
+          "sharedWith": {
+            "type": "string",
+            "description": "共用此皮肤的舰船。"
+          },
+          "music": {
+            "type": "string",
+            "description": "皮肤专属音乐。"
+          }
+        },
+        "required": [
+          "live2dModel",
+          "obtainedFrom"
+        ]
+      },
+      "ShipSkinIcon": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "图标地址。"
+          },
+          "urlType": {
+            "type": "string",
+            "description": "图标类型，如：icon。"
+          }
+        },
+        "required": [
+          "url",
+          "urlType"
+        ]
+      },
+      "ShipGalleryItem": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "图片说明。"
+          },
+          "url": {
+            "type": "string",
+            "description": "图片地址。"
+          }
+        },
+        "required": [
+          "description",
+          "url"
+        ]
+      },
+      "ShipRetrofitProjects": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": {
+          "$ref": "#/components/schemas/ShipRetrofitProject"
+        }
+      },
+      "ShipRetrofitProject": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "项目名称，如：Hull Improvement Ⅰ。"
+          },
+          "grade": {
+            "type": "string",
+            "description": "项目等级，如：I、II。"
+          },
+          "attributes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "属性提升。"
+          },
+          "materials": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "所需材料。"
+          },
+          "coins": {
+            "type": "number",
+            "description": "所需物资。"
+          },
+          "level": {
+            "type": "number",
+            "description": "所需舰船等级。"
+          },
+          "levelBreakLevel": {
+            "type": "number",
+            "description": "所需突破次数。"
+          },
+          "levelBreakStars": {
+            "type": "string",
+            "description": "所需突破星级，如：★★☆☆。"
+          },
+          "recurrence": {
+            "type": "number",
+            "nullable": true,
+            "description": "可重复次数。"
+          },
+          "require": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "前置项目编号。"
+          }
+        },
+        "required": [
+          "id",
+          "attributes",
+          "materials",
+          "coins",
+          "level",
+          "levelBreakLevel",
+          "levelBreakStars",
+          "recurrence",
+          "require"
+        ]
+      },
+      "ShipDevLevel": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "开发等级。"
+          },
+          "buffs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "该等级解锁的加成。"
+          }
+        },
+        "required": [
+          "level",
+          "buffs"
+        ]
+      },
       "SpineResult": {
         "type": "object",
         "properties": {
@@ -6682,12 +6464,49 @@
           "texture"
         ]
       },
+      "SpineListItem": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "舰船中文名。"
+          },
+          "value": {
+            "type": "string",
+            "description": "Spine 模型 ID，用于查询模型信息。"
+          },
+          "remark": {
+            "type": "string",
+            "description": "皮肤名称或形态说明，如：改、誓约。"
+          }
+        },
+        "required": [
+          "name",
+          "value"
+        ]
+      },
       "Live2dModel": {
         "type": "object",
         "properties": {
+          "type": {
+            "type": "string",
+            "description": "配置类型，如：Live2D Model Setting。"
+          },
+          "name": {
+            "type": "string",
+            "description": "模型标识名称。"
+          },
+          "label": {
+            "type": "string",
+            "description": "模型标签。"
+          },
+          "version": {
+            "type": "string",
+            "description": "配置版本。"
+          },
           "model": {
             "type": "string",
-            "description": "MOC 模型文件路径。"
+            "description": "MOC 模型文件地址。"
           },
           "textures": {
             "type": "array",
@@ -6696,38 +6515,761 @@
             },
             "description": "纹理文件地址列表；未找到材质时可能为 undefined。"
           },
+          "layout": {
+            "$ref": "#/components/schemas/Live2dLayout",
+            "description": "画布布局。"
+          },
+          "hit_areas_custom": {
+            "$ref": "#/components/schemas/Live2dHitAreas",
+            "description": "自定义点击区域。"
+          },
           "pose": {
             "type": "string",
-            "description": "姿势配置文件路径。"
+            "description": "姿势配置文件地址。"
           },
           "physics": {
             "type": "string",
-            "description": "物理效果配置文件路径。"
+            "description": "物理效果配置文件地址。"
           },
           "sounds": {
             "type": "string",
-            "description": "音频资源路径。"
+            "description": "音频资源地址。"
           },
           "motions": {
-            "description": "动作组配置，保留原始 JSON 结构。",
-            "x-typescript-type": "unknown"
+            "$ref": "#/components/schemas/Live2dMotionGroups",
+            "description": "动作组，键为动作组名（如 idle、tap_body）。"
           },
           "expressions": {
-            "description": "表情组配置，保留原始 JSON 结构。",
-            "x-typescript-type": "unknown"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Live2dExpression"
+            },
+            "description": "表情列表。"
           }
         },
         "required": [
           "model"
-        ],
+        ]
+      },
+      "Live2dLayout": {
+        "type": "object",
+        "properties": {
+          "center_x": {
+            "type": "number",
+            "description": "中心点横坐标。"
+          },
+          "center_y": {
+            "type": "number",
+            "description": "中心点纵坐标。"
+          },
+          "width": {
+            "type": "number",
+            "description": "宽度。"
+          },
+          "height": {
+            "type": "number",
+            "description": "高度。"
+          }
+        },
+        "required": [
+          "center_x",
+          "center_y",
+          "width"
+        ]
+      },
+      "Live2dHitAreas": {
+        "type": "object",
+        "properties": {
+          "head_x": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "头部区域横坐标范围。"
+          },
+          "head_y": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "头部区域纵坐标范围。"
+          },
+          "body_x": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "身体区域横坐标范围。"
+          },
+          "body_y": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "description": "身体区域纵坐标范围。"
+          }
+        },
+        "required": [
+          "head_x",
+          "head_y",
+          "body_x",
+          "body_y"
+        ]
+      },
+      "Live2dMotionGroups": {
+        "type": "object",
+        "properties": {},
         "additionalProperties": {
-          "description": "动态数据：源码类型为 any/unknown，未推断字段结构。",
-          "x-typescript-type": "unknown"
+          "type": "array",
+          "items": {
+            "$ref": "#/components/schemas/Live2dMotion"
+          }
         }
       },
-      "NamedPeriod": {
+      "Live2dMotion": {
         "type": "object",
-        "properties": {}
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "动作文件地址。"
+          },
+          "fade_in": {
+            "type": "number",
+            "description": "淡入时长（毫秒）。"
+          },
+          "fade_out": {
+            "type": "number",
+            "description": "淡出时长（毫秒）。"
+          },
+          "sound": {
+            "type": "string",
+            "description": "动作配套的音频文件地址。"
+          },
+          "dialogue": {
+            "type": "number",
+            "description": "对话编号。"
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "Live2dExpression": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "表情名称。"
+          },
+          "file": {
+            "type": "string",
+            "description": "表情配置文件地址。"
+          }
+        },
+        "required": [
+          "name",
+          "file"
+        ]
+      },
+      "Live2dListGroup": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "分组 ID。"
+          },
+          "name": {
+            "type": "string",
+            "description": "分组名称。"
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Live2dListItem"
+            },
+            "description": "分组下的模型。"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "children"
+        ]
+      },
+      "Live2dListItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "模型 ID。"
+          },
+          "name": {
+            "type": "string",
+            "description": "模型名称。"
+          },
+          "message": {
+            "type": "string",
+            "description": "模型附带的展示信息。"
+          },
+          "from": {
+            "type": "string",
+            "description": "模型来源说明。"
+          },
+          "total": {
+            "type": "number",
+            "description": "材质数量，材质 ID 取值范围为 1-total；模型没有材质列表时不返回。"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      },
+      "Live2dModelResult": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "模型 ID。"
+          },
+          "message": {
+            "type": "string",
+            "description": "模型附带的展示信息。"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "Live2dTextureResult": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number",
+            "description": "模型 ID。"
+          },
+          "texture": {
+            "type": "number",
+            "description": "材质 ID；没有更多材质时为 0。"
+          }
+        },
+        "required": [
+          "id",
+          "texture"
+        ]
+      },
+      "AstroResult": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "星座名称，如：摩羯座。"
+          },
+          "range": {
+            "type": "string",
+            "description": "公历日期范围，如：12.22-1.19。"
+          },
+          "zxtd": {
+            "type": "string",
+            "description": "星座特点，如：执著现实。"
+          },
+          "sssx": {
+            "type": "string",
+            "description": "四象属性，如：土。"
+          },
+          "zggw": {
+            "type": "string",
+            "description": "掌管宫位，如：第十宫。"
+          },
+          "yysx": {
+            "type": "string",
+            "description": "阴阳属性，如：阴性。"
+          },
+          "zdtz": {
+            "type": "string",
+            "description": "最大特征，如：实际。"
+          },
+          "zgxx": {
+            "type": "string",
+            "description": "主管星，如：土星。"
+          },
+          "xyys": {
+            "type": "string",
+            "description": "幸运颜色。"
+          },
+          "jssw": {
+            "type": "string",
+            "description": "吉祥饰物。"
+          },
+          "xyhm": {
+            "type": "string",
+            "description": "幸运号码。"
+          },
+          "kyjs": {
+            "type": "string",
+            "description": "开运金属。"
+          },
+          "bx": {
+            "type": "string",
+            "description": "表现。"
+          },
+          "yd": {
+            "type": "string",
+            "description": "优点。"
+          },
+          "qd": {
+            "type": "string",
+            "description": "缺点。"
+          },
+          "jbtz": {
+            "type": "string",
+            "description": "基本特质。"
+          },
+          "jttz": {
+            "type": "string",
+            "description": "具体特质。"
+          },
+          "xsfg": {
+            "type": "string",
+            "description": "行事风格。"
+          },
+          "gxmd": {
+            "type": "string",
+            "description": "个性盲点。"
+          },
+          "zj": {
+            "type": "string",
+            "description": "总结。"
+          }
+        }
+      },
+      "TimeInfo": {
+        "type": "object",
+        "properties": {
+          "lunar": {
+            "$ref": "#/components/schemas/TimeLunarInfo",
+            "description": "农历信息。"
+          },
+          "almanac": {
+            "$ref": "#/components/schemas/TimeAlmanac",
+            "description": "老黄历信息。"
+          },
+          "year": {
+            "type": "number",
+            "description": "公历年。"
+          },
+          "leapYear": {
+            "type": "boolean",
+            "description": "是否为闰年。"
+          },
+          "month": {
+            "type": "number",
+            "description": "公历月。"
+          },
+          "maxDayInMonth": {
+            "type": "number",
+            "description": "公历当月天数。"
+          },
+          "enMonth": {
+            "type": "string",
+            "description": "英文月份，如：October。"
+          },
+          "astro": {
+            "type": "string",
+            "description": "星座，如：天蝎座。"
+          },
+          "cnWeek": {
+            "type": "string",
+            "description": "中文星期，如：星期五。"
+          },
+          "enWeek": {
+            "type": "string",
+            "description": "英文星期，如：Friday。"
+          },
+          "weekInYear": {
+            "type": "number",
+            "description": "当年第几周，周一为一周的第一天。"
+          },
+          "day": {
+            "type": "number",
+            "description": "公历日。"
+          },
+          "dayInYear": {
+            "type": "number",
+            "description": "当年第几天。"
+          },
+          "julianDay": {
+            "type": "number",
+            "description": "儒略日。"
+          },
+          "hour": {
+            "type": "number",
+            "description": "时。"
+          },
+          "minute": {
+            "type": "number",
+            "description": "分。"
+          },
+          "second": {
+            "type": "number",
+            "description": "秒。"
+          },
+          "festivals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "当天的公历、农历节日及其他纪念日。"
+          }
+        },
+        "required": [
+          "lunar",
+          "almanac",
+          "year",
+          "leapYear",
+          "month",
+          "maxDayInMonth",
+          "enMonth",
+          "astro",
+          "cnWeek",
+          "enWeek",
+          "weekInYear",
+          "day",
+          "dayInYear",
+          "julianDay",
+          "hour",
+          "minute",
+          "second",
+          "festivals"
+        ]
+      },
+      "TimeLunarInfo": {
+        "type": "object",
+        "properties": {
+          "zodiac": {
+            "type": "string",
+            "description": "生肖。"
+          },
+          "year": {
+            "type": "number",
+            "description": "农历年。"
+          },
+          "month": {
+            "type": "number",
+            "description": "农历月，闰月为负数。"
+          },
+          "day": {
+            "type": "number",
+            "description": "农历日。"
+          },
+          "cnYear": {
+            "type": "string",
+            "description": "中文农历年，如：二零二六。"
+          },
+          "cnMonth": {
+            "type": "string",
+            "description": "中文农历月，如：九月。"
+          },
+          "cnDay": {
+            "type": "string",
+            "description": "中文农历日，如：廿一。"
+          },
+          "cyclicalYear": {
+            "type": "string",
+            "description": "干支纪年。"
+          },
+          "cyclicalMonth": {
+            "type": "string",
+            "description": "干支纪月。"
+          },
+          "cyclicalDay": {
+            "type": "string",
+            "description": "干支纪日。"
+          },
+          "hour": {
+            "type": "string",
+            "description": "时辰，如：子时。"
+          },
+          "maxDayInMonth": {
+            "type": "number",
+            "description": "农历当月天数。"
+          },
+          "leapMonth": {
+            "type": "number",
+            "description": "当年闰几月，无闰月时为 0。"
+          },
+          "yuexiang": {
+            "type": "string",
+            "description": "月相。"
+          },
+          "wuhou": {
+            "type": "string",
+            "description": "物候。"
+          },
+          "shujiu": {
+            "type": "string",
+            "description": "数九，如：一九，不在数九期间为空字符串。"
+          },
+          "sanfu": {
+            "type": "string",
+            "description": "三伏，如：中伏，不在三伏期间为空字符串。"
+          },
+          "solarTerms": {
+            "$ref": "#/components/schemas/TimeSolarTerm",
+            "description": "当天的二十四节气。"
+          }
+        },
+        "required": [
+          "zodiac",
+          "year",
+          "month",
+          "day",
+          "cnYear",
+          "cnMonth",
+          "cnDay",
+          "cyclicalYear",
+          "cyclicalMonth",
+          "cyclicalDay",
+          "hour",
+          "maxDayInMonth",
+          "leapMonth",
+          "yuexiang",
+          "wuhou",
+          "shujiu",
+          "sanfu",
+          "solarTerms"
+        ]
+      },
+      "TimeSolarTerm": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "节气名称。"
+          },
+          "time": {
+            "type": "string",
+            "description": "交节时间，格式：YYYY-MM-DD HH:mm:ss。"
+          }
+        }
+      },
+      "TimeAlmanac": {
+        "type": "object",
+        "properties": {
+          "yi": {
+            "type": "string",
+            "description": "宜，多项以空格分隔。"
+          },
+          "ji": {
+            "type": "string",
+            "description": "忌，多项以空格分隔。"
+          },
+          "chong": {
+            "type": "string",
+            "description": "冲，如：生肖冲(丁卯)兔。"
+          },
+          "sha": {
+            "type": "string",
+            "description": "煞，如：煞东。"
+          },
+          "nayin": {
+            "type": "string",
+            "description": "纳音。"
+          },
+          "shiershen": {
+            "type": "string",
+            "description": "建除十二执星。"
+          },
+          "xingxiu": {
+            "type": "string",
+            "description": "二十八宿。"
+          },
+          "zheng": {
+            "type": "string",
+            "description": "七政。"
+          },
+          "shou": {
+            "type": "string",
+            "description": "四神兽。"
+          },
+          "pengzubaiji": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "彭祖百忌，依次为天干、地支忌讳。"
+          },
+          "jishenfangwei": {
+            "$ref": "#/components/schemas/TimeJishenFangwei",
+            "description": "吉神方位。"
+          },
+          "liuyao": {
+            "type": "string",
+            "description": "六曜。"
+          },
+          "jiuxing": {
+            "type": "string",
+            "description": "九星。"
+          },
+          "taisui": {
+            "type": "string",
+            "description": "太岁方位，格式：方位卦名-方向。"
+          }
+        },
+        "required": [
+          "yi",
+          "ji",
+          "chong",
+          "sha",
+          "nayin",
+          "shiershen",
+          "xingxiu",
+          "zheng",
+          "shou",
+          "pengzubaiji",
+          "jishenfangwei",
+          "liuyao",
+          "jiuxing",
+          "taisui"
+        ]
+      },
+      "TimeJishenFangwei": {
+        "type": "object",
+        "properties": {
+          "xi": {
+            "type": "string",
+            "description": "喜神。"
+          },
+          "yanggui": {
+            "type": "string",
+            "description": "阳贵神。"
+          },
+          "yingui": {
+            "type": "string",
+            "description": "阴贵神。"
+          },
+          "fu": {
+            "type": "string",
+            "description": "福神。"
+          },
+          "cai": {
+            "type": "string",
+            "description": "财神。"
+          }
+        },
+        "required": [
+          "xi",
+          "yanggui",
+          "yingui",
+          "fu",
+          "cai"
+        ]
+      },
+      "TimeShichen": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "公历日期，格式：YYYY-M-D。"
+          },
+          "hours": {
+            "type": "string",
+            "description": "时辰对应的时间段，如：23:00-00:59。"
+          },
+          "hour": {
+            "type": "string",
+            "description": "时辰，如：子时。"
+          },
+          "yi": {
+            "type": "string",
+            "description": "时宜，多项以空格分隔。"
+          },
+          "ji": {
+            "type": "string",
+            "description": "时忌，多项以空格分隔。"
+          },
+          "chong": {
+            "type": "string",
+            "description": "时冲。"
+          },
+          "sha": {
+            "type": "string",
+            "description": "时煞。"
+          },
+          "nayin": {
+            "type": "string",
+            "description": "纳音。"
+          },
+          "jiuxing": {
+            "type": "string",
+            "description": "九星。"
+          }
+        },
+        "required": [
+          "date",
+          "hours",
+          "hour",
+          "yi",
+          "ji",
+          "chong",
+          "sha",
+          "nayin",
+          "jiuxing"
+        ]
+      },
+      "TimeJieqi": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "节气名称。"
+          },
+          "time": {
+            "type": "string",
+            "description": "交节时间，格式：YYYY-MM-DD HH:mm:ss。"
+          }
+        },
+        "required": [
+          "name",
+          "time"
+        ]
+      },
+      "TimeFestival": {
+        "type": "object",
+        "properties": {
+          "month": {
+            "type": "string",
+            "description": "月份，如：10。"
+          },
+          "monthEn": {
+            "type": "string",
+            "description": "英文月份缩写，如：Oct。"
+          },
+          "day": {
+            "type": "string",
+            "description": "公历日期，格式：YYYY-MM-DD。"
+          },
+          "cnDay": {
+            "type": "string",
+            "description": "农历日期，如：二〇二六年九月廿一。"
+          },
+          "name": {
+            "type": "string",
+            "description": "节日名称。"
+          },
+          "distance": {
+            "type": "number",
+            "description": "距今天数，已过去时为负数。"
+          }
+        },
+        "required": [
+          "month",
+          "monthEn",
+          "day",
+          "cnDay",
+          "name",
+          "distance"
+        ]
       },
       "HolidayRecord": {
         "type": "object",

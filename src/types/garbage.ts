@@ -1,3 +1,12 @@
+/** 生活垃圾分类记录。 */
+export interface Garbage {
+    /** 记录 ID。 */
+    _id: string;
+    /** 垃圾名称，如：牛奶盒。 */
+    name: string;
+    /** 垃圾类别：可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾。 */
+    category: string;
+}
 export interface GarbageQuery {
     /**
      * @description 垃圾名称

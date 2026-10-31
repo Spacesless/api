@@ -1,4 +1,4 @@
-import type { AzurlaneSpineQuery, Ship, ShipSkin, SpineResult } from '../../types/azurlane';
+import type { AzurlaneSpineQuery, Ship, ShipSkin, SpineListItem, SpineResult } from '../../types/azurlane';
 import Base = require('../base');
 import path = require('path');
 import url = require('url');
@@ -48,7 +48,7 @@ export = class extends Base {
    * @description SD动画小人，可爱捏
    */
   async listsAction() {
-    const spineList: { name: string; value: string; remark?: string }[] = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
+    const spineList: SpineListItem[] = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
     return this.success(spineList);
   }
 

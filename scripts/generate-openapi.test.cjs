@@ -42,7 +42,11 @@ test('code changes regenerate parameters, constraints, response fields and route
   assert.equal(initial.paths['/sample'].get.parameters[0].required, true);
   assert.equal(initial.paths['/sample'].get.parameters[0].schema.maxLength, 10);
   assert.equal(initial.paths['/sample'].get.parameters.find(p => p.name === 'limit').schema.type, 'number');
-  const success = initial.paths['/sample'].get.responses['200'].content['application/json'].schema.anyOf[0];
+  const success = initial.paths['/sample'].get.responses['200'].content['application/json'].schema;
+  assert.ok(!success.anyOf);
+  assert.deepEqual(Object.keys(success.properties), ['errno', 'errmsg', 'data']);
+  assert.ok(!('enum' in success.properties.errno));
+  assert.ok(success.properties.errno.description.includes('1001'));
   assert.deepEqual(Object.keys(success.properties.data.properties), ['title', 'count']);
 
   put('src/controller/sample.ts', controller.replace("count: 2", "enabled: true"));
@@ -52,7 +56,7 @@ test('code changes regenerate parameters, constraints, response fields and route
   const get = changed.paths['/sample'].get;
   assert.equal(get.parameters[0].schema.maxLength, 20);
   assert.deepEqual(get.parameters[1].schema.enum, ['new', 'old']);
-  const properties = get.responses['200'].content['application/json'].schema.anyOf[0].properties.data.properties;
+  const properties = get.responses['200'].content['application/json'].schema.properties.data.properties;
   assert.equal(properties.enabled.type, 'boolean');
   assert.ok(!('count' in properties));
   const output = fs.readFileSync(path.join(root, 'www', 'swagger', 'openapi.json'), 'utf8');

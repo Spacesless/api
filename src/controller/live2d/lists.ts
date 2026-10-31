@@ -1,4 +1,4 @@
-import type { Live2dEntry } from '../../types/live2d';
+import type { Live2dEntry, Live2dListGroup, Live2dListItem } from '../../types/live2d';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
@@ -14,10 +14,10 @@ export = class extends Base {
     const JSONpath = path.join(this.basePath, 'models.json');
     const modelJson: Live2dEntry[] = await fs.readJson(JSONpath);
 
-    const modelLists = [];
+    const modelLists: Live2dListGroup[] = [];
     for (const item of modelJson) {
       const { id, name, children } = item;
-      const temp = [];
+      const temp: Live2dListItem[] = [];
       if (!think.isEmpty(children)) {
         for (const child of children!) {
           const { id, name, models, message, from } = child;

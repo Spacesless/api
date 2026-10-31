@@ -1,4 +1,4 @@
-import type { Live2dTextureRandomQuery, Live2dTextureSwitchQuery } from '../../types/live2d';
+import type { Live2dTextureRandomQuery, Live2dTextureResult, Live2dTextureSwitchQuery } from '../../types/live2d';
 import Base = require('./base');
 import path = require('path');
 import fs = require('fs-extra');
@@ -31,7 +31,8 @@ export = class extends Base {
       textures = this.getAbsolutePath(modelDir, 'textures');
     }
 
-    return this.success({id, texture: think.isEmpty(textures) ? 0 : _texture});
+    const result: Live2dTextureResult = {id, texture: think.isEmpty(textures) ? 0 : _texture};
+    return this.success(result);
   }
 
   // 根据模型id随机获取一材质
@@ -73,6 +74,7 @@ export = class extends Base {
       textures = this.getAbsolutePath(modelDir, 'textures');
     }
 
-    return this.success({id, texture: think.isEmpty(textures) ? 0 : _texture});
+    const result: Live2dTextureResult = {id, texture: think.isEmpty(textures) ? 0 : _texture};
+    return this.success(result);
   }
 };

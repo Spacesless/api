@@ -1,4 +1,4 @@
-import type { AstroData, TimeAstroQuery } from '../../types/time';
+import type { AstroData, AstroResult, TimeAstroQuery } from '../../types/time';
 import Base = require('../base');
 import path = require('path');
 import fs = require('fs-extra');
@@ -12,7 +12,7 @@ dayjs.extend(isSameOrBefore);
 export = class extends Base {
   /**
    * @summary 星座查询
-   * @description 查询星座信息
+   * @description 查询星座信息，未匹配到星座时返回空对象
    */
   async indexAction() {
     const { keyword: queryKeyword } = this.getApiQuery<TimeAstroQuery>();
@@ -21,7 +21,6 @@ export = class extends Base {
     const readJsonContent: AstroData = await fs.readJson(path.join(think.ASSETS_PATH, 'xing-zuo.json'));
     const { role, monthRange } = readJsonContent || {};
 
-    let result = {};
     let key = '';
     const isTime = !isNaN(Date.parse(keyword instanceof Date ? keyword.toString() : keyword));
     if (isTime) {
@@ -35,7 +34,7 @@ export = class extends Base {
       key = (keyword as string).replace('座', '');
     }
 
-    result = role[key] || {};
+    const result: AstroResult = role[key] || {};
     return this.success(result);
   }
 };

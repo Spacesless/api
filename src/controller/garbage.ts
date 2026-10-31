@@ -1,5 +1,5 @@
 import type { MongoFilter } from '../types/common';
-import type { GarbageQuery } from '../types/garbage';
+import type { Garbage, GarbageQuery } from '../types/garbage';
 import Base = require('./base');
 
 export = class extends Base {
@@ -20,7 +20,7 @@ export = class extends Base {
       where.category = category;
     }
 
-    const list = await this.mongo<{ name: string; category: string }>('garbage')
+    const list = await this.mongo<Garbage>('garbage')
       .field('name,category')
       .where(where)
       .page(page, pageSize)

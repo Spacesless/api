@@ -1,4 +1,4 @@
-import type { IpToRegionQuery } from '../types/ip-to-region';
+import type { IpRegion, IpToRegionQuery } from '../types/ip-to-region';
 import Searcher = require("../utils/ip2region");
 import path = require("path");
 import Base = require("./base");
@@ -27,13 +27,14 @@ export = class extends Base {
     const [country, unkown, province, city, isp] =
       data?.region?.split("|") || [];
 
-    return this.success({
+    const result: IpRegion = {
       ip,
       country: formatRegion(country),
       province: formatRegion(province),
       city: formatRegion(city),
       isp: formatRegion(isp),
-    });
+    };
+    return this.success(result);
   }
 };
 

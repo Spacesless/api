@@ -1,4 +1,4 @@
-import type { Live2dModelRandomQuery, Live2dModelSwitchQuery } from '../../types/live2d';
+import type { Live2dModelRandomQuery, Live2dModelResult, Live2dModelSwitchQuery } from '../../types/live2d';
 import Base = require('./base');
 
 export = class extends Base {
@@ -22,7 +22,8 @@ export = class extends Base {
     if (think.isEmpty(result)) {
       return this.fail('没有找到材质哟');
     } else {
-      this.success({id: next.id, message: next.message});
+      const data: Live2dModelResult = {id: next.id, message: next.message};
+      this.success(data);
     }
   }
 
@@ -41,7 +42,8 @@ export = class extends Base {
     if (think.isEmpty(result)) {
       return this.fail('没有找到模型或材质哟');
     } else {
-      this.success({id: next.id, message: next.message});
+      const data: Live2dModelResult = {id: next.id, message: next.message};
+      this.success(data);
     }
   }
 };

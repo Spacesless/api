@@ -15,24 +15,116 @@ export interface Live2dEntry {
     /** 分组下的模型条目。 */
     children?: Live2dEntry[];
 }
-/** Live2D 模型配置，资源地址可由 Controller 转换。 */
+/** Live2D 模型配置，资源地址已由 Controller 转换为可访问的路径。 */
 export interface Live2dModel {
-    /** MOC 模型文件路径。 */
+    /** 配置类型，如：Live2D Model Setting。 */
+    type?: string;
+    /** 模型标识名称。 */
+    name?: string;
+    /** 模型标签。 */
+    label?: string;
+    /** 配置版本。 */
+    version?: string;
+    /** MOC 模型文件地址。 */
     model: string;
     /** 纹理文件地址列表；未找到材质时可能为 undefined。 */
     textures: string[] | undefined;
-    /** 姿势配置文件路径。 */
+    /** 画布布局。 */
+    layout?: Live2dLayout;
+    /** 自定义点击区域。 */
+    hit_areas_custom?: Live2dHitAreas;
+    /** 姿势配置文件地址。 */
     pose?: string;
-    /** 物理效果配置文件路径。 */
+    /** 物理效果配置文件地址。 */
     physics?: string;
-    /** 音频资源路径。 */
+    /** 音频资源地址。 */
     sounds?: string;
-    /** 动作组配置，保留原始 JSON 结构。 */
-    motions?: unknown;
-    /** 表情组配置，保留原始 JSON 结构。 */
-    expressions?: unknown;
-    /** 保留数据源中的其他字段，不在此处假设其具体结构。 */
-    [key: string]: unknown;
+    /** 动作组，键为动作组名（如 idle、tap_body）。 */
+    motions?: Live2dMotionGroups;
+    /** 表情列表。 */
+    expressions?: Live2dExpression[];
+}
+/** Live2D 画布布局。 */
+export interface Live2dLayout {
+    /** 中心点横坐标。 */
+    center_x: number;
+    /** 中心点纵坐标。 */
+    center_y: number;
+    /** 宽度。 */
+    width: number;
+    /** 高度。 */
+    height?: number;
+}
+/** Live2D 自定义点击区域，每项为 [最小值, 最大值]。 */
+export interface Live2dHitAreas {
+    /** 头部区域横坐标范围。 */
+    head_x: number[];
+    /** 头部区域纵坐标范围。 */
+    head_y: number[];
+    /** 身体区域横坐标范围。 */
+    body_x: number[];
+    /** 身体区域纵坐标范围。 */
+    body_y: number[];
+}
+/** Live2D 动作组，键为动作组名。 */
+export interface Live2dMotionGroups {
+    [group: string]: Live2dMotion[];
+}
+/** Live2D 动作。 */
+export interface Live2dMotion {
+    /** 动作文件地址。 */
+    file: string;
+    /** 淡入时长（毫秒）。 */
+    fade_in?: number;
+    /** 淡出时长（毫秒）。 */
+    fade_out?: number;
+    /** 动作配套的音频文件地址。 */
+    sound?: string;
+    /** 对话编号。 */
+    dialogue?: number;
+}
+/** Live2D 表情。 */
+export interface Live2dExpression {
+    /** 表情名称。 */
+    name: string;
+    /** 表情配置文件地址。 */
+    file: string;
+}
+/** Live2D 模型列表分组。 */
+export interface Live2dListGroup {
+    /** 分组 ID。 */
+    id: number;
+    /** 分组名称。 */
+    name: string;
+    /** 分组下的模型。 */
+    children: Live2dListItem[];
+}
+/** Live2D 模型列表条目。 */
+export interface Live2dListItem {
+    /** 模型 ID。 */
+    id: number;
+    /** 模型名称。 */
+    name: string;
+    /** 模型附带的展示信息。 */
+    message?: string;
+    /** 模型来源说明。 */
+    from?: string;
+    /** 材质数量，材质 ID 取值范围为 1-total；模型没有材质列表时不返回。 */
+    total?: number;
+}
+/** 切换模型的结果。 */
+export interface Live2dModelResult {
+    /** 模型 ID。 */
+    id: number;
+    /** 模型附带的展示信息。 */
+    message?: string;
+}
+/** 切换材质的结果。 */
+export interface Live2dTextureResult {
+    /** 模型 ID。 */
+    id: number;
+    /** 材质 ID；没有更多材质时为 0。 */
+    texture: number;
 }
 /** 一套材质配置：单个文件，或需要一起加载的多个文件。 */
 export type TextureList = string | string[];

@@ -1,4 +1,4 @@
-import type { HolidayRecord, TimeFestivalQuery, TimeHolidayQuery, TimeJieqiQuery, TimeQuery, TimeShichenQuery } from '../../types/time';
+import type { HolidayRecord, TimeAlmanac, TimeFestival, TimeFestivalQuery, TimeHolidayQuery, TimeInfo, TimeJieqi, TimeJieqiQuery, TimeLunarInfo, TimeQuery, TimeShichen, TimeShichenQuery, TimeSolarInfo, TimeSolarTerm } from '../../types/time';
 import Base = require('../base');
 import { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear, HolidayUtil } from 'lunar-javascript';
 import dayjs = require('dayjs');
@@ -43,7 +43,7 @@ export = class extends Base {
     const hour = calcTime.getHours();
     const minute = calcTime.getMinutes();
 
-    const solarResult = {
+    const solarResult: TimeSolarInfo = {
       year: solarYear, // 公历年
       leapYear: solarInstance.isLeapYear(), // 是否为闰年
       month: solarMonth, // 公历月
@@ -75,7 +75,7 @@ export = class extends Base {
     const lunarYearInstance = LunarYear.fromYear(lunarYear);
 
     // 计算当天的二十四节气
-    let solarTerms = {};
+    let solarTerms: TimeSolarTerm = {};
     const jieQi = lunarInstance.getCurrentJieQi();
     if (jieQi) {
       solarTerms = {
@@ -86,7 +86,7 @@ export = class extends Base {
 
     const shujiu = lunarInstance.getShuJiu();
 
-    const lunarResult = {
+    const lunarResult: TimeLunarInfo = {
       zodiac: lunarInstance.getYearShengXiao(), // 生肖
       year: lunarYear, // 农历年
       month: lunarMonth, // 农历月
@@ -103,14 +103,14 @@ export = class extends Base {
       yuexiang: lunarInstance.getYueXiang(), // 月相
       wuhou: lunarInstance.getWuHou(), // 物候
       shujiu: shujiu ? shujiu.getName() : '', // 数九
-      sanfu: lunarInstance.getFu() || '', // 三伏
+      sanfu: lunarInstance.getFu()?.getName() || '', // 三伏
       solarTerms // 二十四节气
     };
 
     const jiuxing = lunarInstance.getDayNineStar();
 
     // 老黄历
-    const almanacResult = {
+    const almanacResult: TimeAlmanac = {
       yi: lunarInstance.getDayYi().join(' '), // 宜,
       ji: lunarInstance.getDayJi().join(' '), // 忌,
       chong: '生肖冲' + lunarInstance.getDayChongDesc(), // 冲,
@@ -133,7 +133,8 @@ export = class extends Base {
       taisui: lunarInstance.getDayPositionTaiSui() + '-' + lunarInstance.getDayPositionTaiSuiDesc()
     };
 
-    return this.success({ ...solarResult, lunar: lunarResult, almanac: almanacResult });
+    const result: TimeInfo = { ...solarResult, lunar: lunarResult, almanac: almanacResult };
+    return this.success(result);
   }
 
   // 时辰黄历信息
@@ -157,12 +158,12 @@ export = class extends Base {
     const lunarMonth = lunarInstance.getMonth();
     const lunarDay = lunarInstance.getDay();
 
-    const result = [];
+    const result: TimeShichen[] = [];
     for (let i = 0; i < 24; i += 2) {
       const middleHour = i + 2 >= 24 ? 24 - (i + 2) : i + 2;
       const lunarInstance = Lunar.fromYmdHms(lunarYear, lunarMonth, lunarDay, middleHour, 0, 0);
 
-      const row = {
+      const row: TimeShichen = {
         date: `${solarYear}-${solarMonth}-${solarInstance.getDay()}`,
         hours: `${this.formatTwoDigit(i + 1)}:00-${this.formatTwoDigit(middleHour)}:59`,
         hour: LunarUtil.convertTime(`${this.formatTwoDigit(middleHour)}:00`) + '时', // 时辰
@@ -192,7 +193,7 @@ export = class extends Base {
     const solarInstance = Solar.fromDate(calcTime);
     const lunarInstance = solarInstance.getLunar();
 
-    const result = [];
+    const result: TimeJieqi[] = [];
     const jieQiList = lunarInstance.getJieQiList();
     const jieQi = lunarInstance.getJieQiTable();
     for (let i = 0, j = jieQiList.length; i < j; i++) {
@@ -226,7 +227,7 @@ export = class extends Base {
     const maxDays = month ? SolarUtil.getDaysOfMonth(solarYear, month) : SolarUtil.getDaysOfYear(solarYear);
 
     const start = Solar.fromYmd(solarYear, month || 1, 1);
-    const result: { month: string; monthEn: string; day: string; cnDay: string; name: string; distance: number }[] = [];
+    const result: TimeFestival[] = [];
 
     for (let i = 0; i < maxDays; i++) {
       const solarInstance = start.next(i);

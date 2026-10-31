@@ -1,4 +1,4 @@
-import type { AzurlaneShipListsQuery, AzurlaneShipQuery, Ship } from '../../types/azurlane';
+import type { AzurlaneShipListsQuery, AzurlaneShipQuery, Ship, ShipDetail, ShipListItem } from '../../types/azurlane';
 import Base = require("../base");
 import path = require("path");
 import fs = require("fs-extra");
@@ -76,15 +76,7 @@ export = class extends Base {
     } = this.getApiQuery<AzurlaneShipListsQuery>();
     const formatName = name ? name.trim() : "";
 
-    const targetShips: {
-      id: string;
-      classify: string;
-      names: Ship["names"];
-      thumbnail: string;
-      hullType: string;
-      nationality: string;
-      rarity: string;
-    }[] = [];
+    const targetShips: ShipListItem[] = [];
     this.ships.forEach((item) => {
       const {
         id,
@@ -95,7 +87,7 @@ export = class extends Base {
         thumbnail,
         class: classify,
       } = item;
-      const result = {
+      const result: ShipListItem = {
         id,
         classify,
         names,
@@ -129,7 +121,7 @@ export = class extends Base {
     const findShip: Partial<Ship> =
       this.ships.find((item) => item.id === id) || {};
     const { hullType, nationality, rarity } = findShip;
-    const result = {
+    const result: ShipDetail = {
       ...findShip,
       hullType: hullTypeMap[hullType || ""] || hullType,
       nationality: nationalityMap[nationality || ""] || nationality,
