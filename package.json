@@ -5,7 +5,7 @@
   "author": "timeless",
   "scripts": {
     "start": "npm run dev",
-    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs scripts/prepare-mongodb-data.test.cjs",
+    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs",
     "lint": "npm run typecheck",
     "dev": "tsc-watch --onSuccess \"npm run dev:serve\"",
     "dev:serve": "npm run docs:generate && node app/development.js",
@@ -13,7 +13,6 @@
     "compile": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "docs:generate": "node scripts/generate-openapi.cjs",
-    "data:prepare": "node scripts/prepare-mongodb-data.cjs",
     "start:prod": "node app/production.js"
   },
   "dependencies": {
@@ -21,8 +20,9 @@
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.13",
     "fs-extra": "^10.0.0",
+    "ip2region.js": "^3.1.8",
     "lodash": "^4.17.21",
-    "lunar-javascript": "^1.7.1",
+    "lunar-javascript": "^1.7.7",
     "pinyin": "^3.1.0",
     "qrcode": "^1.5.1",
     "think-cache": "^1.1.1",
@@ -51,7 +51,7 @@
   "repository": "",
   "license": "MIT",
   "engines": {
-    "node": ">=22"
+    "node": ">=22.12"
   },
   "readmeFilename": "README.md",
   "thinkjs": {

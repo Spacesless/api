@@ -155,6 +155,19 @@ async function queryCollection(controllerName: 'poetry' | 'dictionary', action: 
   return JSON.parse(JSON.stringify(captured)) as typeof captured;
 }
 
+test('bangumi 接口已移除，不再注册模块或生成文档，原路径返回 404', async () => {
+  const app = think.app as typeof think.app & LoadedApplication;
+  assert.ok(!app.controllers.bangumi);
+  assert.ok(!app.logics.bangumi);
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  assert.ok(!Object.keys(document.paths).some(url => url === '/bangumi' || url.startsWith('/bangumi/')));
+  // 离线测试不启动服务，须等待框架启动准备完成，确保 404 模板已加载。
+  await (think.beforeStartServer as () => Promise<unknown>)();
+  for (const url of ['/bangumi', '/bangumi/index', '/bangumi?year=2020&month=10']) {
+    assert.equal((await request(url)).status, 404, url);
+  }
+});
+
 test('poetry searches use source fields, separate collections, literal search and stable pagination', async () => {
   const poem = await queryCollection('poetry', 'indexAction', {
     author: '李白', dynasty: '唐代', type: '乐府', keyword: '[将进酒].*', page: 2, pageSize: 5
@@ -382,4 +395,48 @@ test('the MongoDB model maps the alternate source to the existing record fields'
   assert.equal(record?.largePicture, null);
   assert.equal(record?.tts, 'audio');
   assert.equal(record?.title, undefined);
+});
+
+test('IP region routes query IPv4 by default and IPv6 explicitly using the new database fields', async () => {
+  for (const suffix of ['', '&version=4']) {
+    const result = JSON.parse((await request('/ip-to-region?ip=114.114.114.114' + suffix)).body);
+    assert.deepEqual(result, {
+      errno: 0, errmsg: '', data: {
+        ip: '114.114.114.114', country: '中国', province: '江苏省', city: '南京市', isp: ''
+      }
+    });
+  }
+  const ip = '240e:3b7:3272:d8d0:db09:c067:8d59:539e';
+  const result = JSON.parse((await request('/ip-to-region?version=6&ip=' + encodeURIComponent(ip))).body);
+  assert.deepEqual(result, {
+    errno: 0, errmsg: '', data: { ip, country: '中国', province: '广东省', city: '深圳市', isp: '电信' }
+  });
+});
+
+test('IP region routes reject invalid versions, malformed addresses and version mismatches', async () => {
+  for (const query of [
+    'ip=invalid', 'ip=999.1.1.1', 'version=5&ip=114.114.114.114',
+    'version=ipv6&ip=::1', 'version=6&ip=114.114.114.114', 'ip=::1'
+  ]) {
+    const result = JSON.parse((await request('/ip-to-region?' + query)).body);
+    assert.notEqual(result.errno, 0, query);
+  }
+  const post = JSON.parse((await request('/ip-to-region', 'POST')).body);
+  assert.equal(post.errmsg, 'METHOD_NOT_ALLOWED');
+});
+
+test('IP region falls back to client IP, normalizes mapped IPv4 and preserves native IPv6', async () => {
+  const Controller = require('../src/controller/ip-to-region') as typeof import('../src/controller/ip-to-region');
+  for (const [clientIp, query, expectedIp] of [
+    ['::ffff:114.114.114.114', {}, '114.114.114.114'],
+    ['240e:3b7:3272:d8d0:db09:c067:8d59:539e', { version: 6 }, '240e:3b7:3272:d8d0:db09:c067:8d59:539e']
+  ] as const) {
+    let data: unknown;
+    await Controller.prototype.indexAction.call({
+      ctx: { ip: clientIp }, getApiQuery: () => query,
+      success(value: unknown) { data = value; },
+      fail(message: string) { assert.fail(message); }
+    } as unknown as InstanceType<typeof Controller>);
+    assert.equal((data as { ip: string }).ip, expectedIp);
+  }
 });

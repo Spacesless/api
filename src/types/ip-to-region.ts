@@ -11,7 +11,11 @@ export interface IpRegion {
     /** 运营商，如：电信。 */
     isp: string;
 }
+export type IpVersion = 4 | 6;
+
 export interface IpToRegionQuery {
-    /** @description IPv4地址，不传取请求体携带的地址 */
+    /** @description IPv4 或 IPv6 地址，须与 version 一致；不传取客户端 IP */
     ip?: string;
+    /** @description IP 版本：4（默认）或 6 */
+    version?: IpVersion;
 }

@@ -4,7 +4,10 @@ export = class extends think.Logic {
 
     this.rules = {
       ip: {
-        ip4: true
+        ip: true
+      },
+      version: {
+        in: [4, 6]
       }
     };
   }

@@ -1,31 +1,29 @@
 import type { IpRegion, IpToRegionQuery } from '../types/ip-to-region';
 import Searcher = require("../utils/ip2region");
-import path = require("path");
+import { isIP } from 'node:net';
 import Base = require("./base");
-
-// 指定ip2region数据文件路径
-const dbPath = path.join(think.ASSETS_PATH, "ip2region.xdb");
 
 export = class extends Base {
   /**
    * @summary IP归属地查询
-   * @description 支持IPv4地址查询归属地，部分地址再IP库中不存在，可能查询不到~
+   * @description 支持 IPv4（默认）和 IPv6 地址查询归属地，IP 库中查不到的字段为空字符串。
    */
   async indexAction() {
-    const ip =
-      this.getApiQuery<IpToRegionQuery>().ip ||
-      this.ctx.ip.replace("::ffff:", "");
+    const query = this.getApiQuery<IpToRegionQuery>();
+    const version = Number(query.version ?? 4);
+    if (version !== 4 && version !== 6) return this.fail('version 仅支持 4 或 6');
 
-    // 同步读取vectorIndex
-    const vectorIndex = Searcher.loadVectorIndexFromFile(dbPath);
-    // 创建searcher对象
-    const searcher = Searcher.newWithVectorIndex(dbPath, vectorIndex);
-    // 查询 await 或 promise均可
-    const data = await searcher.search(ip).catch(() => {});
+    let ip = query.ip || this.ctx.ip;
+    // 兼容 IPv4 经双栈监听进入服务时的映射地址，仅处理自动获取的客户端 IP。
+    if (!query.ip && version === 4 && /^::ffff:/i.test(ip)) {
+      const mapped = ip.slice(7);
+      if (isIP(mapped) === 4) ip = mapped;
+    }
+    if (isIP(ip) !== version) return this.fail(`请提供有效的 IPv${version} 地址`);
 
-    // eslint-disable-next-line no-unused-vars
-    const [country, unkown, province, city, isp] =
-      data?.region?.split("|") || [];
+    const data = await Searcher.search(ip, version);
+    // 新版数据库格式：国家|省份|城市|ISP|国家代码。
+    const [country, province, city, isp] = data.split('|');
 
     const result: IpRegion = {
       ip,

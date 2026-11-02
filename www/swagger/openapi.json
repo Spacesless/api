@@ -67,79 +67,6 @@
         }
       }
     },
-    "/bangumi": {
-      "get": {
-        "summary": "动画番剧查询",
-        "description": "查询动画番组信息",
-        "operationId": "bangumi_index",
-        "tags": [
-          "bangumi"
-        ],
-        "parameters": [
-          {
-            "name": "year",
-            "in": "query",
-            "required": false,
-            "description": "年份",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "month",
-            "in": "query",
-            "required": false,
-            "description": "月份",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "title",
-            "in": "query",
-            "required": false,
-            "description": "标题",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "成功响应",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "description": "data 为响应数据。",
-                  "required": [
-                    "errno",
-                    "errmsg",
-                    "data"
-                  ],
-                  "properties": {
-                    "errno": {
-                      "type": "integer",
-                      "description": "错误码：0 表示成功。"
-                    },
-                    "errmsg": {
-                      "type": "string",
-                      "description": "错误信息，成功时为空字符串。"
-                    },
-                    "data": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/BangumiItem"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/bing": {
       "get": {
         "summary": "每日图片",
@@ -922,7 +849,7 @@
     "/english-sentence": {
       "get": {
         "summary": "每日英语",
-        "description": "金山词霸每日英语句子。\r\n2012年至今。",
+        "description": "金山词霸每日英语句子。\n2012年至今。",
         "operationId": "english-sentence_index",
         "tags": [
           "english-sentence"
@@ -1386,7 +1313,7 @@
     "/ip-to-region": {
       "get": {
         "summary": "IP归属地查询",
-        "description": "支持IPv4地址查询归属地，部分地址再IP库中不存在，可能查询不到~",
+        "description": "支持 IPv4（默认）和 IPv6 地址查询归属地，IP 库中查不到的字段为空字符串。",
         "operationId": "ip-to-region_index",
         "tags": [
           "ip-to-region"
@@ -1396,10 +1323,22 @@
             "name": "ip",
             "in": "query",
             "required": false,
-            "description": "IPv4地址，不传取请求体携带的地址",
+            "description": "IPv4 或 IPv6 地址，须与 version 一致；不传取客户端 IP",
             "schema": {
-              "type": "string",
-              "format": "ipv4"
+              "type": "string"
+            }
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "required": false,
+            "description": "IP 版本：4（默认）或 6",
+            "schema": {
+              "type": "number",
+              "enum": [
+                4,
+                6
+              ]
             }
           }
         ],
@@ -1418,7 +1357,7 @@
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
                     },
                     "errmsg": {
                       "anyOf": [
@@ -2438,7 +2377,7 @@
     "/sentence": {
       "get": {
         "summary": "随机获取句子",
-        "description": "- 动漫也好、小说也好、网络也好，不论在哪里，我们总会看到有那么一两个句子能穿透你的心。\r\n- 简单来说，一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。 或是感动，或是开心，有或是单纯的回忆。\r\n- 基于https://hitokoto.cn/实现",
+        "description": "- 动漫也好、小说也好、网络也好，不论在哪里，我们总会看到有那么一两个句子能穿透你的心。\n- 简单来说，一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。 或是感动，或是开心，有或是单纯的回忆。\n- 基于https://hitokoto.cn/实现",
         "operationId": "sentence_index",
         "tags": [
           "sentence"
@@ -3429,7 +3368,7 @@
     "/live2d/get": {
       "get": {
         "summary": "模型信息",
-        "description": "模型id通过模型列表可查，材质id(1-材质总数范围内，模型列表的total字段)\r\n也可以查看这里：https://www.timelessq.com/tool/live2d",
+        "description": "模型id通过模型列表可查，材质id(1-材质总数范围内，模型列表的total字段)\n也可以查看这里：https://www.timelessq.com/tool/live2d",
         "operationId": "live2d_get_index",
         "tags": [
           "live2d"
@@ -3505,7 +3444,7 @@
     "/live2d/lists": {
       "get": {
         "summary": "Live2d模型列表",
-        "description": "live2d模型列表、材质数量、出处\ndemo：https://www.timelessq.com/tool/live2d",
+        "description": "live2d模型列表、材质数量、出处\r\ndemo：https://www.timelessq.com/tool/live2d",
         "operationId": "live2d_lists_index",
         "tags": [
           "live2d"
@@ -4198,42 +4137,6 @@
           "name",
           "phoneCode"
         ]
-      },
-      "BangumiItem": {
-        "type": "object",
-        "properties": {
-          "begin": {
-            "type": "string",
-            "description": "开播时间，供年份和月份筛选使用。"
-          },
-          "title": {
-            "type": "string",
-            "description": "番组原始标题。"
-          },
-          "titleTranslate": {
-            "$ref": "#/components/schemas/Record_string__string___",
-            "description": "按语言分组的译名列表。"
-          }
-        },
-        "required": [
-          "begin",
-          "title",
-          "titleTranslate"
-        ],
-        "additionalProperties": {
-          "description": "动态数据：源码类型为 any/unknown，未推断字段结构。",
-          "x-typescript-type": "unknown"
-        }
-      },
-      "Record_string__string___": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
       },
       "Partial_BingRecord_": {
         "type": "object",

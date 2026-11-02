@@ -16,7 +16,6 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 
 ## 功能特性
 - 时间 (公历，农历，老黄历，十二时辰，基于[https://github.com/6tail/lunar-javascript](https://github.com/6tail/lunar-javascript))
-- 动画番组数据 (按年、月、动画名称查询, 基于[https://github.com/bangumi-data/bangumi-data](https://github.com/bangumi-data/bangumi-data))
 - Live2d模型 (***勿做商用哦***, Live2D Cubism SDK v2版本, 材质图片经过tinypng压缩)
 - 中国行政区划联动 (只支持4级联动，需要5级联动找[https://github.com/modood/Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China))
 - 垃圾分类 (可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾, 基于[https://github.com/alexayan/garbage-classification-data](https://github.com/alexayan/garbage-classification-data))
@@ -191,3 +190,16 @@ npm run start:prod
 构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `swagger/openapi.json`）、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
 
 可以参考deploy目录下的nginx或pm2配置进行部署
+
+## IP 归属地查询
+
+`GET /ip-to-region` 使用官方 [ip2region JavaScript 绑定](https://github.com/lionsoul2014/ip2region/tree/master/binding/javascript)，支持 IPv4 和 IPv6。`version` 可选 `4` 或 `6`，默认 `4`；`ip` 不传时取客户端 IP，地址版本须与 `version` 一致。
+
+```text
+/ip-to-region?ip=114.114.114.114
+/ip-to-region?version=6&ip=240e:3b7:3272:d8d0:db09:c067:8d59:539e
+```
+
+数据库分别放在 `www/ip2region/ip2region_v4.xdb` 和 `www/ip2region/ip2region_v6.xdb`，使用新版的 `国家|省份|城市|ISP|国家代码` 格式。返回字段仍为 `ip`、`country`、`province`、`city`、`isp`，库中缺失的字段返回空字符串。每种版本首次查询时校验数据库并缓存向量索引，更新数据库后需重启服务。
+
+运行环境要求 Node.js 22.12 或更高版本，以便 CommonJS 应用加载官方 ESM 绑定。
