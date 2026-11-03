@@ -337,6 +337,155 @@
         }
       }
     },
+    "/dictionary/riddle": {
+      "get": {
+        "summary": "谜语大全",
+        "description": "查询谜语或按谜底反查，支持分类、谜目及关键词组合筛选，统一返回分页结果。谜面 question 与谜目 guess 分开返回，前端可按需组合。",
+        "operationId": "dictionary_riddle",
+        "tags": [
+          "dictionary"
+        ],
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "按分类编码精确筛选，如：character；使用小驼峰英文枚举值。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "brainTeaser",
+                "intelligence",
+                "explanation",
+                "funny",
+                "character",
+                "idiom",
+                "animal",
+                "love",
+                "lantern",
+                "person",
+                "place",
+                "word",
+                "pattern",
+                "phrase",
+                "children",
+                "object",
+                "plant",
+                "poetry",
+                "publication",
+                "saying",
+                "medicine",
+                "music",
+                "film",
+                "appellation",
+                "other"
+              ]
+            }
+          },
+          {
+            "name": "question",
+            "in": "query",
+            "required": false,
+            "description": "按谜面包含的文字查询，特殊符号按字面匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "guess",
+            "in": "query",
+            "required": false,
+            "description": "按谜目包含的文字查询，如：打一字。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "answer",
+            "in": "query",
+            "required": false,
+            "description": "按谜底包含的文字反查。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "同时搜索谜面、谜目和谜底；与其他条件组合筛选。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认 1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认 10，最多 50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Riddle_"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/dictionary/word": {
       "get": {
         "summary": "汉字词典",
@@ -1012,6 +1161,309 @@
                     },
                     "data": {
                       "$ref": "#/components/schemas/PageResult_EnglishSentence_"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/food/nutrition": {
+      "get": {
+        "summary": "食物营养查询",
+        "description": "按名称或别名、关键词和分类组合查询每100克可食部的营养成分，统一返回分页结果。其他数据补缺；null表示数据缺失，0保留原值。生熟、品种和加工状态不同的名称分别保留。",
+        "operationId": "food_nutrition",
+        "tags": [
+          "food"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "食物名称或别名精确查询；同名数据合并，生熟和品种不同的完整名称分别保留。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "同时搜索食物名称和别名，按字面包含关系匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "已知分类编码，小驼峰英文；不包含分类未知的记录。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "alcohol",
+                "seafood",
+                "grain",
+                "vegetable",
+                "tuber",
+                "bean",
+                "snackBeverage",
+                "condiment",
+                "fruit",
+                "mushroom",
+                "algae",
+                "meat",
+                "egg",
+                "tea"
+              ]
+            }
+          },
+          {
+            "name": "categoryCode",
+            "in": "query",
+            "required": false,
+            "description": "SQL 原始分类码leibie。",
+            "schema": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认10，最多50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_FoodNutrition_"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/food/recipe": {
+      "get": {
+        "summary": "菜谱查询",
+        "description": "按菜名、食材、分类、标签、口味、工艺、难度及最长耗时组合筛选，统一返回分页结果。同名不同做法分别保留；duration为分钟，difficulty为1至5星，未知值为null。",
+        "operationId": "food_recipe",
+        "tags": [
+          "food"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "菜名包含查询，特殊符号按字面匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "同时搜索菜名和食材名称，按字面包含关系匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "ingredient",
+            "in": "query",
+            "required": false,
+            "description": "食材名称包含查询，如鸡蛋。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "分类，小驼峰英文枚举。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "seafood",
+                "breakfast",
+                "condiment",
+                "dessert",
+                "drink",
+                "meatDish",
+                "semiFinished",
+                "soup",
+                "staple",
+                "vegetableDish"
+              ]
+            }
+          },
+          {
+            "name": "tag",
+            "in": "query",
+            "required": false,
+            "description": "标签精确筛选，如春季。",
+            "schema": {
+              "type": "string",
+              "maxLength": 30
+            }
+          },
+          {
+            "name": "taste",
+            "in": "query",
+            "required": false,
+            "description": "口味精确筛选。",
+            "schema": {
+              "type": "string",
+              "maxLength": 30
+            }
+          },
+          {
+            "name": "method",
+            "in": "query",
+            "required": false,
+            "description": "工艺精确筛选。",
+            "schema": {
+              "type": "string",
+              "maxLength": 30
+            }
+          },
+          {
+            "name": "difficulty",
+            "in": "query",
+            "required": false,
+            "description": "难度星级，1至5；不包含难度未知的记录。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            }
+          },
+          {
+            "name": "maxDuration",
+            "in": "query",
+            "required": false,
+            "description": "最长耗时，单位分钟；不包含耗时未知的记录。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认10，最多50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Recipe_"
                     }
                   }
                 }
@@ -3804,6 +4256,137 @@
         }
       }
     },
+    "/time/bazi": {
+      "get": {
+        "summary": "八字基础排盘",
+        "description": "按公历出生年月日时分（北京时间）排四柱、藏干、十神、纳音及表层五行统计，另返回指定日期的通用宜忌。民俗娱乐参考，不提供旺衰、喜用神或个人运势预测。",
+        "operationId": "time_bazi_index",
+        "tags": [
+          "time"
+        ],
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "required": true,
+            "description": "公历出生年，1900 至 2099。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1900,
+              "maximum": 2099
+            }
+          },
+          {
+            "name": "month",
+            "in": "query",
+            "required": true,
+            "description": "公历出生月。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          },
+          {
+            "name": "day",
+            "in": "query",
+            "required": true,
+            "description": "公历出生日，须为有效日期。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 31
+            }
+          },
+          {
+            "name": "hour",
+            "in": "query",
+            "required": true,
+            "description": "出生小时，0 至 23，按北京时间输入。",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 23
+            }
+          },
+          {
+            "name": "minute",
+            "in": "query",
+            "required": false,
+            "description": "出生分钟，默认 0；节气交接附近应提供准确分钟。",
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 59
+            }
+          },
+          {
+            "name": "sect",
+            "in": "query",
+            "required": false,
+            "description": "子时换日流派：1 为 23:00 换日，2（默认）为 00:00 换日；仅控制日柱及相关十神口径，时柱沿用库规则。",
+            "schema": {
+              "type": "number",
+              "enum": [
+                1,
+                2
+              ]
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "description": "通用黄历查询日期，YYYY-MM-DD，1900 至 2099；默认北京时间今天，与出生日期独立。",
+            "schema": {
+              "type": "string",
+              "minLength": 10,
+              "maxLength": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/BaziResult"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/time": {
       "get": {
         "summary": "万年历信息",
@@ -3847,6 +4430,83 @@
                     },
                     "data": {
                       "$ref": "#/components/schemas/TimeInfo"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/time/calendar": {
+      "get": {
+        "summary": "月历摘要",
+        "description": "按日期升序返回指定月份的公历序号、农历月日、节日节气及简要黄历，仅包含当月日期，不补齐相邻月份。年月分别默认当前年月。",
+        "operationId": "time_index_calendar",
+        "tags": [
+          "time"
+        ],
+        "parameters": [
+          {
+            "name": "year",
+            "in": "query",
+            "required": false,
+            "description": "公历年，1900 至 2099；不传取当前年。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1900,
+              "maximum": 2099
+            }
+          },
+          {
+            "name": "month",
+            "in": "query",
+            "required": false,
+            "description": "公历月，1 至 12；不传取当前月。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/TimeCalendarDay"
+                      }
                     }
                   }
                 }
@@ -4228,6 +4888,114 @@
           "pageSize",
           "currentPage",
           "data"
+        ]
+      },
+      "PageResult_Riddle_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Riddle"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "Riddle": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string",
+            "description": "谜面，不包含末尾谜目。"
+          },
+          "guess": {
+            "type": "string",
+            "description": "谜目，如：打一字；没有时为空字符串。"
+          },
+          "answer": {
+            "type": "string",
+            "description": "谜底，保留原始答案及标点。"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "brainTeaser",
+              "intelligence",
+              "explanation",
+              "funny",
+              "character",
+              "idiom",
+              "animal",
+              "love",
+              "lantern",
+              "person",
+              "place",
+              "word",
+              "pattern",
+              "phrase",
+              "children",
+              "object",
+              "plant",
+              "poetry",
+              "publication",
+              "saying",
+              "medicine",
+              "music",
+              "film",
+              "appellation",
+              "other"
+            ],
+            "description": "分类编码，如：character（字谜）、idiom（成语谜语）、brainTeaser（脑筋急转弯）。"
+          },
+          "categoryName": {
+            "type": "string",
+            "description": "中文分类名称。"
+          },
+          "hint": {
+            "type": "string",
+            "description": "小贴士，没有时为空字符串。"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "详细解析，没有时为空字符串。"
+          }
+        },
+        "required": [
+          "_id",
+          "question",
+          "guess",
+          "answer",
+          "category",
+          "categoryName",
+          "hint",
+          "explanation"
         ]
       },
       "PageResult_DictionaryWord_": {
@@ -4621,6 +5389,655 @@
           "pageSize",
           "currentPage",
           "data"
+        ]
+      },
+      "PageResult_FoodNutrition_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FoodNutrition"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "FoodNutrition": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "MongoDB 自动生成，导入文件不包含此字段。"
+          },
+          "name": {
+            "type": "string",
+            "description": "食物原始名称，保留生熟、品种和加工状态。"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "原始数据提供的别名，去重并剔除“无”，不从名称臆造。"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "alcohol",
+              "seafood",
+              "grain",
+              "vegetable",
+              "tuber",
+              "bean",
+              "snackBeverage",
+              "condiment",
+              "fruit",
+              "mushroom",
+              "algae",
+              "meat",
+              "egg",
+              "tea"
+            ],
+            "nullable": true,
+            "description": "已知分类编码；SQL缺少分类字典时为null。"
+          },
+          "categoryName": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始中文分类名称，缺失为null。"
+          },
+          "foodCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "SQL原始食物编码xuhao，缺失为null。"
+          },
+          "typeCode": {
+            "type": "number",
+            "nullable": true,
+            "description": "SQL原始leixing编码，缺失为null。"
+          },
+          "categoryCode": {
+            "type": "number",
+            "nullable": true,
+            "description": "SQL原始leibie编码，未推断含义，缺失为null。"
+          },
+          "groupCode": {
+            "type": "number",
+            "nullable": true,
+            "description": "SQL原始lei编码，未推断含义，缺失为null。"
+          },
+          "basisGrams": {
+            "type": "number",
+            "description": "营养数据对应的可食部质量，固定100克，由数据提供方确认。"
+          },
+          "ediblePortionPercent": {
+            "type": "number",
+            "nullable": true,
+            "description": "食部百分比，0至100，缺失或原值越界时为null；不据此再折算营养值。"
+          },
+          "energyKcal": {
+            "type": "number",
+            "nullable": true,
+            "description": "能量，单位：千卡，缺失为null。"
+          },
+          "calculatedEnergyKcal": {
+            "type": "number",
+            "nullable": true,
+            "description": "原表计算能量，单位：千卡，缺失为null。"
+          },
+          "waterG": {
+            "type": "number",
+            "nullable": true,
+            "description": "水分，单位：克，缺失为null。"
+          },
+          "proteinG": {
+            "type": "number",
+            "nullable": true,
+            "description": "蛋白质，单位：克，缺失为null。"
+          },
+          "fatG": {
+            "type": "number",
+            "nullable": true,
+            "description": "脂肪，单位：克，缺失为null。"
+          },
+          "carbohydrateG": {
+            "type": "number",
+            "nullable": true,
+            "description": "碳水化合物，单位：克，缺失为null。"
+          },
+          "fiberG": {
+            "type": "number",
+            "nullable": true,
+            "description": "原表膳食/粗纤维，单位：克，缺失为null；来源间检测口径未统一。"
+          },
+          "ashG": {
+            "type": "number",
+            "nullable": true,
+            "description": "灰分，单位：克，缺失为null。"
+          },
+          "monounsaturatedFatG": {
+            "type": "number",
+            "nullable": true,
+            "description": "单不饱和脂肪酸，单位：克，缺失为null。"
+          },
+          "polyunsaturatedFatG": {
+            "type": "number",
+            "nullable": true,
+            "description": "多不饱和脂肪酸，单位：克，缺失为null。"
+          },
+          "polyunsaturatedFatPercent": {
+            "type": "number",
+            "nullable": true,
+            "description": "多不饱和脂肪酸占总脂肪酸比例，单位：%，缺失为null。"
+          },
+          "transFatG": {
+            "type": "number",
+            "nullable": true,
+            "description": "反式脂肪酸，单位：克，缺失为null。"
+          },
+          "transFatPercent": {
+            "type": "number",
+            "nullable": true,
+            "description": "反式脂肪酸占总脂肪酸比例，单位：%，缺失为null。"
+          },
+          "cholesterolMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "胆固醇，单位：毫克，缺失为null。"
+          },
+          "plantSterolsMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "植物固醇，单位：毫克，缺失为null。"
+          },
+          "caroteneUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "胡萝卜素，单位：微克，缺失为null。"
+          },
+          "retinolUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "视黄醇，单位：微克，缺失为null。"
+          },
+          "luteinUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "叶黄素类，单位：微克，缺失为null。"
+          },
+          "lycopeneUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "番茄红素，单位：微克，缺失为null。"
+          },
+          "calciumMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "钙，单位：毫克，缺失为null。"
+          },
+          "magnesiumMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "镁，单位：毫克，缺失为null。"
+          },
+          "sodiumMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "钠，单位：毫克，缺失为null。"
+          },
+          "potassiumMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "钾，单位：毫克，缺失为null。"
+          },
+          "phosphorusMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "磷，单位：毫克，缺失为null。"
+          },
+          "sulfurMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "硫，单位：毫克，缺失为null。"
+          },
+          "chlorineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "氯，单位：毫克，缺失为null。"
+          },
+          "ironMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "铁，单位：毫克，缺失为null。"
+          },
+          "iodineUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "碘，单位：微克，缺失为null。"
+          },
+          "zincMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "锌，单位：毫克，缺失为null。"
+          },
+          "seleniumUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "硒，单位：微克，缺失为null。"
+          },
+          "copperMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "铜，单位：毫克，缺失为null。"
+          },
+          "manganeseMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "锰，单位：毫克，缺失为null。"
+          },
+          "fluorineUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "氟，单位：微克，缺失为null。"
+          },
+          "vitaminAUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素A，单位：微克，缺失为null。"
+          },
+          "vitaminCMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素C，单位：毫克，缺失为null。"
+          },
+          "vitaminDUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素D，单位：微克，缺失为null。"
+          },
+          "vitaminEMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素E，单位：毫克，缺失为null。"
+          },
+          "vitaminKUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素K，单位：微克，缺失为null。"
+          },
+          "flavonoidsMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "类黄酮，单位：毫克，缺失为null。"
+          },
+          "vitaminB1Mg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B1（硫胺素），单位：毫克，缺失为null。"
+          },
+          "vitaminB2Mg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B2（核黄素），单位：毫克，缺失为null。"
+          },
+          "vitaminB3Mg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B3（烟酸），单位：毫克，缺失为null。"
+          },
+          "cholineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "胆碱，单位：毫克，缺失为null。"
+          },
+          "vitaminB5Mg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B5（泛酸），单位：毫克，缺失为null。"
+          },
+          "vitaminB6Mg": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B6，单位：毫克，缺失为null。"
+          },
+          "biotinUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "生物素，单位：微克，缺失为null。"
+          },
+          "folateUg": {
+            "type": "number",
+            "nullable": true,
+            "description": "叶酸，单位：微克，缺失为null。"
+          },
+          "vitaminB12Ug": {
+            "type": "number",
+            "nullable": true,
+            "description": "维生素B12，单位：微克，缺失为null。"
+          },
+          "betaineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "甜菜碱，单位：毫克，缺失为null。"
+          },
+          "leucineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "亮氨酸，单位：毫克，缺失为null。"
+          },
+          "methionineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "蛋氨酸，单位：毫克，缺失为null。"
+          },
+          "threonineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "苏氨酸，单位：毫克，缺失为null。"
+          },
+          "lysineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "赖氨酸，单位：毫克，缺失为null。"
+          },
+          "tryptophanMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "色氨酸，单位：毫克，缺失为null。"
+          },
+          "valineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "缬氨酸，单位：毫克，缺失为null。"
+          },
+          "histidineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "组氨酸，单位：毫克，缺失为null。"
+          },
+          "isoleucineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "异亮氨酸，单位：毫克，缺失为null。"
+          },
+          "phenylalanineMg": {
+            "type": "number",
+            "nullable": true,
+            "description": "苯丙氨酸，单位：毫克，缺失为null。"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "aliases",
+          "category",
+          "categoryName",
+          "foodCode",
+          "typeCode",
+          "categoryCode",
+          "groupCode",
+          "basisGrams",
+          "ediblePortionPercent",
+          "energyKcal",
+          "calculatedEnergyKcal",
+          "waterG",
+          "proteinG",
+          "fatG",
+          "carbohydrateG",
+          "fiberG",
+          "ashG",
+          "monounsaturatedFatG",
+          "polyunsaturatedFatG",
+          "polyunsaturatedFatPercent",
+          "transFatG",
+          "transFatPercent",
+          "cholesterolMg",
+          "plantSterolsMg",
+          "caroteneUg",
+          "retinolUg",
+          "luteinUg",
+          "lycopeneUg",
+          "calciumMg",
+          "magnesiumMg",
+          "sodiumMg",
+          "potassiumMg",
+          "phosphorusMg",
+          "sulfurMg",
+          "chlorineMg",
+          "ironMg",
+          "iodineUg",
+          "zincMg",
+          "seleniumUg",
+          "copperMg",
+          "manganeseMg",
+          "fluorineUg",
+          "vitaminAUg",
+          "vitaminCMg",
+          "vitaminDUg",
+          "vitaminEMg",
+          "vitaminKUg",
+          "flavonoidsMg",
+          "vitaminB1Mg",
+          "vitaminB2Mg",
+          "vitaminB3Mg",
+          "cholineMg",
+          "vitaminB5Mg",
+          "vitaminB6Mg",
+          "biotinUg",
+          "folateUg",
+          "vitaminB12Ug",
+          "betaineMg",
+          "leucineMg",
+          "methionineMg",
+          "threonineMg",
+          "lysineMg",
+          "tryptophanMg",
+          "valineMg",
+          "histidineMg",
+          "isoleucineMg",
+          "phenylalanineMg"
+        ]
+      },
+      "PageResult_Recipe_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Recipe"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "Recipe": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string",
+            "description": "MongoDB自动生成，导入文件不含此字段；同名的不同做法分别保留。"
+          },
+          "name": {
+            "type": "string",
+            "description": "菜名。"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始菜品简介，无则为null。"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "seafood",
+              "breakfast",
+              "condiment",
+              "dessert",
+              "drink",
+              "meatDish",
+              "semiFinished",
+              "soup",
+              "staple",
+              "vegetableDish"
+            ],
+            "nullable": true,
+            "description": "原始或根据菜名、食材和做法补充的分类，无法确认时为null。"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "已知标签，如春季、夏季，无则为空数组。"
+          },
+          "ingredients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecipeIngredient"
+            },
+            "description": "食材及原始用量，不将烹饪工具当作食材。"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RecipeStep"
+            },
+            "description": "制作步骤。"
+          },
+          "taste": {
+            "type": "string",
+            "nullable": true,
+            "description": "主要口味，如咸鲜、酸甜；结合描述及调味食材补充，无法确认时为null。"
+          },
+          "method": {
+            "type": "string",
+            "nullable": true,
+            "description": "主要成菜工艺，如炒、炖、蒸；结合菜名及步骤补充，无法确认时为null。"
+          },
+          "duration": {
+            "type": "number",
+            "nullable": true,
+            "description": "原文明确可换算的预计总耗时，单位分钟；数小时、范围或多个方案无法明确时为null。"
+          },
+          "difficulty": {
+            "type": "number",
+            "nullable": true,
+            "description": "难度1至5星。原星级直接保留；简单=1、普通=2、高级=4，未知为null。"
+          },
+          "servings": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始份量及用量计算说明，无则为null，不猜测固定人数。"
+          },
+          "tips": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "烹饪提示、工具或计量补充说明，过滤推广及仓库协作模板。"
+          }
+        },
+        "required": [
+          "_id",
+          "name",
+          "description",
+          "category",
+          "tags",
+          "ingredients",
+          "steps",
+          "taste",
+          "method",
+          "duration",
+          "difficulty",
+          "servings",
+          "tips"
+        ]
+      },
+      "RecipeIngredient": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "食材名称。"
+          },
+          "amount": {
+            "type": "string",
+            "description": "原始用量或配比表达式，如400克、适量、1个*份数；未注明为空字符串。"
+          },
+          "group": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始分组，如主料、辅料、调料、鱼香调料；未分组为null。"
+          }
+        },
+        "required": [
+          "name",
+          "amount",
+          "group"
+        ]
+      },
+      "RecipeStep": {
+        "type": "object",
+        "properties": {
+          "order": {
+            "type": "number",
+            "description": "制作顺序，从1开始连续编号。"
+          },
+          "text": {
+            "type": "string",
+            "description": "步骤说明，保留附属操作和注意事项的换行。"
+          }
+        },
+        "required": [
+          "order",
+          "text"
         ]
       },
       "PageResult_Garbage_": {
@@ -6746,6 +8163,262 @@
           }
         }
       },
+      "BaziResult": {
+        "type": "object",
+        "properties": {
+          "birth": {
+            "type": "string",
+            "description": "北京时间出生时刻，YYYY-MM-DD HH:mm:ss。"
+          },
+          "timeBasis": {
+            "type": "string",
+            "description": "固定按北京时间的民用钟表时间排盘，不作真太阳时或历史夏令时换算。"
+          },
+          "rules": {
+            "type": "object",
+            "properties": {
+              "yearBoundary": {
+                "type": "string"
+              },
+              "monthBoundary": {
+                "type": "string"
+              },
+              "sect": {
+                "type": "number",
+                "enum": [
+                  1,
+                  2
+                ]
+              },
+              "dayBoundary": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "yearBoundary",
+              "monthBoundary",
+              "sect",
+              "dayBoundary"
+            ],
+            "description": "排盘口径：立春分年、节气分月及子时日柱换日规则。"
+          },
+          "eightChars": {
+            "type": "string",
+            "description": "依年、月、日、时排列的八字。"
+          },
+          "pillars": {
+            "type": "object",
+            "properties": {
+              "year": {
+                "$ref": "#/components/schemas/BaziPillar"
+              },
+              "month": {
+                "$ref": "#/components/schemas/BaziPillar"
+              },
+              "day": {
+                "$ref": "#/components/schemas/BaziPillar"
+              },
+              "hour": {
+                "$ref": "#/components/schemas/BaziPillar"
+              }
+            },
+            "required": [
+              "year",
+              "month",
+              "day",
+              "hour"
+            ],
+            "description": "四柱。"
+          },
+          "dayMaster": {
+            "type": "object",
+            "properties": {
+              "stem": {
+                "type": "string"
+              },
+              "element": {
+                "type": "string",
+                "enum": [
+                  "金",
+                  "木",
+                  "水",
+                  "火",
+                  "土"
+                ]
+              }
+            },
+            "required": [
+              "stem",
+              "element"
+            ],
+            "description": "日主天干及五行。"
+          },
+          "fiveElements": {
+            "type": "object",
+            "properties": {
+              "counts": {
+                "$ref": "#/components/schemas/Record_FiveElement__number_"
+              },
+              "missing": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "金",
+                    "木",
+                    "水",
+                    "火",
+                    "土"
+                  ]
+                }
+              },
+              "basis": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "counts",
+              "missing",
+              "basis"
+            ],
+            "description": "表层八个字的五行统计，不计藏干、不加权，不代表旺衰或喜用神。"
+          },
+          "zodiac": {
+            "type": "string",
+            "description": "以农历正月初一分年的生肖。"
+          },
+          "baziZodiac": {
+            "type": "string",
+            "description": "以立春交节时刻分年的八字年柱生肖。"
+          },
+          "astro": {
+            "type": "string",
+            "description": "公历日期对应的星座。"
+          },
+          "almanac": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "yi": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ji": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "date",
+              "yi",
+              "ji"
+            ],
+            "description": "查询日期的通用黄历，不是个人运势。"
+          },
+          "notice": {
+            "type": "string",
+            "description": "民俗娱乐说明。"
+          }
+        },
+        "required": [
+          "birth",
+          "timeBasis",
+          "rules",
+          "eightChars",
+          "pillars",
+          "dayMaster",
+          "fiveElements",
+          "zodiac",
+          "baziZodiac",
+          "astro",
+          "almanac",
+          "notice"
+        ]
+      },
+      "BaziPillar": {
+        "type": "object",
+        "properties": {
+          "ganZhi": {
+            "type": "string",
+            "description": "干支，如：甲辰。"
+          },
+          "stem": {
+            "type": "string",
+            "description": "天干。"
+          },
+          "branch": {
+            "type": "string",
+            "description": "地支。"
+          },
+          "elements": {
+            "type": "string",
+            "description": "天干、地支本气五行，依次两个字，如：木土。"
+          },
+          "naYin": {
+            "type": "string",
+            "description": "纳音。"
+          },
+          "tenGod": {
+            "type": "string",
+            "description": "天干相对日主的十神，日柱为日主。"
+          },
+          "hiddenStems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BaziHiddenStem"
+            },
+            "description": "地支藏干及其五行、十神，不计入表层五行统计。"
+          }
+        },
+        "required": [
+          "ganZhi",
+          "stem",
+          "branch",
+          "elements",
+          "naYin",
+          "tenGod",
+          "hiddenStems"
+        ]
+      },
+      "BaziHiddenStem": {
+        "type": "object",
+        "properties": {
+          "stem": {
+            "type": "string",
+            "description": "藏干。"
+          },
+          "element": {
+            "type": "string",
+            "enum": [
+              "金",
+              "木",
+              "水",
+              "火",
+              "土"
+            ],
+            "description": "藏干五行。"
+          },
+          "tenGod": {
+            "type": "string",
+            "description": "相对日主的十神。"
+          }
+        },
+        "required": [
+          "stem",
+          "element",
+          "tenGod"
+        ]
+      },
+      "Record_FiveElement__number_": {
+        "type": "object",
+        "properties": {}
+      },
       "TimeInfo": {
         "type": "object",
         "properties": {
@@ -7066,6 +8739,102 @@
           "yingui",
           "fu",
           "cai"
+        ]
+      },
+      "TimeCalendarDay": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "公历日期，格式：YYYY-MM-DD。"
+          },
+          "week": {
+            "type": "number",
+            "description": "星期：0 为周日，1 至 6 为周一至周六。"
+          },
+          "cnWeek": {
+            "type": "string",
+            "description": "中文星期，如：星期一。"
+          },
+          "isWorkday": {
+            "type": "boolean",
+            "nullable": true,
+            "description": "中国大陆工作日：true 上班、false 休息，含法定节假日及调休；库中缺少当年安排时为 null。"
+          },
+          "weekInYear": {
+            "type": "number",
+            "description": "公历当年第几周，从 1 开始，周一为一周的第一天，与单日接口一致。"
+          },
+          "dayInYear": {
+            "type": "number",
+            "description": "公历当年第几天，从 1 开始。"
+          },
+          "lunarMonth": {
+            "type": "number",
+            "description": "农历月，闰月为负数，如 -2 表示闰二月。"
+          },
+          "lunarMonthName": {
+            "type": "string",
+            "description": "中文农历月份，每天均返回，如：正月、腊月、闰二月。"
+          },
+          "lunarDay": {
+            "type": "number",
+            "description": "农历日，从 1 开始。"
+          },
+          "lunar": {
+            "type": "string",
+            "description": "农历简写：初一显示月份（如正月、闰二月），其他日期显示初二、廿三等。"
+          },
+          "yi": {
+            "type": "string",
+            "description": "每日宜，多项以空格分隔。"
+          },
+          "ji": {
+            "type": "string",
+            "description": "每日忌，多项以空格分隔。"
+          },
+          "astro": {
+            "type": "string",
+            "description": "星座，如：水瓶座。"
+          },
+          "yuexiang": {
+            "type": "string",
+            "description": "月相。"
+          },
+          "wuhou": {
+            "type": "string",
+            "description": "物候。"
+          },
+          "festivals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "当天的公历、农历节日及其他纪念日，无节日时为空数组。"
+          },
+          "solarTerm": {
+            "type": "string",
+            "description": "当天的节气名称，非交节日为空字符串。"
+          }
+        },
+        "required": [
+          "date",
+          "week",
+          "cnWeek",
+          "isWorkday",
+          "weekInYear",
+          "dayInYear",
+          "lunarMonth",
+          "lunarMonthName",
+          "lunarDay",
+          "lunar",
+          "yi",
+          "ji",
+          "astro",
+          "yuexiang",
+          "wuhou",
+          "festivals",
+          "solarTerm"
         ]
       },
       "TimeShichen": {

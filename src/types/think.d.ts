@@ -10,7 +10,7 @@ import type SentenceModel = require('../model/sentence');
 declare class MongoModel<T = Record<string, unknown>> {
   constructor(name: string, config?: object);
   where(filter: object): this;
-  field(fields: string): this;
+  field(fields: string | Record<string, 0 | 1>): this;
   order(order: string): this;
   page(page?: NumericQuery, pageSize?: NumericQuery): this;
   limit(offset: number, count: number): this;

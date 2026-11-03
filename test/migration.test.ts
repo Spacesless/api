@@ -127,11 +127,12 @@ test('compiled routes retain validation, response envelopes and local utility be
   assert.notEqual(JSON.parse(missing.body).errno, 0);
 });
 
-async function queryCollection(controllerName: 'poetry' | 'dictionary', action: string, query: Record<string, unknown>, records: unknown[] = []) {
-  const captured: { collection?: string; where?: unknown; order?: string; page?: unknown[] } = {};
+async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food', action: string, query: Record<string, unknown>, records: unknown[] = []) {
+  const captured: { collection?: string; where?: unknown; fields?: unknown; order?: string; page?: unknown[] } = {};
   const result = { count: records.length, totalPages: records.length ? 1 : 0, pageSize: 10, currentPage: 1, data: records };
   const model = {
     where(value: unknown) { captured.where = value; return this; },
+    field(value: unknown) { captured.fields = value; return this; },
     order(value: string) { captured.order = value; return this; },
     page(...value: unknown[]) { captured.page = value; return this; },
     async countSelect() { return result; }
@@ -439,4 +440,299 @@ test('IP region falls back to client IP, normalizes mapped IPv4 and preserves na
     } as unknown as InstanceType<typeof Controller>);
     assert.equal((data as { ip: string }).ip, expectedIp);
   }
+});
+
+test('month calendar returns a compact, ordered month including leap day, festivals and solar terms', async () => {
+  const response = await request('/time/calendar?year=2024&month=2');
+  assert.equal(response.status, 200);
+  const result = JSON.parse(response.body);
+  assert.equal(result.errno, 0);
+  const days = result.data as import('../src/types/time').TimeCalendarDay[];
+  assert.equal(days.length, 29);
+  assert.deepEqual(days.map(row => row.date), Array.from({ length: 29 }, (_, i) => `2024-02-${String(i + 1).padStart(2, '0')}`));
+  assert.equal(days[0].week, 4);
+  assert.equal(days[0].cnWeek, '星期四');
+  assert.equal(days[3].solarTerm, '立春');
+  assert.equal(days[9].lunar, '正月');
+  assert.ok(days[9].festivals.includes('春节'));
+  assert.equal(days[10].lunar, '初二');
+  assert.equal(days[10].solarTerm, '');
+  assert.equal(days[0].dayInYear, 32);
+  assert.equal(days[28].dayInYear, 60);
+  for (const day of days) {
+    assert.deepEqual(Object.keys(day).sort(), [
+      'date', 'week', 'cnWeek', 'weekInYear', 'dayInYear', 'lunarMonth', 'lunarDay',
+      'lunar', 'lunarMonthName', 'isWorkday', 'yi', 'ji', 'astro', 'yuexiang', 'wuhou', 'festivals', 'solarTerm'
+    ].sort());
+    const detail = JSON.parse((await request('/time?datetime=' + day.date)).body).data;
+    assert.equal(day.cnWeek, detail.cnWeek, day.date);
+    assert.equal(day.weekInYear, detail.weekInYear, day.date);
+    assert.equal(day.dayInYear, detail.dayInYear, day.date);
+    assert.equal(day.lunarMonth, detail.lunar.month, day.date);
+    assert.equal(day.lunarDay, detail.lunar.day, day.date);
+    assert.equal(day.lunarMonthName, detail.lunar.cnMonth, day.date);
+    assert.equal(day.yi, detail.almanac.yi, day.date);
+    assert.equal(day.ji, detail.almanac.ji, day.date);
+    assert.equal(day.astro, detail.astro, day.date);
+    assert.equal(day.yuexiang, detail.lunar.yuexiang, day.date);
+    assert.equal(day.wuhou, detail.lunar.wuhou, day.date);
+  }
+  const march = JSON.parse((await request('/time/calendar?year=2023&month=3')).body).data;
+  assert.equal(march.length, 31);
+  assert.equal(march[21].lunar, '闰二月');
+  assert.equal(march[21].lunarMonth, -2);
+  assert.equal(march[21].lunarDay, 1);
+  assert.equal(march[22].lunarMonthName, '闰二月');
+  const february = JSON.parse((await request('/time/calendar?year=2023&month=2')).body).data;
+  assert.equal(february.length, 28);
+  const january = JSON.parse((await request('/time/calendar?year=2024&month=1')).body).data;
+  assert.equal(january[0].weekInYear, 1);
+  assert.equal(january[0].dayInYear, 1);
+});
+
+test('month calendar distinguishes holidays, make-up workdays, normal weekdays and missing annual schedules', async () => {
+  const february = JSON.parse((await request('/time/calendar?year=2024&month=2')).body).data as import('../src/types/time').TimeCalendarDay[];
+  assert.equal(february[0].isWorkday, true); // 普通周四
+  assert.equal(february[2].isWorkday, false); // 普通周六
+  assert.equal(february[3].isWorkday, true); // 周日调休上班
+  assert.equal(february[11].isWorkday, false); // 春节假期周一
+  assert.equal(february[17].isWorkday, true); // 周日调休上班
+  for (const year of [1900, 2001, 2099]) {
+    const days = JSON.parse((await request(`/time/calendar?year=${year}&month=12`)).body).data as import('../src/types/time').TimeCalendarDay[];
+    assert.ok(days.every(day => day.isWorkday === null), String(year));
+  }
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  assert.equal(document.components.schemas.TimeCalendarDay.properties.isWorkday.nullable, true);
+});
+
+test('month calendar validates year, month and method and defaults to the current month', async () => {
+  for (const query of ['year=1899', 'year=2100', 'year=2024.5', 'year=abc', 'month=0', 'month=13', 'month=1.5', 'month=abc']) {
+    const result = JSON.parse((await request('/time/calendar?' + query)).body);
+    assert.notEqual(result.errno, 0, query);
+  }
+  const post = JSON.parse((await request('/time/calendar', 'POST')).body);
+  assert.equal(post.errmsg, 'METHOD_NOT_ALLOWED');
+  const before = new Date();
+  const result = JSON.parse((await request('/time/calendar')).body);
+  const after = new Date();
+  const expected = [before, after].map(date => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-01`);
+  assert.equal(result.errno, 0);
+  assert.ok(expected.includes(result.data[0].date));
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const parameters = document.paths['/time/calendar'].get.parameters;
+  assert.equal(parameters.find((p: { name: string }) => p.name === 'month').schema.maximum, 12);
+});
+
+test('bazi returns four pillars, hidden stems, ten gods and eight-character element counts', async () => {
+  const response = await request('/time/bazi?year=1990&month=5&day=20&hour=10&minute=30&date=2024-02-10');
+  assert.equal(response.status, 200);
+  const body = JSON.parse(response.body);
+  assert.equal(body.errno, 0, response.body);
+  const result = body.data as import('../src/types/bazi').BaziResult;
+  assert.equal(result.birth, '1990-05-20 10:30:00');
+  assert.equal(result.eightChars, '庚午 辛巳 乙酉 辛巳');
+  assert.deepEqual(result.dayMaster, { stem: '乙', element: '木' });
+  assert.equal(result.pillars.day.tenGod, '日主');
+  assert.deepEqual(result.pillars.day.hiddenStems, [{ stem: '辛', element: '金', tenGod: '七杀' }]);
+  assert.deepEqual(result.fiveElements.counts, { 金: 4, 木: 1, 水: 0, 火: 3, 土: 0 });
+  assert.deepEqual(result.fiveElements.missing, ['水', '土']);
+  assert.equal(result.zodiac, '马');
+  assert.equal(result.baziZodiac, '马');
+  assert.equal(result.astro, '金牛座');
+  assert.equal(result.rules.sect, 2);
+  assert.equal(result.almanac.date, '2024-02-10');
+  const detail = JSON.parse((await request('/time?datetime=2024-02-10')).body).data;
+  assert.equal(result.almanac.yi.join(' '), detail.almanac.yi);
+  assert.equal(result.almanac.ji.join(' '), detail.almanac.ji);
+  assert.ok(result.notice.includes('娱乐'));
+});
+
+test('bazi observes minute-level Li Chun boundaries and configurable late Zi day pillars', async () => {
+  const base = '/time/bazi?year=2024&month=2&day=4&hour=16&minute=';
+  const before = JSON.parse((await request(base + '26')).body).data;
+  const after = JSON.parse((await request(base + '28')).body).data;
+  assert.equal(before.pillars.year.ganZhi, '癸卯');
+  assert.equal(before.pillars.month.ganZhi, '乙丑');
+  assert.equal(after.pillars.year.ganZhi, '甲辰');
+  assert.equal(after.pillars.month.ganZhi, '丙寅');
+  assert.equal(after.zodiac, '兔');
+  assert.equal(after.baziZodiac, '龙');
+  const midnight = '/time/bazi?year=2024&month=2&day=5&hour=23';
+  const sect1 = JSON.parse((await request(midnight + '&sect=1')).body).data;
+  const sect2 = JSON.parse((await request(midnight + '&sect=2')).body).data;
+  assert.equal(sect1.pillars.day.ganZhi, '庚子');
+  assert.equal(sect2.pillars.day.ganZhi, '己亥');
+  assert.equal(sect1.pillars.hour.ganZhi, '丙子');
+  assert.equal(sect2.pillars.hour.ganZhi, '丙子');
+  const begin = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
+  const zeroHour = JSON.parse((await request('/time/bazi?year=2024&month=2&day=29&hour=0')).body);
+  const end = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
+  assert.equal(zeroHour.errno, 0);
+  assert.equal(zeroHour.data.birth, '2024-02-29 00:00:00');
+  assert.ok([begin, end].includes(zeroHour.data.almanac.date));
+});
+
+test('bazi rejects missing fields, invalid dates, out-of-range times and unsupported methods', async () => {
+  const valid = 'year=2024&month=2&day=10&hour=0';
+  for (const query of [
+    '', 'year=2024&month=2&day=10', 'year=2024&month=2&hour=0',
+    valid.replace('2024', '1899'), valid.replace('2024', '2100'),
+    valid.replace('month=2', 'month=13'), valid.replace('day=10', 'day=30'),
+    valid.replace('hour=0', 'hour=24'), valid.replace('hour=0', 'hour=-1'),
+    valid.replace('hour=0', 'hour=1.5'), valid + '&minute=60', valid + '&minute=abc',
+    valid + '&sect=3', valid + '&date=2024-02-30', valid + '&date=2099-13-01',
+    valid + '&date=2024/02/10', valid + '&date=1899-01-01',
+    'year=2023&month=2&day=29&hour=0'
+  ]) {
+    const response = await request('/time/bazi?' + query);
+    assert.notEqual(JSON.parse(response.body).errno, 0, query);
+    assert.notEqual(response.status, 500, query);
+  }
+  const post = JSON.parse((await request('/time/bazi?' + valid, 'POST')).body);
+  assert.equal(post.errmsg, 'METHOD_NOT_ALLOWED');
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const parameters = document.paths['/time/bazi'].get.parameters;
+  assert.equal(parameters.find((p: { name: string }) => p.name === 'hour').required, true);
+  assert.equal(parameters.find((p: { name: string }) => p.name === 'minute').schema.maximum, 59);
+});
+
+test('riddle queries combine category, question, guess, answer and literal keywords with stable pagination', async () => {
+  const result = await queryCollection('dictionary', 'riddleAction', {
+    category: 'character', question: '[春].*', guess: '打一字', answer: '篆', keyword: '(谜)', page: 2, pageSize: 5
+  });
+  assert.equal(result.collection, 'dictionary-riddle');
+  assert.equal(result.order, '_id ASC');
+  assert.deepEqual(result.page, [2, 5]);
+  assert.deepEqual(result.where, {
+    category: 'character', question: { $regex: '\\[春\\]\\.\\*' }, guess: { $regex: '打一字' }, answer: { $regex: '篆' },
+    $or: [{ question: { $regex: '\\(谜\\)' } }, { guess: { $regex: '\\(谜\\)' } }, { answer: { $regex: '\\(谜\\)' } }]
+  });
+  const empty = await queryCollection('dictionary', 'riddleAction', {});
+  assert.deepEqual(empty.where, {});
+  assert.deepEqual(empty.page, [1, 10]);
+  const reversed = await queryCollection('dictionary', 'riddleAction', { answer: '篆' });
+  assert.deepEqual(reversed.where, { answer: { $regex: '篆' } });
+});
+
+test('riddle route rejects invalid filters, pagination and methods before querying MongoDB', async () => {
+  for (const query of [
+    'page=0', 'page=1.5', 'pageSize=0', 'pageSize=51', 'pageSize=abc',
+    'category=unknown', 'category=zmmy', 'category=Character', 'category=brain_teaser', 'category=' + 'x'.repeat(31), ...['question', 'guess', 'answer', 'keyword'].map(field => field + '=' + 'x'.repeat(101))
+  ]) {
+    const result = JSON.parse((await request('/dictionary/riddle?' + query)).body);
+    assert.notEqual(result.errno, 0, query);
+  }
+  assert.equal(JSON.parse((await request('/dictionary/riddle', 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  assert.ok(document.paths['/dictionary/riddle'].get);
+  assert.ok(!document.paths['/riddle']);
+  const categories = Object.values(require('../src/types/dictionary').RiddleCategory).sort();
+  const categoryParameter = document.paths['/dictionary/riddle'].get.parameters.find((p: { name: string }) => p.name === 'category');
+  assert.deepEqual(categoryParameter.schema.enum.slice().sort(), categories);
+  assert.deepEqual(document.components.schemas.Riddle.properties.category.enum.slice().sort(), categories);
+});
+
+test('riddle import is a JSON array with exactly seven fields, no IDs or redundant metadata', () => {
+  const data = JSON.parse(fs.readFileSync(path.join(root, 'deploy/dictionary-riddle.json'), 'utf8')) as Omit<import('../src/types/dictionary').Riddle, '_id'>[];
+  assert.ok(Array.isArray(data));
+  assert.ok(data.length > 50000);
+  const fields = ['question', 'guess', 'answer', 'category', 'categoryName', 'hint', 'explanation'].sort();
+  const unique = new Set<string>();
+  const categories = new Map<string, string>();
+  for (const row of data) {
+    assert.deepEqual(Object.keys(row).sort(), fields);
+    assert.ok(Object.values(row).every(value => typeof value === 'string'));
+    assert.ok(row.question.trim() && row.answer.trim());
+    if (categories.has(row.category)) assert.equal(categories.get(row.category), row.categoryName);
+    categories.set(row.category, row.categoryName);
+    unique.add(JSON.stringify(row));
+  }
+  assert.equal(unique.size, data.length);
+  assert.equal(categories.size, 25);
+  assert.deepEqual([...categories.keys()].sort(), Object.values(require('../src/types/dictionary').RiddleCategory).sort());
+  const sample = data.find(row => row.question === '个个断前缘');
+  assert.ok(sample);
+  assert.equal(sample.guess, '打一字');
+  assert.equal(sample.answer, '篆');
+});
+
+test('food nutrition queries combine category filters, exact aliases, literal keywords and stable pagination', async () => {
+  const result = await queryCollection('food', 'nutritionAction', {
+    name: '地瓜', keyword: '[红薯].*', category: 'tuber', categoryCode: 33, page: 2, pageSize: 5
+  });
+  assert.equal(result.collection, 'food-nutrition');
+  assert.equal(result.order, '_id ASC');
+  assert.deepEqual(result.page, [2, 5]);
+  assert.deepEqual(result.where, {
+    category: 'tuber', categoryCode: 33,
+    $and: [
+      { $or: [{ name: '地瓜' }, { aliases: '地瓜' }] },
+      { $or: [{ name: { $regex: '\\[红薯\\]\\.\\*' } }, { aliases: { $regex: '\\[红薯\\]\\.\\*' } }] }
+    ]
+  });
+  const empty = await queryCollection('food', 'nutritionAction', {});
+  assert.deepEqual(empty.where, {});
+  assert.deepEqual(empty.page, [1, 10]);
+});
+
+test('food nutrition route rejects invalid pagination, enums and excessive search lengths before querying MongoDB', async () => {
+  for (const query of ['page=0', 'pageSize=51', 'pageSize=1.5', 'category=unknown', 'categoryCode=-1', 'categoryCode=1.5', 'name=' + 'x'.repeat(101), 'keyword=' + 'x'.repeat(101)]) {
+    const response = await request('/food/nutrition?' + query);
+    assert.notEqual(JSON.parse(response.body).errno, 0, query);
+    assert.notEqual(response.status, 500, query);
+  }
+  assert.equal(JSON.parse((await request('/food/nutrition', 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const operation = document.paths['/food/nutrition'].get;
+  assert.ok(operation);
+  assert.equal(document.components.schemas.FoodNutrition.properties.proteinG.nullable, true);
+  assert.ok(!operation.parameters.some((parameter: { name: string }) => ['source', 'sourceVersion'].includes(parameter.name)));
+  assert.ok(!document.components.schemas.FoodSource);
+});
+
+test('recipe queries combine literal ingredient search, enums, numeric limits and stable pagination', async () => {
+  const result = await queryCollection('food', 'recipeAction', {
+    name: '[鸡蛋].*', keyword: '(红烧)', ingredient: '鸡蛋', category: 'meatDish', tag: '春季', taste: '咸鲜', method: '炖', difficulty: 2, maxDuration: 60, page: 2, pageSize: 5
+  });
+  assert.equal(result.collection, 'food-recipe');
+  assert.deepEqual(result.fields, { images: 0, 'steps.images': 0 });
+  assert.equal(result.order, '_id ASC');
+  assert.deepEqual(result.page, [2, 5]);
+  assert.deepEqual(result.where, {
+    name: { $regex: '\\[鸡蛋\\]\\.\\*' }, 'ingredients.name': { $regex: '鸡蛋' },
+    category: 'meatDish', tags: '春季', taste: '咸鲜', method: '炖', difficulty: 2,
+    duration: { $gt: 0, $lte: 60 },
+    $or: [{ name: { $regex: '\\(红烧\\)' } }, { 'ingredients.name': { $regex: '\\(红烧\\)' } }]
+  });
+  const empty = await queryCollection('food', 'recipeAction', {});
+  assert.deepEqual(empty.where, {});
+  assert.deepEqual(empty.page, [1, 10]);
+  const variants = [{ name: '西红柿炒鸡蛋', steps: [{ text: '先炒蛋' }] }, { name: '西红柿炒鸡蛋', steps: [{ text: '先炒番茄' }] }];
+  await queryCollection('food', 'recipeAction', { name: '西红柿炒鸡蛋' }, variants);
+});
+
+test('recipe route validates filters and documents duration in minutes and 1-5 star difficulty', async () => {
+  for (const query of [
+    'category=unknown', 'difficulty=0', 'difficulty=6', 'difficulty=1.5', 'maxDuration=0', 'maxDuration=-1', 'maxDuration=1.5',
+    'page=0', 'pageSize=51', 'pageSize=abc',
+    ...['name', 'keyword', 'ingredient'].map(field => field + '=' + 'x'.repeat(101)),
+    ...['tag', 'taste', 'method'].map(field => field + '=' + 'x'.repeat(31))
+  ]) {
+    const response = await request('/food/recipe?' + query);
+    assert.notEqual(JSON.parse(response.body).errno, 0, query);
+    assert.notEqual(response.status, 500, query);
+  }
+  assert.equal(JSON.parse((await request('/food/recipe', 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const operation = document.paths['/food/recipe'].get;
+  assert.ok(operation);
+  assert.deepEqual(operation.parameters.find((p: { name: string }) => p.name === 'category').schema.enum.slice().sort(), Object.values(require('../src/types/food').RecipeCategory).sort());
+  assert.equal(operation.parameters.find((p: { name: string }) => p.name === 'difficulty').schema.maximum, 5);
+  assert.equal(document.components.schemas.Recipe.properties.duration.type, 'number');
+  assert.equal(document.components.schemas.Recipe.properties.duration.nullable, true);
+  assert.equal(document.components.schemas.Recipe.properties.difficulty.nullable, true);
+  assert.ok(!document.components.schemas.Recipe.properties.durationMinutes);
+  assert.ok(!document.components.schemas.Recipe.properties.difficultyStars);
+  assert.ok(!document.components.schemas.Recipe.properties.images);
+  assert.ok(!document.components.schemas.RecipeStep.properties.images);
 });
