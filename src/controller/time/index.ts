@@ -2,6 +2,7 @@ import type { HolidayRecord, TimeAlmanac, TimeFestival, TimeFestivalQuery, TimeH
 import Base = require('../base');
 import { Solar, SolarWeek, Lunar, SolarUtil, LunarUtil, LunarYear, HolidayUtil } from 'lunar-javascript';
 import dayjs = require('dayjs');
+import type { TimeCalendarDay, TimeCalendarQuery } from '../../types/time';
 
 // http://6tail.cn/calendar/api.html
 
@@ -134,6 +135,54 @@ export = class extends Base {
     };
 
     const result: TimeInfo = { ...solarResult, lunar: lunarResult, almanac: almanacResult };
+    return this.success(result);
+  }
+
+  /**
+   * @summary 月历摘要
+   * @description 按日期升序返回指定月份的公历序号、农历月日、节日节气及简要黄历，仅包含当月日期，不补齐相邻月份。年月分别默认当前年月。
+   */
+  calendarAction() {
+    const query = this.getApiQuery<TimeCalendarQuery>();
+    const now = dayjs();
+    const year = Number(query.year ?? now.year());
+    const month = Number(query.month ?? now.month() + 1);
+    const start = Solar.fromYmd(year, month, 1);
+    const result: TimeCalendarDay[] = [];
+    const holidays = HolidayUtil.getHolidays(year);
+    const holidayByDate = new Map(holidays.map(holiday => [holiday.getDay(), holiday]));
+    // 排除仅含下一年元旦调休记录的年份，避免误判当年安排已收录。
+    const hasHolidayData = holidays.some(holiday => holiday.getTarget().startsWith(`${year}-`));
+    const days = SolarUtil.getDaysOfMonth(year, month);
+    for (let i = 0; i < days; i++) {
+      const solar = start.next(i);
+      const lunar = solar.getLunar();
+      const date = solar.toString();
+      const week = solar.getWeek();
+      const holiday = holidayByDate.get(date);
+      result.push({
+        date,
+        week,
+        cnWeek: this.weekCnEnum[week],
+        isWorkday: hasHolidayData ? (holiday ? holiday.isWork() : week !== 0 && week !== 6) : null,
+        weekInYear: SolarWeek.fromDate(new Date(year, month - 1, solar.getDay()), 1).getIndexInYear(),
+        dayInYear: SolarUtil.getDaysInYear(year, month, solar.getDay()),
+        lunarMonth: lunar.getMonth(),
+        lunarMonthName: lunar.getMonthInChinese() + '月',
+        lunarDay: lunar.getDay(),
+        lunar: lunar.getDay() === 1 ? lunar.getMonthInChinese() + '月' : lunar.getDayInChinese(),
+        yi: lunar.getDayYi().join(' '),
+        ji: lunar.getDayJi().join(' '),
+        astro: solar.getXingZuo() + '座',
+        yuexiang: lunar.getYueXiang(),
+        wuhou: lunar.getWuHou(),
+        festivals: [...new Set([
+          ...solar.getFestivals(), ...lunar.getFestivals(),
+          ...solar.getOtherFestivals(), ...lunar.getOtherFestivals()
+        ])],
+        solarTerm: lunar.getCurrentJieQi()?.getName() || ''
+      });
+    }
     return this.success(result);
   }
 

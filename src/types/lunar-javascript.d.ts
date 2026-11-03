@@ -14,6 +14,8 @@ declare module 'lunar-javascript' {
     | 'getTimeChongDesc' | 'getTimeSha' | 'getTimeNaYin';
   type LunarTextMethods = { [K in LunarTextMethod]: () => string };
   interface LunarDate extends LunarTextMethods {
+    getEightChar(): EightChar;
+    getYearShengXiaoExact(): string;
     getYear(): number;
     getMonth(): number;
     getDay(): number;
@@ -53,6 +55,7 @@ declare module 'lunar-javascript' {
     isWork(): boolean;
   }
   export const Solar: {
+    fromYmdHms(year: number, month: number, day: number, hour: number, minute: number, second: number): SolarDate;
     fromDate(date: Date): SolarDate;
     fromYmd(year: number, month: number, day: number): SolarDate;
   };
@@ -69,4 +72,10 @@ declare module 'lunar-javascript' {
     getLeapMonth(): number;
   } };
   export const HolidayUtil: { getHolidays(year: number): Holiday[] };
+  type PillarName = 'Year' | 'Month' | 'Day' | 'Time';
+  type EightCharTextMethods = { [K in `get${PillarName}${'' | 'Gan' | 'Zhi' | 'WuXing' | 'NaYin' | 'ShiShenGan'}`]: () => string };
+  type EightCharListMethods = { [K in `get${PillarName}${'HideGan' | 'ShiShenZhi'}`]: () => string[] };
+  interface EightChar extends EightCharTextMethods, EightCharListMethods {
+    setSect(sect: number): void;
+  }
 }

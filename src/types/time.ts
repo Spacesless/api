@@ -256,6 +256,49 @@ export interface TimeQuery {
      */
     datetime?: string;
 }
+/** 月历中的单日摘要。 */
+export interface TimeCalendarDay {
+    /** 公历日期，格式：YYYY-MM-DD。 */
+    date: string;
+    /** 星期：0 为周日，1 至 6 为周一至周六。 */
+    week: number;
+    /** 中文星期，如：星期一。 */
+    cnWeek: string;
+    /** 中国大陆工作日：true 上班、false 休息，含法定节假日及调休；库中缺少当年安排时为 null。 */
+    isWorkday: boolean | null;
+    /** 公历当年第几周，从 1 开始，周一为一周的第一天，与单日接口一致。 */
+    weekInYear: number;
+    /** 公历当年第几天，从 1 开始。 */
+    dayInYear: number;
+    /** 农历月，闰月为负数，如 -2 表示闰二月。 */
+    lunarMonth: number;
+    /** 中文农历月份，每天均返回，如：正月、腊月、闰二月。 */
+    lunarMonthName: string;
+    /** 农历日，从 1 开始。 */
+    lunarDay: number;
+    /** 农历简写：初一显示月份（如正月、闰二月），其他日期显示初二、廿三等。 */
+    lunar: string;
+    /** 每日宜，多项以空格分隔。 */
+    yi: string;
+    /** 每日忌，多项以空格分隔。 */
+    ji: string;
+    /** 星座，如：水瓶座。 */
+    astro: string;
+    /** 月相。 */
+    yuexiang: string;
+    /** 物候。 */
+    wuhou: string;
+    /** 当天的公历、农历节日及其他纪念日，无节日时为空数组。 */
+    festivals: string[];
+    /** 当天的节气名称，非交节日为空字符串。 */
+    solarTerm: string;
+}
+export interface TimeCalendarQuery {
+    /** 公历年，1900 至 2099；不传取当前年。 */
+    year?: number;
+    /** 公历月，1 至 12；不传取当前月。 */
+    month?: number;
+}
 export interface TimeAstroQuery {
     /** @description 查找日期或星座名称：如1900年起始 2022-01-01 或 天秤(座)、水瓶(座) */
     keyword?: string;
