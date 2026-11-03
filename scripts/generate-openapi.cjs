@@ -138,6 +138,10 @@ function literal(node) {
   }));
   if (ts.isArrayLiteralExpression(node)) return node.elements.map(literal);
   if (ts.isStringLiteral(node)) return node.text;
+  if (ts.isRegularExpressionLiteral(node)) {
+    const end = node.text.lastIndexOf('/');
+    return new RegExp(node.text.slice(1, end), node.text.slice(end + 1));
+  }
   if (ts.isNumericLiteral(node)) return +node.text;
   if (node.kind === ts.SyntaxKind.TrueKeyword) return true;
   if (node.kind === ts.SyntaxKind.FalseKeyword) return false;
@@ -182,6 +186,7 @@ function applyRule(value, rule) {
     }
   }
   if (rule.in) value.enum = rule.in;
+  if (rule.regexp instanceof RegExp) value.pattern = rule.regexp.source;
   if (rule.length?.min !== undefined) value.minLength = rule.length.min;
   if (rule.length?.max !== undefined) value.maxLength = rule.length.max;
   if (rule.ip4) value.format = 'ipv4';

@@ -127,7 +127,7 @@ test('compiled routes retain validation, response envelopes and local utility be
   assert.notEqual(JSON.parse(missing.body).errno, 0);
 });
 
-async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food', action: string, query: Record<string, unknown>, records: unknown[] = []) {
+async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food' | 'time/history', action: string, query: Record<string, unknown>, records: unknown[] = []) {
   const captured: { collection?: string; where?: unknown; fields?: unknown; order?: string; page?: unknown[] } = {};
   const result = { count: records.length, totalPages: records.length ? 1 : 0, pageSize: 10, currentPage: 1, data: records };
   const model = {
@@ -146,7 +146,7 @@ async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food',
   vm.runInNewContext(fs.readFileSync(path.join(root, `app/src/controller/${controllerName}.js`), 'utf8'), {
     module, exports: module.exports,
     require(name: string) {
-      if (name === './base') return Base;
+      if (name === './base' || name === '../base') return Base;
       throw new Error(`Unexpected module: ${name}`);
     }
   });
@@ -735,4 +735,135 @@ test('recipe route validates filters and documents duration in minutes and 1-5 s
   assert.ok(!document.components.schemas.Recipe.properties.difficultyStars);
   assert.ok(!document.components.schemas.Recipe.properties.images);
   assert.ok(!document.components.schemas.RecipeStep.properties.images);
+});
+
+test('history queries use Beijing date, signed years and a four-field event list', async () => {
+  async function queryHistory(query: Record<string, unknown>, now: string) {
+    const captured: Record<string, unknown> = {};
+    const records = [{ date: '02-29', year: -45, type: 'event', title: '测试事件' }];
+    const model = {
+      where(value: unknown) { captured.where = value; return this; },
+      field(value: unknown) { captured.fields = value; return this; },
+      order(value: string) { captured.order = value; return this; },
+      async select() { return records; }
+    };
+    class Base {
+      getApiQuery() { return query; }
+      mongo(name: string) { captured.collection = name; return model; }
+      success(value: unknown) { return value; }
+    }
+    const module = { exports: {} };
+    vm.runInNewContext(fs.readFileSync(path.join(root, 'app/src/controller/time/history.js'), 'utf8'), {
+      module, exports: module.exports,
+      Date: class extends Date { static now() { return Date.parse(now); } },
+      require(name: string) {
+        if (name === '../base') return Base;
+        throw new Error(`Unexpected module: ${name}`);
+      }
+    });
+    const Controller = module.exports as new () => { indexAction(): Promise<unknown> };
+    assert.equal(await new Controller().indexAction(), records);
+    return JSON.parse(JSON.stringify(captured));
+  }
+  const explicit = await queryHistory({ date: '02-29', type: 'birth' }, '2026-11-02T16:30:00Z');
+  assert.equal(explicit.collection, 'history-today');
+  assert.deepEqual(explicit.where, { date: '02-29', type: 'birth' });
+  assert.deepEqual(explicit.fields, { _id: 0, date: 1, year: 1, type: 1, title: 1 });
+  assert.equal(explicit.order, 'year ASC,type ASC,title ASC');
+  assert.deepEqual((await queryHistory({}, '2026-11-02T15:59:59Z')).where, { date: '11-02' });
+  assert.deepEqual((await queryHistory({}, '2026-11-02T16:00:00Z')).where, { date: '11-03' });
+  assert.deepEqual((await queryHistory({}, '2026-12-31T16:00:00Z')).where, { date: '01-01' });
+});
+
+test('history route accepts leap day and rejects invalid dates and types before MongoDB access', async () => {
+  for (const query of [
+    'date=02-30', 'date=02-31', 'date=04-31', 'date=06-31', 'date=09-31', 'date=11-31',
+    'date=00-01', 'date=13-01', 'date=01-00', 'date=01-32', 'date=1-1', 'date=2024-02-29',
+    'date=01-01%0A', 'date=01-01&date=02-02', 'type=unknown', 'type=event&type=birth'
+  ]) {
+    const response = await request('/time/history?' + query);
+    assert.ok(response.body.startsWith('{'), query + ': ' + response.body.slice(0,180));
+    assert.notEqual(JSON.parse(response.body).errno, 0, query);
+    assert.notEqual(response.status, 500, query);
+  }
+  assert.equal(JSON.parse((await request('/time/history', 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  const Controller = (think.app as typeof think.app & LoadedApplication).controllers['time/history'] as {
+    prototype: { mongo: unknown };
+  };
+  const original = Controller.prototype.mongo;
+  const hadOwnMongo = Object.hasOwn(Controller.prototype, 'mongo');
+  const filters: unknown[] = [];
+  Controller.prototype.mongo = () => ({
+    where(value: unknown) { filters.push(value); return this; },
+    field() { return this; },
+    order() { return this; },
+    page() { return this; },
+    async select() { return []; },
+    async countSelect() { return { count: 0, totalPages: 0, pageSize: 20, currentPage: 1, data: [] }; }
+  });
+  try {
+    for (const date of ['02-29', '04-30', '01-31', '12-31']) {
+      const response = JSON.parse((await request('/time/history?date=' + date + '&type=event')).body);
+      assert.equal(response.errno, 0, date);
+      assert.deepEqual(response.data, []);
+    }
+    const search = JSON.parse((await request('/time/history/search?startYear=-45&endYear=1900&type=event')).body);
+    assert.equal(search.errno, 0);
+    assert.deepEqual(search.data, { count: 0, totalPages: 0, pageSize: 20, currentPage: 1, data: [] });
+  } finally {
+    if (hadOwnMongo) Controller.prototype.mongo = original;
+    else delete (Controller.prototype as { mongo?: unknown }).mongo;
+  }
+  assert.deepEqual(filters, [
+    ...['02-29', '04-30', '01-31', '12-31'].map(date => ({ date, type: 'event' })),
+    { type: 'event', year: { $gte: -45, $lte: 1900 } }
+  ]);
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const operation = document.paths['/time/history'].get;
+  assert.ok(operation);
+  const dateSchema = operation.parameters.find((p: { name: string }) => p.name === 'date').schema;
+  assert.ok(new RegExp(dateSchema.pattern).test('02-29'));
+  assert.ok(!new RegExp(dateSchema.pattern).test('02-30'));
+  assert.deepEqual(operation.parameters.find((p: { name: string }) => p.name === 'type').schema.enum.slice().sort(), ['birth', 'death', 'event']);
+  assert.deepEqual(Object.keys(document.components.schemas.HistoryEvent.properties).sort(), ['date', 'title', 'type', 'year']);
+  assert.equal(document.components.schemas.HistoryEvent.properties.year.type, 'number');
+  assert.ok(!document.paths['/history/today']);
+});
+
+test('history search combines literal keywords, inclusive signed year bounds and stable pagination', async () => {
+  const result = await queryCollection('time/history', 'searchAction', {
+    keyword: '中国.*(A)', type: 'event', startYear: '-45', endYear: '1900', page: 2, pageSize: 30
+  });
+  assert.equal(result.collection, 'history-today');
+  assert.deepEqual(result.where, { title: { $regex: '中国\\.\\*\\(A\\)', $options: 'i' }, type: 'event', year: { $gte: -45, $lte: 1900 } });
+  assert.deepEqual(result.fields, { _id: 0, date: 1, year: 1, type: 1, title: 1 });
+  assert.equal(result.order, 'year ASC,date ASC,type ASC,title ASC,_id ASC');
+  assert.deepEqual(result.page, [2,30]);
+  const all = await queryCollection('time/history', 'searchAction', {});
+  assert.deepEqual(all.where, {});
+  assert.deepEqual(all.page, [1,20]);
+  assert.deepEqual((await queryCollection('time/history', 'searchAction', { startYear: 1949 })).where, { year: { $gte: 1949 } });
+  assert.deepEqual((await queryCollection('time/history', 'searchAction', { endYear: -1 })).where, { year: { $lte: -1 } });
+  assert.deepEqual((await queryCollection('time/history', 'searchAction', { startYear: -45, endYear: -45 })).where, { year: { $gte: -45, $lte: -45 } });
+});
+
+test('history search route validates pagination and year ranges and documents its paginated response', async () => {
+  for (const query of [
+    'page=0', 'page=1.5', 'pageSize=0', 'pageSize=51', 'pageSize=abc', 'type=unknown',
+    'keyword=' + 'x'.repeat(101), 'startYear=abc', 'endYear=1.5', 'startYear=-10000', 'endYear=10000',
+    'startYear=0', 'endYear=0', 'startYear=1900&endYear=-45', 'startYear=-1&endYear=-45'
+  ]) {
+    const response = await request('/time/history/search?' + query);
+    assert.ok(response.body.startsWith('{'), query + ': ' + response.body.slice(0,180));
+    assert.notEqual(JSON.parse(response.body).errno, 0, query);
+    assert.notEqual(response.status, 500, query);
+  }
+  assert.equal(JSON.parse((await request('/time/history/search', 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  const operation = document.paths['/time/history/search'].get;
+  assert.ok(operation);
+  assert.deepEqual(operation.parameters.map((p: { name: string }) => p.name).sort(), ['endYear','keyword','page','pageSize','startYear','type']);
+  assert.equal(operation.parameters.find((p: { name: string }) => p.name === 'pageSize').schema.maximum, 50);
+  assert.equal(operation.parameters.find((p: { name: string }) => p.name === 'startYear').schema.minimum, -9999);
+  assert.ok(operation.responses['200'].content['application/json'].schema.properties.data.$ref.includes('PageResult'));
 });

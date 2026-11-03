@@ -4387,6 +4387,206 @@
         }
       }
     },
+    "/time/history": {
+      "get": {
+        "summary": "历史上的今天",
+        "description": "按月日查询历史事件、人物出生和逝世，默认北京时间当天，支持2月29日。返回纯文本事件列表，按年份升序排列，公元前年份为负数，无分页。",
+        "operationId": "time_history_index",
+        "tags": [
+          "time"
+        ],
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "description": "月日，格式MM-DD；默认北京时间当天，支持02-29。",
+            "schema": {
+              "type": "string",
+              "pattern": "^(?:(?:01|03|05|07|08|10|12)-(?:0[1-9]|[12]\\d|3[01])|(?:04|06|09|11)-(?:0[1-9]|[12]\\d|30)|02-(?:0[1-9]|1\\d|2\\d))$",
+              "minLength": 5,
+              "maxLength": 5
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "类型精确筛选，默认返回全部类型。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "event",
+                "birth",
+                "death"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HistoryEvent"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/time/history/search": {
+      "get": {
+        "summary": "历史事件搜索",
+        "description": "跨日期按标题关键词、类型和年份范围组合检索，所有参数可选。年份范围包含首尾年份，公元前用负数且无公元0年。按年份、月日升序返回分页结果，默认每页20条，最多50条。",
+        "operationId": "time_history_search",
+        "tags": [
+          "time"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "标题关键词，按字面包含关系匹配，不区分英文字母大小写。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "description": "类型精确筛选，默认返回全部类型。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "event",
+                "birth",
+                "death"
+              ]
+            }
+          },
+          {
+            "name": "startYear",
+            "in": "query",
+            "required": false,
+            "description": "起始年份，包含该年；范围-9999至9999，公元前用负数，不允许0。",
+            "schema": {
+              "type": "integer",
+              "minimum": -9999,
+              "maximum": 9999
+            }
+          },
+          {
+            "name": "endYear",
+            "in": "query",
+            "required": false,
+            "description": "结束年份，包含该年；范围-9999至9999，公元前用负数，不允许0。",
+            "schema": {
+              "type": "integer",
+              "minimum": -9999,
+              "maximum": 9999
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认20，最多50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_HistoryEvent_"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/time": {
       "get": {
         "summary": "万年历信息",
@@ -8418,6 +8618,73 @@
       "Record_FiveElement__number_": {
         "type": "object",
         "properties": {}
+      },
+      "HistoryEvent": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "事件月日，格式MM-DD，支持02-29。"
+          },
+          "year": {
+            "type": "number",
+            "description": "发生年份，公元前用负数，不使用公元0年。"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "event",
+              "birth",
+              "death"
+            ],
+            "description": "历史事件、人物出生或人物逝世。"
+          },
+          "title": {
+            "type": "string",
+            "description": "纯文本事件标题，不含年份前缀、图片和链接。"
+          }
+        },
+        "required": [
+          "date",
+          "year",
+          "type",
+          "title"
+        ]
+      },
+      "PageResult_HistoryEvent_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HistoryEvent"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
       },
       "TimeInfo": {
         "type": "object",
