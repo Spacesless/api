@@ -16,6 +16,20 @@ export = class extends think.Logic {
     };
   }
 
+  riddleAction() {
+    this.allowMethods = 'get,options';
+    this.rules = {
+      category: { in: [
+        'brainTeaser', 'intelligence', 'explanation', 'funny', 'character', 'idiom', 'animal', 'love',
+        'lantern', 'person', 'place', 'word', 'pattern', 'phrase', 'children', 'object',
+        'plant', 'poetry', 'publication', 'saying', 'medicine', 'music', 'film', 'appellation', 'other'
+      ] },
+      question: { string: true, length: { max: 100 } },
+      guess: { string: true, length: { max: 100 } },
+      answer: { string: true, length: { max: 100 } }
+    };
+  }
+
   xiehouyuAction() {
     this.allowMethods = 'get,options';
     this.rules = {

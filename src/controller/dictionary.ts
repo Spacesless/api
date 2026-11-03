@@ -1,4 +1,4 @@
-import type { Couplet, CoupletQuery, DictionaryWord, DictionaryWordQuery, Xiehouyu, XiehouyuQuery } from '../types/dictionary';
+import type { Couplet, CoupletQuery, DictionaryWord, DictionaryWordQuery, Riddle, RiddleQuery, Xiehouyu, XiehouyuQuery } from '../types/dictionary';
 import type { MongoFilter } from '../types/common';
 import Base = require('./base');
 
@@ -7,6 +7,23 @@ function contains(value: string) {
 }
 
 export = class extends Base {
+  /**
+   * @summary 谜语大全
+   * @description 查询谜语或按谜底反查，支持分类、谜目及关键词组合筛选，统一返回分页结果。谜面 question 与谜目 guess 分开返回，前端可按需组合。
+   */
+  async riddleAction() {
+    const { category, question, guess, answer, keyword, page = 1, pageSize = 10 } = this.getApiQuery<RiddleQuery>();
+    const where: MongoFilter = {};
+    if (category) where.category = category;
+    if (question) where.question = contains(question);
+    if (guess) where.guess = contains(guess);
+    if (answer) where.answer = contains(answer);
+    if (keyword) where.$or = [{ question: contains(keyword) }, { guess: contains(keyword) }, { answer: contains(keyword) }];
+    const list = await this.mongo<Riddle>('dictionary-riddle')
+      .where(where).order('_id ASC').page(page, pageSize).countSelect();
+    return this.success(list);
+  }
+
   /**
    * @summary 汉字词典
    * @description 查询汉字的拼音、笔画、部首和释义。汉字同时匹配原字形，同字多条记录分别返回；数据源的部首和读音信息可能不完整。所有查询统一返回分页结果。
