@@ -127,7 +127,7 @@ test('compiled routes retain validation, response envelopes and local utility be
   assert.notEqual(JSON.parse(missing.body).errno, 0);
 });
 
-async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food' | 'time/history', action: string, query: Record<string, unknown>, records: unknown[] = []) {
+async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food' | 'time/history' | 'pet', action: string, query: Record<string, unknown>, records: unknown[] = []) {
   const captured: { collection?: string; where?: unknown; fields?: unknown; order?: string; page?: unknown[] } = {};
   const result = { count: records.length, totalPages: records.length ? 1 : 0, pageSize: 10, currentPage: 1, data: records };
   const model = {
@@ -138,13 +138,14 @@ async function queryCollection(controllerName: 'poetry' | 'dictionary' | 'food' 
     async countSelect() { return result; }
   };
   class Base {
+    ctx = { origin: 'https://api.example.test' };
     getApiQuery() { return query; }
     mongo(name: string) { captured.collection = name; return model; }
     success(value: unknown) { return value; }
   }
   const module = { exports: {} };
   vm.runInNewContext(fs.readFileSync(path.join(root, `app/src/controller/${controllerName}.js`), 'utf8'), {
-    module, exports: module.exports,
+    module, exports: module.exports, URL,
     require(name: string) {
       if (name === './base' || name === '../base') return Base;
       throw new Error(`Unexpected module: ${name}`);
@@ -866,4 +867,68 @@ test('history search route validates pagination and year ranges and documents it
   assert.equal(operation.parameters.find((p: { name: string }) => p.name === 'pageSize').schema.maximum, 50);
   assert.equal(operation.parameters.find((p: { name: string }) => p.name === 'startYear').schema.minimum, -9999);
   assert.ok(operation.responses['200'].content['application/json'].schema.properties.data.$ref.includes('PageResult'));
+});
+
+test('pet lists combine exact names and aliases with literal search and return full records', async () => {
+  const result = await queryCollection('pet', 'indexAction', {
+    name: '柯基', keyword: '犬.*', category: 'dog', size: '小型犬', coat: '短毛', origin: '英(国)', page: 2, pageSize: 30
+  });
+  assert.equal(result.collection, 'pet');
+  assert.deepEqual(result.where, {
+    category: 'dog', size: '小型犬', coat: '短毛', origin: { $regex: '英\\(国\\)' },
+    $and: [
+      { $or: [{ name: '柯基' }, { fullName: '柯基' }, { aliases: '柯基' }] },
+      { $or: [{ name: { $regex: '犬\\.\\*' } }, { fullName: { $regex: '犬\\.\\*' } }, { aliases: { $regex: '犬\\.\\*' } }] }
+    ]
+  });
+  assert.deepEqual(result.fields, { _id: 0 });
+  assert.equal(result.order, 'category ASC,name ASC,_id ASC');
+  assert.deepEqual(result.page, [2,30]);
+  const all = await queryCollection('pet', 'indexAction', {});
+  assert.deepEqual(all.where, {});
+  assert.deepEqual(all.page, [1,20]);
+});
+
+test('pet routes validate filters and return full records without a separate detail endpoint', async () => {
+  for (const query of ['category=unknown','page=0','pageSize=51','pageSize=1.5','name='+'x'.repeat(101),'keyword='+'x'.repeat(101),'size='+'x'.repeat(31),'coat='+'x'.repeat(31),'origin='+'x'.repeat(101)]) {
+    const response = await request('/pet?' + query);
+    assert.notEqual(JSON.parse(response.body).errno,0,query);
+    assert.notEqual(response.status,500,query);
+  }
+  assert.equal(JSON.parse((await request('/pet','POST')).body).errmsg,'METHOD_NOT_ALLOWED');
+  const Controller = (think.app as typeof think.app & LoadedApplication).controllers.pet as { prototype: { mongo: unknown } };
+  const original = Controller.prototype.mongo, own = Object.hasOwn(Controller.prototype,'mongo');
+  const queries: unknown[] = [];
+  const record = { name: '测试猫', category: 'cat', description: '简介', traits: '特点', height: '30厘米', image: '/pet-images/00000000-0000-4000-8000-000000000000.webp', ratings: { shedding: null, affection: 3 } };
+  Controller.prototype.mongo = (name: string) => {
+    assert.equal(name,'pet');
+    return {
+      where(value: unknown) { queries.push(value); return this; },
+      field(value: unknown) { assert.deepEqual(value,{ _id: 0 }); return this; },
+      order() { return this; },
+      page() { return this; },
+      async countSelect() { return { count: 3, totalPages: 1, pageSize: 20, currentPage: 1, data: [record, { ...record, image: null }, { ...record, image: 'https://cdn.example.test/pet.webp' }] }; }
+    };
+  };
+  try {
+    const url='/pet?category=cat&name='+encodeURIComponent('测试猫');
+    const response=JSON.parse((await request(url)).body);
+    assert.equal(response.errno,0);
+    assert.deepEqual(response.data.data,[{ ...record, image: 'http://localhost'+record.image }, { ...record, image: null }, { ...record, image: 'https://cdn.example.test/pet.webp' }]);
+    assert.equal(response.data.count,3);
+    assert.equal(record.image,'/pet-images/00000000-0000-4000-8000-000000000000.webp');
+  } finally {
+    if(own) Controller.prototype.mongo=original;
+    else delete (Controller.prototype as { mongo?: unknown }).mongo;
+  }
+  assert.deepEqual(queries,[{category:'cat',$and:[{$or:[{name:'测试猫'},{fullName:'测试猫'},{aliases:'测试猫'}]}]}]);
+  const document=JSON.parse(fs.readFileSync(path.join(root,'www/swagger/openapi.json'),'utf8'));
+  assert.ok(document.paths['/pet'].get);
+  assert.ok(!document.paths['/pet/detail']);
+  assert.deepEqual(document.paths['/pet'].get.parameters.find((p:{name:string})=>p.name==='category').schema.enum.slice().sort(),Object.values(require('../src/types/pet').PetCategory).sort());
+  assert.equal(document.components.schemas.PetRatings.properties.shedding.nullable,true);
+  assert.equal(document.components.schemas.Pet.properties.image.nullable,true);
+  assert.ok(document.components.schemas.Pet.properties.ratings);
+  assert.ok(!document.components.schemas.PetSummary);
+  assert.ok(!document.components.schemas.Pet.properties.price);
 });

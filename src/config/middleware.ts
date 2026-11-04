@@ -15,7 +15,7 @@ export = [
     enable: isDev,
     options: {
       root: path.join(think.ROOT_PATH, 'www'),
-      publicPath: /^\/(azurlane-assets|live2d-assets|swagger)/,
+      publicPath: /^\/(azurlane-assets|live2d-assets|swagger|pet-images)/,
       /**
        * live2d的资源需要跨域共享
        * @param {Object} res ServerResponse响应

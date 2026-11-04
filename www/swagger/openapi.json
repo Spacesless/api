@@ -2080,6 +2080,149 @@
         }
       }
     },
+    "/pet": {
+      "get": {
+        "summary": "宠物大全",
+        "description": "按名称、别名、分类、体型、毛发和原产地组合筛选，分页返回完整资料，包含简介、特点、评分及代表图绝对地址（按当前请求域名拼接）。每页默认20条，最多50条。评分统一0至5分，允许半分；猫狗详情页优先，宠物大全补缺，空值表示未知或明确不适用。",
+        "operationId": "pet_index",
+        "tags": [
+          "pet"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "名称、全名或别名精确查询。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "keyword",
+            "in": "query",
+            "required": false,
+            "description": "同时搜索名称、全名和别名，按字面包含关系匹配。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "required": false,
+            "description": "宠物分类，小驼峰英文枚举。",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "dog",
+                "cat",
+                "turtle",
+                "rabbit",
+                "fish",
+                "bird",
+                "rodent",
+                "pig",
+                "reptile"
+              ]
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "required": false,
+            "description": "原始体型精确筛选，如小型犬、中型猫。",
+            "schema": {
+              "type": "string",
+              "maxLength": 30
+            }
+          },
+          {
+            "name": "coat",
+            "in": "query",
+            "required": false,
+            "description": "毛发精确筛选，如短毛、长毛。",
+            "schema": {
+              "type": "string",
+              "maxLength": 30
+            }
+          },
+          {
+            "name": "origin",
+            "in": "query",
+            "required": false,
+            "description": "原产地包含筛选。",
+            "schema": {
+              "type": "string",
+              "maxLength": 100
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "required": false,
+            "description": "页码，默认1。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "每页条数，默认20，最多50。",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/PageResult_Pet_"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/phone-number": {
       "get": {
         "summary": "常用电话大全",
@@ -6519,6 +6662,269 @@
           "city",
           "code",
           "prefix"
+        ]
+      },
+      "PageResult_Pet_": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "number",
+            "description": "符合条件的记录总数。"
+          },
+          "totalPages": {
+            "type": "number",
+            "description": "总页数。"
+          },
+          "pageSize": {
+            "type": "number",
+            "description": "每页记录数。"
+          },
+          "currentPage": {
+            "type": "number",
+            "description": "当前页码。"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pet"
+            },
+            "description": "当前页的记录列表。"
+          }
+        },
+        "required": [
+          "count",
+          "totalPages",
+          "pageSize",
+          "currentPage",
+          "data"
+        ]
+      },
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "展示名称，同一分类内唯一。"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true,
+            "description": "原资料全名，无则为null。"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "去重后的别名，不包含展示名称。"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "dog",
+              "cat",
+              "turtle",
+              "rabbit",
+              "fish",
+              "bird",
+              "rodent",
+              "pig",
+              "reptile"
+            ],
+            "description": "宠物栏目分类。"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "description": "原资料简介，无则为null。"
+          },
+          "origin": {
+            "type": "string",
+            "nullable": true,
+            "description": "原产地。"
+          },
+          "purpose": {
+            "type": "string",
+            "nullable": true,
+            "description": "功能，如伴侣犬、狩猎犬。"
+          },
+          "size": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始体型描述，如小型犬、中型猫。"
+          },
+          "coat": {
+            "type": "string",
+            "nullable": true,
+            "description": "毛发描述，如短毛、长毛。"
+          },
+          "height": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始身高描述，保留范围和原文单位，缺少单位时不推断。"
+          },
+          "weight": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始体重描述。"
+          },
+          "lifespan": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始寿命范围。"
+          },
+          "careDifficulty": {
+            "type": "string",
+            "nullable": true,
+            "description": "原始饲养难度描述。"
+          },
+          "traits": {
+            "type": "string",
+            "nullable": true,
+            "description": "性格和特点描述。"
+          },
+          "intelligenceRank": {
+            "type": "number",
+            "nullable": true,
+            "description": "来源资料的智商排名，不是科学测量结果，缺失为null。"
+          },
+          "image": {
+            "type": "string",
+            "nullable": true,
+            "description": "代表图绝对地址；存储时为/pet-images/UUID.webp，接口按当前请求域名拼接；图片统一400×400，缺失为null。"
+          },
+          "ratings": {
+            "$ref": "#/components/schemas/PetRatings",
+            "description": "猫狗详情页评分优先，宠物大全同义项目合并补缺；按页面保留分值，仅剔除明确不适用项。"
+          }
+        },
+        "required": [
+          "name",
+          "fullName",
+          "aliases",
+          "category",
+          "description",
+          "origin",
+          "purpose",
+          "size",
+          "coat",
+          "height",
+          "weight",
+          "lifespan",
+          "careDifficulty",
+          "traits",
+          "intelligenceRank",
+          "image",
+          "ratings"
+        ]
+      },
+      "PetRatings": {
+        "type": "object",
+        "properties": {
+          "affection": {
+            "type": "number",
+            "nullable": true,
+            "description": "黏人程度。"
+          },
+          "shedding": {
+            "type": "number",
+            "nullable": true,
+            "description": "掉毛或落羽程度；鱼、龟及爬宠不适用，为null。"
+          },
+          "barking": {
+            "type": "number",
+            "nullable": true,
+            "description": "鸣叫程度，合并来源的爱叫和喜叫；观赏鱼及水族不适用，为null。"
+          },
+          "odor": {
+            "type": "number",
+            "nullable": true,
+            "description": "体味程度。"
+          },
+          "grooming": {
+            "type": "number",
+            "nullable": true,
+            "description": "美容护理需求。"
+          },
+          "trainability": {
+            "type": "number",
+            "nullable": true,
+            "description": "可训练程度，合并来源的训练和可训程度。"
+          },
+          "drooling": {
+            "type": "number",
+            "nullable": true,
+            "description": "口水程度。"
+          },
+          "cityAdaptability": {
+            "type": "number",
+            "nullable": true,
+            "description": "城市适应程度。"
+          },
+          "friendliness": {
+            "type": "number",
+            "nullable": true,
+            "description": "友善程度。"
+          },
+          "coldTolerance": {
+            "type": "number",
+            "nullable": true,
+            "description": "耐寒程度。"
+          },
+          "heatTolerance": {
+            "type": "number",
+            "nullable": true,
+            "description": "耐热程度。"
+          },
+          "exercise": {
+            "type": "number",
+            "nullable": true,
+            "description": "运动需求。"
+          },
+          "appearance": {
+            "type": "number",
+            "nullable": true,
+            "description": "外观评分。"
+          },
+          "cleanliness": {
+            "type": "number",
+            "nullable": true,
+            "description": "干净程度。"
+          },
+          "intelligence": {
+            "type": "number",
+            "nullable": true,
+            "description": "智商评分，与智商排名分开。"
+          },
+          "easeOfCare": {
+            "type": "number",
+            "nullable": true,
+            "description": "饲养容易程度。"
+          },
+          "overall": {
+            "type": "number",
+            "nullable": true,
+            "description": "综合评分。"
+          }
+        },
+        "required": [
+          "affection",
+          "shedding",
+          "barking",
+          "odor",
+          "grooming",
+          "trainability",
+          "drooling",
+          "cityAdaptability",
+          "friendliness",
+          "coldTolerance",
+          "heatTolerance",
+          "exercise",
+          "appearance",
+          "cleanliness",
+          "intelligence",
+          "easeOfCare",
+          "overall"
         ]
       },
       "PhoneNumber": {
