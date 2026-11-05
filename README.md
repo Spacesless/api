@@ -17,7 +17,7 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 ## 功能特性
 - 时间 (公历，农历，老黄历，十二时辰，基于[https://github.com/6tail/lunar-javascript](https://github.com/6tail/lunar-javascript))
 - Live2d模型 (***勿做商用哦***, Live2D Cubism SDK v2版本, 材质图片经过tinypng压缩)
-- 中国行政区划联动 (只支持4级联动，需要5级联动找[https://github.com/modood/Administrative-divisions-of-China](https://github.com/modood/Administrative-divisions-of-China))
+- 中国行政区划：直接使用 province-city-china 本地数据，支持四级懒加载、前缀搜索、详情路径和地区树，无需 MongoDB，见 [接口说明](docs/district.md)
 - 垃圾分类 (可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾, 基于[https://github.com/alexayan/garbage-classification-data](https://github.com/alexayan/garbage-classification-data))
 - 中国邮政编码
 - 中国车牌号及其简称

@@ -6,6 +6,8 @@ import vm = require('node:vm');
 import { IncomingMessage, ServerResponse } from 'node:http';
 import { Socket } from 'node:net';
 import { test } from 'node:test';
+import { getDistrictIndex } from '../src/utils/district';
+import type { DistrictNode } from '../src/types/district';
 
 import type SentenceController = require('../src/controller/english-sentence');
 
@@ -931,4 +933,147 @@ test('pet routes validate filters and return full records without a separate det
   assert.ok(document.components.schemas.Pet.properties.ratings);
   assert.ok(!document.components.schemas.PetSummary);
   assert.ok(!document.components.schemas.Pet.properties.price);
+});
+
+test('district local data handles municipalities, direct counties, Hong Kong and unique town codes', () => {
+  const data = getDistrictIndex();
+  const provinces = data.children();
+  assert.equal(provinces.length, 34);
+  assert.ok(provinces.every(row => row.level === 1 && row.parentCode === null && row.code.length === 6));
+  assert.equal(data.detail('110101')?.parentCode, '110000');
+  assert.deepEqual(data.detail('110101001000')?.path.map(row => row.code), ['110000', '110101', '110101001000']);
+  assert.equal(data.detail('810001')?.parentCode, '810000');
+  assert.equal(data.detail('820001')?.parentCode, '820000');
+  assert.equal(data.detail('429004')?.parentCode, '429000');
+  assert.equal(data.detail('441900')?.parentCode, '440000');
+  assert.deepEqual(data.children('110101001000'), []);
+  assert.deepEqual(data.children('999999'), []);
+  assert.equal(data.detail('999999'), undefined);
+  const towns = data.children('659001');
+  assert.equal(towns.filter(row => row.code === '659001100000').length, 1);
+  assert.equal(data.detail('659001100000')?.name, '北泉镇');
+});
+
+test('district local tree and responses do not mutate shared indexes', () => {
+  const data = getDistrictIndex();
+  const tree = data.tree('110000', 4);
+  assert.equal(tree[0].code, '110000');
+  assert.ok(tree[0].children?.some(row => row.code === '110101' && row.children?.length));
+  tree[0].name = 'changed';
+  tree[0].children = [];
+  const children = data.children('110000');
+  children[0].name = 'changed';
+  assert.equal(data.detail('110101')?.name, '东城区');
+  assert.equal(data.detail('110000')?.name, '北京市');
+  assert.ok(data.tree('110000', 4)[0].children!.length);
+  assert.deepEqual(data.tree('999999', 4), []);
+  assert.deepEqual(data.tree('110101', 2), []);
+  const codes = new Set<string>();
+  const visit = (nodes: DistrictNode[]) => {
+    for (const node of nodes) {
+      assert.ok(!codes.has(node.code), node.code);
+      codes.add(node.code);
+      if (node.parentCode) assert.ok(data.detail(node.parentCode));
+      if (node.children) visit(node.children);
+    }
+  };
+  visit(data.tree(undefined, 4));
+  assert.equal(codes.size, 42174);
+  const three = data.tree(undefined, 3);
+  assert.ok(!JSON.stringify(three).includes('"level":4'));
+});
+
+test('district local search is bounded, literal and scoped to a province', () => {
+  const data = getDistrictIndex();
+  assert.deepEqual(data.search({ keyword: '.*' }), []);
+  const candidates = data.search({ keyword: '人民', maxLevel: 4, provinceCode: '440000', limit: 5 });
+  assert.ok(candidates.length > 0 && candidates.length <= 5);
+  assert.ok(candidates.every(row => row.provinceCode === '440000'));
+  assert.ok(data.search({ keyword: '11' }).every(row => row.level <= 3));
+  assert.ok(data.search({ keyword: '11', maxLevel: 4 }).length <= 20);
+});
+
+test('district HTTP endpoints use local package without MongoDB', async () => {
+  const get = async (url: string) => {
+    const response = await request(url);
+    assert.equal(response.status, 200, url);
+    const body = JSON.parse(response.body);
+    assert.equal(body.errno, 0, url + ': ' + response.body);
+    return body.data;
+  };
+  assert.equal((await get('/district')).length, 34);
+  assert.deepEqual(await get('/district?code=110000'), await get('/district/getChildren?code=110000'));
+  assert.equal((await get('/district/detail?code=110101001000')).name, '东华门街道');
+  assert.deepEqual(await get('/district?code=110101001000'), []);
+  const path = (await get('/district/detail?code=110101')).path;
+  assert.deepEqual(path.map((row: DistrictNode) => row.code), ['110000', '110101']);
+  assert.ok((await get('/district/tree?code=110000&level=4'))[0].children.length);
+  assert.equal((await get('/district/tree')).length, 34);
+  assert.deepEqual(await get('/district/tree?code=999999'), []);
+  const result = await get('/district/search?keyword=%20%E5%8C%97%E4%BA%AC%20&limit=1');
+  assert.equal(result.length, 1);
+  assert.equal(result[0].code, '110000');
+});
+
+test('district validates limits, six/twelve digit codes and methods', async () => {
+  for (const url of ['/district/tree?level=5', '/district/tree?level=2.5', '/district/tree?level=4',
+    '/district/getChildren?code=123', '/district/getChildren?code=ab', '/district?code=11',
+    '/district/detail', '/district/detail?code=abc', '/district/detail?code=999999', '/district/search',
+    '/district/search?keyword=x&limit=101', '/district/search?keyword=x&limit=0',
+    '/district/search?keyword=x&maxLevel=5', '/district/search?keyword=x&provinceCode=440100',
+    '/district/search?keyword=%20%20']) {
+    const response = await request(url);
+    assert.notEqual(response.status, 500, url);
+    assert.notEqual(JSON.parse(response.body).errno, 0, url);
+  }
+  for (const url of ['/district', '/district/getChildren', '/district/search', '/district/tree', '/district/detail']) {
+    assert.equal(JSON.parse((await request(url, 'POST')).body).errmsg, 'METHOD_NOT_ALLOWED');
+  }
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  assert.ok(document.paths['/district/tree']);
+  assert.ok(document.paths['/district/detail']);
+  const limit = document.paths['/district/search'].get.parameters.find((p: { name: string }) => p.name === 'limit');
+  assert.equal(limit.schema.maximum, 100);
+});
+
+test('ship queries are removed from loaded modules, routes and generated documentation while Spine remains', async () => {
+  const app = think.app as typeof think.app & LoadedApplication;
+  assert.ok(!app.controllers['azurlane/ship']);
+  assert.ok(!app.logics['azurlane/ship']);
+  assert.ok(app.controllers['azurlane/spine']);
+  const document = JSON.parse(fs.readFileSync(path.join(root, 'www/swagger/openapi.json'), 'utf8'));
+  assert.ok(!Object.keys(document.paths).some(url => url.startsWith('/azurlane/ship')));
+  assert.ok(document.paths['/azurlane/spine'].get);
+  assert.ok(document.paths['/azurlane/spine/lists'].get);
+  await (think.beforeStartServer as () => Promise<unknown>)();
+  for (const url of ['/azurlane/ship?id=019','/azurlane/ship/lists']) assert.equal((await request(url)).status,404,url);
+});
+
+test('Spine generator resolves case-insensitive skins and suffixes, reports missing assets and can regenerate', t => {
+  const { generateSpineList } = require(path.join(root, 'scripts/generate-spine-list.cjs'));
+  const ships = [{ _gid: 1, names: { cn: '舰船' } }];
+  const skins = { a: { painting: 'MODEL_G', ship_group: 1, name: '{namecode:1}' }, b: { painting: 'other', ship_group: 2, name: '备用名称' } };
+  assert.deepEqual(generateSpineList(ships, skins, ['model_g','other','missing']), { list: [{ name: '舰船', value: 'model_g', remark: '改' }, { name: '备用名称', value: 'other', remark: '备用名称' }], unmatched: ['missing'] });
+  const directory = fs.mkdtempSync(path.join(require('node:os').tmpdir(),'spine-generator-'));
+  t.after(() => {
+    assert.equal(path.dirname(fs.realpathSync(directory)), fs.realpathSync(require('node:os').tmpdir()));
+    fs.rmSync(directory, { recursive: true, force: true });
+  });
+  fs.writeFileSync(path.join(directory,'ships.json'), JSON.stringify(ships));
+  fs.writeFileSync(path.join(directory,'skins.json'), JSON.stringify(skins));
+  fs.mkdirSync(path.join(directory,'models'));
+  fs.mkdirSync(path.join(directory,'models/model_g'));
+  fs.mkdirSync(path.join(directory,'models/missing'));
+  fs.writeFileSync(path.join(directory,'models/other'),'not a model directory');
+  const output = path.join(directory,'list.json');
+  fs.writeFileSync(output,'[]');
+  const run = () => require('node:child_process').execFileSync(process.execPath,[path.join(root,'scripts/generate-spine-list.cjs'),'--ships',path.join(directory,'ships.json'),'--skins',path.join(directory,'skins.json'),'--spine-dir',path.join(directory,'models'),'--out',output],{encoding:'utf8'});
+  assert.deepEqual(JSON.parse(run()).unmatched,['missing']);
+  assert.deepEqual(JSON.parse(fs.readFileSync(output,'utf8')),[{name:'舰船',value:'model_g',remark:'改'}]);
+  run();
+  assert.ok(!fs.readdirSync(directory).some(file=>file.endsWith('.tmp')));
+  fs.rmdirSync(path.join(directory,'models/model_g'));
+  const snapshot = fs.readFileSync(output,'utf8');
+  assert.throws(run, /No models matched/);
+  assert.equal(fs.readFileSync(output,'utf8'),snapshot);
 });

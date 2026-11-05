@@ -808,20 +808,21 @@
     },
     "/district": {
       "get": {
-        "summary": "省市区街道列表",
-        "description": "获取省市区街道四级行政区划，可用于生成城市列表控件等功能时使用。",
+        "summary": "行政区划下级列表",
+        "description": "使用province-city-china本地数据。懒加载级联：不传code返回省级，传code返回直属下级，按编码排序。省市区使用六位编码，街道使用十二位编码。街道或不存在的编码返回空数组。",
         "operationId": "district_index",
         "tags": [
           "district"
         ],
         "parameters": [
           {
-            "name": "level",
+            "name": "code",
             "in": "query",
-            "required": true,
-            "description": "联动等级2、3、4",
+            "required": false,
+            "description": "地区编号",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^(?:\\d{6}|\\d{12})$"
             }
           }
         ],
@@ -873,7 +874,7 @@
     "/district/getChildren": {
       "get": {
         "summary": "获取下级行政区划",
-        "description": "获取指定行政区划的子级行政区划。",
+        "description": "与/district相同，用于按需加载直属下级，使用本地数据，不依赖数据库。",
         "operationId": "district_getChildren",
         "tags": [
           "district"
@@ -885,31 +886,41 @@
             "required": false,
             "description": "地区编号",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "pattern": "^(?:\\d{6}|\\d{12})$"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "description": "data 为响应数据。",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
                   "required": [
                     "errno",
-                    "errmsg",
-                    "data"
+                    "errmsg"
                   ],
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "description": "错误码：0 表示成功。"
+                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
                     },
                     "errmsg": {
-                      "type": "string",
-                      "description": "错误信息，成功时为空字符串。"
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
                     },
                     "data": {
                       "type": "array",
@@ -925,10 +936,156 @@
         }
       }
     },
+    "/district/tree": {
+      "get": {
+        "summary": "行政区划树",
+        "description": "level为最深行政层级，默认3。code可限定某地区及其后代，树包含该地区本身；四级树必须指定省、市或区县code。直辖市和港澳缺少市级节点时直接挂在省级，不人为补层级。",
+        "operationId": "district_tree",
+        "tags": [
+          "district"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "required": false,
+            "description": "子树根编码；level=4时必填，使用数据源中的省、市或区县编码。",
+            "schema": {
+              "type": "string",
+              "pattern": "^\\d{6}$"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "description": "最深行政层级，默认3，可选1至4。",
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/DistrictNode"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/district/detail": {
+      "get": {
+        "summary": "行政区划详情和路径",
+        "description": "按编码查询本地数据，path从省级到当前地区，适合表单回显。不存在返回业务错误，不加载下级。",
+        "operationId": "district_detail",
+        "tags": [
+          "district"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "required": true,
+            "description": "精确地区编码，支持街道。",
+            "schema": {
+              "type": "string",
+              "pattern": "^(?:\\d{6}|\\d{12})$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "业务响应",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
+                  "required": [
+                    "errno",
+                    "errmsg"
+                  ],
+                  "properties": {
+                    "errno": {
+                      "type": "integer",
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
+                    },
+                    "errmsg": {
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/DistrictDetail"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/district/search": {
       "get": {
         "summary": "行政区划搜索",
-        "description": "根据关键词或行政区划编码搜索",
+        "description": "名称或编码前缀搜索，返回按编码排序的平铺候选项。默认只查省市区，limit默认20、最多100；maxLevel=4时包含街道。provinceCode使用六位省级编码。不查询数据库，不组装搜索树。",
         "operationId": "district_search",
         "tags": [
           "district"
@@ -937,49 +1094,93 @@
           {
             "name": "keyword",
             "in": "query",
-            "required": false,
-            "description": "地区名称、地区编号",
+            "required": true,
+            "description": "地区名称或地区编号前缀，必填",
             "schema": {
-              "type": "string"
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
             }
           },
           {
-            "name": "keepParent",
+            "name": "limit",
             "in": "query",
             "required": false,
-            "description": "是否需要保留父级数据，默认为0，不保留",
+            "description": "返回候选数量，默认20，最多100。",
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "maxLevel",
+            "in": "query",
+            "required": false,
+            "description": "最深行政层级，默认3，传4包含街道。",
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            }
+          },
+          {
+            "name": "provinceCode",
+            "in": "query",
+            "required": false,
+            "description": "限定所属省份，使用数据源中的省级编码。",
             "schema": {
               "type": "string",
-              "enum": [
-                "true",
-                "1",
-                "false",
-                "0"
-              ]
+              "pattern": "^\\d{2}0000$"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "成功响应",
+            "description": "业务响应",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "object",
-                  "description": "data 为响应数据。",
+                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
                   "required": [
                     "errno",
-                    "errmsg",
-                    "data"
+                    "errmsg"
                   ],
                   "properties": {
                     "errno": {
                       "type": "integer",
-                      "description": "错误码：0 表示成功。"
+                      "description": "错误码：0 表示成功，1000 表示业务失败，1001 表示参数校验失败。"
                     },
                     "errmsg": {
-                      "type": "string",
-                      "description": "错误信息，成功时为空字符串。"
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      ],
+                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
                     },
                     "data": {
                       "type": "array",
@@ -3235,147 +3436,6 @@
         }
       }
     },
-    "/azurlane/ship/lists": {
-      "get": {
-        "summary": "舰娘列表",
-        "operationId": "azurlane_ship_lists",
-        "tags": [
-          "azurlane"
-        ],
-        "parameters": [
-          {
-            "name": "name",
-            "in": "query",
-            "required": false,
-            "description": "名称",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "nationality",
-            "in": "query",
-            "required": false,
-            "description": "阵营：白鹰、皇家、重樱、铁血、东煌、撒丁帝国、北方联合、自由鸢尾、维希教廷、其他",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "hullType",
-            "in": "query",
-            "required": false,
-            "description": "船级：驱逐、轻巡、重巡、航母、战列、维修、潜艇、其他",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "rarity",
-            "in": "query",
-            "required": false,
-            "description": "稀有度：普通、稀有、精锐、超稀有、海上传奇",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "成功响应",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "description": "data 为响应数据。",
-                  "required": [
-                    "errno",
-                    "errmsg",
-                    "data"
-                  ],
-                  "properties": {
-                    "errno": {
-                      "type": "integer",
-                      "description": "错误码：0 表示成功。"
-                    },
-                    "errmsg": {
-                      "type": "string",
-                      "description": "错误信息，成功时为空字符串。"
-                    },
-                    "data": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/ShipListItem"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/azurlane/ship": {
-      "get": {
-        "summary": "舰娘详情",
-        "operationId": "azurlane_ship_index",
-        "tags": [
-          "azurlane"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "required": true,
-            "description": "舰娘ID",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "业务响应",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "description": "errno 为 0 时 data 为响应数据，失败时一般不返回 data。",
-                  "required": [
-                    "errno",
-                    "errmsg"
-                  ],
-                  "properties": {
-                    "errno": {
-                      "type": "integer",
-                      "description": "错误码：0 表示成功，1001 表示参数校验失败。"
-                    },
-                    "errmsg": {
-                      "anyOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "type": "object",
-                          "additionalProperties": {
-                            "type": "string"
-                          }
-                        }
-                      ],
-                      "description": "错误信息，成功时为空字符串；参数校验失败时为 { 参数名: 错误信息 }。"
-                    },
-                    "data": {
-                      "$ref": "#/components/schemas/ShipDetail"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/azurlane/spine": {
       "get": {
         "summary": "Spine模型信息",
@@ -5545,6 +5605,15 @@
             "type": "string",
             "description": "行政区划名称。"
           },
+          "level": {
+            "type": "number",
+            "description": "行政层级：1省、2市、3区县、4乡镇街道。"
+          },
+          "parentCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "直属父级编码，省级为null。"
+          },
           "provinceCode": {
             "type": "string",
             "description": "所属省级行政区编码。"
@@ -5567,7 +5636,64 @@
         },
         "required": [
           "code",
-          "name"
+          "name",
+          "level",
+          "parentCode"
+        ]
+      },
+      "DistrictDetail": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DistrictNode"
+            },
+            "description": "从省级到当前地区的完整路径。"
+          },
+          "code": {
+            "type": "string",
+            "description": "当前行政区划编码。"
+          },
+          "name": {
+            "type": "string",
+            "description": "行政区划名称。"
+          },
+          "level": {
+            "type": "number",
+            "description": "行政层级：1省、2市、3区县、4乡镇街道。"
+          },
+          "parentCode": {
+            "type": "string",
+            "nullable": true,
+            "description": "直属父级编码，省级为null。"
+          },
+          "provinceCode": {
+            "type": "string",
+            "description": "所属省级行政区编码。"
+          },
+          "cityCode": {
+            "type": "string",
+            "description": "所属地级行政区编码。"
+          },
+          "areaCode": {
+            "type": "string",
+            "description": "所属县级行政区编码。"
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DistrictNode"
+            },
+            "description": "下级行政区划节点，末级节点可不包含此字段。"
+          }
+        },
+        "required": [
+          "path",
+          "code",
+          "name",
+          "level",
+          "parentCode"
         ]
       },
       "Partial_EnglishSentence_": {
@@ -7353,1016 +7479,6 @@
           "pageSize",
           "currentPage",
           "data"
-        ]
-      },
-      "ShipListItem": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "舰船资源 ID。"
-          },
-          "classify": {
-            "type": "string",
-            "description": "舰级。"
-          },
-          "names": {
-            "$ref": "#/components/schemas/ShipNames",
-            "description": "各语言的舰船名称。"
-          },
-          "thumbnail": {
-            "type": "string",
-            "description": "舰船缩略图地址。"
-          },
-          "hullType": {
-            "type": "string",
-            "description": "舰种，如：驱逐。"
-          },
-          "nationality": {
-            "type": "string",
-            "description": "阵营，如：白鹰。"
-          },
-          "rarity": {
-            "type": "string",
-            "description": "稀有度，如：精锐。"
-          }
-        },
-        "required": [
-          "id",
-          "classify",
-          "names",
-          "thumbnail",
-          "hullType",
-          "nationality",
-          "rarity"
-        ]
-      },
-      "ShipNames": {
-        "type": "object",
-        "properties": {
-          "cn": {
-            "type": "string",
-            "description": "中文名。"
-          },
-          "en": {
-            "type": "string",
-            "description": "英文名。"
-          },
-          "jp": {
-            "type": "string",
-            "description": "日文名。"
-          },
-          "kr": {
-            "type": "string",
-            "description": "韩文名。"
-          },
-          "tw": {
-            "type": "string",
-            "description": "繁体中文名。"
-          },
-          "code": {
-            "type": "string",
-            "description": "带舰船前缀的英文名，如：USS Laffey。"
-          }
-        },
-        "required": [
-          "cn",
-          "en",
-          "jp",
-          "kr",
-          "code"
-        ]
-      },
-      "ShipDetail": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "舰船资源 ID。"
-          },
-          "_gid": {
-            "type": "number",
-            "description": "舰船分组 ID，用于关联皮肤配置。"
-          },
-          "_sid": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "description": "舰船各突破阶段的数据 ID。"
-          },
-          "_code": {
-            "type": "number",
-            "description": "舰船内部编号。"
-          },
-          "wikiUrl": {
-            "type": "string",
-            "description": "Wiki 页面地址。"
-          },
-          "names": {
-            "$ref": "#/components/schemas/ShipNames",
-            "description": "各语言的舰船名称。"
-          },
-          "exists": {
-            "$ref": "#/components/schemas/ShipExists",
-            "description": "各服务器是否已实装。"
-          },
-          "hexagon": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "description": "六维能力评级。"
-          },
-          "class": {
-            "type": "string",
-            "description": "舰级，如：Benson。"
-          },
-          "nationality": {
-            "type": "string",
-            "description": "阵营，上游为英文，接口返回时转换为中文。"
-          },
-          "hullType": {
-            "type": "string",
-            "description": "舰种，上游为英文，接口返回时转换为中文。"
-          },
-          "rarity": {
-            "type": "string",
-            "description": "稀有度，上游为英文，接口返回时转换为中文。"
-          },
-          "thumbnail": {
-            "type": "string",
-            "description": "舰船缩略图地址。"
-          },
-          "stars": {
-            "type": "number",
-            "description": "初始星级。"
-          },
-          "stats": {
-            "$ref": "#/components/schemas/ShipStatsGroups",
-            "description": "各等级的属性。"
-          },
-          "slots": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipSlot"
-            },
-            "description": "装备栏位。"
-          },
-          "enhanceValue": {
-            "$ref": "#/components/schemas/ShipEnhanceValue",
-            "description": "作为强化素材时提供的强化值。"
-          },
-          "scrapValue": {
-            "$ref": "#/components/schemas/ShipScrapValue",
-            "description": "退役获得的资源。"
-          },
-          "skills": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipSkill"
-            },
-            "description": "技能列表。"
-          },
-          "limitBreaks": {
-            "type": "array",
-            "items": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "nullable": true,
-            "description": "各次突破获得的加成，每次突破一组。"
-          },
-          "fleetTech": {
-            "$ref": "#/components/schemas/ShipFleetTech",
-            "description": "科技点与舰队科技加成。"
-          },
-          "construction": {
-            "$ref": "#/components/schemas/ShipConstruction",
-            "description": "建造信息。"
-          },
-          "obtainedFrom": {
-            "$ref": "#/components/schemas/ShipObtainedFrom",
-            "description": "获取途径。"
-          },
-          "misc": {
-            "$ref": "#/components/schemas/ShipMisc",
-            "description": "画师和声优。"
-          },
-          "skins": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipSkinData"
-            },
-            "description": "皮肤列表。"
-          },
-          "gallery": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipGalleryItem"
-            },
-            "description": "画廊图片。"
-          },
-          "retrofit": {
-            "type": "boolean",
-            "description": "是否可改造。"
-          },
-          "retrofitId": {
-            "type": "string",
-            "description": "改造后的舰船 ID。"
-          },
-          "retrofitHullType": {
-            "type": "string",
-            "description": "改造后的舰种。"
-          },
-          "retrofitProjects": {
-            "$ref": "#/components/schemas/ShipRetrofitProjects",
-            "description": "改造项目，键为项目编号（A、B、C...）。"
-          },
-          "devLevels": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipDevLevel"
-            },
-            "description": "科研舰的开发等级加成。"
-          }
-        }
-      },
-      "ShipExists": {
-        "type": "object",
-        "properties": {
-          "en": {
-            "type": "boolean",
-            "description": "国际服。"
-          },
-          "cn": {
-            "type": "boolean",
-            "description": "国服。"
-          },
-          "jp": {
-            "type": "boolean",
-            "description": "日服。"
-          },
-          "kr": {
-            "type": "boolean",
-            "description": "韩服。"
-          }
-        },
-        "required": [
-          "en",
-          "cn",
-          "jp",
-          "kr"
-        ]
-      },
-      "ShipStatsGroups": {
-        "type": "object",
-        "properties": {
-          "baseStats": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "1 级基础属性。"
-          },
-          "level100": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "100 级属性。"
-          },
-          "level120": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "120 级属性。"
-          },
-          "level125": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "125 级属性。"
-          },
-          "level100Retrofit": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "改造后 100 级属性。"
-          },
-          "level120Retrofit": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "改造后 120 级属性。"
-          },
-          "level125Retrofit": {
-            "$ref": "#/components/schemas/ShipStats",
-            "description": "改造后 125 级属性。"
-          }
-        },
-        "required": [
-          "baseStats",
-          "level100",
-          "level120",
-          "level125"
-        ]
-      },
-      "ShipStats": {
-        "type": "object",
-        "properties": {
-          "health": {
-            "type": "string",
-            "description": "耐久。"
-          },
-          "armor": {
-            "type": "string",
-            "description": "装甲类型，如：Light。"
-          },
-          "reload": {
-            "type": "string",
-            "description": "装填。"
-          },
-          "luck": {
-            "type": "string",
-            "description": "幸运。"
-          },
-          "firepower": {
-            "type": "string",
-            "description": "炮击。"
-          },
-          "torpedo": {
-            "type": "string",
-            "description": "雷击。"
-          },
-          "evasion": {
-            "type": "string",
-            "description": "机动。"
-          },
-          "speed": {
-            "type": "string",
-            "description": "航速。"
-          },
-          "antiair": {
-            "type": "string",
-            "description": "防空。"
-          },
-          "aviation": {
-            "type": "string",
-            "description": "航空。"
-          },
-          "oilConsumption": {
-            "type": "string",
-            "description": "油耗。"
-          },
-          "accuracy": {
-            "type": "string",
-            "description": "命中。"
-          },
-          "antisubmarineWarfare": {
-            "type": "string",
-            "description": "反潜。"
-          },
-          "oxygen": {
-            "type": "string",
-            "description": "氧气，仅潜艇。"
-          },
-          "ammunition": {
-            "type": "string",
-            "description": "弹药量，仅潜艇。"
-          },
-          "huntingRange": {
-            "type": "string",
-            "description": "狩猎范围示意图，仅潜艇。"
-          }
-        },
-        "required": [
-          "health",
-          "armor",
-          "reload",
-          "luck",
-          "firepower",
-          "torpedo",
-          "evasion",
-          "speed",
-          "antiair",
-          "aviation",
-          "oilConsumption",
-          "accuracy",
-          "antisubmarineWarfare"
-        ]
-      },
-      "ShipSlot": {
-        "type": "object",
-        "properties": {
-          "type": {
-            "type": "string",
-            "description": "可装备类型，如：DD Guns。"
-          },
-          "minEfficiency": {
-            "type": "number",
-            "description": "初始装备效率（%）。"
-          },
-          "maxEfficiency": {
-            "type": "number",
-            "description": "满突破装备效率（%）。"
-          },
-          "kaiEfficiency": {
-            "type": "number",
-            "description": "改造后装备效率（%）。"
-          },
-          "max": {
-            "type": "number",
-            "description": "装备数量上限。"
-          }
-        },
-        "required": [
-          "type",
-          "minEfficiency",
-          "maxEfficiency",
-          "max"
-        ]
-      },
-      "ShipEnhanceValue": {
-        "type": "object",
-        "properties": {
-          "firepower": {
-            "type": "number",
-            "description": "炮击。"
-          },
-          "torpedo": {
-            "type": "number",
-            "description": "雷击。"
-          },
-          "aviation": {
-            "type": "number",
-            "description": "航空。"
-          },
-          "reload": {
-            "type": "number",
-            "description": "装填。"
-          }
-        }
-      },
-      "ShipScrapValue": {
-        "type": "object",
-        "properties": {
-          "coin": {
-            "type": "number",
-            "description": "物资。"
-          },
-          "medal": {
-            "type": "number",
-            "description": "勋章。"
-          },
-          "core": {
-            "type": "number",
-            "description": "心智单元。"
-          }
-        }
-      },
-      "ShipSkill": {
-        "type": "object",
-        "properties": {
-          "icon": {
-            "type": "string",
-            "description": "技能图标地址。"
-          },
-          "names": {
-            "$ref": "#/components/schemas/ShipSkillNames",
-            "description": "各语言的技能名称。"
-          },
-          "description": {
-            "type": "string",
-            "description": "技能描述（英文）。"
-          },
-          "color": {
-            "type": "string",
-            "description": "技能类型颜色，如：gold、red、blue。"
-          }
-        },
-        "required": [
-          "icon",
-          "names",
-          "description",
-          "color"
-        ]
-      },
-      "ShipSkillNames": {
-        "type": "object",
-        "properties": {
-          "en": {
-            "type": "string",
-            "description": "英文名。"
-          },
-          "cn": {
-            "type": "string",
-            "nullable": true,
-            "description": "中文名，缺失时为 null。"
-          },
-          "jp": {
-            "type": "string",
-            "nullable": true,
-            "description": "日文名，缺失时为 null。"
-          }
-        },
-        "required": [
-          "en",
-          "cn",
-          "jp"
-        ]
-      },
-      "ShipFleetTech": {
-        "type": "object",
-        "properties": {
-          "statsBonus": {
-            "$ref": "#/components/schemas/ShipFleetTechStatsBonus",
-            "description": "舰队科技属性加成。"
-          },
-          "techPoints": {
-            "$ref": "#/components/schemas/ShipFleetTechPoints",
-            "description": "可获得的科技点。"
-          }
-        },
-        "required": [
-          "statsBonus",
-          "techPoints"
-        ]
-      },
-      "ShipFleetTechStatsBonus": {
-        "type": "object",
-        "properties": {
-          "collection": {
-            "$ref": "#/components/schemas/ShipFleetTechBonus",
-            "nullable": true,
-            "description": "获得舰船时的加成，没有时为 null。"
-          },
-          "maxLevel": {
-            "$ref": "#/components/schemas/ShipFleetTechBonus",
-            "nullable": true,
-            "description": "舰船满级时的加成，没有时为 null。"
-          }
-        },
-        "required": [
-          "collection",
-          "maxLevel"
-        ]
-      },
-      "ShipFleetTechBonus": {
-        "type": "object",
-        "properties": {
-          "applicable": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "适用舰种。"
-          },
-          "bonus": {
-            "type": "string",
-            "description": "加成值，如：+1。"
-          },
-          "stat": {
-            "type": "string",
-            "description": "加成属性，如：health。"
-          }
-        },
-        "required": [
-          "applicable",
-          "bonus",
-          "stat"
-        ]
-      },
-      "ShipFleetTechPoints": {
-        "type": "object",
-        "properties": {
-          "collection": {
-            "type": "number",
-            "nullable": true,
-            "description": "获得舰船时的科技点，没有时为 null。"
-          },
-          "maxLimitBreak": {
-            "type": "number",
-            "description": "满突破时的科技点。"
-          },
-          "maxLevel": {
-            "type": "number",
-            "description": "满级时的科技点。"
-          },
-          "total": {
-            "type": "number",
-            "description": "科技点合计。"
-          }
-        },
-        "required": [
-          "collection",
-          "maxLimitBreak",
-          "maxLevel",
-          "total"
-        ]
-      },
-      "ShipConstruction": {
-        "type": "object",
-        "properties": {
-          "constructionTime": {
-            "type": "string",
-            "description": "建造时间，不可建造时为说明文字，如：Cannot Be Constructed。"
-          },
-          "availableIn": {
-            "$ref": "#/components/schemas/ShipConstructionPools",
-            "description": "各建造池是否可获得。"
-          }
-        },
-        "required": [
-          "constructionTime",
-          "availableIn"
-        ]
-      },
-      "ShipConstructionPools": {
-        "type": "object",
-        "properties": {
-          "light": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
-              }
-            ],
-            "description": "轻型舰建造。"
-          },
-          "heavy": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
-              }
-            ],
-            "description": "重型舰建造。"
-          },
-          "aviation": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
-              }
-            ],
-            "description": "特型舰建造。"
-          },
-          "limited": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
-              }
-            ],
-            "description": "限时建造。"
-          },
-          "exchange": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "boolean"
-              }
-            ],
-            "description": "商店兑换。"
-          }
-        },
-        "required": [
-          "light",
-          "heavy",
-          "aviation",
-          "limited",
-          "exchange"
-        ]
-      },
-      "ShipObtainedFrom": {
-        "type": "object",
-        "properties": {
-          "obtainedFrom": {
-            "type": "string",
-            "description": "其他获取方式说明。"
-          },
-          "fromMaps": {
-            "type": "array",
-            "items": {
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "$ref": "#/components/schemas/ShipMapDrop"
-                }
-              ]
-            },
-            "description": "可掉落的地图，如：8-1；有附加条件时为对象。"
-          }
-        },
-        "required": [
-          "fromMaps"
-        ]
-      },
-      "ShipMapDrop": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "地图编号。"
-          },
-          "note": {
-            "type": "string",
-            "description": "掉落条件说明。"
-          }
-        },
-        "required": [
-          "name",
-          "note"
-        ]
-      },
-      "ShipMisc": {
-        "type": "object",
-        "properties": {
-          "artist": {
-            "$ref": "#/components/schemas/ShipArtist",
-            "description": "画师。"
-          },
-          "voice": {
-            "$ref": "#/components/schemas/ShipVoiceActor",
-            "description": "声优。"
-          }
-        },
-        "required": [
-          "artist",
-          "voice"
-        ]
-      },
-      "ShipArtist": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "画师名称。"
-          },
-          "urls": {
-            "type": "object",
-            "properties": {},
-            "additionalProperties": {
-              "type": "string"
-            },
-            "description": "画师主页，键为站点名，如：Wiki、Pixiv、Twitter、Link。"
-          }
-        },
-        "required": [
-          "name",
-          "urls"
-        ]
-      },
-      "ShipVoiceActor": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "声优名称。"
-          },
-          "url": {
-            "type": "string",
-            "description": "声优主页。"
-          }
-        },
-        "required": [
-          "name"
-        ]
-      },
-      "ShipSkinData": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "description": "皮肤名称，如：Default。"
-          },
-          "image": {
-            "type": "string",
-            "description": "立绘地址。"
-          },
-          "bg": {
-            "type": "string",
-            "description": "带背景的立绘地址。"
-          },
-          "cn": {
-            "type": "string",
-            "description": "国服版本立绘地址。"
-          },
-          "background": {
-            "type": "string",
-            "description": "背景图地址。"
-          },
-          "chibi": {
-            "type": "string",
-            "description": "Q 版小人地址。"
-          },
-          "info": {
-            "$ref": "#/components/schemas/ShipSkinInfo",
-            "description": "皮肤详情。"
-          }
-        },
-        "required": [
-          "name",
-          "image",
-          "background",
-          "chibi",
-          "info"
-        ]
-      },
-      "ShipSkinInfo": {
-        "type": "object",
-        "properties": {
-          "live2dModel": {
-            "type": "boolean",
-            "description": "是否为 Live2D 皮肤。"
-          },
-          "obtainedFrom": {
-            "type": "string",
-            "description": "获取方式。"
-          },
-          "category": {
-            "type": "string",
-            "description": "皮肤分类。"
-          },
-          "icons": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ShipSkinIcon"
-            },
-            "description": "皮肤图标。"
-          },
-          "enClient": {
-            "type": "string",
-            "description": "国际服皮肤名。"
-          },
-          "enLimited": {
-            "type": "string",
-            "description": "国际服上架情况。"
-          },
-          "cnClient": {
-            "type": "string",
-            "description": "国服皮肤名。"
-          },
-          "cnLimited": {
-            "type": "string",
-            "description": "国服上架情况。"
-          },
-          "jpClient": {
-            "type": "string",
-            "description": "日服皮肤名。"
-          },
-          "jpLimited": {
-            "type": "string",
-            "description": "日服上架情况。"
-          },
-          "cost": {
-            "type": "number",
-            "description": "价格（钻石）。"
-          },
-          "firstIntroduced": {
-            "type": "string",
-            "description": "首次登场的活动。"
-          },
-          "sharedWith": {
-            "type": "string",
-            "description": "共用此皮肤的舰船。"
-          },
-          "music": {
-            "type": "string",
-            "description": "皮肤专属音乐。"
-          }
-        },
-        "required": [
-          "live2dModel",
-          "obtainedFrom"
-        ]
-      },
-      "ShipSkinIcon": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string",
-            "description": "图标地址。"
-          },
-          "urlType": {
-            "type": "string",
-            "description": "图标类型，如：icon。"
-          }
-        },
-        "required": [
-          "url",
-          "urlType"
-        ]
-      },
-      "ShipGalleryItem": {
-        "type": "object",
-        "properties": {
-          "description": {
-            "type": "string",
-            "description": "图片说明。"
-          },
-          "url": {
-            "type": "string",
-            "description": "图片地址。"
-          }
-        },
-        "required": [
-          "description",
-          "url"
-        ]
-      },
-      "ShipRetrofitProjects": {
-        "type": "object",
-        "properties": {},
-        "additionalProperties": {
-          "$ref": "#/components/schemas/ShipRetrofitProject"
-        }
-      },
-      "ShipRetrofitProject": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "description": "项目名称，如：Hull Improvement Ⅰ。"
-          },
-          "grade": {
-            "type": "string",
-            "description": "项目等级，如：I、II。"
-          },
-          "attributes": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "属性提升。"
-          },
-          "materials": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "所需材料。"
-          },
-          "coins": {
-            "type": "number",
-            "description": "所需物资。"
-          },
-          "level": {
-            "type": "number",
-            "description": "所需舰船等级。"
-          },
-          "levelBreakLevel": {
-            "type": "number",
-            "description": "所需突破次数。"
-          },
-          "levelBreakStars": {
-            "type": "string",
-            "description": "所需突破星级，如：★★☆☆。"
-          },
-          "recurrence": {
-            "type": "number",
-            "nullable": true,
-            "description": "可重复次数。"
-          },
-          "require": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "前置项目编号。"
-          }
-        },
-        "required": [
-          "id",
-          "attributes",
-          "materials",
-          "coins",
-          "level",
-          "levelBreakLevel",
-          "levelBreakStars",
-          "recurrence",
-          "require"
-        ]
-      },
-      "ShipDevLevel": {
-        "type": "object",
-        "properties": {
-          "level": {
-            "type": "string",
-            "description": "开发等级。"
-          },
-          "buffs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "该等级解锁的加成。"
-          }
-        },
-        "required": [
-          "level",
-          "buffs"
         ]
       },
       "SpineResult": {

@@ -24,6 +24,7 @@
     "lodash": "^4.17.21",
     "lunar-javascript": "^1.7.7",
     "pinyin": "^3.1.0",
+    "province-city-china": "9.0.0",
     "qrcode": "^1.5.1",
     "think-cache": "^1.1.1",
     "think-cache-file": "^1.1.1",
