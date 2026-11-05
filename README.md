@@ -33,7 +33,7 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 ```
 npm install
 ```
-数据库与大型静态资源从 [数据 Releases](https://github.com/Spacesless/api/releases/tag/assets-2026.11.05) 按需下载，具体校验、解压和恢复方式见 [数据和静态资源安装](#数据和静态资源安装)。数据库压缩包、IP数据库、Live2D模型和宠物图片不再随源码分发；部署配置、小型JSON和Swagger保留在仓库。
+数据库与大型静态资源从 [数据 Releases](https://github.com/Spacesless/api/releases) 按需下载，具体校验、解压和恢复方式见 [数据和静态资源安装](#数据和静态资源安装)。数据库压缩包、IP数据库、Live2D模型和宠物图片不再随源码分发；部署配置、小型JSON和Swagger保留在仓库。
 
 使用数据库接口时安装MongoDB并恢复下载的BSON备份；仅使用行政区划等本地功能无需导入该备份。静态资源包在项目根目录解压，保持原有www目录结构。
 
@@ -146,11 +146,13 @@ npm run start:prod
 | ip2region.tar.gz | www/ip2region/ | IPv4/IPv6归属查询 |
 | live2d-assets.tar.gz | www/live2d-assets/ | Live2D列表及模型、贴图、动作 |
 | pet-images.tar.gz | www/pet-images/ | 宠物接口中的本地图片地址 |
-| azurlane-spine.tar.gz（可选） | www/azurlane-assets/spine/ | 碧蓝航线Spine骨骼、图集和贴图 |
+| Spine资源（上游下载） | www/azurlane-assets/spine/ | 从[Pelom777/AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)自行下载 |
 | manifest.json | 无需安装 | 附件和原文件的SHA256、大小、打包来源提交 |
 | SHA256SUMS.txt | 无需安装 | 附件校验值 |
 
-按需安装，不使用某模块则不需要下载对应附件。Live2D模型沿用原项目的“勿做商用”说明，数据与资源的来源及使用条件不因打包发布而改变。Spine为可选资源：只有本地www/azurlane-assets/spine目录存在且非空时才打包；当前已发布版本不包含该附件，之后以具体Release的附件和manifest.json为准。Spine接口的清单spine-list.json需要与模型内容对应。
+按需安装，不使用某模块则不需要下载对应附件。Live2D模型沿用原项目的“勿做商用”说明，数据与资源的来源及使用条件不因打包发布而改变。Spine资源体积较大，不在本项目Release中分发，也不参与assets:pack或assets:install。
+
+使用Spine接口时，从[Pelom777/AzurLaneSD](https://github.com/Pelom777/AzurLaneSD)下载资源，将上游[assets/spine目录](https://github.com/Pelom777/AzurLaneSD/tree/master/assets/spine)复制到本项目 `www/azurlane-assets/spine/`，保持模型子目录结构。Spine接口的清单spine-list.json需要与模型内容对应。
 
 ### 下载与校验
 
@@ -206,13 +208,13 @@ mongorestore --uri="mongodb://127.0.0.1:27017" --archive=deploy/release-assets/a
 
 ### 维护者打包和发布
 
-准备好 `www/api_bson_mongodb_data.7z` 和三类必需静态资源；需要发布Spine时，将完整模型放到www/azurlane-assets/spine。运行以下命令打包并自动校验：
+准备好 `www/api_bson_mongodb_data.7z` 和三类必需静态资源。运行以下命令打包并自动校验：
 
 ```sh
 npm run assets:pack
 ```
 
-文件生成到忽略目录 `deploy/release-assets/`。脚本原样复制现成数据库7z、打包静态资源，生成manifest.json和SHA256SUMS.txt，再校验附件和解压后的每个资源文件。数据库7z只校验字节一致，不自动解压或导入。Spine目录缺失或为空时跳过。数据库导入导出独立手动操作，打包不需要MongoDB连接或MongoDB工具。
+文件生成到忽略目录 `deploy/release-assets/`。脚本原样复制现成数据库7z、打包IP数据、Live2D和宠物图片，生成manifest.json和SHA256SUMS.txt，再校验附件和解压后的每个资源文件。数据库7z只校验字节一致，不自动解压或导入。Spine始终从上游单独下载，即使本地已安装也不会打包。数据库导入导出独立手动操作，打包不需要MongoDB连接或MongoDB工具。
 
 manifest.json和SHA256SUMS.txt列出本次复制的数据库7z和生成的静态附件。输出目录中的其他手动备份和旧附件保持原样，不会自动纳入清单。归档不包含连接配置、凭据或日志。
 

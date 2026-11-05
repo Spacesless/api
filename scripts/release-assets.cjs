@@ -9,8 +9,7 @@ const bundles = [
   { name: 'api_bson_mongodb_data.7z', source: 'www/api_bson_mongodb_data.7z', format: '7z', description: '手动导出的数据库备份，原样分发，数据库由部署者手动恢复。' },
   { name: 'ip2region.tar.gz', source: 'www/ip2region', format: 'tar.gz', description: 'IP归属查询所需IPv4和IPv6数据库。' },
   { name: 'live2d-assets.tar.gz', source: 'www/live2d-assets', format: 'tar.gz', description: 'Live2D模型、贴图、动作和清单；沿用原项目勿作商用的说明。' },
-  { name: 'pet-images.tar.gz', source: 'www/pet-images', format: 'tar.gz', description: '宠物接口引用的本地图片。' },
-  { name: 'azurlane-spine.tar.gz', source: 'www/azurlane-assets/spine', format: 'tar.gz', optional: true, description: '可选的碧蓝航线Spine模型、骨骼、图集和贴图。' }
+  { name: 'pet-images.tar.gz', source: 'www/pet-images', format: 'tar.gz', description: '宠物接口引用的本地图片。' }
 ];
 
 async function sha256(file) {

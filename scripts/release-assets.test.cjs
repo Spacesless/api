@@ -8,7 +8,7 @@ const crypto = require('node:crypto');
 const zlib = require('node:zlib');
 
 for (const state of ['missing', 'empty', 'populated']) {
-  test('release packaging handles optional Spine directory: ' + state, t => {
+  test('release packaging leaves Spine external when local directory is ' + state, t => {
     const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'api-assets-test-'));
     t.after(() => {
       const resolved = fs.realpathSync(temporary);
@@ -44,13 +44,10 @@ for (const state of ['missing', 'empty', 'populated']) {
     assert.ok(sums.includes(database.name));
     assert.ok(!sums.includes('manual.archive.gz'));
     assert.equal(fs.readFileSync(path.join(output, 'manual.archive.gz'), 'utf8'), 'manual database export');
-    assert.equal(Boolean(spine), state === 'populated');
-    assert.equal(sums.includes('azurlane-spine.tar.gz'), state === 'populated');
+    assert.equal(spine, undefined);
+    assert.ok(!sums.includes('azurlane-spine.tar.gz'));
     assert.equal(fs.readFileSync(path.join(output, 'README.md'), 'utf8'), '# Shared README\n');
-    if (spine) {
-      assert.equal(spine.files[0].path, 'www/azurlane-assets/spine/model/model.skel');
-      assert.equal(fs.readFileSync(path.join(temporary, spine.files[0].path), 'utf8'), 'skeleton fixture');
-    }
+    if (state === 'populated') assert.equal(fs.readFileSync(path.join(temporary, 'www/azurlane-assets/spine/model/model.skel'), 'utf8'), 'skeleton fixture');
     assert.match(run('install'), /Already installed:/);
     const ipDirectory = path.resolve(temporary, 'www/ip2region');
     assert.ok(fs.realpathSync(ipDirectory).startsWith(fs.realpathSync(temporary) + path.sep));
