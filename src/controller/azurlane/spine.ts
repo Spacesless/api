@@ -1,4 +1,4 @@
-import type { AzurlaneSpineQuery, Ship, ShipSkin, SpineListItem, SpineResult } from '../../types/azurlane';
+import type { AzurlaneSpineQuery, SpineListItem, SpineResult } from '../../types/azurlane';
 import Base = require('../base');
 import path = require('path');
 import url = require('url');
@@ -50,45 +50,5 @@ export = class extends Base {
   async listsAction() {
     const spineList: SpineListItem[] = await fs.readJSON(path.join(this.basePath, 'spine-list.json'));
     return this.success(spineList);
-  }
-
-  /** @internal */
-  async updateAction() {
-    const listPath = path.join(this.basePath, 'spine-list.json');
-    if (think.isExist(listPath)) {
-      return this.success();
-    }
-
-    const ships: Ship[] = await fs.readJSON(path.join(this.basePath, 'ships.json'));
-    const skins: Record<string, ShipSkin> = await fs.readJSON(path.join(this.basePath, 'ship_skin_template.json'));
-
-    const textures = fs.readdirSync(path.join(this.basePath, 'spine'));
-
-    const map: Record<string, string | undefined> = {
-      undefined: '',
-      g: '改',
-      h: '誓约',
-      idol: undefined,
-      younv: undefined,
-      alter: undefined
-    };
-
-    const result = textures.map(item => {
-      const findSkin = Object.values(skins).find(shin => shin.painting.toLowerCase() === item.toLowerCase());
-      let findShip;
-      if (findSkin) findShip = ships.find(ship => ship._gid === findSkin.ship_group);
-      const skinName = findSkin ? findSkin.name : null;
-      const nameSuffix = item.split('_')[1];
-      const remark = skinName && skinName.includes('namecode') ? map[nameSuffix] : skinName;
-      return {
-        'name': findShip ? findShip.names.cn : (findSkin ? findSkin.name : null),
-        'value': item,
-        'remark': remark || undefined
-      };
-    });
-
-    fs.writeJsonSync(listPath, result.filter(item => Boolean(item.name)), { spaces: 2 });
-
-    this.success(result.filter(item => !item.name));
   }
 };
