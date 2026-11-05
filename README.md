@@ -17,7 +17,7 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 ## 功能特性
 - 时间 (公历，农历，老黄历，十二时辰，基于[https://github.com/6tail/lunar-javascript](https://github.com/6tail/lunar-javascript))
 - Live2d模型 (***勿做商用哦***, Live2D Cubism SDK v2版本, 材质图片经过tinypng压缩)
-- 中国行政区划：直接使用 province-city-china 本地数据，支持四级懒加载、前缀搜索、详情路径和地区树，无需 MongoDB，见 [接口说明](docs/district.md)
+- 中国行政区划：直接使用 province-city-china 本地数据，支持四级懒加载、前缀搜索、详情路径和地区树，无需 MongoDB，见 [接口说明](#行政区划接口)
 - 垃圾分类 (可回收物、有害垃圾、湿垃圾、干垃圾、大件垃圾, 基于[https://github.com/alexayan/garbage-classification-data](https://github.com/alexayan/garbage-classification-data))
 - 中国邮政编码
 - 中国车牌号及其简称
@@ -33,11 +33,15 @@ Api文档看这吧：[https://api.timelessq.com](https://api.timelessq.com)
 ```
 npm install
 ```
-安装MongoDB，使用deploy目录下的api_bson数据文件
+数据库与大型静态资源从 [数据 Releases](https://github.com/Spacesless/api/releases/tag/assets-2026.11.05) 按需下载，具体校验、解压和恢复方式见 [数据和静态资源安装](#数据和静态资源安装)。数据库压缩包、IP数据库、Live2D模型和宠物图片不再随源码分发；部署配置、小型JSON和Swagger保留在仓库。
+
+使用数据库接口时安装MongoDB并恢复下载的BSON备份；仅使用行政区划等本地功能无需导入该备份。静态资源包在项目根目录解压，保持原有www目录结构。
 
 ```
 npm start
 ```
+
+维护者可使用 `npm run assets:pack` 复制现成数据库备份、打包静态资源并自动校验；部署时使用 `npm run assets:install` 完成校验和安装。输出目录为 `deploy/release-assets/`，不会进入Git。
 
 开发模式会将 TypeScript 编译到 `app/`，编译成功后启动或重启服务。入口为 `development.ts`，业务源码位于 `src/`。不要直接运行源码或编辑 `app/` 中的编译产物。
 
@@ -104,69 +108,6 @@ export = class extends Base {
 
 该接口按默认路由对应 `GET /hello`；在 `src/logic/hello.ts` 中按现有写法添加 `name` 的必填和长度校验。开发编译或构建时会自动生成参数和响应文档，不使用装饰器。
 
-## 古诗文数据与查询
-
-诗歌模块使用 `chinese-gushiwen` 数据集，包含 10,000 篇古诗文、3,983 位作者和 10,000 条名句。三个 GET 接口分别读取独立的 MongoDB 集合：
-
-| 接口 | 数据目录 | 集合 | 业务筛选参数 |
-| --- | --- | --- | --- |
-| `/poetry` | `guwen/` | `poetry_guwen` | `author`、`dynasty`、`type`、`keyword` |
-| `/poetry/writer` | `writer/` | `poetry_writer` | `name`、`keyword` |
-| `/poetry/sentence` | `sentence/` | `poetry_sentence` | `from`、`keyword` |
-
-三个接口均支持 `page`、`pageSize`，不提供 ID 查询。页码默认 1，每页默认 10 条、最多 50 条，按 `_id` 升序排列。查询始终返回现有分页结构：`data` 中包含 `count`、`totalPages`、`pageSize`、`currentPage` 和记录数组 `data`；没有匹配时数组为空。
-
-示例（请求时中文参数应正常 URL 编码）：
-
-```text
-/poetry?author=李白&dynasty=唐代&type=乐府&pageSize=10
-/poetry/writer?name=李白
-/poetry/sentence?keyword=天生我材&from=李白
-```
-
-`author`、作者姓名、名句出处和关键词使用字面内容模糊匹配，不将用户输入作为正则表达式执行；朝代和分类精确匹配。古诗文关键词搜索标题、正文、分类；作者关键词搜索姓名、简介；名句关键词搜索原文、出处。
-
-数据文件是每行一条记录的 JSON（JSON Lines），不是 JSON 数组。后续导入 MongoDB 时，把各目录下所有文件分别导入表中的集合，并保留 Extended JSON 的 `_id.$oid` 为 MongoDB ObjectId。不要导入到“一言”使用的 `sentence` 集合。本次代码调整没有导入或修改数据库。
-
-返回字段保留数据源的名称：古诗文为 `title/dynasty/writer/content/type`，可选字段有 `remark/shangxi/translation/audioUrl`；作者为 `name/headImageUrl/simpleIntro/detailIntro`，其中 `detailIntro` 保留原始字符串，不自动解析为对象；名句为 `name/from`。数据没有作者 ID 或作品 ID 关联，`writer` 和 `from` 都是文字。
-
-此次更新替换了旧诗歌数据结构：`/poetry` 路径和 `author` 查询参数保留，但响应不再使用旧的 `author/paragraphs/tags/prologue` 字段，旧 `poetry` 集合也不再读取。使用新接口前需要完成三个集合的数据导入，并按新字段调整调用方。
-
-## 汉字词典、歇后语与对联
-
-词典模块使用 `chinese-xinhua` 的两份数据文件，暂不替换现有成语接口，也未新增词语接口：
-
-| 接口 | 数据文件 | MongoDB 集合 | 业务筛选参数 |
-| --- | --- | --- | --- |
-| `/dictionary/word` | `word.json` | `dictionary_word` | `word`、`radicals`、`strokes`、`keyword` |
-| `/dictionary/xiehouyu` | `xiehouyu.json` | `dictionary_xiehouyu` | `riddle`、`answer`、`keyword` |
-| `/dictionary/couplet` | 对联 `data.csv` | `dictionary_couplet` | `up`、`down`、`keyword` |
-
-三者均支持 `page`、`pageSize`，不提供 ID 查询。统一返回分页数据，默认每页 10 条、最多 50 条，按 `_id` 升序排列。所有关键词都是字面内容，不执行用户提供的正则表达式。
-
-```text
-/dictionary/word?word=乐
-/dictionary/word?word=樂
-/dictionary/word?radicals=口&strokes=13
-/dictionary/xiehouyu?riddle=飞机上聊天
-/dictionary/xiehouyu?answer=高谈阔论
-/dictionary/couplet?up=晚风摇树树还挺
-/dictionary/couplet?down=晨露润花花更红
-/dictionary/couplet?keyword=春风
-```
-
-汉字数据共 16,142 条记录、14,810 个不同字头；同一个字可能有多条读音或释义记录，不能把 `word` 设为唯一键。`word` 参数同时精确匹配 `word` 和 `oldword`，后者是数据源的原字形，可能是繁体或异体字。部首精确匹配，但有 9,044 条记录缺少部首。笔画查询参数使用整数，查询时转换成源数据的字符串格式；拼音、释义及换行按原样返回。
-
-歇后语有 14,032 条记录，前半句和答案均可按字面内容模糊查询，`keyword` 同时搜索两者。答案中的多个表述及标点不拆分、不改写。
-
-对联 CSV 有 774,491 条记录，表头为 `up,down`，分别是上联和下联。`up`、`down` 参数使用原文精确匹配（包含标点），`keyword` 同时搜索上下联。响应保留 `up`、`down` 和导入后生成的 `_id`；同一上联的多个已有下联分别返回。本接口只检索已有数据，不调用生成模型，也不承诺给任意新上联创作下联。
-
-对联文件有 5,088 条完全重复记录，可以按完整的 `(up, down)` 配对去重，但不能按 `up` 单独去重或建立唯一索引，否则会丢失同一上联的其他下联。导入时使用支持引号、逗号和换行的标准 CSV 解析器，不要直接按逗号切分。建议为上联和下联精确查询分别建立包含 `_id` 排序字段的普通索引；关键词检索仍是模糊查询，不能保证与精确查询相同的性能。
-
-这两份 JSON 文件都是数组，与古诗文的 JSON Lines 格式不同。导入时按数组格式处理，并让 MongoDB 为没有 `_id` 的记录分配 ObjectId。重复导入会产生重复记录，建议在新集合中准备数据再切换；不要依据字头直接覆盖多条记录。本次仅修改接口代码，没有导入数据库。
-
-可选的 `ci.json` 有 264,434 条词语记录，仅包含 `ci` 和 `explanation`，适合后续提供简单的查词释义接口。数据有 52 个同名词条包含不同释义、3 条完全重复记录及 28 条空释义，应整理有效释义后再导入，避免按词名去重时丢失含义。
-
 ## 数据预处理
 
 `scripts/prepare-mongodb-data.cjs` 可以将上述古诗文 JSON Lines、新华词典 JSON 数组和对联 CSV 转换为统一的 UTF-8 标准 JSON 数组（`.json` 文件）。不连接数据库、不修改源文件；递归移除 `_id`，删除移除 ID 后完全相同的文档，保留同字多音、同词多释义、同一上联的不同下联以及原始文本格式。对联额外剔除上联或下联少于 5 字的记录，字数按 Unicode 字符统计，不计标点、符号和空白。
@@ -187,40 +128,94 @@ npm prune --omit=dev
 npm run start:prod
 ```
 
-构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `swagger/openapi.json`）、`view/` 和本地 `config/`。生产入口已改为 `app/production.js`，PM2 示例也已同步更新；现有 PM2 进程的启动路径需要相应调整。
+构建阶段需要开发依赖。部署时保留完整的 `app/` 编译目录，以及 `package.json`、`www/`（包含生成的 `swagger/openapi.json`）、`view/` 和本地 `config/`。使用资源打包和安装工具时，同时保留 `scripts/` 和 `deploy/`；这些工具只需要Node和下文注明的系统命令，不依赖开发包。生产入口为 `app/production.js`，PM2示例也已同步更新。
 
 可以参考deploy目录下的nginx或pm2配置进行部署
 
-## IP 归属地查询
+## 数据和静态资源安装
 
-`GET /ip-to-region` 使用官方 [ip2region JavaScript 绑定](https://github.com/lionsoul2014/ip2region/tree/master/binding/javascript)，支持 IPv4 和 IPv6。`version` 可选 `4` 或 `6`，默认 `4`；`ip` 不传时取客户端 IP，地址版本须与 `version` 一致。
+大型数据通过 [GitHub Releases](https://github.com/Spacesless/api/releases) 附件分发，源码仓库保留代码、配置、小型JSON、Swagger和Spine资源来源及清单。Releases用于下载，运行时仍从本地原目录读取，不作为图片或模型CDN。
 
-```text
-/ip-to-region?ip=114.114.114.114
-/ip-to-region?version=6&ip=240e:3b7:3272:d8d0:db09:c067:8d59:539e
+行政区划直接使用province-city-china npm包，不需要下载地理边界数据或导入district集合。本项目不提供边界、经纬度归属或坐标转换服务。
+
+### 附件
+
+| 附件 | 安装位置 | 影响功能 |
+| --- | --- | --- |
+| api_bson_mongodb_data.7z | 由部署者手动恢复到MongoDB | 从www原样复制的数据库备份 |
+| ip2region.tar.gz | www/ip2region/ | IPv4/IPv6归属查询 |
+| live2d-assets.tar.gz | www/live2d-assets/ | Live2D列表及模型、贴图、动作 |
+| pet-images.tar.gz | www/pet-images/ | 宠物接口中的本地图片地址 |
+| azurlane-spine.tar.gz（可选） | www/azurlane-assets/spine/ | 碧蓝航线Spine骨骼、图集和贴图 |
+| manifest.json | 无需安装 | 附件和原文件的SHA256、大小、打包来源提交 |
+| SHA256SUMS.txt | 无需安装 | 附件校验值 |
+
+按需安装，不使用某模块则不需要下载对应附件。Live2D模型沿用原项目的“勿做商用”说明，数据与资源的来源及使用条件不因打包发布而改变。Spine为可选资源：只有本地www/azurlane-assets/spine目录存在且非空时才打包；当前已发布版本不包含该附件，之后以具体Release的附件和manifest.json为准。Spine接口的清单spine-list.json需要与模型内容对应。
+
+### 下载与校验
+
+打开上述Releases页面，选择明确的数据版本，下载需要的附件和SHA256SUMS.txt。数据版本与应用版本分开管理。请记录使用的版本，不依赖latest隐式更新。也可在安装GitHub CLI并登录后下载：
+
+```sh
+gh release download <数据版本标签> --repo Spacesless/api --dir deploy/release-assets --pattern 'ip2region.tar.gz' --pattern 'manifest.json' --pattern 'SHA256SUMS.txt'
 ```
 
-数据库分别放在 `www/ip2region/ip2region_v4.xdb` 和 `www/ip2region/ip2region_v6.xdb`，使用新版的 `国家|省份|城市|ISP|国家代码` 格式。返回字段仍为 `ip`、`country`、`province`、`city`、`isp`，库中缺失的字段返回空字符串。每种版本首次查询时校验数据库并缓存向量索引，更新数据库后需重启服务。
+Windows用PowerShell计算校验值，与SHA256SUMS.txt对应行比较：
 
-运行环境要求 Node.js 22.12 或更高版本，以便 CommonJS 应用加载官方 ESM 绑定。
-
-## 月历摘要
-
-`GET /time/calendar?year=2024&month=2` 按日期升序返回当月所有日期，不补齐相邻月份。`year` 范围为 1900–2099，`month` 范围为 1–12；两个参数分别默认服务端当前年份和月份。
-
-每项包含 `date`（YYYY-MM-DD）、`week`（0 周日到 6 周六）、`cnWeek`（中文星期，如“星期一”）、`weekInYear`（年内第几周，周一起算）、`dayInYear`（年内第几天）、`lunarMonth`（农历月，闰月为负数）、`lunarMonthName`（每天均返回中文月份，如“正月”“闰二月”）、`lunarDay`（农历日）、`lunar`（初一显示月份，如“正月”“闰二月”，其余显示农历日）、`yi`/`ji`（宜忌，以空格分隔）、`astro`（星座）、`yuexiang`（月相）、`wuhou`（物候）、`festivals`（节日名称数组）和 `solarTerm`（当天节气名，无则为空字符串）。年内周数、天数从 1 开始，取值与单日接口一致。点击某一天时可通过原 `/time?datetime=YYYY-MM-DD` 查询更多详情。
-
-
-isWorkday 表示中国大陆工作或休息日，结合库内法定节假日、调休安排和普通周末计算：true 为工作日，false 为休息日。库中没有当年的假期安排时返回 null；仅有下一年元旦关联的跨年记录不视为已收录当年安排。此字段不代表个人或企业实际排班。
-
-## 八字基础排盘
-
-```text
-GET /time/bazi?year=1990&month=5&day=20&hour=10&minute=30&date=2024-02-10
+```powershell
+Get-FileHash -Algorithm SHA256 -LiteralPath deploy/release-assets/ip2region.tar.gz
 ```
 
-必填参数为公历出生 `year`、`month`、`day`、`hour`（0–23），年份范围 1900–2099；`minute`（0–59）默认 0。出生时间按北京时间 UTC+08:00 的民用钟表时间解释，不进行真太阳时或历史夏令时校正。年柱以立春交节时刻分年，月柱以十二节交节时刻分月。`sect=2`（默认）日柱按 00:00 换日，`sect=1` 按 23:00 换日；时柱沿用 lunar 库规则，两派在晚子时的时柱可以相同，日主及相关十神可能不同。
+Linux可在完整下载本次全部附件后运行 `sha256sum -c SHA256SUMS.txt`；仅下载部分附件时，只校验对应条目。
 
-返回四柱（`pillars`）、八字（`eightChars`）、藏干及十神、纳音、日主（`dayMaster`）、表层五行计数与缺失项（`fiveElements`）、农历生肖（`zodiac`）、立春生肖（`baziZodiac`）和星座（`astro`）。五行计数仅统计天干及地支本气共八个字，藏干另列、不重复计数；缺失不代表需要补充，也不推断旺衰或喜用神。
+### 自动安装静态资源
 
-可选 `date=YYYY-MM-DD` 指定通用黄历的查询日期（1900–2099），默认北京时间今天；`almanac` 返回该日宜忌，与出生日期独立，不是针对个人的运势。接口提供传统民俗内容，仅供娱乐参考。
+将需要的tar.gz、manifest.json和SHA256SUMS.txt放到 `deploy/release-assets/`，在项目根目录执行：
+
+```sh
+npm run assets:install
+
+# 只安装某个已下载的附件
+npm run assets:install -- --only ip2region.tar.gz
+
+# 内容不同时，先备份旧资源目录再更新
+npm run assets:install -- --overwrite
+```
+
+安装命令只处理已下载的静态资源附件；数据库不会随之还原。系统需要tar（Windows自带tar或Linux tar）。脚本先校验manifest、附件SHA256及解压后的每个文件，拒绝路径越界、链接和清单外文件，所有选中附件通过检查后才安装到对应www目录。
+
+相同内容会跳过，内容不同默认报错，使用 `--overwrite` 时将旧目录保存在 `deploy/resource-backups/时间标识/www/...`，再以新目录替换。不会清理旧备份。安装需要容纳解压临时目录的磁盘空间；更新时还需要保留旧目录。完成更新后重启Node，尤其是缓存了IP数据库索引的进程。未安装对应资源的接口仍不可用，图片未安装时静态URL会404。
+
+### 数据库手动导入导出
+
+数据库由部署者使用宝塔或MongoDB Database Tools手动导入导出。项目的打包、安装、构建和启动均不连接数据库执行备份或还原。
+
+使用MongoDB Database Tools时，可参考以下gzip archive示例，连接地址和数据库名按实际部署调整：
+
+```sh
+# 手动导出
+mongodump --uri="mongodb://127.0.0.1:27017" --db=api --archive=deploy/release-assets/api.archive.gz --gzip
+
+# 手动导入，建议使用空的目标数据库
+mongorestore --uri="mongodb://127.0.0.1:27017" --archive=deploy/release-assets/api.archive.gz --gzip --nsInclude="api.*" --stopOnError
+```
+
+源、目标MongoDB与Database Tools版本需要兼容；导入不是事务，出错前可能已经写入部分记录。已有数据的覆盖方式由部署者自行决定。宝塔导出的文件按实际备份格式恢复。
+
+将手动导出的现成备份放在 `www/api_bson_mongodb_data.7z`。assets:pack会原样复制到 `deploy/release-assets/`，加入manifest.json和SHA256SUMS.txt，随静态资源一起发布。assets:install只安装静态资源，不解压或还原数据库。该7z不是mongodump --archive文件，恢复时先用7-Zip解压，再按实际BSON目录格式手动恢复；其他格式的手动备份也可以单独上传。
+
+### 维护者打包和发布
+
+准备好 `www/api_bson_mongodb_data.7z` 和三类必需静态资源；需要发布Spine时，将完整模型放到www/azurlane-assets/spine。运行以下命令打包并自动校验：
+
+```sh
+npm run assets:pack
+```
+
+文件生成到忽略目录 `deploy/release-assets/`。脚本原样复制现成数据库7z、打包静态资源，生成manifest.json和SHA256SUMS.txt，再校验附件和解压后的每个资源文件。数据库7z只校验字节一致，不自动解压或导入。Spine目录缺失或为空时跳过。数据库导入导出独立手动操作，打包不需要MongoDB连接或MongoDB工具。
+
+manifest.json和SHA256SUMS.txt列出本次复制的数据库7z和生成的静态附件。输出目录中的其他手动备份和旧附件保持原样，不会自动纳入清单。归档不包含连接配置、凭据或日志。
+
+创建独立数据Release（建议标签assets-YYYY.MM.DD），附件上传完整后再发布。不要把数据Release设为应用的latest版本。上传manifest.json列出的全部附件（包括api_bson_mongodb_data.7z），以及manifest.json、README.md、SHA256SUMS.txt。
+
+大文件已提交过的历史不会因为移到Releases而消失；本次迁移不重写Git历史。本地安装文件由.gitignore忽略，迁移取消Git跟踪时应保留本地文件。普通完整克隆仍包含旧历史，新的部署可使用浅克隆减少历史下载。

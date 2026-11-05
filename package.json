@@ -5,7 +5,7 @@
   "author": "timeless",
   "scripts": {
     "start": "npm run dev",
-    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs",
+    "test": "npm run build && node --test app/test/migration.test.js scripts/generate-openapi.test.cjs scripts/release-assets.test.cjs",
     "lint": "npm run typecheck",
     "dev": "tsc-watch --onSuccess \"npm run dev:serve\"",
     "dev:serve": "npm run docs:generate && node app/development.js",
@@ -13,6 +13,8 @@
     "compile": "npm run build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "docs:generate": "node scripts/generate-openapi.cjs",
+    "assets:pack": "node scripts/release-assets.cjs pack",
+    "assets:install": "node scripts/release-assets.cjs install",
     "start:prod": "node app/production.js"
   },
   "dependencies": {
@@ -54,17 +56,5 @@
   "engines": {
     "node": ">=22.12"
   },
-  "readmeFilename": "README.md",
-  "thinkjs": {
-    "metadata": {
-      "name": "api",
-      "description": "application created by thinkjs",
-      "author": "timeless",
-      "babel": false
-    },
-    "projectName": "api",
-    "template": "C:\\Users\\hp\\AppData\\Roaming\\npm\\node_modules\\think-cli\\default_template",
-    "clone": false,
-    "isMultiModule": false
-  }
+  "readmeFilename": "README.md"
 }

@@ -1,3 +1,0 @@
-https://github.com/Pelom777/AzurLaneSD.git
-https://raw.githubusercontent.com/AzurAPI/azurapi-js-setup/master/ships.json
-https://raw.githubusercontent.com/AzurLaneTools/AzurLaneData/refs/heads/main/CN/ShareCfg/ship_skin_template.json
